@@ -26,8 +26,7 @@
 {% for year_fails in fails_data.total_fails %}
 <h2>{{year_fails.year}}</h2>
 {% for fail in year_fails.fails %}
-<li>{{fail.title}}{% if fail.blob %}{{fail.blob}}{% endif %}</li>
-<!-- <section>
+<section>
   {% if fail.blob %}
   <input id="{{fail.title}}" type="checkbox">
   <label for="{{fail.title}}">
@@ -45,7 +44,7 @@
     <p>{{fail.blob}}</p>
     {% endif %}
   </div>
-</section> -->
+</section>
 {% endfor %}
 {% endfor %}
 {% endblock content %}
