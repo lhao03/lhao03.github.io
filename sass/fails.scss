@@ -1,0 +1,48 @@
+// failure page
+.container {
+    section {
+        p {
+            line-height: 150%;
+            font-size: large;
+        }
+        input {
+            display: none;
+        }
+        .dropdown-check {
+            display: none;
+        }
+        label {
+            line-height: 150%;
+            font-size: large;
+        }
+        .blocked {
+            display: none;
+        }
+        *:checked ~ .blocked {
+            display: contents;
+        }
+        *:checked ~ p {
+            display: contents;
+        }
+        a.arrow {
+            font-size: large;
+            font-weight: bolder;
+            -moz-user-select: -moz-none;
+            -khtml-user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+    }
+    .fails-bullet {
+        line-height: 150%;
+        font-size: large;
+        padding-bottom: 15px;
+    }
+    .dropdown {
+        display: none;
+        &:hover {
+            display: contents;
+        }
+    }
+}

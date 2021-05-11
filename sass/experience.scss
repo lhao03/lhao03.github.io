@@ -1,0 +1,28 @@
+.container {
+  .experience {
+    height: fit-content;
+    margin-bottom: 3vw;
+    padding: 15px;
+    border-radius: 25px;
+    border: 2px solid var(--accent-color);
+    .info {
+      .img-title {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 15px;
+        img {
+          height: 5vw;
+          border-radius: 10px;
+          margin-right: 5px;
+          @media (max-width: 768px) {
+            height: 10vh;
+          }
+        }
+      }
+    }
+    p,
+    h3 {
+      margin: 0;
+    }
+  }
+}

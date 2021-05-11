@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+{% set school_data = load_data(path="content/data/courses.toml") %}
+{% set colors_data = load_data(path="content/data/colors.toml") %}
+{% set course_colors = colors_data.course_colors %}
+
+<h1 class="title">📚 school</h1>
+<p class="statement">These are the courses I have taken so far!</p>
+<p class="course-text" style="display: none;"></p>
+{% for school_year in school_data.courses %}
+<div class="year">
+  <h2>{{school_year.year}}</h2>
+  <div class="courses mobile-col">
+    {% for season in school_year.seasons %}
+    <div class="term">
+      <h3>{{season.term}}</h3>
+      {% for course in season.courses %}
+      <p class="course-button {{course.name}} light">{{course.name}} {{course.num}}</p>
+      <p class="desc">{{course.desc}}</p>
+      {% endfor %}
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endfor %}
+{% endblock content %}

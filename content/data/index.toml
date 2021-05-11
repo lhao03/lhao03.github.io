@@ -1,0 +1,44 @@
+facts = [
+  "🏋🏻‍♀️ I used to be a cross country runner, now I lift weights! In junior high I could run a mile in 6 minutes and 30 seconds. And right before the lockdown, I could deadlift 205lbs! Now I can't do either...",
+  "🍦 Even though I'm lactose intolerant, my favorite food is ice cream.",
+  "🌱 I was vegan for 4 years, vegetarian for 1 month in grade 11 and currently an omnivore!",
+  "💭 I act on intuition rather than logic (I've been told).",
+  "👀 I'm a visual learner!",
+]
+
+songs = [
+  "https://open.spotify.com/embed/track/2Tw2V8Ps4GuzZfcSwJufQ8",
+  "https://open.spotify.com/embed/track/37LhFxchiyAJVop5JgRZgY",
+  "https://open.spotify.com/embed/track/0pYacDCZuRhcrwGUA5nTBe",
+]
+
+album = "https://open.spotify.com/embed/playlist/5Vs2cWZGubAzDw3QLeCog6"
+
+current_job = "http://www.proofcentre.ca/"
+email = "mailto:hao.lucyy@gmail.com"
+github = "https://github.com/lhao03"
+goose_game = "https://goose.game/"
+linkedin = "https://linkedin.com/in/lucy-hao"
+starhacks = "https://www.starhacks.tech/"
+ta_course = "https://courses.students.ubc.ca/cs/courseschedule?pname=subjarea&tname=subj-course&dept=CPSC&course=210"
+twitter = "https://twitter.com/hoalycu"
+ubc = "https://www.ubc.ca/"
+ubc_bchem = "https://biochem.ubc.ca/"
+ubc_best = "http://www.ubcbest.com/"
+ubc_best_gh = "https://github.com/UBC-BEST"
+ubc_cs = "https://www.cs.ubc.ca/"
+
+people = [
+  {name = "Professor Raymond Ng", link = "https://www.cs.ubc.ca/~rng/"},
+  {name = "Dr. Kathryn Isaac", link = "https://surgery.med.ubc.ca/people/k-isaac/"},
+  {name = "Dr. Zsuzsanna Hollander", link = "http://www.proofcentre.ca/subscribe/our-team/management-team/dr-zsuzsanna-hollander/"},
+]
+
+img_path = "favicon.png"
+
+links = [
+  {name = "email", link = "mailto:hao.lucyy@gmail.com"},
+  {name = "github", link = "https://github.com/lhao03"},
+  {name = "linkedin", link = "https://linkedin.com/in/lucy-hao"},
+  {name = "twitter", link = "https://twitter.com/hoalycu"},
+]

@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% set projects_data = load_data(path="content/data/projects.toml") %}
+
+<h1 class="title">👩🏻‍💻 experience</h1>
+<p>Read more about my experiences!</p>
+{% for title_experiences in projects_data.list_of_experiences %}
+<h2>{{title_experiences.title}}</h2>
+{% for experience in title_experiences.loe %}
+<div class="experience">
+  <div class="info">
+    <div class="img-title">
+      {% if experience.img %}
+      <img class="" src="/res/{{experience.img}}" alt="">
+      {% endif %}
+      <div class="names">
+        <h3>{{experience.name}}</h3>
+        <p>{{experience.date}}, {{experience.pos}} </p>
+      </div>
+    </div>
+    {{experience.desc}}
+  </div>
+  {% if experience.links %}
+  {% for link in experience.links %}
+  {% if loop.last %}
+  <a href="{{link.link}}" class="highlight" target="_blank">{{link.name}}</a>
+  {% else %}
+  <a href="{{link.link}}" class="highlight" target="_blank">{{link.name}}</a> |
+  {% endif %}
+  {% endfor %}
+  {% endif %}
+</div>
+{% endfor %}
+
+{% endfor %}
+
+{% endblock content %}

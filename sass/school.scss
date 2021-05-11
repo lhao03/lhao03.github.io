@@ -1,0 +1,39 @@
+.container {
+    .year {
+        .courses {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            .term {
+                width: 20vw;
+                @media (max-width: 768px) {
+                    width: 80vw !important;
+                }
+                p.course-button {
+                    padding: 5px;
+                    width: max-content;
+                    border-radius: 5px;
+                    background-color: var(--other);
+                    &.CPSC {
+                        background-color: var(--cpsc) !important;
+                    }
+                    &.BIOL {
+                        background-color: var(--biol) !important;
+                    }
+                    &.CHEM {
+                        background-color: var(--chem) !important;
+                    }
+                    &.MICB {
+                        background-color: var(--micb) !important;
+                    }
+                    &.MATH {
+                        background-color: var(--math) !important;
+                    }
+                    @media (max-width: 768px) {
+                        width: fit-content !important;
+                    }
+                }
+            }
+        }
+    }
+}

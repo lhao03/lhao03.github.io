@@ -1,0 +1,13 @@
+total_fails = [
+  {year = 2021, fails = [
+    {title = "Did not get nominated for the Palantir Women in Technology Scholarship :("},
+    {title = "Rejected as a speaker/workshop host for Superposition V."},
+    {title = "Got some criticism on my project at work from someone I look up to.", blob = "I took that criticism pretty badly, and for the rest of the meeting I was unable to say anything else because I could not stop thinking about it. After reflecting, I realized this criticism wasn't targeted at me, but rather the project I was working on. One thing to always remember: You Are Not The Code You Write."},
+    {title = "I got a C in a Environmental Microbiology.", blob = "I really hated the course content, and on the last day of the drop deadline, there was one seat left in STAT 251 (that I should of taken), but I stayed enrolled in Environmental Microbiology. If you don't enjoy a course, don't feel bad for dropping it. Your time and money is valuable."},
+    {title = "I forgot to apply for UBC iGEM.", blob = "After rediscovering my love of chemistry, I was SO excited to find a club like UBC iGEM. However, when I opened up the application, I realized that I had put in the deadline date wrong; it was 2 days ago."},
+    {title = "Failed an Organic Chemistry quiz.", blob = "This one hits hard because I was planning to major in Chemistry, and it was my favorite course in high school. Since I took Chemistry HL as an IB student, I was able to skip first year chemistry, which meant I was quite rusty when I took CHEM 233, more than a year after my IB exams. For the future, I'll make to revisit my foundations!"},
+  ]},
+  {year = 2020, fails = [
+    {title = "Didn't get any internships for the summer.", blob = "This worked out pretty well because I rediscovered my love for chemistry! After taking some biology and chemistry courses during the summer I decided to minor in biochemistry."},
+  ]},
+]

@@ -1,0 +1,90 @@
+.songs {
+  display: flex;
+  justify-content: space-between;
+  .album {
+    border-radius: 15px;
+  }
+}
+
+.container {
+  .theme-toggle {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding-right: 5vw;
+    @media (max-width: 768px) {
+      padding-top: 5vh;
+    }
+  }
+  .intro-theme {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .header {
+      font-size: 2em;
+    }
+  }
+  .toggle {
+    display: none;
+  }
+  .toggle-label {
+    font-size: large;
+    p {
+      background-color: var(--accent-color);
+      width: fit-content;
+      padding: 5px;
+      border-radius: 5px;
+    }
+  }
+  .intro {
+    p {
+      line-height: 200%;
+      font-size: large;
+    }
+  }
+  .intro-display {
+    display: flex;
+    flex-direction: row;
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+    img.me {
+      height: 25vh;
+      @media (max-width: 768px) {
+        width: 25vw;
+      }
+    }
+  }
+  .me-fun {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .fun-facts {
+      margin-right: 2vw;
+      @media (max-width: 768px) {
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+    .songs {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .bio {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    img.profile-img {
+      border-radius: 15px;
+      width: 15vw;
+      @media (max-width: 768px) {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      }
+    }
+  }
+}

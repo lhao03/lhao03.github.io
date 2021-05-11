@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="post">
+  <h2>
+    {{ page.title }}
+  </h2>
+  <p class="subtitle">
+    <strong>
+      {{ page.date }}
+    </strong>
+  </p>
+  <p class="subtitle">
+    <strong>
+      {{ page.word_count }} words, {{ page.reading_time * 60}} seconds
+    </strong>
+  </p>
+  {% if page.toc and page.word_count > 400 %}
+  <div class="toc">
+    <ul>
+      {% for h1 in page.toc %}
+      <li>
+        <a class="highlight" href="{{h1.permalink | safe}}">{{ h1.title }}</a>
+        {% if h1.children %}
+        <ul>
+          {% for h2 in h1.children %}
+          <li>
+            <a class="highlight" href="{{h2.permalink | safe}}">{{ h2.title }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+  {{ page.content | safe }}
+  <a href="/blog" class="highlight"><span style="font-weight: bolder;">ᐊ</span> go back to the blog</a>
+</div>
+{% endblock content %}

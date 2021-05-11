@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% set fails_data = load_data(path="content/data/failures.toml") %}
+<h1 class="title">
+  🤷🏻‍♀️ fails
+</h1>
+
+<section>
+  <input id="permitted" type="checkbox" class="dropdown-check">
+  <label for="permitted">
+    <p>
+      <a class="arrow">ᐁ</a> Why did I make a failures page?
+    </p>
+  </label>
+  <div class="blocked">
+    <p>Well, when I first started university, I was so unsure of myself
+      and my abilities. For instance, in first year, I could barely wrap my head about git commands, but now I actually
+      prefer using git on the terminal vs. a user interface! Essentially, this section of my website serves as a
+      reminder to myself and everyone that failures are normal.
+    <p>I also read others' failure resumes and it helps me alot, so I hope my failure resume can help you too.</p>
+    </p>
+  </div>
+</section>
+
+{% for year_fails in fails_data.total_fails %}
+<h2>{{year_fails.year}}</h2>
+{% for fail in year_fails.fails %}
+<li>{{fail.title}}{% if fail.blob %}{{fail.blob}}{% endif %}</li>
+<!-- <section>
+  {% if fail.blob %}
+  <input id="{{fail.title}}" type="checkbox">
+  <label for="{{fail.title}}">
+    <p>
+      <a class="arrow">ᐁ</a> {{fail.title}}
+    </p>
+  </label>
+  {% else %}
+  <p>
+    {{fail.title}}
+  </p>
+  {% endif %}
+  <div class="blocked">
+    {% if fail.blob %}
+    <p>{{fail.blob}}</p>
+    {% endif %}
+  </div>
+</section> -->
+{% endfor %}
+{% endfor %}
+{% endblock content %}

@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="title">
+  {{ section.title }}
+</h1>
+<p class="statement">
+  Here you can check out blog posts on topics like computer science, my internships or just life.
+</p>
+{% for page in section.pages %}
+<div class="blog-intro">
+  <a class="highlight blog-title" href="{{ page.permalink | safe }}">{{ page.title }}</a>
+  {{ page.summary | safe }}
+</div>
+{% endfor %}
+{% endblock content %}
