@@ -76,14 +76,31 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    img.profile-img {
-      border-radius: 15px;
-      width: 15vw;
-      @media (max-width: 768px) {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
+    .profile-overlay {
+      position: relative;
+      img.profile-img {
+        border-radius: 15px;
+        width: 15vw;
+        @media (max-width: 768px) {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width: 50%;
+        }
+        &:hover ~ img.overlay {
+          transform: rotate(15deg);
+        }
+      }
+      img.overlay {
+        position: absolute;
+        left: 85%;
+        top: 60%;
+        width: 4vw;
+        @media (max-width: 768px) {
+          width: 12vw;
+          left: 65%;
+          top: -10%;
+        }
       }
     }
   }
