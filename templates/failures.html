@@ -24,15 +24,9 @@
 <h2>{{year_fails.year}}</h2>
 {% for fail in year_fails.fails %}
 <section id="single">
-  {% if fail.blob %}
   <input id="{{fail.title}}" type="checkbox">
   <label for="{{fail.title}}" id="dropdown-tri"></label>
   <label for="{{fail.title}}" id="text">{{fail.title}}</label>
-  {% else %}
-  <p>
-    {{fail.title}}
-  </p>
-  {% endif %}
   <div class="blocked">
     {% if fail.blob %}
     <p>{{fail.blob}}</p>
