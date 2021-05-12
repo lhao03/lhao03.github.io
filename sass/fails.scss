@@ -1,6 +1,34 @@
 // failure page
 .container {
     section {
+        #text {
+            padding-left: 20px;
+            padding-bottom: 5vh;
+        }
+        #dropdown-tri {
+            top: 24%;
+            position: relative;
+            transition: background 0.3s;
+            cursor: pointer;
+        }
+
+        #dropdown-tri:after {
+            content: "";
+            position: absolute;
+            top: 24%;
+            border-top: 15px solid var(--accent-color);
+            border-bottom: 0 solid var(--accent-color);
+            border-left: 7px solid transparent;
+            border-right: 7px solid transparent;
+            transition: border-bottom 0.1s, border-top 0.1s 0.1s;
+        }
+
+        input:checked ~ #dropdown-tri:after {
+            border-top: 0 solid var(--accent-color);
+            border-bottom: 15px solid var(--accent-color);
+            transition: border-top 0.1s, border-bottom 0.1s 0.1s;
+        }
+
         p {
             line-height: 150%;
             font-size: large;
@@ -24,25 +52,16 @@
         *:checked ~ p {
             display: contents;
         }
-        a.arrow {
-            font-size: large;
-            font-weight: bolder;
+        #text,
+        #dropdown-tri {
             -moz-user-select: -moz-none;
             -khtml-user-select: none;
             -webkit-user-select: none;
             -ms-user-select: none;
             user-select: none;
         }
-    }
-    .fails-bullet {
-        line-height: 150%;
-        font-size: large;
-        padding-bottom: 15px;
-    }
-    .dropdown {
-        display: none;
-        &:hover {
-            display: contents;
+        &#single{
+            margin-bottom: 10px;
         }
     }
 }

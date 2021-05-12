@@ -1,7 +1,7 @@
 total_fails = [
   {year = 2021, fails = [
-    {title = "Did not get nominated for the Palantir Women in Technology Scholarship :("},
-    {title = "Rejected as a speaker/workshop host for Superposition V."},
+    {title = "Did not get nominated for the Palantir Women in Technology Scholarship :(", blob="I wasn't confident enough to apply last year. Even though I didn't win, I still got some essay writing practice in."},
+    {title = "Rejected as a speaker/workshop host for Superposition V.", blob="I spent a large portin of time on the application. Oh well 🤷🏻‍♀️"},
     {title = "Got some criticism on my project at work from someone I look up to.", blob = "I took that criticism pretty badly, and for the rest of the meeting I was unable to say anything else because I could not stop thinking about it. After reflecting, I realized this criticism wasn't targeted at me, but rather the project I was working on. One thing to always remember: You Are Not The Code You Write."},
     {title = "I got a C in a Environmental Microbiology.", blob = "I really hated the course content, and on the last day of the drop deadline, there was one seat left in STAT 251 (that I should of taken), but I stayed enrolled in Environmental Microbiology. If you don't enjoy a course, don't feel bad for dropping it. Your time and money is valuable."},
     {title = "I forgot to apply for UBC iGEM.", blob = "After rediscovering my love of chemistry, I was SO excited to find a club like UBC iGEM. However, when I opened up the application, I realized that I had put in the deadline date wrong; it was 2 days ago."},

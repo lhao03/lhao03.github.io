@@ -8,11 +8,8 @@
 
 <section>
   <input id="permitted" type="checkbox" class="dropdown-check">
-  <label for="permitted">
-    <p>
-      <a class="arrow">ᐁ</a> Why did I make a failures page?
-    </p>
-  </label>
+  <label for="permitted" id="dropdown-tri"></label>
+  <label for="permitted" id="text">Why did I make a failures page?</label>
   <div class="blocked">
     <p>Well, when I first started university, I was so unsure of myself
       and my abilities. For instance, in first year, I could barely wrap my head about git commands, but now I actually
@@ -26,14 +23,11 @@
 {% for year_fails in fails_data.total_fails %}
 <h2>{{year_fails.year}}</h2>
 {% for fail in year_fails.fails %}
-<section>
+<section id="single">
   {% if fail.blob %}
   <input id="{{fail.title}}" type="checkbox">
-  <label for="{{fail.title}}">
-    <p>
-      <a class="arrow">ᐁ</a> {{fail.title}}
-    </p>
-  </label>
+  <label for="{{fail.title}}" id="dropdown-tri"></label>
+  <label for="{{fail.title}}" id="text">{{fail.title}}</label>
   {% else %}
   <p>
     {{fail.title}}
