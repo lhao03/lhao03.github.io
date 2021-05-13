@@ -39,3 +39,13 @@ A memory that haunts me during this period, was the time my family also went on 
 
 You can read about Anita's experience here:
 https://medium.com/@anitamtse/reverse-engineering-my-13-year-old-state-of-mind-b70507014ca8
+
+notes:
+Eating Disorders: What No One Talks About
+I am NOT a dietitian, but I have had several eating disorders. These are my experiences and my life is today because of them. 
+Anorexia
+Orthorexia
+This is one of the hardest eating disorders to diagnose. What may start out as an intention to eat healthier can turn into an obsession of eating healthier. At some point of your life you have probably heard that carbohydrates cause weight gain. By extension, fruit becomes the enemy. Bread, rice, potatoes all become off limit foods. By age 15 I had convinced myself that I was allergic to bread. I had also adopted veganism, because of I had heard claims that meat was the cause of weight gain. And on top of that, I decided that I was going to track my calories. From the outside, you would of never be able to see me spiral into an obsession of weighing and label checking. In fact, most people commented on how disciplined I was and how clean I was eating.  Yes, I did lose weight. But I also lost years of my teenage life. I would obsessively weight my foods, throw temper tantrums when forced to eat anything my mother made, and severed all forms of relationships. I wouldn't have seen it either. But it happened. And the symptoms came along too. My hair started falling out, and my nails were brittle and blue. And an event integral to a girl's health, her period, also disappeared. My iron levels were low and for some reason I had high cholesterol.
+Binge Eating Disorder 
+Today 
+So please. Take nutrition and dieting advice with a grain of salt, and only from legitimate studies and individuals with valid credentials.
