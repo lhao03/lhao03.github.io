@@ -21,15 +21,17 @@
     </div>
     {{experience.desc}}
   </div>
-  {% if experience.links %}
-  {% for link in experience.links %}
-  {% if loop.last %}
-  <a href="{{link.link}}" class="highlight" target="_blank">{{link.name}}</a>
-  {% else %}
-  <a href="{{link.link}}" class="highlight" target="_blank">{{link.name}}</a> |
-  {% endif %}
-  {% endfor %}
-  {% endif %}
+  <div class="links">
+    {% if experience.links %}
+    {% for link in experience.links %}
+    {% if loop.last %}
+    <a href="{{link.link}}" class="highlight" target="_blank">{{link.name}}</a>
+    {% else %}
+    <a href="{{link.link}}" class="highlight" target="_blank">{{link.name}}</a> |
+    {% endif %}
+    {% endfor %}
+    {% endif %}
+  </div>
 </div>
 {% endfor %}
 

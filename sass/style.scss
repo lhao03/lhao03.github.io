@@ -164,12 +164,15 @@ a {
   color: var(--accent-color);
 }
 
-.highlight {
-  color: var(--text-color);
-  text-decoration: underline;
-  text-decoration-color: var(--accent-color);
-  &:hover {
-    background-color: var(--accent-color);
+.highlight, li > a {
+  color: var(--font-color);
+  background: linear-gradient(90deg, var(--accent-color) 0%, var(--accent-color) 100%) no-repeat 0 100%;
+  background-size: 100% 2px;
+  text-decoration: none;
+  transition: background-size 0.3s;
+  &:hover,
+  &:focus {
+    background-size: 100% 100%;
   }
 }
 

@@ -2,8 +2,12 @@
 
 [![Build and deploy GH Pages](https://github.com/lhao03/lhao03.github.io/actions/workflows/main.yml/badge.svg)](https://github.com/lhao03/lhao03.github.io/actions/workflows/main.yml)
 
-## now with dark mode!
-- some codes used are from http://jzhao.xyz/
+## codes i yoinked:
+- for dark mode: http://jzhao.xyz/
+- for highlight thingy: https://github.com/rmehri01/Personal-Website
+
+## websites i was inspired by (in no particular order):
+- https://justina.tech/, http://jzhao.xyz/, https://www.katmh.com/, http://joicetang.com/, https://kristen.dev/
 
 ## why hugo to zola? and css to scss?
 - hugo docs are confusing

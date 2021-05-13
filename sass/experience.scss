@@ -5,6 +5,12 @@
     padding: 15px;
     border-radius: 25px;
     border: 2px solid var(--accent-color);
+    .links {
+      margin-top: 10px;
+      a {
+        font-weight: bold;
+      }
+    }
     .info {
       .img-title {
         display: flex;
