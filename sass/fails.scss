@@ -16,19 +16,17 @@
             content: "";
             position: absolute;
             top: 24%;
-            border-top: 7px solid transparent;
-            border-bottom: 7px solid transparent;
+            border-top: 6px solid transparent;
+            border-bottom: 6px solid transparent;
             border-left: 15px solid var(--accent-color);
             border-right: 0 solid var(--accent-color);
-            transition: border-bottom 0.05s, border-left 0.05s 0.05s;
         }
 
         input:checked ~ #dropdown-tri:after {
             border-top: 15px solid var(--accent-color);
             border-bottom: 0 solid var(--accent-color);
-            border-left: 7px solid transparent;
-            border-right: 7px solid transparent;
-            transition: border-bottom 0.05s, border-right 0.05s 0.05s;
+            border-left: 6px solid transparent;
+            border-right: 6px solid transparent;
         }
 
         p {

@@ -164,15 +164,15 @@ a {
   color: var(--accent-color);
 }
 
-.highlight {
+.highlight, li > a {
   color: var(--font-color);
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 50%, var(--accent-color) 50% 50%);
-  background-position: -0% 0;
-  background-size: 200% auto;
+  background: linear-gradient(90deg, var(--accent-color) 0%, var(--accent-color) 100%) no-repeat 0 100%;
+  background-size: 100% 2px;
   text-decoration: none;
-  transition: background-position 0.5s ease-out;
-  &:hover {
-    background-position: -99.99% 0;
+  transition: background-size 0.3s;
+  &:hover,
+  &:focus {
+    background-size: 100% 100%;
   }
 }
 
