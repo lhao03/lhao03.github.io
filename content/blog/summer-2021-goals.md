@@ -1,7 +1,7 @@
 +++
 title = "🌻 2021 Summer Goals"
 date = 2021-05-15
-draft = false
+draft = true
 +++
 
 ## improving on things I already do
