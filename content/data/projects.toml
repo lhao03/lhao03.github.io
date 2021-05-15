@@ -20,9 +20,9 @@ list_of_experiences = [
     ], desc = "Co-leading the development of an app that aims to gamifiy the rehabilitation process for multiple sclerosis patients. The app is being built in Kotlin Multiplatform and the backend is developed with a Express and Flask server.", date = "Sep 2020 - now", pos = "Co-lead Developer", img = "ubcbest.png"},
   ]},
   {title = "🎤 speaking", loe = [
-    {name = "Intro to Git and Github Workshop + Intro to Python Workshop", links = [
+    {name = "Workshop Host", links = [
       {name = "git slides", link = "https://docs.google.com/presentation/d/1xVRuH7d_RnAxXF4DuahZ-9Wp66EoII5UDYWd1pphB3c/edit?usp=sharing"},
       {name = "python slides", link = "https://docs.google.com/presentation/d/1OSzLNZKXhTTMFPj_6b_e1IlqDr6DIt3mJU_ShCAg6x8/edit?usp=sharing"},
-    ], desc = "Led 2 workshops for around 60 hackers in virtual setting.", date = "Jan 2021", pos = "StarHacks", img = "starhacks.png"},
+    ], desc = "Led an Intro to Git/Github workshop and Intro to Python workshop for around 60 hackers in virtual setting.", date = "Jan 2021", pos = "StarHacks", img = "starhacks.png"},
   ]},
 ]
