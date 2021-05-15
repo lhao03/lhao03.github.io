@@ -6,13 +6,13 @@ list_of_experiences = [
     {name = "PROOF Centre", links = [
       {name = "main", link = "http://www.proofcentre.ca/"},
       {name = "preprint", link = "https://www.medrxiv.org/content/10.1101/2021.05.04.21256134v1"},
-    ], desc = "Working on an NLP pipeline to automate extraction of surgical details from variety of pathological and surgical reports in PDF format. Using with Python, scispaCy, spacy, pandas and regular patterns. Created novel algorithms to deal with biomedical text. Achieved 90.6% validation accuracy.", date = "Jan - May 2021", pos = "Software Developer Intern", img = "proof.png"},
-    {name = "UBC Faculty of Science", desc = "Running three labs with 6 students per lab in CPSC 210 - Software Construction. CPSC 210 is taught in Java and focusses on Test Driven Design and Object Oriented programming.", date = "Jan - Apr 2021", pos = "Teaching Assistant", img = "ubc.png"},
+    ], desc = "Working on an natural language processing pipeline prototype to automate extraction of patient data from clinical notes in PDF format. Pipeline built from scratch with Python, scispaCy, spacy, pandas and regular patterns. Created novel algorithms to deal with biomedical text pertaining to breast cancer. Met with data scientists, UBC faculty members, and medical professionals to update them on pipeline progress and request feedback. Achieved ~90% validation accuracy", date = "Jan - May 2021", pos = "Software Developer Intern", img = "proof.png"},
+    {name = "UBC Faculty of Science", desc = "Ran three labs with 6 students per lab in CPSC 210 - Software Construction. CPSC 210 is taught in Java and focusses on Test Driven Design and Object Oriented programming. Also marked exams and took put in testing exam questions.", date = "Jan - Apr 2021", pos = "Teaching Assistant", img = "ubc.png"},
     {name = "StarHacks", links = [
       {name = "main", link = "https://www.starhacks.tech/"},
       {name = "devpost", link = "https://starhacks.devpost.com/project-gallery"},
-    ], desc = "I lead outreach operations at StarHacks which deals with creating content to post on our Instagram, reaching out to other organizations to promote our event, and creating monthly newsletters. To accomplish my role I use tools such as Canva, Figma and MailChimp. StarHacks had 800+ registrants and 350+ attendees. I also ran two workshops, Intro to Python and Intro to Git/Github for 60+ participants.", date = "Sep 2020 - now", pos = "Director of Outreach and Technology", img = "starhacks.png"},
-    {name = "M2M - UBC BEST", links = [
+    ], desc = "I lead outreach operations at StarHacks which deals with creating content to post on our Instagram, reaching out to other organizations to promote our event, and creating monthly newsletters. To accomplish my role I use tools such as Canva, Figma and MailChimp. StarHacks had 800+ registrants and 350+ attendees.", date = "Sep 2020 - now", pos = "Director of Outreach and Technology", img = "starhacks.png"},
+    {name = "UBC BEST", links = [
       {name = "club site", link = "http://www.ubcbest.com/"},
       {name = "github", link = "https://github.com/UBC-BEST"},
       {name = "backend", link = "https://github.com/UBC-BEST/backend-m2m"},
