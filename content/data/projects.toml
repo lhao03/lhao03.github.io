@@ -1,28 +1,52 @@
-# { name = "", links = [ { name = "", link = "" } ], desc = "", date = "", pos = "" , img=""}
+# { name = "", links = [ { name = "", link = "" } ], desc = [""], date = "", pos = "" , img=""}
 
 list_of_experiences = [
   {title = "💫 work++", loe = [
-    {name = "nwPlus", links = [{name = "main", link = "https://www.nwplus.io/"}], desc = "Just getting started!", date = "May 2021 - now", pos = "Marketing Coordinator", img = "nwplus.png"},
+    {name = "nwPlus", links = [{name = "main", link = "https://www.nwplus.io/"}], desc = ["Just getting started!"], date = "May 2021 - now", pos = "Marketing Coordinator", img = "nwplus.png"},
     {name = "PROOF Centre", links = [
       {name = "main", link = "http://www.proofcentre.ca/"},
       {name = "preprint", link = "https://www.medrxiv.org/content/10.1101/2021.05.04.21256134v1"},
-    ], desc = "Working on an natural language processing pipeline prototype to automate extraction of patient data from clinical notes in PDF format. Pipeline built from scratch with Python, scispaCy, spacy, pandas and regular patterns. Created novel algorithms to deal with biomedical text pertaining to breast cancer. Met with data scientists, UBC faculty members, and medical professionals to update them on pipeline progress and request feedback. Achieved ~90% validation accuracy", date = "Jan - May 2021", pos = "Software Developer Intern", img = "proof.png"},
-    {name = "UBC Faculty of Science", desc = "Ran three labs with 6 students per lab in CPSC 210 - Software Construction. CPSC 210 is taught in Java and focusses on Test Driven Design and Object Oriented programming. Also marked exams and took put in testing exam questions.", date = "Jan - Apr 2021", pos = "Teaching Assistant", img = "ubc.png"},
+    ], desc = [
+      "Under Professor Raymond Ng, Dr. Kathryn Isaac, and Dr. Zsuzsanna Hollander, designed and implemented a natural language processing pipeline prototype to automate the extraction of patient information from clinical notes.",
+      "Worked on existing pipeline that was hardcoded and rigid, to eventually be able to extract information from any type of report.",
+      "Pipeline built from scratch with Python, scispaCy, spacy, pandas and regular patterns.",
+      "Reduced lines of Python by 10%, while maintaining or increasing the pipeline accuracy.",
+      "Created regular pattern generation algorithm that generates a unique regular pattern for any given set of columns from a report.",
+      "Also created algorithms to process biomedical text pertaining to breast cancer such as pathologic stage and special acronyms.",
+      "Met weekly with data scientists, UBC faculty members, and medical professionals to give presentations on pipeline progress and request feedback.",
+      "Achieved ~90% validation accuracy.",
+      "Was the only intern working at PROOF Centre.",
+    ], date = "Jan - May 2021", pos = "Software Developer Intern", img = "proof.png"},
+    {name = "UBC Faculty of Science", desc = [
+      "Ran three labs with 6 students per lab in CPSC 210 - Software Construction.",
+      "Held weekly TA hours to asnwer student questions.",
+      "CPSC 210 is taught in Java and focusses on Test Driven Design and Object Oriented programming.",
+      "Invigilated, marked and tested exam questions.",
+    ], date = "Jan - Apr 2021", pos = "Teaching Assistant", img = "ubc.png"},
     {name = "StarHacks", links = [
       {name = "main", link = "https://www.starhacks.tech/"},
       {name = "devpost", link = "https://starhacks.devpost.com/project-gallery"},
-    ], desc = "I lead outreach operations at StarHacks which deals with creating content to post on our Instagram, reaching out to other organizations to promote our event, and creating monthly newsletters. To accomplish my role I use tools such as Canva, Figma and MailChimp. StarHacks had 800+ registrants and 350+ attendees.", date = "Sep 2020 - now", pos = "Director of Outreach and Technology", img = "starhacks.png"},
+      {name = "instagram", link = "https://www.instagram.com/star.hacks/"},
+    ], desc = [
+      "Led outreach operations for the first iteration of StarHacks (800+ registrants and 350+ attendees).",
+      "Created content to post on Instagram, reached out to other organizations to promote our event, and wrote monthly newsletters.",
+      "Used tools such as Canva, Figma and MailChimp.",
+      "Moderated Discord channel of over 300+ users.",
+    ], date = "Sep 2020 - now", pos = "Director of Outreach and Technology", img = "starhacks.png"},
     {name = "UBC BEST", links = [
       {name = "club site", link = "http://www.ubcbest.com/"},
       {name = "github", link = "https://github.com/UBC-BEST"},
       {name = "backend", link = "https://github.com/UBC-BEST/backend-m2m"},
       {name = "frontend", link = "https://github.com/UBC-BEST/frontend-m2m"},
-    ], desc = "Co-leading the development of an app that aims to gamifiy the rehabilitation process for multiple sclerosis patients. The app is being built in Kotlin Multiplatform and the backend is developed with a Express and Flask server.", date = "Sep 2020 - now", pos = "Co-lead Developer", img = "ubcbest.png"},
+    ], desc = [
+      "Co-leading the development of an app that aims to gamifiy the rehabilitation process for multiple sclerosis patients.",
+      "The app is being built in Kotlin Multiplatform and the backend is developed with a Express and Flask server.",
+    ], date = "Sep 2020 - now", pos = "Co-lead Developer", img = "ubcbest.png"},
   ]},
   {title = "🎤 speaking", loe = [
     {name = "Workshop Host", links = [
       {name = "git slides", link = "https://docs.google.com/presentation/d/1xVRuH7d_RnAxXF4DuahZ-9Wp66EoII5UDYWd1pphB3c/edit?usp=sharing"},
       {name = "python slides", link = "https://docs.google.com/presentation/d/1OSzLNZKXhTTMFPj_6b_e1IlqDr6DIt3mJU_ShCAg6x8/edit?usp=sharing"},
-    ], desc = "Led an Intro to Git/Github workshop and Intro to Python workshop for around 60 hackers in virtual setting.", date = "Jan 2021", pos = "StarHacks", img = "starhacks.png"},
+    ], desc = ["Led an Intro to Git/Github workshop and Intro to Python workshop for around 60 hackers in virtual setting."], date = "Jan 2021", pos = "StarHacks", img = "starhacks.png"},
   ]},
 ]

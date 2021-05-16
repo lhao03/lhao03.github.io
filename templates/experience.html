@@ -28,7 +28,9 @@
   <label for="{{experience.name}}" id="up-down"></label>
   <div class="blocked">
     <div class="desc">
-      {{experience.desc}}
+      {% for sent in experience.desc %}
+      {{ sent }}
+      {% endfor %}
     </div>
     <div class="links">
       {% if experience.links %}
