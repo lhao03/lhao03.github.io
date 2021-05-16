@@ -1,29 +1,80 @@
 .container {
-  .experience {
+  #experience {
     height: fit-content;
-    margin-bottom: 3vw;
-    padding: 15px;
+    margin-bottom: 2vh;
+    margin-top: 0;
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
     border-radius: 25px;
     border: 2px solid var(--accent-color);
-    .links {
-      margin-top: 10px;
-      a {
-        font-weight: bold;
+    .img-title {
+      display: flex;
+      flex-direction: row;
+      img {
+        height: 5vw;
+        border-radius: 10px;
+        margin-right: 5px;
+        @media (max-width: 768px) {
+          height: 40px;
+        }
       }
-    }
-    .info {
-      .img-title {
-        display: flex;
-        flex-direction: row;
-        margin-bottom: 15px;
-        img {
-          height: 5vw;
-          border-radius: 10px;
-          margin-right: 5px;
-          @media (max-width: 768px) {
-            height: 10vh;
+      .title-info {
+        .date-job {
+          display: flex;
+          flex-direction: row;
+          & > p {
+            font-size: 15px;
           }
         }
+        margin-left: 10px;
+        & > h3 {
+          @media (max-width: 768px) {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+    input {
+      display: none;
+    }
+    #up-down {
+      bottom: 0px;
+      margin-left: 98%;
+      position: relative;
+      transition: background 0.3s;
+      cursor: pointer;
+    }
+    #up-down:after {
+      content: "";
+      position: absolute;
+      bottom: 70px;
+      margin-left: 80%;
+      border-top: 15px solid var(--accent-color);
+      border-bottom: 0 solid var(--accent-color);
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+    }
+    input:checked ~ #up-down:after {
+      border-top: 0 solid var(--accent-color);
+      border-bottom: 15px solid var(--accent-color);
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+    }
+    .blocked {
+      display: none;
+    }
+    *:checked ~ .blocked {
+      display: contents;
+    }
+    *:checked ~ p {
+      display: contents;
+    }
+    .links {
+      margin-top: 10px;
+      margin-bottom: 25px;
+      a {
+        font-weight: bold;
       }
     }
     p,

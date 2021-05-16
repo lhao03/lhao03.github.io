@@ -8,31 +8,42 @@
 {% for title_experiences in projects_data.list_of_experiences %}
 <h2>{{title_experiences.title}}</h2>
 {% for experience in title_experiences.loe %}
-<div class="experience">
-  <div class="info">
+<section id="experience">
+  <input id="{{experience.name}}" type="checkbox" class="dropdown-check">
+  <label for="{{experience.name}}">
     <div class="img-title">
       {% if experience.img %}
-      <img class="" src="/res/{{experience.img}}" alt="">
+      <img src="/res/{{experience.img}}" alt="">
       {% endif %}
-      <div class="names">
-        <h3>{{experience.name}}</h3>
-        <p>{{experience.date}}, {{experience.pos}} </p>
+      <div class="title-info">
+        <h3 class="exp-title">{{experience.name}}</h3>
+        <div class="date-job mobile-col">
+        <p>{{experience.date}}</p>
+        <p class="mobile-hide">, {{experience.pos}}</p>
+        <p class="desktop-hide">{{experience.pos}}</p>
+        </div>
       </div>
     </div>
-    {{experience.desc}}
+  </label>
+  <label for="{{experience.name}}" id="up-down"></label>
+  <div class="blocked">
+    <div class="desc">
+      {{experience.desc}}
+    </div>
+    <div class="links">
+      {% if experience.links %}
+      {% for link in experience.links %}
+      {% if loop.last %}
+      <a href="{{link.link}}" class="highlight" target="_blank">{{link.name}}</a>
+      {% else %}
+      <a href="{{link.link}}" class="highlight" target="_blank">{{link.name}}</a> |
+      {% endif %}
+      {% endfor %}
+      {% endif %}
+    </div>
   </div>
-  <div class="links">
-    {% if experience.links %}
-    {% for link in experience.links %}
-    {% if loop.last %}
-    <a href="{{link.link}}" class="highlight" target="_blank">{{link.name}}</a>
-    {% else %}
-    <a href="{{link.link}}" class="highlight" target="_blank">{{link.name}}</a> |
-    {% endif %}
-    {% endfor %}
-    {% endif %}
-  </div>
-</div>
+</section>
+
 {% endfor %}
 
 {% endfor %}
