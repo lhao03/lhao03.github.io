@@ -2,7 +2,7 @@
 
 list_of_experiences = [
   {title = "💫 work++", loe = [
-    {name = "nwPlus", links = [{name = "main", link = "https://www.nwplus.io/"}], desc = ["Just getting started!"], date = "May 2021 - now", pos = "Marketing Coordinator", img = "nwplus.png"},
+    {name = "nwPlus", links = [{name = "main", link = "https://www.nwplus.io/"}], desc = ["Just getting started!"], date = "May 2021 - now", pos = "Marketing Coordinator", img = "nwplus.png", order=1},
     {name = "PROOF Centre", links = [
       {name = "main", link = "http://www.proofcentre.ca/"},
       {name = "preprint", link = "https://www.medrxiv.org/content/10.1101/2021.05.04.21256134v1"},
@@ -16,13 +16,13 @@ list_of_experiences = [
       "Achieved ~90% validation accuracy on 100 unseen clinical notes.",
       "Gave weekly presentations to medical professionals, faculty members, and data scientists to show progress on pipeline and request feedback.",
       "Was the only co-op student working under Professor Raymond Ng, Dr. Kathryn Isaac, and Dr. Zsuzsanna Hollander.",
-    ], date = "Jan - May 2021", pos = "Software Developer Intern", img = "proof.png"},
+    ], date = "Jan - May 2021", pos = "Software Developer Intern", img = "proof.png", order=4},
     {name = "UBC Faculty of Science", desc = [
       "Ran three labs with 6 students per lab in CPSC 210 - Software Construction.",
-      "Held weekly TA hours to asnwer student questions.",
       "CPSC 210 is taught in Java and focusses on Test Driven Design and Object Oriented programming.",
+      "Held weekly TA hours to asnwer student questions.",
       "Invigilated, marked and tested exam questions.",
-    ], date = "Jan - Apr 2021", pos = "Teaching Assistant", img = "ubc.png"},
+    ], date = "Jan - Apr 2021", pos = "Teaching Assistant", img = "ubc.png", order=5},
     {name = "StarHacks", links = [
       {name = "main", link = "https://www.starhacks.tech/"},
       {name = "devpost", link = "https://starhacks.devpost.com/project-gallery"},
@@ -33,7 +33,7 @@ list_of_experiences = [
       "Grew Instagram followers by 300% (414 to 1250+).",
       "Used tools such as Canva and Figma to create engaging content.",
       "Moderated the Discord community used to facilitate the event and set up bots to remind hackers of the schedule.",
-    ], date = "Sep 2020 - now", pos = "Director of Outreach and Technology", img = "starhacks.png"},
+    ], date = "Sep 2020 - now", pos = "Director of Outreach and Technology", img = "starhacks.png", order=2},
     {name = "UBC BEST", links = [
       {name = "club site", link = "http://www.ubcbest.com/"},
       {name = "github", link = "https://github.com/UBC-BEST"},
@@ -42,15 +42,15 @@ list_of_experiences = [
     ], desc = [
       "Co-leading a team of 5-10 students to development an app gamifies the rehabilitation process for multiple sclerosis patients.",
       "The app is being built in Kotlin Multiplatform and the backend is developed with a Express and Flask server.",
-    ], date = "Sep 2020 - now", pos = "Co-lead Developer", img = "ubcbest.png"},
+    ], date = "Sep 2020 - now", pos = "Co-lead Developer", img = "ubcbest.png", order=3},
   ]},
   {title = "🎤 speaking", loe = [
     {name = "Panelist", links = [
       {name = "organization site", link = "https://joytojob.com/"},
-    ], desc = ["Answered questions about internships, computer science, and university life to about 40 attendees."], date = "May 2021", pos = "Joy to Job", img = "joytojob.png"},
+    ], desc = ["Answered questions about internships, computer science, and university life to about 40 attendees."], date = "May 2021", pos = "Joy to Job", img = "joytojob.png", order=1},
     {name = "Workshop Host", links = [
       {name = "git slides", link = "https://docs.google.com/presentation/d/1xVRuH7d_RnAxXF4DuahZ-9Wp66EoII5UDYWd1pphB3c/edit?usp=sharing"},
       {name = "python slides", link = "https://docs.google.com/presentation/d/1OSzLNZKXhTTMFPj_6b_e1IlqDr6DIt3mJU_ShCAg6x8/edit?usp=sharing"},
-    ], desc = ["Led an Intro to Git/Github workshop and Intro to Python workshop for around 60 hackers in virtual setting."], date = "Jan 2021", pos = "StarHacks", img = "starhacks.png"},
+    ], desc = ["Led an Intro to Git/Github workshop and Intro to Python workshop for around 60 hackers in virtual setting."], date = "Jan 2021", pos = "StarHacks", img = "starhacks.png", order=2},
   ]},
 ]

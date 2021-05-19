@@ -1,13 +1,14 @@
 {% extends "base.html" %}
 
 {% block content %}
-{% set projects_data = load_data(path="content/data/projects.toml") %}
+{% set projects_data = load_data(path="content/data/experiences.toml") %}
 
 <h1 class="title">👩🏻‍💻 experience</h1>
-<p>Read more about my experiences!</p>
+<p>Read more about my work and extra curricular experiences!</p>
 {% for title_experiences in projects_data.list_of_experiences %}
 <h2>{{title_experiences.title}}</h2>
-{% for experience in title_experiences.loe %}
+{% set loe_data = title_experiences.loe | sort(attribute="order") %}
+{% for experience in loe_data %}
 <section id="experience">
   <input id="{{experience.name}}" type="checkbox" class="dropdown-check">
   <label for="{{experience.name}}">
