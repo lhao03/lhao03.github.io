@@ -7,15 +7,15 @@
   <link rel="preconnect" href="https://www.google-analytics.com" />
 
   <!-- basic favicon -->
-  <link rel="icon" href="{{get_url(path="favicon.png")}}" />
+  <link rel="icon" href="{{get_url(path=data.img_path)}}" />
   <!-- third-generation iPad with high-resolution Retina display: -->
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{get_url(path="android-chrome-512x512.png")}}">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{get_url(path=data.android_chrome_favicon)}}">
   <!-- iPhone with high-resolution Retina display: -->
-  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{get_url(path="android-chrome-512x512.png")}}">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{get_url(path=data.android_chrome_favicon)}}">
   <!-- first- and second-generation iPad: -->
-  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{get_url(path="android-chrome-512x512.png")}}">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{get_url(path=data.android_chrome_favicon)}}">
   <!-- non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
-  <link rel="apple-touch-icon-precomposed" href="{{get_url(path="favicon.png")}}">
+  <link rel="apple-touch-icon-precomposed" href="{{get_url(path=data.img_path)}}">
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154930983-1"></script>
@@ -46,14 +46,14 @@
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:title" content="Lucy Hao | Computer Science Student at UBC">
   <meta property="twitter:description" content="✨ I'm a chemistry nerd and aspiring developer!">
-  <meta property="twitter:image" content="{{get_url(path="/res/emoji.png")}}">
+  <meta property="twitter:image" content="{{get_url(path=data.emoji_path)}}">
 
   <!-- Other Meta tags -->
   <meta charset="UTF-8" />
   <meta name="description" content="Lucy Hao | Computer Science Student at UBC" />
-  <meta property="og:image" content="{{get_url(path="/res/emoji.png")}}">
+  <meta property="og:image" content="{{get_url(path=data.emoji_path)}}">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="{{get_url(path="style.css")}}">
+  <link rel="stylesheet" href="{{get_url(path=data.css_path)}}">
 </head>
 
 <body>
@@ -70,7 +70,7 @@
         <input class=toggle id=darkmode-toggle type=checkbox tabindex=-1>
         <label for="darkmode-toggle" class="toggle-label">
           <p class="theme-text unselectable">☀️ 🌑</p>
-      </label>
+        </label>
       </div>
       {% block content %} {% endblock %}
       <footer>
@@ -86,7 +86,7 @@
       </footer>
     </div>
   </section>
-  <script src="{{get_url(path="darkmode.js")}}"></script>
+  <script src="{{get_url(path=data.js_path)}}"></script>
 </body>
 
 

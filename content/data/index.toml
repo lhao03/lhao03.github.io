@@ -6,19 +6,20 @@ facts = [
   "👀 I'm a visual learner!",
 ]
 
-songs = [
-  "https://open.spotify.com/embed/track/2Tw2V8Ps4GuzZfcSwJufQ8",
-  "https://open.spotify.com/embed/track/37LhFxchiyAJVop5JgRZgY",
-  "https://open.spotify.com/embed/track/0pYacDCZuRhcrwGUA5nTBe",
-]
-
 album = "https://open.spotify.com/embed/playlist/5Vs2cWZGubAzDw3QLeCog6"
-
+android_chrome_favicon = "android-chrome-512x512.png"
+css_path = "style.css"
 current_job = "http://www.proofcentre.ca/"
 email = "mailto:hao.lucyy@gmail.com"
+emoji_path = "/res/new-emoji-bg.png"
 github = "https://github.com/lhao03"
 goose_game = "https://goose.game/"
+img_path = "favicon.png"
+js_path = "darkmode.js"
 linkedin = "https://linkedin.com/in/lucy-hao"
+profile_img = "/res/profile.jpg"
+resume = "/res/resume_may_lucy.pdf"
+sparkle_path = "/res/sparkle.png"
 starhacks = "https://www.starhacks.tech/"
 ta_course = "https://courses.students.ubc.ca/cs/courseschedule?pname=subjarea&tname=subj-course&dept=CPSC&course=210"
 twitter = "https://twitter.com/hoalycu"
@@ -33,8 +34,6 @@ people = [
   {name = "Dr. Kathryn Isaac", link = "https://surgery.med.ubc.ca/people/k-isaac/"},
   {name = "Dr. Zsuzsanna Hollander", link = "http://www.proofcentre.ca/subscribe/our-team/management-team/dr-zsuzsanna-hollander/"},
 ]
-
-img_path = "favicon.png"
 
 links = [
   {name = "email", link = "mailto:hao.lucyy@gmail.com"},

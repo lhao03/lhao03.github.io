@@ -18,17 +18,17 @@
         My favorite game is the <a href={{data.goose_game}} class="highlight" target="_blank">Untitled Goose Game</a>
         and I enjoy drawing out organic chemistry reaction pathways.
       </p>
-      <img class="me mobile-hide" src="{{get_url(path="/res/new-emoji-bg.png")}}" alt="">
+      <img class="me mobile-hide" src="{{get_url(path=data.emoji_path)}}" alt="">
     </div>
     <h2>👩🏻‍💻 What am I doing?</h2>
     <p>
-      I'm a 2nd year <a class="highlight" href={{data.ubc_cs}} target="_blank">👩🏻‍💻 Computer Science</a> major and
-      <a href="{{data.ubc_bchem}}" target="_blank" class="highlight">🧬 Biochemistry</a> minor at the
+      I study <a class="highlight" href={{data.ubc_cs}} target="_blank">👩🏻‍💻 Computer Science</a> major and
+      <a href="{{data.ubc_bchem}}" target="_blank" class="highlight">🧬 Biochemistry</a> at the
       <a href="{{data.ubc}}" class="highlight" target="_blank">University of British Columbia</a>.
       Check out the courses I've taken <a href="/school/" class="highlight">here</a>!
     </p>
     <p>
-      Currently, I'm interning at <a class="highlight" href="{{data.current_job}}" target="_blank">The Centre of
+      I'm also an intern at <a class="highlight" href="{{data.current_job}}" target="_blank">The Centre of
         Excellence for Prevention of
         Organ Failure</a>, a biotechnology not-for-profit organization. Under
       {% for person in data.people %}
@@ -40,10 +40,10 @@
       {% endfor %} we are working towards automating the extraction of patient information from clinical notes.
     </p>
     <p>
-      Outside of school and work, I'm the Director of Outreach and Technology at <a href={{data.starhacks}}
-        class="highlight" target="_blank">StarHacks</a>, an organization striving to create spaces for gender minorities
+      Outside of school and work, I help market and organize events for <a href={{data.starhacks}} class="highlight"
+        target="_blank">StarHacks</a>, an organization striving to create spaces for gender minorities
       in computer science.
-      Additionally, I co-lead the software development of <a href={{data.ubc_best_gh}} class="highlight">M2M</a>, a
+      Additionally, I'm writing code for <a href={{data.ubc_best_gh}} class="highlight">M2M</a>, a
       project under <a class="highlight" href={{data.ubc_best}} target="_blank">UBC's
         Biomedical Engineering Student Team</a>.
     </p>
@@ -63,13 +63,13 @@
     </div>
     <div class="bio mobile-col">
       <p>✨ Feel free to <a href={{data.email}} class="highlight">email me</a>
-        and/or check out my <a class="highlight" href="{{get_url(path="/res/resume.pdf")}}" target="_blank">resume</a>!
+        and/or check out my <a class="highlight" href="{{get_url(path=data.resume)}}" target="_blank">resume</a>!
         You can also see some 🍝 spaghetti code on my <a href="{{data.github}}" class="highlight">github</a>, or shout
         at me on <a href="{{data.twitter}}" class="highlight">twitter</a>.
       </p>
       <div class="profile-overlay">
-        <img class="profile-img" src="{{get_url(path="/res/profile.jpg")}}" alt="/res/profile.png" />
-        <img src="{{get_url(path="/res/sparkle.png")}}" alt="" class="overlay">
+        <img class="profile-img" src="{{get_url(path=data.profile_img)}}" alt="/res/profile.png" />
+        <img src="{{get_url(path=data.sparkle_path)}}" alt="" class="overlay">
       </div>
     </div>
   </div>
