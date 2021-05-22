@@ -20,7 +20,7 @@
       </p>
       <img class="me mobile-hide" src="{{get_url(path=data.emoji_path)}}" alt="">
     </div>
-    <h2>👩🏻‍💻 What am I doing?</h2>
+    <h2>👩🏻‍💻 What am I up to now?</h2>
     <p>
       I study <a class="highlight" href={{data.ubc_cs}} target="_blank">👩🏻‍💻 Computer Science</a> and
       <a href="{{data.ubc_bchem}}" target="_blank" class="highlight">🧬 Biochemistry</a> at the
@@ -28,7 +28,16 @@
       Check out the courses I've taken <a href="/school/" class="highlight">here</a>!
     </p>
     <p>
-      I'm also an intern at <a class="highlight" href="{{data.current_job}}" target="_blank">The Centre of
+      Currently, I'm a software engineer intern at <a href="{{data.microsoft}}" target="_blank" class="highlight">🐱‍💻
+        Microsoft</a> on the <a href="{{data.garage}}" class="highlight" target="_blank">Garage</a>
+      team! Outside of school and work, I lead outreach at <a href={{data.starhacks}} class="highlight"
+        target="_blank">StarHacks</a>, write code at <a href="{{data.ubc_best}}" class="highlight" target="_blank">UBC
+        BEST</a>and help out in marketing <a href="{{data.nwplus}}" class="highlight" target="_blank">nwPlus</a>.
+    </p>
+
+    <h2>🤔 What have I done?</h2>
+    <p>
+      Prevously, I did co-op at <a class="highlight" href="{{data.current_job}}" target="_blank">The Centre of
         Excellence for Prevention of Organ Failure</a>, a biotechnology not-for-profit organization. Under
       {% for person in data.people %}
       {% if loop.last %}
@@ -36,16 +45,11 @@
       {% else %}
       <a class="highlight" href="{{person.link}}" target="_blank">{{ person.name }},</a>
       {% endif %}
-      {% endfor %} we are working towards automating the extraction of patient information from clinical notes.
+      {% endfor %} we built a natural langauge processing pipeline to automate the extraction of patient information
+      from clinical notes.
     </p>
-    <p>
-      Outside of school and work, I help market and organize events for <a href={{data.starhacks}} class="highlight"
-        target="_blank">StarHacks</a>, an organization striving to create spaces for gender minorities
-      in computer science.
-      Additionally, I'm writing code for <a href={{data.ubc_best_gh}} class="highlight">M2M</a>, a
-      project under <a class="highlight" href={{data.ubc_best}} target="_blank">UBC's
-        Biomedical Engineering Student Team</a>.
-    </p>
+    <p>I've also TAed <a href="{{data.ta}}" class="highlight" target="_blank">CPSC 210</a> at UBC, talked on a <a
+        href="{{data.joytojob}}" class="highlight">panel</a> and led two workshops (more workshops to come!).</p>
     <div class="me-fun">
       <div class="fun-facts">
         <h2>🎉 Time for fun facts!</h2>

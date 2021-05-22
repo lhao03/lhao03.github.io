@@ -10,7 +10,11 @@
 {% set loe_data = title_experiences.loe | sort(attribute="order") %}
 {% for experience in loe_data %}
 <section id="experience">
+  {% if loop.first %}
+  <input id="{{experience.name}}" type="checkbox" class="dropdown-check" checked="true">
+  {% else %}
   <input id="{{experience.name}}" type="checkbox" class="dropdown-check">
+  {% endif %}
   <label for="{{experience.name}}">
     <div class="img-title">
       {% if experience.img %}
@@ -19,9 +23,9 @@
       <div class="title-info">
         <h3 class="exp-title">{{experience.name}}</h3>
         <div class="date-job mobile-col">
-        <p>{{experience.date}}</p>
-        <p class="mobile-hide">, {{experience.pos}}</p>
-        <p class="desktop-hide">{{experience.pos}}</p>
+          <p>{{experience.date}}</p>
+          <p class="mobile-hide">, {{experience.pos}}</p>
+          <p class="desktop-hide">{{experience.pos}}</p>
         </div>
       </div>
     </div>
