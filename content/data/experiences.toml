@@ -3,6 +3,7 @@
 list_of_experiences = [
   {title = "💫 work", loe = [
     {name = "Microsoft", links = [{name = "about", link = "https://www.microsoft.com/en-us/garage/about/"}], desc = [
+      "Part of the Garage team!",
       "The Garage internship offers a small number of talented students a unique opportunity to work with each other in teams, hack on contemporary technology, conduct customer research, design, and develop a product in 12-16 weeks. (quoted from https://www.microsoft.com/en-us/garage/about/)",
     ], date = "May 2021 - now", pos = "Software Engineer Intern", img = "microsoft.png", order = 0},
     {name = "PROOF Centre", links = [
