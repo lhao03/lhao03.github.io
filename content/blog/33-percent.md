@@ -15,6 +15,7 @@ So what have I been up to these past four months? <!-- more --> A few things inc
  
 But that’s just the tip of the iceberg.
  
+
 ## 🌟 StarHacks
 When I received an email saying that I was chosen to join the StarHacks team in September 2020 I was so excited. Until I saw what team I was on: outreach. Before we go any further, I’ll explain why I felt that way:
  
@@ -25,9 +26,15 @@ So when I saw that bolded “Outreach” in the email, I was scared. Outreach is
 As the months went by, I realized that outreach wasn’t so bad. In fact, there is one thing I didn’t mention about the essays I wrote in english class. The essays that I got 75% on; well those were critical analytical essays in which we had to write about a novel or poem. When we got to write a personal essay about our life experiences, I scored 90% on those. And that’s what outreach soon began to feel like; writing a personal essay. 
  
 You see, StarHacks’ mission is to create a community for women and non-binary individuals in computer science. While I didn’t know it at the time, I'm exactly the same as all the girls who attended StarHacks; the girl who was scared of C++ and felt like dropping from the CS major in first year (you can read about that [here](/blog/cs-bchem)). By writing newsletters, creating infographics and talking with these girls and non-binary individuals, I could encourage them to try out CS. And that to me, is the entire reason why I decided to join the StarHacks team. Since being a woman in STEM is a large part of my identity, outreach no longer was something I dreaded doing. In fact, I’m excited to be joining nwPlus as a marketing coordinator and I'm looking forward to the impact that I can make!
+
+I also led two workshops!
+<div class="blog-items mobile-col">
+{{ youtube(id="PI1UBi3kbBU") }}
+{{ youtube(id="x6XzlRSlbCI") }}
+</div>
  
 ## 👩🏻‍💻 Career
-The weeks leading up to my first internship had me in a ball of nerves. Imposter syndrome struck hard and I couldn't stop thinking of thoughts like "What if they regret hiring me?" or "What if I can't do anything?". Fortunately, as I settled into my internship, I quickly forgot I had those thoughts in the first place! From learning all about biomedical text extraction, to even learning a bit about breast cancer, I've had a wonderful time at the PROOF Centre. I'll be writing a more in depth post about my first internship later!
+The weeks leading up to my first co-op had me in a ball of nerves. Imposter syndrome struck hard and I couldn't stop thinking of thoughts like "What if they regret hiring me?" or "What if I can't do anything?". Fortunately, as I settled into my internship, I quickly forgot I had those thoughts in the first place! From learning all about biomedical text extraction, to even learning a bit about breast cancer, I've had a wonderful time at the PROOF Centre. I'll be writing a more in depth post about my first co-op later!
 
 ---
 

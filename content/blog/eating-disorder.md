@@ -1,5 +1,5 @@
 +++
-title = "🧡 From an Eating Disorder to Veganism to Orthorexia and back to good old cookies."
+title = "🧡 Cookies"
 date = 2021-04-06
 draft = true
 +++
