@@ -36,8 +36,8 @@ ubc_cs = "https://www.cs.ubc.ca/"
 
 people = [
   {name = "Professor Raymond Ng", link = "https://www.cs.ubc.ca/~rng/"},
-  {name = "Dr. Kathryn Isaac", link = "https://surgery.med.ubc.ca/people/k-isaac/"},
-  {name = "Dr. Zsuzsanna Hollander", link = "http://www.proofcentre.ca/subscribe/our-team/management-team/dr-zsuzsanna-hollander/"},
+  {name = "Dr. Kathryn Isaac (MD, FRCSC)", link = "https://surgery.med.ubc.ca/people/k-isaac/"},
+  {name = "Dr. Zsuzsanna Hollander (MSc, PhD)", link = "http://www.proofcentre.ca/subscribe/our-team/management-team/dr-zsuzsanna-hollander/"},
 ]
 
 links = [

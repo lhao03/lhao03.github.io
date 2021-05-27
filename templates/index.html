@@ -22,13 +22,13 @@
     </div>
     <h2>👩🏻‍💻 What am I up to now?</h2>
     <p>
-      I study <a class="highlight" href={{data.ubc_cs}} target="_blank">👩🏻‍💻 Computer Science</a> and
+      I study <a class="highlight" href={{data.ubc_cs}} target="_blank">💻 Computer Science</a> and
       <a href="{{data.ubc_bchem}}" target="_blank" class="highlight">🧬 Biochemistry</a> at the
       <a href="{{data.ubc}}" class="highlight" target="_blank">University of British Columbia</a>.
       Check out the courses I've taken <a href="/school/" class="highlight">here</a>!
     </p>
     <p>
-      Currently, I'm a software engineering intern at <a href="{{data.microsoft}}" target="_blank" class="highlight">🐱‍💻
+      Currently, I'm a software engineering intern at <a href="{{data.microsoft}}" target="_blank" class="highlight">
         Microsoft</a> on the <a href="{{data.garage}}" class="highlight" target="_blank">Garage</a>
       team! Outside of school and work, I lead outreach at <a href={{data.starhacks}} class="highlight"
         target="_blank">StarHacks</a>, write code at <a href="{{data.ubc_best}}" class="highlight" target="_blank">UBC
@@ -38,14 +38,8 @@
     <h2>🤔 What have I done?</h2>
     <p>
       Prevously, I did co-op at <a class="highlight" href="{{data.current_job}}" target="_blank">The Centre of
-        Excellence for Prevention of Organ Failure</a>, a biotechnology not-for-profit organization. Under
-      {% for person in data.people %}
-      {% if loop.last %}
-      and <a class="highlight" href="{{person.link}}" target="_blank">{{ person.name }},</a>
-      {% else %}
-      <a class="highlight" href="{{person.link}}" target="_blank">{{ person.name }},</a>
-      {% endif %}
-      {% endfor %} I helped design and build a natural langauge processing pipeline to automate the extraction of
+        Excellence for Prevention of Organ Failure</a>, a biotechnology not-for-profit organization. I helped design and
+      build a natural langauge processing pipeline to automate the extraction of
       patient information from clinical notes. You can find the preprint <a
         href="https://www.medrxiv.org/content/10.1101/2021.05.04.21256134v1" class="highlight" target="_blank">here</a>.
     </p>
@@ -71,8 +65,9 @@
     <div class="bio mobile-col">
       <p>✨ Feel free to <a href={{data.email}} class="highlight">email me</a>
         and/or check out my <a class="highlight" href="{{get_url(path=data.resume)}}" target="_blank">resume</a>!
-        You can also see some 🍝 spaghetti code on my <a href="{{data.github}}" class="highlight">github</a>, or check out my half active
-       <a href="{{data.twitter}}" class="highlight">twitter 🐦</a>.
+        You can also see some 🍝 spaghetti code on my <a href="{{data.github}}" class="highlight">github</a>, or check
+        out my half active
+        <a href="{{data.twitter}}" class="highlight">twitter 🐦</a>.
       </p>
       <div class="profile-overlay">
         <img class="profile-img" src="{{get_url(path=data.profile_img)}}" alt="/res/profile.png" />
