@@ -123,6 +123,8 @@ body {
   height: fit-content;
   font-family: $font;
   height: 100vh;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 section {
