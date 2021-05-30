@@ -114,7 +114,6 @@ html {
   max-width: 100%;
   scroll-behavior: smooth;
   height: 100vh;
-  overflow: hidden
 }
 
 body {
@@ -125,6 +124,7 @@ body {
   height: 100vh;
   max-width: 100%;
   overflow-x: hidden;
+  position: relative
 }
 
 section {
