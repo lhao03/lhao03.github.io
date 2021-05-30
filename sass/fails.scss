@@ -1,5 +1,4 @@
-// failure page
-.container {
+.page {
     section {
         #text {
             padding-left: 20px;
@@ -29,10 +28,6 @@
             border-right: 6px solid transparent;
         }
 
-        p {
-            line-height: 150%;
-            font-size: large;
-        }
         input {
             display: none;
         }

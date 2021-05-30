@@ -54,61 +54,55 @@
   <meta property="og:image" content="{{get_url(path=data.emoji_path)}}">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="{{get_url(path=data.css_path)}}">
+
 </head>
 
 <body>
-  <section class="section">
-    <div class="container theme light">
+  <section class="container theme light">
 
-      <header class="mobile-hide">
-        <a class="header" href="/">home</a>
-        <a class="header" href="/experience/">experience</a>
-        <a class="header" href="/blog/">blog</a>
-        <a class="header" href="/failures/">failures</a>
-      </header>
-
-      <section class="header desktop-hide">
-        <input id="permitted" type="checkbox" class="dropdown-check" checked="true">
-        <label for="permitted" id="hamburger">
-          <div class="burgers">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-          </div>
-        </label>
-        <label for="permitted" id="text">
-        </label>
-        <div class="blocked mobile-headers">
-          <header class="mobile-col">
-            <a class="header" href="/">home</a>
-            <a class="header" href="/experience/">experience</a>
-            <a class="header" href="/blog/">blog</a>
-            <a class="header" href="/failures/">failures</a>
-          </header>
-        </div>
-      </section>
-
-      <div class="theme-toggle">
-        <input class=toggle id=darkmode-toggle type=checkbox tabindex=-1>
-        <label for="darkmode-toggle" class="toggle-label">
-          <p class="theme-text unselectable">☀️ 🌑</p>
-        </label>
+    <header>
+      <div class="header">
+        <nav>
+          <a href="/">Home</a>
+          <a href="/experience">Experience</a>
+          <a href="/blog">Blog</a>
+          <a href="/failures">Fails</a>
+        </nav>
+        <button class="hamburger">
+          <div class="bar"></div>
+        </button>
       </div>
+    </header>
+    <nav class="mobile-nav">
+      <a href="/">Home</a>
+      <a href="/experience">Experience</a>
+      <a href="/blog">Blog</a>
+      <a href="/failures">Fails</a>
+    </nav>
 
-
-      {% block content %} {% endblock %}
-      <footer>
-        <div class="links">
-          {% for link in data.links %}
-          <a href="{{link.link}}" target="_blank">
-            <p style=" margin: 10px;">{{link.name}}</p>
-          </a>
-          {% endfor %}
-        </div>
-        <p class="zola" style="text-align: center;">made with 💖 and <a class="zola" target="_blank"
-            href="https://www.getzola.org/documentation/getting-started/overview/">Zola</a> by Lucy</p>
-      </footer>
+    <div class="theme-toggle">
+      <input class=toggle id=darkmode-toggle type=checkbox tabindex=-1>
+      <label for="darkmode-toggle" class="toggle-label">
+        <p class="theme-text unselectable">☀️ 🌑</p>
+      </label>
     </div>
+
+    <div class="page">
+      {% block content %} {% endblock %}
+    </div>
+
+    <footer>
+      <div class="links">
+        {% for link in data.links %}
+        <a href="{{link.link}}" target="_blank">
+          <p style=" margin: 10px;">{{link.name}}</p>
+        </a>
+        {% endfor %}
+      </div>
+      <p style="text-align: center;">made with 💖 and <a target="_blank"
+          href="https://www.getzola.org/documentation/getting-started/overview/">Zola</a> by Lucy</p>
+    </footer>
+
   </section>
   <script src="{{get_url(path=data.js_path)}}"></script>
 </body>

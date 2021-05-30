@@ -1,0 +1,143 @@
+.header {
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 128px;
+    padding-right: 128px;
+
+    @media (max-width: 1024px) {
+        padding-left: 64px;
+        padding-right: 64px;
+    }
+
+    @media (max-width: 767px) {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+}
+
+.hamburger {
+    position: relative;
+    display: block;
+    width: 35px;
+    cursor: pointer;
+
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+}
+
+.hamburger .bar,
+.hamburger:after,
+.hamburger:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: var(--accent-color);
+    margin: 6px 0px;
+    transition: 0.4s;
+}
+
+.hamburger.is-active:before {
+    transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.hamburger.is-active:after {
+    transform: rotate(45deg) translate(-9px, -8px);
+}
+
+.hamburger.is-active .bar {
+    opacity: 0;
+}
+
+.mobile-nav {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    min-height: 100vh;
+    display: block;
+    z-index: 98;
+    background-color: var(--bg-color);
+    padding-top: 120px;
+    transition: 0.4s;
+}
+
+.mobile-nav.is-active {
+    left: 0;
+}
+
+.mobile-nav a {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto 16px;
+    text-align: center;
+    padding: 12px 16px;
+    font-weight: 300;
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 10vw;
+    font-weight: 700;
+    &:hover {
+        color: var(--accent-color);
+    }
+}
+
+.mobile-nav a:hover {
+    color: var(--accent-color);
+}
+
+@media (min-width: 768px) {
+    .mobile-nav {
+        display: none;
+    }
+
+    .hamburger {
+        display: none;
+    }
+}
+
+header {
+    color: var(--text-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+
+    .header {
+        padding-top: 32px;
+        padding-bottom: 32px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        nav {
+            display: grid;
+            grid-gap: 16px;
+            grid-template-columns: repeat(4, auto);
+
+            @media (max-width: 767px) {
+                display: none;
+            }
+
+            a {
+                color: inherit;
+                font-size: 2vw;
+                text-decoration: none;
+                color: var(--text-color);
+                font-weight: 700;
+                &:hover {
+                    color: var(--accent-color);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .hide-mob {
+        display: none;
+    }
+}

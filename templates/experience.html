@@ -3,8 +3,8 @@
 {% block content %}
 {% set projects_data = load_data(path="content/data/experiences.toml") %}
 
-<h1 class="title">👩🏻‍💻 experience</h1>
-<p>Read more about my work and extra curricular experiences!</p>
+<h1>👩🏻‍💻 experience</h1>
+<p>Read more about my work and extracurricular experiences!</p>
 {% for title_experiences in projects_data.list_of_experiences %}
 <h2>{{title_experiences.title}}</h2>
 {% set loe_data = title_experiences.loe | sort(attribute="order") %}

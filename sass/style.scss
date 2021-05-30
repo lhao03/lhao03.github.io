@@ -6,6 +6,7 @@
 @import "school";
 @import "header-footer";
 @import "fails";
+@import "ham";
 
 $cpsc: #b8ccde;
 $biol: #c1cbe8;
@@ -120,43 +121,47 @@ body {
   width: 100vw;
   height: fit-content;
   font-family: $font;
-  background-color: var(--bg-color);
   height: 100vh;
 }
 
-.title {
-  font-weight: bold;
-  font-size: 2.5em;
-  &:hover {
-    color: var(--accent-color);
-  }
+section {
+  background: var(--bg-color);
+  margin: 0;
+  padding: 0;
 }
 
-h2 {
-  font-weight: bold;
-  &:hover {
-    color: var(--accent-color);
-  }
-}
-
-.container {
-  margin: auto;
-  padding-left: 20%;
-  padding-right: 20%;
-  background-color: var(--bg-color);
+.page {
+  padding: 8%;
   color: var(--text-color);
-  @media (max-width: 768px) {
-    padding-left: 10%;
-    padding-right: 10%;
+
+  @media (max-width: 1024px) {
+    padding-top: 10%;
   }
-  .not-found {
-    min-height: 100vh;
+
+  @media (max-width: 767px) {
+    padding-top: 16%;
   }
-}
-a.zola {
-  text-align: center;
-  text-decoration: none;
-  color: var(--accent-color);
+
+  .highlight,
+  li > a {
+    color: var(--font-color);
+    background: linear-gradient(90deg, var(--accent-color) 0%, var(--accent-color) 100%) no-repeat 0 100%;
+    background-size: 100% 2px;
+    text-decoration: none;
+    transition: background-size 0.3s;
+    &:hover,
+    &:focus {
+      background-size: 100% 100%;
+    }
+  }
+  p {
+    line-height: 200%;
+    font-size: 20px;
+    @media (max-width: 767px) {
+      font-size: medium;
+      line-height: 150%;
+    }
+  }
 }
 
 a {
@@ -164,83 +169,21 @@ a {
   color: var(--accent-color);
 }
 
-.highlight,
-li > a {
-  color: var(--font-color);
-  background: linear-gradient(90deg, var(--accent-color) 0%, var(--accent-color) 100%) no-repeat 0 100%;
-  background-size: 100% 2px;
-  text-decoration: none;
-  transition: background-size 0.3s;
-  &:hover,
-  &:focus {
-    background-size: 100% 100%;
-  }
+.theme-toggle {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding-right: 5vw;
 }
-
-p {
-  line-height: 150%;
+.toggle {
+  display: none;
+}
+.toggle-label {
   font-size: large;
-}
-
-section.header {
-  padding-top: 20px;
-  #hamburger {
-    cursor: pointer;
-    position: relative;
-    div.burgers {
-      height: min-content;
-      width: min-content;
-      padding: 5px 5px 2px 5px;
-      border-radius: 7px;
-      border-style: solid;
-      border-color: var(--accent-color);
-      div.line {
-        border-radius: 30px;
-        width: 50px;
-        height: 3px;
-        margin-bottom: 5px;
-        background-color: var(--accent-color);
-      }
-    }
-  }
-
-  #hamburger:after {
-    cursor: pointer;
-    position: relative;
-    div.burgers {
-      height: min-content;
-      width: min-content;
-      padding: 5px 5px 2px 5px;
-      border-radius: 7px;
-      border-style: solid;
-      border-color: var(--accent-color);
-      div.line {
-        width: 50px;
-        border-radius: 30px;
-        height: 3px;
-        margin-bottom: 5px;
-        background-color: var(--accent-color);
-      }
-    }
-  }
-
-  input:checked ~ #hamburger:after {
-    cursor: pointer;
-    position: relative;
-    div.burgers {
-      height: min-content;
-      width: min-content;
-      padding: 5px 5px 2px 5px;
-      border-radius: 7px;
-      border-style: solid;
-      border-color: var(--accent-color);
-      div.line {
-        width: 50px;
-        height: 3px;
-        border-radius: 30px;
-        margin-bottom: 5px;
-        background-color: var(--accent-color);
-      }
-    }
+  p {
+    background-color: var(--accent-color);
+    width: fit-content;
+    padding: 5px;
+    border-radius: 5px;
   }
 }
