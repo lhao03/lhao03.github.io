@@ -56,24 +56,37 @@
   <link rel="stylesheet" href="{{get_url(path=data.css_path)}}">
 </head>
 
-<body>
+<body class="theme light">
   <section class="section">
-    <div class="container theme light">
+    <div class="container">
+
       <header class="mobile-hide">
         <a class="header" href="/">home</a>
         <a class="header" href="/experience/">experience</a>
         <a class="header" href="/blog/">blog</a>
         <a class="header" href="/failures/">failures</a>
-        <!-- <a class="header" href="/school/">school</a> -->
       </header>
 
-      <header class="desktop-hide mobile-col">
-        <a class="header" href="/">home</a>
-        <a class="header" href="/experience/">experience</a>
-        <a class="header" href="/blog/">blog</a>
-        <a class="header" href="/failures/">failures</a>
-        <!-- <a class="header" href="/school/">school</a> -->
-      </header>
+      <section class="header desktop-hide">
+        <input id="permitted" type="checkbox" class="dropdown-check" checked="true">
+        <label for="permitted" id="hamburger">
+          <div class="burgers">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+        </label>
+        <label for="permitted" id="text">
+        </label>
+        <div class="blocked mobile-headers">
+          <header class="mobile-col">
+            <a class="header" href="/">home</a>
+            <a class="header" href="/experience/">experience</a>
+            <a class="header" href="/blog/">blog</a>
+            <a class="header" href="/failures/">failures</a>
+          </header>
+        </div>
+      </section>
 
       <div class="theme-toggle">
         <input class=toggle id=darkmode-toggle type=checkbox tabindex=-1>
@@ -81,6 +94,8 @@
           <p class="theme-text unselectable">☀️ 🌑</p>
         </label>
       </div>
+
+
       {% block content %} {% endblock %}
       <footer>
         <div class="links">

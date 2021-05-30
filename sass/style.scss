@@ -164,7 +164,8 @@ a {
   color: var(--accent-color);
 }
 
-.highlight, li > a {
+.highlight,
+li > a {
   color: var(--font-color);
   background: linear-gradient(90deg, var(--accent-color) 0%, var(--accent-color) 100%) no-repeat 0 100%;
   background-size: 100% 2px;
@@ -179,4 +180,67 @@ a {
 p {
   line-height: 150%;
   font-size: large;
+}
+
+section.header {
+  padding-top: 20px;
+  #hamburger {
+    cursor: pointer;
+    position: relative;
+    div.burgers {
+      height: min-content;
+      width: min-content;
+      padding: 5px 5px 2px 5px;
+      border-radius: 7px;
+      border-style: solid;
+      border-color: var(--accent-color);
+      div.line {
+        border-radius: 30px;
+        width: 50px;
+        height: 3px;
+        margin-bottom: 5px;
+        background-color: var(--accent-color);
+      }
+    }
+  }
+
+  #hamburger:after {
+    cursor: pointer;
+    position: relative;
+    div.burgers {
+      height: min-content;
+      width: min-content;
+      padding: 5px 5px 2px 5px;
+      border-radius: 7px;
+      border-style: solid;
+      border-color: var(--accent-color);
+      div.line {
+        width: 50px;
+        border-radius: 30px;
+        height: 3px;
+        margin-bottom: 5px;
+        background-color: var(--accent-color);
+      }
+    }
+  }
+
+  input:checked ~ #hamburger:after {
+    cursor: pointer;
+    position: relative;
+    div.burgers {
+      height: min-content;
+      width: min-content;
+      padding: 5px 5px 2px 5px;
+      border-radius: 7px;
+      border-style: solid;
+      border-color: var(--accent-color);
+      div.line {
+        width: 50px;
+        height: 3px;
+        border-radius: 30px;
+        margin-bottom: 5px;
+        background-color: var(--accent-color);
+      }
+    }
+  }
 }
