@@ -109,6 +109,10 @@ $themes: (
   user-select: none;
 }
 
+* {
+  transition: background 0.4s;
+}
+
 html {
   overflow-x: hidden;
   max-width: 100%;
@@ -124,7 +128,7 @@ body {
   height: 100vh;
   max-width: 100%;
   overflow-x: hidden;
-  position: relative
+  position: relative;
 }
 
 section {
@@ -189,4 +193,16 @@ a {
     padding: 5px;
     border-radius: 5px;
   }
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font: 1em;
 }
