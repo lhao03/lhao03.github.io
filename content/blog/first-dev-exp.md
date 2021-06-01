@@ -1,10 +1,10 @@
 +++
-title = "💼 My first internship: PROOF Centre"
+title = "💼 My first developer job: PROOF Centre"
 date = 2021-05-21
 draft = false
 +++
 
-Who would of thought that my first internship would take place in my room? <!-- more --> Definitely not me. Even less did I think I would end up:
+Who would of thought that my first job would take place in my bedroom? <!-- more --> Definitely not me. Even less did I think I would end up:
 - writing over 6000 lines of Python
 - being part of a research paper (in progress of being published to a peer reviewed journal! The unofficial manuscript is below:)
 <blockquote class="twitter-tweet">
@@ -25,12 +25,12 @@ But not everything was *great*. I also ended up:
 ## The great
 I was the youngest and only co-op student hired to work at the PROOF Centre. I was also working under a UBC professor, surgeon, and PROOF's chief data officer. So I was feeling pretty nervous the week before I started working. But as I got more familiar with the team members, I got less and less nervous. Additionally, my supervisor (PROOF's chief data officer) made it super clear that I was here to learn. That's something super important I keep reminding myself every day: you're here to learn and mistakes are bound to happen. 
 
-I won't lie; when everyone around you has a master's/PhDs and you're just a second-year undergrad student, it can feel intimidating. But when I made a mistake or was unsure of how to do something, someone was always there to help me out. Someone was always avalible and willing to help me out, whether it be technical issues or more personal issues,  and that's what made this internship so great.
+I won't lie; when everyone around you has a master's/PhDs and you're just a second-year undergrad student, it can feel intimidating. But when I made a mistake or was unsure of how to do something, someone was always there to help me out. Someone was always avalible and willing to help me out, whether it be technical issues or more personal issues,  and that's what made this co-op term so great.
 
 Additionally, I got to attend a bunch of presentations put on by other PROOF members! Such presentations included topics like [SHAP (SHapley Additive exPlanations)](https://shap.readthedocs.io/en/latest/) and biomarker research on diseases like asthma, allergic rhinitis and pulmonary exacerbations in cystic fibrosis (super cool stuff that I barely understood). I'm fortunate to have the opportunity to listen to such talented individuals and have learned so much!
 
 ## The not so great
-My father says that he loves remote work, but I don't think I can say the same 😅 (maybe it's because I haven't experienced the commute before). And being a first time intern, I wished I had done some things differently. With that being said, some not so great things I experienced include: 
+My father says that he loves remote work, but I don't think I can say the same 😅 (maybe it's because I haven't experienced the commute before). And being a first time developer and intern, I wished I had done some things differently. With that being said, some not so great things I experienced include: 
 
 - sitting for long hours
 - having the sorest and dryest eyes ever

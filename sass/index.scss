@@ -6,13 +6,7 @@
   }
 }
 
-.container {
-  .theme-toggle {
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    padding-right: 5vw;
-  }
+.page {
   .intro-theme {
     display: flex;
     flex-direction: row;
@@ -21,24 +15,7 @@
       font-size: 2em;
     }
   }
-  .toggle {
-    display: none;
-  }
-  .toggle-label {
-    font-size: large;
-    p {
-      background-color: var(--accent-color);
-      width: fit-content;
-      padding: 5px;
-      border-radius: 5px;
-    }
-  }
-  .intro {
-    p {
-      line-height: 200%;
-      font-size: large;
-    }
-  }
+
   .intro-display {
     display: flex;
     flex-direction: row;
