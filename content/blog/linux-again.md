@@ -9,3 +9,6 @@ In the summer of 2020, I switched to Ubuntu Budgie for a short period time. Afte
 I'll be dual booting. There's some things on Windows, like the better touchscreen support, that I use time to time. Additionally, if anything ever happens on my Linux setup, I can go back to my Windows setup. 
 
 I'll be trying out Pop!_OS this time. For anyone else reading this, I have a HP Spectre 360x.
+
+Links:
+- [Fix: “error: unknown filesystem. grub rescue” in Ubuntu (easytechguides.com)](https://www.easytechguides.com/error-unknown-filesystem-grub-rescue/)
