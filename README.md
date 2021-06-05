@@ -22,3 +22,5 @@
 ## how to make it work
 - install zola: https://www.getzola.org/documentation/getting-started/overview/
 - to render the site ```zola serve```.
+
+test
