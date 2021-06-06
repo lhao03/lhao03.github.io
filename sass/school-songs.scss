@@ -39,7 +39,10 @@
 }
 
 .page {
-    .spotify-song {
-        border-radius: 15px;
+    .weeklysongs {
+        margin: auto;
+        .spotify-song {
+            border-radius: 15px;
+        }
     }
 }

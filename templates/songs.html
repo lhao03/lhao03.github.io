@@ -15,10 +15,13 @@
 <p>Why not 😛? But for real, there's something about not understanding the lyrics that I really enjoy about kpop. I get
     to "guess" the vibe of the song and sometimes I'm right! But sometimes I'm very wrong. Don't worry though,
     this doesn't mean I don't listen to English songs!</p>
+{% for info in songs_data.songs %}
 <div class="weeklysongs">
-    {% for info in songs_data.songs %}
-    <iframe class="spotify-song" src="{{info.spotify}}" width="300" height="380" frameborder="0"
+    <h3>{{ info.month }}</h3>
+    {% for song in info.picks %}
+    <iframe class="spotify-song" src="{{song.spotify}}" width="300" height="380" frameborder="0"
         allowtransparency="true" allow="encrypted-media"></iframe>
     {% endfor %}
 </div>
+{% endfor %}
 {% endblock content %}

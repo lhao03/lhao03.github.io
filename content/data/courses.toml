@@ -1,11 +1,11 @@
 courses = [
   {year = 2021, seasons = [
+    {term = "summer", courses = [
+      {name = "CPSC", num = "299", desc = "Co-operative Work Placement II"},
+    ]},
     {term = "winter", courses = [
       {name = "CPSC", num = "298", desc = "Co-operative Work Placement I"},
       {name = "STAT", num = "251", desc = "Elementary Statistics"},
-    ]},
-    {term = "summer", courses = [
-      {name = "CPSC", num = "299", desc = "Co-operative Work Placement II"},
     ]},
   ]},
   {year = 2020, seasons = [

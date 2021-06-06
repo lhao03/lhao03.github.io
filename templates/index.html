@@ -8,7 +8,7 @@
     <h1>Hi, I'm <a class="highlight">Lucy!</a> 👋🏻</h1>
     <div class="intro-display">
       <p>
-        ✨ I'm a biochemistry nerd and learner of programming languages who eats way too
+        ✨ I'm a biochemistry nerd and programming languages learner who eats way too
         much 🍫 chocolate and has many pictures of shiba inus on her phone.
         My favorite game is the <a href={{data.goose_game}} class="highlight" target="_blank">Untitled Goose Game</a>
         and I think benzene is pretty cool.
@@ -43,20 +43,19 @@
       <a href="https://www.hydrangeahacks.tech/" class="highlight" target="_blank"> 🌸 Hydrangea Hacks</a> and <a
         href="https://citro.tech/citrohacks/index.html" class="highlight" target="_blank">🍋 Citro Hacks</a>).
     </p>
-    <div class="me-fun">
+    <div class="me-fun mobile-col">
       <div class="fun-facts">
-        <h2>🎉 Time for fun facts!</h2>
+        <h2>🎉 Fun facts!</h2>
         {% for fact in data.facts %}
         <p class="statement">{{ fact }}</p>
         {% endfor %}
-        <p>🎶 You can also see my
-          <a href="/songs" class="highlight">songs of the week</a> here.
+        <p>🎵 See my songs of the week <a href="/songs" class="highlight">here.</a>
         </p>
       </div>
-      <div class="songs mobile-hide">
-        <h2 class="mobile-hide">🎶 My current vibe</h2>
-        <iframe class="album mobile-hide" src="{{data.album}}" width="300" height="380" frameborder="0"
-          allowtransparency="true" allow="encrypted-media"></iframe>
+      <div class="songs">
+        <h2>🎶 My current vibe</h2>
+        <iframe class="album" src="{{data.album}}" width="300" height="380" frameborder="0" allowtransparency="true"
+          allow="encrypted-media"></iframe>
       </div>
     </div>
     <div class="bio mobile-col">
