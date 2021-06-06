@@ -117,18 +117,16 @@ html {
   overflow-x: hidden;
   max-width: 100%;
   scroll-behavior: smooth;
-  height: 100vh;
+  font-family: $font;
 }
 
 body {
   margin: 0;
   width: 100vw;
   height: fit-content;
-  font-family: $font;
-  height: 100vh;
   max-width: 100%;
-  overflow-x: hidden;
   position: relative;
+  overflow-x: hidden;
 }
 
 section {
@@ -138,6 +136,7 @@ section {
 }
 
 .page {
+  min-height: 100vh;
   padding: 8%;
   color: var(--text-color);
 
