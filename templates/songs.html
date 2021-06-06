@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% set songs_data = load_data(path="content/data/songs.toml") %}
+<h1>
+    {{ section.title }}
+</h1>
+
+<p>I was inspired by <a href="https://blog.matthewwang.me/stats/song-of-the-week.html" class="highlight"
+        target="_blank">Matt's Song of the Week</a> to start tracking the new songs I discover or can't stop listening
+    to each week!
+</p>
+
+<div class="weeklysongs">
+    {% for song in songs_data.songs %}
+    <iframe src="{{song}}" width="300" height="380" frameborder="0" allowtransparency="true"
+        allow="encrypted-media"></iframe>
+    {% endfor %}
+</div>
+{% endblock content %}
