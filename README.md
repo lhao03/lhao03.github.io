@@ -1,8 +1,8 @@
 # my personal website yet again in zola 
 
-[![Build and deploy GH Pages](https://github.com/lhao03/lhao03.github.io/actions/workflows/main.yml/badge.svg)](https://github.com/lhao03/lhao03.github.io/actions/workflows/main.yml)
+[![github pages](https://github.com/lhao03/lhao03.github.io/actions/workflows/main.yml/badge.svg)](https://github.com/lhao03/lhao03.github.io/actions/workflows/main.yml)
 
-## codes i yoinked:
+## code i yoinked:
 - for dark mode: http://jzhao.xyz/
 - for highlight thingy: https://github.com/rmehri01/Personal-Website
 
@@ -14,6 +14,7 @@
 - hugo feels like magic; i dont even know how it works 99% of the time
 - scss has cool features like nesting
 - i really like static website generators so i had to try out zola
+- zola has less features but all the features that i need
 
 ## a comparison
 ![css](./static/old_css.JPG)
