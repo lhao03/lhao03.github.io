@@ -161,7 +161,8 @@ section {
       background-size: 100% 100%;
     }
   }
-  p {
+  p,
+  label {
     line-height: 200%;
     font-size: 20px;
     @media (max-width: 767px) {

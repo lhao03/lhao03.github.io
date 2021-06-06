@@ -1,4 +1,4 @@
 +++
-title = "🎶 songs of the week"
+title = "🎶 songs of the month"
 template = "songs.html"
 +++
