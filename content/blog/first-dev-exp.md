@@ -7,13 +7,8 @@ draft = false
 Who would of thought that my first job would take place in my bedroom? <!-- more --> Definitely not me. Even less did I think I would end up:
 - writing over 6000 lines of Python
 - being part of a research paper (in progress of being published to a peer reviewed journal! The unofficial manuscript is below:)
-<blockquote class="twitter-tweet">
-<p lang="en" dir="ltr">Automated Medical Chart Review for Breast Cancer: A Novel Natural Language Processing Software System 
-<a href="https://t.co/fth2cSzc9f">https://t.co/fth2cSzc9f</a> <a href="https://twitter.com/hashtag/medRxiv?src=hash&amp;ref_src=twsrc%5Etfw">#medRxiv</a>
-</p>&mdash; medRxiv (@medrxivpreprint) <a href="https://twitter.com/medrxivpreprint/status/1389786855286128641?ref_src=twsrc%5Etfw">May 5, 2021</a>
-</blockquote> 
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8">
-</script>
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Automated Medical Chart Review for Breast Cancer: A Novel Natural Language Processing Software System <a href="https://t.co/fth2cSzc9f">https://t.co/fth2cSzc9f</a> <a href="https://twitter.com/hashtag/medRxiv?src=hash&amp;ref_src=twsrc%5Etfw">#medRxiv</a></p>&mdash; medRxiv (@medrxivpreprint) <a href="https://twitter.com/medrxivpreprint/status/1389786855286128641?ref_src=twsrc%5Etfw">May 5, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 
 
 But not everything was *great*. I also ended up:

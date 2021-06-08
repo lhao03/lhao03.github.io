@@ -1,0 +1,13 @@
++++
+title = "MATH 101"
+weight = 1
+description = "Integral Calculus with Applications to Physical Sciences and Engineering"
+[extra]
+course = "MATH"
++++
+
+Just your basic first-year integral calculus course. I had the same thoughts on this course as I did for MATH 100.
+
+*Would I recommend?* Yes.
+
+*What I like about the course:* Same points as for MATH 100.
