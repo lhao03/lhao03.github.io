@@ -1,7 +1,7 @@
 +++
 title = "I used to hate Twiter 🐦"
 date = 2021-06-06
-draft = false
+draft = true
 +++
 
 I will admit that I'm someone who comes to quick conclusions on something that I don't know much about. And that's what I did with Twitter. 

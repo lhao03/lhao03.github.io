@@ -17,10 +17,14 @@
     this doesn't mean I don't listen to English songs!</p>
 {% for info in songs_data.songs %}
 <div class="weeklysongs">
-    <h3>{{ info.month }}</h3>
+    <h3>{{ info.week }}</h3>
     {% for song in info.picks %}
-    <iframe class="spotify-song" src="{{song.spotify}}" width="300" height="380" frameborder="0"
-        allowtransparency="true" allow="encrypted-media"></iframe>
+    <div class="song mobile-col"> 
+        <iframe class="spotify-song" src="{{song.spotify}}" height="80" frameborder="0"
+            allowtransparency="true" allow="encrypted-media">
+        </iframe>
+        <p>{{song.reason}}</p>
+        </div>
     {% endfor %}
 </div>
 {% endfor %}

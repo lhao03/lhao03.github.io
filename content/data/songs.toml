@@ -1,8 +1,11 @@
 songs = [
-  {month = "June 1-5", picks = [
-    {spotify = "https://open.spotify.com/embed/track/1Z8TPHiKeCUyClxV6WTTIf"},
-    {spotify = "https://open.spotify.com/embed/track/2lwOE4xj0tw2Bpjc6wmzUP"},
-    {spotify = "https://open.spotify.com/embed/track/3aGqHdZJusdhT3ZzfLRnO7"},
-    {spotify = "https://open.spotify.com/embed/track/4WnQOPWzrIkvIgp15mDCnG"},
+  {week = "June 6-12", picks = [
+    {spotify = "https://open.spotify.com/embed/track/2vdBo4ALPYbHRUPKgtE5iC", reason = "Reminds me of a time in my life."},
+  ]},
+  {week = "June 1-5", picks = [
+    {spotify = "https://open.spotify.com/embed/track/1Z8TPHiKeCUyClxV6WTTIf", reason = "Teenage vibes."},
+    {spotify = "https://open.spotify.com/embed/track/2lwOE4xj0tw2Bpjc6wmzUP", reason = "Combination of disney princess like voice and really nice beat."},
+    {spotify = "https://open.spotify.com/embed/track/3aGqHdZJusdhT3ZzfLRnO7", reason = "This song is very unique sounding and has girl power vibes."},
+    {spotify = "https://open.spotify.com/embed/track/4WnQOPWzrIkvIgp15mDCnG", reason = "It's a very calming song."},
   ]},
 ]

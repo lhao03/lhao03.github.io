@@ -43,9 +43,24 @@
 
 .page {
     .weeklysongs {
-        margin: auto;
+        .song {
+            margin: 25px;
+            padding: 25px;
+            border-radius: 25px;
+            border: 2px solid var(--accent-color);
+            display: flex;
+            flex-direction: row;
+            // justify-content: space-between;I
+            @media (min-width: 768px) {
+                p {
+                    margin-left: 10px;
+                }
+            }
+        }
         .spotify-song {
             border-radius: 15px;
+            margin-top: auto;
+            margin-bottom: auto;
         }
     }
 }
