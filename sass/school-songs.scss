@@ -44,14 +44,15 @@
 .page {
     .weeklysongs {
         .song {
-            margin: 25px;
-            padding: 25px;
+            margin: auto;
+            margin-bottom: 25px;
+            padding: 15px;
             border-radius: 25px;
             border: 2px solid var(--accent-color);
             display: flex;
             flex-direction: row;
-            // justify-content: space-between;I
             @media (min-width: 768px) {
+                width: 50vw;
                 p {
                     margin-left: 10px;
                 }
