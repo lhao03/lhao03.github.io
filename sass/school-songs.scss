@@ -43,6 +43,11 @@
 
 .page {
     .weeklysongs {
+        display: grid;
+        grid-template-columns: auto auto;
+        @media (max-width: 768px) {
+            grid-template-columns: auto !important;
+        }
         .song {
             margin: auto;
             margin-bottom: 25px;
@@ -50,12 +55,15 @@
             border-radius: 25px;
             border: 2px solid var(--accent-color);
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
+            p {
+                font-size: 15px;
+            }
             @media (min-width: 768px) {
-                width: 50vw;
-                p {
-                    margin-left: 10px;
-                }
+                width: 33vw;
+            }
+            @media (max-width: 768px) {
+                width: 70vw;
             }
         }
         .spotify-song {

@@ -16,8 +16,8 @@
     to "guess" the vibe of the song and sometimes I'm right! But sometimes I'm very wrong. Don't worry though,
     this doesn't mean I don't listen to English songs!</p>
 {% for info in songs_data.songs %}
+<h3>{{ info.week }}</h3>
 <div class="weeklysongs">
-    <h3>{{ info.week }}</h3>
     {% for song in info.picks %}
     <div class="song mobile-col">
         <iframe class="spotify-song" src="{{song.spotify}}" height="80" frameborder="0" allowtransparency="true"

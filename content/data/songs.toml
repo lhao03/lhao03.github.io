@@ -1,6 +1,7 @@
 songs = [
   {week = "June 6-12", picks = [
     {spotify = "https://open.spotify.com/embed/track/2vdBo4ALPYbHRUPKgtE5iC", reason = "Reminds me of a time in my life."},
+    {spotify = "https://open.spotify.com/embed/track/2fluM1mE0tKQ6rvM77Vr11", reason = "A fresh and summer song!"},
   ]},
   {week = "June 1-5", picks = [
     {spotify = "https://open.spotify.com/embed/track/1Z8TPHiKeCUyClxV6WTTIf", reason = "Teenage vibes."},
