@@ -1,5 +1,5 @@
 +++
-title = "💻 Hackathon Workshop Slides"
+title = "💻 Hackathon Workshops"
 date = 2021-06-17
 draft = false
 +++

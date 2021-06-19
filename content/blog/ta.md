@@ -19,6 +19,6 @@ Since us TAs are also human, we also make mistakes. This term I accidentally put
 ## saying hi is awesome :D
 And <span>thirdly</span>, thank you to the students who give a quick hello to me, start up a small convo and students who just see me as a person too! I truly appreciate it! You do make my day when you ask how I'm doing or when you thank me for being your TA. My students will probably forget me as a TA but I'll always remember the students!
 
-<img src="/res/ta.png">
+{{ blogImg(img="ta.png") }}
 
 :)

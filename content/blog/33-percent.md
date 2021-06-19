@@ -47,7 +47,8 @@ After realizing how unfit I had gotten, I did the unthinkable; I started to run 
 
 --- 
 
-<img src="/res/schedule.png">
+{{ blogImg(img="schedule.png") }}
+
 A typical monday to friday.
 
 While physical health and nutrition is super important to me, my eye health and brain health is easily left on the back burner. I've had days where my eyes are so sore I have to pause every few minutes to just close them. Being nearsighted doesn't make my horrible eye health any better. I hope to start implementing some healthy eye habits because I really do take my eyes for granted.
