@@ -165,7 +165,8 @@ section {
     }
   }
   p,
-  label {
+  label,
+  li {
     line-height: 200%;
     font-size: 20px;
     @media (max-width: 767px) {
@@ -173,6 +174,13 @@ section {
       line-height: 150%;
     }
   }
+}
+
+code {
+  background: var(--accent-color);
+  color: var(--bg-color);
+  border-radius: 4px;
+  padding: 2px;
 }
 
 a {

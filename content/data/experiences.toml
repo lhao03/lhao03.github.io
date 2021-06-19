@@ -1,5 +1,3 @@
-# { name = "", links = [ { name = "", link = "" } ], desc = [""], date = "", pos = "" , img=""}
-
 list_of_experiences = [
   {title = "💫 work", loe = [
     {name = "Microsoft", links = [{name = "about", link = "https://www.microsoft.com/en-us/garage/about/"}], desc = [

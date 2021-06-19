@@ -9,7 +9,6 @@ facts = [
 album = "https://open.spotify.com/embed/playlist/5Vs2cWZGubAzDw3QLeCog6"
 android_chrome_favicon = "android-chrome-512x512.png"
 css_path = "style.css"
-current_job = "http://www.proofcentre.ca/"
 email = "mailto:hao.lucyy@gmail.com"
 emoji_path = "/res/new-emoji-bg.png"
 garage = "https://www.microsoft.com/en-us/garage/about/"
@@ -17,12 +16,13 @@ github = "https://github.com/lhao03"
 goose_game = "https://goose.game/"
 img_path = "favicon.png"
 joytojob = "https://joytojob.com/past-webinars-%26-panelists"
-js_path = "darkmode.js"
+js_path = "js_stuff.js"
 linkedin = "https://linkedin.com/in/lucy-hao"
 microsoft = "https://www.microsoft.com/en-ca/"
 nwplus = "https://www.nwplus.io/"
 profile_img = "/res/profile.jpg"
-resume = "/res/lucy_resume.pdf"
+proof = "http://www.proofcentre.ca/"
+resume = "/res/resumes/lucy_resume.pdf"
 sparkle_path = "/res/sparkle.png"
 starhacks = "https://www.starhacks.tech/"
 ta = "https://www.cs.ubc.ca/course/cpsc-210-102-2021w"
@@ -31,14 +31,7 @@ twitter = "https://twitter.com/hoalycu"
 ubc = "https://www.ubc.ca/"
 ubc_bchem = "https://biochem.ubc.ca/"
 ubc_best = "http://www.ubcbest.com/"
-ubc_best_gh = "https://github.com/UBC-BEST"
 ubc_cs = "https://www.cs.ubc.ca/"
-
-people = [
-  {name = "Professor Raymond Ng", link = "https://www.cs.ubc.ca/~rng/"},
-  {name = "Dr. Kathryn Isaac (MD, FRCSC)", link = "https://surgery.med.ubc.ca/people/k-isaac/"},
-  {name = "Dr. Zsuzsanna Hollander (MSc, PhD)", link = "http://www.proofcentre.ca/subscribe/our-team/management-team/dr-zsuzsanna-hollander/"},
-]
 
 links = [
   {name = "email", link = "mailto:hao.lucyy@gmail.com"},

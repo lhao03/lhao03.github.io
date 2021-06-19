@@ -1,4 +1,8 @@
 songs = [
+  {week = "June 13-19", picks = [
+    {spotify = "https://open.spotify.com/embed/track/0sZ0QRe8BFNPOJ2k80adu1", reason = "I like to peep the kpop rising songs in Spotify and found this one!"},
+    {spotify = "https://open.spotify.com/embed/track/3YdqewCLgGsFhruA3EhILy", reason = "I think Twice's new album hit the spot on all their songs, but in this one I like Jihyo's line \"I don't know about you but I get butterflies.\" in this song."},
+  ]},
   {week = "June 6-12", picks = [
     {spotify = "https://open.spotify.com/embed/track/2vdBo4ALPYbHRUPKgtE5iC", reason = "Reminds me of a time in my life."},
     {spotify = "https://open.spotify.com/embed/track/2fluM1mE0tKQ6rvM77Vr11", reason = "A fresh and summer song!"},
