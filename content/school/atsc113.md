@@ -4,6 +4,7 @@ weight = 1
 description = "Applied Meteorology"
 [extra]
 course = "ATSC"
+year = 1
 +++
 
 Easy booster but if you don't enjoy memorizing sentence after sentence after sentence, then this course will be a bore for you. I hated this course so much by the end. The easy booster mark was not worth the boredom and money.

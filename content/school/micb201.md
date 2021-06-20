@@ -4,6 +4,7 @@ weight = 2
 description = "Introductory Environmental Microbiology"
 [extra]
 course = "MICB"
+year = 2
 +++
 
 I have strong words to say about this course. The content is really interesting for sure, but the way this course was delivered during the pandemic made it hard for me to learn the content.

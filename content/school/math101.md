@@ -4,6 +4,7 @@ weight = 1
 description = "Integral Calculus with Applications to Physical Sciences and Engineering"
 [extra]
 course = "MATH"
+year = 1
 +++
 
 Just your basic first-year integral calculus course. I had the same thoughts on this course as I did for MATH 100.

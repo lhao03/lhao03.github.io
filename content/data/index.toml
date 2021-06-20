@@ -39,3 +39,5 @@ links = [
   {name = "linkedin", link = "https://linkedin.com/in/lucy-hao"},
   {name = "twitter", link = "https://twitter.com/hoalycu"},
 ]
+
+school_years = [2, 1]

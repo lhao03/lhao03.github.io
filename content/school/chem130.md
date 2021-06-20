@@ -4,6 +4,7 @@ weight = 1
 description = "Thermodynamics, Kinetics and Organic Chemistry"
 [extra]
 course = "CHEM"
+year = 1
 +++
 
 If you have taken chemistry IB HL, this course will be a breeze for you. I took this course during the summer of COVID 19, so it was all online. This course comes with a VERY USEFUL course notebook. I still use that course notebook in my other chemistry and biology courses.

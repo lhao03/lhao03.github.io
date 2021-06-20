@@ -4,6 +4,7 @@ weight = 1
 description = "Differential Calculus with Applications to Physical Sciences and Engineering"
 [extra]
 course = "MATH"
+year = 1
 +++
 
 Just your basic first-year university differential calculus course. But this course is nothing like high school calculus. Just because you got 100 in high school calculus does not mean you can ace this course. Always attend lectures, do textbook questions, and attend office hours. Unfortunately, I never attended office hours and MATH 100 is one of my lowest marks. MATH 100 is also the hardest version of first-year calculus, but if you're interested in higher-level physics/maths/chemistry courses you should take MATH 100, as you can expect this level of math in these higher-level physics/maths/chemistry courses.
