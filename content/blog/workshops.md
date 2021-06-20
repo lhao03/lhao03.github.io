@@ -15,6 +15,8 @@ draft = false
 
 ### Hydrangea Hacks - June 18, 2021
 - [Intro to NLP](https://drive.google.com/file/d/1H8rc_Us8eUtKgTj0vioQTNy-GXjf8ZPt/view?usp=sharing) 
+{{ youtube(id="7DLUbxgfrD4") }}
+
 
 ### CitroHacks - June 26, 2021
 - Intro to Git/GitHub 

@@ -6,13 +6,13 @@ draft=false
 
 In the summer of 2020, I switched to Ubuntu Budgie for a short period time. After some hardware issues, I reverted back to Windows. Well, this summer of 2021, I'm back to try to use Linux again. 
 
+It's been a month since I tried out Pop!_OS and here are my thoughts! I'll keep adding to this post as I continue to use Pop!_OS. For anyone else reading this, I have a HP Spectre 360x.
+
 Some differences from last summer:
 
-I'll be dual booting. There's some things on Windows, like better touchscreen support, that I use time to time. Additionally, if anything ever happens on my Linux setup, I can go back to my Windows setup. 
+- I'll be dual booting. There's some things on Windows, like better touchscreen support, that I use time to time. Additionally, if anything ever happens on my Linux setup, I can go back to my Windows setup. 
 
-I'll be trying out Pop!_OS this time. For anyone else reading this, I have a HP Spectre 360x.
-
-It's been a month since I tried out Pop!_OS and here are my thoughts! I'll keep adding to this post as I continue to use Pop!_OS.
+- I'll be trying out Pop!_OS this time vs. Ubuntu Budgie.
 
 ## Stuff I like
 - Keyboard shortcuts! Such a time saver. They are built into Pop!_OS so you don't need to do anything to set up them!
@@ -23,6 +23,11 @@ It's been a month since I tried out Pop!_OS and here are my thoughts! I'll keep 
 - apt! downloading programs is super easy with apt and there's also a pop shop!
 - Stuff just runs faster? In WSL2, the commands like `code .` or `zola serve` took at least 5-10 seconds to run. In Pop!_OS it's almost instant.
 - NOTIFICATIONS DON'T COME FROM THE BOTTOM RIGHT. Nuff said.
+- Tiling and Stacking is so fast and so convenient. I'm not sure how I was able to use Windows now that I use these features...
+
+{{ blogImg(img="stacking.gif") }}
+{{ blogImg(img="tiling.gif") }}
+*So fast 😍 and no mouse involved. And yes, I am using the macOS background.*
 
 ## Stuff I miss
 - I miss the touchsreen support for drawing. It's not really usable on Linux because I kinda lost all the hardware/drivers support. But I knew this could be an issue.
