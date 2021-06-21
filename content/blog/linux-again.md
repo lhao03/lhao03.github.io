@@ -1,7 +1,7 @@
 +++
 title="👩🏻‍💻 I am trying Linux again"
 date=2021-06-19
-draft=false
+draft=true
 +++
 
 In the summer of 2020, I switched to Ubuntu Budgie for a short period time. After some hardware issues, I reverted back to Windows. Well, this summer of 2021, I'm back to try to use Linux again. 
