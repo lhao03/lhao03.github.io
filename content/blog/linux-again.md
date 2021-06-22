@@ -16,7 +16,6 @@ Some differences from last summer:
 
 ## Stuff I like
 - Keyboard shortcuts! Such a time saver. They are built into Pop!_OS so you don't need to do anything to set up them!
-- Tiling: On windows, tiling is a pain. But on Pop!_OS it super smooth and works great with the keyboard shortcuts.
 - Searching up applications: when I search for apps on Windows, I press the Windows key and then start typing. But since it has to switch from the menu to the search, there's always lag and it skips a few of the first characters. For instance, "word" becomes "ord". On Pop!_OS, search is SO fast.
 - My wifi doesn't break anymore? Before on Windows I was disconnected from my wifi everyday for a few minutes. Now it just doesn't happen when I use Linux. Weird...
 - The terminal: before I was using WSL2 which works, but there's downsides to it (file transfer is hella slow). Now with a Linux shell everything is so fast and it just works. 
