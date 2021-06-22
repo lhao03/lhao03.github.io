@@ -7,14 +7,14 @@ facts = [
 ]
 
 album = "https://open.spotify.com/embed/playlist/5Vs2cWZGubAzDw3QLeCog6"
-android_chrome_favicon = "android-chrome-512x512.png"
+android_chrome_favicon = "/emoji/android-chrome-512x512.png"
 css_path = "style.css"
 email = "mailto:hao.lucyy@gmail.com"
 emoji_path = "/res/new-emoji-bg.png"
 garage = "https://www.microsoft.com/en-us/garage/about/"
 github = "https://github.com/lhao03"
 goose_game = "https://goose.game/"
-img_path = "favicon.png"
+img_path = "/emoji/favicon.png"
 joytojob = "https://joytojob.com/past-webinars-%26-panelists"
 js_path = "js_stuff.js"
 linkedin = "https://linkedin.com/in/lucy-hao"
