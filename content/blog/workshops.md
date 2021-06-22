@@ -14,9 +14,9 @@ draft = false
 
 
 ### Hydrangea Hacks - June 18, 2021
-- [Intro to NLP](https://drive.google.com/file/d/1H8rc_Us8eUtKgTj0vioQTNy-GXjf8ZPt/view?usp=sharing) 
+- [Intro to NLP](https://drive.google.com/file/d/1H8rc_Us8eUtKgTj0vioQTNy-GXjf8ZPt/view?usp=sharing). These slides are made in Figma and converted to Google Slides before I discovered the present button in Figma : ).
 {{ youtube(id="7DLUbxgfrD4") }}
 
 
 ### CitroHacks - June 26, 2021
-- Intro to Git/GitHub 
+- [Intro to Git/GitHub](https://www.figma.com/proto/QwLUq2jdFJ0kisBOxh0RNM/Intro-to-Git-and-Github-Copy?node-id=72%3A4&scaling=contain&page-id=0%3A1) 
