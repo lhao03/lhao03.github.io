@@ -25,10 +25,15 @@ list_of_experiences = [
     ], date = "Jan - Apr 2021", pos = "Teaching Assistant", img = "ubc.png", order = 2},
   ]},
   {title = "🎤 speaking", loe = [
+    {name = "Workshop Host: Intro to NLP", links = [
+      {name = "intro to nlp slides", link = "https://drive.google.com/file/d/1H8rc_Us8eUtKgTj0vioQTNy-GXjf8ZPt/view?usp=sharing"},
+    ], desc = [
+      "Led an Intro to NLP workshop at Bay Area’s largest hackathon for women and non-binary individuals in a virtual setting.",
+    ], date = "June 2021", pos = "Hydrangea Hacks", img = "hh.png", order = 0},
     {name = "Panelist", links = [
       {name = "organization site", link = "https://joytojob.com/"},
     ], desc = ["Answered questions about internships, computer science, and university life to about 40 attendees."], date = "May 2021", pos = "Joy to Job", img = "joytojob.png", order = 1},
-    {name = "Workshop Host", links = [
+    {name = "Workshop Host: Intro to Git/GitHub/Python", links = [
       {name = "git slides", link = "https://docs.google.com/presentation/d/1xVRuH7d_RnAxXF4DuahZ-9Wp66EoII5UDYWd1pphB3c/edit?usp=sharing"},
       {name = "python slides", link = "https://docs.google.com/presentation/d/1OSzLNZKXhTTMFPj_6b_e1IlqDr6DIt3mJU_ShCAg6x8/edit?usp=sharing"},
     ], desc = ["Led an Intro to Git/Github workshop and Intro to Python workshop for around 60 hackers in virtual setting."], date = "Jan 2021", pos = "StarHacks", img = "starhacks.png", order = 2},
