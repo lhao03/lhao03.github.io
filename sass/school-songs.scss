@@ -42,6 +42,23 @@
 }
 
 .page {
+    .trends {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+       
+        img {
+            border-radius: 15px;
+            width: 20vw;
+            @media (max-width: 768px) {
+                width: 70vw;
+                margin-bottom: 10px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
+    }
     .weeklysongs {
         display: grid;
         grid-template-columns: auto auto;

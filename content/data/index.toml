@@ -1,11 +1,3 @@
-facts = [
-  "🏋🏻‍♀️ I used to be a cross country runner, now I lift weights! In junior high I could run a mile in 6 minutes and 30 seconds. And right before the lockdown, I could deadlift 205lbs! Now I can't do either...",
-  "🍦 Even though I'm lactose intolerant, my favorite food is ice cream.",
-  "🌱 I was vegan for 4 years, vegetarian for 1 month in grade 11 and currently an omnivore!",
-  "💭 I act on intuition rather than logic (I've been told).",
-  "👀 I'm a visual learner!",
-]
-
 album = "https://open.spotify.com/embed/playlist/5Vs2cWZGubAzDw3QLeCog6"
 android_chrome_favicon = "/emoji/android-chrome-512x512.png"
 css_path = "style.css"

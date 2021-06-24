@@ -14,3 +14,5 @@ songs = [
     {spotify = "https://open.spotify.com/embed/track/4WnQOPWzrIkvIgp15mDCnG", reason = "It's a very calming song."},
   ]},
 ]
+
+trends = ["4-weeks","6-monthes","lifetime"]

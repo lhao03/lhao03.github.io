@@ -8,13 +8,20 @@
 
 <p>I was inspired by <a href="https://blog.matthewwang.me/stats/song-of-the-week.html" class="highlight"
         target="_blank">Matt's Song of the Week</a> to start tracking the new songs I discover or can't stop listening
-    to each week!
+    to each week! I also post my Spotify trends here.
 </p>
 
 <h3>why so much kpop??</h3>
 <p>Why not 😛? But for real, there's something about not understanding the lyrics that I really enjoy about kpop. I get
     to "guess" the vibe of the song and sometimes I'm right! But sometimes I'm very wrong. Don't worry though,
     this doesn't mean I don't listen to English songs!</p>
+
+<h3>trends</h3>
+<div class="trends mobile-col">
+    {% for trend in songs_data.trends %}
+    <img src="/res/spotify/{{trend}}.png">
+    {% endfor %}
+</div>
 {% for info in songs_data.songs %}
 <h3>{{ info.week }}</h3>
 <div class="weeklysongs">
