@@ -15,6 +15,10 @@
       font-size: 2em;
     }
   }
+  img.me {
+    position:absolute;
+    height: 45px;
+  }
 
   .intro-display {
     display: flex;
@@ -22,31 +26,7 @@
     @media (max-width: 768px) {
       flex-direction: column;
     }
-    img.me {
-      height: 25vh;
-      @media (max-width: 768px) {
-        width: 25vw;
-      }
-    }
   }
-  .me-fun {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    .fun-facts {
-      margin-left: 30px;
-      @media (max-width: 768px) {
-        margin-left: 0;
-        margin-right: 0;
-      }
-    }
-    .songs {
-      display: flex;
-      flex-direction: column;
-      margin: auto;
-    }
-  }
-
   .bio {
     display: flex;
     flex-direction: row;

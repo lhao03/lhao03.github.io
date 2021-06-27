@@ -25,6 +25,11 @@ list_of_experiences = [
     ], date = "Jan - Apr 2021", pos = "Teaching Assistant", img = "ubc.png", order = 2},
   ]},
   {title = "🎤 speaking", loe = [
+    {name = "Workshop Host: Intro to Git/GitHub", links = [
+      {name = "intro to git/github slides", link = "https://www.figma.com/proto/QwLUq2jdFJ0kisBOxh0RNM/Intro-to-Git-and-Github-(Copy)"},
+    ], desc = [
+      "Led an Intro to Git/GitHub workshop at Citro Hacks in a virtual setting.",
+    ], date = "June 2021", pos = "Citro Hacks", img = "citro.png", order = -1},
     {name = "Workshop Host: Intro to NLP", links = [
       {name = "intro to nlp slides", link = "https://drive.google.com/file/d/1H8rc_Us8eUtKgTj0vioQTNy-GXjf8ZPt/view?usp=sharing"},
     ], desc = [

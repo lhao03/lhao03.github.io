@@ -19,4 +19,4 @@ draft = false
 
 
 ### CitroHacks - June 26, 2021
-- [Intro to Git/GitHub](https://www.figma.com/proto/QwLUq2jdFJ0kisBOxh0RNM/Intro-to-Git-and-Github-Copy?node-id=72%3A4&scaling=contain&page-id=0%3A1) 
+- [Intro to Git/GitHub](https://www.figma.com/proto/QwLUq2jdFJ0kisBOxh0RNM/Intro-to-Git-and-Github-(Copy)) 
