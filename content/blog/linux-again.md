@@ -32,3 +32,9 @@ Some differences from last summer:
 - I miss the touchsreen support for drawing. It's not really usable on Linux because I kinda lost all the hardware/drivers support. But I knew this could be an issue.
 - Notion: there's no official Notion desktop application for Linux. But no worries, I used [this](https://github.com/davidbailey00/notion-linux). Unfortunately, is seems like there is no longer support for it so I'll have to see how it goes...
 - Moniter support: So on Windows, it matches the resolution or something so that applications don't look too small or too large on screens of different sizes. Sadly, this is hella slow on Pop!_OS. This means I can only have applications in one resolution size, so stuff on my moniter might look a bit big and stuff on my laptop screen might look a bit small. But after a few weeks I've gotten used to this.
+
+## Problems:
+- The bluetooth is kinda buggy, but this [reddit post](https://www.reddit.com/r/pop_os/comments/mtjysf/bluetooth_wont_turn_on/) helped kinda fix it? 
+- Gestures didn't work out of the box but after installing [Touchegg](https://github.com/JoseExposito/touchegg) they seem to work now.
+
+https://askubuntu.com/questions/304747/my-usb-flash-does-not-have-write-permission-i-cant-copy-files-into-it-via-na

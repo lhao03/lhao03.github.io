@@ -1,4 +1,5 @@
 songs = [
+  {week = "June 27 - July 3", picks = [{spotify = "https://open.spotify.com/embed/track/2HolBGR6tpiWI80MXoV1dJ", reason = "Another one by Doja Cat."}]},
   {week = "June 20-26", picks = [
     {spotify = "https://open.spotify.com/embed/track/0FFsgUoFibYISzMxuGS61W", reason = "Doja Cat and Ariana Grande collabs are one of my favorite pairs!"},
     {spotify = "https://open.spotify.com/embed/track/7BoobGhD4x5K96Me0hqC8Q", reason = "The song and music video have alot of symbolism so I think that's super cool."},
