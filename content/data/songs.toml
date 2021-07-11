@@ -1,4 +1,11 @@
 songs = [
+  {week = "July 11 - July 17", picks = [
+    {spotify = "https://open.spotify.com/embed/track/34Vy1dY4YFVrzpk7hCbRx9", reason = "A cover of SHAUN's Way Back Home but in Korean!"},
+    {spotify = "https://open.spotify.com/embed/track/52CBUrIdyf8tbZaUY9iawE", reason = "A really up beat song that gives all feel good vibes!"},
+  ]},
+  {week = "July 4 - July 10", picks = [
+    {spotify = "https://open.spotify.com/embed/track/0LThjFY2iTtNdd4wviwVV2", reason = "An english one by BTS! I like Jimin's part the most."},
+  ]},
   {week = "June 27 - July 3", picks = [{spotify = "https://open.spotify.com/embed/track/2HolBGR6tpiWI80MXoV1dJ", reason = "Another one by Doja Cat."}]},
   {week = "June 20-26", picks = [
     {spotify = "https://open.spotify.com/embed/track/0FFsgUoFibYISzMxuGS61W", reason = "Doja Cat and Ariana Grande collabs are one of my favorite pairs!"},
