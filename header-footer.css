@@ -1,0 +1,1 @@
+footer{margin-top:20px;padding-bottom:20px}footer .links{display:flex;flex-direction:row;justify-content:space-evenly}footer .links a{text-decoration:none;color:var(--text-color)}footer .links a p{text-decoration:none;background-color:var(--accent-color);color:var(--text-color);padding:5px;border-radius:5px}footer p{color:var(--text-color);margin-bottom:0px;padding-bottom:5px}
