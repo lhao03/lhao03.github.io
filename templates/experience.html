@@ -10,45 +10,45 @@
 {% set loe_data = title_experiences.loe | sort(attribute="order") %}
 {% for experience in loe_data %}
 <section id="experience">
-  {% if loop.first %}
-  <input id="{{experience.name}}" type="checkbox" class="dropdown-check" checked="true">
-  {% else %}
-  <input id="{{experience.name}}" type="checkbox" class="dropdown-check">
-  {% endif %}
-  <label for="{{experience.name}}">
-    <div class="img-title">
-      {% if experience.img %}
-      <img src="/res/logos/{{experience.img}}" alt="">
-      {% endif %}
-      <div class="title-info">
-        <h3 class="exp-title">{{experience.name}}</h3>
-        <div class="date-job mobile-col">
-          <p>{{experience.date}}</p>
-          <p class="mobile-hide">, {{experience.pos}}</p>
-          <p class="desktop-hide">{{experience.pos}}</p>
+    {% if loop.first %}
+    <input id="{{experience.name}}" type="checkbox" class="dropdown-check" checked="true">
+    {% else %}
+    <input id="{{experience.name}}" type="checkbox" class="dropdown-check">
+    {% endif %}
+    <label for="{{experience.name}}">
+        <div class="img-title">
+            {% if experience.img %}
+            <img src="/res/logos/{{experience.img}}" alt="">
+            {% endif %}
+            <div class="title-info">
+                <h3 class="exp-title">{{experience.name}}</h3>
+                <div class="date-job mobile-col">
+                    <p>{{experience.date}}</p>
+                    <p class="mobile-hide">, {{experience.pos}}</p>
+                    <p class="desktop-hide">{{experience.pos}}</p>
+                </div>
+            </div>
         </div>
-      </div>
+    </label>
+    <label for="{{experience.name}}" id="up-down"></label>
+    <div class="blocked">
+        <div class="desc">
+            {% for sent in experience.desc %}
+            {{ sent }}
+            {% endfor %}
+        </div>
+        <div class="links">
+            {% if experience.links %}
+            {% for link in experience.links %}
+            {% if loop.last %}
+            <a href="{{link.link}}" class="highlight" target="_blank">{{link.name}}</a>
+            {% else %}
+            <a href="{{link.link}}" class="highlight" target="_blank">{{link.name}}</a> |
+            {% endif %}
+            {% endfor %}
+            {% endif %}
+        </div>
     </div>
-  </label>
-  <label for="{{experience.name}}" id="up-down"></label>
-  <div class="blocked">
-    <div class="desc">
-      {% for sent in experience.desc %}
-      {{ sent }}
-      {% endfor %}
-    </div>
-    <div class="links">
-      {% if experience.links %}
-      {% for link in experience.links %}
-      {% if loop.last %}
-      <a href="{{link.link}}" class="highlight" target="_blank">{{link.name}}</a>
-      {% else %}
-      <a href="{{link.link}}" class="highlight" target="_blank">{{link.name}}</a> |
-      {% endif %}
-      {% endfor %}
-      {% endif %}
-    </div>
-  </div>
 </section>
 
 {% endfor %}

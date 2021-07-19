@@ -22,7 +22,7 @@ list_of_experiences = [
       "CPSC 210 is taught in Java and focusses on Test Driven Design and Object Oriented programming.",
       "Held weekly TA hours to asnwer student questions.",
       "Invigilated, marked and tested exam questions.",
-    ], date = "Jan - Apr 2021", pos = "Teaching Assistant", img = "ubc.png", order = 2},
+    ], date = "Jan - Apr 2021, Jul - Aug 2021", pos = "Teaching Assistant", img = "ubc.png", order = 2},
   ]},
   {title = "🎤 speaking", loe = [
     {name = "Workshop Host: Intro to Git/GitHub", links = [

@@ -4,53 +4,53 @@
 {% set data = load_data(path="content/data/index.toml") %}
 
 <div class="landing" id="landing">
-  <div class="intro">
-    <h1>Hi, I'm <a class="highlight">Lucy</a>! <img class="me" src="{{get_url(path=data.emoji_path)}}" alt=""></h1>
-    <div class="intro-display">
-      <p>
-        👩🏻‍💻 I'm a software engineering intern at the <a href="{{data.microsoft}}" target="_blank"
-          class="highlight">Microsoft</a> <a href="{{data.garage}}" class="highlight" target="_blank">Garage</a> this
-        summer and
-        I study <a class="highlight" href={{data.ubc_cs}} target="_blank">💻 Computer Science</a> and
-        <a href="{{data.ubc_bchem}}" target="_blank" class="highlight">🧬 Biochemistry</a> at the
-        <a href="{{data.ubc}}" class="highlight" target="_blank">University of British Columbia</a>.
-        Check out the courses I've taken <a href="/school/" class="highlight">here</a>!
-      </p>
-    </div>
-    <p>
-      🧬 Prevously, I did co-op at <a class="highlight" href="{{data.proof}}" target="_blank">The Centre of
-        Excellence for Prevention of Organ Failure</a>, a biotechnology not-for-profit organization. I helped design and
-      build a natural langauge processing pipeline to automate the extraction of
-      patient information from clinical notes. You can find the preprint <a
-        href="https://www.medrxiv.org/content/10.1101/2021.05.04.21256134v1" class="highlight" target="_blank">here</a>.
-    </p>
-    <p>💁🏻‍♀️ I've also TAed <a href="{{data.ta}}" class="highlight" target="_blank">CPSC 210</a> at UBC (currently
-      TAing it for the second time!), talked on a
-      <a href="{{data.joytojob}}" class="highlight">panel</a> and led some technical <a href="/experience"
-        class="highlight">workshops</a>. Additionally, you can find me helping organize
-      hackathons at <a href={{data.starhacks}} class="highlight" target="_blank">StarHacks</a> and <a
-        href="{{data.nwplus}}" class="highlight" target="_blank">nwPlus</a>.
+    <div class="intro">
+        <h1>Hi, I'm <a class="highlight">Lucy</a>! <img class="me" src="{{get_url(path=data.emoji_path)}}" alt=""></h1>
+        <div class="intro-display">
+            <p>
+                👩🏻‍💻 I'm currently a software engineering intern at the <a href="{{data.microsoft}}" target="_blank"
+                                                                   class="highlight">Microsoft</a> <a href="{{data.garage}}" class="highlight" target="_blank">Garage</a> this
+                summer and
+                I study <a class="highlight" href={{data.ubc_cs}} target="_blank">💻 Computer Science</a> and
+                <a href="{{data.ubc_bchem}}" target="_blank" class="highlight">🧬 Biochemistry</a> at the
+                <a href="{{data.ubc}}" class="highlight" target="_blank">University of British Columbia</a>.
+                Check out the courses I've taken <a href="/school/" class="highlight">here</a>!
+            </p>
+        </div>
+        <p>
+            🧬 Prevously, I did co-op at <a class="highlight" href="{{data.proof}}" target="_blank">The Centre of
+            Excellence for Prevention of Organ Failure</a>, a biotechnology not-for-profit organization. I helped design and
+            build a natural langauge processing pipeline to automate the extraction of
+            patient information from clinical notes. You can find the preprint <a
+                                                                                   href="https://www.medrxiv.org/content/10.1101/2021.05.04.21256134v1" class="highlight" target="_blank">here</a>.
+        </p>
+        <p>💁🏻‍♀️ I've also TAed <a href="{{data.ta}}" class="highlight" target="_blank">CPSC 210</a> at UBC (currently
+            TAing it for the second time!), talked on a
+            <a href="{{data.joytojob}}" class="highlight">panel</a> and led some technical <a href="/experience"
+                                                                                              class="highlight">workshops</a>. Additionally, you can find me helping organize
+            hackathons at <a href={{data.starhacks}} class="highlight" target="_blank">StarHacks</a> and <a
+                                                                                                             href="{{data.nwplus}}" class="highlight" target="_blank">nwPlus</a>.
 
-    </p>
-    <p>
-      ✨ Truthfully, I don't know what I want to do yet, but I do know that I'm interested in biochemistry,
-      developer tooling, and all things in between. In my free time, I sometimes play a game called the <a
-        href={{data.goose_game}} class="highlight" target="_blank">Untitled Goose Game</a>, 🏋🏻‍♀️ lift weights and
-      watch Netflix. I code best with some 🍫 dark chocolate, a cup of 🍵 green tea and my <a href="/songs"
-        class="highlight">Spotify</a>! If you want to see what I'm thinking about, check out my <a href="/blog"
-        class="highlight">blog</a>.
-    </p>
-    <div class="bio mobile-col">
-      <p>💖 I'd love to meet you! <a href={{data.email}} class="highlight">Email me</a> or tweet me on <a
-          href="{{data.twitter}}" class="highlight"> twitter 🐦</a>.
-        You can also see some 🍝 code on my <a href="{{data.github}}" class="highlight">github</a>, or check
-        out my <a class="highlight" href="{{get_url(path=data.resume)}}" target="_blank">resume</a>!
-      </p>
-      <div class="profile-overlay">
-        <img class="profile-img" src="{{get_url(path=data.profile_img)}}" alt="/res/profile.png" />
-        <img src="{{get_url(path=data.sparkle_path)}}" alt="" class="overlay">
-      </div>
+        </p>
+        <p>
+            ✨ Truthfully, I don't know what I want to do yet, but I do know that I'm interested in biochemistry, health tech,
+            developer tooling, and all things in between. In my free time, I sometimes play a game called the <a
+                                                                                                                  href={{data.goose_game}} class="highlight" target="_blank">Untitled Goose Game</a>, 🏋🏻‍♀️ lift weights and
+            watch Netflix. I code best with some 🍫 dark chocolate, a cup of 🍵 green tea and my <a href="/songs"
+                                                                                                    class="highlight">Spotify</a>! If you want to see what I'm thinking about, check out my <a href="/blog"
+                                                                                                                                                                                               class="highlight">blog</a>.
+        </p>
+        <div class="bio mobile-col">
+            <p>💖 I'd love to meet you! Send an <a href={{data.email}} class="highlight">email</a> or find me on <a
+                                                                                                                 href="{{data.twitter}}" class="highlight"> twitter 🐦</a>.
+                You can also see some 🍝 code on my <a href="{{data.github}}" class="highlight">github</a>, or check
+                out my <a class="highlight" href="{{get_url(path=data.resume)}}" target="_blank">resume</a>!
+            </p>
+            <div class="profile-overlay">
+                <img class="profile-img" src="{{get_url(path=data.profile_img)}}" alt="/res/profile.png" />
+                <img src="{{get_url(path=data.sparkle_path)}}" alt="" class="overlay">
+            </div>
+        </div>
     </div>
-  </div>
 </div>
 {% endblock content %}

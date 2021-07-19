@@ -2,15 +2,15 @@
 
 {% block content %}
 <h1>
-  {{ section.title }}
+    {{ section.title }}
 </h1>
 <p>
-  Here you can check out blog posts on topics like computer science, my internships or just life.
+    Here you can check out blog posts on topics like computer science, my internships or just life.
 </p>
 {% for page in section.pages %}
 <div class="blog-intro">
-  <p><a class="highlight blog-title" href="{{ page.permalink | safe }}">{{ page.title }}</a></p>
-  <p class="date-time">{{ page.reading_time }} mins | {{ page.date }}</p>
+    <p><a class="highlight blog-title" href="{{ page.permalink | safe }}">{{ page.title }}</a></p>
+    <p class="date-time">{{ page.reading_time }} mins | {{ page.date }}</p>
 </div>
 {% endfor %}
 {% endblock content %}

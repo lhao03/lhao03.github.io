@@ -1,7 +1,7 @@
 +++
 title = "💻 Hackathon Workshops"
 date = 2021-06-17
-draft = false
+draft = true
 +++
 
 ### StarHacks - Jan 2021
