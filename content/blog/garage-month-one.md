@@ -1,7 +1,7 @@
 +++
 title = "⛏️ The Microsoft Garage: 5 things I learned in my first month"
 date = 2021-07-01
-draft = false
+draft = true
 +++
 
 This summer, I'm a software engineer intern at the Microsoft Garage! For everyone's reference, the Microsoft Garage is 
