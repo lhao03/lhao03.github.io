@@ -24,12 +24,13 @@ ubc = "https://www.ubc.ca/"
 ubc_bchem = "https://biochem.ubc.ca/"
 ubc_best = "http://www.ubcbest.com/"
 ubc_cs = "https://www.cs.ubc.ca/"
+bts = "/res/spotify/bts.jpg"
 
 links = [
-  {name = "email", link = "mailto:hao.lucyy@gmail.com"},
-  {name = "github", link = "https://github.com/lhao03"},
-  {name = "linkedin", link = "https://linkedin.com/in/lucy-hao"},
-  {name = "twitter", link = "https://twitter.com/hoalycu"},
+  { name = "email", link = "mailto:hao.lucyy@gmail.com" },
+  { name = "github", link = "https://github.com/lhao03" },
+  { name = "linkedin", link = "https://linkedin.com/in/lucy-hao" },
+  { name = "twitter", link = "https://twitter.com/hoalycu" },
 ]
 
 school_years = [2, 1]

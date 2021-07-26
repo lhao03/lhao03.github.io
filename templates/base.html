@@ -1,111 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-    {% set data = load_data(path="content/data/index.toml") %}
+{% set data = load_data(path="content/data/index.toml") %}
 
-    <head>
-        <link rel="preconnect" href="https://www.googletagmanager.com" />
-        <link rel="preconnect" href="https://www.google-analytics.com" />
+<head>
+    <link rel="preconnect" href="https://www.googletagmanager.com" />
+    <link rel="preconnect" href="https://www.google-analytics.com" />
 
-        <!-- basic favicon -->
-        <link rel="icon" href="{{get_url(path=data.img_path)}}" />
-        <!-- third-generation iPad with high-resolution Retina display: -->
-        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{get_url(path=data.android_chrome_favicon)}}">
-        <!-- iPhone with high-resolution Retina display: -->
-        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{get_url(path=data.android_chrome_favicon)}}">
-        <!-- first- and second-generation iPad: -->
-        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{get_url(path=data.android_chrome_favicon)}}">
-        <!-- non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
-        <link rel="apple-touch-icon-precomposed" href="{{get_url(path=data.img_path)}}">
+    <!-- basic favicon -->
+    <link rel="icon" href="{{get_url(path=data.img_path)}}" />
+    <!-- third-generation iPad with high-resolution Retina display: -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{get_url(path=data.android_chrome_favicon)}}">
+    <!-- iPhone with high-resolution Retina display: -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{get_url(path=data.android_chrome_favicon)}}">
+    <!-- first- and second-generation iPad: -->
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{get_url(path=data.android_chrome_favicon)}}">
+    <!-- non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+    <link rel="apple-touch-icon-precomposed" href="{{get_url(path=data.img_path)}}">
 
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154930983-1"></script>
-        <script>
-         window.dataLayer = window.dataLayer || [];
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154930983-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-         function gtag() {
-             dataLayer.push(arguments);
-         }
-         gtag("js", new Date());
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
 
-         gtag("config", "UA-154930983-1");
-        </script>
+        gtag("config", "UA-154930983-1");
+    </script>
 
-        <!-- Primary Meta Tags -->
-        <title>Lucy Hao | Computer Science Student at UBC</title>
-        <meta name="title" content="Lucy Hao | Computer Science Student at UBC">
-        <meta name="description" content="✨ I'm a chemistry nerd and aspiring developer!">
+    <!-- Primary Meta Tags -->
+    <title>Lucy Hao | Computer Science Student at UBC</title>
+    <meta name="title" content="Lucy Hao | Computer Science Student at UBC">
+    <meta name="description" content="✨ I'm a chemistry nerd and aspiring developer!">
 
-        <!-- Open Graph / Facebook -->
-        <meta property="og:type" content="website">
-        <meta property="og:url" content="https://metatags.io/">
-        <meta property="og:title" content="Lucy Hao | Computer Science Student at UBC">
-        <meta property="og:description" content="✨ I'm a chemistry nerd and aspiring developer!">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://metatags.io/">
+    <meta property="og:title" content="Lucy Hao | Computer Science Student at UBC">
+    <meta property="og:description" content="✨ I'm a chemistry nerd and aspiring developer!">
 
-        <!-- Twitter -->
-        <meta name="twitter:creator" content="@hoalycu">
-        <meta property="twitter:card" content="summary_large_image">
-        <meta property="twitter:title" content="Lucy Hao | Computer Science Student at UBC">
-        <meta property="twitter:description" content="✨ I'm a chemistry nerd and aspiring developer!">
-        <meta property="twitter:image" content="{{get_url(path=data.emoji_path)}}">
+    <!-- Twitter -->
+    <meta name="twitter:creator" content="@hoalycu">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Lucy Hao | Computer Science Student at UBC">
+    <meta property="twitter:description" content="✨ I'm a chemistry nerd and aspiring developer!">
+    <meta property="twitter:image" content="{{get_url(path=data.emoji_path)}}">
 
-        <!-- Other Meta tags -->
-        <meta charset="UTF-8" />
-        <meta name="description" content="Lucy Hao | Computer Science Student at UBC" />
-        <meta property="og:image" content="{{get_url(path=data.emoji_path)}}">
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" href="{{get_url(path=data.css_path)}}">
+    <!-- Other Meta tags -->
+    <meta charset="UTF-8" />
+    <meta name="description" content="Lucy Hao | Computer Science Student at UBC" />
+    <meta property="og:image" content="{{get_url(path=data.emoji_path)}}">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="{{get_url(path=data.css_path)}}">
 
-    </head>
+</head>
 
-    <body>
-        <section class="container theme light">
-
-            <header>
-                <div class="header">
-                    <nav>
-                        <a href="/">home</a>
-                        <a href="/experience">experience</a>
-                        <a href="/blog">blog</a>
-                        <a href="/failures">fails</a>
-                        <a href="/school">school</a>
-                    </nav>
-                    <button class="hamburger">
-                        <div class="bar"></div>
-                    </button>
-                </div>
-            </header>
-            <nav class="mobile-nav">
-                <a href="/">home</a>
-                <a href="/experience">experience</a>
-                <a href="/blog">blog</a>
-                <a href="/failures">fails</a>
-                <a href="/school">school</a>
-            </nav>
-
-            <div class="theme-toggle">
-                <input class=toggle id=darkmode-toggle type=checkbox tabindex=-1>
-                <label for="darkmode-toggle" class="toggle-label">
-                    <p class="theme-text unselectable">☀️ 🌑</p>
-                </label>
+<body>
+    <section class="container theme light">
+        <header>
+            <div class="header">
+                <nav>
+                    <a href="/">home</a>
+                    <a href="/experience">experience</a>
+                    <a href="/blog">blog</a>
+                    <a href="/failures">fails</a>
+                    <a href="/school">school</a>
+                </nav>
+                <button class="hamburger">
+                    <div class="bar"></div>
+                </button>
             </div>
+        </header>
+        <nav class="mobile-nav">
+            <a href="/">home</a>
+            <a href="/experience">experience</a>
+            <a href="/blog">blog</a>
+            <a href="/failures">fails</a>
+            <a href="/school">school</a>
+        </nav>
 
-            <div class="page">
-                {% block content %} {% endblock %}
+        <div class="theme-toggle">
+            <input class=toggle id=darkmode-toggle type=checkbox tabindex=-1>
+            <label for="darkmode-toggle" class="toggle-label">
+                <p class="theme-text unselectable">☀️ 🌑</p>
+            </label>
+        </div>
+
+        <div class="page">
+            {% block content %} {% endblock %}
+        </div>
+
+        <footer>
+            <div class="links">
+                {% for link in data.links %}
+                <a href="{{link.link}}" target="_blank">
+                    <p style=" margin: 10px;">{{link.name}}</p>
+                </a>
+                {% endfor %}
             </div>
+            <p style="text-align: center;">made with 💖 and <a target="_blank"
+                    href="https://www.getzola.org/documentation/getting-started/overview/">Zola</a> by Lucy</p>
+        </footer>
 
-            <footer>
-                <div class="links">
-                    {% for link in data.links %}
-                    <a href="{{link.link}}" target="_blank">
-                        <p style=" margin: 10px;">{{link.name}}</p>
-                    </a>
-                    {% endfor %}
-                </div>
-                <p style="text-align: center;">made with 💖 and <a target="_blank"
-                                                                   href="https://www.getzola.org/documentation/getting-started/overview/">Zola</a> by Lucy</p>
-            </footer>
+    </section>
+    <script src="{{get_url(path=data.js_path)}}"></script>
+</body>
 
-        </section>
-        <script src="{{get_url(path=data.js_path)}}"></script>
-    </body>
 </html>
