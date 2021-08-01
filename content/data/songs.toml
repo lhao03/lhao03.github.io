@@ -1,4 +1,7 @@
 songs = [
+  { week = "July 25 - July 31", picks = [
+    { spotify = "https://open.spotify.com/embed/album/1JOpx5eL6Rb3vRC9epERQD", reason = "The whole [Summer Holiday] album is a bop! Dreamcatcher's discography is one of the most unique I've ever listened to. I think my favorite song would have to be Alldaylong." },
+  ] },
   { week = "July 18 - July 24", picks = [
     { spotify = "https://open.spotify.com/embed/track/7sjnURvuXBKEdM3fw698iq", reason = "Awesome song that highlights HyunA's confidence in herself, blooming like a flower!" },
     { spotify = "https://open.spotify.com/embed/track/5kFakScPV7ZWXStUSvQmxA", reason = "Symbolic lyrics and music video about how women are treated in the Kpop industry." },
