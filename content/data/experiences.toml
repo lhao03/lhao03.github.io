@@ -5,7 +5,7 @@ list_of_experiences = [
       { name = "bug", link = "https://github.com/microsoftgraph/microsoft-graph-explorer-v4/pull/1008" },
       { name = "our project", link = "https://github.com/LokiLabs" },
     ], desc = [
-      "Collaborated with team of 6 interns to plan and develop a internal team requested feature (open sourced) in React, Redux and TypeScript to allow developers to efficiently and easily work with the Microsoft Graph",
+      "Collaborated with team of 6 interns to plan and develop a internal team requested feature (open sourced) in React, Redux and TypeScript to allow developers to efficiently and easily work with the Microsoft Graph.",
       "Led development of user interface for Teams App and new feature for live production application, actively communicating with Program Manager intern and UX intern to seek feedback.",
       "Refactored Teams App code-base, removing over 500+ lines. Fixed critical bug freezing the Teams App and discovered bug within Graph Explorer and had the fix merged into the live production application.",
     ], date = "May - Aug 2021", pos = "Software Engineering Intern", img = "microsoft.png", order = 0 },

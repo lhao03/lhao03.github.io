@@ -69,10 +69,9 @@
         margin: 0 auto 16px;
         text-align: center;
         padding: 12px 16px;
-        color: var(--text-color);
         text-decoration: none;
-        font-size: 1em;
         font-weight: 700;
+        font-size: $pDeskTopFont;
         &:hover {
             color: var(--accent-color);
         }
@@ -95,7 +94,6 @@
 }
 
 header {
-    color: var(--text-color);
     position: absolute;
     top: 0;
     left: 0;
@@ -119,9 +117,7 @@ header {
 
             a {
                 color: inherit;
-                font-size: 2vw;
                 text-decoration: none;
-                color: var(--text-color);
                 font-weight: 700;
                 &:hover {
                     color: var(--accent-color);

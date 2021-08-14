@@ -15,9 +15,9 @@
     {% for page in section.pages %}
     {% if page.extra.year == curr_year %}
     <div class="course">
-        <p class="course-button {{page.extra.course}} light">
-            <a href="{{ page.permalink | safe }}">{{ page.title }} {{ page.description }}</a>
-        </p>
+        <a class="course-button {{page.extra.course}} light" href="{{ page.permalink | safe }}">
+            {{ page.title }} {{ page.description }}
+        </a>
     </div>
     {% endif %}
     {% endfor %}

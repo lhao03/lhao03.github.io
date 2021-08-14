@@ -9,20 +9,17 @@ footer {
         justify-content: space-evenly;
         a {
             text-decoration: none;
-            color: var(--text-color);
             p {
                 text-decoration: none;
                 background-color: var(--accent-color);
-                color: var(--text-color);
-                padding: 5px;
+                padding-left: 10px;
+                padding-right: 10px;
                 border-radius: 5px;
             }
         }
     }
 
     p {
-        color: var(--text-color);
         margin-bottom: 0px;
-        padding-bottom: 5px;
     }
 }

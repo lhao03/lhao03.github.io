@@ -1,13 +1,14 @@
-$cpsc: #b8ccde;
-$biol: #c1cbe8;
-$chem: #b8b8d1;
-$micb: #cbc1e8;
-$math: #cdb8de;
-$other: #f2d0f2;
+$lightenFactor: 0.7;
+$cpsc: rgba(184, 204, 222, $lightenFactor);
+$biol: rgba(193, 203, 232, $lightenFactor);
+$chem: rgba(184, 184, 209, $lightenFactor);
+$micb: rgba(203, 193, 232, $lightenFactor);
+$math: rgba(205, 184, 222, $lightenFactor);
+$other: rgba(242, 208, 242, $lightenFactor);
 $light: white;
 $smoke: #e6e6ee;
-$dark: #5b5f97;
-$darker: #cdb8de;
+$dark: rgba(91, 95, 151, $lightenFactor);
+$darker: rgba(205, 184, 222, $lightenFactor);
 $font: "Open Sans";
 $grey: #545454;
 $lightergrey: #767676;
@@ -18,17 +19,6 @@ $maxWidth: 768px;
 
 $pDeskTopFont: 22px;
 $pModbileFont: medium;
-
-p,
-label,
-li {
-    line-height: 200%;
-    font-size: $pDeskTopFont;
-    @media (max-width: $maxWidth) {
-        font-size: $pModbileFont;
-        line-height: 150%;
-    }
-}
 
 $themes: (
     "light": (
@@ -83,6 +73,7 @@ $themes: (
     );
 
     .container.#{$theme-name} {
+        min-height: 100vh;
         // define a css variable for each shade
         @each $name, $color in $colors {
             --#{$name}: #{$color};
@@ -99,5 +90,42 @@ $themes: (
         @each $name, $color in $theme {
             --#{$name}: #{$color};
         }
+    }
+}
+
+p,
+label,
+li,
+a,
+code {
+    color: var(--text-color);
+    line-height: 200%;
+    font-size: $pDeskTopFont;
+    @media (max-width: $maxWidth) {
+        font-size: $pModbileFont;
+        line-height: 150%;
+    }
+}
+
+h1 {
+    font-size: 2.5em;
+    color: var(--text-color);
+    @media (max-width: $maxWidth) {
+        font-size: 2em;
+    }
+}
+
+h2 {
+    font-size: 2em;
+    color: var(--text-color);
+    @media (max-width: $maxWidth) {
+        font-size: 1.5em;
+    }
+}
+
+h3 {
+    font: 1.5em;
+    color: var(--text-color);
+    @media (max-width: $maxWidth) {
     }
 }
