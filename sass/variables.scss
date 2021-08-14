@@ -1,0 +1,103 @@
+$cpsc: #b8ccde;
+$biol: #c1cbe8;
+$chem: #b8b8d1;
+$micb: #cbc1e8;
+$math: #cdb8de;
+$other: #f2d0f2;
+$light: white;
+$smoke: #e6e6ee;
+$dark: #5b5f97;
+$darker: #cdb8de;
+$font: "Open Sans";
+$grey: #545454;
+$lightergrey: #767676;
+$dark-grey: #1e1e21;
+$percent: 30%;
+
+$maxWidth: 768px;
+
+$pDeskTopFont: 22px;
+$pModbileFont: medium;
+
+p,
+label,
+li {
+    line-height: 200%;
+    font-size: $pDeskTopFont;
+    @media (max-width: $maxWidth) {
+        font-size: $pModbileFont;
+        line-height: 150%;
+    }
+}
+
+$themes: (
+    "light": (
+        "colors": (
+            "background": $light,
+            "accent": $darker,
+            "font": $grey,
+        ),
+        "courseColors": (
+            "CPSC": $cpsc,
+            "BIOL": $biol,
+            "CHEM": $chem,
+            "MICB": $micb,
+            "MATH": $math,
+            "OTHER": $other,
+        ),
+    ),
+    "dark": (
+        "colors": (
+            "background": $dark-grey,
+            "accent": $dark,
+            "font": $smoke,
+        ),
+        "courseColors": (
+            "CPSC": darken($cpsc, $percent),
+            "BIOL": darken($biol, $percent),
+            "CHEM": darken($chem, $percent),
+            "MICB": darken($micb, $percent),
+            "MATH": darken($math, $percent),
+            "OTHER": darken($other, $percent),
+        ),
+    ),
+);
+
+@each $theme-name, $theme-vars in $themes {
+    $colors: map-get($theme-vars, "colors");
+    $courseColors: map-get(
+        $map: $theme-vars,
+        $key: "courseColors",
+    );
+
+    $theme: (
+        "bg-color": map-get($colors, "background"),
+        "accent-color": map-get($colors, "accent"),
+        "text-color": map-get($colors, "font"),
+        "cpsc": map-get($courseColors, "CPSC"),
+        "biol": map-get($courseColors, "BIOL"),
+        "chem": map-get($courseColors, "CHEM"),
+        "micb": map-get($courseColors, "MICB"),
+        "math": map-get($courseColors, "MATH"),
+        "other": map-get($courseColors, "OTHER"),
+    );
+
+    .container.#{$theme-name} {
+        // define a css variable for each shade
+        @each $name, $color in $colors {
+            --#{$name}: #{$color};
+        }
+
+        // define a css variable for each color
+        @each $name, $color in $colors {
+            --#{$name}: #{$color};
+            --#{$name}-dark: #{darken($color, 10%)};
+            --#{$name}-darker: #{darken($color, 20%)};
+        }
+
+        // define a css variable for each theme color
+        @each $name, $color in $theme {
+            --#{$name}: #{$color};
+        }
+    }
+}

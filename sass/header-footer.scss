@@ -1,3 +1,5 @@
+@import "variables";
+
 footer {
     margin-top: 20px;
     padding-bottom: 20px;
@@ -17,6 +19,7 @@ footer {
             }
         }
     }
+
     p {
         color: var(--text-color);
         margin-bottom: 0px;

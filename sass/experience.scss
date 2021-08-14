@@ -1,13 +1,17 @@
+@import "variables";
+
 .page {
   #experience {
     height: fit-content;
     margin-bottom: 2vh;
     margin-top: 0;
-    padding-top: 25px;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding: 25px 25px 0 25px;
     border-radius: 25px;
     border: 2px solid var(--accent-color);
+    p,
+    h3 {
+      margin: 0;
+    }
     .img-title {
       display: flex;
       flex-direction: row;
@@ -22,16 +26,8 @@
         .date-job {
           display: flex;
           flex-direction: row;
-          & > p {
-            font-size: 15px;
-          }
         }
         margin-left: 10px;
-        & > h3 {
-          @media (max-width: 768px) {
-            font-size: 20px;
-          }
-        }
       }
     }
     input {
@@ -75,10 +71,6 @@
       a {
         font-weight: bold;
       }
-    }
-    p,
-    h3 {
-      margin: 0;
     }
   }
 }

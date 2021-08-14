@@ -33,20 +33,24 @@
     <label for="{{experience.name}}" id="up-down"></label>
     <div class="blocked">
         <div class="desc">
-            {% for sent in experience.desc %}
-            {{ sent }}
-            {% endfor %}
+            <p>
+                {% for sent in experience.desc %}
+                {{ sent }}
+                {% endfor %}
+            </p>
         </div>
         <div class="links">
-            {% if experience.links %}
-            {% for link in experience.links %}
-            {% if loop.last %}
-            <a href="{{link.link}}" class="highlight" target="_blank">{{link.name}}</a>
-            {% else %}
-            <a href="{{link.link}}" class="highlight" target="_blank">{{link.name}}</a> |
-            {% endif %}
-            {% endfor %}
-            {% endif %}
+            <p>
+                {% if experience.links %}
+                {% for link in experience.links %}
+                {% if loop.last %}
+                <a href="{{link.link}}" class="highlight" target="_blank">{{link.name}}</a>
+                {% else %}
+                <a href="{{link.link}}" class="highlight" target="_blank">{{link.name}}</a> |
+                {% endif %}
+                {% endfor %}
+                {% endif %}
+            </p>
         </div>
     </div>
 </section>

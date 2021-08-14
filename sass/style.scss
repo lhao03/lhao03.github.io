@@ -1,3 +1,4 @@
+@import "variables";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Open+Sans:wght@400;600;700;800&display=swap");
 @import "index";
 @import "blog";
@@ -8,110 +9,13 @@
 @import "fails";
 @import "ham";
 
-$cpsc: #b8ccde;
-$biol: #c1cbe8;
-$chem: #b8b8d1;
-$micb: #cbc1e8;
-$math: #cdb8de;
-$other: #f2d0f2;
-$light: white;
-$smoke: #e6e6ee;
-$dark: #5b5f97;
-$darker: #cdb8de;
-$font: "Open Sans";
-$grey: #545454;
-$lightergrey: #767676;
-$dark-grey: #1e1e21;
-$percent: 30%;
-
-$themes: (
-  "light": (
-    "colors": (
-      "background": $light,
-      "accent": $darker,
-      "font": $grey,
-    ),
-    "courseColors": (
-      "CPSC": $cpsc,
-      "BIOL": $biol,
-      "CHEM": $chem,
-      "MICB": $micb,
-      "MATH": $math,
-      "OTHER": $other,
-    ),
-  ),
-  "dark": (
-    "colors": (
-      "background": $dark-grey,
-      "accent": $dark,
-      "font": $smoke,
-    ),
-    "courseColors": (
-      "CPSC": darken($cpsc, $percent),
-      "BIOL": darken($biol, $percent),
-      "CHEM": darken($chem, $percent),
-      "MICB": darken($micb, $percent),
-      "MATH": darken($math, $percent),
-      "OTHER": darken($other, $percent),
-    ),
-  ),
-);
-
-@each $theme-name, $theme-vars in $themes {
-  $colors: map-get($theme-vars, "colors");
-  $courseColors: map-get(
-    $map: $theme-vars,
-    $key: "courseColors",
-  );
-
-  $theme: (
-    "bg-color": map-get($colors, "background"),
-    "accent-color": map-get($colors, "accent"),
-    "text-color": map-get($colors, "font"),
-    "cpsc": map-get($courseColors, "CPSC"),
-    "biol": map-get($courseColors, "BIOL"),
-    "chem": map-get($courseColors, "CHEM"),
-    "micb": map-get($courseColors, "MICB"),
-    "math": map-get($courseColors, "MATH"),
-    "other": map-get($courseColors, "OTHER"),
-  );
-
-  .container.#{$theme-name} {
-    // define a css variable for each shade
-    @each $name, $color in $colors {
-      --#{$name}: #{$color};
-    }
-
-    // define a css variable for each color
-    @each $name, $color in $colors {
-      --#{$name}: #{$color};
-      --#{$name}-dark: #{darken($color, 10%)};
-      --#{$name}-darker: #{darken($color, 20%)};
-    }
-
-    // define a css variable for each theme color
-    @each $name, $color in $theme {
-      --#{$name}: #{$color};
-    }
-  }
-}
-
 .unselectable {
   -moz-user-select: -moz-none;
   -khtml-user-select: none;
   -webkit-user-select: none;
-
-  /*
-    Introduced in IE 10.
-    See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
-  */
   -ms-user-select: none;
   user-select: none;
 }
-
-// * {
-//   transition: background 0.4s;
-// }
 
 html {
   overflow-x: hidden;
@@ -131,6 +35,18 @@ body {
   max-width: 100%;
   position: relative;
   overflow-x: hidden;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font: 1.5em;
 }
 
 section {
@@ -164,16 +80,6 @@ section {
       background-size: 100% 100%;
     }
   }
-  p,
-  label,
-  li {
-    line-height: 200%;
-    font-size: 20px;
-    @media (max-width: 767px) {
-      font-size: medium;
-      line-height: 150%;
-    }
-  }
 }
 
 code.inline {
@@ -205,16 +111,4 @@ a {
     padding: 5px;
     border-radius: 5px;
   }
-}
-
-h1 {
-  font-size: 2em;
-}
-
-h2 {
-  font-size: 1.5em;
-}
-
-h3 {
-  font: 1em;
 }

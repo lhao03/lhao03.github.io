@@ -1,10 +1,4 @@
-.songs {
-  display: flex;
-  justify-content: space-between;
-  .album {
-    border-radius: 15px;
-  }
-}
+@import "variables";
 
 .page {
   .intro-theme {
@@ -15,47 +9,20 @@
       font-size: 2em;
     }
   }
-  img.me {
-    position:absolute;
-    height: 45px;
-  }
-
-  .intro-display {
-    display: flex;
-    flex-direction: row;
-    @media (max-width: 768px) {
-      flex-direction: column;
-    }
-  }
   .bio {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    .profile-overlay {
-      position: relative;
-      img.profile-img {
-        width: 15vw;
-        margin: 15px;
-        @media (max-width: 768px) {
-          display: block;
-          margin-left: auto;
-          margin-right: auto;
-          width: 50%;
-        }
-        &:hover ~ img.overlay {
-          transform: rotate(15deg);
-        }
-      }
-      img.overlay {
-        position: absolute;
-        left: 85%;
-        top: 60%;
-        width: 4vw;
-        @media (max-width: 768px) {
-          width: 12vw;
-          left: 65%;
-          top: -10%;
-        }
+    img {
+      height: 40vh;
+      width: auto;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 5px;
+      @media (max-width: $maxWidth) {
+        height: auto;
+        width: 80vw;
       }
     }
   }
