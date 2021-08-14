@@ -84,7 +84,7 @@
     overflow-y: hidden;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $maxWidth) {
     .mobile-nav {
         display: none;
     }

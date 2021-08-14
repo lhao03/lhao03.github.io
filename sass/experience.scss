@@ -18,7 +18,7 @@
       img {
         height: 5vw;
         margin-right: 5px;
-        @media (max-width: 768px) {
+        @media (max-width: $maxWidth) {
           height: 40px;
         }
       }

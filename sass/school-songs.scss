@@ -1,47 +1,46 @@
 @import "variables";
 
 .page {
-    p.course-button {
-        a {
-            text-decoration: none;
-            color: var(--font-color);
-            &:hover {
-                text-decoration: underline;
-                text-decoration-color: var(--font-color);
-            }
-        }
-        white-space: nowrap;
-        padding: 5px;
-        width: max-content;
-        border-radius: 5px;
-        background-color: var(--other);
-        &.CPSC {
-            background-color: var(--cpsc) !important;
-        }
-        &.BIOL {
-            background-color: var(--biol) !important;
-        }
-        &.CHEM {
-            background-color: var(--chem) !important;
-        }
-        &.MICB {
-            background-color: var(--micb) !important;
-        }
-        &.BIOC {
-            background-color: var(--micb) !important;
-        }
-        &.MATH {
-            background-color: var(--math) !important;
-        }
-        @media (max-width: 768px) {
-            width: fit-content !important;
-        }
-    }
     .courses {
-        display: grid;
-        grid-template-columns: auto auto auto auto auto;
-        @media (max-width: 768px) {
-            grid-template-columns: auto auto auto;
+        // display: grid;
+        // grid-template-columns: auto auto auto auto auto;
+        // @media (max-width: $maxWidth) {
+        //     grid-template-columns: auto auto auto;
+        // }
+        display: flex;
+        flex-direction: column;
+        .course {
+            p.course-button {
+                a {
+                    text-decoration: none;
+                    color: var(--font-color);
+                    &:hover {
+                        font-weight: bold;
+                    }
+                }
+                padding: 5px;
+                width: max-content;
+                border-radius: 15px;
+                background-color: var(--other);
+                &.CPSC {
+                    background-color: var(--cpsc) !important;
+                }
+                &.BIOL {
+                    background-color: var(--biol) !important;
+                }
+                &.CHEM {
+                    background-color: var(--chem) !important;
+                }
+                &.MICB {
+                    background-color: var(--micb) !important;
+                }
+                &.BIOC {
+                    background-color: var(--micb) !important;
+                }
+                &.MATH {
+                    background-color: var(--math) !important;
+                }
+            }
         }
     }
 }
@@ -55,7 +54,7 @@
         img {
             border-radius: 15px;
             width: 20vw;
-            @media (max-width: 768px) {
+            @media (max-width: $maxWidth) {
                 width: 70vw;
                 margin-bottom: 10px;
                 margin-left: auto;
@@ -66,7 +65,7 @@
     .weeklysongs {
         display: grid;
         grid-template-columns: auto auto;
-        @media (max-width: 768px) {
+        @media (max-width: $maxWidth) {
             grid-template-columns: auto !important;
         }
         .song {
@@ -80,10 +79,10 @@
             p {
                 font-size: 15px;
             }
-            @media (min-width: 768px) {
+            @media (min-width: $maxWidth) {
                 width: 33vw;
             }
-            @media (max-width: 768px) {
+            @media (max-width: $maxWidth) {
                 width: 70vw;
             }
         }
