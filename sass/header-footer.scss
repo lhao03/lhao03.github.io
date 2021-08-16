@@ -1,24 +1,23 @@
 @import "variables";
 
 footer {
-    margin-top: 20px;
-    padding-bottom: 20px;
     .links {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
-        a {
-            text-decoration: none;
-            p {
-                text-decoration: none;
-                background-color: var(--accent-color);
-                padding-left: 10px;
-                padding-right: 10px;
-                border-radius: 5px;
-            }
+    }
+    a,
+    li > a {
+        color: var(--text-color);
+        background: linear-gradient(90deg, var(--accent-color) 0%, var(--accent-color) 100%) no-repeat 0 100%;
+        background-size: 100% 2px;
+        text-decoration: none;
+        transition: background-size 0.3s;
+        &:hover,
+        &:focus {
+            background-size: 100% 100%;
         }
     }
-
     p {
         margin-bottom: 0px;
     }

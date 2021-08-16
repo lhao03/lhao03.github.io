@@ -45,7 +45,7 @@ section {
 }
 
 .page {
-  padding: 8%;
+  padding: 4% 8% 0 8%;
 
   @media (max-width: 1024px) {
     padding-top: 10%;
@@ -53,6 +53,19 @@ section {
 
   @media (max-width: 767px) {
     padding-top: 16%;
+  }
+
+  a,
+  li > a {
+    color: var(--text-color);
+    background: linear-gradient(90deg, var(--accent-color) 0%, var(--accent-color) 100%) no-repeat 0 100%;
+    background-size: 100% 2px;
+    text-decoration: none;
+    transition: background-size 0.3s;
+    &:hover,
+    &:focus {
+      background-size: 100% 100%;
+    }
   }
 }
 
@@ -62,19 +75,6 @@ code.inline {
   border-radius: 4px;
   padding-left: 2px;
   padding-right: 2px;
-}
-
-.highlight,
-li > a {
-  color: var(--text-color);
-  background: linear-gradient(90deg, var(--accent-color) 0%, var(--accent-color) 100%) no-repeat 0 100%;
-  background-size: 100% 2px;
-  text-decoration: none;
-  transition: background-size 0.3s;
-  &:hover,
-  &:focus {
-    background-size: 100% 100%;
-  }
 }
 
 .theme-toggle {

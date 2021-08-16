@@ -95,11 +95,11 @@
             <div class="links">
                 {% for link in data.links %}
                 <a href="{{link.link}}" target="_blank">
-                    <p style=" margin: 10px;">{{link.name}}</p>
+                    {{link.name}}
                 </a>
                 {% endfor %}
             </div>
-            <p style="text-align: center;">made with 💖 and <a class="highlight" target="_blank"
+            <p style="text-align: center;">made with 💖 and <a target="_blank"
                     href="https://www.getzola.org/documentation/getting-started/overview/">Zola</a> by Lucy</p>
         </footer>
 

@@ -2,21 +2,10 @@
 
 .page {
     .courses {
-        // display: grid;
-        // grid-template-columns: auto auto auto auto auto;
-        // @media (max-width: $maxWidth) {
-        //     grid-template-columns: auto auto auto;
-        // }
         display: flex;
         flex-direction: column;
         .course {
             margin: 10px;
-            a {
-                text-decoration: none;
-                &:hover {
-                    font-weight: bold;
-                }
-            }
             .course-button {
                 width: max-content;
                 border-radius: 10px;
@@ -42,54 +31,12 @@
                     background-color: var(--math) !important;
                 }
             }
-        }
-    }
-}
-
-.page {
-    .trends {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        img {
-            border-radius: 15px;
-            width: 20vw;
-            @media (max-width: $maxWidth) {
-                width: 70vw;
-                margin-bottom: 10px;
-                margin-left: auto;
-                margin-right: auto;
+            a {
+                background: none;
+                background-size: none;
+                text-decoration: none;
+                transition: none;
             }
-        }
-    }
-    .weeklysongs {
-        display: grid;
-        grid-template-columns: auto auto;
-        @media (max-width: $maxWidth) {
-            grid-template-columns: auto !important;
-        }
-        .song {
-            margin: auto;
-            margin-bottom: 25px;
-            padding: 15px;
-            border-radius: 25px;
-            border: 2px solid var(--accent-color);
-            display: flex;
-            flex-direction: column;
-            p {
-                font-size: 15px;
-            }
-            @media (min-width: $maxWidth) {
-                width: 33vw;
-            }
-            @media (max-width: $maxWidth) {
-                width: 70vw;
-            }
-        }
-        .spotify-song {
-            border-radius: 15px;
-            margin-top: auto;
-            margin-bottom: auto;
         }
     }
 }
