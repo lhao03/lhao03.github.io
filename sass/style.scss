@@ -88,6 +88,7 @@ code.inline {
 }
 .toggle-label {
   font-size: large;
+  cursor: pointer;
   p {
     background-color: var(--accent-color);
     width: fit-content;

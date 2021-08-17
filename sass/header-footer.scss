@@ -6,13 +6,13 @@ footer {
         flex-direction: row;
         justify-content: space-evenly;
     }
-    a,
-    li > a {
+    a {
         color: var(--text-color);
         background: linear-gradient(90deg, var(--accent-color) 0%, var(--accent-color) 100%) no-repeat 0 100%;
         background-size: 100% 2px;
         text-decoration: none;
         transition: background-size 0.3s;
+        line-height: 150%;
         &:hover,
         &:focus {
             background-size: 100% 100%;
