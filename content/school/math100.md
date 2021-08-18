@@ -1,6 +1,5 @@
 +++
 title = "MATH 100"
-weight = 1
 description = "Differential Calculus with Applications to Physical Sciences and Engineering"
 [extra]
 course = "MATH"

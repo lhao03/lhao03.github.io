@@ -1,6 +1,5 @@
 +++
 title = "BIOL 200"
-weight = 2
 description = "Fundamentals of Cell Biology"
 [extra]
 course = "BIOL"

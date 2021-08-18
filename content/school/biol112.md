@@ -1,6 +1,5 @@
 +++
 title = "BIOL 112"
-weight = 1
 description = "Biology of the Cell"
 [extra]
 course = "BIOL"

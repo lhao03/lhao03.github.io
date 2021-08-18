@@ -79,6 +79,6 @@ list_of_experiences = [
     ], desc = [
       "Co-leading a team of 5-10 students to development an app gamifies the rehabilitation process for multiple sclerosis patients.",
       "The app is being built in Kotlin Multiplatform and the backend is developed with a Express and Flask server.",
-    ], date = "Sep 2020 - now", pos = "Co-lead Developer", img = "ubcbest.png", order = 5 },
+    ], date = "Sep 2020 - Aug 2021", pos = "Co-lead Developer", img = "ubcbest.png", order = 5 },
   ] },
 ]

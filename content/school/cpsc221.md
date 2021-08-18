@@ -1,6 +1,5 @@
 +++
 title = "CPSC 221"
-weight = 2
 description = "Basic Algorithms and Data Structures"
 [extra]
 course = "CPSC"

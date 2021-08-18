@@ -1,6 +1,5 @@
 +++
 title = "ATSC 113"
-weight = 1
 description = "Applied Meteorology"
 [extra]
 course = "ATSC"

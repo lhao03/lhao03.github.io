@@ -1,6 +1,5 @@
 +++
 title = "STAT 251"
-weight = 2
 description = "Elementary Statistics"
 [extra]
 course = "STAT"

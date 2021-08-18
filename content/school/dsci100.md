@@ -1,6 +1,5 @@
 +++
 title = "DSCI 100"
-weight = 1
 description = "Introduction to Data Science"
 [extra]
 course = "CPSC"

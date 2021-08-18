@@ -1,6 +1,5 @@
 +++
 title = "CPSC 121"
-weight = 1
 description = "Models of Computation"
 [extra]
 course = "CPSC"
