@@ -5,13 +5,14 @@
     p,
     h3 {
       margin: 0;
+      padding: 0;
+      font-family: 'Open Sans';
     }
     /* Style the buttons that are used to open and close the accordion panel */
     .accordion {
       background-color: inherit;
       color: var(--text-color);
       cursor: pointer;
-      padding: 18px;
       width: 100%;
       text-align: left;
       border: none;
@@ -45,10 +46,10 @@
 
     /* Style the accordion panel. Note: hidden by default */
     .panel {
-      padding: 0 18px;
       max-height: 0;
       overflow: hidden;
       transition: max-height 0.2s ease-out;
+      margin-bottom: 15px;
       .links {
         margin-top: 10px;
         margin-bottom: 25px;
@@ -57,16 +58,16 @@
         }
       }
     }
-    .accordion:after {
-      // content: "\02795"; /* Unicode character for "plus" sign (+) */
-      font-size: 30px;
-      float: right;
-      content: "+";
-    }
+    // .accordion:after {
+    //   // content: "\02795"; /* Unicode character for "plus" sign (+) */
+    //   font-size: 30px;
+    //   float: inline-end;
+    //   content: "+";
+    // }
 
-    .active:after {
-      // content: "\2796"; /* Unicode character for "minus" sign (-) */
-      content: "-";
-    }
+    // .active:after {
+    //   // content: "\2796"; /* Unicode character for "minus" sign (-) */
+    //   content: "-";
+    // }
   }
 }
