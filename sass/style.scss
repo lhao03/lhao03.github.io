@@ -87,13 +87,8 @@ code.inline {
   display: none;
 }
 .toggle-label {
-  font-size: large;
   cursor: pointer;
   p {
-    background-color: var(--accent-color);
-    width: fit-content;
-    padding-left: 15px;
-    padding-right: 15px;
-    border-radius: 5px;
+    font-size: 30px;
   }
 }

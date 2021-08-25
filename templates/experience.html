@@ -6,16 +6,12 @@
 <h1>👩🏻‍💻 experience</h1>
 <p>Read more about my work and extracurricular experiences!</p>
 {% for title_experiences in projects_data.list_of_experiences %}
+
 <h2>{{title_experiences.title}}</h2>
 {% set loe_data = title_experiences.loe | sort(attribute="order") %}
 {% for experience in loe_data %}
 <section id="experience">
-    {% if loop.first %}
-    <input id="{{experience.name}}" type="checkbox" class="dropdown-check" checked="true">
-    {% else %}
-    <input id="{{experience.name}}" type="checkbox" class="dropdown-check">
-    {% endif %}
-    <label for="{{experience.name}}">
+    <button class="accordion">
         <div class="img-title">
             {% if experience.img %}
             <img src="/res/logos/{{experience.img}}" alt="">
@@ -29,9 +25,8 @@
                 </div>
             </div>
         </div>
-    </label>
-    <label for="{{experience.name}}" id="up-down"></label>
-    <div class="blocked">
+    </button>
+    <div class="panel">
         <div class="desc">
             <p>
                 {% for sent in experience.desc %}
@@ -53,6 +48,7 @@
             </p>
         </div>
     </div>
+
 </section>
 
 {% endfor %}

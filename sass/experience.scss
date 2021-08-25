@@ -2,75 +2,71 @@
 
 .page {
   #experience {
-    height: fit-content;
-    margin-bottom: 2vh;
-    margin-top: 0;
-    padding: 25px 25px 0 25px;
-    border-radius: 25px;
-    border: 2px solid var(--accent-color);
     p,
     h3 {
       margin: 0;
     }
-    .img-title {
-      display: flex;
-      flex-direction: row;
-      img {
-        height: 5vw;
-        margin-right: 5px;
-        @media (max-width: $maxWidth) {
-          height: 40px;
-        }
-      }
-      .title-info {
-        .date-job {
-          display: flex;
-          flex-direction: row;
-        }
-        margin-left: 10px;
-      }
-    }
-    input {
-      display: none;
-    }
-    #up-down {
-      bottom: 0px;
-      margin-left: 98%;
-      position: relative;
-      transition: background 0.3s;
+    /* Style the buttons that are used to open and close the accordion panel */
+    .accordion {
+      background-color: inherit;
+      color: var(--text-color);
       cursor: pointer;
-    }
-    #up-down:after {
-      content: "";
-      position: absolute;
-      bottom: 70px;
-      margin-left: 80%;
-      border-top: 15px solid var(--accent-color);
-      border-bottom: 0 solid var(--accent-color);
-      border-left: 6px solid transparent;
-      border-right: 6px solid transparent;
-    }
-    input:checked ~ #up-down:after {
-      border-top: 0 solid var(--accent-color);
-      border-bottom: 15px solid var(--accent-color);
-      border-left: 6px solid transparent;
-      border-right: 6px solid transparent;
-    }
-    .blocked {
-      display: none;
-    }
-    *:checked ~ .blocked {
-      display: contents;
-    }
-    *:checked ~ p {
-      display: contents;
-    }
-    .links {
-      margin-top: 10px;
-      margin-bottom: 25px;
-      a {
-        font-weight: bold;
+      padding: 18px;
+      width: 100%;
+      text-align: left;
+      border: none;
+      outline: none;
+      // transition: 0.4s;
+      .img-title {
+        display: flex;
+        flex-direction: row;
+        img {
+          height: 5vw;
+          margin-right: 5px;
+          @media (max-width: $maxWidth) {
+            height: 40px;
+          }
+        }
+        .title-info {
+          .date-job {
+            display: flex;
+            flex-direction: row;
+          }
+          margin-left: 10px;
+        }
       }
+    }
+
+    /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+    .active,
+    .accordion:hover {
+      color: var(--text-color);
+    }
+
+    /* Style the accordion panel. Note: hidden by default */
+    .panel {
+      padding: 0 18px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+      .links {
+        margin-top: 10px;
+        margin-bottom: 25px;
+        a {
+          font-weight: bold;
+        }
+      }
+    }
+    .accordion:after {
+      // content: "\02795"; /* Unicode character for "plus" sign (+) */
+      font-size: 30px;
+      float: right;
+      content: "+";
+    }
+
+    .active:after {
+      // content: "\2796"; /* Unicode character for "minus" sign (-) */
+      content: "-";
     }
   }
 }
