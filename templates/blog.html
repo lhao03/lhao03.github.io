@@ -4,9 +4,9 @@
 <h1>
     {{ section.title }}
 </h1>
-<p>
-    Here you can check out blog posts on topics like computer science, my internships or just life.
-</p>
+
+{{ section.content | safe }}
+
 {% for page in section.pages %}
 <div class="blog-intro">
     <p><a class="highlight blog-title" href="{{ page.permalink | safe }}">{{ page.title }}</a></p>
