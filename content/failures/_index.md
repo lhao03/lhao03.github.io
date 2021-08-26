@@ -12,14 +12,13 @@ I also read others' failure resumes and it helps me alot, so I hope my failure r
 Failures are subjective. What seems like a failure to me might not to you. I also recognize that I'm fortunate to have opportunities to fail and learn.
 
 ## 2021
-- My request to return to my dream team at Microsoft was rejected.
-  - Over the course of my internship at Microsoft, I had several coffee chats with a manager of a team I wanted to return to the summer of 2022. Despite forming a really good connection with the manager, my request to return was denied because of my lack in (backend) technical skills. I was really sad, because I was confident that I could learn any skills that the team wanted, but other interns who already had the necessary backend skills were ultimately better candidates than me. I took a day to feel sad about it then started planning about the upcoming summer, as my previous plans revolved around me returning to this dream team.
+- My request to return to the Health team at Microsoft was rejected.
 - Messed up my sleep schedule and have several health problems occur because of it; I worked overtime while interning at Microsoft.
-  - After years of sleep deprivation in high school and an eating disorder, anything can throw my body off. For a week I had been sleeping at 11:30 PM and my body really took a toll. I have a huge headache and sore eyes as of writing this. I need to sleep earlier and not continue working or binge watching YouTube into the night. Update: I have yet another health issue now : )
+  - I need to sleep earlier and not continue working or binge watching YouTube into the night. I have a huge headache and sore eyes as of writing this.
 - Poorly planned my courses in second year so I didn't get promoted to third year standing.
-  - In my second year, I was under the impression that you only needed X number of credits to be promoted to third year. When I found out I was still in second year standing, I read the promotion rules a little more closely and then I realized I was only 0.4 credits away from being promoted to third year. Since I was catching up on prereqs for my biochemistry minor, I didn't check to make sure I had covered the requirements for my computer science major.
+  - When I found out I was still in second year standing, I read the promotion rules a little more closely and then I realized I was only 0.4 credits away from being promoted to third year. 
 - Fell off my running streak.
-  - I used to run cross country in junior high and had to stop because of IB in high school. I had finally gotten into a good habit. Additionally, my self esteem towards my body has been at an all time low and having to stop exercising due to wisdom teeth extraction was a bit of a trigger. Sometimes the only part of my day I enjoy is exercise and having to stop that can make me pretty miserable.
+  - I used to run cross country in junior high and had to stop because of IB in high school. I had finally gotten into a good habit. Unfortunately, I had to stop running due to wisdom teeth extraction.
 - I got a C in a Environmental Microbiology.
   - I initally said that I disliked the course content. But after some reflection, now I realize there were many things that led to this low mark. Firstly, the instructor was very distant. No real time lectures meant I procrastinated watching them. Secondly, there were pages and pages to memorize for this course. Pair this with procrastination and you have disaster. The poor delivery of the course AND my poor planning led to my low mark.
 - I forgot to apply for UBC iGEM.
