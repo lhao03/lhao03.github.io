@@ -74,6 +74,9 @@ $themes: (
 
     .container.#{$theme-name} {
         min-height: 100vh;
+        @media (min-width: $maxWidth) {
+            padding: 0 25vw;
+        }
         // define a css variable for each shade
         @each $name, $color in $colors {
             --#{$name}: #{$color};

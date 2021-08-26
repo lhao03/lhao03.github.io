@@ -44,14 +44,14 @@ section {
 }
 
 .page {
-  padding: 4% 8% 0 8%;
+  padding-top: 4%;
 
   @media (max-width: 1024px) {
-    padding-top: 10%;
+    padding: 10% 8% 0 8%;
   }
 
   @media (max-width: 767px) {
-    padding-top: 16%;
+    padding: 16% 8% 0 8%;
   }
 
   a,
