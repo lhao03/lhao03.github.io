@@ -1,10 +1,9 @@
 @import "variables";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Open+Sans:wght@400;600;700;800&display=swap");
-@import "index";
 @import "blog";
 @import "experience";
 @import "mobile";
-@import "school-songs";
+@import "school";
 @import "header-footer";
 @import "ham";
 
@@ -135,11 +134,11 @@ h3 {
   justify-content: space-between;
 }
 
-.flex-col {
+.flex-row-no-space {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  flex-direction: row;
 }
+
 
 .flex-row-col {
   display: flex;
