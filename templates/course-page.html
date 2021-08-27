@@ -38,6 +38,9 @@
         </ul>
     </div>
     {% endif %}
+    {% if page.word_count == 0%}
+    <p>I either haven't taken this course yet or am currently taking it. Check back later!</p>
+    {% endif %}
     {{ page.content | safe }}
     <a href="/school" class="highlight"><span style="font-weight: bolder;">ᐊ</span> go back to the courses</a>
 </div>

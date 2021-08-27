@@ -12,3 +12,5 @@ links = [
 ]
 
 school_years = [3, 2, 1]
+
+exp_categories = ["work", "speaking", "other"]
