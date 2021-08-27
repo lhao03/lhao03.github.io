@@ -96,39 +96,4 @@ $themes: (
     }
 }
 
-p,
-label,
-li,
-a,
-code {
-    color: var(--text-color);
-    line-height: 175%;
-    font-size: $pDeskTopFont;
-    @media (max-width: $maxWidth) {
-        font-size: $pModbileFont;
-        line-height: 150%;
-    }
-}
 
-h1 {
-    font-size: 2.5em;
-    color: var(--text-color);
-    @media (max-width: $maxWidth) {
-        font-size: 2em;
-    }
-}
-
-h2 {
-    font-size: 2em;
-    color: var(--text-color);
-    @media (max-width: $maxWidth) {
-        font-size: 1.5em;
-    }
-}
-
-h3 {
-    font: 1.5em;
-    color: var(--text-color);
-    @media (max-width: $maxWidth) {
-    }
-}

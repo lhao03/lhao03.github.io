@@ -1,16 +1,18 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1>
-    {{ section.title }}
-</h1>
+<div class="block">
+    <h1>
+        {{ section.title }}
+    </h1>
 
-{{ section.content | safe }}
+    {{ section.content | safe }}
 
-{% for page in section.pages %}
-<div class="blog-intro">
-    <p><a class="highlight blog-title" href="{{ page.permalink | safe }}">{{ page.title }}</a></p>
-    <p class="date-time">{{ page.reading_time }} mins | {{ page.date }}</p>
+    {% for page in section.pages %}
+    <div class="blog-intro flex-row-col">
+        <p><a class="highlight blog-title" href="{{ page.permalink | safe }}">{{ page.title }}</a></p>
+        <p class="date-time">{{ page.reading_time }} mins | {{ page.date }}</p>
+    </div>
+    {% endfor %}
 </div>
-{% endfor %}
 {% endblock content %}
