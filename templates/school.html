@@ -10,14 +10,14 @@
 
 {% for curr_year in data.school_years %}
 <h2>year {{curr_year}}</h2>
-<div class="courses">
+<div class="flex-col">
     {% for page in section.pages %}
     {% if page.extra.year == curr_year %}
-    <div class="course">
-        <a class="course-button {{page.extra.course}} light" href="{{ page.permalink | safe }}">
+    <a class="no-decor" href="{{ page.permalink | safe }}">
+        <div class="course-button {{page.extra.course}} light">
             {{ page.title }} {{ page.description }}
-        </a>
-    </div>
+        </div>
+    </a>
     {% endif %}
     {% endfor %}
 </div>

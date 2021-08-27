@@ -14,13 +14,13 @@
 {% for experience in loe_data %}
 <section id="experience">
     <button class="accordion">
-        <div class="img-title">
+        <div class="flex-row-no-space">
             {% if experience.img %}
             <img src="/res/logos/{{experience.img}}" alt="">
             {% endif %}
             <div class="title-info">
-                <h3 class="exp-title">{{experience.name}}</h3>
-                <div class="date-job mobile-col">
+                <h3>{{experience.name}}</h3>
+                <div class="flex-row-no-space mobile-col">
                     <p>{{experience.date}}</p>
                     <p class="mobile-hide">, {{experience.pos}}</p>
                     <p class="desktop-hide">{{experience.pos}}</p>

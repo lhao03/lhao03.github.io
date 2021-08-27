@@ -1,10 +1,8 @@
 @import "variables";
 
 footer {
-    .links {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
+    & > div {
+        justify-content: space-evenly !important;
     }
     a {
         color: var(--text-color);
