@@ -1,6 +1,8 @@
 +++
 title = "🤷🏻‍♀️ fails"
 template = "section.html"
+[extra]
+toc = true
 +++
 
 **Why did I make a failures page?**
