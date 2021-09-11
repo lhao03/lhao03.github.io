@@ -25,6 +25,7 @@ $themes: (
         "colors": (
             "background": $light,
             "accent": $darker,
+            "dot": darken($darker, $percent),
             "font": $grey,
         ),
         "courseColors": (
@@ -39,6 +40,7 @@ $themes: (
     "dark": (
         "colors": (
             "background": $dark-grey,
+            "dot":  $dark,
             "accent": $dark,
             "font": $smoke,
         ),
@@ -62,6 +64,7 @@ $themes: (
 
     $theme: (
         "bg-color": map-get($colors, "background"),
+        "dot-color": map-get($colors, "dot"),
         "accent-color": map-get($colors, "accent"),
         "text-color": map-get($colors, "font"),
         "cpsc": map-get($courseColors, "CPSC"),
@@ -74,6 +77,10 @@ $themes: (
 
     .container.#{$theme-name} {
         min-height: 100vh;
+        background: var(--bg-color);
+        background-size: 40px 40px;
+        background-image: radial-gradient(circle, var(--dot-color) 1px, rgba(0, 0, 0, 0) 1px);
+        background-repeat: repeat;
         @media (min-width: $maxWidth) {
             padding: 0 25vw;
         }
