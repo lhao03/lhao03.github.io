@@ -4,16 +4,15 @@ footer {
     & > div {
         justify-content: space-evenly !important;
     }
-    a {
+    a.icon {
         color: var(--text-color);
-        background: linear-gradient(90deg, var(--accent-color) 0%, var(--accent-color) 100%) no-repeat 0 100%;
-        background-size: 100% 2px;
-        text-decoration: none;
-        transition: background-size 0.3s;
-        line-height: 150%;
+        font-size: 30px;
+        @media (max-width: $maxWidth) {
+            font-size: 2em;
+          }
         &:hover,
         &:focus {
-            background-size: 100% 100%;
+            color: var(--accent-color);
         }
     }
     p {

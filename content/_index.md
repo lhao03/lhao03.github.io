@@ -9,7 +9,7 @@ From a self-proclaimed chemistry nerd to {{ inline(text="filter")}} and {{ inlin
 I've helped design and implement a developer tool to interact with Microsoft Graph at {{ highlightLink(text="Microsoft Garage", link="https://www.microsoft.com/en-us/garage/about/")}}, built a {{ highlightLink(text="natural language processing pipeline", link="https://www.medrxiv.org/content/10.1101/2021.05.04.21256134v1")}} to automate the extraction of patient information from clinical notes, listened to {{ highlightLink(text="21st Century Girl for 9268 minutes", link="/res/spotify/bts.jpg")}}, led some {{ highlightLink(text="technical workshops", link="/experience")}}, and mentored high schoolers.
 
 ### Currently
-I'll be doing most of my low level computer science courses this year, the last of my math courses, my first biochemistry course (finally done all the biology and chemistry prerequisites) and a third year microbiology course! But before school starts, I'm catching up on webtoons, listening to kpop, eating chocolate and not reviewing calculus 😎. Besides eating too much chocolate, I'm also learning about Elixir! 
+I'll doing most of my low level computer science courses this year, the last of my math courses, my first biochemistry course (finally done all the biology and chemistry prerequisites) and a third year microbiology course! When I'm not confused about Multivariable Calculus, I'm catching up on webtoons, listening to kpop, eating chocolate and lifting. Besides eating too much chocolate, I'm also (attempting) to learn about Elixir! 
 
 ### Quantified
 - kilograms of chocolate consumed per year: 12 🍫
