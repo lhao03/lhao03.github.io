@@ -52,6 +52,7 @@
     <meta name="description" content="Lucy Hao | Computer Science Student at UBC" />
     <meta property="og:image" content="{{get_url(path=data.emoji_path)}}">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://use.fontawesome.com/8e0ceafb9b.js"></script>
     <link rel="stylesheet" href="{{get_url(path=data.css_path)}}">
 
 </head>
@@ -95,8 +96,8 @@
         <footer>
             <div class="flex-row">
                 {% for link in data.links %}
-                <a href="{{link.link}}" target="_blank">
-                    {{link.name}}
+                <a class="icon" href="{{link.link}}" target="_blank">
+                    <i class="fa fa-{{link.name}}"></i>
                 </a>
                 {% endfor %}
             </div>
