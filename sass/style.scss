@@ -68,10 +68,13 @@ section {
 
 code.inline {
   background: var(--accent-color);
-  color: var(--bg-color);
+  font-size: 20px;
+  @media (max-width: $maxWidth) {
+    font-size: $pModbileFont;
+  }
+  color: var(--font-color);
   border-radius: 4px;
-  padding-left: 2px;
-  padding-right: 2px;
+  padding: 2px 4px;
 }
 
 .theme-toggle {
