@@ -25,7 +25,7 @@ $themes: (
         "colors": (
             "background": $light,
             "accent": $darker,
-            "dot": darken($darker, $percent),
+            "dot": $smoke,
             "font": $grey,
         ),
         "courseColors": (
@@ -40,7 +40,7 @@ $themes: (
     "dark": (
         "colors": (
             "background": $dark-grey,
-            "dot":  $dark,
+            "dot": darken($dark, 50%),
             "accent": $dark,
             "font": $smoke,
         ),
@@ -78,9 +78,12 @@ $themes: (
     .container.#{$theme-name} {
         min-height: 100vh;
         background: var(--bg-color);
-        background-size: 40px 40px;
-        background-image: radial-gradient(circle, var(--dot-color) 1px, rgba(0, 0, 0, 0) 1px);
-        background-repeat: repeat;
+        // background-size: 40px 40px;
+        // background-image: radial-gradient(circle, var(--dot-color) 1px, rgba(0, 0, 0, 0) 1px);
+        // background-repeat: repeat;
+        // background-size: 40px 40px;
+        // background-image: linear-gradient(to right, var(--dot-color) 1px, transparent 1px),
+        //     linear-gradient(to bottom, var(--dot-color) 1px, transparent 1px);
         @media (min-width: $maxWidth) {
             padding: 0 25vw;
         }
@@ -102,5 +105,3 @@ $themes: (
         }
     }
 }
-
-
