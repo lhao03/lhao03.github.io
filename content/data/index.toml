@@ -1,7 +1,6 @@
-android_chrome_favicon = "/emoji/android-chrome-512x512.png"
+favicon = "/emoji/android-chrome-384x384.png"
 css_path = "style.css"
 emoji_path = "/emoji/emoji.png"
-img_path = "/emoji/android-chrome-512x512.png"
 js_path = "js_stuff.js"
 
 links = [
