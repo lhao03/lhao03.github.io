@@ -4,7 +4,7 @@
 
 <section>
     <h1>{{ section.title }}</h1>
-    {% if section.extra.toc %}
+    <!-- {% if section.extra.toc %}
     <div class="toc">
         <ul>
             {% for h1 in section.toc %}
@@ -23,7 +23,7 @@
             {% endfor %}
         </ul>
     </div>
-    {% endif %}
+    {% endif %} -->
     {{ section.content | safe }}
 </section>
 

@@ -5,7 +5,6 @@
 @import "mobile";
 @import "school";
 @import "header-footer";
-@import "ham";
 
 .unselectable {
   -moz-user-select: -moz-none;
@@ -66,7 +65,7 @@ section {
   }
 }
 
-code.inline {
+.inline {
   background: var(--accent-color);
   font-size: 20px;
   @media (max-width: $maxWidth) {

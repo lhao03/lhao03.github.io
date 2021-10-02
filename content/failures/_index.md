@@ -5,6 +5,8 @@ template = "section.html"
 toc = true
 +++
 
+{{ header(curr="fails") }}
+
 **Why did I make a failures page?**
 
 When I first started university, I was very insecure about my abilities. I would assume everyone achieved success on their first try, while I seemed to swim in failures. But this isn't true, and unfortunately, we tend to focus on our unpleasant experiences (like failures) more than our pleasant experiences (successes). Essentially, this section of my website serves as a reminder to myself and those read it that failures and not knowing things are normal.

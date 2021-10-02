@@ -1,0 +1,11 @@
+<header>
+    <code>
+       <p>
+            (define-struct site (<a href="/"><span {% if curr %} {% if curr == "home" %} class="curr inline" {% endif %} {% endif %} class="inline">home</span></a>
+            <a href="/experience"><span {% if curr %} {% if curr == "exp" %} class="curr inline" {% endif %} {% endif %} class="inline">experience</span></a>
+            <a href="/blog"><span {% if curr %} {% if curr == "blog" %} class="curr inline" {% endif %} {% endif %} class="inline">blog</span></a>
+            <a href="/failures"><span {% if curr %} {% if curr == "fails" %} class="curr inline" {% endif %} {% endif %} class="inline">fails</span></a>
+            <a href="/school"><span {% if curr %} {% if curr == "school" %} class="curr inline" {% endif %} {% endif %} class="inline">school</span></a>))
+       </p>
+    </code>
+</header>

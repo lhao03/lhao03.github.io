@@ -3,6 +3,8 @@ title = "Hey there! I'm Lucy 👋🏼."
 template = "section.html"
 +++
 
+{{ header(curr="home") }}
+
 From a self-proclaimed chemistry nerd to {{ inline(text="filter")}} and {{ inline(text="map")}} enthusiast, I found myself studying {{ highlightLink(text="💻 Computer Science", link="https://www.cs.ubc.ca/")}} and {{ highlightLink(text="🧬 Biochemistry", link="https://biochem.ubc.ca/")}} at the {{ highlightLink(text="University of British Columbia", link="https://www.ubc.ca/")}}. While I don't know what I want to do yet, I'm interested in the intersection of healthcare/health sciences and technology, developer tools, and programming languages (for now). If I'm not at my computer coding and eating dark chocolate 🍫, you can find me scrolling through pictures of Shiba Inus 🐕! I also help organize hackathons at {{ highlightLink(text="StarHacks", link="https://www.starhacks.tech/")}} and {{ highlightLink(text="nwPlus", link="https://www.nwplus.io/")}}.
 
 ### Currently

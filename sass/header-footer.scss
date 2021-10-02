@@ -1,5 +1,20 @@
 @import "variables";
 
+header {
+    font-weight: bold;
+    a {
+        background: none !important;
+        background-size: 0px;
+        text-decoration: none;
+        &:hover,
+        &:focus {
+            background-size: 0px;
+        }
+    }
+    .curr {
+        background: var(--darker-accent);
+    }
+}
 footer {
     & > div {
         justify-content: space-evenly !important;
@@ -9,7 +24,7 @@ footer {
         font-size: 30px;
         @media (max-width: $maxWidth) {
             font-size: 2em;
-          }
+        }
         &:hover,
         &:focus {
             color: var(--accent-color);

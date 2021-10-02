@@ -25,6 +25,7 @@ $themes: (
         "colors": (
             "background": $light,
             "accent": $darker,
+            "darker-accent": darken($darker, 10%),
             "dot": $smoke,
             "font": $grey,
         ),
@@ -42,6 +43,7 @@ $themes: (
             "background": $dark-grey,
             "dot": darken($dark, 50%),
             "accent": $dark,
+            "darker-accent": darken($dark, 10%),
             "font": $smoke,
             "top": #3f3f3f,
         ),
@@ -67,6 +69,7 @@ $themes: (
         "bg-color": map-get($colors, "background"),
         "dot-color": map-get($colors, "dot"),
         "accent-color": map-get($colors, "accent"),
+        "darker-accent": map-get($colors, "darker-accent"),
         "text-color": map-get($colors, "font"),
         "cpsc": map-get($courseColors, "CPSC"),
         "biol": map-get($courseColors, "BIOL"),
