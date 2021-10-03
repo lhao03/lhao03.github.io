@@ -3,35 +3,7 @@
 {% block content %}
 
 <section>
-    <div class="flex-row">
-        <h1>{{ section.title }}</h1>
-        <div class="theme-toggle">
-            <input class=toggle id=darkmode-toggle type=checkbox tabindex=-1>
-            <label for="darkmode-toggle" class="toggle-label">
-                <p class="theme-text unselectable">🌞 🌑</p>
-            </label>
-        </div>
-    </div>
-    <!-- {% if section.extra.toc %}
-    <div class="toc">
-        <ul>
-            {% for h1 in section.toc %}
-            <li>
-                <a class="highlight" href="{{h1.permalink | safe}}">{{ h1.title }}</a>
-                {% if h1.children %}
-                <ul>
-                    {% for h2 in h1.children %}
-                    <li>
-                        <a class="highlight" href="{{h2.permalink | safe}}">{{ h2.title }}</a>
-                    </li>
-                    {% endfor %}
-                </ul>
-                {% endif %}
-            </li>
-            {% endfor %}
-        </ul>
-    </div>
-    {% endif %} -->
+    {% include "title.html" %}
     {{ section.content | safe }}
 </section>
 
