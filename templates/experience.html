@@ -3,7 +3,15 @@
 {% block content %}
 {% set data = load_data(path="content/data/index.toml") %}
 
-<h1>👩🏻‍💻 experience</h1>
+<div class="flex-row">
+    <h1>👩🏻‍💻 experience</h1>
+    <div class="theme-toggle">
+        <input class=toggle id=darkmode-toggle type=checkbox tabindex=-1>
+        <label for="darkmode-toggle" class="toggle-label">
+            <p class="theme-text unselectable">☀️ 🌑</p>
+        </label>
+    </div>
+</div>
 
 {{ section.content | safe }}
 
