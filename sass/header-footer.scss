@@ -1,18 +1,28 @@
 @import "variables";
 
-header {
+.header {
     font-weight: bold;
-    a {
-        background: none !important;
-        background-size: 0px;
-        text-decoration: none;
-        &:hover,
-        &:focus {
-            background-size: 0px;
+    code {
+        font-size: 40px !important;
+        p,
+        span {
+            font-size: 25px !important;
+            @media (max-width: $maxWidth) {
+                font-size: 20px !important;
+            }
         }
-    }
-    .curr {
-        background: var(--darker-accent);
+        a {
+            background: none !important;
+            background-size: 0px;
+            text-decoration: none;
+            &:hover,
+            &:focus {
+                background-size: 0px;
+            }
+        }
+        .curr {
+            background: var(--darker-accent);
+        }
     }
 }
 footer {
