@@ -2,27 +2,18 @@
 
 .header {
     font-weight: bold;
-    code {
-        font-size: 40px !important;
-        p,
-        span {
-            font-size: 25px !important;
-            @media (max-width: $maxWidth) {
-                font-size: 20px !important;
-            }
-        }
-        a {
-            background: none !important;
+    margin-bottom: 10px;
+    a {
+        background: none !important;
+        background-size: 0px;
+        text-decoration: none;
+        &:hover,
+        &:focus {
             background-size: 0px;
-            text-decoration: none;
-            &:hover,
-            &:focus {
-                background-size: 0px;
-            }
         }
-        .curr {
-            background: var(--darker-accent);
-        }
+    }
+    .curr {
+        background: var(--darker-accent);
     }
 }
 footer {
