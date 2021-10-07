@@ -76,8 +76,6 @@ section {
 }
 .toggle-label {
   cursor: pointer;
-  p {
-  }
 }
 
 p,
@@ -91,19 +89,46 @@ h3 {
   color: var(--text-color);
 }
 
+h1 {
+  font-size: 40px;
+  @media (max-width: $maxWidth) {
+    font-size: 30px;
+  }
+}
+
+h2 {
+  font-size: 35px;
+  @media (max-width: $maxWidth) {
+    font-size: 25px;
+  }
+}
+
+h3 {
+  font-size: 30px;
+  @media (max-width: $maxWidth) {
+    font-size: 20px;
+  }
+}
+p,
+label,
+li,
+a,
+code {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  line-height: 150%;
+  @media (max-width: $maxWidth) {
+    font-size: 17px;
+    line-height: 175%;
+  }
+}
+
 code {
   color: var(--text-color);
   @media (max-width: $maxWidth) {
     line-height: 150%;
   }
-}
-
-p,
-label,
-li,
-a {
-  margin: 0;
-  padding: 0;
 }
 
 .flex-row {
