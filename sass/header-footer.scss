@@ -22,10 +22,6 @@ footer {
     }
     a.icon {
         color: var(--text-color);
-        font-size: 30px;
-        @media (max-width: $maxWidth) {
-            font-size: 2em;
-        }
         &:hover,
         &:focus {
             color: var(--accent-color);
