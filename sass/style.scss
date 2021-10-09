@@ -78,6 +78,10 @@ section {
   cursor: pointer;
 }
 
+p.theme-text {
+  font-size: 40px !important;
+}
+
 p,
 label,
 li,
@@ -97,14 +101,14 @@ h1 {
 }
 
 h2 {
-  font-size: 35px;
+  font-size: 30px;
   @media (max-width: $maxWidth) {
     font-size: 25px;
   }
 }
 
 h3 {
-  font-size: 30px;
+  font-size: 25px;
   @media (max-width: $maxWidth) {
     font-size: 20px;
   }

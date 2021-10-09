@@ -22,6 +22,7 @@ footer {
     }
     a.icon {
         color: var(--text-color);
+        font-size: 40px !important;
         &:hover,
         &:focus {
             color: var(--accent-color);
