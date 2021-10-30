@@ -11,4 +11,4 @@ category = "other"
 img = "nwplus.png"
 +++
 
-Just getting started! nwPlus is UBC's hackathon and technology club.
+Helping promote events such as HackCamp, cmd-f and nwHacks!
