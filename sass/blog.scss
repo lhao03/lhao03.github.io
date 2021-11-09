@@ -1,5 +1,12 @@
 @import "variables";
 
+pre {
+  overflow-x: scroll;
+  max-width: 80vw;
+  padding: 5px;
+  border-radius: 5px;
+}
+
 .blog-intro {
   margin-bottom: 15px;
   .blog-title {
@@ -31,9 +38,4 @@
       width: 80vw;
     }
   }
-}
-pre {
-  width: fit-content;
-  padding: 5px;
-  border-radius: 8px;
 }

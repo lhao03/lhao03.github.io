@@ -129,7 +129,6 @@ code {
 }
 
 code {
-  color: var(--text-color);
   @media (max-width: $maxWidth) {
     line-height: 150%;
   }

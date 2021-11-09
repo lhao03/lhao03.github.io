@@ -1,3 +1,6 @@
+@import url("syntax-theme-dark.css") (prefers-color-scheme: dark);
+@import url("syntax-theme-light.css") (prefers-color-scheme: light);
+
 $lightenFactor: 0.7;
 $cpsc: rgba(184, 204, 222, $lightenFactor);
 $biol: rgba(193, 203, 232, $lightenFactor);
