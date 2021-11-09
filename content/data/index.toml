@@ -1,4 +1,4 @@
-favicon = "/emoji/android-chrome-384x384.png"
+favicon = "/emoji/android-chrome-512x512.png"
 css_path = "style.css"
 emoji_path = "/emoji/emoji.png"
 js_path = "js_stuff.js"

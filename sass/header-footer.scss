@@ -1,6 +1,7 @@
 @import "variables";
 
 .header {
+    color: var(--text-color);
     font-weight: bold;
     margin-bottom: 10px;
     a {
