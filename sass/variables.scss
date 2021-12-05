@@ -83,7 +83,7 @@ $themes: (
         background: var(--bg-color);
 
         @media (min-width: $maxWidth) {
-            padding: 0 25vw;
+            padding: 0 15vw;
         }
         // define a css variable for each shade
         @each $name, $color in $colors {
