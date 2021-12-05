@@ -157,3 +157,13 @@ code {
 .block {
   margin: 50px auto;
 }
+
+a.nostyle {
+  background: none !important;
+  background-size: 0px;
+  text-decoration: none;
+  &:hover,
+  &:focus {
+      background-size: 0px;
+  }
+}
