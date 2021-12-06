@@ -11,7 +11,7 @@
 }
 .c-button {
     @media (min-width: $maxWidth) {
-        width: 12vw;
+        max-width: 12vw;
     }
 }
 .box {
