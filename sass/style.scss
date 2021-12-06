@@ -27,6 +27,7 @@ html.is-active {
 
 body {
   margin: 0;
+  padding: 0;
   width: 100vw;
   height: fit-content;
   max-width: 100%;
@@ -39,16 +40,14 @@ section {
   padding: 0;
 }
 
+.fullscreen {
+  height: 100vh;
+}
+
 .page {
-  padding-top: 4%;
-
-  @media (max-width: 1024px) {
-    padding: 10% 8% 0 8%;
-  }
-
-  @media (max-width: 767px) {
-    padding: 16% 8% 0 8%;
-  }
+  width: 70vw;
+  margin-left: auto;
+  margin-right: auto;
 
   a,
   li > a {
@@ -76,6 +75,16 @@ section {
 }
 .toggle-label {
   cursor: pointer;
+}
+
+.theme-toggle {
+  display: block;
+  max-width: 100px;
+  min-width: 60px;
+  position: absolute;
+  right: 2vw;
+  top: 0;
+  z-index: 10000;
 }
 
 p.theme-text {
@@ -165,6 +174,6 @@ a.nostyle {
   text-decoration: none;
   &:hover,
   &:focus {
-      background-size: 0px;
+    background-size: 0px;
   }
 }

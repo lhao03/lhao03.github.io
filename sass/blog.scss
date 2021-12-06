@@ -59,7 +59,8 @@ pre {
 }
 
 .post {
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   @media (max-width: $maxWidth) {
     width: 85vw;
   }

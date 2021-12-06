@@ -1,11 +1,12 @@
 +++
-title = "Hi, I'm Lucy! 👋🏻"
+title = "Hi, I'm Lucy 👋🏻!"
 template = "section.html"
 +++
+I'm interested in low level programming 💻, functional programming λ, virology 🦠, biochemistry 🧬 and lifting heavy things 🏋.
 
 {{ header(curr="home") }}
 
-As a chemistry nerd and {{ inline(text="filter")}} and {{ inline(text="map")}} enthusiast, I decided to study {{ highlightLink(text="💻 Computer Science", link="https://www.cs.ubc.ca/")}} and {{ highlightLink(text="🧬 Biochemistry", link="https://biochem.ubc.ca/")}} at the {{ highlightLink(text="University of British Columbia", link="https://www.ubc.ca/")}}. I think computer viruses and biological viruses are pretty cool (but they can do some pretty nasty things to us); I'm also broadly interested in programming languages and functional programming. If I'm not at my computer coding and eating dark chocolate 🍫, you can find me scrolling through pictures of Shiba Inus 🐕!
+Welcome to my site! I'm a chemistry nerd and {{ inline(text="filter")}} and {{ inline(text="map")}} enthusiast studying {{ highlightLink(text="💻 Computer Science", link="https://www.cs.ubc.ca/")}} and {{ highlightLink(text="🧬 Biochemistry", link="https://biochem.ubc.ca/")}} at the {{ highlightLink(text="University of British Columbia", link="https://www.ubc.ca/")}}. I think computer viruses and biological viruses are pretty cool; I'm also broadly interested in programming languages and functional programming. If I'm not at my computer coding and eating dark chocolate 🍫, you can find me scrolling through pictures of Shiba Inus 🐕!
 
 ## Currently
 As of now, for every computer science course I've taken, I've taken one life science course! This year I'm completing most of my low level computer science courses, the last of my math courses, my first biochemistry course (finally done all the biology and chemistry prerequisites), and a third year microbiology course! I'm also TAing {{ inline(text='(string-append "CPSC" "110")')}}. When I'm not confused about multivariable calculus, I'm catching up on webtoons, listening to K-pop, eating chocolate and lifting weights.

@@ -3,7 +3,7 @@
 {% block content %}
 {% set data = load_data(path="content/data/index.toml") %}
 
-{% include "title.html" %}
+<h1>{{ section.title }}</h1>
 {{ section.content | safe }}
 
 {% for curr_year in data.school_years %}
