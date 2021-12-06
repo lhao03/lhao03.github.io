@@ -1,11 +1,9 @@
 +++
-title = "Hi! I'm Lucy 👋🏼."
+title = "Hi, I'm Lucy! 👋🏻"
 template = "section.html"
 +++
 
 {{ header(curr="home") }}
-
-{{ img(img="type.gif") }}
 
 As a chemistry nerd and {{ inline(text="filter")}} and {{ inline(text="map")}} enthusiast, I decided to study {{ highlightLink(text="💻 Computer Science", link="https://www.cs.ubc.ca/")}} and {{ highlightLink(text="🧬 Biochemistry", link="https://biochem.ubc.ca/")}} at the {{ highlightLink(text="University of British Columbia", link="https://www.ubc.ca/")}}. I think computer viruses and biological viruses are pretty cool (but they can do some pretty nasty things to us); I'm also broadly interested in programming languages and functional programming. If I'm not at my computer coding and eating dark chocolate 🍫, you can find me scrolling through pictures of Shiba Inus 🐕!
 
@@ -18,7 +16,9 @@ I've helped design and implement a developer tool to interact with Microsoft Gra
 ## Quantified
 - kilograms of chocolate consumed per year: 12 🍫
 - most weight I've deadlifted: 205 lbs 🏋️‍♀️
-- minutes of Spotify in 2020: 37247 🎶
-- Shiba Inu pictures on my phone: infinite ∞
+- minutes of Spotify in 2021: 53888 🎶
+- minutes of cat videos watched: infinite ∞
+
+{{ img(img="type.gif") }}
 
 💖 If you want to get in touch with me, feel free to send me an email at {{ inline(text='(string-append "hao" "." "lucyy" "@" "gmail" "." "com")')}}. You can also find me on {{ highlightLink(text="twitter 🐦", link="https://twitter.com/hoalycu")}}. If you dare to see my 🍝 code and thoughts, you can check out my {{ highlightLink(text="GitHub", link="https://github.com/lhao03")}} and {{ highlightLink(text="blog", link="/blog")}}! And finally, you can see my experience in {{ highlightLink(text="resume", link="/res/resumes/resume-Lucy-Hao.pdf")}} form or {{ highlightLink(text="here", link="/experience")}}!
