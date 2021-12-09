@@ -7,6 +7,11 @@
     .curr {
         background: var(--darker-accent);
     }
+    a {
+        background: none !important;
+        background-size: none !important;
+        transition: none !important;
+    }
 }
 footer {
     & > div {

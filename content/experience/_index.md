@@ -1,5 +1,5 @@
 +++
-title = "👩🏻‍💻 experience"
+title = "Experience"
 template = "experience.html"
 sort_by = "date"
 +++

@@ -1,5 +1,5 @@
 +++
-title = "🤷🏻‍♀️ fails"
+title = "Fails"
 template = "section.html"
 [extra]
 toc = true
