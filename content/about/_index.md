@@ -18,6 +18,6 @@ I've helped design and implement a developer tool to interact with Microsoft Gra
 - minutes of Spotify in 2021: 53888 🎶
 - minutes of cat videos watched: infinite ∞
 
-{{ img(img="type.gif") }}
+{{ img(img="../type.gif") }}
 
 💖 If you want to get in touch with me, feel free to send me an email at {{ inline(text='(string-append "hao" "." "lucyy" "@" "gmail" "." "com")')}}. You can also find me on {{ highlightLink(text="twitter 🐦", link="https://twitter.com/hoalycu")}}. If you dare to see my 🍝 code and thoughts, you can check out my {{ highlightLink(text="GitHub", link="https://github.com/lhao03")}} and {{ highlightLink(text="blog", link="/blog")}}! And finally, you can see my experience in {{ highlightLink(text="resume", link="/res/resumes/resume-Lucy-Hao.pdf")}} form or {{ highlightLink(text="here", link="/experience")}}!
