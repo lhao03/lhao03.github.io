@@ -1,14 +1,22 @@
 <div class="header">
-    <code>
-    (define-struct site (<a href="/"><code {% if curr %} {% if curr=="home" %} class="curr inline" {% endif %} {% endif
-        %} class="inline">home</code></a>
-    <a href="/experience"><code {% if curr %} {% if curr=="exp" %} class="curr inline" {% endif %} {% endif %}
-            class="inline">experience</code></a>
-    <a href="/blog"><code {% if curr %} {% if curr=="blog" %} class="curr inline" {% endif %} {% endif %}
-            class="inline">blog</code></a>
-    <a href="/failures"><code {% if curr %} {% if curr=="fails" %} class="curr inline" {% endif %} {% endif %}
-            class="inline">fails</code></a>
-    <a href="/school"><code {% if curr %} {% if curr=="school" %} class="curr inline" {% endif %} {% endif %}
-            class="inline">school</code></a>))
-    </code>
+        <code>
+          <a href="/">
+            <code {% if curr %} {% if curr=="home" %} class="curr inline" {% endif %} {% endif %} class="inline">home</code>
+          </a>
+        <a href="/about">
+          <code {% if curr %} {% if curr=="about" %} class="curr inline" {% endif %} {% endif %}class="inline">about</code>
+        </a>
+        <a href="/experience">
+          <code {% if curr %} {% if curr=="exp" %} class="curr inline" {% endif %} {% endif %} class="inline">experience</code>
+        </a>
+        <a href="/blog">
+          <code {% if curr %} {% if curr=="blog" %} class="curr inline" {% endif %} {% endif %} class="inline">blog</code>
+        </a>
+        <a href="/failures">
+          <code {% if curr %} {% if curr=="fails" %} class="curr inline" {% endif %} {% endif %} class="inline">fails</code>
+        </a>
+        <a href="/school">
+          <code {% if curr %} {% if curr=="school" %} class="curr inline" {% endif %} {% endif %} class="inline">school</code>
+        </a>
+        </code>
 </div>

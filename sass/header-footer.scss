@@ -4,17 +4,13 @@
     color: var(--text-color);
     font-weight: bold;
     margin-bottom: 10px;
-    a {
-        background: none !important;
-        background-size: 0px;
-        text-decoration: none;
-        &:hover,
-        &:focus {
-            background-size: 0px;
-        }
-    }
     .curr {
         background: var(--darker-accent);
+    }
+    a {
+        background: none !important;
+        background-size: none !important;
+        transition: none !important;
     }
 }
 footer {

@@ -1,5 +1,5 @@
 +++
-title = "📚 school"
+title = "School"
 template = "school.html"
 page_template = "course-page.html"
 +++

@@ -9,34 +9,97 @@
         background-size: none !important;
     }
 }
-
-.course-button {
-    margin: 10px;
-    display: inline-block;
-    width: fit-content;
-    border-radius: 10px;
-    padding: 0 10px;
-    @media (max-width: $maxWidth) {
-        border-radius: 5px;
-        padding: 2px 5px;
+.c-button {
+    @media (min-width: $maxWidth) {
+        max-width: 12vw;
     }
+}
+.box {
     background-color: var(--other);
+    border-top: solid 2px var(--other);
+    border-left: solid 2px var(--other);
+    border-right: solid 2px var(--other);
     &.CPSC {
         background-color: var(--cpsc) !important;
+        border-top: solid 2px var(--cpsc);
+        border-left: solid 2px var(--cpsc);
+        border-right: solid 2px var(--cpsc);
     }
     &.BIOL {
         background-color: var(--biol) !important;
+        border-top: solid 2px var(--biol);
+        border-left: solid 2px var(--biol);
+        border-right: solid 2px var(--biol);
     }
     &.CHEM {
         background-color: var(--chem) !important;
+        border-top: solid 2px var(--chem);
+        border-left: solid 2px var(--chem);
+        border-right: solid 2px var(--chem);
     }
     &.MICB {
         background-color: var(--micb) !important;
+        border-top: solid 2px var(--micb);
+        border-left: solid 2px var(--micb);
+        border-right: solid 2px var(--micb);
     }
     &.BIOC {
         background-color: var(--micb) !important;
+        border-top: solid 2px var(--micb);
+        border-left: solid 2px var(--micb);
+        border-right: solid 2px var(--micb);
     }
     &.MATH {
         background-color: var(--math) !important;
+        border-top: solid 2px var(--math);
+        border-left: solid 2px var(--math);
+        border-right: solid 2px var(--math);
+    }
+    height: 50px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+.course-button {
+    border-bottom: solid 2px var(--other);
+    border-left: solid 2px var(--other);
+    border-right: solid 2px var(--other);
+    &.CPSC {
+        border-bottom: solid 2px var(--cpsc);
+        border-left: solid 2px var(--cpsc);
+        border-right: solid 2px var(--cpsc);
+    }
+    &.BIOL {
+        border-bottom: solid 2px var(--biol);
+        border-left: solid 2px var(--biol);
+        border-right: solid 2px var(--biol);
+    }
+    &.CHEM {
+        border-bottom: solid 2px var(--chem);
+        border-left: solid 2px var(--chem);
+        border-right: solid 2px var(--chem);
+    }
+    &.MICB {
+        border-bottom: solid 2px var(--micb);
+        border-left: solid 2px var(--micb);
+        border-right: solid 2px var(--micb);
+    }
+    &.BIOC {
+        border-bottom: solid 2px var(--micb);
+        border-left: solid 2px var(--micb);
+        border-right: solid 2px var(--micb);
+    }
+    &.MATH {
+        border-bottom: solid 2px var(--math);
+        border-left: solid 2px var(--math);
+        border-right: solid 2px var(--math);
+    }
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    padding: 15px;
+    margin-bottom: 10px;
+    width: fit-content;
+    @media (max-width: $maxWidth) {
+        border-radius: 5px;
+        padding: 2px 5px;
     }
 }

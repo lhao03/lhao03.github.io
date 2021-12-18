@@ -1,1 +1,2 @@
-<img {% if class %}class="{{class}}" {% endif %} src="{{img}}" alt="" style="width: 90%;"> 
+<img {% if class %}class="{{class}}" {% endif %} src="{{img}}" alt="" {% if style %} style="{{style}}" {% else %}
+    style="width: 90%;" {% endif %}>

@@ -3,17 +3,20 @@
 {% block content %}
 {% set data = load_data(path="content/data/index.toml") %}
 
-{% include "title.html" %}
+<h1>{{ section.title }}</h1>
 {{ section.content | safe }}
 
 {% for curr_year in data.school_years %}
 <h2>year {{curr_year}}</h2>
-<div class="flex-col">
+<div class="flex-row">
     {% for page in section.pages %}
     {% if page.extra.year == curr_year %}
     <a class="no-decor" href="{{ page.permalink | safe }}">
-        <div class="course-button {{page.extra.course}} light">
-            {{ page.title }} {{ page.description }}
+        <div class="c-button">
+            <div class="box {{page.extra.course}}"></div>
+            <div class="course-button {{page.extra.course}} light">
+                <span style="font-weight: bold;">{{ page.title }}</span>
+            </div>
         </div>
     </a>
     {% endif %}
