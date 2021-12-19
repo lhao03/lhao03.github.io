@@ -2,12 +2,12 @@
 @import url("syntax-theme-light.css") (prefers-color-scheme: light);
 
 $lightenFactor: 0.7;
-$cpsc: rgba(184, 204, 222, $lightenFactor);
-$biol: rgba(193, 203, 232, $lightenFactor);
-$chem: rgba(184, 184, 209, $lightenFactor);
-$micb: rgba(203, 193, 232, $lightenFactor);
-$math: rgba(205, 184, 222, $lightenFactor);
-$other: rgba(242, 208, 242, $lightenFactor);
+$cpsc: #bffcc6;
+$biol: #c4faf8;
+$chem: #ffcbc1;
+$micb: #afcbff;
+$math: #aff8db;
+$other: #ecd4ff;
 $light: #dfdbe5;
 $smoke: #e6e6ee;
 $dark: rgba(91, 95, 151, $lightenFactor);
@@ -16,7 +16,13 @@ $font: 'Rubik', sans-serif;
 $grey: #545454;
 $lightergrey: #767676;
 $dark-grey: #1e1e21;
-$percent: 30%;
+$percent: 10%;
+
+// pastel colors
+$pastelYellow: #ffffd1;
+$lightPastelGreen: #f3ffe3;
+$darkPastelOrange: #ffabab;
+$darkPastelPink: #f6a6ff;
 
 $maxWidth: 769px;
 
@@ -27,8 +33,8 @@ $themes: (
     "light": (
         "colors": (
             "background": white,
-            "accent": $darker,
-            "darker-accent": darken($darker, 10%),
+            "accent": $pastelYellow,
+            "darker-accent": darken($pastelYellow, 10%),
             "font": $grey,
         ),
         "courseColors": (
@@ -43,9 +49,9 @@ $themes: (
     "dark": (
         "colors": (
             "background": $dark-grey,
-            "accent": $dark,
-            "darker-accent": lighten($dark, 20%),
-            "font": $smoke,
+            "accent": darken($darkPastelPink, 5%),
+            "darker-accent": darken($darkPastelPink, 10%),
+            "font": white,
         ),
         "courseColors": (
             "CPSC": darken($cpsc, $percent),

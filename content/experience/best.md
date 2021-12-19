@@ -14,4 +14,4 @@ category = "other"
 img = "ubcbest.png"
 +++
 
-Co-leading a team of 5-10 students to development an app gamifies the rehabilitation process for multiple sclerosis patients. The app is being built in Kotlin Multiplatform and the backend is developed with a Express and Flask server. 
+Co-lead a team of 5-10 students to development an app gamifies the rehabilitation process for multiple sclerosis patients. The app is being built in Kotlin Multiplatform and the backend is developed with a Express and Flask server. 
