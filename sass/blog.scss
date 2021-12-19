@@ -9,41 +9,13 @@ pre {
 
 .blog {
   flex-wrap: wrap;
-  .gradient {
-    background: -webkit-linear-gradient(var(--darker-accent), var(--accent-color));
-    background: -moz-linear-gradient(var(--darker-accent), var(--accent-color));
-    background: -o-linear-gradient(var(--darker-accent), var(--accent-color));
-    background: linear-gradient(var(--darker-accent), var(--accent-color));
-
-    -webkit-transition: background 1s ease-out;
-    -moz-transition: background 1s ease-out;
-    -o-transition: background 1s ease-out;
-    transition: background 1s ease-out;
-
-    background-size: 1px 200px;
-    cursor: pointer;
-    &:hover {
-      background-position: 150px;
-    }
-  }
-
-  .box {
-    height: 50px;
-    border-top: solid 2px var(--accent-color);
-    border-left: solid 2px var(--accent-color);
-    border-right: solid 2px var(--accent-color);
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-  }
   .blog-intro {
+    background-color: var(--accent-color);
     @media (min-width: $maxWidth) {
       width: 12vw;
     }
-    border-bottom: solid 2px var(--accent-color);
-    border-left: solid 2px var(--accent-color);
-    border-right: solid 2px var(--accent-color);
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
+    border: solid 2px var(--font);
+    border-radius: 8px;
     padding: 15px;
     margin-bottom: 10px;
     .blog-title {

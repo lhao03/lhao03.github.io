@@ -7,8 +7,12 @@
     .curr {
         background: var(--darker-accent);
     }
+    code {
+      border-radius: 8px;
+      border: 2px solid var(--text-color);
+    }
     a {
-        background: none !important;
+      background: none !important;
         background-size: none !important;
         transition: none !important;
     }
