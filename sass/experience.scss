@@ -27,7 +27,6 @@
     width: fit-content;
     @media (max-width: $maxWidth) {
         border-radius: 5px;
-        padding: 2px 5px;
     }
     img.logo {
       padding-left: 10px;
@@ -58,7 +57,7 @@
     border: none;
     outline: none;
     // transition: 0.4s;
-    img {
+    img.side-logo {
       height: 5vw;
       margin-right: 5px;
       @media (max-width: $maxWidth) {
