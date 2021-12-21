@@ -11,4 +11,4 @@ category = "other"
 img = "nwplus.png"
 +++
 
-Helping promote events such as HackCamp, cmd-f and nwHacks!
+- Helping promote events such as HackCamp, cmd-f and nwHacks!

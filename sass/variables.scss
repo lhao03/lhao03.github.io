@@ -2,11 +2,11 @@
 @import url("syntax-theme-light.css") (prefers-color-scheme: light);
 
 $lightenFactor: 0.7;
-$cpsc: #bffcc6;
+$cpsc: #f6a6ff;
 $biol: #c4faf8;
 $chem: #ffcbc1;
 $micb: #afcbff;
-$math: #aff8db;
+$math: #85e3ff;
 $other: #ecd4ff;
 $light: #dfdbe5;
 $smoke: #e6e6ee;
@@ -21,8 +21,10 @@ $percent: 25%;
 // pastel colors
 $pastelYellow: #ffffd1;
 $lightPastelGreen: #f3ffe3;
+$kindaDarkerPastelGreen: #bffcc6;
 $darkPastelOrange: #ffabab;
 $darkPastelPink: #f6a6ff;
+$blue: #97a2ff;
 
 $maxWidth: 769px;
 
@@ -49,9 +51,9 @@ $themes: (
     "dark": (
         "colors": (
             "background": $dark-grey,
-            "accent": darken($darkPastelPink, 5%),
-            "darker-accent": darken($darkPastelPink, 10%),
-            "font": white,
+            "accent": darken($blue, 5%),
+            "darker-accent": darken($blue, 10%),
+            "font": #f9f9f9,
         ),
         "courseColors": (
             "CPSC": darken($cpsc, $percent),

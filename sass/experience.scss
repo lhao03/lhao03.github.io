@@ -1,5 +1,46 @@
 @import "variables";
 
+.experience {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  p,
+  h3 {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans";
+  }
+  .background {
+    background-color: var(--accent-color);
+    border-radius: 4px;
+    border: solid 2px var(--font);
+    max-width: 24vw;
+
+      @media (max-width: $maxWidth) {
+    max-width: inherit;
+      }
+    .text {
+    padding: 15px;
+    }
+    margin-bottom: 10px;
+    width: fit-content;
+    @media (max-width: $maxWidth) {
+        border-radius: 5px;
+        padding: 2px 5px;
+    }
+    img.logo {
+      padding-left: 10px;
+      margin: auto;
+      height: 50px;
+    }
+    img.cover{
+      width: 100%;
+      border-top-right-radius: inherit;
+      border-top-left-radius: inherit;
+    }
+  }
+}
 #experience {
   p,
   h3 {

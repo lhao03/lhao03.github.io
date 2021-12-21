@@ -12,4 +12,4 @@ Taking Cell Biology, [BIOL 200](@/school/biol200.md) and Introductory Medicinal 
 
 The course was taught by two professors. The first part of the course was building up our foundation for the second part of the course. This involved basically reviewing different viral lifecycles for InfA and DENV at a high level, as well as general viralogy concepts. 
 
-The second part was much more in depth and really interesting. We learned about 4 viruses, Influenza A, Dengue Virus, Zika Virus  
+The second part was much more in depth and really interesting. We learned about 4 viruses, Influenza A, Dengue Virus, Zika Virus and SARS-CoV-2.

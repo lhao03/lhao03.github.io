@@ -1,6 +1,6 @@
 +++
 title = "Experience"
-template = "experience.html"
+template = "experience-boxy.html"
 sort_by = "date"
 +++
 

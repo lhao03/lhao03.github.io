@@ -7,9 +7,11 @@ date = 2021-11-14
 links = [
       { name = "video", link = "https://www.youtube.com/watch?v=iWlQYThaG0I" },
     ]
+link = "https://www.youtube.com/watch?v=iWlQYThaG0I"
 duration = "Nov 2021"
 category = "speaking"
 img = "nwplus.png"
+cover= "hc.png"
 +++
 
 Ran introductory workshop at HackCamp 2021, North American's largest beginner orientated hackathon.
