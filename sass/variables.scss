@@ -2,11 +2,6 @@
 @import url("syntax-theme-light.css") (prefers-color-scheme: light);
 
 $lightenFactor: 0.7;
-$cpsc: #f6a6ff;
-$biol: #c4faf8;
-$chem: #ffcbc1;
-$micb: #afcbff;
-$math: #85e3ff;
 $other: #ecd4ff;
 $light: #dfdbe5;
 $smoke: #e6e6ee;
@@ -16,15 +11,46 @@ $font: 'Rubik', sans-serif;
 $grey: #545454;
 $lightergrey: #767676;
 $dark-grey: #1e1e21;
-$percent: 25%;
+$percent: 15%;
 
 // pastel colors
-$pastelYellow: #ffffd1;
-$lightPastelGreen: #f3ffe3;
-$kindaDarkerPastelGreen: #bffcc6;
-$darkPastelOrange: #ffabab;
-$darkPastelPink: #f6a6ff;
-$blue: #97a2ff;
+$pink1: #ffb5e8;
+$pink2: #ff9cee;
+$pink3: #ffccf9;
+$pink4: #fcc2ff;
+$pink5: #f6a6ff;
+$purple1: #b27dff;
+$purple2: #c5a3ff;
+$purple3: #d5aaff;
+$purple4: #ecd4ff;
+$purple5: #fbe4ff;
+$bluepurple1: #dcd3ff;
+$bluepurple2: #a79aff;
+$bluepurple3: #b5b9ff;
+$bluepurple4: #97a2ff;
+$bluepurple5: #afcbff;
+$blue1: #aff8db;
+$blue2: #c4faf8;
+$blue3: #85e3ff;
+$blue4: #ace7ff;
+$blue5: #6eb5ff;
+$greenyellow1: #bffcc6;
+$greenyellow2: #dbffd6;
+$greenyellow3: #f3ffe3;
+$greenyellow4: #e7ffac;
+$greenyellow5: #ffffd1;
+$orange1: #ffc9de;
+$orange2: #ffabab;
+$orange3: #ffbebc;
+$orange4: #ffcbc1;
+$orange5: #fff5ba;
+
+$cpsc: $pink1;
+$biol: $blue2;
+$chem: $bluepurple4;
+$micb: $purple2;
+$math: $bluepurple3;
+$other: $blue3;
 
 $maxWidth: 769px;
 
@@ -35,8 +61,8 @@ $themes: (
     "light": (
         "colors": (
             "background": white,
-            "accent": $pastelYellow,
-            "darker-accent": darken($pastelYellow, 10%),
+            "accent": $greenyellow5,
+            "darker-accent": darken($greenyellow5, 10%),
             "font": $grey,
         ),
         "courseColors": (
@@ -51,8 +77,8 @@ $themes: (
     "dark": (
         "colors": (
             "background": $dark-grey,
-            "accent": darken($blue, 5%),
-            "darker-accent": darken($blue, 10%),
+            "accent": darken($blue5, 5%),
+            "darker-accent": darken($blue5, 10%),
             "font": #f9f9f9,
         ),
         "courseColors": (

@@ -1,6 +1,6 @@
 +++
 title = "nwPlus"
-description = "Marketing Coordinator"
+description = "Marketing Co-Director"
 date = 2021-08-27
 [extra]
 links = [
@@ -11,4 +11,5 @@ category = "other"
 img = "nwplus.png"
 +++
 
-- Helping promote events such as HackCamp, cmd-f and nwHacks!
+- co-leading marketing campaign for nwHacks 2022.
+- leading weekly meeting with coordinators and delegating tasks.

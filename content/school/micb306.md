@@ -12,4 +12,6 @@ Taking Cell Biology, [BIOL 200](@/school/biol200.md) and Introductory Medicinal 
 
 The course was taught by two professors. The first part of the course was building up our foundation for the second part of the course. This involved basically reviewing different viral lifecycles for InfA and DENV at a high level, as well as general viralogy concepts. 
 
-The second part was much more in depth and really interesting. We learned about 4 viruses, Influenza A, Dengue Virus, Zika Virus and SARS-CoV-2.
+The second part was much more in depth and really interesting. We learned about 4 viruses, Influenza A, Dengue Virus, Zika Virus and SARS-CoV-2. We studied various parts of viral cycles in depth and learned about drugs that could target certain steps. The final assignment was to create a multi-drug regimen for SARS-CoV-2; that involved reading lots of papers, but I enjoyed it. 
+
+I didn't expect this course to be easy when I registered for it. Alot of the success in this course not only comes from having a good understanding of cell biology and biochemistry, but also being good at memorizing everything. I didn't get to study and review for this course as much as I had liked to, so I know my mark isn't as good as it could be, but I'm okay with that.

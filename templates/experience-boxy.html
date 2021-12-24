@@ -6,10 +6,12 @@
 <h1>{{ section.title }}</h1>
 {{ section.content | safe }}
 
+<div class="exp-apply-all">
+
 {% for category in data.exp_categories %}
 
-{% if category != "speaking" %}
 <h2>{{category}}</h2>
+{% if category != "speaking" %}
 {% for experience in section.pages %}
 {% if category == experience.extra.category %}
 <section id="experience">
@@ -56,7 +58,6 @@
 {% endif %}
 
 {% if category == "speaking" %}
-<h2>{{category}}</h2>
 <div class="experience">            
 {% for experience in section.pages %}
 {% if category == experience.extra.category %}
@@ -89,4 +90,5 @@
 
 {% endfor %}
 
+</div>
 {% endblock content %}

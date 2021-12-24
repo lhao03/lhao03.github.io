@@ -1,18 +1,19 @@
 @import "variables";
 
-.experience {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between;
+.exp-apply-all {
   p,
   h3 {
     margin: 0;
     padding: 0;
     font-family: "Open Sans";
   }
+}
+.experience {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
   .background {
-    background-color: var(--accent-color);
     border-radius: 4px;
     border: solid 2px var(--font);
     max-width: 24vw;
@@ -30,7 +31,8 @@
     }
     img.logo {
       padding-left: 10px;
-      margin: auto;
+      margin-top: auto;
+      margin-bottom: auto;
       height: 50px;
     }
     img.cover{
@@ -41,12 +43,6 @@
   }
 }
 #experience {
-  p,
-  h3 {
-    margin: 0;
-    padding: 0;
-    font-family: "Open Sans";
-  }
   /* Style the buttons that are used to open and close the accordion panel */
   .accordion {
     background-color: inherit;
@@ -56,7 +52,6 @@
     text-align: left;
     border: none;
     outline: none;
-    // transition: 0.4s;
     img.side-logo {
       height: 5vw;
       margin-right: 5px;
@@ -68,13 +63,6 @@
       margin-left: 10px;
     }
   }
-
-  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-  .active,
-  .accordion:hover {
-    color: var(--text-color);
-  }
-
   /* Style the accordion panel. Note: hidden by default */
   .panel {
     max-height: 0;
@@ -89,15 +77,4 @@
       }
     }
   }
-  // .accordion:after {
-  //   // content: "\02795"; /* Unicode character for "plus" sign (+) */
-  //   font-size: 30px;
-  //   float: inline-end;
-  //   content: "+";
-  // }
-
-  // .active:after {
-  //   // content: "\2796"; /* Unicode character for "minus" sign (-) */
-  //   content: "-";
-  // }
 }

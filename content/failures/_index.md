@@ -15,7 +15,11 @@ I also read others' failure resumes and it helps me alot, so I hope my failure r
 
 Failures are subjective. What seems like a failure to me might not to you. I also recognize that I'm fortunate to have opportunities to fail and learn.
 
+## 2022
+- None. Yet 😎
+
 ## 2021
+- Did kinda bad in school??? Barely passed MATH 200. Broke down several times.
 - My request to return to the Health team at Microsoft was rejected. I was also working overtime at Microsoft.
 - Messed up my sleep schedule and have several health problems occur because of it.
 - Poorly planned my courses in second year so I didn't get promoted to third year standing.
