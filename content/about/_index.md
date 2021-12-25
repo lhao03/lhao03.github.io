@@ -7,13 +7,15 @@ template = "section.html"
 I'm a chemistry nerd and {{ inline(text="filter")}} and {{ inline(text="map")}} enthusiast studying {{ highlightLink(text="💻 Computer Science", link="https://www.cs.ubc.ca/")}} and {{ highlightLink(text="🧬 Biochemistry", link="https://biochem.ubc.ca/")}} at the {{ highlightLink(text="University of British Columbia", link="https://www.ubc.ca/")}}. I enjoy learning about how and why things work, especially pertaining to biological processes, viruses, and programming languages. 
 
 ## Currently
-- taking intro medical biochemistry, virology, intermediate algo design and analysis, calc III and intro to computer systems! See all my courses [here](/school).
-- finishing up TAing {{ inline(text='(string-append "CPSC" "110")')}}. For the second term I'll take a break from TAing because I really want to focus more on school.  
+- looking forward to taking general biochemistry, computer hardware and operating systems and algorithms in bioinformatics! You can see all the courses I've taken [here](/school).
+- catching up on all my webtoons! I'm currently reading Let's Play, Remarried Empress, Death Rescheduled, SubZero, Mystical, Unholy Blood and True Beauty. Yes, that's alot.
 - learning how to use Vim! I've finally deleted VSCode : ).
-- gaining back pre-pandemic strength in the gym. I can now hip thrust 275 lbs (max before was 375 lbs), and squat 155 lbs!
+- ~~gaining back pre-pandemic strength in the gym. I can now hip thrust 275 lbs (max before was 375 lbs), and squat 155 lbs!~~ Back to doing HIIT workouts at home @_@
 
 ## Previously
-I've helped design and implement a developer tool to interact with Microsoft Graph at {{ highlightLink(text="Microsoft Garage", link="https://www.microsoft.com/en-us/garage/about/")}}, built a {{ highlightLink(text="natural language processing pipeline", link="https://www.medrxiv.org/content/10.1101/2021.05.04.21256134v1")}} to automate the extraction of patient information from clinical notes, led some {{ highlightLink(text="technical workshops", link="/experience")}}, and mentored high schoolers.
+- helped design and implement a developer tool to interact with Microsoft Graph at {{ highlightLink(text="Microsoft Garage", link="https://www.microsoft.com/en-us/garage/about/")}} 
+- built a {{ highlightLink(text="natural language processing pipeline", link="https://www.medrxiv.org/content/10.1101/2021.05.04.21256134v1")}} to automate the extraction of health care data from surgical notes at the [PROOF Centre](https://www.proofcentre.ca/).
+- led some {{ highlightLink(text="technical workshops", link="/experience")}}
 
 ## Quantified
 - kilograms of chocolate consumed per year: 12 🍫
