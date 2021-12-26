@@ -45,3 +45,43 @@ For the example above, the accumulator is `sum` and iterator is `int`.
 
 # making bf, the next step!
 [tutorial here](https://beautifulracket.com/bf/)
+
+## intro
+The essential parts of a language are:
+- reader
+- expander
+
+But now we want to add grammer, basically allow us to specify the structure of a language. We need two new pieces:
+- parser
+- tokenizer
+
+To use bf in racket: `#lang bf-demo`
+
+### how bf works
+- when starting up: create array of bytes in memory (each byte initialized to 0) and pointer into that array (initialized to the 0 position). 
+- the current byte is the byte in the array at the location indicated by the pointer. 
+- there are 6 operations:
+  - >: increase pointer position by one
+  - <: decrease pointer position by one
+  - +: increase the value of the current byte by one
+  - -: decrease the value of the current byte by one
+  - .: write current byte to stdout
+  - ,: read a byte from stdin and store it in the current byte (overwriting the existing value)
+
+There is also a looping construct `[...]` that will repeat code within the brackets until the current byte is zero.
+
+Recall the two functions each language needs: 
+- reader: converts source file from string of characters into parenthesized S-expressions. `read-syntax`
+- expander: determines how the S-expressions correspond to Racket code. Starts with macro called #%module-begin
+
+Clean, well-structured S-expressions makes writing an expander much easier.
+
+The way we can convert any well-specified programming language into S-expressions is by using a grammar.
+
+## grammars and parsers
+
+### parsing and parse trees
+
+
+
+
