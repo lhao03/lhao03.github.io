@@ -50,3 +50,11 @@ pre {
     }
   }
 }
+
+table, th, td  {
+   border-collapse: collapse;
+   border: 1px solid var(--text-color);
+   color: var(--text-color);
+   font-family:  'Source Sans Pro', sans-serif;
+   padding: 5px;
+}
