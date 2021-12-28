@@ -1,6 +1,6 @@
 +++
 title = "λ Racket Shenanigans"
-date = 2021-12-24
+date = 2021-12-27
 draft = false
 +++
 
@@ -86,7 +86,7 @@ parsing: converting source code from a format for humans into one optimized for 
 
 In Racket, a parse tree can be notated as an S-expression. A parse tree describes structure of code, but doesn't tell us how the code will actually run.
 
-```python
+```python3
 if y > 0:
   x / y
 else:
@@ -126,5 +126,115 @@ It makes more sense to use a parser generator to make a parser from a specificat
 - consists of production rules, written one per line. On the left of each rule is the name of the structural element. A colon goes in the middle of the rule. This notation style is known as EBNF. On the right of each rule, we have a pattern for that element.
 - the right side can include: literal strings, classes of strings, names of other production rules. Multiple possibilities are separated by |
 
-### applying a grammer
+### applying a grammar
+- parser takes string of source code
+- starting with first production rule, parser tries to match source code to pattern on the right.
+- if the pattern contains names of other rules of grammar, parser recursively tries to match those rules, again using patterns on the right.
+
+This process continues until one of two things:
+- the parser decomposes source code into something that can't be further decomposed -> terminals. A parse tree is returned (the leaves of a parse tree are always terminals)
+- the parser can't find any way to decompose source code into terminals; parse fails.
+ It's trial and error (parser could try lots of unsuccessful paths)
+
+ ### ambiguous grammars
+ - you could write a grammar that can produce more than one valid parse tree for the same string
+ - but you should avoid this
+
+### groups and multiples in patterns
+a grammar for stacker
+```
+stacker-program : "\n"* instruction ("\n"+ instruction)*
+instruction     : integer | func
+integer         : ["-"] digit+
+digit           : "0" | "1" | "2" | "3" | "4"
+                | "5" | "6" | "7" | "8" | "9"
+func            : "+" | "*"
+```
+- parenthesizes create subsequences. 
+- \* means zero or more
+- \+ means match one or more of the preceding item
+- [] means zero or 1 of the enclosed item
+
+```
+4
+8
++
+3
+*
+```
+
+```
+'(stacker-program
+  (instruction (integer (digit "4")))
+  "\n"
+  (instruction (integer (digit "8")))
+  "\n"
+  (instruction (func "+"))
+  "\n"
+  (instruction (integer (digit "3")))
+  "\n"
+  (instruction (func "*")))
+```
+notes about how the parse tree lines up with the grammar:
+- each node in parse tree corresponds to production rule, starting with name of rule followed by elements that matched the pattern for that rule
+- rules that rely on other rules leads to nesting.
+- every character that appeared in original source string appears in parse tree.
+
+
+## the parser
+- bf is just a list of operations and loops
+  - so the first line means: either `bf-op` or `bf-loop` and zero or more of
+- now define bf-op and bf-loop
+```
+bf-program: (bf-op | bf-loop)* 
+bf-op: ">" | "<" | "+" | "-" | "." | "," 
+bf-loop: "[" (bf-op | bf-loop)* "]"
+```
+and that's the grammar for bf! There are other ways to define the grammar but this is the easiest because `bf-program` only appears ones and it is the least number of rules.
+ 
+### converting a grammar to a parser
+- we will use a parser-generating language called `brag` that takes a list of production rules and turns those into a working parser.
+
+## the tokenizer
+- source string is converted to tokens
+- tokenizer sits between source string and parser
+- a tokenizer is optional: if we don't use a tokenizer, then every character that appears in the source code counts as a token.
+
+Some tasks that are easily handled by the tokenizer?
+- meaningless strings in source code can be removed
+- strings that represent a value can be labeled with a generic token type
+- strings that should be handled literally can just pass through
+
+Downside to a tokenizer
+-  substrings removed (like comments) are invisible to the parser.
+-  tokens are indivisible; once we fuse a substring into a token, it can't be decomposed further by the parser. big tokens can be convenient because they reduce complexity, but they also reduce flexibility.
+
+### designing the bf tokenizer
+The bf grammar omits one detail: that any characters besides the eight used should be ignored.
+- the bf tokenizer is simple: pass through eight characters intact and toss out everything else
+
+### writing a reader with a tokenizer
+- instead of manually reading in strings of code from port, pass port to make tokenizer, which returns function that reads characters from port and generates tokens
+  - make-tokenizer creates and returns a function next-token that parser calls repeatedly to retrieve new tokens
+- use those tokens with parse, to make parse-tree
+- create `module-datum` and put `parse-tree` inside
+- finally use `datum->syntax` to package code as syntax object
+
+tokenizing rules
+- helper function: lexer
+  - each branch of lexer represent a rule: right side of token-creating expression, left side is pattern
+  - each time `next-token` is called, `bf-lexer` will read as many characters from port as possible while still matching a rule pattern (greedy matching).
+  - right side of rule with convert matched characters into token, which is returned
+
+```rkt
+(require brag/support) ;; we need to so we can get lexer
+(define (make-tokenizer port)
+  (define (next-token)
+    (define bf-lexer
+      (lexer
+       [(char-set "><-.,+[]") lexeme] ; matches to one of our eight characters; we pass to lexeme (that thing we just matched)
+       [any-char (next-token)])) ; think of else as else branch; we call next-token, basically skipping to the next available token
+    (bf-lexer port))  
+  next-token)
+```
 
