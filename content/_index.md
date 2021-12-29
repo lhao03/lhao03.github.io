@@ -1,5 +1,5 @@
 +++
-title = "Hi, I'm Lucy 👋🏻!"
+title = "Hi, I'm Lucy! ✨ (✿◡‿◡) ✨"
 template = "section.html"
 +++
 

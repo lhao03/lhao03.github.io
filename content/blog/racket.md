@@ -237,4 +237,19 @@ tokenizing rules
     (bf-lexer port))  
   next-token)
 ```
+- at the end, an `eof` is emitted, the lexer emits an `eof` 
 
+## making the expander: an imperative expander
+- grammar tells us how many macros or functions we need
+- we need to handle three types of parse nodes: `bf-program`, `bf-op`, `bf-loop`
+
+Why grammar is awesome
+1. each production rule in the grammar will have a corresponding macro/function in the expander.
+2. the name of the production rule is the name of the macro/function
+3. the pattern of the production rule describes possible input to its corresponding macro or function.
+
+Choosing function vs macro: use function where we can, a macro where we must
+- simple (return its args in a list or print them) -> use function
+- rearrange code in a way that a function can't -> macro
+
+`+[>]`
