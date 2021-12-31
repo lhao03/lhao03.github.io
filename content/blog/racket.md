@@ -252,4 +252,52 @@ Choosing function vs macro: use function where we can, a macro where we must
 - simple (return its args in a list or print them) -> use function
 - rearrange code in a way that a function can't -> macro
 
-`+[>]`
+`+[>]` will be parsed into:
+```
+(bf-program (bf-op "+") (bf-loop "[" (bf-op ">") "]"))
+```
+
+our expander goes as follows:
+- call `bf-program` macro with two input arguments:
+  - `(bf-op "+")`
+  - `(bf-loop "[" (bf-op ">") "]")`
+- call `bf-op` macro with one input:
+  - "+"
+- call `bf-loop` macro with three input arguments:
+  - "["
+  - "]"
+  - `(bf-op ">")`
+- call the `bf-op` macro with one input argument:
+  - ">"
+
+### from grammar to syntax pattern
+- syntax pattern is like a regular expression
+
+`bf-program` macro:
+`bf-program: (bf-op | bf-loop)*`
+```rkt
+(bf-program OP-OR-LOOP-ARG ...)
+```
+- `bf-program` denotes literal identifier in the code, and is name of macro. every element of a `define-macro` syntax pattern matches literally
+- unless it's in all caps. 
+  - pattern variable: can catch everything
+- the ..., similar to * quantifier. used after a pattern variable, the ... gathers al arguments that follow. can also match 0 arguments.
+
+Return value of a macro is a syntax template.
+- we return a void, which discards the arguments.
+- `define-macro-cases` it's like a cond
+
+## a functional expander
+We have two goals
+- avoid keeping state
+- avoid mutation
+
+Tricky because bf by nature is imperative
+
+- in funstacker we learned we can approximate behaviour of state variables by turning them into accumulators with `for/fold`
+- instead of storing state values outside the function, let the values travel through the functions
+
+- model new `bf` operations as functions that take two input arguments, array and pointer, and return a new array and pointer.
+- we want return value of a `bf-func` to become input arguments of the `next-bf-func`. 
+  - but `bf-func` only returns one value and `next-bf-func` needs two values.
+  - we cure this mismatch by using `apply`
