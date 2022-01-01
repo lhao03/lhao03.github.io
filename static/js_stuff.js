@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const userPref = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
   let currentTheme = localStorage.getItem('theme') ?? userPref;
   const themeName = document.querySelector(".theme-text");
-  themeName.innerText = currentTheme == "light" ? "☾" : "☼"; 
+  themeName.innerText = currentTheme == "light" ? "🌑" : "🌞";
 
   if (currentTheme) {
     app.classList.remove(currentTheme);
@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
     app.classList.remove(currentTheme);
     currentTheme = currentTheme === "light" ? "dark" : "light";
     app.classList.add(currentTheme);
-    themeName.innerText = currentTheme == "light" ? "☾" : "☼"; 
+    themeName.innerText = currentTheme == "light" ? "🌑" : "🌞";
     localStorage.setItem('theme', currentTheme);
   }
   toggle.addEventListener("change", switchTheme);

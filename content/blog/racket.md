@@ -295,9 +295,34 @@ We have two goals
 Tricky because bf by nature is imperative
 
 - in funstacker we learned we can approximate behaviour of state variables by turning them into accumulators with `for/fold`
+- with functional programming idiom: model `bf` operations that take a current array and pointer as input and return new array and pointer values as output.
 - instead of storing state values outside the function, let the values travel through the functions
 
+### restarting the expander
 - model new `bf` operations as functions that take two input arguments, array and pointer, and return a new array and pointer.
 - we want return value of a `bf-func` to become input arguments of the `next-bf-func`. 
   - but `bf-func` only returns one value and `next-bf-func` needs two values.
   - we cure this mismatch by using `apply`
+
+`apply`
+- takes a function and list of values as input, and calls the function while using those values as input arguments
+- these two expressions are equivalent
+- kind of like takes the list apart.
+```rkt
+(apply func (list arg1 arg2 arg3 arg4))
+(func arg1 arg2 arg3 arg4)
+```
+- the above example stipulates `func` is a run time function, not a macro; macros cannot be passed as an argument to any higher order function.
+
+```rkt
+(define (fold-funcs apl bf-funcs)
+  (for/fold ([current-apl apl])
+            ([bf-func (in-list bf-funcs)])
+    (apply bf-func current-apl)))
+```
+- `fold-funcs`: takes two input args, `apl` and a pointer; the return value of `bf-func` and list of `bf-funcs`
+- when `for/fold` starts, it creates an accumulator called `current-apl` to hold current state of the `bf` program, and initializes it to the `apl` argument passed as input.
+- then it iterates over the list of `bf-funcs`
+- on each iteration it uses `apply` to pass `current-apl` as arguments to the next `bf-func`
+- once we run out of `bf-funcs`, the last value of `current-apl` becomes the return value of the `for/fold` loop, and therefore the `fold-funcs` function.
+
