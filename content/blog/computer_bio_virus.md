@@ -4,7 +4,7 @@ date = 2021-12-24
 draft = false
 +++
 
-Taking CPSC 213 and MICB 306 together made me start wondering about the parallels between computer viruses and biological viruses. 
+Taking [CPSC 213](@/school/cpsc213.md) and [MICB 306](@/school/micb306.md) together made me start wondering about the parallels between computer viruses and biological viruses. 
 
 Firstly, a biological virus causes havoc by replicating it's genome, which means it tries to make our cells translate it's RNA (genome) over our RNA or alongside our RNA. RNA is a just a set of instructions telling the cell how to make proteins. This is very similar to computer viruses; computer viruses try to run their code either alongside the "good" code or also tries to block execution of the "good" code. Code is also a set of instructions telling the computer what to do. 
 

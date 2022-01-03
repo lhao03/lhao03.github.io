@@ -3,8 +3,6 @@ title = "Hi, I'm Lucy! ✨ (✿◡‿◡) ✨"
 template = "section.html"
 +++
 
-{{ header(curr="home") }}
-
 <div>
 <code class="landing">
 I'm interested in low level programming 💻, functional programming λ, virology 🦠, and biochemistry 🧬.

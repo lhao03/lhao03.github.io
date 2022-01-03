@@ -2,7 +2,6 @@
 title = "About"
 template = "section.html"
 +++
-{{ header(curr="about") }}
 
 I'm a chemistry nerd and {{ inline(text="filter")}} and {{ inline(text="map")}} enthusiast studying {{ highlightLink(text="💻 Computer Science", link="https://www.cs.ubc.ca/")}} and {{ highlightLink(text="🧬 Biochemistry", link="https://biochem.ubc.ca/")}} at the {{ highlightLink(text="University of British Columbia", link="https://www.ubc.ca/")}}. I enjoy learning about how and why things work, especially pertaining to biological processes, viruses, and programming languages. 
 

@@ -1,6 +1,6 @@
 +++
 title = "λ Racket Shenanigans"
-date = 2021-12-27
+date = 2022-01-01
 draft = false
 +++
 
@@ -325,4 +325,39 @@ Tricky because bf by nature is imperative
 - then it iterates over the list of `bf-funcs`
 - on each iteration it uses `apply` to pass `current-apl` as arguments to the next `bf-func`
 - once we run out of `bf-funcs`, the last value of `current-apl` becomes the return value of the `for/fold` loop, and therefore the `fold-funcs` function.
+
+now we can write the macro for `bf-program`
+```rkt
+(define-macro (bf-program OP-OR-LOOP-ARG ...)
+  #'(begin
+      (define first-apl (list (make-vector 30000 0) 0))
+      (void (fold-funcs first-apl (list OP-OR-LOOP-ARG ...)))))
+(provide bf-program)
+```
+- we want to return code for two expressions; syntax object can only represent one.
+- any time we want to return multiple expressions: use `begin`
+  - unlike `let`, `begin` does not create a new scope for variables, any variables inside a `begin` are visible outside as well
+- macro should not return a value, so pass result to a void.
+
+now we write the macro for `bf-loop`; there are two things to observe
+- when `bf-loop` arrives at `fold-funcs`, it is expected to behave as `bf-func`. So the return value of `bf-loop` macro has to be a function that has two input args and 1 output arg.
+- `bf-loop` is mini `bf` program that runs repeatedly until a certain condition is met.
+
+```rkt
+(define-macro (bf-loop "[" OP-OR-LOOP-ARG ... "]")
+  #'(lambda (arr ptr)
+      (for/fold ([current-apl (list arr ptr)])
+                ([i (in-naturals)]
+                 #:break (zero? (apply current-byte
+                                       current-apl)))
+        (fold-funcs current-apl (list OP-OR-LOOP-ARG ...)))))
+(provide bf-loop)
+```
+
+the last macro is `bf-op`, but instead of returning a self-contained function, just return only the name of corresponding function -> so `fold-funcs` can `apply` a list of arguments to it.
+
+### making it faster
+- this functional version is much slower because of the `set-current-byte` func
+  - we make a new array every time, which is 30k bytes, and the garbage collector has to run more often to free up memory.
+  - to make it faster we can just use the input array
 

@@ -21,9 +21,6 @@ pre {
     .blog-title {
       font-weight: bold;
     }
-    // .date-time {
-    //   white-space: nowrap;
-    // }
     p {
       margin: 0;
     }
@@ -43,8 +40,11 @@ pre {
     border-left: 5px solid var(--accent-color);
   }
   img {
-    width: 60vw;
-    border-radius: 15px;
+    height: 60vh;
+      display: block;
+  margin-left: auto;
+  margin-right: auto;
+    border-radius: 5px;
     @media (max-width: $maxWidth) {
       width: 80vw;
     }
