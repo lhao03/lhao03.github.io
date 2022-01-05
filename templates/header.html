@@ -2,9 +2,6 @@
 
 {% block header %}
 <div class="header flex-row">
-          <a href="/">
-<code class="inline">home</code>
-          </a>
         <a href="/about">
           <code class="inline">about</code>
         </a>
@@ -14,18 +11,9 @@
         <a href="/blog">
           <code class="inline">blog</code>
         </a>
-        <a href="/failures">
-          <code class="inline">fails</code>
-        </a>
         <a href="/school">
           <code class="inline">school</code>
         </a>
-        <div class="theme-toggle">
-            <input class=toggle id=darkmode-toggle type=checkbox tabindex=-1>
-            <label for="darkmode-toggle" class="toggle-label">
-                <p class="theme-text unselectable">🍡 🍘</p>
-            </label>
-        </div>
 </div>
 {% block content %} {% endblock content %}
 {% endblock header %}

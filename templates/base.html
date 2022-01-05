@@ -56,6 +56,17 @@
 <body class="container theme light">
     <section>
         <div class="page">
+        <div class="flex-row">
+        <a href="/" class="nostyle">
+      <img class="top-left" src="{{get_url(path=data.favicon)}}"/>
+        </a>
+        <div class="theme-toggle">
+            <input class=toggle id=darkmode-toggle type=checkbox tabindex=-1>
+            <label for="darkmode-toggle" class="toggle-label">
+                <p class="theme-text unselectable">🍡 🍘</p>
+            </label>
+        </div>
+        </div>
             {% block header %} {% endblock %}
         </div>
 
