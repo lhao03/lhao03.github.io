@@ -1,5 +1,5 @@
 +++
-title = "Rust notes"
+title = "Rust notes 🦀"
 date = 2022-01-01
 draft = false
 +++
@@ -83,4 +83,18 @@ let one = x.2;
 
 ### arrays
 - fixed length
-
+- allocated on stack 
+```rust
+let a: [i32; 5] = [1, 2, 3, 4, 5];
+let a = [3; 5]; // a = [3, 3, 3, 3, 3];
+```
+## 3.2: functions
+- statements: instructions that perform some action and do not return a value
+- expressions: evaluate to resulting value
+- function definitions are statements
+```rust
+fn main() {
+    let x = (let y = 6); // this does not work
+}
+```
+- the `let` statement does not return a value, so x has nothing to bind to.
