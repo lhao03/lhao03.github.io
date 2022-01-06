@@ -1,5 +1,5 @@
 +++
-title = "Rust notes 🦀"
+title = "🦀 Rust notes"
 date = 2022-01-01
 draft = false
 +++
@@ -45,7 +45,7 @@ let x = 5; // x is 5 here
 let x = x + 1; // x is 6 here
 {
     let x = x * 2; // x is 12 here
-  }
+}
 // x is 6 here
 ```
 - with shadowing we can perform a few transformations on a value but have the variable be immutable after those transformations have been completed.
