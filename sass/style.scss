@@ -160,9 +160,7 @@ code {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  @media (min-width: $maxWidth) {
   justify-content: space-between;
-  }
 }
 
 .flex-row-no-space {
