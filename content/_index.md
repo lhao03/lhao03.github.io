@@ -5,6 +5,7 @@ template = "section.html"
 
 <div>
 <code class="landing">
+{{ img(img="lucy.png", class="profile") }}
 I'm interested in low level programming 💻, functional programming λ, virology 🦠, and biochemistry 🧬.
 </code>
 </div>

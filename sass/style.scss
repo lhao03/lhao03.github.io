@@ -103,6 +103,15 @@ p.theme-text {
 
 }
 
+img.profile {
+  @media (min-width: $maxWidth) {
+    width: 150px !important;
+  }
+  @media (max-width: $maxWidth) {
+    width: 50px !important;
+  }
+}
+
 p,
 label,
 li,
