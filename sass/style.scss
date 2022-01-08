@@ -48,10 +48,9 @@ section {
   @media (max-width: $maxWidth) {
     width: 90vw;
   }
-  width: 50vw;
+  width: 70vw;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 5vh;
 
   a,
   li > a {
@@ -155,7 +154,6 @@ code {
   line-height: 150%;
   @media (max-width: $maxWidth) {
     font-size: 17px;
-    line-height: 175%;
   }
 }
 
@@ -178,6 +176,11 @@ code {
   flex-direction: row;
 }
 
+.flex-row-no-wrap {
+  display:flex;
+  flex-direction: row;
+}
+
 .flex-row-col {
   display: flex;
   flex-direction: row;
@@ -186,6 +189,7 @@ code {
     flex-direction: column;
   }
 }
+
 
 .block {
   margin: 50px auto;
@@ -202,9 +206,19 @@ a.nostyle {
 }
 
 code.landing {
-  font-size: 30px;
+  font-size: 25px;
   color: var(--text-color);
   @media (max-width: $maxWidth) {
     font-size: 20px;
   }
+}
+
+.about {
+.padding-left {
+  padding-left: 50px;
+}
+ ul {
+   list-style-type: none;
+   padding-left: 0;
+ }
 }

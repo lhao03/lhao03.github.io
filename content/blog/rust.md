@@ -98,3 +98,119 @@ fn main() {
 }
 ```
 - the `let` statement does not return a value, so x has nothing to bind to.
+- expressions include:
+  - function calls, macro calls, `{}`
+- adding `;` to the end of an expression turns it into a statement.
+
+### funcs with return values
+- don't name return values, but declare type after an arrow
+```rust
+fn five() -> i32 {
+    5
+}
+
+fn main() {
+    let x = five();
+}
+```
+- if we add a semicolon at the end of the return, we get an error.
+
+## 3.4 control flow
+- using loops; you can give loop labels.
+- `break` and `continue` apply to the innermost loop at that point.
+```rust
+'outer_loop: loop {
+  loop {
+    // something happens
+    break;
+    //something happens
+    break 'counting_up;
+  }
+}
+```
+- returning values from loops
+```rust
+let result = loop {
+  // something happens
+  break 10;
+}
+```
+### looping through a collection with for
+- we could use a `while` loop;
+```rust
+    while index < 5 {
+        println!("the value is: {}", a[index]);
+
+        index += 1;
+    }
+```
+- but this approach is error prone; program could panic if index or test condition is wrong.
+- also slow; compiler adds runtime code to perform the conditional check of whether the index is within the bounds of the array on every iter through the loop.
+- more concise is to use `for` loop:
+```rust
+for element in a {
+  // do something
+}
+```
+- increased safety of code.
+```rust
+fn main() {
+    for number in (1..4).rev() {
+        println!("{}!", number);
+    }
+    println!("LIFTOFF!!!");
+}
+```
+
+# ch 4: understanding ownership
+- enables Rust to make memory safety guarantees without needing a garbage collector.
+
+## 4.1: what is ownership
+- rust manages memory through a system of ownership with a set of rules that compiler checks at compile time.
+- ownership features do not slow down program whiles it's running.
+
+### ownership rules
+- each value has a variable that's called it's owner
+- there can only be one owner at a time
+- when owner goes out of scope, value will be dropped
+
+### memory and allocation:
+
+#### move
+- `String::from`, requests memory it needs
+- when a variable goes out of scope, Rust called `drop`, is where author of `String` can put the code to return the memory.
+- to ensure memory safety: after `let s2 = s1`, Rust considers `s1` to no longer be valid; no need to free anything when `s1` goes out of scope.
+```rust
+    let s1 = String::from("hello");
+    let s2 = s1;
+
+    println!("{}, world!", s1);
+```
+- move: shallow copy and invalidates the first variable.
+- Rust never automatically creates deep copies; any automatic copies are assumed to be inexpensive.
+
+#### clone
+- deeply copy the heap data, not just stack data
+- expensive
+
+#### copy
+- types that have known size at compile time are stored entirely on the stack, so copies of actual type are quick to make.
+- there's no reason we would want to prevent `x` from being valid after creating `y`.
+```rust
+    let x = 5;
+    let y = x;
+
+    println!("x = {}, y = {}", x, y);
+```
+- no difference between deep and shallow copy here.
+- Rust has special annotation called `Copy` trait that is placed on types like integers.
+- Rust won't let us annotate a type with `Copy` trait if the type or any parts of it has implemented `Drop` trait.
+
+### ownership and functions
+- passing a `String`, s, to a function means that s is no longer valid, the function _owns_ s.
+- returning values can also transfer ownership.
+- ownership of a variable follows the same pattern: assigning a value to another variable moves it. 
+- when a variable that includes data on the heap goes out of scope, the value will be cleaned up by `drop` unless the data has been moved to be owned by another variable.
+
+## 4.2 references and borrowing
+
