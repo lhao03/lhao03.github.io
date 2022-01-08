@@ -11,6 +11,7 @@ $font: 'Source Sans Pro', sans-serif;
 $grey: #545454;
 $lightergrey: #767676;
 $dark-grey: #1e1e21;
+$dark-blue: hsl(226, 23%, 11%);
 $percent: 15%;
 
 // pastel colors
@@ -76,7 +77,7 @@ $themes: (
     ),
     "dark": (
         "colors": (
-            "background": $dark-grey,
+            "background": $dark-blue,
             "accent": darken($blue5, 5%),
             "darker-accent": darken($blue5, 10%),
             "font": #f9f9f9,
