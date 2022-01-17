@@ -211,6 +211,44 @@ fn main() {
 - returning values can also transfer ownership.
 - ownership of a variable follows the same pattern: assigning a value to another variable moves it. 
 - when a variable that includes data on the heap goes out of scope, the value will be cleaned up by `drop` unless the data has been moved to be owned by another variable.
+- taking ownership and then returning ownership with every function is a bit tedious.
+  - what if we want to let a function use a value but not take ownership?
+- anything we pass in also needs to be passed back if we want to use it again.
+```rust
+fn main() {
+    let s1 = String::from("hello");
+
+    let (s2, len) = calculate_length(s1);
+
+    println!("The length of '{}' is {}.", s2, len);
+}
+
+fn calculate_length(s: String) -> (String, usize) {
+    let length = s.len(); // len() returns the length of a String
+
+    (s, length)
+}
+```
+- we can return multiple values in a tuple, and we need to return the string so we can use it again later.
+-  we solve that issue by using _references_
 
 ## 4.2 references and borrowing
+- add `&` to denote _references_, allow you to refer to some value without taking ownership of it.
+  - called borrowing: we cannot modify a borrowed value; _references_ are also immutable.
 
+### mutable references
+1. change the variable to be `mut`: `let mut s = String::from("hello")`
+2. create a mutable reference with `&mut s` and call the `change` function: `change(&mut s)`
+3. update the function signature to accept mutable reference, `some_string: &mut String`
+
+- but you can only have one mutable reference to a particular piece of data at a time.
+- allows for mutation in a controlled fashion.
+- this prevents data races at compile time
+
+a _data race_ is similar to a race condition and occurs when:
+1. two or more pointers access the same data at the same time
+2. at least one of the pointers is being used to write to the data
+3. there's no mechanism being used to synchronize access to the data
+
+Rust won't even compile code with data races!
+- we can use curly braces to create a new scope.

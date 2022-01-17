@@ -10,7 +10,7 @@ I'm a chemistry nerd and {{ inline(text="filter")}} and {{ inline(text="map")}} 
 ## Currently I'm...
 - 🎒 taking general biochemistry, computer hardware and operating systems and algorithms in bioinformatics, and [more](@/school/_index.md)
 - 🌟 leading marketing and development for [StarHacks](https://www.starhacks.tech/)
-- 🖮  learning how to use Vim! I've finally deleted VSCode	٩(◕‿◕)۶
+- ⌨️  learning how to use Vim! I've finally deleted VSCode	٩(◕‿◕)۶
 
 ## Previously I've...
 - 💻 helped design and implement a developer tool to interact with Microsoft Graph at [Microsoft Garage](https://www.microsoft.com/en-us/garage/about/)
