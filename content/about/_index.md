@@ -19,6 +19,9 @@ I'm a chemistry nerd and {{ inline(text="filter")}} and {{ inline(text="map")}} 
 - 🏋️‍♀️ deadlifted 205 lbs pounds
 - 🎶 listened to 53888 minutes of Spotify in 2021 
 
+## Recently played...
+![Alt text](https://spotify-recently-played-readme.vercel.app/api?user=euj7dn4m7gqc9wniy6c5jrtm5)
+
 💖 If you want to get in touch with me, feel free to send me an email at {{ inline(text='(string-append "hao" "." "lucyy" "@" "gmail" "." "com")')}}. You can also find me on [twitter](https://twitter.com/hoalycu). If you dare to see my 🍝 code and thoughts, you can check out my [GitHub](https://github.com/lhao03) and [blog](/blog)! And finally, you can see my experience in [resume](/res/resumes/resume-Lucy-Hao.pdf) form or [here](/experience)!
 
 {{ img(img="../type.gif") }}
