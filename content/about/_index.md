@@ -8,7 +8,7 @@ class = "about"
 I'm a chemistry nerd and {{ inline(text="filter")}} and {{ inline(text="map")}} enthusiast studying [💻 Computer Science](https://www.cs.ubc.ca/) and [🧬 Biochemistry](https://biochem.ubc.ca/) at the [University of British Columbia](https://www.ubc.ca/). I enjoy learning about how and why things work, especially pertaining to biological processes, viruses, and programming languages. Check out my fails [here](@/failures/_index.md).
 
 ## Currently I'm...
-- 🎒 taking general biochemistry, computer hardware and operating systems, paradigms in bacterial pathogenesis, and organic chemistry, and [more](@/school/_index.md)
+- 🎒 taking computer hardware and operating systems, paradigms in bacterial pathogenesis, and organic chemistry, and forest genetics.
 - 🍓🍫 eating way too much ruby chocolate
 - ⌨️  learning how to use Vim! I've finally deleted VSCode	٩(◕‿◕)۶
 
