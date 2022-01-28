@@ -8,7 +8,7 @@ draft = false
 |                |Term 1|Term 2|   
 |----------------|:---|:---|
 |Computer Science|[MATH 200](@/school/math200.md), [CPSC 320](@/school/cpsc320.md), [CPSC 213](@/school/cpsc213.md)|[CPSC 313](@/school/cpsc313.md), [MICB 308](@/school/micb308.md)|   |   
-|Biochemistry    |[BIOC 202](@/school/bioc202.md), [MICB 306](@/school/micb306.md)|[BIOC 302](@/school/bioc302.md), [FRST 302](@/school/frst302.md), [CHEM 213](@/school/chem213.md)|BIOL 335|   
+|Biochemistry    |[BIOC 202](@/school/bioc202.md), [MICB 306](@/school/micb306.md)|[FRST 302](@/school/frst302.md), [CHEM 213](@/school/chem213.md)|BIOL 335|   
 
 # year 4
 |                |Term 1|Term 2|   
