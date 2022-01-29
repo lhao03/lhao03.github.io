@@ -14,13 +14,13 @@ sort_by = "date"
 - **PROOF Centre** (Jan - May 2021) 🧬 Software Developer Intern
 
 ## Speaking Experience
-- **Joytojob** 💼 Panelist
-- **StarHacks I** 💫 Workshop Host
-- **Citro Hacks** 🍋 Workshop Host
-- **Hydrangea Hacks** 💮 Workshop Host
-- **Hacking 4 Community** 👏🏻 Panelist
-- **HackCamp** ⛺ Workshop Host
-- **StarHacks II** 💫 Panelist
+- **StarHacks II** 💫 Panelist for Intersections of Technology
+- **HackCamp** ⛺ Workshop Host for Intro to Technical Interviews
+- **Joy to job** 💼 Panelist for Computers and Technology 
+- **Citro Hacks** 🍋 Workshop Host for Intro to Git and GitHub
+- **Hydrangea Hacks** 💮 Workshop Host for Intro to NLP
+- **Hacking 4 Community** 👏🏻 Panelist for Pursuing a Successful Career in CS + Technology
+- **StarHacks I** 💫 Workshop Host for Into to Git an GitHub and Intro to Python
 
 ## Other Experience
 - **nwPlus** 🗻 Marketing Co-Director
