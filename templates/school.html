@@ -6,11 +6,12 @@
 <h1>{{ section.title }}</h1>
 {{ section.content | safe }}
 
-{% for curr_year in data.school_years %}
-<h2>year {{curr_year}}</h2>
 <div class="flex-row">
+{% for s_subject in data.subject %}
+<div class="flex-column">
+<h2>{{s_subject}}</h2>
     {% for page in section.pages %}
-    {% if page.extra.year == curr_year %}
+    {% if page.extra.course == s_subject %}
     <a class="no-decor" href="{{ page.permalink | safe }}">
             <div class="course-button {{page.extra.course}} light">
                 <span style="font-weight: bold;">{{ page.title }}</span>
@@ -20,4 +21,5 @@
     {% endfor %}
 </div>
 {% endfor %}
+</div>
 {% endblock content %}
