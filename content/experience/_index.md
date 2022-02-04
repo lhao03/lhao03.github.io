@@ -20,7 +20,7 @@ sort_by = "date"
 - **Citro Hacks** 🍋 Workshop Host for Intro to Git and GitHub
 - **Hydrangea Hacks** 💮 Workshop Host for Intro to NLP
 - **Hacking 4 Community** 👏🏻 Panelist for Pursuing a Successful Career in CS + Technology
-- **StarHacks I** 💫 Workshop Host for Into to Git an GitHub and Intro to Python
+- **StarHacks I** 💫 Workshop Host for Into to Git and GitHub and Intro to Python
 
 ## Other Experience
 - **nwPlus** 🗻 Marketing Co-Director
