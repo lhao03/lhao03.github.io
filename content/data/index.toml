@@ -14,5 +14,5 @@ links = [
 
 school_years = [3, 2, 1]
 
-subject = ["MATH", "CPSC", "ATSC", "CHEM", "FRST", "MICB", "BIOL", "STAT", "DSCI", "BIOC"]
+subject = ["CPSC","MICB","MATH","CHEM", "ATSC", "BIOL", "FRST" , "BIOL", "STAT", "DSCI", "BIOC"]
 exp_categories = ["work", "speaking", "other"]

@@ -1,7 +1,7 @@
 +++
 title = "🖊 My thoughts on using the iPad for notes"
 date = 2021-12-26
-draft = true
+draft = false
 +++
 
 # My issues with handwriting notes
@@ -44,3 +44,5 @@ I read my notes more often, and it's easier for me to find a concept I need to s
 {{ blogImg(img="oxi.png") }}
 
 # Who is GoodNotes (and handwritten digital notes) for? 
+
+Probably people who actually hand write their notes or like writing down their ideas. It is a must for me to write down my ideas, especially for chemistry and low level computing, because I cannot just think there and think of a chemical reaction, I need to try different pathways.
