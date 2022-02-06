@@ -5,7 +5,7 @@ template = "section.html"
 class = "about"
 +++
 
-I'm a chemistry nerd and {{ inline(text="filter")}} and {{ inline(text="map")}} enthusiast studying [💻 Computer Science](https://www.cs.ubc.ca/) and [🧬 Biochemistry](https://biochem.ubc.ca/) at the [University of British Columbia](https://www.ubc.ca/). I enjoy learning about how and why things work, especially pertaining to biological processes, viruses, operating systems, and programming languages. Check out my fails [here](@/failures/_index.md).
+I'm a chemistry nerd and {{ inline(text="filter")}} and {{ inline(text="map")}} enthusiast studying [💻 Computer Science](https://www.cs.ubc.ca/), [🧬 Biochemistry](https://biochem.ubc.ca/) and [Microbiology & Immunology](https://www.microbiology.ubc.ca/) at the [University of British Columbia](https://www.ubc.ca/). I enjoy learning about how and why things work, especially pertaining to biological processes, viruses, operating systems, and programming languages. Check out my fails [here](@/failures/_index.md).
 
 ## Currently I'm...
 - 🎒 taking computer hardware and operating systems, organic chemistry, and forest genetics.
@@ -14,7 +14,8 @@ I'm a chemistry nerd and {{ inline(text="filter")}} and {{ inline(text="map")}} 
 - 📄 trying to read one scientific paper or part of a book each week. See my progress [here](https://band-atlasaurus-b04.notion.site/f8c41002423146dc85fce8ee1a0fa16a?v=251a6c93cade42cc8536c68ac46f8e7f)
 
 ## Previously I've...
-- 🪐 lead marketing and development for [StarHacks II](https://www.starhacks.tech/), a gender minority hackathon that had over 800+ participants and included speakers like Telle Whitney.
+- 🪐 lead marketing and development for [StarHacks II](https://www.starhacks.tech/), a gender minority focussed hackathon that had over 800+ participants and included speakers like Telle Whitney.
+- 👋🏻 TAed some courses.
 - 💻 helped design and implement a developer tool to interact with Microsoft Graph at [Microsoft Garage](https://www.microsoft.com/en-us/garage/about/)
 - 🏥 built a [natural language processing pipeline](https://www.medrxiv.org/content/10.1101/2021.05.04.21256134v1") the [PROOF Centre](https://www.proofcentre.ca/)
 - 💁🏻‍♀️  led some [technical workshops](/experience)

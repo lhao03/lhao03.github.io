@@ -14,10 +14,11 @@ I also read others' failure resumes and it helps me a lot, so I hope my failure 
 Failures are subjective. What seems like a failure to me might not to you. I also recognize that I'm fortunate to have opportunities to fail and learn.
 
 ## 2022
+- Horrible course planning so I ended up with a very unbalanced year of courses. 
 - Denied permission to pursue a combined major in Computer Science and Biochemistry. Sucks because I was really excited to get higher recognition of Biochemistry on my degree (right now it's a minor) and to not do MATH 221. And I don't really wanna pursue a double major because I'm not really interested in lab work.
 
 ## 2021
-- Barely passed MATH 200. Broke down several times due to.
+- Barely passed MATH 200. Broke down several times due to other courses too.
 - My request to return to the Health team at Microsoft was rejected. I was also working overtime at Microsoft.
 - Messed up my sleep schedule and have several health problems occur because of it.
 - Poorly planned my courses in second year so I didn't get promoted to third year standing.
