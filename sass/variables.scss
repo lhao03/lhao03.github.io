@@ -65,6 +65,7 @@ $themes: (
             "accent": $purple4,
             "darker-accent": darken($purple4, 10%),
             "font": $grey,
+            "complement": $greenyellow1,
         ),
         "courseColors": (
             "CPSC": $cpsc,
@@ -81,6 +82,7 @@ $themes: (
             "accent": darken($blue5, 5%),
             "darker-accent": darken($blue5, 10%),
             "font": #f9f9f9,
+            "complement": darken($orange1, 10%),
         ),
         "courseColors": (
             "CPSC": darken($cpsc, $percent),

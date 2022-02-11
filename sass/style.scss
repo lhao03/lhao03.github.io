@@ -55,22 +55,33 @@ section {
   a,
   li > a {
     color: var(--text-color);
-    background: linear-gradient(90deg, var(--accent-color) 0%, var(--accent-color) 100%) no-repeat 0 100%;
-    background-size: 100% 2px;
+    background: linear-gradient(90deg, var(--complement) 0%, var(--accent-color) 100%) no-repeat 0 100%;
+  // border-radius: 4px;
+  // padding: 2px 4px;
+    // background-size: 100% 2px;
+      background-size: 100% 100%;
     text-decoration: none;
-    transition: background-size 0.3s;
+    // transition: background-size 0.3s;
     &:hover,
     &:focus {
-      background-size: 100% 100%;
+      // background-size: 100% 100%;
     }
   }
 }
 
 .inline {
-  background: var(--accent-color);
-  color: var(--text-color);
-  border-radius: 4px;
-  padding: 2px 4px;
+  // background: var(--accent-color);
+  // color: var(--text-color);
+  // border-radius: 4px;
+  // padding: 2px 4px;
+    color: var(--text-color);
+    background: linear-gradient(90deg, var(--complement) 0%, var(--accent-color) 100%) no-repeat 0 100%;
+  // border-radius: 4px;
+  // padding: 2px 4px;
+    // background-size: 100% 2px;
+      background-size: 100% 100%;
+    text-decoration: none;
+    // transition: background-size 0.3s;
 }
 
 .toggle {

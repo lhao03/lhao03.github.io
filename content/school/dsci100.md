@@ -2,7 +2,7 @@
 title = "DSCI 100"
 description = "Introduction to Data Science"
 [extra]
-course = "CPSC"
+course = "DSCI"
 year = 1
 +++
 

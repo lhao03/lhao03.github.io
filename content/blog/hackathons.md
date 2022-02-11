@@ -31,7 +31,7 @@ In a world of exploding technological innovation, thinking about sustainability 
 Additionally, I don't learn much by hastily copying a piece of code from Stack Overflow or using an API endpoint that does everything for me. And to be really frank, there is no way I will produce any remotely helpful or useful in 24 hours. Much less so a functional product. Can some people do it? Yes, but the vast majority of hackers are beginners. Which leads to my next point below...
 
 ## What are we trying to solve here?
-It's funny how a microbiology class fundamentally changed the way I went about thinking about solving problems. In MICB 202, I learned about cholera, an acute diarrhoeal infection caused by ingesting water or food contaminated with the bacterium Vibrio cholerae. How would one go about reducing the cases of cholera? Well, by cleaning up the water. But how? Using chemicals? Using energy to kill off bacteria? While these are good great solutions, there's one thing we are forgetting about. The context of the problem. [https://www.pnas.org/content/100/3/1051] 
+It's funny how a microbiology class fundamentally changed the way I went about thinking about solving problems. In MICB 202, I learned about cholera, an acute diarrhoeal infection caused by ingesting water or food contaminated with the bacterium Vibrio cholerae. How would one go about reducing the cases of cholera? Well, by cleaning up the water. But how? Using chemicals? Using energy to kill off bacteria? While these are good great solutions, there's one thing we are forgetting about. The context of the [problem](https://www.pnas.org/content/100/3/1051).
 
 Hackathons are so isolated from the problem that alot of context is ignored, and this results in most solutions being useless. 
 
