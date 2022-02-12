@@ -5,3 +5,5 @@ description = "Organic Chemistry"
 course = "CHEM"
 year = 3
 +++
+
+*Difficulty Rating:* 8/10

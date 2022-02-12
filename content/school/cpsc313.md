@@ -5,3 +5,5 @@ description = "Computer Hardware and Operating Systems"
 course = "CPSC"
 year = 3
 +++
+
+*Difficulty Rating:* 6/10

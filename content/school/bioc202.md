@@ -5,3 +5,5 @@ description = "Introductory Medical Biochemistry"
 course = "BIOC"
 year = 3
 +++
+
+*Difficult Rating:* 5/10

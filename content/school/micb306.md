@@ -6,6 +6,8 @@ course = "MICB"
 year = 3
 +++
 
+*Difficulty Rating:* 6/10
+
 This is one of the most interesting and one of the best courses I've taken at UBC. In science, it's common that what is taught in school is a few years behind current research. But in this course, we have learned alot of new and present research, such that I think I can understand a virology paper decently well for an undergrad student. 
 
 Taking Cell Biology, [BIOL 200](@/school/biol200.md) and Introductory Medicinal Biochemistry [BIOC 202](@/school/bioc202.md) will be extremely helpful and aid in your success in this course.

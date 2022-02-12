@@ -5,3 +5,5 @@ description = "Intermediate Algorithm Design and Analysis"
 course = "CPSC"
 year = 3
 +++
+
+*Difficulty Rating:* 8/10

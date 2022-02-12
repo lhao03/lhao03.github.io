@@ -6,7 +6,9 @@ course = "FRST"
 year = 3
 +++
 
-# Ch 9: Evolutionary Genetics
+*Difficulty Rating:* 5/10
+
+# Ch 9: Evolutionary genetics
 
 Not until Devonian Period or Carboniferous Period → gymnosperms evolve and first forest trees were present on earth
 
