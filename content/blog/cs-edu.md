@@ -77,7 +77,7 @@ This quote drives the point home that programs like KodeWithKlossy don't seem to
 
 If you do like web development, you can learn the same things KodeWithKlossy and SheCodes teachs (and way more) at [freecodecamp](https://www.freecodecamp.org/). 
 
-Now, there are programs which I do think are doing a great job at introducing a minority in computer science to what computer science actually is. [Jane Steet](https://www.janestreet.com/join-jane-street/our-programs/) has programs ranging from a few days to a few weeks teaching concepts like OCaml, probability, arbitrage, and even some business concepts! 
+Now, there are programs which I do think are doing a great job at introducing minorities in computer science to what computer science actually is. [Jane Steet](https://www.janestreet.com/join-jane-street/our-programs/) has programs ranging from a few days to a few weeks teaching concepts like OCaml, probability, arbitrage, and even some business concepts! 
 From their [INSIGHT](https://www.janestreet.com/join-jane-street/our-programs/insight/) program:
 
 > In the software engineering program, students will learn about OCaml and the libraries and tools that we use in our everyday work, as well as the fundamentals of building electronic trading systems. Then, they’ll put these tools to use by writing the backend and UI for a computer game and a program that trades on a simulated stock exchange.
