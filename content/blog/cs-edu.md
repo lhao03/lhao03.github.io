@@ -18,8 +18,8 @@ In computer science, many of my classmates (mostly men) had already started prog
 I'm not really sure. But now in my third year, I'm no longer sad that I wasn't coding away during high school, because I enjoyed my time in high school. Chemistry will always be something I love. For the longest time, I couldn't justify taking courses in chemistry or biochemistry because I thought I should only spend money on courses that had better a return. Wouldn't it be better to spend money on a computer science course that could allow me to make more money, then a chemistry course that I was just interested in? I had this mindset in first and part of second year. But this resulted in me flip flopping between courses (never having a good timetable) and choosing courses that "sounded good" and not if I actually wanted to learn the topic. Eventually, I realised that I was wasting more time trying to force myself to like some courses; what would happen if I took that organic chemistry course instead of the databases course? Hopefully nothing much, because I'm in that organic chemistry course right now. Additionally, I've found out that I'm actually interested in programming languages (how they are designed) and operating systems/compilers (how that programming language is turned into assembly and how hardware and software communicate with each other). So I don't think I'll be taking that database course.
 
 
-# Why am I glad that I didn't do computer science in high school? 
-One large reason is that I didn't have good resources near me. Out of all the women in my IB class, only 2 (including me) decided to not do a degree in the health sciences. In my daily life, no one I talked to talked about computer science. 
+# Why do I no longer wish that I did computer science in high school?
+One large reason I never ventured into computer science in high school was that I didn't have good resources near me. Out of all the women in my IB class, only 2 (including me) decided to not do a degree in the health sciences. In my daily life, no one I talked to talked about computer science. 
 
 One reason why I loved chemistry is because I had a wealth of resources near me to foster that passion. I started learning about orbitals in junior high and hand drew a periodic table that has hung in my room for 8 years. My father (who also shares the same passion for chemistry) actively encouraged my interests and gave me resources so I could self learn at a young age. Additionally, the curriculum had chemistry integrated into it, so I didn't have to do much self directed learning once I entered high school. I also had friends I could talk to about chemistry, a teacher who was passionate about teaching chemistry, and an advanced curriculum in chemistry thanks to IB that went above and beyond the Alberta high school chemistry curriculum.
 
@@ -45,7 +45,7 @@ CPSC 213 was the course that FINALLY allowed me to understand:
 - how and why a stack overflow can occur from too many recursive calls
 - why we actually need to care about memory usage
 
-I'm excited for more higher level courses, and to also combine what I will learn in computer science with chemistry and biochemistry.
+I'm excited for more higher level courses, and to also combine what I will learn in computer science with chemistry and biochemistry. I don't think learning computer science in high school would of resulted in where I am today. Taking my first computer science in university from a world renown professor who tailored the course for years, has shaped the way I think about programming and computer science in ways a high school computer science class could never. 
 
 # My thoughts on "minority" focussed programs
 There's many programs that are targeted towards minorities in computer science. To me, most of them seem to almost be preying on this minority issue in computer science for their own gain, or don't seem to actually be helping. 
