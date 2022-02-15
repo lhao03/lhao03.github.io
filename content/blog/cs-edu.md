@@ -50,7 +50,7 @@ I'm excited for more higher level courses, and to also combine what I will learn
 # My thoughts on "minority" focussed programs
 There's many programs that are targeted towards minorities in computer science. To me, most of them seem to almost be preying on this minority issue in computer science for their own gain, or don't seem to actually be helping. 
 
-One I don't particularly like is KodeWithKlossy. Their programs seem highly inaccessible to those who really need it and have a lacking curriculum. Their programs focus on web development and iOS app development. iOS app development is already inaccessible in it's nature; only MacBooks can run the required software (XCode) that is needed to develop as iOS app. If you don't have access to a laptop, you sure aren't buying a MacBook as your first. I never (and still don't) have had MacBook, so that program would simply out of my reach. And if MacBooks were provided, I wouldn't be able to use those skills outside of the program. Additionally, after looking at the final projects created for the web development program, they are very simple in nature and don't highlight key areas of computer science like problem solving (through algorithms) and abstraction. In a way, this program teaches computer science how "trades" are taught, rather than teaching computer science like how math or science is taught.
+One I don't particularly like is KodeWithKlossy. Their programs seem highly inaccessible to those who really need it and have a lacking curriculum. Their programs focus on web development and iOS app development. iOS app development is already inaccessible in it's nature; only MacBooks can run the required software (XCode) that is needed to develop an iOS app. If you don't have access to a laptop, you sure aren't buying a MacBook as your first. I never (and still don't) have had MacBook, so that program would simply out of my reach. And if MacBooks were provided, I wouldn't be able to use those skills outside of the program. Additionally, after looking at the final projects created for the web development program, they are very simple in nature and don't highlight key areas of computer science like problem solving (through algorithms) and abstraction. In a way, this program teaches computer science how "trades" are taught, rather than teaching computer science like how math or science is taught.
 
 Another reason why these programs are highly inaccessible is due to cost. For instance, one three-week [KodeWithKlossy program](https://precollege.barnard.edu/kodewithklossy) cost 8795 USD. If the program ran for 3 weeks, 8 hours a day, this cost comes down to 52 USD per hour. 
 
@@ -67,7 +67,7 @@ CPSC 110 at UBC would cost per hour:
 
 Would result in at least 78 hours, giving us 9 CAD per hour of lecture or lab. And this is not counting the many office hours students can get in addition to lectures and labs.
 
-I don't know about you, but there is no way I (a above average family) would dish out this much money for a web development program. Actually, it is simply appalling for anyone to pay this much for a program that isn't even a college or university course.
+It is simply appalling for anyone to pay this much for a program that isn't even a college or university course.
 
 Another program I don't like is [SheCodes](https://www.shecodes.io/) which to me seems to prey on women trying to transition to a career in tech by teaching them web development (same reasons as above as to why I don't like web development being taught). Oh, and it's not free.
 
