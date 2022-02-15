@@ -69,7 +69,7 @@ Would result in at least 78 hours, giving us 9 CAD per hour of lecture or lab. A
 
 It is simply appalling for anyone to pay this much for a program that isn't even a college or university course.
 
-Another program I don't like is [SheCodes](https://www.shecodes.io/) which to me seems to prey on women trying to transition to a career in tech by teaching them web development (same reasons as above as to why I don't like web development being taught). Oh, and it's not free.
+Another program I don't like is [SheCodes](https://www.shecodes.io/) which to me seems to prey on women trying to transition to a career in tech by teaching them web development (people specializing in web development is increasing quickly, and the field is becoming very inflated. Telling people that learning web development will get them a job or high salary may not be true in a few years. I also personally don't like web development.). Oh, and it's not free.
 
 {{ blogImg(img="capitalist.png", style="width:60vw;height:100%") }}
 
