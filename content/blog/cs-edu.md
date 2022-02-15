@@ -3,6 +3,7 @@ title = "CS Education; thoughts based on my own path to CS"
 date = 2022-02-14
 draft = false
 +++
+> This is inspired by [Critically Conscious Computing](https://criticallyconsciouscomputing.org/), and I take quotes from that book.
 
 When I was in first year of university, I started to believe that I wasted my time in high school; I wished that I started learning about computer science sooner. I had invested a lot of time into chemistry in high school, and then pivoted to majoring in computer science in university. These two subjects don't have much in relation at all. It seemed like while everyone else (in computer science) was learning about AI and web development, I was busy learning chemistry and other IB related things (English IBHL people know how tough this course was).
 
