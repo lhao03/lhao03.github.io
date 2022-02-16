@@ -5,7 +5,7 @@ template = "section.html"
 class = "about"
 +++
 
-I'm a chemistry nerd and {{ inline(text="filter")}} and {{ inline(text="map")}} enthusiast studying [💻 Computer Science](https://www.cs.ubc.ca/), [🧬 Biochemistry](https://biochem.ubc.ca/) and [Microbiology & Immunology](https://www.microbiology.ubc.ca/) at the [University of British Columbia](https://www.ubc.ca/). I enjoy learning about how and why things work, especially pertaining to biological processes, viruses, operating systems, and programming languages. Check out my fails [here](@/failures/_index.md).
+I'm a chemistry nerd and {{ inline(text="filter")}} and {{ inline(text="map")}} enthusiast studying [💻 Computer Science](https://www.cs.ubc.ca/), [🧬 Biochemistry](https://biochem.ubc.ca/) and [🧪 Chemistry](https://www.chem.ubc.ca/) at the [University of British Columbia](https://www.ubc.ca/). I enjoy learning about how and why things work, especially pertaining to biological processes, viruses, operating systems, and programming languages. Check out my fails [here](@/failures/_index.md).
 
 ## Currently I'm...
 - 🎒 taking computer hardware and operating systems, organic chemistry, and forest genetics.
