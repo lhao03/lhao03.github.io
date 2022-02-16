@@ -1,5 +1,5 @@
 +++
-title = "Series of reflections the aftermath of my eating disorder'
+title = "Series of reflections the aftermath of my eating disorder"
 date = 2022-02-10
 draft = true
 +++

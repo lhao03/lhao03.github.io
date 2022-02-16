@@ -1,5 +1,5 @@
 +++
-title = "Thoughts based on my path to CS, and opinions on efforts for CS Education"
+title = "Thoughts based on my path to CS, and opinions on CS Education"
 date = 2022-02-14
 draft = false
 +++
