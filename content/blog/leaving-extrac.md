@@ -1,5 +1,5 @@
 +++
-title = "🤷🏻‍♀ Why I left StarHacks and future plans, and thoughts on group work, using my time wisely, and more"
+title = "🤷🏻‍♀ Why I left StarHacks"
 date = 2022-02-10
 draft = false
 +++
