@@ -1,6 +1,7 @@
 +++
 title = "MATH 101"
 description = "Integral Calculus with Applications to Physical Sciences and Engineering"
+weight = 3
 [extra]
 course = "MATH"
 year = 1

@@ -1,6 +1,7 @@
 +++
 title = "MICB 202"
 description = "Introductory Medical Microbiology and Immunology"
+weight = 4
 [extra]
 course = "MICB"
 year = 2

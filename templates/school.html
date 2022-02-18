@@ -7,28 +7,12 @@
 {{ section.content | safe }}
 
 <div class="flex-row">
-{% for s_subject in data.subject %}
-<div class="flex-column padding">
-<h2>{{s_subject}}</h2>
     {% for page in section.pages %}
-    {% if page.extra.course == s_subject %}
     <a class="no-decor" href="{{ page.permalink | safe }}">
             <div class="course-button {{page.extra.course}} light">
                 <span style="font-weight: bold;">{{ page.title }}</span>
             </div>
     </a>
-    {% endif %}
     {% endfor %}
 </div >
-{% endfor %}
-<div class="flex-column">
-<h2>Dropped</h2>
-<ul>
-  <li>MICB 308</li>
-  <li>CPSC 445</li>
-  <li>MATH 221</li>
-  <li>CHEM 205</li>
-</ul>
-</div>
-</div>
 {% endblock content %}

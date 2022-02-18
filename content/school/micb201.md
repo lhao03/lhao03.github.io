@@ -1,6 +1,7 @@
 +++
 title = "MICB 201"
 description = "Introductory Environmental Microbiology"
+weight = 4
 [extra]
 course = "MICB"
 year = 2

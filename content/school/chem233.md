@@ -1,6 +1,7 @@
 +++
 title = "CHEM 233"
 description = "Organic Chemistry for the Biological Sciences"
+weight = 1
 [extra]
 course = "CHEM"
 year = 2

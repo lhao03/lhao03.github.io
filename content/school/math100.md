@@ -1,6 +1,7 @@
 +++
 title = "MATH 100"
 description = "Differential Calculus with Applications to Physical Sciences and Engineering"
+weight = 3
 [extra]
 course = "MATH"
 year = 1

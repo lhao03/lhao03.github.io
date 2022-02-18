@@ -1,6 +1,7 @@
 +++
 title = "MATH 200"
 description = "Calculus III"
+weight = 3
 [extra]
 course = "MATH"
 year = 3

@@ -1,6 +1,7 @@
 +++
 title = "ATSC 113"
 description = "Applied Meteorology"
+weight = 9
 [extra]
 course = "ATSC"
 year = 1

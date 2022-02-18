@@ -1,6 +1,7 @@
 +++
 title = "MICB 306"
 description = "Molecular Virology"
+weight = 4
 [extra]
 course = "MICB"
 year = 3

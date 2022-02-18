@@ -1,6 +1,7 @@
 +++
 title = "CPSC 210"
 description = "Software Construction"
+weight = 0
 [extra]
 course = "CPSC"
 year = 1
