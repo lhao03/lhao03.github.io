@@ -6,9 +6,13 @@
 <h1>{{ section.title }}</h1>
 {{ section.content | safe }}
 
+  {% for category in data.blog_categories %}
+  <a href="/blog/#{{category}}">{{ category }}</a>
+  {% endfor %}
+
 <div class="blog flexcol">
   {% for category in data.blog_categories %}
-  <h2>{{ category }}</h2>
+  <h2 id={{ category }}>{{ category }}</h2>
   {% for page in section.pages %}
   {% if page.extra.category %}
   {% if page.extra.category == category or category in page.extra.category %}

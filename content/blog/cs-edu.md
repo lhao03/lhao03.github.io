@@ -3,7 +3,7 @@ title = "Thoughts based on my path to CS, and opinions on CS Education"
 date = 2022-02-14
 draft = false
 [extra]
-category = "academia"
+category = ["academia", "computer science"]
 +++
 > This is inspired by [Critically Conscious Computing](https://criticallyconsciouscomputing.org/), and I take quotes from that book.
 
