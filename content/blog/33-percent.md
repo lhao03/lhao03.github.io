@@ -2,6 +2,8 @@
 title = "🤔 1/3 of 2021"
 date = 2021-05-01
 draft = false
+[extra]
+category = "life"
 +++
 
 So what have I been up to these past four months? <!-- more --> A few things include:

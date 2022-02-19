@@ -2,6 +2,8 @@
 title = "⚗️ Do good explanations have to be true?"
 date = 2021-05-21
 draft = false
+[extra]
+category = "random"
 +++
 
 > This is my Theory of Knowledge Essay with a few edits. Please don't plagiarize my essay.

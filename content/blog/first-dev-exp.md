@@ -2,6 +2,8 @@
 title = "💼 My first developer job: PROOF Centre"
 date = 2021-05-21
 draft = false
+[extra]
+category = "industry"
 +++
 
 Who would of thought that my first job would take place in my bedroom? <!-- more --> Definitely not me. Even less did I think I would end up:

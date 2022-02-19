@@ -10,14 +10,7 @@ pre {
 .blog {
   flex-wrap: wrap;
   .blog-intro {
-    background-color: var(--accent-color);
-    @media (min-width: $maxWidth) {
-      width: 12vw;
-    }
-    border: solid 2px var(--font);
-    border-radius: 8px;
     padding: 15px;
-    margin-bottom: 10px;
     .blog-title {
       font-weight: bold;
     }

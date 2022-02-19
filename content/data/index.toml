@@ -10,9 +10,9 @@ links = [
   { name = "github", link = "https://github.com/lhao03" },
   { name = "linkedin", link = "https://linkedin.com/in/lucy-hao" },
   { name = "twitter", link = "https://twitter.com/hoalycu" },
-]
+] 
 
 school_years = [3, 2, 1]
 
-subject = ["CPSC","MICB","MATH","CHEM", "ATSC", "BIOL", "FRST" , "STAT", "DSCI", "BIOC"]
 exp_categories = ["work", "speaking", "other"]
+blog_categories = ["life sciences", "computer science", "academia", "industry", "random", "learning", "life", "tech"]

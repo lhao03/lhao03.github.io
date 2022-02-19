@@ -2,6 +2,8 @@
 title = "Series of reflections the aftermath of my eating disorder"
 date = 2022-02-10
 draft = true
+[extra]
+category = "life"
 +++
 
 # I can't cook

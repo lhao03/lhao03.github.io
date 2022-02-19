@@ -2,6 +2,8 @@
 title = "🤷🏻‍♀ Why I left StarHacks"
 date = 2022-02-10
 draft = false
+[extra]
+category = "life"
 +++
 CW: swearing, breaking down, negativity
 

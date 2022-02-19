@@ -2,6 +2,8 @@
 title = "λ Racket Shenanigans"
 date = 2022-01-01
 draft = false
+[extra]
+category = "learning"
 +++
 
 [awesome book on creating languages in racket](https://beautifulracket.com/stacker/recap.html)
