@@ -3,7 +3,7 @@ title = "💻 Computers Viruses and Biological Viruses"
 date = 2021-12-24
 draft = false
 [extra]
-category = ["life sciences", "computer science"]
+category = ["healthsci", "compsci"]
 +++
 
 Taking [CPSC 213](@/school/cpsc213.md) and [MICB 306](@/school/micb306.md) together made me start wondering about the parallels between computer viruses and biological viruses. 

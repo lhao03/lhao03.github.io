@@ -15,4 +15,4 @@ links = [
 school_years = [3, 2, 1]
 
 exp_categories = ["work", "speaking", "other"]
-blog_categories = ["life sciences", "computer science", "academia", "industry", "random", "learning", "life", "tech"]
+blog_categories = ["learning", "life", "tech", "healthsci", "compsci", "academia", "industry", "random"]

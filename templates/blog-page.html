@@ -6,13 +6,15 @@
     <p class="subtitle">
         <strong>
             {{ page.date }}
-        </strong>
+        </strong>, {{ page.word_count }} words, {{ page.reading_time }} mins
     </p>
-    <p class="subtitle">
-        <strong>
-            {{ page.word_count }} words, {{ page.reading_time }} mins
-        </strong>
-    </p>
+    <div class="flex-row-no-space">
+    {% for category in page.extra.category %}
+    <a href="/blog#{{ category }}">
+    {{ category }}
+    </a>
+    {% endfor %}
+    </div>
     {% if page.toc and page.word_count > 400 %}
     <div class="toc">
         <ul>
