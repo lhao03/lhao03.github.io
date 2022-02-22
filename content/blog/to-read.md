@@ -3,7 +3,7 @@ title = "Code things To Read"
 date = 2021-11-11
 draft = false
 [extra]
-category = "random"
+category = ["random"]
 +++
 
 - [Why FP Matters](https://www.cs.kent.ac.uk/people/staff/dat/miranda/whyfp90.pdf)

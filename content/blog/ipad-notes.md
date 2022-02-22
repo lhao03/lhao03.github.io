@@ -3,7 +3,7 @@ title = "🖊 My thoughts on using the iPad for notes"
 date = 2021-12-26
 draft = false
 [extra]
-category = "learning"
+category = ["learning"]
 +++
 
 # My issues with handwriting notes

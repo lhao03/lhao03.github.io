@@ -3,7 +3,7 @@ title = "Course Planning"
 date = 2021-12-26
 draft = false
 [extra]
-category = "random"
+category = ["random"]
 +++
 
 # year 3

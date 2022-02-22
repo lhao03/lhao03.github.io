@@ -3,7 +3,7 @@ title = "👀 To Watch"
 date = 2021-12-11
 draft = false
 [extra]
-category = "random"
+category = ["random"]
 +++
 
 - Squid Games

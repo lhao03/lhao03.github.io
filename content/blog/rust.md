@@ -3,7 +3,7 @@ title = "🦀 Rust notes"
 date = 2022-01-01
 draft = false
 [extra]
-category = "learning"
+category = ["learning"]
 +++
 
 # ch 1: getting started 

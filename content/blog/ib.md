@@ -3,7 +3,7 @@ title = "🎓 My experience at UBC as an IB Diploma graduate"
 date = 2021-04-01
 draft = false
 [extra]
-category = "learning"
+category = ["learning"]
 +++
 
 Are you taking IB courses? If so, don't waste all your hard work! Now as a second-year student at UBC, I’ll now tell you how doing IB has impacted me and the mistakes I’ve made in choosing my courses as a first-year student.
