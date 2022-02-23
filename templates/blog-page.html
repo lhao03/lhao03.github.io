@@ -10,9 +10,11 @@
     </p>
     <div class="flex-row-no-space">
     {% for category in page.extra.category %}
+    <p  style="padding-right: 5px;">
     <a href="/blog#{{ category }}">
-    {{ category }}
-    </a>
+    {{ category }} 
+    </a> 
+    </p>
     {% endfor %}
     </div>
     {% if page.toc and page.word_count > 400 %}
