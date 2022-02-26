@@ -1,3 +1,35 @@
+var spotifyUrl = "https://www.last.fm/user/lhao03/library/artists?date_preset=LAST_7_DAYS";
+var anotherSpotifyUrl = "https://www.last.fm/user/lhao03/library/artists?date_preset=LAST_30_DAYS"
+
+async function fetchAsync(url) {
+  let response = await fetch(url);
+  let data = response.text();
+  return data;
+}
+
+var result = fetchAsync(anotherSpotifyUrl);
+console.log(result.then(res => {
+  res = res.replace(/[\r\n\x0B\x0C\u0085\u2028\u2029]+/g, " ");
+  res = res.replace(/(\r\n|\n|\r)/gm, "");
+  console.log(res);
+  const regex = /<meta\s*property="og:title"\s*content="lhao03&#39;s\s*top\s*artists"\s*\/>\s*<meta\s*property="og:description"\s*content="(.*)"\s*\/>\s*<meta\s*name="twitter:title"\s*content="lhao03&#39;s\s*top\s*artists"\s*\/>/gm;
+  let m;
+
+  while ((m = regex.exec(res)) !== null) {
+    // This is necessary to avoid infinite loops with zero-width matches
+    if (m.index === regex.lastIndex) {
+      regex.lastIndex++;
+    }
+
+    // The result can be accessed through the `m`-variable.
+    m.forEach((match, groupIndex) => {
+      console.log(`Found match, group ${groupIndex}: ${match}`);
+      match = match.replace(/,/g, '\n');
+      document.getElementById("current-artists").innerText = match;
+    });
+  }
+}))
+
 document.addEventListener("DOMContentLoaded", () => {
 
   const app = document.querySelector(".container");
@@ -56,11 +88,3 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
-var spotifyUrl = "https://www.last.fm/user/lhao03/library/artists?date_preset=LAST_7_DAYS";
-fetch(spotifyUrl).then(function(response) {
-  return response.json();
-}).then(function(data) {
-  console.log(data);
-}).catch(function() {
-  console.log("Booo");
-});

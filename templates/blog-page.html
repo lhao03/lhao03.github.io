@@ -4,11 +4,14 @@
 <div class="post block">
     <h1>{{ page.title }}</h1>
     <p class="subtitle">
+    {% if page.extra.category %}
         <strong>
             {{ page.date }}
         </strong>, {{ page.word_count }} words, {{ page.reading_time }} mins
+    {% endif %}
     </p>
     <div class="flex-row-no-space">
+    {% if page.extra.category %}
     {% for category in page.extra.category %}
     <p  style="padding-right: 5px;">
     <a href="/blog#{{ category }}">
@@ -16,6 +19,7 @@
     </a> 
     </p>
     {% endfor %}
+    {% endif %}
     </div>
     {% if page.toc and page.word_count > 400 %}
     <div class="toc">
