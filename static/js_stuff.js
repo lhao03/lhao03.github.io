@@ -55,3 +55,12 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
+var spotifyUrl = "https://www.last.fm/user/lhao03/library/artists?date_preset=LAST_7_DAYS";
+fetch(spotifyUrl).then(function(response) {
+  return response.json();
+}).then(function(data) {
+  console.log(data);
+}).catch(function() {
+  console.log("Booo");
+});
