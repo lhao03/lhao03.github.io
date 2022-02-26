@@ -2,7 +2,12 @@ var spotifyUrl = "https://www.last.fm/user/lhao03/library/artists?date_preset=LA
 var anotherSpotifyUrl = "https://www.last.fm/user/lhao03/library/artists?date_preset=LAST_30_DAYS"
 
 async function fetchAsync(url) {
-  let response = await fetch(url);
+  let response = await fetch("https://cors-anywhere.herokuapp.com/" + url, {
+    headers: {
+      method: 'GET',
+      mode: 'no-cors'
+    }
+  });
   let data = response.text();
   return data;
 }
