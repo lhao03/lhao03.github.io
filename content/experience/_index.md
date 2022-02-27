@@ -23,6 +23,7 @@ sort_by = "date"
 - **StarHacks I** 💫 Workshop Host for Into to Git and GitHub and Intro to Python
 
 ## Other Experience
+I would like to preface that I don't really like hackathons anymore (in fact I hate them). While I'm involved in these organizations for hackathons, I'm staying because I made a commitment when I was younger and more naive (like 1 year ago) and I don't back out on commitments (rarely). Read [here](/blog/hackathons) on why I hate hackathons.
 - **nwPlus** 🗻 Marketing Co-Director
 - **StarHacks II** 🌃 Director of Technology and Outreach
 - **StarHacks I** 🌟 Director of Outreach
