@@ -14,11 +14,9 @@ I'm a chemistry nerd and {{ inline(text="filter")}} and {{ inline(text="map")}} 
 - 📄 trying to read more. See my progress [here](https://band-atlasaurus-b04.notion.site/f8c41002423146dc85fce8ee1a0fa16a?v=251a6c93cade42cc8536c68ac46f8e7f)
 
 ## Previously I've...
-- 🪐 lead marketing and development for [StarHacks II](https://www.starhacks.tech/), a gender minority focussed hackathon that had over 800+ participants and included speakers like Telle Whitney.
-- 👋🏻 TAed some courses.
-- 💻 helped design and implement a developer tool to interact with Microsoft Graph at [Microsoft Garage](https://www.microsoft.com/en-us/garage/about/)
-- 🏥 built a [natural language processing pipeline](https://www.medrxiv.org/content/10.1101/2021.05.04.21256134v1") the [PROOF Centre](https://www.proofcentre.ca/)
-- 💁🏻‍♀️  led some [technical workshops](/experience)
+- 👋🏻 TAed some courses (CPSC 110 and CPSC 210).
+- 🦠 Took a [virology course](/school/micb306)!
+- 🏥 built a [natural language processing pipeline](https://www.medrxiv.org/content/10.1101/2021.05.04.21256134v1") for pathology reports at [PROOF Centre](https://www.proofcentre.ca/)
 - 🏋️‍♀️ deadlifted 205 lbs pounds
 
 ## Things I despise...
