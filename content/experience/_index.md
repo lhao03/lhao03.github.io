@@ -23,9 +23,8 @@ sort_by = "date"
 - **StarHacks I** 💫 Workshop Host for Into to Git and GitHub and Intro to Python
 
 ## Other Experience
-I would like to preface that I don't really like hackathons anymore (in fact I hate them). While I'm involved in these organizations for hackathons, I'm staying because I made a commitment when I was younger and more naive (like 1 year ago) and I don't back out on commitments (rarely). Read [here](/blog/hackathons) on why I hate hackathons.
-- **nwPlus** 🗻 Marketing Co-Director
-- **StarHacks II** 🌃 Director of Technology and Outreach
-- **StarHacks I** 🌟 Director of Outreach
-- UBC BEST
-- UBC Launchpad
+I used to be involved (and still am right now) with organizing hackathons and speaking at them. 
+
+I don't really like hackathons anymore (in fact I hate them). While I'm still involved in nwPlus, I'm staying because I made a commitment when I first joined, and I don't back out on commitments (rarely). Read [here](/blog/hackathons) on why I hate hackathons. If you want to see my involvement in hackathons, check out my LinkedIn.
+
+I spoke at hackathons because I was excited to teach an audience about a subject, or to talk about my thoughts in CS and STEM. I don't know if I will continue to speak at hackathons, because many hackathons don't align with my values anymore. I think some hackthons are more leaned towards learning, instead of solving a problem, but I still don't like the JavaScript and general bad code encouraged at a hackathon. I may do 1:1 mentoring or coffee chats instead. If any of my workshop/panel topics interest you, please feel free to reach out by email, LinkedIn or Twitter.
