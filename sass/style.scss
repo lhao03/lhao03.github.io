@@ -56,32 +56,17 @@ section {
   li > a {
     color: var(--text-color);
     background: linear-gradient(90deg, var(--complement) 0%, var(--accent-color) 100%) no-repeat 0 100%;
-  // border-radius: 4px;
-  // padding: 2px 4px;
-    // background-size: 100% 2px;
       background-size: 100% 100%;
     text-decoration: none;
-    // transition: background-size 0.3s;
-    &:hover,
-    &:focus {
-      // background-size: 100% 100%;
-    }
   }
 }
 
 .inline {
-  // background: var(--accent-color);
-  // color: var(--text-color);
-  // border-radius: 4px;
-  // padding: 2px 4px;
     color: var(--text-color);
     background: linear-gradient(90deg, var(--complement) 0%, var(--accent-color) 100%) no-repeat 0 100%;
-  // border-radius: 4px;
-  // padding: 2px 4px;
-    // background-size: 100% 2px;
       background-size: 100% 100%;
     text-decoration: none;
-    // transition: background-size 0.3s;
+    line-height:80%;
 }
 
 .toggle {
@@ -135,23 +120,26 @@ h4{
 }
 
 h1 {
-  font-size: 40px;
+  font-family: $lucyFont;
+  font-size: 50px;
   @media (max-width: $maxWidth) {
-    font-size: 30px;
+    font-size: 45px;
   }
 }
 
 h2 {
-  font-size: 30px;
+  font-family: $lucyFont;
+  font-size: 40px;
   @media (max-width: $maxWidth) {
-    font-size: 25px;
+    font-size: 35px;
   }
 }
 
 h3 {
-  font-size: 25px;
+  font-family: $lucyFont;
+  font-size: 35px;
   @media (max-width: $maxWidth) {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 p,
@@ -215,12 +203,22 @@ a.nostyle {
     background-size: 0px;
   }
 }
+.lucyfont {
+  font-family: $lucyFont;
+}
 
-code.landing {
-  font-size: 25px;
+p.lucyfont {
+  font-size: 35px;
+  @media (max-width: $maxWidth) {
+    font-size: 30px;
+  }
+}
+span.landing, p.landing {
+  font-family: $lucyFont;
+  font-size: 35px;
   color: var(--text-color);
   @media (max-width: $maxWidth) {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 

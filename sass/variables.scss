@@ -1,5 +1,9 @@
 @import url("syntax-theme-dark.css") (prefers-color-scheme: dark);
 @import url("syntax-theme-light.css") (prefers-color-scheme: light);
+@font-face {
+    font-family: 'LucyFont';
+    src:url("LucyFont.otf");
+}
 
 $lightenFactor: 0.7;
 $other: #ecd4ff;
@@ -8,6 +12,7 @@ $smoke: #e6e6ee;
 $dark: rgba(91, 95, 151, $lightenFactor);
 $darker: rgba(205, 184, 222, $lightenFactor);
 $font: 'Source Sans Pro', sans-serif;
+$lucyFont: 'LucyFont';
 $grey: #545454;
 $lightergrey: #767676;
 $dark-grey: #1e1e21;
