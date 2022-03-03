@@ -63,6 +63,9 @@ $maxWidth: 769px;
 $pDeskTopFont: 22px;
 $pModbileFont: medium;
 
+$lightMesh: "light-mesh.png";
+$darkMesh: "dark-mesh.png";
+
 $themes: (
     "light": (
         "colors": (
@@ -123,7 +126,13 @@ $themes: (
     .container.#{$theme-name} {
         padding: 0;
         min-height: 100vh;
-        background: var(--bg-color);
+        background: rgb(179, 255, 148);
+        background-image: url("mesh-gradient.png");
+        background-size: 100vw 100%;
+        background-repeat: no-repeat;
+  @media (max-width: $maxWidth) {
+        background-size: auto 100%;
+  }
 
         // define a css variable for each shade
         @each $name, $color in $colors {
@@ -142,4 +151,4 @@ $themes: (
             --#{$name}: #{$color};
         }
     }
-}
+} 

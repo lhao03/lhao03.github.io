@@ -33,6 +33,7 @@ body {
   max-width: 100%;
   position: relative;
   overflow-x: hidden;
+   background-image: url("mesh-gradient.png");
 }
 
 section {
@@ -55,17 +56,13 @@ section {
   a,
   li > a {
     color: var(--text-color);
-    background: linear-gradient(90deg, var(--complement) 0%, var(--accent-color) 100%) no-repeat 0 100%;
-      background-size: 100% 100%;
-    text-decoration: none;
+    text-decoration: underline;
   }
 }
 
 .inline {
     color: var(--text-color);
-    background: linear-gradient(90deg, var(--complement) 0%, var(--accent-color) 100%) no-repeat 0 100%;
-      background-size: 100% 100%;
-    text-decoration: none;
+    text-decoration: underline;
     line-height:80%;
 }
 
