@@ -23,7 +23,7 @@ I'm a chemistry nerd and {{ inline(text="filter")}} and {{ inline(text="map")}} 
 - ❌ lettuce (iceberg is the worst)
 - ❌ JavaScript
 - ❌ [Takers](https://www.ted.com/talks/adam_grant_are_you_a_giver_or_a_taker)
-- ❌ Web3; [see how Web3 is going great](https://web3isgoinggreat.com/), and to learn more about the [tech (which has existed before Gen Z was born)](https://www.youtube.com/watch?v=J9nv0Ol-R5Q) behind Web3
+- ❌ [Web3](/blog/web3-resources)
 - ❌ the phrase ["girlboss"](https://www.refinery29.com/en-gb/2020/01/9044921/girlboss-culture-women-work)
 - ❌ [hackathons](/blog/hackathons)
 
