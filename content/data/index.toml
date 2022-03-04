@@ -16,3 +16,4 @@ school_years = [3, 2, 1]
 
 exp_categories = ["work", "speaking", "other"]
 blog_categories = ["criticism", "learning", "life", "tech", "healthsci", "compsci", "academia", "industry", "random"]
+courses = ["CPSC and MATH", "BIOC and CHEM", "OTHER"]

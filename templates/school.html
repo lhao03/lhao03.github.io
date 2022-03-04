@@ -6,13 +6,31 @@
 <h1>{{ section.title }}</h1>
 {{ section.content | safe }}
 
-<div class="flex-row">
+  {% for course in data.courses %}
+  {% if course != "OTHER" %}
+  <h2>{{course}}</h2>
     {% for page in section.pages %}
-    <a class="no-decor" href="{{ page.permalink | safe }}">
-            <div class="course-button {{page.extra.course}} light">
+    {% if page.extra.course in course %}
+    <div class="flex-col">
+    <a href="{{ page.permalink | safe }}">
                 <span style="font-weight: bold;">{{ page.title }}</span>
-            </div>
     </a>
+    </div>
+    {% endif %}
     {% endfor %}
-</div >
+    {% else %}
+  <h2>{{course}}</h2>
+    {% for page in section.pages %}
+    {% if page.extra.course not in "CPSC and MATH" %}
+    {% if page.extra.course not in "BIOC and CHEM" %}
+    <div class="flex-col">
+    <a href="{{ page.permalink | safe }}">
+                <span style="font-weight: bold;">{{ page.title }}</span>
+    </a>
+    </div>
+    {% endif %}
+    {% endif %}
+    {% endfor %}
+    {% endif %}
+    {% endfor %}
 {% endblock content %}
