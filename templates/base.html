@@ -67,13 +67,12 @@
         <footer>
             <div class="flex-row">
                 {% for link in data.links %}
-                <a class="icon nostyle" href="{{link.link}}" target="_blank">
-                    <i class="fa fa-{{link.name}}"></i>
+                <a class="nostyle" href="{{link.link}}" target="_blank">
+            <p class="lucyfont">{{ link.name }}</p>
                 </a>
                 {% endfor %}
             </div>
-            <p style="text-align: center; padding-bottom: 5vh;">made with 💖 and <a target="_blank"
-                    href="https://www.getzola.org/documentation/getting-started/overview/">Zola</a> by Lucy</p>
+            <p style="text-align: center; padding-bottom: 5vh;" class="lucyfont">made with 💖 and Zola by Lucy</p>
         </footer>
 
     </section>

@@ -2,14 +2,13 @@ favicon = "/emoji/android-chrome-384x384.png"
 css_path = "style.css"
 emoji_path = "/emoji/emoji.png"
 js_path = "js_stuff.js"
-desc = "✨ Interested in biochemistry, functional programming, virology and low level computing!"
+desc = "✨ Interested in biochemistry, functional programming, virology and systems computing!"
 title = "Lucy Hao | Computer Science and Biochemistry Student at UBC"
 
 links = [
-  # { name = "paper-plane", link = "mailto:hao.lucyy@gmail.com" },
-  { name = "github", link = "https://github.com/lhao03" },
-  { name = "linkedin", link = "https://linkedin.com/in/lucy-hao" },
-  { name = "twitter", link = "https://twitter.com/hoalycu" },
+  { name = "🐙 github", link = "https://github.com/lhao03" },
+  { name = "💼 linkedin", link = "https://linkedin.com/in/lucy-hao" },
+  { name = "🐦 twitter", link = "https://twitter.com/hoalycu" },
 ] 
 
 school_years = [3, 2, 1]

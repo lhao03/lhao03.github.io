@@ -16,13 +16,9 @@ footer {
     & > div {
         justify-content: space-evenly !important;
     }
-    a.icon {
+    p {
         color: var(--text-color);
-        font-size: 40px !important;
-        &:hover,
-        &:focus {
-            color: var(--accent-color);
-        }
+        font-size: 25px !important;
     }
     p {
         margin-bottom: 0px;

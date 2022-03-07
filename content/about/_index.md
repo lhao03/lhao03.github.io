@@ -9,13 +9,13 @@ I'm a chemistry nerd and {{ inline(text="filter")}} and {{ inline(text="map")}} 
 
 ## Currently I'm...
 - 🎒 taking courses in computer hardware and operating systems, organic chemistry, and genetics.
-- 
 - ⌨️  learning how to use Vim! I've finally deleted VSCode	٩(◕‿◕)۶
 - 📄 trying to read more. See my progress [here](https://band-atlasaurus-b04.notion.site/f8c41002423146dc85fce8ee1a0fa16a?v=251a6c93cade42cc8536c68ac46f8e7f)
 
 ## Previously I've...
 - 👋🏻 TAed some courses (CPSC 110 and CPSC 210).
 - 🦠 Took a [virology course](/school/micb306)!
+- 🖥️ Interned at Microsoft; learned I didn't like the tech industry that much.
 - 🏥 built a [natural language processing pipeline](https://www.medrxiv.org/content/10.1101/2021.05.04.21256134v1") for pathology reports at [PROOF Centre](https://www.proofcentre.ca/)
 - 🏋️‍♀️ deadlifted 205 lbs pounds
 
