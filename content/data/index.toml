@@ -4,6 +4,9 @@ emoji_path = "/emoji/emoji.png"
 js_path = "js_stuff.js"
 desc = "✨ Interested in biochemistry, functional programming, virology and systems computing!"
 title = "Lucy Hao | Computer Science and Biochemistry Student at UBC"
+shibe_heh = "/animals/shibe_heh-removebg-preview.png"
+cat_scared= "/animals/cat_scared-removebg-preview.png"
+shib_cool = "/animals/shib_cool-removebg-preview.png"
 
 links = [
   { name = "🐙 github", link = "https://github.com/lhao03" },
