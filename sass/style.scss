@@ -227,3 +227,30 @@ span.landing, p.landing {
    padding-left: 0;
  }
 }
+
+.animal-img {
+  height: 150px;
+  width: auto;
+  @media (max-width: $maxWidth) {
+  height: 75px;
+  }
+}
+
+.bottom-left {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+}
+
+.bottom-right {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+
+.top-right {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  transform: rotate(180deg);
+}
