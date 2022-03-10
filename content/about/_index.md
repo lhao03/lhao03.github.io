@@ -5,7 +5,7 @@ template = "section.html"
 class = "about"
 +++
 
-I'm a chemistry nerd and {{ inline(text="filter")}} and {{ inline(text="map")}} enthusiast studying [💻 Computer Science](https://www.cs.ubc.ca/) and [🧪 Chemistry](https://www.chem.ubc.ca/) at the [University of British Columbia](https://www.ubc.ca/). I enjoy learning about how and why things work, especially pertaining to biological processes, viruses, operating systems, and programming languages. Check out my fails [here](@/failures/_index.md).
+I'm a chemistry nerd and {{ inline(text="filter")}} and {{ inline(text="map")}} enthusiast studying [💻 Computer Science](https://www.cs.ubc.ca/) and [🧪 Chemistry](https://www.chem.ubc.ca/) at the [University of British Columbia](https://www.ubc.ca/). I enjoy learning about how and why things work, especially pertaining to biological processes (from a chemistry perspective), viruses, operating systems, and programming languages. Check out my fails [here](@/failures/_index.md).
 
 ## Currently I'm...
 - 🎒 taking courses in computer hardware and operating systems, organic chemistry, and genetics.
@@ -20,7 +20,6 @@ I'm a chemistry nerd and {{ inline(text="filter")}} and {{ inline(text="map")}} 
 - 🏋️‍♀️ deadlifted 205 lbs pounds
 
 ## Things I'm sus about...
-- ❌ lettuce (iceberg is the worst)
 - ❌ JavaScript
 - ❌ [Takers](https://www.ted.com/talks/adam_grant_are_you_a_giver_or_a_taker)
 - ❌ [Web3](https://curius.app/lucy2/blockchain)
