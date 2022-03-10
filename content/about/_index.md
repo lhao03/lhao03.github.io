@@ -23,7 +23,7 @@ I'm a chemistry nerd and {{ inline(text="filter")}} and {{ inline(text="map")}} 
 - ❌ lettuce (iceberg is the worst)
 - ❌ JavaScript
 - ❌ [Takers](https://www.ted.com/talks/adam_grant_are_you_a_giver_or_a_taker)
-- ❌ [Web3](/blog/web3-resources)
+- ❌ [Web3](https://curius.app/lucy2/blockchain)
 - ❌ the phrase ["girlboss"](https://www.refinery29.com/en-gb/2020/01/9044921/girlboss-culture-women-work)
 - ❌ [hackathons](/blog/hackathons)
 
