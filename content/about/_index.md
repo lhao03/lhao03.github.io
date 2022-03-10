@@ -19,7 +19,7 @@ I'm a chemistry nerd and {{ inline(text="filter")}} and {{ inline(text="map")}} 
 - 🏥 built a [natural language processing pipeline](https://www.medrxiv.org/content/10.1101/2021.05.04.21256134v1") for pathology reports at [PROOF Centre](https://www.proofcentre.ca/)
 - 🏋️‍♀️ deadlifted 205 lbs pounds
 
-## Things I despise...
+## Things I'm sus about...
 - ❌ lettuce (iceberg is the worst)
 - ❌ JavaScript
 - ❌ [Takers](https://www.ted.com/talks/adam_grant_are_you_a_giver_or_a_taker)
