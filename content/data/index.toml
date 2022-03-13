@@ -9,9 +9,9 @@ cat_scared= "/animals/cat_scared-removebg-preview.png"
 shib_cool = "/animals/shib_cool-removebg-preview.png"
 
 links = [
-  { name = "🐙 github", link = "https://github.com/lhao03" },
-  { name = "💼 linkedin", link = "https://linkedin.com/in/lucy-hao" },
-  { name = "🐦 twitter", link = "https://twitter.com/hoalycu" },
+  { name = "github", link = "https://github.com/lhao03" },
+  { name = "linkedin", link = "https://linkedin.com/in/lucy-hao" },
+  { name = "twitter", link = "https://twitter.com/hoalycu" },
 ] 
 
 school_years = [3, 2, 1]
