@@ -30,7 +30,8 @@ pre {
     position: relative;
     line-height: 56px;
     padding-left: 40px;
-    border-left: 5px solid var(--accent-color);
+    border-left: 5px solid $grey;
+
   }
   .wide {
     width: 50vw;
