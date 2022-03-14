@@ -1,11 +1,8 @@
 @import "variables";
 
 .header {
-    color: var(--text-color);
+    color: $grey;
     font-weight: bold;
-    .curr {
-        background: var(--darker-accent);
-    }
     a {
       background: none !important;
         background-size: none !important;
@@ -17,7 +14,7 @@ footer {
         justify-content: space-evenly !important;
     }
     p {
-        color: var(--text-color);
+        color: $grey;
         font-size: 25px !important;
     }
     p {

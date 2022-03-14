@@ -1,62 +1,18 @@
-@import url("syntax-theme-dark.css") (prefers-color-scheme: dark);
-@import url("syntax-theme-light.css") (prefers-color-scheme: light);
 @font-face {
     font-family: 'LucyFont';
     src:url("MarLucyY.otf");
 }
 
-$lightenFactor: 0.7;
 $other: #ecd4ff;
 $light: #dfdbe5;
 $smoke: #e6e6ee;
-$dark: rgba(91, 95, 151, $lightenFactor);
-$darker: rgba(205, 184, 222, $lightenFactor);
 $font: 'Source Sans Pro', sans-serif;
-$lucyFont: 'LucyFont';
+$lucyFont: 'LucyFont', 'Kalam';
 $grey: #545454;
 $lightergrey: #767676;
 $dark-grey: #1e1e21;
 $dark-blue: hsl(226, 23%, 11%);
 $percent: 15%;
-
-// pastel colors
-$pink1: #ffb5e8;
-$pink2: #ff9cee;
-$pink3: #ffccf9;
-$pink4: #fcc2ff;
-$pink5: #f6a6ff;
-$purple1: #b27dff;
-$purple2: #c5a3ff;
-$purple3: #d5aaff;
-$purple4: #ecd4ff;
-$purple5: #fbe4ff;
-$bluepurple1: #dcd3ff;
-$bluepurple2: #a79aff;
-$bluepurple3: #b5b9ff;
-$bluepurple4: #97a2ff;
-$bluepurple5: #afcbff;
-$blue1: #aff8db;
-$blue2: #c4faf8;
-$blue3: #85e3ff;
-$blue4: #ace7ff;
-$blue5: #6eb5ff;
-$greenyellow1: #bffcc6;
-$greenyellow2: #dbffd6;
-$greenyellow3: #f3ffe3;
-$greenyellow4: #e7ffac;
-$greenyellow5: #ffffd1;
-$orange1: #ffc9de;
-$orange2: #ffabab;
-$orange3: #ffbebc;
-$orange4: #ffcbc1;
-$orange5: #fff5ba;
-
-$cpsc: $pink1;
-$biol: $blue2;
-$chem: $bluepurple4;
-$micb: $purple2;
-$math: $bluepurple3;
-$other: $blue3;
 
 $maxWidth: 769px;
 
@@ -64,66 +20,9 @@ $pDeskTopFont: 22px;
 $pModbileFont: medium;
 
 $lightMesh: "light-mesh.png";
-$darkMesh: "dark-mesh.png";
 
-$themes: (
-    "light": (
-        "colors": (
-            "background": white,
-            "accent": $purple4,
-            "darker-accent": darken($purple4, 10%),
-            "font": $grey,
-            "complement": $greenyellow1,
-        ),
-        "courseColors": (
-            "CPSC": $cpsc,
-            "BIOL": $biol,
-            "CHEM": $chem,
-            "MICB": $micb,
-            "MATH": $math,
-            "OTHER": $other,
-        ),
-    ),
-    "dark": (
-        "colors": (
-            "background": $dark-blue,
-            "accent": darken($blue5, 5%),
-            "darker-accent": darken($blue5, 10%),
-            "font": #f9f9f9,
-            "complement": darken($orange1, 10%),
-        ),
-        "courseColors": (
-            "CPSC": darken($cpsc, $percent),
-            "BIOL": darken($biol, $percent),
-            "CHEM": darken($chem, $percent),
-            "MICB": darken($micb, $percent),
-            "MATH": darken($math, $percent),
-            "OTHER": darken($other, $percent),
-        ),
-    ),
-);
 
-@each $theme-name, $theme-vars in $themes {
-    $colors: map-get($theme-vars, "colors");
-    $courseColors: map-get(
-        $map: $theme-vars,
-        $key: "courseColors",
-    );
-
-    $theme: (
-        "bg-color": map-get($colors, "background"),
-        "accent-color": map-get($colors, "accent"),
-        "darker-accent": map-get($colors, "darker-accent"),
-        "text-color": map-get($colors, "font"),
-        "cpsc": map-get($courseColors, "CPSC"),
-        "biol": map-get($courseColors, "BIOL"),
-        "chem": map-get($courseColors, "CHEM"),
-        "micb": map-get($courseColors, "MICB"),
-        "math": map-get($courseColors, "MATH"),
-        "other": map-get($courseColors, "OTHER"),
-    );
-
-    .container.#{$theme-name} {
+.container {
         padding: 0;
         min-height: 100vh;
         background: rgb(179, 255, 148);
@@ -133,22 +32,4 @@ $themes: (
   @media (max-width: $maxWidth) {
         background-size: auto 100%;
   }
-
-        // define a css variable for each shade
-        @each $name, $color in $colors {
-            --#{$name}: #{$color};
-        }
-
-        // define a css variable for each color
-        @each $name, $color in $colors {
-            --#{$name}: #{$color};
-            --#{$name}-dark: #{darken($color, 10%)};
-            --#{$name}-darker: #{darken($color, 20%)};
-        }
-
-        // define a css variable for each theme color
-        @each $name, $color in $theme {
-            --#{$name}: #{$color};
-        }
-    }
-} 
+}
