@@ -4,9 +4,17 @@
 <div class="post block">
     <h1>{{ page.title }}</h1>
     <p class="subtitle">
+    {% if page.extra.updates %}
+    Updates:
+    {% for update in page.extra.updates %}
+    <strong>{{ update }}</strong>
+    {% endfor %}
+    {% endif %}
+    <br/>
     {% if page.extra.category %}
+    Published:
         <strong>
-            {{ page.date }}
+             {{ page.date }}
         </strong>, {{ page.word_count }} words, {{ page.reading_time }} mins
     {% endif %}
     </p>

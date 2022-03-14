@@ -3,10 +3,11 @@ title = "💻 Intro to Technical Interviews"
 date = 2021-11-08
 draft = true
 [extra]
+updates = ["2022-03-13"]
 category = ["random"]
 +++
 
-I put on a workshop for HackCamp 2021, and thought I'd write an article about the workshop! Here are the [slides](https://docs.google.com/presentation/d/13aEWjCiM94rCYtpk9mAyOdFH7Xti1CZMbzkTMQAAZCc/edit?usp=sharing).
+I put on a workshop for HackCamp 2021; here are the [slides](https://docs.google.com/presentation/d/13aEWjCiM94rCYtpk9mAyOdFH7Xti1CZMbzkTMQAAZCc/edit?usp=sharing).
 
 Article to come!
 

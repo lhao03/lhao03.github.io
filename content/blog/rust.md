@@ -254,3 +254,4 @@ a _data race_ is similar to a race condition and occurs when:
 
 Rust won't even compile code with data races!
 - we can use curly braces to create a new scope.
+ 
