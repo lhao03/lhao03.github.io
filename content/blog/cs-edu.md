@@ -59,10 +59,8 @@ One I don't particularly like is KodeWithKlossy. Their programs seem highly inac
 
 Another reason why these programs are highly inaccessible is due to cost. For instance, one three-week [KodeWithKlossy program](https://precollege.barnard.edu/kodewithklossy) cost 8795 USD. If the program ran for 3 weeks, 8 hours a day, this cost comes down to 52 USD per hour. 
 
-<div class="flex-row-col">
-{{ blogImg(img="barnardkode.jpg") }}
-{{ blogImg(img="barnardkode2.jpg") }}
-</div>
+{{ blogImg(img="kwk.gif") }}
+{{ blogImg(img="kwk.png") }}
 
 In comparison, the price breakdown for CPSC 110 at UBC: 
 - 13 weeks of instruction
@@ -78,22 +76,31 @@ Another program I don't like is [SheCodes](https://www.shecodes.io/) which to me
 
 {{ blogImg(img="capitalist.png", class="wide") }}
 
-This quote drives the point home that programs like KodeWithKlossy don't seem to really focus on helping those who are economically unable to seek out CS education, but those who have the money; *as long as there are women/gender minorities in our program (who can pay), who cares if they actually need help accessing CS programs or are the groups of people that need the most help*? The curriculum also seems very shallow, focussing on "hot" skills like web development and iOS development (I tried finding the curriculum but I can't). Is that bad? I think so, but others may think not. Focussing on gender minorities frames KodeWithKlossy as doing good (and not harm). This trend is also seen in SheCodes and other boot camps.
+This quote drives the point home that programs like KodeWithKlossy don't seem to really focus on helping those who are economically unable to seek out CS education, but those who have the money; *as long as there are women/gender minorities in our program (who can pay), who cares if they actually need help accessing CS programs or are the groups of people that need the most help*? The curriculum also seems very shallow, focussing on "hot" skills like web development and iOS development (I tried finding a more in depth curriculum but I couldn't). Is that bad? I think so, but others may think not. Focussing on gender minorities frames KodeWithKlossy as doing good (and not harm). This trend is also seen in SheCodes and other boot camps.
 
-Another issue is that these programs (KodeWithKlossy and SheCodes) only teach "front-end" web development, which is quickly becoming a woman-dominated field. Is that good? I don't think so. Historically, when women enter certain fields, it "lowers" the value of that field. Front-end development is now seen as "easier" than backend. I'm a firm believer that women should not pick up front-end development as their "path" into tech. Sadly, KodeWithKlossy and SheCodes capitalizes on the "easiness" of [front-end development and shove it down women's throats](https://www.theguardian.com/technology/2017/mar/14/tech-women-code-workshops-developer-jobs#:~:text=masculinity%20seizes%20prestige.-,Front%2Dend%20jobs%20are%20easier%20for%20women%20to%20obtain%2C%20and,women%20are%20front%2Dend%20developers.).
+Another issue is that these programs (KodeWithKlossy and SheCodes) mainly/only teach "front-end" web development, which is quickly becoming a woman-dominated field. Is that good? I don't think so. Historically, when women enter certain fields, it "lowers" the value of that field. Front-end development is now seen as "easier" than backend. I'm a firm believer that women should not pick up front-end development as their "path" into tech. Sadly, KodeWithKlossy and SheCodes capitalizes on the "easiness" of [front-end development and shove it down women's throats](https://www.theguardian.com/technology/2017/mar/14/tech-women-code-workshops-developer-jobs#:~:text=masculinity%20seizes%20prestige.-,Front%2Dend%20jobs%20are%20easier%20for%20women%20to%20obtain%2C%20and,women%20are%20front%2Dend%20developers.).
 
 > The computing historian Marie Hicks can’t stand it when people tout coding camps as a solution to technology’s gender problem. “I think these initiatives are well-meaning, but they misunderstand the problem. The pipeline is not the problem; the meritocracy is the problem. The idea that we’ll just stuff people into the pipeline assumes a meritocracy that does not exist.”
 
 If you do like web development, you can learn the same things KodeWithKlossy and SheCodes teaches (and way more) at [freecodecamp](https://www.freecodecamp.org/) FOR FREE. 
+
+*KodeWithKlossy does have a free version too, but I still think the curriculum and topics are lacking (only focussing on front-end for web developement) and excluding (iOS development). I don't know much about data science but it's nice to see that as an area to learn about.*
+
+{{ blogImg(img="kwk-free.png") }}
+{{ blogImg(img="kwk-free-curr.png") }}
 
 Now, there are programs that I do think are doing a great job at introducing minorities in computer science to what computer science actually is. [Jane Street](https://www.janestreet.com/join-jane-street/our-programs/) has programs ranging from a few days to a few weeks teaching concepts like OCaml, probability, arbitrage, and even some business concepts! 
 From their [INSIGHT](https://www.janestreet.com/join-jane-street/our-programs/insight/) program:
 
 > In the software engineering program, students will learn about OCaml and the libraries and tools that we use in our everyday work, as well as the fundamentals of building electronic trading systems. Then, they’ll put these tools to use by writing the backend and UI for a computer game and a program that trades on a simulated stock exchange.
 
-I really like their focus on using a functional programming language like OCaml, their mention of libraries (very important), tools (also very important), and also financial concepts (which I never got to learn and still haven't). These topics are not only super interesting, but involve topics in computer science like problem-solving, creating tested and robust programs (you would hope a trading system works correctly!), and involving the use of technology that can be installed on any operating system. The program also mentions learning about the backend (which many boot camps/programs don't seem to dive into). Oh, and to my knowledge, this program is also free of cost.
+I really like their focus on using a functional programming language like OCaml, their mention of libraries (very important), tools (also very important), and also financial concepts (which I never got to learn and still haven't). These topics are not only super interesting, but involve topics in computer science like problem-solving, creating tested and robust programs (you would hope a trading system works correctly!), and involving the use of technology that can be installed on any operating system. The program also mentions learning about the backend (which many boot camps/programs don't seem to dive into). Oh, and to my knowledge, this program is also free of cost. Below you can see the other types of programs they offer:
+
+{{ blogImg(img="janestreet.gif") }}
 
 # Final thoughts
 I think that computer science should be taught the same way as chemistry, biology, and physics, for younger children. Learning physics doesn't mean you're a physicist, and that should become the norm with computer science. Also, when teaching a child science, you don't start throwing formulas and abstract concepts at them, you start with examples and talk about scientific discoveries. Additionally, computer science should not just be taught as HTML and JavaScript; we need to also talk about its history. Just like how we learn about the [models of the atom](@/blog/do-good-explanations-have-to-be-true.md) and [different acid-base theories](@/blog/do-good-explanations-have-to-be-true.md) in chemistry in junior high and high school and then utilize models like the valence bond theory and hybridization in university, I think we should learn that computing begins from the invention of the abacus to human "computers" in WWII. Children and younger students should see the motivation for learning about certain concepts in computing and how they came about. What exactly should and shouldn't be covered though is for someone else much more involved and knowledgeable to decide (not me). 
 
 But computer science is also math; it's basically applied math, so we should also teach computer science in a similar way that math is taught. Once younger students learn more about the history of computer science, learning the math behind computer science like recursion, graphs, operating systems, compilers, and more will allow them to make connections in what they learned when they were younger. I think the university curriculum at UBC is pretty good, but I am not qualified at all to judge that. This would have been the path to computer science I wished to take. Essentially, teach computer science like science to younger children, and then teach computer science like math to older children. 
+
+*Updates: typos and added better photos. Changed to mainly/only teach front-end because there is now some focus on back-end but not really what back-end concepts*.
