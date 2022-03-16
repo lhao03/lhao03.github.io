@@ -1,7 +1,7 @@
 +++
 title = "Security and Virus Research"
 date = 2022-02-22
-draft = false
+draft = true
 [extra]
 category = ["healthsci", "compsci"]
 +++
@@ -14,4 +14,7 @@ Inspired by articles in:
 - Virology:
   - [https://www.technologyreview.com/2022/02/09/1044985/shi-zhengli-covid-lab-leak-wuhan](https://www.technologyreview.com/2022/02/09/1044985/shi-zhengli-covid-lab-leak-wuhan)
 
-and what I've learned in MICB 306, I saw some parallels between research in both fields.
+and what I've learned in MICB 306, I saw some parallels between research in both fields. Let's start off with what virology research looks like:
+
+# Virology research
+In life science, two kinds of research include gain of function of loss of function.

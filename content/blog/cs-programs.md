@@ -1,7 +1,7 @@
 +++
 title = "compsci curriculums"
 date = 2022-02-28
-draft = false
+draft = true
 [extra]
 updates = ["2022-03-13"]
 category = ["compsci"]
