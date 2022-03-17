@@ -7,17 +7,19 @@ class = "about"
 
 I'm a chemistry nerd and {{ inline(text="filter")}} and {{ inline(text="map")}} enthusiast studying [💻 Computer Science](https://www.cs.ubc.ca/) and [🧪 Chemistry](https://www.chem.ubc.ca/) at the [University of British Columbia](https://www.ubc.ca/). I enjoy learning about how and why things work, especially pertaining to biological processes (from a chemistry perspective), viruses, operating systems, and programming languages. Check out my fails [here](@/failures/_index.md).
 
-## Currently I'm...
+## At the moment I'm...
 - 🎒 taking courses in computer hardware and operating systems, organic chemistry, and genetics.
 - ⌨️  learning how to use Vim! I've finally deleted VSCode	٩(◕‿◕)۶
 - 📄 trying to read more. See what I might be reading [here](https://curius.app/lucy2).
 
-## Previously I've...
+## In a previous life...
 - 👋🏻 TAed some courses (CPSC 110 and CPSC 210).
-- 🦠 Took a [virology course](/school/micb306)!
-- 🖥️ Interned at Microsoft; learned I didn't like the tech industry that much.
+- 🦠 took a [virology course](/school/micb306)!
+- 🖥️ interned at Microsoft;learned some things I don't like about the tech industry.
 - 🏥 built a [natural language processing pipeline](https://www.medrxiv.org/content/10.1101/2021.05.04.21256134v1") for pathology reports at [PROOF Centre](https://www.proofcentre.ca/)
 - 🏋️‍♀️ deadlifted 205 lbs pounds
+- 🏃🏻‍♀ did competitive cross country running and track and field.
+- 🫐 was vegan
 
 ## Things I'm sus about...
 - ❌ JavaScript
