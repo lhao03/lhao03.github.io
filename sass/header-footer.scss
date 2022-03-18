@@ -6,7 +6,10 @@
     a {
       background: none !important;
         background-size: none !important;
-        transition: none !important;
+        transition: none !important; 
+        @media (max-width: $maxWidth) {
+          padding-right: 10px;
+  }
     }
 }
 footer {
