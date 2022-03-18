@@ -11,11 +11,11 @@
   <h2>{{course}}</h2>
     {% for page in section.pages %}
     {% if page.extra.course in course %}
-    <div class="flex-col">
+    <p>
     <a href="{{ page.permalink | safe }}">
       <span style="font-weight: bold;">{{ page.title }}: {{ page.description }}</span>
     </a>
-    </div>
+    </p>
     {% endif %}
     {% endfor %}
     {% else %}
@@ -23,11 +23,11 @@
     {% for page in section.pages %}
     {% if page.extra.course not in "CPSC and MATH" %}
     {% if page.extra.course not in "BIOC and CHEM" %}
-    <div class="flex-col">
+    <p>
     <a href="{{ page.permalink | safe }}">
       <span style="font-weight: bold;">{{ page.title }}: {{ page.description }}</span>
     </a>
-    </div>
+    </p>
     {% endif %}
     {% endif %}
     {% endfor %}
