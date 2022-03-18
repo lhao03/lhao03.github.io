@@ -12,6 +12,7 @@ sort_by = "date"
 ## Working Experience
 - **Microsoft** (May - Aug 2021) ⛏ Software Engineering Intern
 - **PROOF Centre** (Jan - May 2021) 🧬 Software Developer Intern
+  - [Preprint](https://www.medrxiv.org/content/10.1101/2021.05.04.21256134v1)
 
 ## Speaking Experience
 - **StarHacks II** 💫 [Panelist for Intersections of Technology](https://www.youtube.com/watch?v=klMP-K7nCd4)

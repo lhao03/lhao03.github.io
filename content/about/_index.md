@@ -16,10 +16,10 @@ I'm a chemistry nerd and {{ inline(text="filter")}} and {{ inline(text="map")}} 
 - 👋🏻 TAed some courses (CPSC 110 and CPSC 210).
 - 🦠 took a [virology course](/school/micb306)!
 - 🖥️ interned at Microsoft;learned some things I don't like about the tech industry.
-- 🏥 built a [natural language processing pipeline](https://www.medrxiv.org/content/10.1101/2021.05.04.21256134v1") for pathology reports at [PROOF Centre](https://www.proofcentre.ca/)
+- 🏥 built a [natural language processing pipeline](https://www.medrxiv.org/content/10.1101/2021.05.04.21256134v1) for pathology reports at [PROOF Centre](https://www.proofcentre.ca/)
 - 🏋️‍♀️ deadlifted 205 lbs pounds
 - 🏃🏻‍♀ did competitive cross country running and track and field.
-- 🫐 was vegan
+- 🥕 was vegan
 
 ## Things I'm sus about...
 - ❌ JavaScript
