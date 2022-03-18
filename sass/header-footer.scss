@@ -2,7 +2,10 @@
 
 .header {
     color: $grey;
-    font-weight: bold;
+    font-weight: bold; 
+    @media (max-width: $maxWidth) {
+    font-size: 15px;
+  }
     a {
       background: none !important;
         background-size: none !important;
