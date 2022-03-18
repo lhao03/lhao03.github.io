@@ -3,17 +3,18 @@
 .header {
     color: $grey;
     font-weight: bold; 
+    p {
+  font-family: $lucyFont;
     @media (max-width: $maxWidth) {
-    font-size: 15px;
+    font-size: 23px !important;
   }
+
+    }
     a {
       background: none !important;
         background-size: none !important;
         transition: none !important; 
-        @media (max-width: $maxWidth) {
-          padding-right: 10px;
-  }
-    }
+            }
 }
 footer {
     & > div {
