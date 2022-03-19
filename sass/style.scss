@@ -141,8 +141,6 @@ label,
 li,
 a,
 code {
-  // margin: 0;
-  // padding: 0;
   font-size: 20px;
   line-height: 150%;
   @media (max-width: $maxWidth) {
@@ -197,9 +195,8 @@ a.nostyle {
     background-size: 0px;
   }
 }
-.lucyfont {
-  font-family: $lucyFont;
-}
+
+
 
 p.lucyfont {
   font-size: 35px;
@@ -252,3 +249,26 @@ span.landing, p.landing {
   top: 0px;
   transform: rotate(180deg);
 }
+
+
+.lucyfont {
+  p {
+  font-family: $lucyFont;
+
+  font-size: 35px;
+  @media (max-width: $maxWidth) {
+    font-size: 30px;
+  }
+
+  }
+  a {
+  font-family: $lucyFont;
+  font-size: 35px;
+  @media (max-width: $maxWidth) {
+    font-size: 30px;
+  }
+
+  }
+  font-family: $lucyFont;
+
+   }

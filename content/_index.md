@@ -1,11 +1,10 @@
 +++
 title = ""
 template = "section.html"
-page_template = "blog-page.html"
+[extra]
+class = "lucyfont"
 +++
 
-<h1 class="lucyfont">Hi, I'm Lucy!</h1>
-<p class="landing lucyfont">
-I'm interested in systems programming 💻, functional programming λ, virology 🦠, and chemistry 🧬.
-When I'm not working, I'm listening to k-pop, lifting heavy things 🏋️‍♀️, or watching capybara videos.
-</p>
+# Hi, I'm Lucy!
+
+I'm interested in systems programming 💻, functional programming λ, virology 🦠, and chemistry 🧬. When I'm not working, I'm listening to [k-pop](https://www.last.fm/user/lhao03), lifting heavy things 🏋️‍♀️, or watching capybara videos.
