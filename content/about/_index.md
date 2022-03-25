@@ -20,13 +20,6 @@ I'm a chemistry nerd and {{ inline(text="filter")}} and {{ inline(text="map")}} 
 - 🏃🏻‍♀ did competitive cross country running and track and field.
 - 🥕 was vegan
 
-## Things I'm sus about...
-- ❌ JavaScript
-- ❌ [Takers](https://www.ted.com/talks/adam_grant_are_you_a_giver_or_a_taker)
-- ❌ [Web3](https://curius.app/lucy2/blockchain)
-- ❌ the phrase ["girlboss"](https://www.refinery29.com/en-gb/2020/01/9044921/girlboss-culture-women-work)
-- ❌ [hackathons](/blog/hackathons)
-
 ## Books I wanna read or am currently reading:
 - 📚 [Critically Conscious Computing](https://criticallyconsciouscomputing.org/)
 - 📚 [Design Justice](https://design-justice.pubpub.org/)
