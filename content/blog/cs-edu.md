@@ -3,7 +3,7 @@ title = "Thoughts based on my path to CS, and opinions on CS Education"
 date = 2022-02-14
 draft = false
 [extra]
-updates = ["2022-03-13"]
+updates = ["2022-03-13", "2022-03-25"]
 category = ["education", "compsci", "criticism"]
 +++
 > This is inspired by [Critically Conscious Computing](https://criticallyconsciouscomputing.org/), and I take quotes from that book.
@@ -84,7 +84,7 @@ Another issue is that these programs (KodeWithKlossy and SheCodes) mainly/only t
 
 If you do like web development, you can learn the same things KodeWithKlossy and SheCodes teaches (and way more) at [freecodecamp](https://www.freecodecamp.org/) FOR FREE. 
 
-*KodeWithKlossy does have a free version too, but I still think the curriculum and topics are lacking (only focussing on front-end for web developement) and excluding (iOS development). I don't know much about data science but it's nice to see that as an area to learn about.*
+*KodeWithKlossy does have a free version too, but I still think the curriculum and topics are lacking (only focussing on front-end for web development) and exclusionary (iOS development). I don't know much about data science but it's nice to see that as an area to learn about.*
 
 {{ blogImg(img="kwk-free.png") }}
 {{ blogImg(img="kwk-free-curr.png") }}
@@ -92,9 +92,9 @@ If you do like web development, you can learn the same things KodeWithKlossy and
 Now, there are programs that I do think are doing a great job at introducing minorities in computer science to what computer science actually is. [Jane Street](https://www.janestreet.com/join-jane-street/our-programs/) has programs ranging from a few days to a few weeks teaching concepts like OCaml, probability, arbitrage, and even some business concepts! 
 From their [INSIGHT](https://www.janestreet.com/join-jane-street/our-programs/insight/) program:
 
-> In the software engineering program, students will learn about OCaml and the libraries and tools that we use in our everyday work, as well as the fundamentals of building electronic trading systems. Then, they’ll put these tools to use by writing the backend and UI for a computer game and a program that trades on a simulated stock exchange.
+> In the software engineering program, students will learn about OCaml and the libraries and tools that we use in our everyday work, as well as the fundamentals of building electronic trading systems. Then, they’ll put these tools to use by writing the back-end and UI for a computer game and a program that trades on a simulated stock exchange.
 
-I really like their focus on using a functional programming language like OCaml, their mention of libraries (very important), tools (also very important), and also financial concepts (which I never got to learn and still haven't). These topics are not only super interesting, but involve topics in computer science like problem-solving, creating tested and robust programs (you would hope a trading system works correctly!), and involving the use of technology that can be installed on any operating system. The program also mentions learning about the backend (which many boot camps/programs don't seem to dive into). Oh, and to my knowledge, this program is also free of cost. Below you can see the other types of programs they offer:
+I really like their focus on using a functional programming language like OCaml, their mention of libraries (very important), tools (also very important), and also financial concepts (which I never got to learn and still haven't). These topics are not only super interesting, but involve topics in computer science like problem-solving, creating tested and robust programs (you would hope a trading system works correctly!), and involving the use of technology that can be installed on any operating system. The program also mentions learning about the back-end (which many boot camps/programs don't seem to dive into). Oh, and to my knowledge, this program is also free of cost. Below you can see the other types of programs they offer:
 
 {{ blogImg(img="janestreet.gif") }}
 

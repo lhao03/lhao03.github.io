@@ -57,7 +57,7 @@
     <section>
         <div class="page">
         <div class="flex-row">
-        <a href="/" class="nostyle">
+        <a href="/">
       <img class="top-left" src="{{get_url(path=data.favicon)}}"/>
         </a>
         </div>
@@ -67,7 +67,7 @@
         <footer>
             <div class="flex-row">
                 {% for link in data.links %}
-                <a class="nostyle" href="{{link.link}}" target="_blank">
+                <a href="{{link.link}}" target="_blank">
             <p class="lucyfont">{{ link.name }}</p>
                 </a>
                 {% endfor %}

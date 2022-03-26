@@ -22,7 +22,7 @@ Some differences from last summer:
 - My wifi doesn't break anymore? Before on Windows I was disconnected from my wifi everyday for a few minutes. Now it just doesn't happen when I use Linux. Weird...
 - The terminal: before I was using WSL2 which works, but there's downsides to it (file transfer is hella slow). Now with a Linux shell everything is so fast and it just works. 
 - apt! downloading programs is super easy with apt and there's also a pop shop!
-- Stuff just runs faster? In WSL2, the commands like {{ inline(text="code .")}} or {{ inline(text="zola serve")}} took at least 5-10 seconds to run. In Pop!_OS it's almost instant.
+- Stuff just runs faster? In WSL2, the commands like `code .` and `zola serve` took at least 5-10 seconds to run. In Pop!_OS it's almost instant.
 - NOTIFICATIONS DON'T COME FROM THE BOTTOM RIGHT. If Windows moved their notifications to anywhere but the bottom right, I'd consider using Windows again. 
 - Tiling and Stacking is so fast and so convenient. I'm not sure how I was able to use Windows now that I use these features...
 

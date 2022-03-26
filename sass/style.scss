@@ -4,6 +4,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
 @import "mobile";
 @import "header-footer";
+@import "letters";
+@import "flex";
+@import "fun";
 
 .unselectable {
   -moz-user-select: -moz-none;
@@ -51,16 +54,10 @@ section {
   width: 60vw;
   margin-left: auto;
   margin-right: auto;
-
   a,
   li > a {
     text-decoration: underline;
   }
-}
-
-.inline {
-    text-decoration: underline;
-    line-height:80%;
 }
 
 .toggle {
@@ -78,197 +75,15 @@ section {
   z-index: 10000;
 }
 
-p.theme-text {
-  font-size: 55px !important;
-  margin: 0;
-}
-
-.top-left {
-  max-width: 100px;
-  min-width: 60px;
-  top: 0;
-  margin: 0;
-  z-index: 10000;
-
-}
-
-img.profile {
-  @media (min-width: $maxWidth) {
-    width: 150px !important;
-  }
-  @media (max-width: $maxWidth) {
-    width: 50px !important;
-  }
-}
-
-p,
-label,
-li,
-a,
-h1,
-h2,
-h3,
-h4{
-  font-family: $font;
-  color: $grey;
-}
-
-h1 {
-  font-family: $lucyFont;
-  font-size: 50px;
-  @media (max-width: $maxWidth) {
-    font-size: 45px;
-  }
-}
-
-h2 {
-  font-family: $lucyFont;
-  font-size: 40px;
-  @media (max-width: $maxWidth) {
-    font-size: 35px;
-  }
-}
-
-h3 {
-  font-family: $lucyFont;
-  font-size: 35px;
-  @media (max-width: $maxWidth) {
-    font-size: 30px;
-  }
-}
-p,
-label,
-li,
-a,
-code {
-  font-size: 20px;
-  line-height: 150%;
-  @media (max-width: $maxWidth) {
-    font-size: 17px;
-  }
-}
-
-code {
-  @media (max-width: $maxWidth) {
-    // line-height: 125%;
-  }
-}
-
-.flex-row {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.flex-row-no-space {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-}
-
-.flex-row-no-wrap {
-  display:flex;
-  flex-direction: row;
-}
-
-.flex-row-col {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  @media (max-width: $maxWidth) {
-    flex-direction: column;
-  }
-}
-
 
 .block {
   margin: 50px auto;
 }
 
-a.nostyle {
-  background: none !important;
-  background-size: 0px;
-  text-decoration: none;
-  &:hover,
-  &:focus {
-    background-size: 0px;
-  }
-}
-
-
-
-p.lucyfont {
-  font-size: 35px;
-  @media (max-width: $maxWidth) {
-    font-size: 30px;
-  }
-}
-span.landing, p.landing {
-  font-family: $lucyFont;
-  font-size: 35px;
-  color: $grey;
-  @media (max-width: $maxWidth) {
-    font-size: 30px;
-  }
-}
-
 .about {
-.padding-left {
-  padding-left: 50px;
-}
  ul {
    list-style-type: none;
    padding-left: 0;
  }
 }
 
-.animal-img {
-  height: 150px;
-  width: auto;
-  @media (max-width: $maxWidth) {
-  height: 75px;
-  }
-}
-
-.bottom-left {
-  position: absolute;
-  left: 0px;
-  bottom: 0px;
-}
-
-.bottom-right {
-  position: absolute;
-  right: 0px;
-  bottom: 0px;
-}
-
-.top-right {
-  position: absolute;
-  right: 0px;
-  top: 0px;
-  transform: rotate(180deg);
-}
-
-
-.lucyfont {
-  p {
-  font-family: $lucyFont;
-
-  font-size: 35px;
-  @media (max-width: $maxWidth) {
-    font-size: 30px;
-  }
-
-  }
-  a {
-  font-family: $lucyFont;
-  font-size: 35px;
-  @media (max-width: $maxWidth) {
-    font-size: 30px;
-  }
-
-  }
-  font-family: $lucyFont;
-
-   }

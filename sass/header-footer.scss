@@ -4,17 +4,12 @@
     color: $grey;
     font-weight: bold; 
     p {
-  font-family: $lucyFont;
-    @media (max-width: $maxWidth) {
-    font-size: 23px !important;
-  }
-
+      font-family: $lucyFont;
+      font-size: 30px;
+      @media (max-width: $maxWidth) {
+        font-size: 23px !important;
+      }
     }
-    a {
-      background: none !important;
-        background-size: none !important;
-        transition: none !important; 
-            }
 }
 footer {
     & > div {

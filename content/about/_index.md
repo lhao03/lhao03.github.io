@@ -5,7 +5,7 @@ template = "section.html"
 class = "about"
 +++
 
-I'm a chemistry nerd and {{ inline(text="filter")}} and {{ inline(text="map")}} enthusiast studying [💻 Computer Science](https://www.cs.ubc.ca/) and [🧪 Chemistry](https://www.chem.ubc.ca/) at the [University of British Columbia](https://www.ubc.ca/). I enjoy learning about how and why things work, especially pertaining to biological processes (from a chemistry perspective), viruses, operating systems, and programming languages. I've also been thinking about how computer science education should work at the primary and secondary school level. Check out my fails [here](@/failures/_index.md).
+I'm a chemistry nerd and `filter` and `map` enthusiast studying [💻 Computer Science](https://www.cs.ubc.ca/) and [🧪 Chemistry](https://www.chem.ubc.ca/) at the [University of British Columbia](https://www.ubc.ca/). I enjoy learning about how and why things work, especially pertaining to biological processes (from a chemistry perspective), viruses, operating systems, and programming languages. I've also been thinking about how computer science education should work at the primary and secondary school level. Check out my fails [here](@/failures/_index.md).
 
 ## At the moment I'm...
 - 🎒 taking courses in computer hardware and operating systems, organic chemistry, and genetics.
@@ -33,7 +33,7 @@ I'm a chemistry nerd and {{ inline(text="filter")}} and {{ inline(text="map")}} 
 - ✨ [Stephen Diehl](https://twitter.com/smdiehl) 
 - ✨ [Amy J. Ko](https://faculty.washington.edu/ajko/)
 
-💖 To get in touch with me or see my resume, send an email to {{ inline(text='(string-append "hao" "." "lucyy" "@" "gmail" "." "com")')}}. You can also find me on [twitter](https://twitter.com/hoalycu). If you dare to see my 🍝 code and thoughts, you can check out my [GitHub](https://github.com/lhao03) and [blog](/blog)! And finally, you can see my experience [here](/experience).
+💖 To get in touch with me or see my resume, send an email to `(string-append "hao" "." "lucyy" "@" "gmail" "." "com")`. You can also find me on [twitter](https://twitter.com/hoalycu). If you dare to see my 🍝 code and thoughts, you can check out my [GitHub](https://github.com/lhao03) and [blog](/blog)! And finally, you can see my experience [here](/experience).
 
 {{ img(img="../type.gif") }}
 
