@@ -27,8 +27,7 @@ I'm a chemistry nerd and `filter` and `map` enthusiast studying [💻 Computer S
 
 ## People who shape my thoughts:
 - ✨ [Ryan](https://www.ryanmehri.dev/)
-- ✨ [Margo Seltzer](https://twitter.com/margo_seltzer)
-- ✨ [Talia Ringer](https://dependenttyp.es/)
+- ✨ [Molly White](https://www.mollywhite.net/)
 - ✨ [Simon Peyton Jones](https://en.wikipedia.org/wiki/Simon_Peyton_Jones)
 - ✨ [Stephen Diehl](https://twitter.com/smdiehl) 
 - ✨ [Amy J. Ko](https://faculty.washington.edu/ajko/)
