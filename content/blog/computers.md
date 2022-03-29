@@ -72,7 +72,7 @@ I think computers are perhaps a combination of mathematics, physics, and chemist
 
 Mathematics because of a computer’s ability to compute rapidly and without error. 
 Physics because of the transfer of information and instructions through electrical signals. 
-Chemistry because of the special qualities of metals, rare earth metals, and silicon makes these elements the perfect medium for computing. 
+Chemistry because of the special qualities of metals, rare earth metals, and silicon makes these elements the perfect medium for computing, as well as oxidation and reduction reactions that make batteries work.
 
 ## back to the topic at hand
 Even in my university classes, many students don’t recognize that someone, human, like us, designed the computer the way it is today. Computers didn’t magically erect keyboards; it’s not a theory that computers have QWERTY keyboards, someone chose to use QWERTY. Someone is making these choices, and we should understand them because there can be small and large consequences if we don’t. Here are some observations I’ve seen as a Teaching Assistant: 
