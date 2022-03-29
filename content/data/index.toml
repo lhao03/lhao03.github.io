@@ -17,5 +17,5 @@ links = [
 school_years = [3, 2, 1]
 
 exp_categories = ["work", "speaking", "other"]
-blog_categories = ["criticism", "learning", "life", "tech", "healthsci", "compsci", "education", "industry", "random"]
+blog_categories = ["education", "criticism", "learning", "life", "tech", "healthsci", "compsci", "industry", "random"]
 courses = ["CPSC and MATH", "BIOC and CHEM", "OTHER"]
