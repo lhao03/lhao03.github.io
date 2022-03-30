@@ -49,16 +49,13 @@ After listening to talks from [Simon Peyton Jones](https://www.youtube.com/watch
 
 No, not really. Coding doesn’t tell us anything about how a computer works. It simply lets us tell a computer what we want it to do (thanks to computer scientists who abstracted away a lot of details, it’s easy for anyone to write an easy program now). When you save a text file to your computer do you know how it’s saved on your computer? Coding doesn’t tell you much (if anything). And another question to ponder is how a computer does anything! How does the computer save files and then find them later, what is an operating system and what does it manage and control, how does the computer manipulate incoming information, and much more.
  
-# What's computing? 
-Computing is the act of performing mathematical or procedural tasks. You don’t need code to compute; all humans can compute! 
+# Why learn about computers? [work in progress]
+I think there are three broad sections that should be covered for computers:
 
-Computing is already taught as basic mathematical skills, like learning your time's tables and doing calculations by hand. In university, you then learn it again when you learn about binary and hexadecimal. 
+1. What a computer is and isn't
+2. How a computer works
+3. Ethics and history of computers
 
-Computing also involves the application of algorithms. How would you introduce an algorithm without code? It can be as simple as telling a group of students to sort themselves (based on height) using a sorting algorithm like bubble sort or merge sort. Then you can ask the students their observations on the different algorithms. 
-
-A computer seems like it’s just doing magic, but it’s computing. The first computers were people (mostly women) during WWII. The abacus can also be seen as a computer. I think that many emerging curriculums do introduce important concepts in computing, so I won’t discuss it much here. If you want to learn more about computing, I recommend watching videos from [Simon Peyton Jones](https://www.youtube.com/watch?v=Ia55clAtdMs). 
-
-# Why learn about computers? 
 I grew up right when social media was just starting to exist. I had to fight my dad to get an email and didn’t even do anything with the email once I got it. Computers weren’t part of my life like reading books was. I didn’t notice or care about computers. 
 
 But computers are now everywhere in society; cars, phones, traffic lights, dishwashers, to just name a few. 
@@ -67,14 +64,28 @@ Computers are complex and do many amazing things. It’s easy to view computers 
 
 {{ blogImg(img="wood.png") }}
 
-## random side thought
+## What a computer is and isn't
 I think computers are perhaps a combination of mathematics, physics, and chemistry. 
 
+### Mathematics
 Mathematics because of a computer’s ability to compute rapidly and without error. 
+
+**What's computing?**   
+Computing is the act of performing mathematical or procedural tasks. You don’t need code to compute; all humans can compute! 
+
+Computing is already taught as basic mathematical skills, like learning your time's tables and doing calculations by hand. In university, you then learn it again when you learn about binary and hexadecimal. 
+
+Computing also involves the application of algorithms. How would you introduce an algorithm without code? It can be as simple as telling a group of students to sort themselves (based on height) using a sorting algorithm like bubble sort or merge sort. Then you can ask the students their observations on the different algorithms. 
+
+A computer seems like it’s just doing magic, but it’s computing. The first computers were people (mostly women) during WWII. The abacus can also be seen as a computer. I think that many emerging curriculums do introduce important concepts in computing, so I won’t discuss it much here. If you want to learn more about computing, I recommend watching videos from [Simon Peyton Jones](https://www.youtube.com/watch?v=Ia55clAtdMs). 
+
+### Physics
 Physics because of the transfer of information and instructions through electrical signals. 
+
+### Chemistry
 Chemistry because of the special qualities of metals, rare earth metals, and silicon makes these elements the perfect medium for computing, as well as oxidation and reduction reactions that make batteries work.
 
-## back to the topic at hand
+## How a computer works
 Even in my university classes, many students don’t recognize that someone, human, like us, designed the computer the way it is today. Computers didn’t magically erect keyboards; it’s not a theory that computers have QWERTY keyboards, someone chose to use QWERTY. Someone is making these choices, and we should understand them because there can be small and large consequences if we don’t. Here are some observations I’ve seen as a Teaching Assistant: 
 
 When I was evaluating final projects in CPSC 210, I would try to run a program, only to see an error saying that a necessary file was missing. When I approached the student about the error, many would show me their program working perfectly fine on their computer.
@@ -89,8 +100,8 @@ Another concept that I also recently learned was about how a computer writes dat
 
 Learning about computers doesn't contribute to capitalism like learning to code does; learning about computers should be part of standard education because computers are everywhere and used by most people almost every day. Education should not purely serve to equip a group of people with skills for a career. Education is to help people understand the world around them. This is why we learn science in elementary school. While one can get through the world without understanding Newton’s Laws, resonance structures, and cell biology, it can deepen your understanding of the world, if that is the way you want to view the world. Science is just one way; you can choose to view the world through analogies or historical events. When computers were only for the elite, it would have been pointless to teach the general public about them. But now knowledge of computers should be taught to everyone. 
 
-# ethics and history
-Students should also be taught the ethics and history of computers and computing.
+## Ethics and History
+Students must also be taught the ethics and history of computers and computing.
 
 [Critically Conscious Computing](https://criticallyconsciouscomputing.org/) gives a wonderful overview of the ethics and history of computing, whether it be how algorithms can oppress, how binary bits reduce people to categories, or how the first computers and operating systems came about. [Design Justice](https://design-justice.pubpub.org/) also gives insight into how choices can harm individuals, and lastly, Programming Inequality discusses how women helped create the field of computing and computers, only to be discarded. These books and their authors explain the area of ethics and history much better than I can in a blog post. I highly recommend you read their works. 
 
