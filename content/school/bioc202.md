@@ -8,7 +8,7 @@ year = 3
 +++
 
 # What to expect:
-This course will be hard if you don't understand your organic chemistry and if you fall behind on readings. I won't lie, you're going to need to sit doan and write out the Kreb's cycle and glycolysis few times (until you understand each step and memorize the steps) if you want to do well in this course. 
+This course will be hard if you don't understand your organic chemistry and if you fall behind on readings. I won't lie, you're going to need to sit down and write out the Kreb's cycle and glycolysis few times (until you understand each step and memorize the steps) if you want to do well in this course. 
 
 With that being said, if you do lots of active review, and brush up on your organic chemistry, this course is passable. To do well, you need to understand how different cycles can affect other cycles. Something happening in glycolysis does not only affect glycolysis, as it may affect the Kreb's cycle, which then could affect the ETC. To be able to spot such patterns and downstream affects, you should not only brute force memorize all the various cycles, but understand why each step in each cycle is needed. 
 
