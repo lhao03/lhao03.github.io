@@ -3,7 +3,7 @@ title = "Everyone should learn about computers, not coding"
 date = 2022-03-28
 draft = false
 [extra]
-updates = []
+updates = ["2022-03-31"]
 category = ["education"]
 +++
 
@@ -133,3 +133,4 @@ References and inspiration:
 - [Teaching creative computer science: Simon Peyton Jones at TEDxExeter](https://www.youtube.com/watch?v=Ia55clAtdMs)
 - [My thoughts on hackathons](https://lhao03.github.io/blog/hackathons/)
 
+*Updates: typos and making metaphors with chemistry less confusing and fixing weird grammars.*
