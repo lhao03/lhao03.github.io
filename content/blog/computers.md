@@ -1,5 +1,5 @@
 +++
-title = "Everyone should learn about computers"
+title = "Everyone should learn about computers, not coding"
 date = 2022-03-28
 draft = false
 [extra]
