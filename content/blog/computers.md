@@ -96,7 +96,7 @@ Physics because of the transfer of information and instructions through electric
 Chemistry because of the special qualities of metals, rare earth metals, and silicon makes these elements the perfect medium for computing, as well as oxidation and reduction reactions that make batteries work.
 
 ## How a computer works
-Even in my university classes, many students don’t recognize that someone, human, like us, designed the computer the way it is today. The use of QWERTY keywords isn't a phenomenon like gravity, it was a design choice by a human-like us. Someone is making these choices, and we should learn about these choices because there can be small and large consequences if we don’t. Here are some observations I’ve seen as a Teaching Assistant: 
+Even in my university classes, many students don’t recognize that someone, human, like us, designed the computer the way it is today. The use of QWERTY keywords isn't a phenomenon like gravity, it was a design choice. Someone is making these choices, and we should learn about these choices because there can be small and large consequences if we don’t. Here are some observations I’ve seen as a Teaching Assistant: 
 
 ## A misunderstanding/lack of understanding of a file system
 
