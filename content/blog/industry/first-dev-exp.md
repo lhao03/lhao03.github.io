@@ -30,7 +30,7 @@ Additionally, I got to attend a bunch of presentations put on by other PROOF mem
 My father says that he loves remote work, but I don't think I can say the same 😅 (maybe it's because I haven't experienced the commute before). And being a first-time developer and intern, I wished I had done some things differently. With that being said, some not so great things I experienced include: 
 
 - sitting for long hours
-- having the sorest and dryest eyes ever
+- having the sorest and driest eyes ever
 - forgetting to eat meals
 - headaches
 - feeling alone

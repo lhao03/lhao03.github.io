@@ -44,7 +44,7 @@ Coding can also feel like a shortcut to solving many problems since there’s a 
 
 You would never say other skills like wielding, cooking, or pipetting could solve all the world’s problems. Why is coding any different from other skills? 
 
-Coding (and technology) has limitations, and many times coding can introduce problems you would never have with traditional or alternative methods. You can read about my thoughts on tech solutionism in hackathons [here](https://lhao03.github.io/blog/hackathons/#what-are-we-trying-to-solve-here). For a much more in-depth understanding, read [Design Justice](https://design-justice.pubpub.org/).  
+Coding (and technology) has limitations, and many times coding can introduce problems you would never have with traditional or alternative methods. You can read about my thoughts on tech solutionism in hackathons [here](@/blog/criticism/hackathons.md#what-are-we-trying-to-solve-here). For a much more in-depth understanding, read [Design Justice](https://design-justice.pubpub.org/).  
 
 ## Marketing 
 There’s no marketing initiative as strong as “Learn to Code”. No one is marketing “Learn History” or “Learn Chemistry” because a bunch of people who know history or chemistry don't serve giant companies well. By giant companies, I mean tech companies. It’s cheap for a tech company to produce a MOOC and sell it to people desperate for a better-paying job. These people with only coding skills are then at the will of large companies to pick and choose who they want. And with only more and more people wanting a job in tech, companies can be less competitive with salaries.
@@ -68,10 +68,10 @@ Computers are complex and do many amazing things. It’s easy to view computers 
 {{ blogImg(img="wood.png") }}
 
 I think there are three broad sections that should be covered for computers:
-
-1. [What a computer is and isn't](/blog/computers/#what-a-computer-is-and-isn-t)
-2. [How a computer works](/blog/computers/#how-a-computer-works)
-3. [Ethics and history of computers](/blog/computers/#ethics-and-history)
+[test](bruh)
+1. [What a computer is and isn't](/blog/computer%20science/computers/#what-a-computer-is-and-isn-t)
+2. [How a computer works](/blog/computer%20science/computers/#how-a-computer-works)
+3. [Ethics and history of computers](/blog/computer%20science/computers/#ethics-and-history)
 
 ## What a computer is and isn't
 I think computers are perhaps a combination of mathematics, physics, and chemistry. 

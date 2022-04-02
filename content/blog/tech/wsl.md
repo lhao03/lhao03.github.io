@@ -3,12 +3,11 @@ title="👩🏻‍💻 WSL2 Stuff"
 date=2021-03-19
 draft=false
 [extra]
-category = ["tech"]
 +++
 
-I have a really bad habit of not remembering the steps I take to configure stuff. So this blog post will serve as a documentation of how I set up WSL2 for my various development needs. <!-- more --> I thought I was on WSL2 but upon checking I was still on WSL1. 
+I have a really bad habit of not remembering the steps I take to configure stuff. So this blog post will serve as a documentation of how I set up WSL2 for my various development needs. I thought I was on WSL2 but upon checking I was still on WSL1. 
 
-## weird os error
+## weird error
 Reason: Operation not permitted (os error 1)
 ```bash
 sudo umount /mnt/c
