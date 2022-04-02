@@ -17,9 +17,8 @@ So what have I been up to these past four months? A few things include:
  
 But that’s just the tip of the iceberg.
  
----
-My thoughts on hackathons have changed, and you can read more [here](@/blog/criticism/hackathons.md).
----
+
+*My thoughts on hackathons have changed, and you can read more [here](@/blog/criticism/hackathons.md).*
 
 ## 🌟 StarHacks
 When I received an email saying that I was chosen to join the StarHacks team in September 2020 I was so excited. Until I saw what team I was on: outreach. Before we go any further, I’ll explain why I felt that way:
