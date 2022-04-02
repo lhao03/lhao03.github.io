@@ -43,7 +43,7 @@ All of this could have been prevented, had I not been involved in extracurricula
 
 Was I good at marketing? Who knows, I sure as hell don't. Do I like marketing? Hell no. Then why I was still doing it?
 
-This breakdown has caused me to reevaluate the way I spend my time and why I spend it that way. Why am I even in marketing at nwPlus if I disliked it so much? Why did I keep giving my time to others when I was flailing around myself? Why did I continue to help put on hackathons when [I didn't even like them myself](/blog/hackathons)?
+This breakdown has caused me to reevaluate the way I spend my time and why I spend it that way. Why am I even in marketing at nwPlus if I disliked it so much? Why did I keep giving my time to others when I was flailing around myself? Why did I continue to help put on hackathons when [I didn't even like them myself](@/blog/criticism/hackathons.md)?
 
 I'm planning to leave all hackathon-related activities eventually. As to not disrupt the team (which happened to the marketing team at nwPlus, when our Director led our team to a pretty bad marketing run for HackCamp, and then left), I'm going to leave when the hackathon season ends. It's not fair to others who are working hard and care about nwPlus for me to leave abruptly like a former teammate did, because there are some amazing and passionate people at nwPlus who have helped me so much when I was trying to take on the role of Director (and for that, thank you, y'all should know who you are). I'm writing this out to hold myself accountable.
 
