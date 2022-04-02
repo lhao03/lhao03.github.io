@@ -68,7 +68,7 @@ Computers are complex and do many amazing things. It’s easy to view computers 
 {{ blogImg(img="wood.png") }}
 
 I think there are three broad sections that should be covered for computers:
-[test](bruh)
+
 1. [What a computer is and isn't](/blog/computer%20science/computers/#what-a-computer-is-and-isn-t)
 2. [How a computer works](/blog/computer%20science/computers/#how-a-computer-works)
 3. [Ethics and history of computers](/blog/computer%20science/computers/#ethics-and-history)
