@@ -1,34 +1,30 @@
 {% extends "header.html" %}
 
 {% block content %}
-{% set data = load_data(path="content/data/index.toml") %}
 
 <h1>{{ section.title }}</h1>
 {{ section.content | safe }}
 
-  {% for category in data.blog_categories %}
-  <a href="/blog/#{{category}}">{{ category }}</a>
+  {% for subsection in section.subsections %}  
+  {% set subsection = get_section(path=subsection) %}
+  <a href="{{ subsection.path | safe }}">{{ subsection.title }}</a>
   {% endfor %}
-
 <div class="blog flexcol">
-  {% for category in data.blog_categories %}
-  <h2 id={{ category }}>{{ category }}</h2>
-  {% for page in section.pages %}
-  {% if page.extra.category %}
-  {% if page.extra.category == category or category in page.extra.category %}
-    <a href="{{ page.permalink | safe }}">
+  {% for subsection in section.subsections %}
+  {% set subsection = get_section(path=subsection) %}
+  <a href="{{ subsection.path | safe }}"><h2>{{ subsection.title }}</h2></a>
+  {% for subpage in subsection.pages %}
+  <a href="{{ subpage.permalink | safe }}">
         <div class="blog-intro ">
             <p class="blog-title">
-                {{ page.title }}
+                {{ subpage.title }}
             </p>
             <div class="flex-row">
-            <p class="date-time">{{ page.reading_time }} mins</p>
-            <p>{{ page.date }}</p>
+            <p class="date-time">{{ subpage.reading_time }} mins</p>
+            <p>{{ subpage.date }}</p>
             </div>
         </div>
     </a>
-  {% endif %}
-  {% endif %}
   {% endfor %}
   {% endfor %}
 </div>
