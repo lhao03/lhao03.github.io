@@ -41,7 +41,7 @@ I'm a chemistry nerd and `filter` and `map` enthusiast studying [💻 Computer S
 
 <div>
 
-## People who shape my thoughts:
+## People I think are cool 
 - ✨ [Ryan](https://www.ryanmehri.dev/)
 - ✨ [Amy J. Ko](https://faculty.washington.edu/ajko/)
 - ✨ [Talia Ringer](https://twitter.com/TaliaRinger)
