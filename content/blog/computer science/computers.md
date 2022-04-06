@@ -4,6 +4,8 @@ date = 2022-03-28
 draft = false
 [extra]
 updates = ["2022-03-31", "2022-04-01"]
+img = "codingnot.png"
+alt = "Computer, Disk, File System, Linux Logo, Windows Logo, Apple Logo, Google Search Results for Coding is the Future"
 +++
 
 Not everyone should not learn how to code - instead, everyone needs to learn about computers.
