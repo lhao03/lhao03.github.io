@@ -7,7 +7,8 @@ class = "about"
 
 # Hi, I'm Lucy!
 
-I'm a chemistry nerd and `filter` and `map` enthusiast studying [💻 Computer Science](https://www.cs.ubc.ca/) and [🧪 Chemistry](https://www.chem.ubc.ca/) at the [University of British Columbia](https://www.ubc.ca/). I enjoy learning about how and why things work, especially pertaining to biological processes (from a chemistry perspective), viruses, operating systems, and programming languages. I've also been thinking about how computer science education should work at the primary and secondary school level and enjoy reading about computing history and technological systems. 
+I'm a chemistry nerd and `filter` and `map` enthusiast studying [💻 Computer Science](https://www.cs.ubc.ca/) and [🧪 Chemistry](https://www.chem.ubc.ca/) at the [University of British Columbia](https://www.ubc.ca/). I enjoy learning about how and why things work, especially pertaining to biological processes (from a chemistry perspective), viruses, operating systems, and programming languages. I've also been thinking about how computer science education should work at the primary and secondary school level and enjoy reading about computing history and the impact of technological systems on society. 
+
 <div class="flex-row-col">
 <div>
 
@@ -31,7 +32,7 @@ I'm a chemistry nerd and `filter` and `map` enthusiast studying [💻 Computer S
 <div class="flex-row-col">
 <div>
 
-## Books I wanna read or am currently reading:
+## Interesting Books...
 - 📚 [Critically Conscious Computing](https://criticallyconsciouscomputing.org/)
 - 📚 [Design Justice](https://design-justice.pubpub.org/)
 - 📚 [Programmed Inequality](https://mitpress.mit.edu/books/programmed-inequality)
@@ -41,7 +42,7 @@ I'm a chemistry nerd and `filter` and `map` enthusiast studying [💻 Computer S
 
 <div>
 
-## People I think are cool 
+## People I think are cool...
 - ✨ [Ryan](https://www.ryanmehri.dev/)
 - ✨ [Amy J. Ko](https://faculty.washington.edu/ajko/)
 - ✨ [Talia Ringer](https://twitter.com/TaliaRinger)

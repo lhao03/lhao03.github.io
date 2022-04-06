@@ -1,5 +1,5 @@
 +++
-title = "Health Science and Life Science"
+title = "Health and Life Sciences"
 sort_by = "date"
 template = "subsection.html"
 page_template = "blog-page.html"
