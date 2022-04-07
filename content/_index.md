@@ -14,7 +14,8 @@ I'm a chemistry nerd and `filter` and `map` enthusiast studying [💻 Computer S
 
 ## At the moment I'm...
 - 🎒 taking courses in computer hardware and operating systems, organic chemistry, and genetics.
-- ⌨️  learning how to use Vim! I've finally deleted VSCode	٩(◕‿◕)۶
+- ⌨️  learning how to use Vim! I've finally deleted VSCode	٩(◕‿◕)۶.
+- 👀 reading papers and books!
 
 </div>
 
@@ -22,7 +23,7 @@ I'm a chemistry nerd and `filter` and `map` enthusiast studying [💻 Computer S
 
 ## In a previous life...
 - 🤷🏻‍♀ had some [fails](@/failures/_index.md).
-- 🏋️‍♀️ deadlifted 205pounds.
+- 💪 deadlifted 205 pounds.
 - 🏃🏻‍♀ did competitive cross country running and track and field.
 - 🥕 was vegan.
 
