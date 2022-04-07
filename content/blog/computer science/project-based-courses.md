@@ -1,7 +1,7 @@
 +++
 title = "Project Based Courses: What can go wrong"
 date = 2022-04-06
-draft = false
+draft = true
 [extra]
 updates = []
 img = 'CPSC210.png'
@@ -18,7 +18,14 @@ However, this the link between computer science and society, or computer science
 The first computer science course you take will almost 100% have a programming component. In [Critically Conscience Computing](TODO), Amy J. Ko, PhD talks about several ways programming is usually taught, and the positives and negatives between the different methods. The most common, consistent and probably easiest way to evaluate someone's programming excellence is through problem sets. 
 
 ## Problem Sets
-After students go to lecture, they must practice the knowledge they have learned. Simply reading or watching someone code does not imply a student can also code. A way to evaluate a student's ability to program is through problem sets. Problems sets are an easy way for an instructor to see a student's ability to code because problem sets can be issued after every lecture, or some consistent time interval, with questions targeting specific concepts or lectures. 
+Most courses at UBC use problem sets or labs to evluate a student's understanding of course content. Since I've TAed CPSC 110, I'll frame this blog post around CPSC 110. 
+
+CPSC 110 uses problem sets to judge a student's ability to do domain analysis and to apply the appropriate template to a particular problem. Problem sets usually have 1 reference solution, but problem sets can be solved in alternative solutions. 
+
+---
+
+
+After students go to lecture, they must practice the knowledge they have learned to understand how to apply it. Simply reading or watching someone code does not imply a student can also code. A way to evaluate a student's ability to program is through problem sets. Problems sets are an easy way for an instructor to see a student's ability to code because problem sets can be issued after every lecture, or some consistent time interval, with questions targeting specific concepts or lectures. 
 
 Since students will all do the same problem set, this ensures some level of fairness, since all students will be answering the same problems. However, as CCC mentions, problems sets may be divorced from someone's life. Most problem set questions may involve questions like "Traverse a tree numbers" or "Generate all the possible outcomes for a set of clowns". If a student is not intrinsically already interested in computer science, these type of questions in problem sets are usually divergent from a student's personal interests, and may make them less interested in computer science as a whole. In fact, I experienced this same feeling. I couldn't see or understand how these problem sets would give me skills to contribute positively to society.
 
@@ -28,4 +35,4 @@ While problem sets ensure a student is up to a standard of knowledge (if they ca
 Project based courses aim to offer a personalised and individualised component for the student. Student's can conceptualize their own project, usually adhering to some rules that require using a certain programming language or implementing concepts like object orientated design.
 
 
-
+Something I have witnessed is that students enjoy CPSC 210 more than CPSC 110. Should student enjoyment be prioritized over knowledge aquisition and knowledge application? 
