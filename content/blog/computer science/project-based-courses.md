@@ -34,5 +34,6 @@ While problem sets ensure a student is up to a standard of knowledge (if they ca
 ## Project based courses
 Project based courses aim to offer a personalised and individualised component for the student. Student's can conceptualize their own project, usually adhering to some rules that require using a certain programming language or implementing concepts like object orientated design.
 
+Lectures were out of sync with project phases.
 
-Something I have witnessed is that students enjoy CPSC 210 more than CPSC 110. Should student enjoyment be prioritized over knowledge aquisition and knowledge application? 
+Something I have witnessed is that students enjoy CPSC 210 more than CPSC 110. Should student enjoyment be prioritized over knowledge acquisition and knowledge application? 
