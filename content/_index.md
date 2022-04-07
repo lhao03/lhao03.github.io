@@ -22,7 +22,7 @@ I'm a chemistry nerd and `filter` and `map` enthusiast studying [💻 Computer S
 
 ## In a previous life...
 - 🤷🏻‍♀ had some [fails](@/failures/_index.md).
-- 🏋️‍♀️ deadlifted 205 lbs pound.
+- 🏋️‍♀️ deadlifted 205pounds.
 - 🏃🏻‍♀ did competitive cross country running and track and field.
 - 🥕 was vegan.
 
