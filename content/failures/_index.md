@@ -14,6 +14,7 @@ I also read others' failure resumes and it helps me a lot, so I hope my failure 
 Failures are subjective. What seems like a failure to me might not to you. I also recognize that I'm fortunate to have opportunities to fail and learn.
 
 ## 2022
+- Stopped organizing hackathons. 
 - Horrible course planning so I ended up with a very unbalanced year of courses. 
 - Denied permission to pursue a combined major in Computer Science and Biochemistry. Sucks because I was really excited to get higher recognition of Biochemistry on my degree (right now it's a minor) and to not do MATH 221. And I don't really wanna pursue a double major because I'm not really interested in lab work.
 
