@@ -103,11 +103,12 @@ Chemistry because of the special qualities of metals, rare earth metals, and sil
 ## How a computer works
 Even in my university classes, many students don’t recognize that someone, human, like us, designed the computer the way it is today. The use of QWERTY keywords isn't a phenomenon like gravity, it was a design choice. Someone is making these choices, and we should learn about these choices because there can be small and large consequences if we don’t. 
 
-Obviously I can't talk about everything about how a computer works. But there are 3 "parts" that when put together, allows a computer to work.
+Obviously I can't talk about everything about how a computer works. But there are 4 "parts" that when put together, allows a computer to work.
 
 1. Operating System
 2. File System
 3. Memory
+4. Programming Languages
 
 ### You better trust your operating system! [todo]
 
@@ -126,6 +127,8 @@ This means after you throw away your computer, you could still have important in
 {{ blogImg(img="data.jpg") }}
 
 Learning about computers should be part of standard education because computers are everywhere and used by most people who have no idea how a computer works. Education should not purely serve to equip a group of people with skills for a career. Education is to help people understand the world around them. This is why we learn science in elementary school. While one can get through the world without understanding Newton’s Laws, acid and base theory, and cell biology, it can deepen your understanding of the world. When computers were only for government officials and university professors, it would have been pointless to teach the general public about computers. But now knowledge of computers should be taught to everyone. 
+
+### Programming, or talking to your computer? [todo]
 
 ## Ethics and History
 Students must also be taught the ethics and history of computers and computing. A computer isn't like a cell. Computers were invented and created by many humans for many reasons! While we have no clear idea of how cells gained mitochondria, we do know computers were made by many humans, with their own goals and aspirations for what a computer should be. Babbage wanted to create a computer to replace human workers, while Lovelace and Turing were simply passionate about the mathematics and logic behind computers. The idea of replacing human workers with computers persists even stronger today. 
