@@ -1,5 +1,5 @@
 +++
-title = "Project Based Courses: What can go wrong"
+title = "Project Based Courses: What can go wrong?"
 date = 2022-04-06
 draft = true
 [extra]
@@ -10,12 +10,14 @@ alt = "Java Code and UML Diagram for Lucy's CPSC210 Project"
 
 *Disclaimer: I'm not a professor, just a student and teaching assistant for the course I will be talking about, so I will be talking about my experices, both as a student and teaching assistant*
 
-It can be easy to see societal applications or feel a personal connection to the natural sciences. For instance, in biology, you learn about the cells inside of you, which is pretty personal. In chemistry, you learn how to synthesize drugs, which can be seen as positively impacting society by creating life saving therapies to treat diseases. These two reasons I mentioned above may be what compel someone to study a natural science. 
+It's easy to see applications of the natural sciences in society. Someone may study chemistry to learn how to synthesize drugs to treat diseases like cancer or HIV. Someone may study biology because they love plants! Additionally, someone may feel a personal connection to natural sciences, like myself. I study chemistry and biochemistry because of my history of an eating disorder. Once I learned about the damage I was doing to my body at the biochemical level, I worked hard to recover from an eating disorder. Similarly, looking at fats, carbs and proteins as the literal chemical building blocks for your body made me appreciate the privilege we have in being able to choosing which foods supply us with this vital building blocks for our organs. These two reasons I mentioned above may be what compel someone to study a natural science. 
 
-However, this the link between computer science and society, or computer science and yourself is harder to see. In fact, the lower ratio between women and men in computer science can be partially be explained by the idea that computer science doesn't have a positive impact on [society](TODO). I experienced this myself in my first programming course. 
+Student's may use a computer in their life, but have little to no understanding of the inner workings of a computer. Using a computer is like riding the bus; it's just how life it. You may use Google Docs because your school requires you to. But you simply adore reading about chemistry because you like learning how your body works at the biochemical level. Thus, this the link between computer science and society, or computer science and yourself is harder to see. This is one problem computer science educators are trying to solve: how do we relate computer science to a student's life? How can we make computer science interesting? A student's first exposure to computer science is usually through programming. I experienced this dilemma myself in my first programming course. I couldn't understand or see why learning about recursion or binary trees related to anything! Unfortunately, many gender minorities may feel the same feeling of being divorced from their studies in computer science.  In fact, the lower ratio between women and men in computer science can be partially be explained by the idea that computer science doesn't have a positive impact on [society](TODO). 
+
+Most computer science courses you take will have a programming component. In [Critically Conscience Computing](TODO), Amy J. Ko, PhD talks about several ways programming is usually taught, and the positives and negatives between the different methods. Having TAed CPSC 110 and CPSC 210, I've noticed some differences between how programming is taught , and thus the differences in students reactions to the course. Both courses are based around teaching students a type of programming paradigm. In CPSC 110, students are taught to think in a functional paradigm, while in CPSC 210, students are taught to think in a OOP and imperative paradigm. Both courses tackle teaching students how to program in a particular paradigm with a different method: problem sets and labs.  
 
 # Programming
-The first computer science course you take will almost 100% have a programming component. In [Critically Conscience Computing](TODO), Amy J. Ko, PhD talks about several ways programming is usually taught, and the positives and negatives between the different methods. The most common, consistent and probably easiest way to evaluate someone's programming excellence is through problem sets. 
+The most common, consistent and probably easiest way to evaluate someone's programming excellence is through problem sets. 
 
 ## Problem Sets
 Most courses at UBC use problem sets or labs to evluate a student's understanding of course content. Since I've TAed CPSC 110, I'll frame this blog post around CPSC 110. 
