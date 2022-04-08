@@ -10,7 +10,7 @@ alt = "Computer, Disk, File System, Linux Logo, Windows Logo, Apple Logo, Google
 
 Not everyone should not learn how to code - instead, everyone needs to learn about computers.
 
-I recently wrote a [rant-like post](@/blog/computer%20science/path-to-cs.md) about my thoughts on my path to CS. Since then, I’ve been thinking of what computer education should look like at the secondary and elementary levels. I was first introduced to computer science when I heard the phrase “Everyone should learn how to code”. The more I think about this tech marketing mantra that has been screamed at me from every coding boot camp, online MOOC, and even President Obama, the more and more I disagree with it. Instead, we should all learn about computers. And no, not how to use Microsoft Word, but what a computer actually is. 
+I recently wrote a [rant-like post](@/blog/computer%20science/cs-edu.md) about my thoughts on my path to CS. Since then, I’ve been thinking of what computer education should look like at the secondary and elementary levels. I was first introduced to computer science when I heard the phrase “Everyone should learn how to code”. The more I think about this tech marketing mantra that has been screamed at me from every coding boot camp, online MOOC, and even President Obama, the more and more I disagree with it. Instead, we should all learn about computers. And no, not how to use Microsoft Word, but what a computer actually is. 
 
 {{ blogImg(img="coding.png") }}
 
