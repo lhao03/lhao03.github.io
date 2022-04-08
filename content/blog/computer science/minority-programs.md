@@ -1,10 +1,13 @@
 +++
-title = "Minority Programs for CS"
+title = "Opinions on Minority Programs for CS"
 date = 2022-02-14
 draft = false
 [extra]
 updates = ["2022-03-13", "2022-03-25", "2022-04-07"]
 +++
+
+*Extracted into it's own post. Is also part of this [post](@/blog/computer%20science/cs-edu.md), but I think this could also stand on it's own.*
+
 > This is inspired by [Critically Conscious Computing](https://criticallyconsciouscomputing.org/), and I take quotes from that book.
 
 There's many programs that are targeted towards minorities in computer science.  To me, most of them seem to almost be preying on this minority issue in computer science for their gain or don't seem to actually be helping. 
@@ -55,7 +58,7 @@ I really like their focus on using a functional programming language like OCaml,
 # Final thoughts
 I think that computer science should be taught the same way as chemistry, biology, and physics for younger children. Learning physics doesn't mean you're a physicist, and that should become the norm with computer science. Also, when teaching a child science, you don't start throwing formulas and abstract concepts at them, you start with examples and talk about endeavours and discoveries done by humans in the field. 
 
-Computer science should not just be taught as HTML and JavaScript, which is what many minority focussed CS programs are doing. We need to explore the rich history of computing! Just like how we learn about the [models of the atom](@/blog/other/do-good-explanations-have-to-be-true.md) and [different acid-base theories](@/blog/other/do-good-explanations-have-to-be-true.md) in chemistry in junior high and high school and then utilize models like the valence bond theory and hybridization in university, I think we should learn that computing begins from the invention of the abacus to human "computers" in WWII, and how we abstracted the human computer into the computers we have today. 
+Computer science should not just be taught as HTML and JavaScript, which is what many minority focussed CS programs are doing. We need to explore the rich history of computing! Just like how we learn about the [models of the atom](@/blog/other/do-good-explanations-have-to-be-true.md) and [different acid-base theories](@/blog/other/do-good-explanations-have-to-be-true.md) in chemistry in junior high and high school and then utilize models like the valence bond theory and hybridization in university, I think we should learn that computing begins from the invention of the abacus to human "computers" in WWII, and how we abstracted the human computer into the metal and inanimate computers we have today. 
 
 Computer science can't keep being taught as just coding, and we should focus on other areas of computer science like operating systems, memory and data management, history and ethics and programming languages. Orgs focussing on young children should use [Critically Conscious Computing](https://criticallyconsciouscomputing.org/) as a basis for developing a curriculum. 
 
@@ -66,3 +69,4 @@ We can't forget that computer science is also math; it's basically applied math,
 If boot camps want to be the cheaper and quicker alternative to university, or if orgs want to educate young people on computer science, they must commit to delivering a well rounded education in computer science, or they are simply exploiting people for their own gain.
 
 *Updates: typos and added better photos. Changed to mainly/only teach front-end because there is now some focus on back-end but not really what back-end concepts. Added more to final thoughts.*
+
