@@ -10,7 +10,7 @@ alt = "Computer, Disk, File System, Linux Logo, Windows Logo, Apple Logo, Google
 
 Not everyone should not learn how to code - instead, everyone needs to learn about computers.
 
-I recently wrote a [rant-like post](@/blog/computer%20science/cs-edu.md) about my thoughts on my path to CS. Since then, I’ve been thinking of what computer education should look like at the secondary and elementary levels. I was first introduced to computer science when I heard the phrase “Everyone should learn how to code”. The more I think about this tech marketing mantra that has been screamed at me from every coding boot camp, online MOOC, and even President Obama, the more and more I disagree with it. Instead, we should all learn about computers. And no, not how to use Microsoft Word, but what a computer actually is. 
+I recently wrote a [rant-like post](@/compsci/cs-edu.md) about my thoughts on my path to CS. Since then, I’ve been thinking of what computer education should look like at the secondary and elementary levels. I was first introduced to computer science when I heard the phrase “Everyone should learn how to code”. The more I think about this tech marketing mantra that has been screamed at me from every coding boot camp, online MOOC, and even President Obama, the more and more I disagree with it. Instead, we should all learn about computers. And no, not how to use Microsoft Word, but what a computer actually is. 
 
 {{ blogImg(img="coding.png") }}
 
@@ -46,7 +46,7 @@ Coding can also feel like a shortcut to solving many problems since there’s a 
 
 You would never say other skills like wielding, cooking, or pipetting could solve all the world’s problems. Why is coding any different from other skills? 
 
-Coding (and technology) has limitations, and many times coding can introduce problems you would never have with traditional or alternative methods. You can read about my thoughts on tech solutionism in hackathons [here](@/blog/computer%20science/hackathons.md#what-are-we-trying-to-solve-here). For a much more in-depth understanding, read [Design Justice](https://design-justice.pubpub.org/).  
+Coding (and technology) has limitations, and many times coding can introduce problems you would never have with traditional or alternative methods. You can read about my thoughts on tech solutionism in hackathons [here](@/compsci/hackathons.md#what-are-we-trying-to-solve-here). For a much more in-depth understanding, read [Design Justice](https://design-justice.pubpub.org/).  
 
 ## Marketing 
 There’s no marketing initiative as strong as “Learn to Code”. No one is marketing “Learn History” or “Learn Chemistry” because a bunch of people who know history or chemistry don't serve giant companies well. By giant companies, I mean tech companies. It’s cheap for a tech company to produce a MOOC and sell it to people desperate for a better-paying job. These people with only coding skills are then at the will of large companies to pick and choose who they want. And with only more and more people wanting a job in tech, companies can be less competitive with salaries.

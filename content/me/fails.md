@@ -1,8 +1,7 @@
 +++
 title = "Fails"
-template = "section.html"
-[extra]
-toc = true
+date = 2022-04-11
+draft = false
 +++
 
 **Why did I make a failures page?**

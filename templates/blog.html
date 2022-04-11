@@ -1,10 +1,18 @@
-{% extends "header.html" %}
+{% extends "base.html" %}
 
 {% block content %}
 
+{% set_global counter = 0 %}
 <h1>{{ section.title }}</h1>
-{{ section.content | safe }}
+{% set intro = section.extra.intro | markdown %}
+{{ intro | safe }}
 
+<div class="flex-row-col">
+  <div class="twothirds">
+{{ section.content | safe }}
+  </div>
+  <div class="onethird">
+  <h3>Some blog posts:</h3>
   {% for subsection in section.subsections %}  
   {% set subsection = get_section(path=subsection) %}
   <a href="{{ subsection.path | safe }}">{{ subsection.title }}</a>
@@ -12,8 +20,8 @@
 <div class="blog flexcol">
   {% for subsection in section.subsections %}
   {% set subsection = get_section(path=subsection) %}
-  <a href="{{ subsection.path | safe }}"><h2>{{ subsection.title }}</h2></a>
   {% for subpage in subsection.pages %}
+  {% if counter < 15 %}
   <a href="{{ subpage.permalink | safe }}">
         <div class="blog-intro ">
             <p class="blog-title">
@@ -25,7 +33,14 @@
             </div>
         </div>
     </a>
+    {% endif %}
+  {% set_global counter = 1 + counter %}
   {% endfor %}
   {% endfor %}
+  <a href="/blog">see more</a>
 </div>
-{% endblock content %}
+
+  </div>
+</div>
+
+  {% endblock content %}
