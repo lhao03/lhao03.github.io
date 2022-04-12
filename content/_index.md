@@ -22,7 +22,7 @@ intro = "I'm a chemistry nerd and `filter` and `map` enthusiast studying [💻 C
 ## In a previous life...
 - had some [fails](@/me/fails.md).
 - [worked](@/me/experience.md) at some places.
-- helped [teach](@me/experience.md) some courses.
+- helped [teach](@/me/experience.md) some courses.
 - deadlifted 205 pounds.
 - did competitive cross country running and track and field.
 - was vegan.
