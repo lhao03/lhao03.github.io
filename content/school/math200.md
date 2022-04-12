@@ -2,7 +2,7 @@
 title = "MATH 200"
 description = "Calculus III"
 weight = 3
-date = 2022-04-11
+date = 2021-12-31
 [extra]
 course = "MATH"
 year = 3

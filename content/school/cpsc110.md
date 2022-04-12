@@ -2,7 +2,7 @@
 title = "CPSC 110"
 description = "Computation, Programs, and Programming"
 weight = 0
-date = 2022-04-11
+date = 2019-12-31
 [extra]
 course = "CPSC"
 year = 1

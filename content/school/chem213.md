@@ -2,7 +2,7 @@
 title = "CHEM 213"
 description = "Organic Chemistry"
 weight = 1
-date = 2022-04-11
+date = 2022-01-01
 [extra]
 course = "CHEM"
 year = 3

@@ -2,7 +2,7 @@
 title = "STAT 251"
 description = "Elementary Statistics"
 weight = 9
-date = 2022-04-11
+date = 2021-05-31
 [extra]
 course = "STAT"
 year = 2

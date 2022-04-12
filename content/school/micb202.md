@@ -2,7 +2,7 @@
 title = "MICB 202"
 description = "Introductory Medical Microbiology and Immunology"
 weight = 4
-date = 2022-04-11
+date = 2020-12-31
 [extra]
 course = "MICB"
 year = 2

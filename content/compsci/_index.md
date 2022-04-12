@@ -2,6 +2,6 @@
 title = "Computer Science"
 sort_by = "date"
 template = "subsection.html"
-page_template = "blog-page.html"
+page_template = "post.html"
 +++
 

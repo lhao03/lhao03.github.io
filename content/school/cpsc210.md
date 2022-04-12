@@ -2,7 +2,7 @@
 title = "CPSC 210"
 description = "Software Construction"
 weight = 0
-date = 2022-04-11
+date = 2020-05-31
 [extra]
 course = "CPSC"
 year = 1

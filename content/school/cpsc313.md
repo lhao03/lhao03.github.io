@@ -2,7 +2,7 @@
 title = "CPSC 313"
 description = "Computer Hardware and Operating Systems"
 weight = 0
-date = 2022-04-11
+date = 2022-01-01
 [extra]
 course = "CPSC"
 year = 3

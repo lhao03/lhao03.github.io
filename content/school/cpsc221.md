@@ -2,7 +2,7 @@
 title = "CPSC 221"
 description = "Basic Algorithms and Data Structures"
 weight = 0
-date = 2022-04-11
+date = 2020-12-31
 [extra]
 course = "CPSC"
 year = 2
