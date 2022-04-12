@@ -11,21 +11,21 @@ intro = "I'm a chemistry nerd and `filter` and `map` enthusiast studying [💻 C
 <div>
 
 ## At the moment I'm...
-- 🎒 taking courses in computer hardware and operating systems, organic chemistry, and genetics.
-- ⌨️  learning how to use Vim! I've finally deleted VSCode	٩(◕‿◕)۶.
-- 👀 reading papers and books!
+- taking courses in computer hardware and operating systems, organic chemistry, and genetics.
+- learning how to use Vim! I've finally deleted VSCode	٩(◕‿◕)۶.
+- reading papers and books!
 
 </div>
 
 <div>
 
 ## In a previous life...
-- 🤷🏻‍♀ had some [fails](@/me/fails.md).
-- [worked](@/me/experience.md) at some places
-- 🎒 helped [teach](@me/experience.md) some courses
-- 💪 deadlifted 205 pounds.
-- 🏃🏻‍♀ did competitive cross country running and track and field.
-- 🥕 was vegan.
+- had some [fails](@/me/fails.md).
+- [worked](@/me/experience.md) at some places.
+- helped [teach](@me/experience.md) some courses.
+- deadlifted 205 pounds.
+- did competitive cross country running and track and field.
+- was vegan.
 
 </div>
 </div>
@@ -33,21 +33,21 @@ intro = "I'm a chemistry nerd and `filter` and `map` enthusiast studying [💻 C
 <div>
 
 ## Interesting Books...
-- 📚 [Critically Conscious Computing](https://criticallyconsciouscomputing.org/)
-- 📚 [Design Justice](https://design-justice.pubpub.org/)
-- 📚 [Programmed Inequality](https://mitpress.mit.edu/books/programmed-inequality)
-- 📚 [Your Computer is on Fire](https://mitpress.mit.edu/books/your-computer-fire)
+- [Critically Conscious Computing](https://criticallyconsciouscomputing.org/)
+- [Design Justice](https://design-justice.pubpub.org/)
+- [Programmed Inequality](https://mitpress.mit.edu/books/programmed-inequality)
+- [Your Computer is on Fire](https://mitpress.mit.edu/books/your-computer-fire)
 
 </div>
 
 <div>
 
 ## People I think are cool...
-- ✨ [Ryan](https://www.ryanmehri.dev/)
-- ✨ [Amy J. Ko](https://faculty.washington.edu/ajko/)
-- ✨ [Talia Ringer](https://twitter.com/TaliaRinger)
-- ✨ [Simon Peyton Jones](https://en.wikipedia.org/wiki/Simon_Peyton_Jones)
-- ✨ [Stephen Diehl](https://twitter.com/smdiehl) 
+- [Ryan](https://www.ryanmehri.dev/)
+- [Amy J. Ko](https://faculty.washington.edu/ajko/)
+- [Talia Ringer](https://twitter.com/TaliaRinger)
+- [Simon Peyton Jones](https://en.wikipedia.org/wiki/Simon_Peyton_Jones)
+- [Stephen Diehl](https://twitter.com/smdiehl) 
 
 </div>
 
