@@ -1,8 +1,8 @@
 +++
 title="🧬 Why Biochemistry and Computer Science?"
-date=2021-04-18
+date=2022-03-13
 [extra]
-updates = ["2022-03-13"]
+updates = ["2021-04-18"]
 +++
 
 My choice to major in biochemistry and computer science is unconventional. Even though there aren't many common courses between the two disciplines (except MATH 100/101/200 😢), I wouldn't have my major any other way. <!-- more -->  Since the seventh grade, I became obsessed with chemistry. For fun, I drew out my periodic table and hung it on the wall in my room. That periodic table still hangs in my room. But how did I get started in computer science? 

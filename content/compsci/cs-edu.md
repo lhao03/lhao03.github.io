@@ -1,9 +1,9 @@
 +++
 title = "Thoughts based on my path to CS and Opinions on Minority Programs for CS"
-date = 2022-02-14
+date = 2022-03-25
 draft = false
 [extra]
-updates = ["2022-03-13", "2022-03-25"]
+updates = ["2022-02-14", "2022-03-13"]
 +++
 *Originally named: Thoughts based on my path to CS, and opinions on CS Education*
 

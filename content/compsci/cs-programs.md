@@ -1,9 +1,9 @@
 +++
 title = "compsci curriculums"
-date = 2022-02-28
+date = 2022-03-13
 draft = true
 [extra]
-updates = ["2022-03-13"]
+updates = ["2022-02-28"]
 +++
 
 (cmu)[http://coursecatalog.web.cmu.edu/schools-colleges/schoolofcomputerscience/undergraduatecomputerscience/#bscurriculumtextcontainer]

@@ -1,9 +1,9 @@
 +++
 title = "💼 My first developer job: PROOF Centre"
-date = 2021-05-21
+date = 2022-03-13
 draft = false
 [extra]
-updates = ["2022-03-13"]
+updates = ["2021-05-21"]
 +++
 
 Who would have thought that my first job would take place in my bedroom? <!-- more --> Definitely not me. Even less did I think I would end up:

@@ -3,7 +3,6 @@ title = "Why I'm done organizing hackathons"
 date = 2022-02-10
 draft = false
 [extra]
-updates = ["2022-02-10"]
 +++
 CW: swearing, breaking down, negativity
 

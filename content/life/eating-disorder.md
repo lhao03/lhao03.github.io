@@ -1,9 +1,9 @@
 +++
 title = "my eating disorder, body dysmorphia and mental health during COVID-19"
-date = 2022-03-28
+date = 2022-04-02
 draft = false
 [extra]
-updates = ["2022-04-02"]
+updates = ["2022-03-28"]
 +++
 
 *TW: Mentions of exercise, diets, eating disorders*

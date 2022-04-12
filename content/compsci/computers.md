@@ -1,9 +1,9 @@
 +++
 title = "Everyone should learn about computers, not coding"
-date = 2022-03-28
+date = 2022-04-01
 draft = false
 [extra]
-updates = ["2022-03-31", "2022-04-01"]
+updates = ["2022-03-28", "2022-03-31"]
 img = "codingnot.png"
 alt = "Computer, Disk, File System, Linux Logo, Windows Logo, Apple Logo, Google Search Results for Coding is the Future"
 +++

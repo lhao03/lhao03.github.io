@@ -1,9 +1,9 @@
 +++
 title = "My thoughts on hackathons"
-date = 2021-07-10
+date = 2022-03-19
 draft = false
 [extra]
-updates = ["2022-03-13", "2022-03-19"]
+updates = ["2022-03-13", "2021-07-10"]
 +++
 
 I've attended a few hackathons, in-person and remote, and at first, a hackathon seemed like the perfect event. Free food, tech companies, and swag? What else could you ask for? Well, under all the free food and company shirts lies copy-pasted Stack Overflow code, dry eyes, and more. Attending hackathons now seems like a chore I need to check off as a computer science student. And frankly, I feel guilty for feeling this way. But after reading this blurb from [Design Justice](https://files.slack.com/files-pri/T01V91WKPRS-F0237LNNB25/image.png), this blog post from [Jacky](https://jzhao.xyz/posts/hackathons/?ref=home), and various other posts such as [this](https://www.quora.com/Why-might-someone-really-like-programming-contests-but-have-no-desire-to-go-to-a-hackathon), [this](https://dev.to/shobhitic/why-i-am-not-going-to-attend-hackathons-anymore-2896) and [this](https://thedailytexan.com/2018/05/02/fall-out-of-love-with-the-hackathon/) I've realized that everything I feel towards hackathons is valid. For some context, I started going to hackathons in 2019 in my first year of university, so my hackathon experience may not match yours. These are purely my own experiences and may not reflect the majority of hackathon experiences.

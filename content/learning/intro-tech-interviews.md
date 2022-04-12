@@ -1,9 +1,9 @@
 +++
 title = "💻 Intro to Technical Interviews"
-date = 2021-11-08
+date = 2022-03-13
 draft = true
 [extra]
-updates = ["2022-03-13"]
+updates = ["2021-11-08"]
 +++
 
 I put on a workshop for HackCamp 2021; here are the [slides](https://docs.google.com/presentation/d/13aEWjCiM94rCYtpk9mAyOdFH7Xti1CZMbzkTMQAAZCc/edit?usp=sharing).

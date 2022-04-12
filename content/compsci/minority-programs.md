@@ -1,9 +1,9 @@
 +++
 title = "Opinions on Minority Programs for CS"
-date = 2022-02-14
+date = 2022-04-07
 draft = false
 [extra]
-updates = ["2022-03-13", "2022-03-25", "2022-04-07"]
+updates = ["2022-03-13", "2022-03-25", "2022-02-14"]
 +++
 
 *Extracted into it's own post. Is also part of this [post](@/compsci/cs-edu.md), but I think this could also stand on it's own.*

@@ -1,9 +1,9 @@
 +++
 title = "🤔 1/3 of 2021"
-date = 2021-05-01
+date = 2022-03-13
 draft = false
 [extra]
-updates = ["2022-03-13"]
+updates = ["2021-05-01"]
 +++
 
 So what have I been up to these past four months? A few things include:

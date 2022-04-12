@@ -1,9 +1,9 @@
 +++
 title = "🖊 My thoughts on using the iPad for notes"
-date = 2021-12-26
+date = 2022-03-15
 draft = false
 [extra]
-updates = ["2022-03-15"]
+updates = ["2021-12-26"]
 +++
 
 # My issues with handwriting notes

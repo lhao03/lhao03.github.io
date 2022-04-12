@@ -1,9 +1,9 @@
 +++
 title = "💻 Computers Viruses and Biological Viruses"
-date = 2021-12-24
+date = 2022-03-14
 draft = false
 [extra]
-updates = ["2022-03-14"]
+updates = ["2021-12-24"]
 category = ["healthsci", "compsci"]
 +++
 
