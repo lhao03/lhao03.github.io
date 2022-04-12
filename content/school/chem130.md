@@ -2,6 +2,7 @@
 title = "CHEM 130"
 description = "Thermodynamics, Kinetics and Organic Chemistry"
 weight = 1
+date = 2022-04-11
 [extra]
 course = "CHEM"
 year = 1

@@ -2,6 +2,7 @@
 title = "DSCI 100"
 description = "Introduction to Data Science"
 weight = 9
+date = 2022-04-11
 [extra]
 course = "DSCI"
 year = 1

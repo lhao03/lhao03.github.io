@@ -2,6 +2,7 @@
 title = "ATSC 113"
 description = "Applied Meteorology"
 weight = 9
+date = 2022-04-11
 [extra]
 course = "ATSC"
 year = 1

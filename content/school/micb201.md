@@ -2,6 +2,7 @@
 title = "MICB 201"
 description = "Introductory Environmental Microbiology"
 weight = 4
+date = 2022-04-11
 [extra]
 course = "MICB"
 year = 2

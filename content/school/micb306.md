@@ -2,6 +2,7 @@
 title = "MICB 306"
 description = "Molecular Virology"
 weight = 4
+date = 2022-04-11
 [extra]
 course = "MICB"
 year = 3

@@ -2,6 +2,7 @@
 title = "BIOC 202"
 description = "Introductory Medical Biochemistry"
 weight = 1
+date = 2022-04-11
 [extra]
 course = "BIOC"
 year = 3

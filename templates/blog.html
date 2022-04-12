@@ -2,7 +2,7 @@
 
 {% block content %}
 
-{% set_global counter = 0 %}
+{% set_global posts = [] %}
 <h1>{{ section.title }}</h1>
 {% set intro = section.extra.intro | markdown %}
 {{ intro | safe }}
@@ -20,8 +20,10 @@
 <div class="blog flexcol">
   {% for subsection in section.subsections %}
   {% set subsection = get_section(path=subsection) %}
-  {% for subpage in subsection.pages %}
-  {% if counter < 15 %}
+  {% set_global posts = posts | concat(with=subsection.pages) %}
+  {% endfor %}
+  {% for subpage in posts | sort(attribute="date") | reverse %}
+  {% if loop.index0 < 12 %}
   <a href="{{ subpage.permalink | safe }}">
         <div class="blog-intro ">
             <p class="blog-title">
@@ -33,9 +35,7 @@
             </div>
         </div>
     </a>
-    {% endif %}
-  {% set_global counter = 1 + counter %}
-  {% endfor %}
+  {% endif %}
   {% endfor %}
   <a href="/blog">see more blog posts</a>
 </div>

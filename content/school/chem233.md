@@ -2,6 +2,7 @@
 title = "CHEM 233"
 description = "Organic Chemistry for the Biological Sciences"
 weight = 1
+date = 2022-04-11
 [extra]
 course = "CHEM"
 year = 2

@@ -2,6 +2,7 @@
 title = "BIOL 200"
 description = "Fundamentals of Cell Biology"
 weight = 2
+date = 2022-04-11
 [extra]
 course = "BIOL"
 year = 2
