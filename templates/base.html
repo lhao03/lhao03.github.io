@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+{% set data = load_data(path="content/data/index.toml") %}
+
+<head>
+    <link rel="preconnect" href="https://www.googletagmanager.com" />
+    <link rel="preconnect" href="https://www.google-analytics.com" />
+
+    <!-- basic favicon -->
+    <link rel="icon" href="{{get_url(path=data.favicon)}}" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{get_url(path=data.favicon)}}">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{get_url(path=data.favicon)}}">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{get_url(path=data.favicon)}}">
+    <link rel="apple-touch-icon-precomposed" href="{{get_url(path=data.favicon)}}">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154930983-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+
+        gtag("config", "UA-154930983-1");
+    </script>
+    <!-- Primary Meta Tags -->
+    <title>{{data.title}}</title>
+    <meta name="title" content="{{data.title}}">
+    <meta name="description" content="{{data.desc}}">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://metatags.io/">
+    <meta property="og:title" content="{{data.title}}">
+    <meta property="og:description" content="{{data.desc}}">
+
+    <!-- Twitter -->
+    <meta name="twitter:creator" content="@hoalycu">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="{{data.title}}">
+    <meta property="twitter:description" content="{{data.desc}}">
+    <meta property="twitter:image" content="{{get_url(path=data.favicon)}}">
+
+    <!-- Other Meta tags -->
+    <meta charset="UTF-8" />
+    <meta name="description" content="{{data.title}}" />
+    <meta property="og:image" content="{{get_url(path=data.favicon)}}">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://use.fontawesome.com/8e0ceafb9b.js"></script>
+    <link rel="stylesheet" href="{{get_url(path=data.css_path)}}">
+
+</head>
+
+<body class="container blue-mesh">
+    <section>
+        <div class="page">
+        <div class="flex-row">
+        <a href="/">
+      <img class="top-left" src="{{get_url(path=data.favicon)}}"/>
+        </a>
+        </div>
+          {% block content %} {% endblock content %}
+        </div>
+        <div id="wcb" class="carbonbadge"></div>
+<script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>
+        <footer>
+            <div class="flex-row">
+                {% for link in data.links %}
+                <a href="{{link.link}}" target="_blank">
+            <p class="lucyfont">{{ link.name }}</p>
+                </a>
+                {% endfor %}
+            </div>
+            <p style="text-align: center; padding-bottom: 5vh;" class="lucyfont">made with 💖 and Zola by Lucy</p>
+        </footer>
+      <!-- <img class="animal-img bottom-left" src="{{get_url(path=data.shibe_heh)}}"/> -->
+      <img class="animal-img top-right" src="{{get_url(path=data.cat_scared)}}"/>
+      <!-- <img class="animal-img bottom-right" src="{{get_url(path=data.shib_cool)}}"/> -->
+    </section>
+</body>
+
+</html>

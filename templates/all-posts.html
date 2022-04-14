@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% set_global posts = [] %}
+{% set section = get_section(path="_index.md") %}
+
+<h1>{{ page.title }}</h1>
+{{ page.content | safe }}
+
+  {% for subsection in section.subsections %}  
+  {% set subsection = get_section(path=subsection) %}
+  {% set_global posts = posts | concat(with=subsection.pages) %}
+  <a href="{{ subsection.path | safe }}">{{ subsection.title }}</a>
+  {% endfor %}
+<div class="blog flexcol">
+  {% for subpage in posts | sort(attribute="date") | reverse %}
+  <a href="{{ subpage.permalink | safe }}">
+        <div class="blog-intro ">
+            <p class="blog-title">
+                {{ subpage.title }}
+            </p>
+            <div class="flex-row">
+            <p class="date-time">{{ subpage.reading_time }} mins</p>
+            <p>{{ subpage.date }}</p>
+            </div>
+        </div>
+    </a>
+  {% endfor %}
+</div>
+{% endblock content %}

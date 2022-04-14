@@ -1,0 +1,100 @@
+@import "variables";
+@import "blog";
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Kalam:wght@300;400;700&display=swap');
+@import "mobile";
+@import "header-footer";
+@import "letters";
+@import "flex";
+@import "fun";
+
+.unselectable {
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+html {
+  overflow-x: hidden;
+  max-width: 100%;
+  scroll-behavior: smooth;
+  color: grey;
+}
+
+html.is-active {
+  overflow-y: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: fit-content;
+  max-width: 100%;
+  position: relative;
+  overflow-x: hidden;
+}
+
+section {
+  margin: 0;
+  padding: 0;
+}
+
+.fullscreen {
+  height: 100vh;
+}
+
+.page {
+  @media (max-width: $maxWidth) {
+    width: 90vw;
+  }
+  width: 60vw;
+  margin-left: auto;
+  margin-right: auto;
+  a,
+  li > a {
+    text-decoration: underline;
+  }
+}
+
+.toggle {
+  display: none;
+}
+.toggle-label {
+  cursor: pointer;
+}
+
+.theme-toggle {
+  max-width: 100px;
+  min-width: 60px;
+  top: 0;
+  margin: 0;
+  z-index: 10000;
+}
+
+
+.block {
+  margin: 50px auto;
+}
+
+.about {
+ ul {
+   list-style-type: none;
+   padding-left: 0;
+ }
+}
+
+.twothirds {
+width:50%;
+  @media (max-width: $maxWidth) {
+    width: 100%;
+  }
+}
+
+.onethird {
+  @media (max-width: $maxWidth) {
+    width: 100%;
+  }
+width:45%;
+}

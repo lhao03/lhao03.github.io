@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>{{ section.title }}</h1>
+{{ section.content | safe }}
+
+<div class="blog flexcol">
+  {% for page in section.pages %}
+    <a href="{{ page.permalink | safe }}">
+        <div class="blog-intro ">
+            <p class="blog-title">
+                {{ page.title }}
+            </p>
+            <div class="flex-row">
+            <p class="date-time">{{ page.reading_time }} mins</p>
+            <p>{{ page.date }}</p>
+            </div>
+        </div>
+    </a>
+  {% endfor %}
+  <a href="/blog" class="highlight"><span style="font-weight: bolder;">ᐊ</span> go back to all posts</a>
+</div>
+{% endblock content %}

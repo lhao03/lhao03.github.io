@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% set data = load_data(path="content/data/index.toml") %}
+
+<h1>{{ section.title }}</h1>
+{{ section.content | safe }}
+
+  {% for course in data.courses %}
+  {% if course != "OTHER" %}
+  <h2>{{course}}</h2>
+    {% for page in section.pages %}
+    {% if page.extra.course in course %}
+    <p>
+    <a href="{{ page.permalink | safe }}">
+      <span style="font-weight: bold;">{{ page.title }}: {{ page.description }}</span>
+    </a>
+    </p>
+    {% endif %}
+    {% endfor %}
+    {% else %}
+  <h2>{{course}}</h2>
+    {% for page in section.pages %}
+    {% if page.extra.course not in "CPSC and MATH" %}
+    {% if page.extra.course not in "BIOC and CHEM" %}
+    <p>
+    <a href="{{ page.permalink | safe }}">
+      <span style="font-weight: bold;">{{ page.title }}: {{ page.description }}</span>
+    </a>
+    </p>
+    {% endif %}
+    {% endif %}
+    {% endfor %}
+    {% endif %}
+    {% endfor %}
+  <a href="/blog" class="highlight"><span style="font-weight: bolder;">ᐊ</span> go back to all posts</a>
+{% endblock content %}

@@ -1,0 +1,66 @@
+@import "variables";
+
+pre {
+  overflow-x: scroll;
+  max-width: 80vw;
+  padding: 5px;
+}
+
+.blog {
+  flex-wrap: wrap;
+  .blog-intro {
+    padding: 15px;
+    .blog-title {
+      font-weight: bold;
+    }
+    p {
+      margin: 0;
+    }
+  }
+}
+
+.post {
+  margin-left: auto;
+  margin-right: auto;
+  @media (max-width: $maxWidth) {
+    width: 85vw;
+  }
+  blockquote {
+    position: relative;
+    line-height: 56px;
+    padding-left: 40px;
+    border-left: 5px solid $grey;
+
+  }
+
+  .wide {
+    width: 50vw;
+      height: 100%;
+   @media (max-width: $maxWidth) {
+      width: 90vw;
+      height: 100%;
+    }
+
+  }
+
+  img {
+      height: 100%;
+      width: 60vw;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      padding-bottom: 10px;
+    @media (max-width: $maxWidth) {
+      width: 90vw;
+      height: 100%;
+    }
+  }
+}
+
+table, th, td  {
+   border-collapse: collapse;
+   border: 1px solid var(--text-color);
+   color: var(--text-color);
+   font-family:  'Source Sans Pro', sans-serif;
+   padding: 5px;
+}
