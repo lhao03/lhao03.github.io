@@ -11,8 +11,7 @@ intro = "I'm a chemistry nerd and `filter` and `map` enthusiast studying [💻 C
 <div>
 
 ## At the moment I'm...
-- taking [courses](@/school/_index.md) in computer hardware and operating systems, organic chemistry, and genetics.
-- learning how to use Vim! I've finally deleted VSCode	٩(◕‿◕)۶.
+- thinking about my future.
 - reading papers and books!
 
 </div>
@@ -37,17 +36,6 @@ intro = "I'm a chemistry nerd and `filter` and `map` enthusiast studying [💻 C
 - [Design Justice](https://design-justice.pubpub.org/)
 - [Programmed Inequality](https://mitpress.mit.edu/books/programmed-inequality)
 - [Your Computer is on Fire](https://mitpress.mit.edu/books/your-computer-fire)
-
-</div>
-
-<div>
-
-## People I think are cool...
-- [Ryan](https://www.ryanmehri.dev/)
-- [Amy J. Ko](https://faculty.washington.edu/ajko/)
-- [Talia Ringer](https://twitter.com/TaliaRinger)
-- [Simon Peyton Jones](https://en.wikipedia.org/wiki/Simon_Peyton_Jones)
-- [Stephen Diehl](https://twitter.com/smdiehl) 
 
 </div>
 

@@ -12,7 +12,7 @@
 {{ section.content | safe }}
   </div>
   <div class="onethird">
-  <h3>Some blog posts:</h3>
+  <h3>Some blog posts...</h3>
   {% for subsection in section.subsections %}  
   {% set subsection = get_section(path=subsection) %}
   {% set_global posts = posts | concat(with=subsection.pages) %}
@@ -20,7 +20,7 @@
   {% endfor %}
 <div class="blog flexcol">
   {% for subpage in posts | sort(attribute="date") | reverse %}
-  {% if loop.index0 < 12 %}
+  {% if loop.index0 < 9 %}
   <a href="{{ subpage.permalink | safe }}">
         <div class="blog-intro ">
             <p class="blog-title">
