@@ -13,6 +13,7 @@ intro = "I'm a chemistry nerd and `filter` and `map` enthusiast studying [💻 C
 ## At the moment I'm...
 - thinking about my future.
 - reading papers and books!
+- trying to learn more Rust.
 
 </div>
 
