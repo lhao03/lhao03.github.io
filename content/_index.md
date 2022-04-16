@@ -4,7 +4,7 @@ sort_by = "date"
 template = "main.html"
 page_template = "post.html"
 [extra]
-intro = "I'm a chemistry nerd and `filter` and `map` enthusiast studying [💻 Computer Science](https://www.cs.ubc.ca/) and [🧪 Chemistry](https://www.chem.ubc.ca/) at the [University of British Columbia](https://www.ubc.ca/). I enjoy learning about how and why things work, especially pertaining to biological processes (from a chemistry perspective), viruses, operating systems, and programming languages. I've also been thinking about how computer science education should work at the primary and secondary school level and enjoy reading about computing history and the impact of technological systems on society."
+intro = "I'm a chemistry nerd and `filter` and `map` enthusiast studying [Computer Science](https://www.cs.ubc.ca/) and [Chemistry](https://www.chem.ubc.ca/) at the [University of British Columbia](https://www.ubc.ca/). I enjoy learning about how and why things work, especially pertaining to biological processes (from a chemistry perspective), viruses, operating systems, and programming languages. I've also been thinking about how computer science education should work at the primary and secondary school level and enjoy reading about computing history and the impact of technological systems on society."
 +++
 
 <div class="flex-col">
@@ -40,7 +40,7 @@ intro = "I'm a chemistry nerd and `filter` and `map` enthusiast studying [💻 C
 
 </div>
 
-💖 To get in touch with me or see my resume, send an email to `(string-append "hao" "." "lucyy" "@" "gmail" "." "com")`. I also like cats.
+To get in touch with me or see my resume, send an email to `(string-append "hao" "." "lucyy" "@" "gmail" "." "com")`. I also like cats.
 {{ img(img="../type.gif") }}
 
 
