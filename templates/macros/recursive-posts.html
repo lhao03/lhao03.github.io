@@ -12,19 +12,23 @@
     </a>
 {% endmacro displaypage %}
 
-{% macro getposts(posts,section) %}
+{% macro getposts(posts,section,num) %}
   {% for subsection in section.subsections %}
   {% set subsection = get_section(path=subsection) %}
   <a href="{{ subsection.path | safe }}">{{ subsection.title }}</a>
   {% set_global posts = posts | concat(with=subsection.pages) %}
   {% endfor %}
   <div class="blog flexcol">
+  {% if num != 0 %}
   {% for subpage in posts | sort(attribute="date") | reverse %}
-  {% if loop.index0 < 9 %}
+  {% if loop.index0 < num %}
   {{ self::displaypage(page=subpage)}}
-    {% endif %}
+  {% endif %}
   {% endfor %}
+  {% else %}
+  {% for subpage in posts | sort(attribute="date") | reverse %}
+  {{ self::displaypage(page=subpage)}}
+  {% endfor %}
+  {% endif %}
 </div>
 {% endmacro getposts %}
-
-

@@ -9,12 +9,12 @@
 {{ intro | safe }}
 <div class="flex-row-col">
   <div class="twothirds">
-{{ section.content | safe }}
+    {{ section.content | safe }}
   </div>
   <div class="onethird">
   <h3>Some blog posts...</h3>
-  {{ macros::getposts(posts=posts,section=section) }}
-  <a href="/blog">see more blog posts</a>
+  {{ macros::getposts(posts=posts,section=section,num=9) }}
+  <a href="/blog">read more posts</a>
   </div>
 </div>
 {% endblock content %}
