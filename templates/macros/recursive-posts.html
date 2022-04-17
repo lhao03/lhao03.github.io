@@ -1,0 +1,30 @@
+{% macro displaypage(page) %}
+<a href="{{ page.permalink | safe }}">
+        <div class="blog-intro ">
+            <p class="blog-title">
+                {{ page.title }}
+            </p>
+            <div class="flex-row">
+            <p class="date-time">{{ page.reading_time }} mins</p>
+            <p>{{ page.date }}</p>
+            </div>
+        </div>
+    </a>
+{% endmacro displaypage %}
+
+{% macro getposts(posts,section) %}
+  {% for subsection in section.subsections %}
+  {% set subsection = get_section(path=subsection) %}
+  <a href="{{ subsection.path | safe }}">{{ subsection.title }}</a>
+  {% set_global posts = posts | concat(with=subsection.pages) %}
+  {% endfor %}
+  <div class="blog flexcol">
+  {% for subpage in posts | sort(attribute="date") | reverse %}
+  {% if loop.index0 < 9 %}
+  {{ self::displaypage(page=subpage)}}
+    {% endif %}
+  {% endfor %}
+</div>
+{% endmacro getposts %}
+
+

@@ -1,24 +1,21 @@
 {% extends "base.html" %}
+{% import "macros/recursive-posts.html" as macros %}
 
 {% block content %}
+
+{% set_global posts = [] %}
 
 <h1>{{ section.title }}</h1>
 {{ section.content | safe }}
 
 <div class="blog flexcol">
-  {% for page in section.pages %}
-    <a href="{{ page.permalink | safe }}">
-        <div class="blog-intro ">
-            <p class="blog-title">
-                {{ page.title }}
-            </p>
-            <div class="flex-row">
-            <p class="date-time">{{ page.reading_time }} mins</p>
-            <p>{{ page.date }}</p>
-            </div>
-        </div>
-    </a>
-  {% endfor %}
-  <a href="/blog" class="highlight"><span style="font-weight: bolder;">ᐊ</span> go back to all posts</a>
+{% if section.extra.subfolder %}
+{{ macros::getposts(posts=posts,section=section) }}
+{% else %}
+{% for page in section.pages %}
+{{ macros::displaypage(page=page) }}
+{% endfor %}
+{% endif %}
+    <a href="/blog" class="highlight"><span style="font-weight: bolder;">ᐊ</span> go back to all posts</a>
 </div>
 {% endblock content %}
