@@ -1,12 +1,10 @@
 {% extends "base.html" %}
-{% import "macros/recursive-posts.html" as macros %}
+{% import "macros/macros.html" as macros %}
 
 {% block content %}
 
-{% set_global posts = [] %}
-{% set section = get_section(path="_index.md") %}
-
-<h1>{{ page.title }}</h1>
-{{ page.content | safe }}
-{{ macros::getposts(posts=posts,section=section,num=0) }}
+<h1>{{ section.title }}</h1>
+{{ section.content | safe }}
+{{ macros::subsectionlinks(section=section) }}
+{{ macros::displaypaginator(paginator=paginator) }}
 {% endblock content %}

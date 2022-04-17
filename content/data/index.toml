@@ -8,6 +8,7 @@ shibe_heh = "/animals/shibe_heh-removebg-preview.png"
 cat_scared= "/animals/cat_scared-removebg-preview.png"
 shib_cool = "/animals/shib_cool-removebg-preview.png"
 hedgehog = "/animals/hedgehog.png"
+type = "type.gif"
 
 links = [
   { name = "github", link = "https://github.com/lhao03" },

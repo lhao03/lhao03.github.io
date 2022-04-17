@@ -98,3 +98,13 @@ width:50%;
   }
 width:45%;
 }
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  @media (max-width: $maxWidth) {
+    width: 100%;
+  }
+}

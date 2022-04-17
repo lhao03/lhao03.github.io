@@ -1,20 +1,23 @@
 {% extends "base.html" %}
-{% import "macros/recursive-posts.html" as macros %}
+{% import "macros/macros.html" as macros %}
+{% set data = load_data(path="content/data/index.toml") %}
 
 {% block content %}
 
-{% set_global posts = [] %}
 <h1>{{ section.title }}</h1>
 {% set intro = section.extra.intro | markdown %}
 {{ intro | safe }}
 <div class="flex-row-col">
   <div class="twothirds">
     {{ section.content | safe }}
+    <img class="center" alt="black cat in purple sweater typing" src="{{get_url(path=data.type)}}"/>
   </div>
   <div class="onethird">
   <h3>Some blog posts...</h3>
-  {{ macros::getposts(posts=posts,section=section,num=9) }}
-  <a href="/blog">read more posts</a>
+  {% set_global blog = get_section(path="blog/_index.md") %}
+  {{ macros::subsectionlinks(section=blog) }}
+  {{ macros::displaypaginator(paginator=paginator) }}
   </div>
 </div>
+
 {% endblock content %}

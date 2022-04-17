@@ -6,21 +6,18 @@
   {% if page.extra.img %}
   <img class="norm" src="/res/blog_photos/{{page.extra.img}}" alt="{{page.extra.alt}}">
   {% endif %}
+
   <p class="subtitle">
-    Most recently updated:
+    Written:
     <strong>
       {{ page.date }}
-    </strong>, {{ page.word_count }} words, {{ page.reading_time }} mins
+    </strong>
     <br />
-    {% if page.extra.updates %}
-    First written and updates:
-    {% for update in page.extra.updates | sort %}
-    {% if loop.last %}
-    <strong>{{ update }}</strong>
-    {% else %}
-    <strong>{{ update }}, </strong>
-    {% endif %}
-    {% endfor %}
+    <strong>{{ page.word_count }} words, {{ page.reading_time }} mins</strong>
+    <br />
+    {% if page.updated %}
+    Updated:
+    <strong>{{ page.updated }}</strong>
     {% endif %}
   </p>
   {% if page.toc and page.word_count > 400 %}

@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% import "macros/recursive-posts.html" as macros %}
+{% import "macros/macros.html" as macros %}
 
 {% block content %}
 
@@ -8,14 +8,12 @@
 <h1>{{ section.title }}</h1>
 {{ section.content | safe }}
 
-<div class="blog flexcol">
-{% if section.extra.subfolder %}
-{{ macros::getposts(posts=posts,section=section,num=0) }}
+{% if paginator %}
+{{ macros::subsectionlinks(section=section) }}
+{{ macros::displaypaginator(paginator=paginator) }}
 {% else %}
-{% for page in section.pages %}
-{{ macros::displaypage(page=page) }}
-{% endfor %}
+{{ macros::displayblog(section=section) }}
 {% endif %}
-    <a href="/blog" class="highlight"><span style="font-weight: bolder;">ᐊ</span> go back to all posts</a>
-</div>
+<a {% if section.extra.backpage %} href="/blog/{{ section.extra.backpage}}" {% else %} href="/blog" {% endif %} class="highlight">
+  <span style="font-weight: bolder;">ᐊ</span> go back to all {% if section.extra.backpage %} {{ section.extra.backpage }} {% else %}posts {% endif %}</a>
 {% endblock content %}

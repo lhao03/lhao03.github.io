@@ -1,0 +1,47 @@
+{% macro displaypage(page) %}
+<a href="{{ page.permalink | safe }}">
+        <div class="blog-intro ">
+            <p class="blog-title">
+                {{ page.title }}
+            </p>
+            <div class="flex-row">
+            <p class="date-time">{{ page.reading_time }} mins</p>
+            <p>{{ page.date }}</p>
+            </div>
+        </div>
+    </a>
+{% endmacro displaypage %}
+
+{% macro subsectionlinks(section) %}
+{% for subsection in section.subsections %}
+  {% set subsection = get_section(path=subsection) %}
+  <a href="{{ subsection.path | safe }}">{{ subsection.title }}</a>
+  {% endfor %}
+{% endmacro subsectionlinks %}
+
+{% macro displayblog(section,num=-1) %}
+{{ self::subsectionlinks(section=section) }}
+  <div class="blog flexcol">
+  {% for page in section.pages %}
+  {% if loop.index0 < num or num == -1 %}
+  {{ macros::displaypage(page=page) }}
+  {% endif %}
+  {% endfor %}
+  </div>
+{% endmacro displayblog %}
+
+{% macro displaypaginator(paginator) %}
+<div class="blog flexcol">
+    {% for page in paginator.pages %}
+    {{ macros::displaypage(page=page)}}
+    {% endfor %}
+    <div class="flex-row">
+    {% if paginator.previous %}
+        <a class="previous" href="{{ paginator.previous }}">‹ Previous</a>
+    {% endif %}
+    {% if paginator.next %}
+        <a class="next" href="{{ paginator.next }}">Next ›</a>
+    {% endif %}
+</div>
+</div>
+{% endmacro paginator %}
