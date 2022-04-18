@@ -121,7 +121,7 @@ With more variants emerging, the government has a responsibility to update it's 
 
 And as with any software, software must be maintained. Our world is constantly changing, and software must adapt to these changes, not the other way around. However, it seems today that the world is constantly catering to the software.
 
-# We don't get suck from being near someone, but from interacting with the virus by surface, liquid or air. Viruses may be more airborne than we thought
+# We don't get sick from being near someone, but from interacting with the virus by surface, liquid or air. Viruses may be more airborne than we thought
 In virology lecture we are taught that airborne particles can be respiratory droplets or aerosolised particles. At the beginning of the pandemic, WHO made the erroneous judgement that COVID-19 was spread through respiratory droplets that eventually fall onto surfaces and then infect those that touch those surfaces. This horrible mistake led Western nations to [slap a sanitizer machine at every building entrance, increase their sanitization of desks and more surface focused cleaning](https://www.nature.com/articles/d41586-021-00251-4).
 
 [But can you blame WHO for this faulty judgement](https://www.nature.com/articles/d41586-022-00925-7)? [Well, it depends, because lot's of medical experts were making the assumption that most viruses couldn't be airborne since they were smaller than 5 microns.](https://www.wired.com/story/the-teeny-tiny-scientific-screwup-that-helped-covid-kill/). But that number was actually cherry picked out of context.
