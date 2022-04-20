@@ -34,3 +34,9 @@
   margin: 0;
   z-index: 10000;
 }
+
+iframe {
+  max-width:660px;
+  overflow:hidden;
+  background:transparent;
+}

@@ -13,11 +13,20 @@
     <img class="center" alt="black cat in purple sweater typing" src="{{get_url(path=data.type)}}"/>
   </div>
   <div class="onethird">
+  <h3>Songs I'm listening to...</h3>
+<iframe class="center" allow="autoplay *; encrypted-media *;" 
+  frameborder="0" 
+  height="450" 
+  sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" 
+  src="https://embed.music.apple.com/ca/playlist/pl.u-b3b8Vb3fK1oGzJo?theme=dark">
+</iframe>
   <h3>Some blog posts...</h3>
   {% set_global blog = get_section(path="blog/_index.md") %}
   {{ macros::subsectionlinks(section=blog) }}
   {{ macros::displaypaginator(paginator=paginator) }}
   </div>
 </div>
+
+
 
 {% endblock content %}
