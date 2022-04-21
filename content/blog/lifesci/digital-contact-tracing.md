@@ -8,6 +8,10 @@ updated = 2022-04-20
 *I welcome thoughts and critique on this post. Contact me via Twitter or email.*
 *Need to add proper citations. A work in progress.*
 
+**TL;DR**: 
+Proximity and time based exposure notifications works when viruses were thought to be spread through respiratory droplets that quickly dropped to the ground and were rarely or never even thought to be airborne. This would mean after 15 mins or if you were two meters from someone you could assume almost or no viral load was transferred to you, and thus no exposure risk. 
+Now that we know COVID-19 is airborne and can linger in the air for minutes to hours and travel farther than 2 meters, other factors, like the infected’s quality of mask, air filtration and air circulation quality better, more accurately determine how far the virus can travel, how long the virus lingers in the air, which determines whether or not it someone not infected could have been exposed.  
+
 A [paper](https://www.science.org/doi/10.1126/science.abb6936) that suggested the idea of digital contact tracing made these reasons as to why a digital contact tracing app could be a tool to reduce infections during the COVID-19 pandemic:
 - manual contact tracing is too slow to bring down the R value, but a digital contact tracing app that instantaneously notified a exposed person to isolate would bring down the R value.
   - "There is no delay between case confirmation and notification of contacts; thus, the delay for the contact quarantine process is the period from an individual experiencing symptoms to their contacts entering quarantine. The delay between symptom development and case confirmation will decrease with faster testing protocols, and indeed could become instant if presumptive diagnosis of COVID-19 based on symptoms were accepted in high-prevalence areas."
