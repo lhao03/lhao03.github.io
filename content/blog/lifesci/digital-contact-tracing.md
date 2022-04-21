@@ -91,7 +91,7 @@ Under "Strategies to reduce barriers and increase adoption, retention and proper
 
 > Position COVID Alert as one additional tool at the disposal of Canadians, to better situate its position within the broader public health response to the COVID-19 pandemic and to highlight success stories that would resonate with Canadians; ... This will be critical in achieving wider uptake, which will involve clear communications, ongoing engagement with diverse partners and communities; and continuous improvements to the app (e.g. new functionalities and emerging technologies that could help to re-open parts of the economy)
 
-*This frustrates me. We **have** tools that work and we **know** what works. Good quality masks, accurately tracking positive cases, waste water tracking, CO2 monitoring, air circulation and filtration, and PCR tests. I'm disappointed that none of these were mentioned. We don't need more tools, (and most certainly we don't need more apps). Instead, we need to use tools that work.*
+*This frustrates me. We **have** tools that work and do reduce cases. High quality masks, air filtration and circulation and UV. I'm disappointed that none of these were mentioned. We don't need more tools, (and most certainly we don't need more apps). Instead, we need to use tools that work.*
 
 > Through the deployment of the COVID Alert app, the Government of Canada has committed to deploying a technology-based solution that will assist Canada in flattening the curve and limiting the spread of COVID-19. 
 
@@ -251,7 +251,19 @@ are discussed in [Ali Alkhatib](https://ali-alkhatib.com/blog/digital-contact-tr
 All in all, I see a low chance for the app gaining a large enough adoption for the app to become a accurate tool to use as a means to decreasing infections.
 
 # Conclusion
-All the money going into building digital contact tracing apps could of gone into providing high quality masks, CO2 monitors and better air filtration systems. [Alberta spent $4.3 million on their digital contact tracing app, which only notified 1,500 people of possible exposure.](https://www.cbc.ca/news/canada/edmonton/158-albertans-with-covid-19-reported-their-illness-to-province-s-multimillion-dollar-app-1.6202636). We **have** tools that work and we **know** what works. Good quality masks, accurately tracking positive cases, waste water tracking, CO2 monitoring, air filtration and circulation and PCR tests. We don't need more tools. We need to use tools that work with the ever changing science of COVID-19.
+For a digital contact tracing app to have some impact on reducing infections we need:
+- access to lots of quick and accurate tests
+- an preventative mindset towards being exposed, as outlined in the paper: "If testing capacity is limited, individuals who are identified by tracing may be presumed confirmed upon onset of symptoms, because the prior probability of them being positive is higher than for the index case."
+- ability for people to upload self confirmed tests to the app
+- adoption of the app by 60%\* of the population
+- people to actually self isolate until they are no longer sick
 
+But I don't think it's worth the time and money to keep trying to use digital contact tracing apps at this stage. Using proximity as a measure of whether someone has been exposed oversimplifies our new understanding of how COVID-19 spreads and the science around COVID-19. 
+
+*However*, to prevent new variants and prevent long covid I believe we must work towards no infections at all, not just reducing infections. I understand this is a more extreme stance, but drug and vaccine development simply will always lab behind the virus, and developing drugs and vaccines isn't easy! Since 100% adoption of the app isn't feasible, I don't think digital contact tracing works in a Western society. 
+
+ [Alberta spent $4.3 million on their digital contact tracing app, which only notified 1,500 people of possible exposure.](https://www.cbc.ca/news/canada/edmonton/158-albertans-with-covid-19-reported-their-illness-to-province-s-multimillion-dollar-app-1.6202636). We **have** tools that work and we **know** what works. Good quality masks, air filtration and circulation and UV. We also have tools that can help us make decisions on high risk locations for getting infected, such as waste water tracking and CO2 monitoring. All the money going into building digital contact tracing apps could of gone into providing the previously mentioned tools. We don't need more apps. We need to use tools that work with the ever changing science of COVID-19.
+
+\* I use 60% as outlined above, but I don't actually know what number would be needed to reduce the R value.
 
 *With ideation help from 🦔*
