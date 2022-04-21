@@ -5,8 +5,12 @@
                 {{ page.title }}
             </p>
             <div class="flex-row">
-            <p class="date-time">{{ page.reading_time }} mins</p>
-            <p>{{ page.date }}</p>
+            <p class="date-time">{{ page.word_count }} words</p>
+            {% if page.updated %}
+            <p>Updated: {{ page.updated }}</p>
+            {% else %}
+            <p>First written: {{ page.date }}</p>
+            {% endif %}
             </div>
         </div>
     </a>
