@@ -2,7 +2,7 @@
 title = "Digital contact tracing doesn't make much sense anymore"
 date = 2022-04-18
 draft = false
-updated = 2022-04-20
+updated = 2022-04-21
 +++
 
 *I welcome thoughts and critique on this post. Contact me via Twitter or email.*
@@ -10,7 +10,7 @@ updated = 2022-04-20
 
 **TL;DR**: 
 Proximity and time based exposure notifications works when viruses were thought to be spread through respiratory droplets that quickly dropped to the ground and were rarely or never even thought to be airborne. This would mean after 15 mins or if you were two meters from someone you could assume almost or no viral load was transferred to you, and thus no exposure risk. 
-Now that we know COVID-19 is airborne and can linger in the air for minutes to hours and travel farther than 2 meters, other factors, like the infected’s quality of mask, air filtration and air circulation quality better, more accurately determine how far the virus can travel, how long the virus lingers in the air, which determines whether or not it someone not infected could have been exposed.  
+Now that we know COVID-19 is airborne and can linger in the air for minutes to hours and travel farther than 2 meters, other factors, like the infected’s quality of mask, air filtration and air circulation quality better, more accurately determine how far the virus can travel, how long the virus lingers in the air, which determines the viral load which then determines whether or not someone could have been exposed.  
 
 A [paper](https://www.science.org/doi/10.1126/science.abb6936) that suggested the idea of digital contact tracing made these reasons as to why a digital contact tracing app could be a tool to reduce infections during the COVID-19 pandemic:
 - manual contact tracing is too slow to bring down the R value, but a digital contact tracing app that instantaneously notified a exposed person to isolate would bring down the R value.
