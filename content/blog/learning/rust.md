@@ -1,6 +1,7 @@
 +++
 title = "🦀 Rust notes"
 date = 2022-01-01
+updated = 2022-04-22
 draft = false
 +++
 
@@ -253,3 +254,6 @@ a _data race_ is similar to a race condition and occurs when:
 Rust won't even compile code with data races!
 - we can use curly braces to create a new scope.
  
+# 5: Using Structs to Structure Related Data
+
+## 5.1 Defining and Instantiating Structs
