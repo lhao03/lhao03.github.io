@@ -1,5 +1,5 @@
 +++
-title = "The end of Computing Science?"
+title = "E. W. Dijkstra: The end of Computing Science?"
 date = 2022-04-17
 draft = false
 +++
