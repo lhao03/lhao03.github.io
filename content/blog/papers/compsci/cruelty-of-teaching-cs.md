@@ -1,7 +1,7 @@
 +++
 title = "E. W. Dijkstra: On the Cruelty of Really Teaching Computing Science"
 date = 2022-04-19
-draft = false
+draft = true 
 +++
 - [Paper](https://www.cs.utexas.edu/~EWD/transcriptions/EWD10xx/EWD1036.html)
 
