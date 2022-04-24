@@ -373,6 +373,11 @@ the module system:
 - `use`: brings a path into scope
 - `pub`: makes items public
 - `mod`: define module with 
+
+## paths
+- two forms:
+  - absolute:  
+  - relative: 
 # 8. Common Collections
 
 # 9. Error Handling
