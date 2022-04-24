@@ -257,3 +257,144 @@ Rust won't even compile code with data races!
 # 5: Using Structs to Structure Related Data
 
 ## 5.1 Defining and Instantiating Structs
+- more flexible than tuples.
+- use the init shorthand to above being repetitive.
+
+
+### Creating Instances From Other Instances With Struct Update Syntax
+- `..` specifies that the remaining fields not explicitly set should have the same value as the fields in the given instance.
+  - must come last
+
+If we did:
+```rust
+let user2 = User {
+  email: String::from("yeet@dab.com"),
+  ..user1
+  }
+```
+- this means user1 is not longer usable
+  - but if there are traits that use the `Copy` trait, then user1 is still valid
+
+### Unit-Like Structs Without Any Fields
+- useful when you need to implement a trait on some type bot don'th ave any data that you want to store in the type itself
+
+# 5.2: Method Syntax
+- first parameter is always self in the form `self`, `&self`, `&mut self`
+- to define function within context of a Struct, start with an `impl` block.
+
+### Associated functions
+- don't have `self`, so aren't methods because they don't need an instance of the type to work with.
+
+```
+impl Rectangle {
+    fn square(size: u32) -> Rectangle {
+        Rectangle {
+            width: size,
+            height: size,
+        }
+    }
+}
+
+let sq = Rectangle::square(3);
+```
+
+- you can have multiple `impl` blocks
+
+# 6. Enums and Pattern Matching
+- enums allow you to define a type by enumerating it's possible variants. 
+
+## 6.1. Defining an Enum
+
+IP addresses are either V4 or V6, but not both. 
+```rust
+enum IpAddrKind {
+  V4,
+  V6
+}
+```
+
+- create instances of enum:
+```rust
+let four = IpAddrKind::V4;
+let six = IpAddrKind::V6;
+```
+`four` and `six` have the same type.
+
+- to represent data, might put a enum in a struct. but can put data directly into each enum variant.
+```rust
+enum IpAddrKind {
+  V4(String),
+  V6(String)
+}
+
+let four = IpAddrKind::V4(String::from("111"));
+```
+
+another advantage to using enums rather than a struct is that each variant can have different types and amounts of associated data. 
+
+### The `Option`
+```rust
+enum Option<T> {
+    None,
+    Some(T),
+}
+```
+you have to convert `Option<T>` to a `T` before you can perform `T` operations with it.
+
+## 6.2 the `match` Control Flow Construct
+- match arms can bind to parts of the values that match the pattern; this is how values are extracted out of enum variants.
+- matches are exhaustive
+- `catch` catches everything else
+- `_` catches any value and does not bind to that value
+  - `_ => ()`: do nothing
+
+## 6.3. Concise Control Flow with `if let`
+- handle values that match one pattern while ignoring the rest
+- lose exhaustive checking that `match` enforces
+- can use `else` to make exhaustive
+
+# 7. Managing Growing Projects with Packages, Crates and Modules
+the module system:
+- packages: cargo feature that lets you build, test, and share crates
+- crates: tree of modules that produces a library or executable
+- modules and use: let you control the org, scope, and privacy of paths
+- paths: a way of naming an item, such as a struct, function, or module
+
+## project/crates
+- crate: binary or library
+   - crate root: source file that Rust compiler starts from 
+
+- package: one or more creates that provide set of functionality; package contains a `Cargo.toml` file that describes how to build those crates
+  - can contain at most one library crate
+
+## modules
+- `src/main.rs`, `src/lib.rc`: crate roots
+  - contents of either of these two files form a module called `crate` at root of the crate's module structure, known as the module tree.
+- `use`: brings a path into scope
+- `pub`: makes items public
+- `mod`: define module with 
+# 8. Common Collections
+
+# 9. Error Handling
+
+# 10. Generic Types, Traits and Lifetimes
+
+# 11. Writing Automated Tests
+
+# 12. An I/O Project
+
+# 13. FP Features: Iterators and Closures
+
+# 14. Cargo and Crates.io
+
+# 15. Smart Pointers
+
+# 16. Fearless Concurrency
+
+# 17. OOP Features of Rust
+
+# 18. Patterns and Matching
+
+# 19. Advanced Features
+
+# 20. Final Project: Building A Multithreaded Web Server
