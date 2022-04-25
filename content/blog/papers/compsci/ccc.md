@@ -58,3 +58,4 @@ should canonical algorithms be taught?
 > **The critical question about algorithms, then, is not how to automate something with an algorithm, but whether to and why.**
 
 # [Abstractions](https://criticallyconsciouscomputing.org/abstractions)
+
