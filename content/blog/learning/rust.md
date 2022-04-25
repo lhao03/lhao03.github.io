@@ -376,9 +376,75 @@ the module system:
 
 ## paths
 - two forms:
-  - absolute:  
-  - relative: 
+  - absolute: starts from crate root by using crate name or literal `crate`
+  - relative: starts from current module and uses `self`, `super`, or an identifier in the current module
+
+- both types of paths followed by one or more identifiers separated by double colons `::`
+- all items are private by default
+- items in parent module can't use the private items inside child modules, but items in child modules can use the items in their ancestor modules
+  - child modules can see the context in which they're defined 
+  - hiding inner implementation details is the default
+  - expose inner parts of child modules' code to outer ancestor modules by using the `pub` keyword to make an item public
+- adding `pub` to the module makes the module public but it's contents are still private; only code in its ancestor modules can refer to it
+- using `super` with relative paths is like using `..`
+- adding `pub` to struct makes struct public but fields are still private
+- if we make enum public then all of its variants are public
+
+## use
+- to use module without the long path names
+- functions: bring in function's parent module => makes it clear the function isn't locally defined
+- structs, enums, other items: specify full path name
+- provide new name with `as`, like Python
+- reexporting: combine `pub` and `use`
+
 # 8. Common Collections
+- unlike built in arrays/tuples, these collections have their data stored on the heap, so the amount of data doesn't need to be known at compile time and data can grow and shrink as program runs.
+
+3 common types:
+- vector: store variable number of values next to each other 
+- string: collection of charterers
+- hash map: associate value with particular key
+
+## vector `Vec<T>`:
+- only store values of same type
+- `vec!` macro which creates a new vector that holds values you give it
+- dropping a vector drops it's elements
+- access elements through `[]` (less safe) or `get()` (more safe)
+- same rule of not being able to have mutable and immutable references applies for vectors:
+```rust
+let mut v = vec![1, 2, 3, 4, 5];
+
+let first = &v[0]; // immutable borrow
+
+v.push(6); // mutable borrow
+
+println!("The first element is: {}", first);
+
+```
+- doesn't work because of how vectors work: vectors put values next to each other in memory
+  - adding a new element onto the end might require allocating new memory and copying old elements into new space, then `first` would be pointing to deallocated memory
+  
+## String
+- string slice `str` or `&str`
+- `String`type: growable, mutable, owned, UTF-8 encoded string type
+  - `String::from` and `to_string` do the same thing
+
+```rust
+let s1 = String::from("Hello, ");
+let s2 = String::from("world!");
+let s3 = s1 + &s2; // note s1 has been moved here and can no longer be used
+
+```
+Rust strings don't support indexing
+- `String` is wrapper over `Vec<u8>`
+- index into a string's bytes will not always correlate with valid Unicode scalar value
+- if &"hello"[0] were valid code that returned the byte value, it would return 104, not h
+- three ways to look at strings: bytes, scalar values and grapheme clusters
+- indexing operations are expected to take constant time `O(1)`, but it's not possible because Rust has to walk thought the contents to determine how many valid characters there are
+- can use range to create string slices, but can crash your program
+- be explicit if you want `chars` or `bytes`
+
+## Hash Maps `HashMap<K, V>`
 
 # 9. Error Handling
 
