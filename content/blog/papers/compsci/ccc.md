@@ -1,7 +1,7 @@
 +++
 title = "Notes for: Critically Conscious Computing: Methods for Secondary Education"
 date = 2022-04-23
-updated = 2022-04-23
+updated = 2022-04-25
 draft = false
 +++
 
@@ -58,4 +58,67 @@ should canonical algorithms be taught?
 > **The critical question about algorithms, then, is not how to automate something with an algorithm, but whether to and why.**
 
 # [Abstractions](https://criticallyconsciouscomputing.org/abstractions)
+Using APIs requires different knowledge:
+- Domain Knowledge: knowledge about the domain in the world that the API is modeling and how it is modeling it
+- Execution Semantics: how a function in an API behaves (types of input, how input maps to output, errors that could be produced, how long the function takes, how accurate the results are)
+- Usage patterns: functions may have to be used in a particular way (input may have to be preprocessed).
+> This means that anyone that creates software — professional software developers, hobbyists, students learning CS in classes — will necessarily be engaging in informal learning about API abstractions, usually without well-designed instructional materials to support them.
+> Thus, while removing details through abstraction can make complex things easier to use, it does not make them easy to use.
+
+## social tradeoffs of abstraction
+- algorithms centralize decision making
+- functions, classes, APIs -> centralizing decisions
+- and privatize decision making
+> Therefore, encapsulation by private companies is a transfer of power from the transparent, public, human processes, to opaque, private, algorithmic processes. 
+- also abstraction is a form of automation
+  - automation is a vessel for hiding social consequences of automation 
+
+## teaching abstraction use
+teaching abstraction use: 
+- teach the use of functions through practicing conforming to the syntax of function calls, trying different inputs, using functions in combination
+- but also requires coverage of domain concepts, execution semantics and design patterns
+  - best way to learn these things is through documentation, but documentation is hard to read
+    - this results in students being confused, copying code they don't understand
+> Another challenge with teaching APIs, especially in project-based learning, is that no API can support every imaginable thing a student might want to make.
+
+> The expressive power of an API to make many things possible is also a great risk to teaching, as students may find themselves needing to learn ideas that no one in the class, including the teacher, knows anything about. 
+
+## teaching abstraction design
+- HtDP: design recipes (CPSC 110!)
+> Students often struggle to self-regulate during such structured problem solving, often deviating from the sequence, or struggling to independently perform a particular aspect of the process.
+
+- but not everyone may want to program, but they should still understand the role abstraction plays in society.
+- code written years ago are in effect today and are making decisions today
+> Moreover, teaching abstractions as apolitical has consequences: rather than connecting students with the rich history of code that others have written over the past decades, abstractions and their goal of encapsulate and hide details, can create a kind of “wall” between students the ideas contained in them. This tradeoff, especially in the context of integrating CS into other disciplines, may actually harm literacy, as it eliminates opportunities to critically examine the assumptions and models embedded in abstractions.
+
+> This is a tradeoff in learning objectives: students who focus on designing functions will be more capable of writing programs to solve particular computational problems, but may not see the social problems they might create with their designs, whereas students who focus on critically examining the implications of functions might see their consequences more clearly, but be less well positioned to design them. 
+  - learn designing and use in university, critically examine in secondary school
+
+# [Artificial Intelligence](https://criticallyconsciouscomputing.org/ai)
+- symbolic AI (using logic) vs statistical (using patterns in probabilities)
+- strong AI is out of reach
+> In contrast, other applications of AI often enrich and liberate groups that already have power and wealth.
+> AI, then, just like any other code, is often deployed as a tool of wealthy, dominant groups to accrue power, increase wealth, and maintain the matrix of oppression that erases diversity, denies equity, and shuns equality.
+
+# Teaching AI
+- Teaching AI Theory
+- Teaching AI application
+
+
+- Data is a record of the past; past injustices perpetuated into the future
+- Data encodes values, assumptions, goals of people who create it
+
+# [Programming](https://criticallyconsciouscomputing.org/programming)
+- requirement of self-regulated skills
+- process monitoring: reflecting on the process, like checking if you are following your plan
+- comprehension monitoring: asking if you understand what happens if you change something in your code/do you know enough to change your code
+- self explanation
+> Society has not yet broadly decided to make programmers responsible for their code and its impact, and until it does, making room for algorithmic justice will require personal and organizational will.
+
+# [Verification and Debugging](https://criticallyconsciouscomputing.org/verification)
+
+# [Tools](https://criticallyconsciouscomputing.org/tools)
+
+# [Projects](https://criticallyconsciouscomputing.org/projects)
+
 

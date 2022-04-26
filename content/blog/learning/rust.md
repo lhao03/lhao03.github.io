@@ -1,7 +1,7 @@
 +++
 title = "🦀 Rust notes"
 date = 2022-01-01
-updated = 2022-04-22
+updated = 2022-04-25
 draft = false
 +++
 
@@ -445,8 +445,41 @@ Rust strings don't support indexing
 - be explicit if you want `chars` or `bytes`
 
 ## Hash Maps `HashMap<K, V>`
+- store data on the heap
+- ways to construct:
+  - `use`
+
+```rust
+use std::collections:HashMap;
+
+let mut map = HashMap::new();
+
+mut.insert(String::from("Yeet"), 1);
+```
+  - iterators and `collect` method on vector of tuples
+```rust
+use std::collections:HashMap;
+
+let keys = vec![String::from("A"),String::from("B")];
+let vals = vec![1,2];
+
+let mut map: HashMap<_._> = keys.into_iter().zip(vals.into_iter()).collect();
+```
+- uses *SipHash* which provides resistance to DoS attacks but is not the fastest hashing function.
 
 # 9. Error Handling
+- does not have exceptions, has:
+  - `Result<T ,E>` for recoverable errors
+  - `panic!` macro that stops execution when the program encounters an unrecoverable error
+
+## `panic!` macro
+- when `panic!` macro executes, program will print fail message, unwind and clean stack, then quit
+- the stack can either be:
+  - unwind: Rust walks back up the stack and cleans up the data from each function it encounters, however, this is a lot of work
+  - abort: ends program without cleaning up; the memory will need to be cleaned by the operating system
+
+## recoverable errors with `Result`
+- two generic type parameters: `T`, type of value that will be returned in success case within `Ok` variant, and `E`, type of error that will be returned in failure case within `Err` variant.
 
 # 10. Generic Types, Traits and Lifetimes
 
