@@ -60,6 +60,14 @@ Application Details
 - [FRANÇOIS JEAN](https://www.microbiology.ubc.ca/research/labs/jean/pi)
   - [Lab](https://www.microbiology.ubc.ca/research/labs/jean)
 
+**Computer Science**
+[SPL](https://spl.cs.ubc.ca/index.html)
+- [Reid Holmes](https://www.cs.ubc.ca/~rtholmes/publications.html)
+- [Ronald Garcia](https://www.cs.ubc.ca/~rxg/#pubs) 
+- [William Bowman](https://www.williamjbowman.com/papers/index.html) 
+
+[Systopia](https://systopia.cs.ubc.ca/)
+
 ## Stanford
  
 ## Columbia

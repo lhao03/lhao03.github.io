@@ -51,7 +51,7 @@ link="https://newsroom.ucla.edu/stories/cracking-the-code:-why-aren-t-more-women
 
 This is one problem computer science educators are trying to solve: how do we relate computer science to a student's life? How do we show that computers can contribute to the social good? How can we make computer science personally resonate with a student?
 
-A student's first exposure to computer science is usually through programming. Most computer science courses you take will have a programming component, as did my first computer science course. However, in CPSC 110, I couldn't understand or see why learning recursion or coding up binary trees related to anything! After my first year, I was ready to leave my major in computer science for one in chemistry, where I have a dream of discovering drugs to cure diseases. Unfortunately, many other people may experience the same feeling of being divorced from their studies in computer science. 
+A student's first exposure to computer science is usually through programming. Most computer science courses you take will have a programming component, as did my first computer science course. However, in CPSC 110, I couldn't understand or see why learning recursion or coding up binary trees related to anything! After my first year, I was ready to leave my major in computer science for one in chemistry, where I had a dream of discovering drugs to cure diseases. Unfortunately, many other people may experience the same feeling of being divorced from their studies in computer science. 
 
 In [Critically Conscience Computing](https://criticallyconsciouscomputing.org/), Amy J. Ko, Ph.D. talks about several ways programming is usually taught, and the positives and negatives of the different methods. Having TAed CPSC 110 and CPSC 210, and [taken some computer science courses](@/blog/courses/_index.md), I've noticed some differences between how programming is taught, and thus the differences in students' reactions to the course. 
 
@@ -71,6 +71,7 @@ source="Critically Conscience Computing",
 link="https://criticallyconsciouscomputing.org/languages",
 author="Amy J. Ko, Brett Wortzman") }}
 
+
 While problem sets ensure a student is up to a standard of knowledge (if they can complete the problem set correctly, this means they have understood most of the material), they can feel rigid and impersonal to a student. Something even worse is that students, especially women, could struggle on a problem set and decide that since they struggled so much solving questions on a problem set they didn't feel any personal connection to, to not pursue any further students in computer science (that was me in my first year of university).
 
 {{ quote(text="The result of this approach is that students often rapidly lose any self-efficacy they began with, struggling to design, test, and debug without guidance, often converging towards a fixed mindset that they were simply not a “born” programmer",
@@ -80,16 +81,15 @@ author="Amy J. Ko, Brett Wortzman") }}
 
 During my time TAing CPSC 110, students who struggled usually continued to struggle throughout the term. Students aren't allowed to discuss or ask about problem sets to TAs or other students, meaning much of the problem set must be solved by themselves, without much guidance. Thus, students who struggled on the first problem set usually struggled on the next and the next ones, with some students eventually dropping the course.
 
-[Amy J. Ko, Ph.D.](https://faculty.washington.edu/ajko/) also discuss how students may have a brittle understanding of the language, further impeding their ability to learn. I think that CPSC 110 tries to remedy this problem by using BSL,, a programming language designed for educational purposes that has a very simple syntax and one that many students have never encountered before, leveling the playing ground.
+A possible solution to helping students' feel more personally engaged with programming is to center a course around being project-based, which I will discuss below.
 
-Students who understand why learning something is important are less likely to stop learning that concept. This is why my organic chemistry professor will periodically give us a molecule to produce in class, and then reveal that we students have put together the reaction mechanism for a common drug; it gives insight into why what we are learning is important and how it can relate to us personally.
+[Amy J. Ko, Ph.D.](https://faculty.washington.edu/ajko/) also discuss how students may have a brittle understanding of the programming language, further impeding their ability to complete problem sets. I think that CPSC 110 tries to remedy this problem by using BSL (Racket), a programming language designed for educational purposes that has a very simple syntax and one that many students have never encountered before, leveling the playing ground.
 
-A possible solution to this is to center a course around being project-based.
 
 ## Project-based courses
 Project-based courses aim to offer a personalized and individualized component for the student. Students can conceptualize their project, usually adhering to some rules that require using a certain programming language or implementing concepts like object-orientated design. 
 
-In CPSC 210, students were very excited to discuss with me what they wanted to build. This is probably one of the most exciting things about computer science: building things! My office hours also felt different in comparison to CPSC 110. During my TA office hours, students also came to me to fix a bug in a feature they were implementing. They thought about "fixing the bug that adds something twice to my shopping cart" rather than "I don't understand how recursion works."
+In CPSC 210, students were very excited to discuss with me what they wanted to build. This is probably one of the most exciting things about computer science: building things! My office hours also felt different in comparison to CPSC 110. During my TA office hours, students also came to me to fix a bug in a feature they were implementing. They talked about "fixing the bug that adds something twice to my shopping cart" rather than "I don't understand how recursion works."
 
 {{ quote(text="This approach overcomes many of the problems of direct instruction, because when students encounter problems with their programs, students might see those problems as authentic challenges of realizing their vision, rather than failures to meet a rigid, instructor-defined notion of success. There is substantial evidence that student-driven project-based learning greatly improves interest in CS, motivation to learn, and engagement, and some evidence that this is associated with increases in student learning of programming language concepts.",
 source="Critically Conscience Computing",
