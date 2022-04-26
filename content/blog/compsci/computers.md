@@ -2,7 +2,7 @@
 title = "Everyone should learn about computers, not coding"
 updated = 2022-04-01
 date = 2022-03-31
-draft = false
+draft = true
 [extra]
 img = "codingnot.png"
 alt = "Computer, Disk, File System, Linux Logo, Windows Logo, Apple Logo, Google Search Results for Coding is the Future"

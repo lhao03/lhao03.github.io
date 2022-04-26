@@ -480,6 +480,13 @@ let mut map: HashMap<_._> = keys.into_iter().zip(vals.into_iter()).collect();
 
 ## recoverable errors with `Result`
 - two generic type parameters: `T`, type of value that will be returned in success case within `Ok` variant, and `E`, type of error that will be returned in failure case within `Err` variant.
+- can use `match` on the `Results`
+
+## shortcuts for Panic on Error: `unwrap` and `expect`
+- `unwrap`: if `Result` value is:
+  - `Ok`: return value inside `Ok`
+  - `Err`: call `panic!` macro
+- `expect`: let's us choose our own error message
 
 # 10. Generic Types, Traits and Lifetimes
 
