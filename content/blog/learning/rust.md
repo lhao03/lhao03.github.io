@@ -488,6 +488,12 @@ let mut map: HashMap<_._> = keys.into_iter().zip(vals.into_iter()).collect();
   - `Err`: call `panic!` macro
 - `expect`: let's us choose our own error message
 
+## shortcut for propagating errors:
+- `?` placed after `Result` value is defined to work in almost the same way as `match`
+  - difference: error values that have `?` called on them go through the `from` function, which is used to convert errors from one type into another
+    - the error type received is converted into the error type defined in the return type
+### where `?` can be used
+- 
 # 10. Generic Types, Traits and Lifetimes
 
 # 11. Writing Automated Tests
