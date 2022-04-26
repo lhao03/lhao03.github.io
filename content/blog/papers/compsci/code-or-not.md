@@ -20,7 +20,7 @@ Grady Booch says that "productive members of society must grasp the essence of t
 
 But we must "be careful to not teach coding as just a vocational skill". A vocational skill is "practical or firsthand skills that help a person master a trade or a job".
 
-I express the same view [here](@/blog/compsci/cs-edu.md) and [here](@/blog/compsci/computers.md).
+I express the same view [here](@/blog/compsci/cs-edu.md).
 
 > "Rather, I think it’s essential that we fundamentally teach the notion of computational thinking, a point of view first proposed by Jeannette Wing. As she defines it, “Computational thinking involves solving problems, designing systems, and understanding human behavior by drawing on the concepts fundamental to computer science. Computational thinking includes a range of mental tools that reflect the breadth of the field of computer science”"
 
