@@ -1,5 +1,5 @@
 +++
-title = "Teaching Computer Science"
+title = "E. W. Dijkstra: On the Cruelty of Really Teaching Computing Science"
 date = 2022-04-19
 draft = true
 +++
