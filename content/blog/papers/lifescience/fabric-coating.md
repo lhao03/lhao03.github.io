@@ -1,5 +1,5 @@
 +++
-title = "Photodynamic and Contact Killing Polymeric Fabric Coating for Bacteria and SARS-CoV‑2"
+title = "Paper: Photodynamic and Contact Killing Polymeric Fabric Coating for Bacteria and SARS-CoV‑2"
 date = 2022-04-25
 draft = false
 +++

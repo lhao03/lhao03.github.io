@@ -1,7 +1,7 @@
 +++
 title = "Paper: Guiding Target Synthesis with Statistical Modeling Tools: A Case Study in Organocatalysis"
-date = 2022-04-26
-draft = true
+date = 2022-04-27
+draft = false
 +++
 
 [Paper](https://pubs.acs.org/doi/10.1021/acs.orglett.1c04134)
@@ -34,3 +34,17 @@ prediction tasks (taken directly from the paper)
 - most significant contrast between target reaction and similar reactions: both nucleophile and iminium have large steric profiles.
   - suggests matching a bulky nucleophile and iminium produces enhanced repulsive interactions with catalyst substituents in the TS leading to competing enantiomer.
     - high enantioselectivities can be obtained with smaller catalysts when they are paired with large reactants
+
+  - expanded to transformations catalyzed by secondary amines.
+    - model describes reaction between aldehydes and reactants that proceed via chiral iminium/enamine intermediates.
+    - these reactions undergo formation of stereocenters implanted within common functional groups => these functional groups can undergo changes for product diversity => can model predict this step
+    - because there is a lot of important structural motifs 
+
+- model did well on amination reaction that was well represented
+- challenged the model to predict enantioselectivity of alkenylation and Friedel-Crafts reactions
+  - model correctly predicted an alkenylation reactions that combine copper and secondary amine catalyst
+  - model can also effectively predict enantioselectivity outcome of Diels-Alder cyclization cascade even though this wasn't represented in training set.
+
+- model predicted using secondary amine catalyst would result in higher ee compared with chiral phosphate catalyst (consistent with experiment)
+  - model also suggests the choice is not critical since both catalysts show relatively high performance
+    - other factors like cost or accessibility could lead in choosing a catalyst
