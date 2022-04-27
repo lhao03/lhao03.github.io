@@ -64,3 +64,28 @@ table, th, td  {
    font-family:  'Source Sans Pro', sans-serif;
    padding: 5px;
 }
+
+.toc {
+  padding: 25px;
+  position: fixed;
+  left: 4vw;
+  top: 10vh;
+  height: 80vh;
+  width: 15vw;
+  li {
+    font-size: 12px;
+  }
+ @media (max-width: 1000px) {
+    display: none;
+  }
+  &:hover {
+  overflow-y: scroll;
+}
+}
+
+.toc_mobile {
+  display: contents;
+  @media (min-width: 999px) {
+     display: none;
+  }
+}
