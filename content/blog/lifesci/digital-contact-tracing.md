@@ -2,7 +2,7 @@
 title = "Digital contact tracing doesn't make much sense anymore"
 date = 2022-04-18
 draft = false
-updated = 2022-04-21
+updated = 2022-04-27
 +++
 
 *I welcome thoughts and critique on this post. Contact me via Twitter or email.*
@@ -264,36 +264,10 @@ For a digital contact tracing app to have some impact on reducing infections we 
 
 But I don't think it's worth the time and money to keep trying to use digital contact tracing apps at this stage. Using proximity as a measure of whether someone has been exposed oversimplifies our new understanding of how COVID-19 spreads and the science around COVID-19. 
 
-*However*, to prevent new variants and prevent long covid I believe we must work towards no infections at all, not just reducing infections. I understand this is a more extreme stance, but drug and vaccine development simply will always lab behind the virus, and developing drugs and vaccines isn't easy! Since 100% adoption of the app isn't feasible, I don't think digital contact tracing works in a Western society. 
+*However*, to prevent new variants and prevent long covid I believe we must work towards no infections at all, not just reducing infections. I understand this is a more extreme stance, but drug and vaccine development simply will always lag behind the virus, and developing drugs and vaccines isn't easy! Since 100% (or even 50%) adoption and **use** of the app isn't feasible, I don't think digital contact tracing works in a Western society. 
 
  [Alberta spent $4.3 million on their digital contact tracing app, which only notified 1,500 people of possible exposure.](https://www.cbc.ca/news/canada/edmonton/158-albertans-with-covid-19-reported-their-illness-to-province-s-multimillion-dollar-app-1.6202636). We **have** tools that work and we **know** what works. Good quality masks, air filtration and circulation and UV. We also have tools that can help us make decisions on high risk locations for getting infected, such as waste water tracking and CO2 monitoring. All the money going into building digital contact tracing apps could of gone into providing the previously mentioned tools. We don't need more apps. We need to use tools that work with the ever changing science of COVID-19.
 
 \* I use 60% as outlined above, but I don't actually know what number would be needed to reduce the R value.
 
 *With ideation help from 🦔*
-
-
-
-                         ██          ██                    
-                       ██▒▒██      ██▒▒██                  
-                       ██▒▒▓▓██████▓▓▒▒██                  
-                     ██▓▓▒▒▒▒▓▓▓▓▓▓▒▒▒▒▓▓██                
-                     ██▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██                
-                   ██▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓██              
-                   ██▒▒▒▒██▒▒▒▒██▒▒▒▒██▒▒▒▒██              
-                   ██▒▒▒▒▒▒▒▒██▒▒██▒▒▒▒▒▒▒▒██              
-                 ██▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓██            
-                 ██▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓██            
-                 ██▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██            
-                 ██▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██            
-               ██▓▓▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓▓▓██          
-               ██▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓██          
-               ██▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██    ████  
-               ██▓▓▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓▓▓██  ██▒▒▒▒██
-               ██▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓██    ██▓▓██
-               ██▒▒▒▒▒▒██▒▒▒▒▒▒▒▒▒▒▒▒▒▒██▒▒▒▒▒▒██    ██▒▒██
-               ██▓▓▒▒▒▒██▒▒██▒▒▒▒▒▒██▒▒██▒▒▒▒▓▓██████▒▒▒▒██
-                 ██▓▓▒▒██▒▒██▒▒▒▒▒▒██▒▒██▒▒▓▓██▒▒▒▒▓▓▒▒██  
-                   ██████▒▒██████████▒▒████████████████    
-                       ██████      ██████                  
-

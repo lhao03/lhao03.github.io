@@ -66,6 +66,8 @@ table, th, td  {
 }
 
 .toc {
+    display: block;
+  overflow-y: auto;
   padding: 25px;
   position: fixed;
   left: 4vw;
@@ -78,11 +80,15 @@ table, th, td  {
  @media (max-width: 1000px) {
     display: none;
   }
-  &:hover {
-  overflow-y: scroll;
 }
+  .toc::-webkit-scrollbar {
+  background: none;
+  width: 7px;
 }
-
+.toc::-webkit-scrollbar-thumb {
+  background-color: $grey;
+  border-radius: 10px;
+}
 .toc_mobile {
   display: contents;
   @media (min-width: 999px) {
