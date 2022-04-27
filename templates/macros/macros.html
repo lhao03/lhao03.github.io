@@ -34,17 +34,21 @@
   </div>
 {% endmacro displayblog %}
 
-{% macro displaypaginator(paginator) %}
+{% macro displaypaginator(paginator,seeAll=0) %}
 <div class="blog flexcol">
     {% for page in paginator.pages %}
     {{ macros::displaypage(page=page)}}
     {% endfor %}
     <div class="flex-row">
+    {% if seeAll == 1 %}
+    <a href="/blog">See all posts ›</a>
+    {% else %}
     {% if paginator.previous %}
         <a class="previous" href="{{ paginator.previous }}">‹ Previous</a>
     {% endif %}
     {% if paginator.next %}
         <a class="next" href="{{ paginator.next }}">Next ›</a>
+    {% endif %}
     {% endif %}
 </div>
 </div>
