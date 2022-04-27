@@ -20,4 +20,17 @@ prediction tasks (taken directly from the paper)
 - If so, can this be applied toward both complex scaffolds and single-molecule targets?
 -  Finally, when different catalysts and reactions can be utilized to generate the same products, can statistical models allow the selection of the best synthetic route?
 
+- three literature reactions that produced functionalized indole structures from enamine and in situ-generated iminiums
 
+- goal: exrapolate to new reaction types that provide varying levels of enantioselectivity, catalyst was highly represented in training set but iminium and enamine was not.
+  - hmm
+- model highlights iminium, nucleophile and catalyst as important contributors to enantioselectivity, required steps for ee (enantiomeric excess) prediction are:
+  - locate ground state of these reactions by DFT (density functional theory)
+  - obtain relevent model descriptors shown
+  - submit to mathematical equation
+
+- model captures that 2-naphthyl-derived chiral phosphates will provide excellent levels of enantioselectivity even though training reactions emphasze importance of large catalyst groups for high ee.
+  - model clearly explains why these substrates work well with less bulky catalysts
+- most significant contrast between target reaction and similar reactions: both nucleophile and iminium have large steric profiles.
+  - suggests matching a bulky nucleophile and iminium produces enhanced repulsive interactions with catalyst substituents in the TS leading to competing enantiomer.
+    - high enantioselectivities can be obtained with smaller catalysts when they are paired with large reactants
