@@ -1,0 +1,158 @@
++++
+title = "Matthias Felleisen: Developing Developers"
+date = 2022-04-27
+draft = false
++++
+
+-  [Developing Developers](https://felleisen.org/matthias/Thoughts/Developing_Developers.html)
+
+{{ quote(text=" Instead of the currently fashionable programming language, it focuses on explicit and systematic approaches to program design. To bring this idea across to the full range of Northeastern freshmen, the first course uses a simple teaching language that is tailored to our goals. Follow-up courses explain how to apply the design principles to industrial programming languages, how they enable logical reasoning about code, and why they matter when programmers deal with large and complex software.",
+author="Matthias Felleisen",
+link="https://felleisen.org/matthias/Thoughts/Developing_Developers.html",
+source="Developing Developers"
+)}}
+
+# traditional programming courses
+- "tinker until it works"
+- use a currently fashionable programming language
+- students learn to "mimic their instructors"
+- students copy code snippets from classes and labs into homework assignments and modify the code snippets until the program seems to work.
+- distance between code snippets from class and those needed to solve the homework grows to "test students’ ability to generalize".
+
+{{ quote(text="In sum, traditional programming courses teach programming implicitly, with students picking it up via mimicking and experimenting. This approach may appeal to students who love to tinker with gadgets and video games, but it also turns off many others who might be equally talented for engineering actual software or benefit to the same extent from a properly taught course on programming and problem solving.",
+author="Matthias Felleisen",
+link="https://felleisen.org/matthias/Thoughts/Developing_Developers.html",
+source="Developing Developers"
+)}}
+
+*This is what a lot of online code tutorials (freecodecamp) and coding bootcamps do. Students don't really learn generalizable concepts, just vocational skills.*
+
+# explicit design rules
+- HtDP: structural design, design and use of abstractions, generative recursion (divide and conquer), accumulators (loop variables)
+- y-axis: six-step problem-solving process, x-axis: enumerates forms of data, increasing in complexity.
+- each step => well defined outcome
+  - instructors inspect outcomes to diagnose a students' problems
+- traditional programming courses focus a lot on atomic data:
+
+{{ quote(text="they rely on domain knowledge and thus fail to show how much computing and programming can contribute to systematic problem solving and design.",
+author="Matthias Felleisen",
+link="https://felleisen.org/matthias/Thoughts/Developing_Developers.html",
+source="Developing Developers"
+)}}
+
+# programming is a people discipline
+- design-oriented approach => programming is about coping with complexity in software
+- compilers, interpreters, IDEs don't really help with controlling complexity, so programmers who need help turn to other programmers
+  - programmers need to be able to articulate their thoughts; converse about program designs
+
+  {{ quote(text="The best way to do so, is to present programming as a discipline that is not about nerds sitting in a cubicle but people helping other people creating beautiful and well-designed artifacts.",
+author="Matthias Felleisen",
+link="https://felleisen.org/matthias/Thoughts/Developing_Developers.html",
+source="Developing Developers"
+)}}
+
+# fundamentals 1: designing with teaching languages
+- introduce students to systematic and explicit problem solving/design and complexity of creating well-engineered software.
+- choosing a language for the course (two theorems):
+  - novice programmers make mistakes
+  - compiler and run time system error messages => assume programmer knows the entire language
+    - *Rust error messages are pretty clear, much more clear than C. Maybe more modern PLs have changed, but the majority of PL error messages are pretty bad.*
+
+the two theorems have three corollaries:
+- an intro course can't serve a wide spectrum of novices if it uses an off the self (industrial) language
+- reducing the size of the language improves its error messages
+  - *also so student's don't go ahead, so to speak*
+- intro course needs *series of small languages* to suffice to illustrate the design recipes
+  - *like how CPSC 110 has BSL, ASL*
+- pair programming: pilot and co-pilot
+  - co-pilot checks design against the design recipe via question and answer
+
+# note on the trinity
+- design, teaching languages, pedagogic IDE
+- introduction of explicit design calls for careful composition of pieces that make a novice-friendly environment:
+  - accessible error messages and pedagogic IDE
+
+# fundamentals 2: designing with java
+- show students how to:
+  - systematically design programs in context of real-world language
+- incorporate existing libraries into design
+
+with regard to design, 3 concrete goals:
+- add type-checking
+- cover OOP
+- "programming via composition of existing building blocks"
+
+- fundamentals 1 does not assume type-checking:
+  - most students will use a dynamically typed language
+  - type checking adds another layer to practice of programming => adding error messages 
+- Gregor Kiczales: fundamentals 1 is the best introduction to proper OOP
+- fundamentals 2 spends 60% of the semester explaining how design concepts from fundamentals 1 apply to Java and on adapting design concepts for abstractions to an OO context.
+  - *I feel like UBC doesn't really do this in CPSC 210. While TAing, lots of students would comment on piazza that CPSC 110 wasn't that helpful in doing well in CPSC 210.*
+  - [this paper](https://arxiv.org/abs/1306.4713v2) discusses a solution to the confusion when transitioning from functional programming to OOP.
+- java's failure to implement al tail calls => forces programmers to reformulate properly designed pieces of code with `while` and `for` loop
+- in terms of people skills, CPSC 210 takes the approach of "One possibility is to assign a small project toward the end of the course and to have students present an overview to the instructor. "
+  - while students do develop skills such as clearly communicating their code and user stories, I discuss how [projects can be hard for students](@/blog/compsci/how-to-teach-cs-courses.md).
+
+{{ quote(text="If a computer science unit has the luxury to spend an additional semester on preparing their students for real-world programming, this approach is highly commendable.",
+author="Matthias Felleisen",
+link="https://felleisen.org/matthias/Thoughts/Developing_Developers.html",
+source="Developing Developers"
+)}}
+
+# logic: reasoning about well-designed code
+- validation systems can be:
+  - sound: predictions are always true statements about executions
+  - unsound: makes correct and incorrect predictions
+- programmers contiguously make, rely on predictions with making code, consciously or subconsciously
+- goals of logic in computer science:
+  - make reasoning about programs explicit
+    - introduction of classical logic, heavy emphasis on structural induction
+  - introduce students to tools that assist programmers with this task
+    - apply logic to sizable programs; use a proof assistant
+      - ACL2: if students properly design the desired functions in fundamentals 1, ACL2 can prove the desired theorems easily. If students tinker their way, ACL2 tends to fail.
+
+# OOD: scaling it up
+- stating and exploiting such assertions during informal prediction process
+- until formal reasoning is affordable, informal mode of thinking will inform the best designers in the field
+
+# Software Development: putting it all together
+- students should have taken OOD, completed first co-op and explored programming languages
+- students should be allowed to choose their own PL
+- students aren't expected to be able to manage a large project, so instructors ought to introduce students to this aspect of engineering software explicitly, not via "mimic and modify"
+
+{{ quote(text="One way to accomplish this goal is to have students design parts of the projects each week, to expose the weaknesses of their designs during code review, and to then provide good versions of these designs later in the semester.",
+author="Matthias Felleisen",
+link="https://felleisen.org/matthias/Thoughts/Developing_Developers.html",
+source="Developing Developers"
+)}}
+
+- students must revisit code created weeks ago and that the overall project is complex and large.
+  - *CPSC 310 has no deadlines, so this revisiting of code is hard if students just procrastinate their projects*
+
+{{ quote(text="This step may take the form of fixing bugs, adding features, replacing features, and even subtracting them. To complete such tasks, students must reconstruct the thoughts that the creators of the code had—and often did not write down as assertions or other validated statements. Hence, if code repositories are rotated among the students, this task drives home most clearly why (1) such additional assertions and comments matter and (2) pair programming leaves behind residue of design knowledge.",
+author="Matthias Felleisen",
+link="https://felleisen.org/matthias/Thoughts/Developing_Developers.html",
+source="Developing Developers"
+)}}
+
+- introduction of code reviews
+
+# what's missing?
+- independent exploration: students don't understand that *programming beyond the classroom* is essential to their growth
+  - why do students lack incentives to explore on their own and how to provide incentives to do so.
+- performance debugging: difficulty from connecting knowledge from algorithms to program design
+  - performance debugging
+- unsafe programming: learn to write code in world of seg faults, core dumps, etc. Use python to access unsafe layer.
+- Further topics in Software engineering  
+  - testing
+  - programming in a team
+  - software modeling
+
+**Emphasis on explicit ideas over "mimic and learn implicitly"**
+
+# my thoughts
+- I liked reading the rationale for how UBC's CS courses are structured. 
+- as a first year student, I didn't really understand why UBC was using BSL and had a large focus on functional programming, while UoT and UofC used Python. Now I'm really glad I was introduced to the "trinity"
+- I think the connection between CPSC 110 and CPSC 210 isn't that *clear*? While TAing CPSC 210, many students didn't really apply the knowledge from CPSC 110 (like design recipes). It was more of "mimic and learn implicitly".
+- CPSC 310 seems to be the Software Development course. But students are restricted to using TS and no hard deadlines, so not much code revisiting occurs.
+- I think CPSC 213 (ironically) does a better job of incorporating in CPSC 110 content like design recipes
