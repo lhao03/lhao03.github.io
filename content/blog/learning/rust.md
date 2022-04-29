@@ -521,10 +521,75 @@ impl Point<f32> {
 - Rust performs monomorphization: process of turning generic code into specific code by filling in the concrete types
 
 ### Traits
+- use traits to define shared behaviour in abstract way.
+- use trait bounds to specify that a generic type can be any type that has certain behaviour
+- similar to interfaces in other languages
+- we can implement a trait on a type only if at least one of the trait or the type is local to our crate
+  - can't implement external traits on external types
+    - coherence, orphan rule => parent type is not present
+    - rule ensures other people's code can't break your code
+    - without rule, two creates could implement same trait for the same type, and Rust wouldn't know which implementation to use
+- can't call default implementation from overriding implementation of same method.
+- trait bounds:
+```rust
+pub fn notify<T: Summary>(item1: &T, item2: &T) {
+```
+- multiple trait bounds with +:
+```rust
+pub fn notify(item: &(impl Summary + Display)) {
+pub fn notify<T: Summary + Display>(item: &T) {
+```
 
-# 11. Writing Automated Tests
+- clearer trait bounds with `where` Clauses
+```rust
+fn some_function<T, U>(t: &T, u: &U) -> i32
+    where T: Display + Clone,
+          U: Clone + Debug
+{
+```
+- can only return a single type (even if the trait is in the return)
+- can use traits to conditionally implement methods
+- can also conditionally implement a trait for any type that implements another trait
+  - implementations of a trait on any type that satisfies the trait bounds are called *blanket implementations* 
 
-# 12. An I/O Project
+## validating references with lifetimes
+- main aim is to prevent dangling pointers
+- Rust determines code has gone out of scope with a borrow checker
+
+## generic lifetimes in functions
+```rust
+fn longest(x: &str, y: &str) -> &str {
+    if x.len() > y.len() {
+        x
+    } else {
+        y
+    }
+}
+```
+- this code doesn't compile; we don't know if `&str` refers to `x` or `y`.
+- borrow checker can't check either; add generic lifetime parameters
+
+**Lifetime Annotation Syntax**
+- lifetime annotations don't chance how long any of the references live
+- lifetime annotations describe relationships of the lifetimes of multiple references to each other without affecting the lifetime
+```rust
+&i32        // a reference
+&'a i32     // a reference with an explicit lifetime
+&'a mut i32 // a mutable reference with an explicit lifetime
+```
+- when we specify lifetime parameters, we're not changing the lifetime of values, only telling the borrow checked to reject any values that don't adhere to these restraints.
+- lifetime annotations become part of the contract of the function
+- return value lifetime needs to be related to the lifetime of something (parameter or value created)
+- patterns programmed into Rust's analysis of references: *lifetime elision rules*
+  - set of particular cases that the compiler will consider, and if your code fits these cases you don't need to write lifetime explicitly
+- input lifetime: lifetimes on functions or method parameters
+- output lifetime: lifetime on return values
+- three rules to figure out what lifetimes references have when there aren't explicit annotations:
+  1. each parameter that is a reference gets its own lifetime parameter
+  2. second rule is if there is exactly one input lifetime parameter, that lifetime is assigned to all output lifetime parameters
+  3. there are multiple input lifetime parameters, but one of them is `&self` or `&mut self` because this is a method, the lifetime of self is assigned to all output lifetime parameters
+
+- `'static` lifetime, which means the reference can live for the entire duration of the program
 
 # 13. FP Features: Iterators and Closures
 
