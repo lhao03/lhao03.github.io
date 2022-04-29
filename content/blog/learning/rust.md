@@ -592,6 +592,8 @@ fn longest(x: &str, y: &str) -> &str {
 - `'static` lifetime, which means the reference can live for the entire duration of the program
 
 # 13. FP Features: Iterators and Closures
+- closure: anonymous function that capture their environment
+  - can save in a variable or pass as arguments
 
 # 14. Cargo and Crates.io
 
