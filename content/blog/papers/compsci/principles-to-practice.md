@@ -2,6 +2,9 @@
 title = "Paper: From Principles to Practice with Class in the First Year"
 date = 2022-04-28
 draft = false
+[extra]
+understanding = 8
+interest = 8
 +++
 
 Tobin-Hochstadt, S., & Van Horn, D. (2013). From Principles to Practice with Class in the First Year. Electronic Proceedings in Theoretical Computer Science, 136, 1–15. [doi:10.4204/eptcs.136.1](https://doi.org/10.4204/eptcs.136.1)

@@ -20,6 +20,13 @@
     <strong>{{ page.updated }}</strong>
     {% endif %}
   </p>
+  {% if page.extra.understanding and page.extra.interest %}
+  <p>
+  Interest: {{ page.extra.interest }}
+  <br />
+  Understanding: {{ page.extra.understanding }}
+  </p>
+  {% endif %}
   {% if page.toc and page.word_count > 400 %}
   <div class="toc">
     <h3> Table of Contents </h3>
