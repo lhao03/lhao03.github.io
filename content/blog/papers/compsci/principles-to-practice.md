@@ -4,6 +4,8 @@ date = 2022-04-28
 draft = false
 +++
 
+Tobin-Hochstadt, S., & Van Horn, D. (2013). From Principles to Practice with Class in the First Year. Electronic Proceedings in Theoretical Computer Science, 136, 1–15. [doi:10.4204/eptcs.136.1](https://doi.org/10.4204/eptcs.136.1)
+
 *In progress*
 
 # My interest in reading the paper

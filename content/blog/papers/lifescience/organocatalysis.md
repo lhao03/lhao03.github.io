@@ -4,7 +4,10 @@ date = 2022-04-27
 draft = false
 +++
 
-[Paper](https://pubs.acs.org/doi/10.1021/acs.orglett.1c04134)
+Guiding Target Synthesis with Statistical Modeling Tools: A Case Study in Organocatalysis
+Isaiah O. Betinol, Yutao Kuang, and Jolene P. Reid
+Organic Letters 2022 24 (7), 1429-1433
+DOI: [10.1021/acs.orglett.1c04134](https://doi.org/10.1021/acs.orglett.1c04134)
 
 - reactions with considerable synthetic effort with uncertain results are not likely to be explored.
 - [organocatalyst](https://www.sciencedirect.com/topics/chemistry/organocatalyst): mimic enzyme catalysis that Mother Nature uses to control and regulate both biologically important reactions and synthesis of secondary metabolites.

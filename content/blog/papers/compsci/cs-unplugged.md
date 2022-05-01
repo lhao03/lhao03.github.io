@@ -4,7 +4,7 @@ date = 2022-04-27
 draft = false
 +++
 
-[Paper](https://dl.acm.org/doi/abs/10.1145/1999747.1999817)
+Yvon Feaster, Luke Segars, Sally K. Wahba, and Jason O. Hallstrom. 2011. Teaching CS unplugged in the high school (with limited success). In Proceedings of the 16th annual joint conference on Innovation and technology in computer science education (ITiCSE '11). Association for Computing Machinery, New York, NY, USA, 248–252. [https://doi.org/10.1145/1999747.1999817](https://doi.org/10.1145/1999747.1999817)
 
 - CS Unplugged: introduce functional cs principles in active learning activates without use of computers
 - results were at odds with the enthusiasm
