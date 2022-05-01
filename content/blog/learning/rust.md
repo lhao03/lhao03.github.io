@@ -594,7 +594,12 @@ fn longest(x: &str, y: &str) -> &str {
 # 13. FP Features: Iterators and Closures
 - closure: anonymous function that capture their environment
   - can save in a variable or pass as arguments
-
+- `let` statement means it contains the definition of an anonymous function, but not the resulting value of calling the anonymous function
+- there aren't type annotations in the closure definition 
+- closures don't require you to annotate types of the parameters or the return type like `fn` functions do
+- type annotations are required for functions because they're part of an explicit interface exposed to users
+  - important so everyone agrees on what types of values a function uses and returns
+- closures aren't used in exposed interface like this. 
 # 14. Cargo and Crates.io
 
 # 15. Smart Pointers

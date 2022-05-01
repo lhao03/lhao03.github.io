@@ -70,8 +70,6 @@ Application Details
 
 ## Stanford
  
-## Columbia
-
 ## UofT
 **Chemistry**
 - [HELEN TRAN](https://helen-t.com/)
@@ -92,3 +90,10 @@ Application Details
 **CS**
 - [Shriram Krishnamurthi](https://cs.brown.edu/~sk/)
   
+## Indiana
+- Scheme
+
+## Northeastern
+- Scheme
+
+##  UT Austin

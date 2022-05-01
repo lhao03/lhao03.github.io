@@ -5,7 +5,8 @@ updated = 2022-04-25
 draft = false
 +++
 
-Notes for [Critically Conscious Computing](https://criticallyconsciouscomputing.org/)
+Amy J. Ko, Anne Beitlers, Brett Wortzman, Matt Davidson, Alannah Oleson, Mara Kirdani-Ryan, Stefania Druga (2022). Critically Conscious Computing: Methods for Secondary Education. https://criticallyconsciouscomputing.org/, retrieved 4/23/2022.
+
 
 # [Data Structures](https://criticallyconsciouscomputing.org/data)
 - data is information encoded
