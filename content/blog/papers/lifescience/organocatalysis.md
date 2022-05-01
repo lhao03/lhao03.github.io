@@ -2,6 +2,9 @@
 title = "Paper: Guiding Target Synthesis with Statistical Modeling Tools: A Case Study in Organocatalysis"
 date = 2022-04-27
 draft = false
+[extra]
+understanding = 4
+interest = 7
 +++
 
 Guiding Target Synthesis with Statistical Modeling Tools: A Case Study in Organocatalysis

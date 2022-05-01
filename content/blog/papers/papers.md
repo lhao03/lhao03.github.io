@@ -75,6 +75,7 @@ draft = false
 - Understanding the impact of explanations on advice-taking: a user study for AI-based clinical Decision Support Systems.pdf
 - Using Design Alternatives to Learn About Data Organizations.pdf
 - utopia.pdf
+- Actionable Auditing: Investigating the Impact of Publicly Naming Biased Performance Results of Commercial AI Products.pdf
 
 # Health
 - A State-Based Medication Routine Framework.pdf
@@ -112,7 +113,6 @@ draft = false
 - FlexOS: towards flexible OS isolation.pdf
 - Adelie: continuous address space layout re-randomization for Linux drivers.pdf
 - Finding missed optimizations through the lens of dead code elimination.pdf
-- ProSE: the architecture and design of a protein discovery engine.pdf
 - Efficiently detecting concurrency bugs in persistent memory programs.pdf
 - Understanding and exploiting optimal function inlining.pdf
 

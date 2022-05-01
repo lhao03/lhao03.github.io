@@ -2,6 +2,9 @@
 title = "Matthias Felleisen: Developing Developers"
 date = 2022-04-27
 draft = false
+[extra]
+understanding = 9
+interest = 9
 +++
 
 -  [Developing Developers](https://felleisen.org/matthias/Thoughts/Developing_Developers.html)
