@@ -39,3 +39,85 @@ Brian Suchy, Souradip Ghosh, Drew Kersnar, Siyuan Chai, Zhen Huang, Aaron Nelson
   - CARATE CAKE must target entire applications and entire kernel: 
     - WLLVM allows CARAT CAKE transformations to run on entire kernel at once
     - whole-kernel bitcode source allows CARAT CAKE transformations to consider entire kernel as one module
+
+- NOELLE: provides high level abstractions on top of LLVM that allow for aggressive analyses and transformations
+  - CARAT CAKE utilizes data flow engine, invariants and induction variables and dependence analysis to generate Program Dependence Graph (PDG) of program being compiled
+  - overheard of CARAT CAKE is inversely related to accuracy of PDG
+
+- Nautilus Kernel Framework: open source kernel codebase
+  - contains minimal set of features needed to support a tailored parallel run-time environment, avoiding general purpose features that inhibit scalability
+  - designed with goal of hybrid run-times
+  - HRT: mashup of extremely lightweight OS kernel framework and parallel run-time system
+  - all addresses mapped at boot, no swapping or page movement => TLB misses are rare and if TLB entries can cover physical address space of machine, there are no page faults
+  - memory management (including for NUMA) is explicit and allocations are done with buddy system allocators
+  - core set of I/O drivers have interrupt handler logic with deterministic path lengths
+- address space (ASpace) was added 
+  - memory map of regions, similar to `mm_struct` but designed without assumption of paging
+
+# 3 
+- escape: any reference to an Allocation stored outside of the initial Allocation pointer
+- contained escape: an escape that is stored within an Allocation. This represents a subset of the Escapes within a program
+- guard: protection check before memory access that ensures proper access permissions
+
+- naive approach to software-based memory management and protection is horrifically slow
+
+**goal**: provide the same capabilities as the traditional paging model
+**trusted computing base**: CARAT approach is based on trust relationship between kernel and compiler toolchain
+  - expansion of software TCB is in the analysis and transformations added to compiler toolchain to suppoer CARAT and is offset by decrease is size and complexity of hardware TCB
+
+- compiler transforms the intermediate representation of all code, injecting runtime calls that match memory management features provided by paging
+- Allocations and Escapes are tracked; all allocations produced from unmanaged language and visible at IR level are tracked
+- compiler injects code that works at granularity of Allocations, instead of page granularity
+- software checks, Guards, replace hardware-level checks
+  - each memory access at IR level has Guard introduced before it
+  - protection of stack achieved by introducing Guards before calls
+  - Guard calls out to runtime to check
+  - with good CARAT-specific compiler optimizations, it is possible to avoid most direct protection checks => central to good performance
+- CARAT uses tracking information maintained by runtime to patch all relevant Escapes (when needing to move Allocations)
+
+# 3.2 User-Level Prototype
+- compiler toolchain has specially-developed custom data flow analysis, loop invariant analysis and induction variable analysis to omit redundant guard checks
+- reduce dynamically-encountered guards
+
+# 3.3 benefits of CARAT-Based System
+**no more address translation hardware**
+- no TLB misses because no more TLB 
+- save memory the size of L1 cache
+- removal of synonyms/homonyms from cache design => larger L1 caches
+
+**software benefits**
+- memory can be managed at an arbitrary granularity
+- improvement of CARAT software would increase performance of existing programs on existing hardware
+- no longer need to test and verify hardware of address translation
+- bugs in protection/management fixed by software updates rather than microcode patching or major abstraction changes
+
+
+# 4 design and implementation: baking a CARAT CAKE
+
+# 4.1 system and design choices
+- centered around mapping and protection
+- compiler:
+  - performs analysis and transformation to propel Allocation/Escape Tracking within kernel/user programs => memory mapping/movement
+  - guard injections
+- kernel: manage single physical address space in which all code and data coexist
+  - allocates Memory Regions and groups them into ASpaces, which then kernel can delegate, expand, assign to entities needing memory
+  - entities include kernel itself and processes
+- compiler's instrumentation of kernel/user programs + runtime => memory tracking and protections per ASpace
+- memory and protections are managed at level of Memory Regions
+  - can be of arbitrary size => external fragmentation is concern
+- compiler performs protections/tracking via statis analysis/transformations of application code => user-level developres don't need to know about CARAT-based system below.
+- kernel builds stacks, heaps, for process by chucking physical memory directly without address translation
+
+# 4.2 compiler
+- CARAT CAKE compiler instruments both user and kernel code to track Allocations and Escapes and guide memory references in user code
+  - now responsible for enforcing protections 
+- intertwines tracking and protections with kernel-level permissions
+- apply Address Checking for Data Custody data-flow analysis from previous work, loop invariant analysis, scalar evaluation analysis
+- generalize compiler so it knows how to manage/optimize programs memory management at IR level where underlying assumptions about semantics/safety of memory accesses can differ
+- compiler can elide guards for the following types of references:
+  - explicit stack locations on IR
+    - references within bounds of stack that the kernel set up itself and hands to program
+  - global variables
+    - section of executable that kernel will load and verify for the program
+  - memory received from library allocator (malloc)
+    - from region that kernel allocates and controls who it gives access to
