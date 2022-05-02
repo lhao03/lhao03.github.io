@@ -4,7 +4,8 @@ sort_by = "date"
 template = "subsection.html"
 page_template = "post.html"
 +++
-I currently reading a bunch of papers and books to see what I'm interested in and I wanted a way to rank each paper. I'm going to use two criteria, understanding and interest. 
+
+I'm currently reading a bunch of papers and books to see what I'm interested in and I wanted a way to rank each paper. I'm going to use two criteria, understanding and interest. 
 
 {{ expand(title="Interest",
 content="

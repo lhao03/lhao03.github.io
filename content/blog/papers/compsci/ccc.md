@@ -108,7 +108,6 @@ teaching abstraction use:
 - Teaching AI Theory
 - Teaching AI application
 
-
 - Data is a record of the past; past injustices perpetuated into the future
 - Data encodes values, assumptions, goals of people who create it
 
