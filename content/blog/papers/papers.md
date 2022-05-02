@@ -49,13 +49,11 @@ draft = false
 
 # CS Education
 - A Theory of Robust API Knowledge.pdf
-- Dangers of a fixed mindset: implications of self-theories research for computer science education.pdf
 - Detecting and understanding students' misconceptions related to algorithms and data structures.pdf
 - Dimensions of Experientialism for.pdf
 - Early Post-Secondary Student Performance.pdf
 - Folk Pedagogy and the Geek Gene:.pdf
 - Geek genes, prior knowledge, stumbling points and learning edge momentum: parts of the one elephant?.pdf
-- “It Must Include Rules”: Middle School Students’.pdf
 - Nudging Student Learning Strategies Using Formative.pdf
 - The Structure and Interpretation of the Computer Science Curriculum
 - Trauma-Informed Computing: Towards Safer Technology Experiences for All.pdf
@@ -114,7 +112,7 @@ draft = false
 - Adelie: continuous address space layout re-randomization for Linux drivers.pdf
 - Finding missed optimizations through the lens of dead code elimination.pdf
 - Efficiently detecting concurrency bugs in persistent memory programs.pdf
-- Understanding and exploiting optimal function inlining.pdf
+- CHERI JNI: Sinking the Java security model into the C.pdf
 
 # Virology
 - An oral SARS-CoV-2 M pro inhibitor clinical candidate
