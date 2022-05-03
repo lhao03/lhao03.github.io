@@ -37,7 +37,7 @@ intro = "I'm a [chemistry nerd](/blog/courses/lifesci/_index.md) and [`filter` a
 - [Critically Conscious Computing](@/blog/papers/compsci/ccc.md)
 - [Design Justice](@/blog/papers/compsci/design-justice.md)
 - [Programmed Inequality](https://mitpress.mit.edu/books/programmed-inequality)
-- [Your Computer is on Fire](https://mitpress.mit.edu/books/your-computer-fire)
+- [Your Computer is on Fire](@/blog/papers/compsci/computer-on-fire.md)
 
 </div>
 
