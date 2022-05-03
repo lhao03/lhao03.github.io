@@ -5,7 +5,7 @@ template = "main.html"
 page_template = "post.html"
 paginate_by = 4
 [extra]
-intro = "I'm a [chemistry nerd](/blog/courses) and [`filter` and `map` enthusiast](/blog/courses) studying [Computer Science](https://www.cs.ubc.ca/) and [Chemistry](https://www.chem.ubc.ca/) at the [University of British Columbia](https://www.ubc.ca/). I enjoy learning about how and why things work, especially pertaining to [biological processes, drugs, viruses (the biological and technical kind)](/blog/papers/lifescience/), [operating systems](/blog/compsci/computers/#you-better-trust-your-operating-system), and programming languages. I've also been thinking about how [computer science education](/blog/papers/compsci/) should work at the primary and secondary school level and enjoy reading about computing history and the impact of technological systems on society."
+intro = "I'm a [chemistry nerd](/blog/courses/lifesci/_index.md) and [`filter` and `map` enthusiast](/blog/courses/cpscmath/_index.md) studying [Computer Science](https://www.cs.ubc.ca/) and [Chemistry](https://www.chem.ubc.ca/) at the [University of British Columbia](https://www.ubc.ca/). I enjoy learning about how and why things work, especially pertaining to [biological processes, drugs, viruses (the biological and technical kind)](/blog/papers/lifescience/_index.md), [operating systems](/blog/compsci/computers/#you-better-trust-your-operating-system), and programming languages. I've also been thinking about how [computer science education](@/blog/papers/compsci/_index.md) should work at the primary and secondary school level and enjoy reading about computing history and the impact of technological systems on society. Oh and I hate JavaScript. I not too fond of C either, but I'm willing to use C."
 +++
 
 <div class="flex-col">
@@ -34,8 +34,8 @@ intro = "I'm a [chemistry nerd](/blog/courses) and [`filter` and `map` enthusias
 <div>
 
 ## Interesting Books...
-- [Critically Conscious Computing](https://criticallyconsciouscomputing.org/)
-- [Design Justice](https://design-justice.pubpub.org/)
+- [Critically Conscious Computing](@/blog/papers/compsci/ccc.md)
+- [Design Justice](@/blog/papers/compsci/design-justice.md)
 - [Programmed Inequality](https://mitpress.mit.edu/books/programmed-inequality)
 - [Your Computer is on Fire](https://mitpress.mit.edu/books/your-computer-fire)
 
