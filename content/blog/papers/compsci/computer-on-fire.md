@@ -1,7 +1,7 @@
 +++
 title = "Notes for: Your Computer is On Fire"
 date = 2022-05-02
-draft = false
+draft = true
 +++
 
 # 12 Coding is not empowerment

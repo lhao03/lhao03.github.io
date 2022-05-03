@@ -16,9 +16,9 @@ draft = false
 
 ## Speaking Experience
 - **StarHacks II** 💫 [Panelist for Intersections of Technology](https://www.youtube.com/watch?v=klMP-K7nCd4)
-- **HackCamp** 2021 ⛺ [Workshop Host for Intro to Technical Interviews](https://www.youtube.com/watch?v=iWlQYThaG0I)
+- **HackCamp** 2021 ⛺ [Workshop Host for Intro to Technical Interviews](https://docs.google.com/presentation/d/1GeoKxfqX_JzhC5oc9grG3yzEeiPdq-uJE8kt7sUa64o/edit?usp=sharing)
 - **Joy to job** 💼 Panelist for Computers and Technology 
-- **Citro Hacks** 🍋 [Workshop Host for Intro to Git and GitHub](https://www.youtube.com/watch?v=g-ZOMJ0zlxE&list=PL5oHoUU2PoHFuv9CMBSQRrcU_ZBGQO_iZ&index=5)
+- **Citro Hacks** 🍋 [Workshop Host for Intro to Git and GitHub](https://www.figma.com/proto/QwLUq2jdFJ0kisBOxh0RNM/Intro-to-Git-and-Github-(Copy)?node-id=1%3A160)
 - **Hydrangea Hacks** 💮 [Workshop Host for Intro to NLP](https://www.youtube.com/watch?v=7DLUbxgfrD4&t=2s)
 - **Hacking 4 Community** 👏🏻 Panelist for Pursuing a Successful Career in CS + Technology
 - **StarHacks I** 💫 Workshop Host for Into to Git and GitHub and Intro to Python
