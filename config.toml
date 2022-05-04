@@ -26,3 +26,4 @@ highlight_theme = "nord"
 
 [extra]
 # Put all your custom variables here
+katex_enable = true

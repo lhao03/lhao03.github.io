@@ -13,10 +13,10 @@ updated = 2022-04-24
 
 # Topics I'm interested in
 - Operating Systems
+- Compilers
 - Programming Languages
 - Computer Science Education
-- Chemistry in biological applications
-- Clinical Chemistry
+- Chemical Biology
 - Antiviral strategies & antiviral therapeutics
 
 # Schools, Advisors, Application Details in no particular order
