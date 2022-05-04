@@ -5,7 +5,7 @@ template = "main.html"
 page_template = "post.html"
 paginate_by = 4
 [extra]
-intro = "I'm a [chemistry nerd](/blog/courses/lifesci/) and [`filter` and `map` enthusiast](/blog/courses/cpscmath/) studying [Computer Science](https://www.cs.ubc.ca/) and [Chemistry](https://www.chem.ubc.ca/) at the [University of British Columbia](https://www.ubc.ca/). I enjoy learning about how and why things work, especially pertaining to [biological processes, drugs, viruses (the biological and technical kind)](/blog/papers/lifescience), [operating systems](/blog/compsci/computers/#you-better-trust-your-operating-system), and programming languages. I've also been thinking about how [computer science education](/blog/papers/compsci/) should work at the primary and secondary school level and enjoy reading about computing history and the impact of technological systems on society. Oh and I hate JavaScript. I not too fond of C either, but I'm willing to use C."
+intro = "I'm a [chemistry nerd](/blog/courses/lifesci/) and [`filter` and `map` enthusiast](/blog/courses/cpscmath/) studying [Computer Science](https://www.cs.ubc.ca/) and [Chemistry](https://www.chem.ubc.ca/) at the [University of British Columbia](https://www.ubc.ca/). I enjoy learning about how and why things work, especially pertaining to chemical biology, drugs, viruses (the [biological](/blog/lifesci/micb308/) and technical kind), operating systems, compilers, and programming languages. I also enjoy [reading](/blog/papers/compsci) about computing history, the impact of technological systems on society and computer science education. Oh and I hate JavaScript. I not too fond of C either, but I'm willing to use C."
 +++
 
 <div class="flex-col">
