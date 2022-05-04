@@ -97,3 +97,5 @@ Application Details
 - Scheme
 
 ##  UT Austin
+
+## ETH Zurich
