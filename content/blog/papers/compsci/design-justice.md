@@ -88,4 +88,4 @@ different interactions with the same design interface or object depending on the
 > Universalization erases difference and produces self-­reinforcing spirals of exclusion, but personalized and culturally adaptive systems too
 often are deployed in ways that reinforce surveillance capitalism.
 - design justice: making intentional decisions about which users we choose to center and be held accountable for those choices
-
+- A/B testing is always deployed within universalist design paradigm: 
