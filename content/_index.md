@@ -34,10 +34,10 @@ intro = "I'm a [chemistry nerd](/blog/courses/lifesci/) and [`filter` and `map` 
 <div>
 
 ## Interesting Books...
-- [Critically Conscious Computing](@/blog/papers/compsci/ccc.md)
-- [Design Justice](@/blog/papers/compsci/design-justice.md)
+- [Critically Conscious Computing](@/blog/papers/compsci/cs-edu/ccc.md)
+- [Design Justice](@/blog/papers/compsci/critical/design-justice.md)
 - [Programmed Inequality](https://mitpress.mit.edu/books/programmed-inequality)
-- [Your Computer is on Fire](@/blog/papers/compsci/computer-on-fire.md)
+- [Your Computer is on Fire](@/blog/papers/compsci/critical/computer-on-fire.md)
 
 </div>
 
