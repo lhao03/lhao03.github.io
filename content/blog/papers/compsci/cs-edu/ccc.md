@@ -215,7 +215,7 @@ link="Critically Conscious Computing"
   - teacher: deep diagnostic feedback but is time consuming and requires substantial pedagogical content knowledge
 - methods to explicitly scaffold self-regulation skills => HtDP
 
-- [Notes on Developing Developers](http://127.0.0.1:1111/blog/papers/compsci/developing-developers/)
+- [Notes on Developing Developers](@/blog/papers/compsci/cs-edu/developing-developers.md)
 - programming is a moral activity, which should be taken seriously with responsibility and care
 
 # [Verification and Debugging](https://criticallyconsciouscomputing.org/verification)

@@ -4,7 +4,7 @@ date = 2022-05-03
 draft = false 
 [extra]
 understanding = 10
-interest = 8
+interest = 6
 +++
 
 SIGCSE ’17, March 08-11, 2017, Seattle, WA, USA
