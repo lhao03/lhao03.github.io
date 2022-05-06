@@ -43,7 +43,7 @@ Many human problems are complex problems with a deep history. [Turning a human p
 
 > lax security measures have also exposed the private data of the hosts opening their homes to refugees, allowing anyone to see information including hosts’ phone numbers and email addresses with a few clicks.
 
-Media also worsened the situation by praising this hacked together website, shifting focus away from those the ground work. Not only was the product a privacy and security nightmare, but it showed how clueless it's creators were about relocating refugees. 
+Media also worsened the situation by praising this hacked together website, shifting focus away from those doing the ground work. Not only was the product a privacy and security nightmare, but it showed how clueless it's creators were about relocating refugees. 
 
 > In an interview with Gizmodo, Chojecka also said she had a problem with the site’s lack of education about the refugee experience for hosts, the fact that it did not translate listings into multiple languages, and that it had listings from places as far away as the U.S.
 
@@ -51,7 +51,7 @@ Media also worsened the situation by praising this hacked together website, shif
 
 You would never say other skills like wielding, cooking, or pipetting could solve all the world’s problems. Why is coding any different from other skills? 
 
-Coding (and technology) has limitations, and many times coding can introduce problems you would never have with traditional or alternative methods. You can read about my thoughts on tech solutionism in hackathons [here](@/blog/compsci/hackathons.md#what-are-we-trying-to-solve-here). For a much more in-depth understanding, read [Design Justice](https://design-justice.pubpub.org/).  
+Coding (and technology) has limitations, and many times coding can introduce problems you would never have with traditional or alternative methods. You can read about my thoughts on tech solutionism in hackathons [here](@/blog/compsci/hackathons.md#what-are-we-trying-to-solve-here). 
 
 ## Marketing 
 There’s no marketing initiative as strong as “Learn to Code”. No one is marketing “Learn History” or “Learn Chemistry” because a bunch of people who know history or chemistry don't serve giant companies well. By giant companies, I mean tech companies. It’s cheap for a tech company to produce a MOOC and sell it to people desperate for a better-paying job. These people with only coding skills are then at the will of large companies to pick and choose who they want. And with only more and more people wanting a job in tech, companies can be less competitive with salaries.
@@ -59,11 +59,13 @@ There’s no marketing initiative as strong as “Learn to Code”. No one is ma
 While “Learn to Code” isn’t as common now, there are other marketing campaigns and initiatives telling us to quickly learn about AI to get a job in AI or quickly learn about Web3 and get a job in Web3 because iTs tHe fuTUrE. You rarely ever see this in other areas such as chemistry, with organic chemistry being cool one year, and materials chemistry being hot another year. [Fast Food Education](https://www.kernelmag.io/pieces/fast-food-education) discusses the rise of coding/design boot camps and their shallow and lacking curriculums, which flood the market with a bunch of people with the same skills.
 
 # Is teaching everyone to code the right thing to do? 
-After listening to talks from [Simon Peyton Jones](https://www.youtube.com/watch?v=Ia55clAtdMs) and reading from [Critically Conscious Computing](https://criticallyconsciouscomputing.org/), we should most definitely not be all learning how to code. Instead, we should all be learning about how a computer works. To many, computers are “magical intelligent pieces of metal”. Before you learned about physics, chemistry, math, and biology you might have thought other events were magical, like how baking powder works, how that weird Möbius paper is a single-sided strip with one edge, and how sound travels. But through our education, we have all gained some understanding of how these magical events work; baking powder mixed with water produces carbon dioxide bubbles (making your muffins fluffy), the math behind the one-sided paper, and that sound travels in waves. Does learning to code accomplish one’s desire to understand how a computer works? 
+I think we should all be learning about how a computer works. To many, computers are “magical intelligent pieces of metal”. Yet computers are impacting every single part of our lives, and many people do not understand how a [file system](@/blog/compsci/computers.md#a-misunderstanding-lack-of-understanding-of-a-file-system) works or how a [computers reads and writes from memory](@/blog/compsci/computers.md#how-memory-works-in-progress).
+
+Before you learned about physics, chemistry, math, and biology you might have thought other events were magical, like how baking powder works, how that weird Möbius paper is a single-sided strip with one edge, and how sound travels. But through our education, we have all gained some understanding of how these magical events work; baking powder mixed with water produces carbon dioxide bubbles (making your muffins fluffy), the math behind the one-sided paper, and that sound travels in waves. Does learning to code accomplish one’s desire to understand how a computer works? 
 
 {{ blogImg(img="Mobius.jpg") }}
 
-No, not always. Coding in high-level languages like Python, JavaScript, or scripting languages like HTML or CSS does not. This high-level coding is what is mostly taught by boot camps and current elementary and secondary computer science curriculums. Coding in Python simply lets us tell a computer what we want it to do (thanks to computer scientists who abstracted away a lot of details, it’s easy for anyone to write an easy program now). When you save a text file to your computer do you know how it’s saved on your computer? Coding in Python doesn’t tell you much if anything about how the computer saves your file. And another question to ponder is how a computer does anything! How does the computer save files and then find them later, what is an operating system and what does it manage and control, how does the computer manipulate incoming information, and much more? Learning to code from boot camps or online MOOCs tells you nothing about this. So if you're interested in coding, [check out why computers are actually cool, and I hope you instead learn about computers](@/blog/compsci/computers.md)!
+No, not always. Coding in high-level languages like Python, JavaScript, or scripting languages like HTML or CSS does not. This high-level coding is what is mostly taught by boot camps and current elementary and secondary computer science curriculums. Coding in Python simply lets us tell a computer what we want it to do (thanks to computer scientists who abstracted away a lot of details, it’s easy for anyone to write an easy program now). When you save a text file to your computer do you know how it’s saved on your computer? Coding in Python doesn’t tell you much if anything about how the computer saves your file. Before I studied computer science, I had no idea how computers did anything! How does the computer save files and then find them later, what is an operating system and what does it manage and control, how does the computer manipulate incoming information, and much more? Learning to code from boot camps or online MOOCs tells you nothing about this. So if you're interested in coding, [check out why computers are actually cool, and I hope you instead learn about computers](@/blog/compsci/computers.md)!
 
 # End
 Teaching only code is like only teaching someone lab skills. Of course, someone will eventually discover which two reactants will produce the desired product by trial and error, but they will have a lacking understanding of why a chemical reaction works. As the saying goes; “Give a Man a Fish, and You Feed Him for a Day. Teach a Man To Fish, and You Feed Him for a Lifetime”.
@@ -72,9 +74,6 @@ Because let’s face it; what goes up must always come down. Teaching skills tod
 
 References and inspiration:
 - [Fast Food Education](https://www.kernelmag.io/pieces/fast-food-education)
-- [Critically Conscious Computing](https://criticallyconsciouscomputing.org/)
-- [FILE NOT FOUND](https://www.theverge.com/22684730/students-file-folder-directory-structure-education-gen-z)
-- [Teaching creative computer science: Simon Peyton Jones at TEDxExeter](https://www.youtube.com/watch?v=Ia55clAtdMs)
 - [My thoughts on hackathons](https://lhao03.github.io/blog/hackathons/)
 
 *Updates: typos and making metaphors with chemistry less confusing and fixing weird grammars.*
