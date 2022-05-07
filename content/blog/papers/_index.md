@@ -63,4 +63,6 @@ content="
 - Folk Pedagogy and the Geek Gene: Geekiness Quotient
 - Developing Behavioral Concepts of Higher-Order Functions
 - Every Walk’s a Hit: Making Page Walks Single-Access Cache Hits"
+- Fairness and Abstraction in Sociotechnical Systems
+- Street-Level Algorithms: A Theory at the Gaps Between Policy and Decisions
 )}}
