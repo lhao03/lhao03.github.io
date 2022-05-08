@@ -4,7 +4,7 @@ date = 2022-04-30
 draft = false
 [extra]
 understanding = 5
-interest = 5
+interest = 3
 +++
 
 Eyes Robson, Ceyu Xu, and Lisa Wu Wills. 2022. ProSE: The Architecture
