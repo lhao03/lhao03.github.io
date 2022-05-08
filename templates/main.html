@@ -10,7 +10,6 @@
 <div class="flex-row-col">
   <div class="twothirds">
     {{ section.content | safe }}
-    <img class="center" alt="black cat in purple sweater typing" src="{{get_url(path=data.type)}}"/>
   </div>
   <div class="onethird">
   <h3>Songs I'm listening to...</h3>
@@ -23,6 +22,7 @@
   <h3>Some blog posts...</h3>
   {% set_global blog = get_section(path="blog/_index.md") %}
   {{ macros::displaypaginator(paginator=paginator,seeAll=1) }}
+    <img class="center" alt="black cat in purple sweater typing" src="{{get_url(path=data.type)}}"/>
   </div>
 </div>
 

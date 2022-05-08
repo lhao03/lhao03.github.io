@@ -5,7 +5,7 @@ updated = 2022-05-01
 draft = false
 [extra]
 understanding = 7
-interest = 7
+interest = 8
 +++
 
 Brian Suchy, Souradip Ghosh, Drew Kersnar, Siyuan Chai, Zhen Huang, Aaron Nelson, Michael Cuevas, Alex Bernat, Gaurav Chaudhary, Nikos Hardavellas, Simone Campanoni, and Peter Dinda. 2022. CARAT CAKE: replacing paging via compiler/kernel cooperation. In Proceedings of the 27th ACM International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS 2022). Association for Computing Machinery, New York, NY, USA, 98–114. [https://doi.org/10.1145/3503222.3507771](https://doi.org/10.1145/3503222.3507771)
