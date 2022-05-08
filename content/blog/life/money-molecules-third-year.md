@@ -89,7 +89,7 @@ Did I get that A+ in organic chemistry? Hell no. After a year of not doing any c
 Changing majors isn't all rainbows and sunshine. Due to my advanced credit from IB, I could have finished my computer science degree in three years. Because I did co-op (and then dropped out from co-op), didn't plan my courses well, and switched my major, now I have to take five years. Right now, I think the extra year is worth it.
 
 # what's next
-Currently, I'm listening to a bunch of Dreamcatcher and [reading papers](@/blog/papers/_index.md) on operating systems, compilers, programming languages, computer science education, chemistry, and virology. I'm finally becoming okay with the things I like and worrying less about doing what others are doing. I take courses that I want to and finally accepted that I want to learn about chemistry. 
+Currently, I'm listening to a bunch of Dreamcatcher and [reading papers](@/blog/papers/_index.md) on operating systems, compilers, programming languages, computer science education, and chemistry. I'm finally becoming okay with the things I like and worrying less about doing what others are doing. I take courses that I want to and finally accepted that I want to learn about chemistry. 
 
 <iframe allow="autoplay *; encrypted-media *; fullscreen *" frameborder="0" height="450" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/ca/album/1st-album-dystopia-the-tree-of-language/1499456109?theme=dark"></iframe>
 

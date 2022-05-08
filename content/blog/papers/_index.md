@@ -5,9 +5,6 @@ template = "subsection.html"
 page_template = "post.html"
 +++
 
-Below you can read my sporadic and simple thoughts on papers and books by great people!
-
-## Ranking Papers
 I'm currently reading a bunch of papers and books to see what I'm interested in and I wanted a way to rank each paper. I'm going to use two criteria, understanding and interest. 
 
 {{ expand(title="Interest",
@@ -38,10 +35,6 @@ content="
 10. I could of written this myself (well not really)! I could probably present the paper to someone else clearly and have a conversation with the authors."
 ) }}
 
-Currently, my understanding of topics is (most understanding to least) virology, biochemistry/chemical biology, computer science, chemistry.
-
-As for my interests ranking of topics, I'm not sure yet. 
-
 {{ expand(title="Papers Read",
 content="
 - CARAT CAKE: replacing paging via compiler/kernel cooperation
@@ -62,7 +55,10 @@ content="
 - Why Computer Science Doesn't Matter
 - Folk Pedagogy and the Geek Gene: Geekiness Quotient
 - Developing Behavioral Concepts of Higher-Order Functions
-- Every Walk’s a Hit: Making Page Walks Single-Access Cache Hits"
-- Fairness and Abstraction in Sociotechnical Systems
-- Street-Level Algorithms: A Theory at the Gaps Between Policy and Decisions
+- Every Walk’s a Hit: Making Page Walks Single-Access Cache Hits `[Write up TODO]`
+- Fairness and Abstraction in Sociotechnical Systems `[Write up TODO]`
+- Street-Level Algorithms: A Theory at the Gaps Between Policy and Decisions `[Write up TODO]`" 
 )}}
+
+
+Below you can read my sporadic and simple thoughts on papers and books by great people!
