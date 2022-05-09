@@ -55,20 +55,10 @@ content="
 - Why Computer Science Doesn't Matter
 - Folk Pedagogy and the Geek Gene: Geekiness Quotient
 - Developing Behavioral Concepts of Higher-Order Functions
-  - understanding: 7
-  - interest: 8
 - Every Walk’s a Hit: Making Page Walks Single-Access Cache Hits `[Write up TODO]`
-  - understanding: 8
-  - interest: 9.5
-- Fairness and Abstraction in Sociotechnical Systems `[Write up TODO]`
-  - understanding: 6.5
-  - interest: 7
-- Street-Level Algorithms: A Theory at the Gaps Between Policy and Decisions `[Write up TODO]`
-  - understanding: 8
-  - interest: 9
-- Glycerol-3-Phosphate Dehydrogenase: The K120 and K204 Side Chains Define an Oxyanion Hole at the Enzyme Active Site `[Write up TODO]`
-  - understanding: 5
-  - interest: 8"
+- Fairness and Abstraction in Sociotechnical Systems
+- Street-Level Algorithms: A Theory at the Gaps Between Policy and Decisions`[Write up TODO]`
+- Glycerol-3-Phosphate Dehydrogenase: The K120 and K204 Side Chains Define an Oxyanion Hole at the Enzyme Active Site`[Write up TODO]`"
 )}}
 
 
