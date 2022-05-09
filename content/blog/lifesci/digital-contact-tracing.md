@@ -2,16 +2,18 @@
 title = "Digital contact tracing doesn't make much sense anymore"
 date = 2022-04-18
 draft = false
-updated = 2022-04-27
+updated = 2022-05-08
 +++
 
 *I welcome thoughts and critique on this post. Contact me via Twitter or email.*
 *Need to add proper citations. A work in progress.*
 
 **TL;DR**: 
-Proximity and time based exposure notifications works when viruses were thought to be spread through respiratory droplets that quickly dropped to the ground and were rarely or never even thought to be airborne. This would mean after 15 mins or if you were two meters from someone you could assume almost or no viral load was transferred to you, and thus no exposure risk. 
-Now that we know COVID-19 is airborne and can linger in the air for minutes to hours and travel farther than 2 meters, other factors, like the infected’s quality of mask, air filtration and air circulation quality better, more accurately determine how far the virus can travel, how long the virus lingers in the air, which determines the viral load which then determines whether or not someone could have been exposed.  
+Proximity and time based exposure notifications made sense as a way to measure exposure risk when SARS-CoV-2 was thought to spread through respiratory droplets that quickly dropped to the ground. Essentially, when SARS-CoV-2 was never even thought to be airborne. This would mean if you were *within two metres from an infected individual for less than 15 minutes*, or you were *farther than two metres from an infected individual* you could assume almost no viral load was transferred to you, and thus no exposure risk. 
 
+Now that we know SARS-CoV-2 is airborne and can linger in the air for minutes to hours and travel farther than two metres, other factors, like the infected’s quality of mask and quality air filtration/circulation, can more accurately determine how far the virus can travel and how long the virus lingers in the air, which then determines the [viral load](https://www.canada.ca/en/public-health/services/diseases/2019-novel-coronavirus-infection/guidance-documents/polymerase-chain-reaction-cycle-threshold-values-testing.html#a1) that someone may inhale. With a predicted or estimated viral load, then we could determine exposure risk.
+
+ # The original paper
 A [paper](https://www.science.org/doi/10.1126/science.abb6936) that suggested the idea of digital contact tracing made these reasons as to why a digital contact tracing app could be a tool to reduce infections during the COVID-19 pandemic:
 - manual contact tracing is too slow to bring down the R value, but a digital contact tracing app that instantaneously notified a exposed person to isolate would bring down the R value.
   - "There is no delay between case confirmation and notification of contacts; thus, the delay for the contact quarantine process is the period from an individual experiencing symptoms to their contacts entering quarantine. The delay between symptom development and case confirmation will decrease with faster testing protocols, and indeed could become instant if presumptive diagnosis of COVID-19 based on symptoms were accepted in high-prevalence areas."
@@ -35,7 +37,7 @@ In fact, [Canada has their own digital contact tracing app](https://www.canada.c
 
 The general idea around digital contact tracing apps is that based on some proximity and time threshold, in Canada's COVID-19 app this is 2 metres and 15 minutes, you will be alerted with a notification that you were exposed to someone with COVID-19. Upon this notification, you would quarantine to prevent infecting other people. It's been a year since the release of Canada's digital tracking app, and I took a peek at the report. 
 
-Maybe you're wondering why I'm so interested in this. Well, digital contact tracing sounded like a super cool idea of an application of technology in public health. I was excited for the app and downloaded it myself. Unfortunately, I've deleted it, and in my review of the report maybe you'll see why.
+Maybe you're wondering why I'm so interested in this. Well, digital contact tracing sounded like a super cool idea of an application of technology in public health. I was excited about the app and downloaded it myself. Unfortunately, I've deleted it, and in my review of the report maybe you'll see why.
 
 ## My review of the "Interim report on social and economic determinants of app adoption, retention and use"
 The Canadian government came out with a report, [Interim report on social and economic determinants of app adoption, retention and use](https://www.ic.gc.ca/eic/site/icgc.nsf/eng/07716.html), reviewing how the app has done during the pandemic. Here are my thoughts (in italic). When I say "council" I mean "COVID-19 Exposure Notification App Advisory Council".
@@ -48,15 +50,15 @@ The Canadian government came out with a report, [Interim report on social and ec
 
 *Getting only reports for "close contact" gives the impression that you can only get sick from being "close" to someone. This is incorrect, since researchers have discovered cases in which no one was a close contact with each other, yet still people were becoming infected. You **can** get sick **without** being near someone who is sick.*
 
-> Although individuals experiencing these barriers  are unable to use the app directly, they can still benefit from it if other people use it. For example, if someone with the app receives a notification, they may decide not to visit a medically vulnerable person. This action protects the vulnerable person from potential exposure, even if the vulnerable person does not have their own compatible phone.
+> Although individuals experiencing these barriers are unable to use the app directly, they can still benefit from it if other people use it. For example, if someone with the app receives a notification, they may decide not to visit a medically vulnerable person. This action protects the vulnerable person from potential exposure, even if the vulnerable person does not have their own compatible phone.
 
-*Much of the app is based on voluntary action. "may decide" is used, and this makes it seem as if vulnerable people are at the mercy of those who have the latest technology and can use the digital contact tracing app. We can't assume people will act with the best intentions, and certainly cannot just leave vulnerable folks at the hands of able bodied and privileged people. The report also implies that it's okay to exclude vulnerable from this tool. Everyone deserves access to data and information to protect themselves.*
+*Much of the app is based on voluntary action. The phrase "may decide" is used, and this makes it seem as if vulnerable people are at the mercy of those who have the latest technology and can use the digital contact tracing app. We can't assume people will act with the best intentions, and certainly cannot just leave vulnerable folks at the hands of able-bodied and privileged people. The report also implies that it's okay to exclude vulnerable individuals from this tool. Everyone deserves access to data and information to protect themselves.*
 
 > Currently, British Columbia, Alberta, Nunavut and the Yukon have not adopted the COVID Alert app.
 
 *If nearly all of Western Canada isn't able to use the app, then that's a huge piece of data missing.*
  
-> Early notification is key to the success of the COVID Alert app in breaking the chain of infection by encouraging self-isolation until direction from public heath authorities can be sought. ... To date, more than 80% of users who receive an OTK enter it into the app; however, fewer than 5% of positive cases have obtained an OTK from their public health authority. 
+> Early notification is key to the success of the COVID Alert app in breaking the chain of infection by encouraging self-isolation until direction from public heath authorities can be sought. [...] To date, more than 80% of users who receive an OTK enter it into the app; however, fewer than 5% of positive cases have obtained an OTK from their public health authority. 
 
 *Again, lets assume those who get an key self isolate. That's less than 5% of positive cases self isolating. Public health requires the entire public to participate. 5% participating is simply too low.* 
 
@@ -93,25 +95,25 @@ Under "Strategies to reduce barriers and increase adoption, retention and proper
 
 *The statement above directly contradicts with the statement that the Canadian government will work on "eventual wind-down of the app, including recommendations for the timely destruction of data."*
 
-> Position COVID Alert as one additional tool at the disposal of Canadians, to better situate its position within the broader public health response to the COVID-19 pandemic and to highlight success stories that would resonate with Canadians; ... This will be critical in achieving wider uptake, which will involve clear communications, ongoing engagement with diverse partners and communities; and continuous improvements to the app (e.g. new functionalities and emerging technologies that could help to re-open parts of the economy)
+> Position COVID Alert as one additional tool at the disposal of Canadians, to better situate its position within the broader public health response to the COVID-19 pandemic and to highlight success stories that would resonate with Canadians; [...] This will be critical in achieving wider uptake, which will involve clear communications, ongoing engagement with diverse partners and communities; and continuous improvements to the app (e.g. new functionalities and emerging technologies that could help to re-open parts of the economy)
 
 *This frustrates me. We **have** tools that work and do reduce cases. High quality masks, air filtration and circulation and UV. I'm disappointed that none of these were mentioned. We don't need more tools, (and most certainly we don't need more apps). Instead, we need to use tools that work.*
 
 > Through the deployment of the COVID Alert app, the Government of Canada has committed to deploying a technology-based solution that will assist Canada in flattening the curve and limiting the spread of COVID-19. 
 
-*The public has to trust health experts and actively prevent infection by masking up, getting routinely tested for COVID-19, self isolating if symptomatic. Government needs to track data, such as waste water and CO2 levels so we can preaper for the futrue adn decrease transmission of the virus through the air. We shouldn't be investing so much time and energy into a tool we aren't even sure works when we now understand that COVID-19 is airborne.*
+*The public has to trust health experts and actively prevent infection by masking up, getting routinely tested for COVID-19, and self-isolating until no longer infectious. Government needs to track data, such as waste water and CO2 levels, so we can prepare for the future and decrease transmission of the virus through the air. We shouldn't be investing so much time and energy into a tool we aren't even sure works when we now understand that COVID-19 is airborne.*
 
-*Technology based solutions frequently simplify complex solutions into simple models that may not be accurate. It's been two years since the pandemic began and we have more knowledge of the virus. There are tools that do work, such as CO2 monitors, which can help someone decide if eating at a restaurant is safe or not. Digital contact tracing, at it's current state, does not provide any useful information to citizens. There are no metrics mentioned, after more than one year of use, if this app prevented anyone from being infected. We can't say the app has assisted at all in limiting spread of COVID-19 if there's no metrics to back that up.*
+*Technology based solutions frequently simplify complex solutions into simple models that may not be accurate. It's been two years since the pandemic began, and we have more knowledge of the virus. There are tools that do work, such as CO2 monitors, which can help someone decide if eating at a restaurant is safe or not. Digital contact tracing, at its current state, does not provide any useful information to citizens. There are no metrics mentioned, after more than one year of use, if this app prevented anyone from being infected. We can't say the app has assisted at all in limiting spread of COVID-19 if there's no metrics to back that up.*
 
-The report fails to mention anything about COVID-19 being airborne and what the app plans to change to take into account that distances more than 2m may still expose someone to COVID-19. 
+The report fails to mention anything about COVID-19 being airborne and what the app plans to change to take into account that distances more than 2 metres may still expose someone to COVID-19. 
 
-With more variants emerging, the government has a responsibility to update it's citizens about these variants and provide data to help citizens make informed decisions.
+With more variants emerging, the government has a responsibility to update its citizens about these variants and provide data to help citizens make informed decisions.
 
 Our world is constantly changing, and software must adapt to these changes, not the other way around. However, it seems today that the world is constantly catering to the software, simplifying down complex situations only to have the world slap us in the face later.
 
 --- 
 
-Since it's been almost two (or three) years since the pandemic started, we know more about how the COVID-19 virus infects and transmits. I want to first say that based on how Western societies treated about viruses (not really airborne, washing hands and social distancing should be enough) and the fear around saying COVID-19 transmitted via the air, our response was understandable. But it's been a year since, and digital contact tracing apps haven't really demonstrated a contribution to reducing infection. Here are the reasons I want to highlight on why I think it there's a low chance of Canada being able to adopt a digital contact tracing app and why I think the digital contact tracing app is inaccurate:
+Since it's been almost two (or three) years since the pandemic started, we know more about how the COVID-19 virus infects and transmits. I want to first say that based on how Western societies treated about viruses (not really airborne, hoping that washing hands and social distancing should be enough) and the fear around saying COVID-19 transmitted via the air, our response was understandable. But it's been a year since, and digital contact tracing apps haven't really demonstrated a contribution to reducing infection. Here are the reasons I want to highlight on why I think it there's a low chance of Canada being able to adopt a digital contact tracing app and why I think the digital contact tracing app is inaccurate:
 
 - Is proximity the best measure? 
 - Testing and variants
@@ -124,7 +126,7 @@ The paper I mentioned above also stated that:
 
 It's understandable that we assumed COVID-19 wasn't airborne, as other deadly illnesses like cholera and polio spread through fluids and fecal matter. Declaring a virus is airborne is also alarming, and as a global body, WHO may have thought it was their responsibility not to accidentally set a false alarm. However, [we now know that COVID-19 is airborne](https://www.nature.com/articles/d41586-022-00925-7). 
 
-Digital contract tracing apps which use proximity to determine exposure reduce COVID-19 transmission into the notion that we only need to be near sick people to get sick. When not much was known about COVID-19 transmission and it was believed to transmit through respiratory droplets that quickly fell to the ground, this would of been a model that made sense. But with more research highlighting evidence on COVID-19 transmission occurring when people aren't near each other and that particles of up to 100 microns can stay in the air, proximity isn't a good measure for exposure anymore and downplays how transmissible COVID-19 is. Canada's digital contact tracing app uses 2 m as a proximity measure, but you can be infected from [distances much farther](https://www.cebm.net/covid-19/what-is-the-evidence-to-support-the-2-metre-social-distancing-rule-to-reduce-covid-19-transmission/) and many factors play into what distance is "safe".
+Digital contract tracing apps which use proximity to determine exposure reduce COVID-19 transmission into the notion that we only need to be near sick people to get sick. When not much was known about COVID-19 transmission and it was believed to transmit through respiratory droplets that quickly fell to the ground, this would have been a model that made sense. But with more research highlighting evidence on COVID-19 transmission occurring when people aren't near each other and that particles of up to 100 microns can stay in the air, proximity isn't a good measure for exposure anymore and downplays how transmissible COVID-19 is. Canada's digital contact tracing app uses 2 metres as a proximity measure, but you can be infected from [distances much farther](https://www.cebm.net/covid-19/what-is-the-evidence-to-support-the-2-metre-social-distancing-rule-to-reduce-covid-19-transmission/) and many factors (like masking and air filtration) play into what distance is "safe".
 
 From [What is the evidence to support the 2-metre social distancing rule to reduce COVID-19 transmission?
 ](https://www.cebm.net/covid-19/what-is-the-evidence-to-support-the-2-metre-social-distancing-rule-to-reduce-covid-19-transmission/):
@@ -132,14 +134,14 @@ From [What is the evidence to support the 2-metre social distancing rule to redu
 > A one-size-fits-all 2-metre social distancing rule is not consistent with the underlying science of exhalations and indoor air. Such rules are based on an over-simplistic picture of viral transfer, which assume a clear dichotomy between large droplets and small airborne droplets emitted in isolation without accounting for the exhaled air. The reality involves a continuum of droplet sizes and an important role of the exhaled air that carries them.
 > Smaller airborne droplets laden with SARS-CoV-2 may spread up to 8 metres concentrated in exhaled air from infected individuals, even without background ventilation or airflow. Whilst there is limited direct evidence that live SARS-CoV-2 is significantly spread via this route, there is no direct evidence that it is not spread this way.
 
-With surface spreading viruses or fluid (liquid) spreading viruses, we don't need to be near someone to get sick. People can get infected with cholera by using water from a stream that could by miles away from the infected person. We need to be in contact with that surface or fluid to get sick. It doesn't matter if that person is close or not, though that person being close can increase the risk of us getting sick, it's not the main determining factor. [In fact, there are several cases of COVID-19 transmission between people who have never seen each other, but have breathed the same air via air conditioning](https://wwwnc.cdc.gov/eid/article/26/7/20-0764_article).
+With surface spreading viruses or fluid (liquid) spreading viruses, we don't need to be near someone to get sick. People can get infected with cholera by using water from a stream that could be miles away from the infected person. We need to be in contact with that surface or fluid to get sick. It doesn't matter if that person is close or not, though that person being close can increase the risk of us getting sick, it's not the main determining factor. [In fact, there are several cases of COVID-19 transmission between people who have never seen each other, but have breathed the same air via air conditioning](https://wwwnc.cdc.gov/eid/article/26/7/20-0764_article).
 
 ## We get sick by interacting with the virus via contaminated air, not just by being near an infected person.
-In virology lecture we are taught that airborne particles can be respiratory droplets or aerosolised particles. Respiratory droplets eventually fall to the ground, while aerosolized particles can linger in the air. 
+In virology lecture we are taught that airborne particles can be respiratory droplets or aerosolised particles. Respiratory droplets eventually fall to the ground, while aerosolised particles can linger in the air. 
 
-At the beginning of the pandemic, WHO made the erroneous judgement that COVID-19 was spread through respiratory droplets that eventually fall onto surfaces and then infect those that touch those surfaces. This mistake led Western nations to [slap a sanitizer machine at every building entrance, increase their sanitization of desks and more surface focused cleaning](https://www.nature.com/articles/d41586-021-00251-4). On the contrary, [many Asian countries have ignored WHO](https://twitter.com/JayCityExplore/status/1476868848393535498), acting on research that is paints COVID-19 as a much more infectious virus than WHO and Western nations think. And it seems to have paid off. 
+At the beginning of the pandemic, WHO made the erroneous judgement that COVID-19 was spread through respiratory droplets that eventually fall onto surfaces and then infect those that touch those surfaces. This mistake led Western nations to [slap a sanitizer machine at every building entrance, increase their sanitization of desks and more surface focused cleaning](https://www.nature.com/articles/d41586-021-00251-4). On the contrary, [many Asian countries have ignored WHO](https://twitter.com/JayCityExplore/status/1476868848393535498), acting on research that paints COVID-19 as a much more infectious virus than WHO and Western nations think. And it seems to have paid off. 
 
-Why did WHO decide that COVID-19 wasn't airborne? Well, since transmission was thought to occur through sneezes, coughs, etc, that expel large respiratory droplets, WHO thought that these respiratory droplets would just fall to the ground. [Lot's of medical experts were making the assumption that most viruses weren't airborne since particles were bigger than 5 microns.](https://www.wired.com/story/the-teeny-tiny-scientific-screwup-that-helped-covid-kill/). My virology lecture may have not be totally correct as well, because maybe respiratory droplets do stay in the air longer than we thought. 
+Why did WHO decide that COVID-19 wasn't airborne? Well, since transmission was thought to occur through sneezes, coughs, etc, that expel large respiratory droplets, WHO thought that these respiratory droplets would just fall to the ground. [Lots of medical experts were making the assumption that most viruses weren't airborne since particles were bigger than 5 microns.](https://www.wired.com/story/the-teeny-tiny-scientific-screwup-that-helped-covid-kill/). However, maybe respiratory droplets do stay in the air longer than we thought. 
 
 There's a [history](https://www.wired.com/story/the-teeny-tiny-scientific-screwup-that-helped-covid-kill/) that may have been a reason why WHO acted the way they did.
 
@@ -153,41 +155,37 @@ And then after Langmuir disparaged Well's work he came up with this:
 
 > In the report, Langmuir cited a few studies from the 1940s looking at the health hazards of working in mines and factories, which showed the mucus of the nose and throat to be exceptionally good at filtering out particles bigger than 5 microns. The smaller ones, however, could slip deep into the lungs and cause irreversible damage. If someone wanted to turn a rare and nasty pathogen into a potent agent of mass infection, Langmuir wrote, the thing to do would be to formulate it into a liquid that could be aerosolized into particles smaller than 5 microns, small enough to bypass the body’s main defenses. Curious indeed. Randall made a note.
 
-Langmuir did eventually shift his tone and accept that airborne infection was possible. After Well's died, Langmuir delivered a speech stating "problematic particles—the ones they had to worry about—were smaller than 5 microns." [And that screwup started it all](https://www.wired.com/story/the-teeny-tiny-scientific-screwup-that-helped-covid-kill/). However, particles that are up to 100 microns are also airborne!
+Langmuir did eventually shift his tone and accept that airborne infection was possible. After Well's died, Langmuir delivered a speech stating "problematic particles—the ones they had to worry about—were smaller than 5 microns." [And that screw up started it all](https://www.wired.com/story/the-teeny-tiny-scientific-screwup-that-helped-covid-kill/). However, particles that are up to 100 microns are also airborne!
 
 While most viruses are 0.1 to 0.5 microns, viruses hitch a ride on the droplets that we produce when breathing, sneezing or coughing. From this [study](https://www.materials-talks.com/droplet-sizing-of-coughs-and-sneezes/) there are droplets that measure at below or around 100 microns. This means someone's sneeze can travel around a room. 
 
 ---
 
-Okay, that was a lot of preamble. I wanted to set up why the virus being airborne is important and how digital contact tracing misses on this. Digital contact tracing apps seems like a fun algorithmic problem to determine who's been near who! Which is just another complex public health and social problem reduced into a algorithm. It seems perfect. In fact, I was exited for Canada to get their own contact tracing app after seeing some success in countries like South Korea and Taiwan. 
+Okay, that was a lot of reading. I wanted to set up why the virus being airborne is important and how digital contact tracing misses on this. Digital contact tracing apps seems like a fun algorithmic problem to determine who's been near whom! Which is just another complex public health and social problem reduced into a algorithm. It seemed perfect.
 
-But the app is missing a lot of context. For one, depending on whether or no the air is actively being filtered, being 6 ft (or 2m) may be enough distance, or it might not be. And depending on one's mask, this further complicates what distance is "safe" from being exposed to infection, The app simply doesn't know, and giving erroneous information is worse than no information. The app doesn't know anything about the quality of the air. Distance doesn't matter so much if the air is being constantly filtered. A CO2 monitor would be more helpful than an app that tells me if I've been near a sick person. Basically, the app totally simplifies and neglects how air transmission works. The only way you can tell if you've been exposed is if you have a CO2 monitor telling you if air is being filtered and circulated around enough such that you aren't breathing in the air other people exhale.
+But the app is missing a lot of context. For one, depending on whether or no the air is actively being filtered, being 6 ft (or 2 metres) may be enough distance, or it might not be. And depending on one's mask, this further complicates what distance and time you can inhale infected air is "safe" from being exposed to infection, The app simply doesn't know, and giving erroneous information is worse than no information. The app doesn't know anything about the quality of the air. Distance doesn't matter so much if the air is being constantly filtered. A CO2 monitor would be more helpful than an app that tells me if I've been near a sick person. Basically, the app totally simplifies and neglects how air transmission works. The only way you can tell if you've been exposed is if you have a CO2 monitor telling you if air is being filtered and circulated around enough such that you aren't breathing in the air other people exhale.
 
-Since COVID-19 virus is airborne, one should assume no distance is safe, unless they had data to tell them otherwise. For instance, It would be useful to know if I was in a restaurant or building that had bad air quality. Much of the public has no access to knowledge of whether their air is being filtered or not, or the quality of the filter. If we aren't able to access high quality, real time data on positive cases, understanding our air quality is the next best piece of data we can use to make informed choices. 
+Since COVID-19 virus is airborne, one should assume no distance and time near infected air is safe, unless they had data to tell them otherwise. For instance, it would be useful to know if I was in a restaurant or building that had bad air quality. Much of the public has no access to knowledge of whether their air is being filtered or not, or the quality of the filter. If we aren't able to access high quality, real time data on positive cases, understanding our air quality is the next best piece of data we can use to make informed choices. 
 
-As [Ali Alkhatib](https://ali-alkhatib.com/blog/digital-contact-tracing) says in his blog post "We Need to Talk About Digital Contact Tracing", 
+As [Ali Alkhatib](https://ali-alkhatib.com/blog/digital-contact-tracing) says in his blog post "We Need to Talk About Digital Contact Tracing":
 
 > Digital contact tracing systems that render the world as normally distributed space with spheres of influence and contact characterized by radio waves will consistently leave us with dangerously wrong pictures of our exposure.
 
 I've mostly been discussing science, but please check out his blog post to learn how digital contact tracing excludes the most vulnerable, gathers unrepresentative data, how proximal tracing doesn't maintain privacy and how proximity is a dangerously simple way to model and think about COVID-19 transmission. 
 
 ## To get infected, viruses require affinity and avidity with the human receptor.
-There's a lot of chemistry, physics and biology involved in getting infected. First, the physics of viruses. Viruses spread through surface, liquid and air. The physics for each medium is different and it's important we all have some basic understanding of how to prevent transmission given the medium of spread. If transmission occurs by:
+There's a lot of chemistry, physics and biology involved in getting infected. First, the physics of viruses. Viruses spread through surface, liquid and air. The physics for each medium is different, and it's important we all have some basic understanding of how to prevent transmission given the medium of spread.
 
-- surface: sanitize, wash your hands and don't shake hands.
-- liquids: boil drinking water, don't drink suspicious liquids be vary of who you share fluids with.
-- air: filter the air and wear a N95 mask when air filtration isn't possible or when you must interact with people.
-
-But preventing transmission isn't always possible. To become infected, viruses require affinity and avidity. What does this mean? Well it's time for chemistry. Affinity is how strongly two molecules will react with each other. We can think of this as the binding event between the virus and human receptor. The stronger the binding event, the better. More specifically if the virus has more affinity to bind than the native molecule that usually binds to the human receptor, then the virus is on it's first step to infecting us. Next, we must have avidity, which is [the accumulated strength of multiple affinities](https://en.wikipedia.org/wiki/Avidity). Affinity isn't always enough, thus, if there's more virus than native molecule, the higher concentration of virus can out compete the native molecule. Once some threshold is met, you are infected. 
+But preventing transmission isn't always possible. To become infected, viruses require affinity and avidity. What does this mean? Well it's time for chemistry. Affinity is how strongly two molecules will react with each other. We can think of this as the binding event between the virus and human receptor. The stronger the binding event, the better. More specifically if the virus has more affinity to bind than the native molecule that usually binds to the human receptor, then the virus is on its first step to infecting us. Next, we must have avidity, which is [the accumulated strength of multiple affinities](https://en.wikipedia.org/wiki/Avidity). Affinity isn't always enough, thus, if there's more virus than native molecule, the higher concentration of virus can out compete the native molecule. Once some threshold is met, you are infected. 
 
 {{ blogImg(img="binding.png") }}
 [Figure is from this paper](https://pubmed.ncbi.nlm.nih.gov/33502950/)
 
 And the biology is how our body responds. Our immune systems will respond first, however infection can involve other organs, such as our lungs.
 
-Okay, so what does this mean? There are some things we can't control, like how a virus spreads or which human receptor the virus will bind to and how strongly that virus will bind. But there are some things we can control, like avidity and our immune response. We can control our avidity to a virus by wearing high quality masks and requesting better air filtration. We can control our immune response by getting vaccines.
+Okay, so what does this mean? There are some things we can't control, like how a virus spreads or which human receptor the virus will bind to and how strongly that virus will bind. But there are some things we can control, like avidity (how many virus particles) and our immune response. We can control our avidity to a virus by wearing high quality masks and requesting better air filtration. We can control our immune response by getting vaccines.
 
-Unfortunately, education on proper masks has been non existent, with some health leaders suggesting that cloth masks are still okay to wear ([they aren't](https://www.cidrap.umn.edu/news-perspective/2021/10/commentary-what-can-masks-do-part-1-science-behind-covid-19-protection)). 
+Unfortunately, education on proper masks has been non-existent, with some health leaders suggesting that cloth masks are still okay to wear ([they aren't](https://www.cidrap.umn.edu/news-perspective/2021/10/commentary-what-can-masks-do-part-1-science-behind-covid-19-protection)). 
 {{ blogImg(img="mask.jpg") }}
 
 Contact tracing apps make it easy to forget the physics, chemistry and biology of viruses. These apps boil viruses down to exposure time and proximity to infected individuals. Many important factors like the method of spread, avidity and immune response are pushed to the sidelines with software solutions, with millions of dollars going into these apps.
@@ -201,7 +199,7 @@ This goes against the advice that the paper gives:
 
 > "If testing capacity is limited, individuals who are identified by tracing may be presumed confirmed upon onset of symptoms, because the prior probability of them being positive is higher than for the index case, accelerating the algorithm further without compromising specificity."
 
-Much of the success of the app relies on quickly and accurately detecting positive cases with testing. However with variants that aren't always showing up on rapid tests, the delay of results with PCR tests, inaccessibility and economic barriers to testing, this severely limits who gets tested. 
+Much of the success of the app relies on quickly and accurately detecting positive cases with testing. However, with variants that aren't always showing up on rapid tests, the delay of results with PCR tests, inaccessibility and economic barriers to testing, this severely limits who can get tested. 
 
 Until we have faster, more accurate, more accessible and cheaper tests, the accuracy of digital tracking apps will be pretty low. 
 
@@ -211,22 +209,22 @@ As of now, there seems to be no way to report a self test.
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">is there a way to report our cases to ontario gov? I cannot find anything anywhere to report to so cases of my family will be counted. <a href="https://t.co/bLSiImovma">https://t.co/bLSiImovma</a></p>&mdash; Amanjeev 𒄇 (@amanjeev) <a href="https://twitter.com/amanjeev/status/1515083778271686660?ref_src=twsrc%5Etfw">April 15, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-The main goal of the digital tracking app is to notify and allow someone to self isolate before they even begin showing symptoms or infecting others. Without access to tests, this makes it very hard to achieve this notion of instantaneous contact tracing. Days matter a lot when trying to prevent the spreading of COVID-19.
+The main goal of the digital tracking app is to notify and allow someone to self-isolate before they even begin showing symptoms or infecting others. Without access to tests, this makes it very hard to achieve this notion of instantaneous contact tracing. Days matter a lot when trying to prevent the spreading of COVID-19.
 
 {{ blogImg(img="graphcontactracing.png") }}
 
 ## Viruses mutate at random. A lot.
-But viruses don't mutate everywhere at random. We've observed with COVID-19 variants and other coronaviruses that there are some conserved regions that undergo mutation a lot less. For instance, the [residues of the substrate-binding pocket of the substrate-binding pocket are highly conserved](https://portlandpress.com/bioscirep/article/40/6/BSR20201256/224927/Glecaprevir-and-Maraviroc-are-high-affinity) and don't really undergo much mutation, since this protein is essential to replication and proteolytic processing.
+But viruses don't mutate everywhere at random. We've observed with COVID-19 variants and other coronaviruses that there are some conserved regions that undergo mutation a lot less. For instance, the [residues of the substrate-binding pocket are highly conserved](https://portlandpress.com/bioscirep/article/40/6/BSR20201256/224927/Glecaprevir-and-Maraviroc-are-high-affinity) and don't really undergo much mutation, since this protein is essential to replication and proteolytic processing.
 
 But the spike protein on the other hand goes through a lot of mutation. For instance, [many Omicron's mutations](https://covariants.org/variants/21K.Omicron) are associated with the ACE2 receptor binding and antibody binding sites (our vaccines currently target these proteins). 
 
-Mutations are random, but those random mutations that can survive current drugs and vaccines are the viruses that will continue to spread. Mutations that occur on proteins like the main protease may also occur, but some mutations are more deadly to the virus than others, and these mutated viruses simply cease to replicate, ending their ability to spread.
+Mutations are random, but those random mutations that can survive current drugs and vaccines are the mutations that will continue to spread. Mutations that occur on proteins like the main protease may also occur, but some mutations are more deadly to the virus than others, and these mutated viruses simply cease to replicate, ending their ability to spread.
 
 With that being said, for current drugs and vaccines to continue working, we have to slow down the chance for the virus mutate. The likelihood of mutation increases as more and more people become infected. This means we must prevent infection. 
 
-People will argue that infection is mild, but getting infected isn't just about getting infected. It's about whether or not you become the new reservoir to the next COVID-19 variant.
+People will argue that infection is mild, but getting infected isn't just about getting infected. It's about whether you become the new reservoir to the next COVID-19 variant.
 
-Digital contact tracing apps can give someone an over simplified model of how COVID-19 transmits; using proximity doesn't make much sense since the virus can stick around in the air and viral load is dependent on a lot factors like masking, air ventilation/filtration. The longer and more we get infected, the more variants there will be. It's time to ditch the app and go back to tracking data and using methods like masking and air filtration; methods that work.
+Digital contact tracing apps can give someone an over simplified model of how COVID-19 transmits; using proximity doesn't make much sense since the virus can stick around in the air and viral load is dependent on a lot of factors like masking and air ventilation/filtration. The longer and more we get infected, the more variants there will be. It's time to ditch the app and go back to tracking data and using methods like masking and air filtration; methods that work.
 
 # Adoption of the app by the public
 I was excited by the announcement of Canada's digital tracking app after hearing about the success in South Korea and China. However, as I highlighted above, I later uninstalled app because no one was using it. 
@@ -235,7 +233,7 @@ The [paper](https://www.science.org/doi/10.1126/science.abb6936) mentions some i
 
 > Public health policy was implemented using an app that was not compulsory but was required to move between quarters and into public spaces and public transport.
 
-Obviously, that sort of adoption has not happened in Canada and probably will not. Only 15-20% of the Canada's population has installed the app. If we play with some simulations here and assume 20% of Canadians will self isolate, maybe assuming 20% of infections will be stopped, this is still not enough to move COVID-19 into endemic phase. This [analysis](https://ncase.me/covid-19/) done quite early during the pandemic which was based on early research and the less transmissible OG COVID-19 variant states we only need to stop 60% of infections.
+Obviously, that sort of adoption has not happened in Canada and probably will not. Only 15-20% of the Canada's population has installed the app. If we play with some simulations here and assume 20% of Canadians will self-isolate, maybe assuming 20% of infections will be stopped, this is still not enough to move COVID-19 into endemic phase. This [analysis](https://ncase.me/covid-19/) done quite early during the pandemic, which was based on early research and the less transmissible original COVID-19 variant, states we only need to stop 60% of infections.
 
 {{ blogImg(img="60.png") }}
 
@@ -243,7 +241,7 @@ Other points the paper mentions, such as:
 
 > Successful and appropriate use of the app relies on it commanding well-founded public trust and confidence.
 
-which is unlikely to occur in a Western society where people are more independent and less trusting of their governments.
+Which is unlikely to occur in a Western society where people are more independent and less trusting of their governments.
 
 Also claims such as: 
 > The intention is not to impose the technology as a permanent change to society, but we believe that under these pandemic circumstances it is necessary and justified to protect public health.
@@ -252,21 +250,20 @@ Also claims such as:
 
 are discussed in [Ali Alkhatib](https://ali-alkhatib.com/blog/digital-contact-tracing)'s blog post. 
 
-All in all, I see a low chance for the app gaining a large enough adoption for the app to become a accurate tool to use as a means to decreasing infections.
+All in all, I see a low chance for the app gaining a large enough adoption for the app to become an accurate tool to use as a means to decreasing infections.
 
 # Conclusion
 For a digital contact tracing app to have some impact on reducing infections we need:
 - access to lots of quick and accurate tests
-- an preventative mindset towards being exposed, as outlined in the paper: "If testing capacity is limited, individuals who are identified by tracing may be presumed confirmed upon onset of symptoms, because the prior probability of them being positive is higher than for the index case."
+- a preventative mindset towards being exposed, as outlined in the paper: "If testing capacity is limited, individuals who are identified by tracing may be presumed confirmed upon onset of symptoms, because the prior probability of them being positive is higher than for the index case."
 - ability for people to upload self confirmed tests to the app
 - adoption of the app by 60%\* of the population
-- people to actually self isolate until they are no longer sick
+- people to actually self-isolate until they are no longer sick
+- a better way to measure exposure risk: using masking and air filtration/circulation to predict exposure risk or understanding that the virus can linger in the air, so letting users know if they have been in the same location as someone who was infected, regardless of how far or how long they were near that infected individual 
 
-But I don't think it's worth the time and money to keep trying to use digital contact tracing apps at this stage. Using proximity as a measure of whether someone has been exposed oversimplifies our new understanding of how COVID-19 spreads and the science around COVID-19. 
+*However*, to prevent new variants and prevent long COVID I believe we must work towards no infections at all, not just reducing infections. I understand this is a more extreme stance, but drug and vaccine development simply will always lag behind the virus, and developing drugs and vaccines isn't easy! Since 100% (or even 50%) adoption and **use** of the app isn't feasible, I don't think digital contact tracing works in a Western society. 
 
-*However*, to prevent new variants and prevent long covid I believe we must work towards no infections at all, not just reducing infections. I understand this is a more extreme stance, but drug and vaccine development simply will always lag behind the virus, and developing drugs and vaccines isn't easy! Since 100% (or even 50%) adoption and **use** of the app isn't feasible, I don't think digital contact tracing works in a Western society. 
-
- [Alberta spent $4.3 million on their digital contact tracing app, which only notified 1,500 people of possible exposure.](https://www.cbc.ca/news/canada/edmonton/158-albertans-with-covid-19-reported-their-illness-to-province-s-multimillion-dollar-app-1.6202636). We **have** tools that work and we **know** what works. Good quality masks, air filtration and circulation and UV. We also have tools that can help us make decisions on high risk locations for getting infected, such as waste water tracking and CO2 monitoring. All the money going into building digital contact tracing apps could of gone into providing the previously mentioned tools. We don't need more apps. We need to use tools that work with the ever changing science of COVID-19.
+It's worth the time and money to keep trying to use digital contact tracing apps at this stage. [Alberta spent $4.3 million on their digital contact tracing app, which only notified 1,500 people of possible exposure.](https://www.cbc.ca/news/canada/edmonton/158-albertans-with-covid-19-reported-their-illness-to-province-s-multimillion-dollar-app-1.6202636). We **know** what works. Good quality masks, air filtration and circulation and UV lighting to kill the virus in high risk places like hospitals. We also have metrics that can help us predict areas of increasing infection (waste water tracking) and possible exposure risk (CO2 monitoring). In a Western society, the digital contact tracing app will not get us out of the pandemic.
 
 \* I use 60% as outlined above, but I don't actually know what number would be needed to reduce the R value.
 
