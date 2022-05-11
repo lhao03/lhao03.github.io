@@ -7,7 +7,7 @@ updated = 2022-04-24
 
 *Disclaimer: I'm just a student and teaching assistant for the courses I will be talking about.*
 
-This post was inspired by Amy J. Ko, Ph.D.{{ ss(num="1")}}, [Critically Conscience Computing](@/blog/papers/compsci/cs-edu/ccc.md){{ss(num="2")}}, and the talk (also by Amy) Learning to Code: Why we Fail, How We Flourish{{ss(num="3")}}.
+This post was inspired by Amy J. Ko, Ph.D.[^amy], [Critically Conscience Computing](@/blog/papers/compsci/cs-edu/ccc.md)[^ccc], and the talk (also by Amy) Learning to Code: Why we Fail, How We Flourish[^ltc].
 
 ---
 
@@ -20,7 +20,7 @@ But it's different in my computer science classes. I see and hear frequent compl
 With that being said, a computer science degree is still the most common degree for a software job. Since software is such an important and overreaching part of society, and I believe that just vocational skills aren't enough to get a job in software, because you must understand why something is the way it is or how something could fail. Nonetheless, a job as a software engineer requires coding and learning various technologies, with less emphasis on theoretical topics commonly taught in university. Should that be the responsibility of the university to teach these technologies over concepts? I'm not sure. But nowadays Canadian universities are teaching a mix of both for computer science, though much more emphasis on theoretical concepts. But how do we best teach theoretical concepts alongside programming language skills and proficiency?
 
 # How do we best teach theoretical concepts alongside programming language skills and proficiency?
-Educators like Amy J. Ko, Ph.D. hope that more people, especially from minority groups, can get involved in computer science. However, it's a challenge: even though there are more women in other areas like medicine and business than in previous years, you can't say the same for CS. Researchers from UCLA{{ss(num="4")}} have pointed out: 
+Educators like Amy J. Ko, Ph.D. hope that more people, especially from minority groups, can get involved in computer science. However, it's a challenge: even though there are more women in other areas like medicine and business than in previous years, you can't say the same for CS. Researchers from UCLA[^ctc] have pointed out: 
 
 {{ quote(text="Women who take intro-to-CS classes tend to be further along in their college careers than men, and they are usually not CS majors. Since women are better represented in CS intro courses (32%) than among actual CS degree earners (16% among BRAID schools), BRAID researchers believe that CS intro classes are particularly significant in whether a student chooses to go down the CS pathway.",
 author="Shana Vu",
@@ -82,7 +82,7 @@ During my time TAing CPSC 110, students who struggled usually continued to strug
 
 A possible solution to helping students' feel more personally engaged with programming is to center a course around being project-based, which I will discuss below.
 
-Amy J. Ko, Ph.D. also discuss how students may have a brittle understanding of the programming language, further impeding their ability to complete problem sets. I think that CPSC 110 tries to remedy this problem by using [BSL (and later ISL and ASL) a programming language designed for educational purposes](@/blog/papers/compsci/cs-edu/developing-developers.md#fundamentals-1-designing-with-teaching-languages) that has a very simple syntax and one that many students have never encountered before, leveling the playing ground {{ ss(num="5")}}.
+Amy J. Ko, Ph.D. also discuss how students may have a brittle understanding of the programming language, further impeding their ability to complete problem sets. I think that CPSC 110 tries to remedy this problem by using [BSL (and later ISL and ASL) a programming language designed for educational purposes](@/blog/papers/compsci/cs-edu/developing-developers.md#fundamentals-1-designing-with-teaching-languages) that has a very simple syntax and one that many students have never encountered before, leveling the playing ground[^dd].
 
 Some reasoning behind choosing a programming language for a course from Matthias Felleisen, creator of HtDP which CPSC 110 is based on: 
 
@@ -133,12 +133,16 @@ For chemistry courses, we have dedicated lab instructors teaching us laboratory 
 
 Professors inevitably need to choose a programming language to use as a vessel to teach a concept, but having to program in a new programming language can make someone believe they aren't understanding the concepts, ultimately making them believe they aren't good at CS.
 
-Not teaching the programming language students must use can leave students feeling like learning a new programming language is supposed to be easy (hence no time spent on it in class) or simply cause a student to fall behind because they don't have the time to learn a new programming language in addition to completing assignments.[^6] [^cat]
+Not teaching the programming language students must use can leave students feeling like learning a new programming language is supposed to be easy (hence no time spent on it in class) or simply cause a student to fall behind because they don't have the time to learn a new programming language in addition to completing assignments.
 
 <center>✨</center>
 
-{{ footnote(num="1",title="Amy J. Ko, Ph.D.",link="https://faculty.washington.edu/ajko/")}}
-{{ footnote(num="2",title="Critically Conscious Computing: Methods for Secondary Education",link="https://criticallyconsciouscomputing.org/")}}
-{{ footnote(num="3",title="Learning to Code: Why we Fail, How We Flourish",link="https://www.youtube.com/watch?v=mkzHIhKaUX4")}}
-{{ footnote(num="4",title="Cracking the code: Why aren't more women majoring in computer science?",link="https://newsroom.ucla.edu/stories/cracking-the-code:-why-aren-t-more-women-majoring-in-computer-science")}}
-{{ footnote(num="5",title="Developing Developers",link="https://felleisen.org/matthias/Thoughts/Developing_Developers.html")}}
+[^amy]: [Amy J. Ko, Ph.D.](https://faculty.washington.edu/ajko/)
+
+[^ccc]: Amy J. Ko, Anne Beitlers, Brett Wortzman, Matt Davidson, Alannah Oleson, Mara Kirdani-Ryan, Stefania Druga (2022). Critically Conscious Computing: Methods for Secondary Education
+
+[^ltc]: [Learning to Code: Why we Fail, How We Flourish](https://www.youtube.com/watch?v=mkzHIhKaUX4)
+
+[^ctc]: [Cracking the code: Why aren't more women majoring in computer science?](https://newsroom.ucla.edu/stories/cracking-the-code:-why-aren-t-more-women-majoring-in-computer-science)
+
+[^dd]: [Developing Developers](https://felleisen.org/matthias/Thoughts/Developing_Developers.html)

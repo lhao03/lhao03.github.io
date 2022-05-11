@@ -36,7 +36,7 @@ The weeks leading up to my first co-op had me in a ball of nerves. Imposter synd
 
 Less than one month into my internship, I got an email for a first-round interview from a company. I nearly fell out of my chair and I ran to my father to show him the email. I was in disbelief, and after my shock wore off, I started to feel scared. This interview was for a software engineer position, so I knew there was going to be some leetcode style questions. And at the time I probably did less than 10 leetcode questions, so I got down to practicing my data structures and algorithms. Amazingly, I passed the first round of interviews and was invited for a final round of interviews! The final round of interviews included three 45 minute interviews with three different members of the company. I remember how exhausted I was when I finished my last interview and I just ended up staring at my laptop for the rest of the day. And to my shock, I received an email telling me that I had passed the final round of interviews! 
  
-I have to thank my boyfriend, Ryan{{ss(num="1")}}, and my friend Jacky{{ss(num="2")}}, both of which helped me so much with preparation. Ryan would video call me for hours every day to practice everything from my leetcoding to my behavioral questions. Jacky also freed up time in his very busy schedule to do some mock interviews with me. I can’t thank them enough! In the next few weeks, you’ll see what this company is (I’m still in shock about getting an offer).
+I have to thank my boyfriend, Ryan[^r], and my friend Jacky[^j], both of which helped me so much with preparation. Ryan would video call me for hours every day to practice everything from my leetcoding to my behavioral questions. Jacky also freed up time in his very busy schedule to do some mock interviews with me. I can’t thank them enough! In the next few weeks, you’ll see what this company is (I’m still in shock about getting an offer).
  
  
 ## 🏋️‍♀️ Health and Fitness 
@@ -59,5 +59,6 @@ Despite being 20, I still feel like an 18-year-old who just finished high school
 
 <center>✨</center>
 
-{{ footnote(num="1", title="Ryan's Website", link="https://www.ryanmehri.dev/")}}
-{{ footnote(num="2", title="Jacky's Website", link="https://jzhao.xyz/")}}
+[^r]:[Ryan's Website](https://www.ryanmehri.dev/)
+
+[^j]: [Jacky's Website](https://jzhao.xyz/)
