@@ -59,3 +59,5 @@ Sometimes students in high school or students I've TAed at UBC message me on Lin
 I've deleted slack off all my devices except my laptop. I only check within a certain time and then get back to work. I think more before signing up for volunteer roles; do I want to do this? And lastly, I'm taking more time for myself to learn freely by attending panels, reading random stuff, or just relaxing. I watch more animal YouTube videos nowadays or I just lay in bed thinking. 
 
 *Updates: typos*
+
+<center>✨</center>

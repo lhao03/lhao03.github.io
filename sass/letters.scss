@@ -1,6 +1,6 @@
 @import "variables";
 
-p,label,li,a{
+p,label,li,a,sup{
   font-family: $font;
   color: $grey;
 }
@@ -35,7 +35,8 @@ p,
 label,
 li,
 a,
-code {
+code, 
+sup {
   font-size: 19px;
   line-height: 150%;
   @media (max-width: $maxWidth) {

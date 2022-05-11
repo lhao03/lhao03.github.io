@@ -7,7 +7,7 @@ updated = 2022-04-24
 
 *Disclaimer: I'm just a student and teaching assistant for the courses I will be talking about.*
 
-This post was inspired by [Amy J. Ko, Ph.D.](https://faculty.washington.edu/ajko/) and her book [Critically Conscience Computing](https://criticallyconsciouscomputing.org/), and her talk [Learning to Code: Why we Fail, How We Flourish](https://www.youtube.com/watch?v=mkzHIhKaUX4). All the quotes are from [Cracking the code: Why aren't more women majoring in computer science?](https://newsroom.ucla.edu/stories/cracking-the-code:-why-aren-t-more-women-majoring-in-computer-science) and [Critically Conscience Computing](https://criticallyconsciouscomputing.org/).
+This post was inspired by Amy J. Ko, Ph.D.{{ ss(num="1")}}, [Critically Conscience Computing](@/blog/papers/compsci/cs-edu/ccc.md){{ss(num="2")}}, and the talk (also by Amy) Learning to Code: Why we Fail, How We Flourish{{ss(num="3")}}.
 
 ---
 
@@ -20,7 +20,7 @@ But it's different in my computer science classes. I see and hear frequent compl
 With that being said, a computer science degree is still the most common degree for a software job. Since software is such an important and overreaching part of society, and I believe that just vocational skills aren't enough to get a job in software, because you must understand why something is the way it is or how something could fail. Nonetheless, a job as a software engineer requires coding and learning various technologies, with less emphasis on theoretical topics commonly taught in university. Should that be the responsibility of the university to teach these technologies over concepts? I'm not sure. But nowadays Canadian universities are teaching a mix of both for computer science, though much more emphasis on theoretical concepts. But how do we best teach theoretical concepts alongside programming language skills and proficiency?
 
 # How do we best teach theoretical concepts alongside programming language skills and proficiency?
-Educators like [Amy J. Ko, Ph.D.](https://faculty.washington.edu/ajko/) hope that more people, especially from minority groups, can get involved in computer science. However, it's a challenge: even though there are more women in other areas like medicine and business than in previous years, you can't say the same for CS. [Researchers from UCLA](https://newsroom.ucla.edu/stories/cracking-the-code:-why-aren-t-more-women-majoring-in-computer-science) have pointed out: 
+Educators like Amy J. Ko, Ph.D. hope that more people, especially from minority groups, can get involved in computer science. However, it's a challenge: even though there are more women in other areas like medicine and business than in previous years, you can't say the same for CS. Researchers from UCLA{{ss(num="4")}} have pointed out: 
 
 {{ quote(text="Women who take intro-to-CS classes tend to be further along in their college careers than men, and they are usually not CS majors. Since women are better represented in CS intro courses (32%) than among actual CS degree earners (16% among BRAID schools), BRAID researchers believe that CS intro classes are particularly significant in whether a student chooses to go down the CS pathway.",
 author="Shana Vu",
@@ -53,7 +53,7 @@ This is one problem computer science educators are trying to solve: how do we re
 
 A student's first exposure to computer science is usually through programming. Most computer science courses you take will have a programming component, as did my first computer science course. However, in CPSC 110, I couldn't understand or see why learning recursion or coding up binary trees related to anything! After my first year, I was ready to leave my major in computer science for one in chemistry, where I had a dream of discovering drugs to cure diseases. Unfortunately, many other people may experience the same feeling of being divorced from their studies in computer science. 
 
-In [Critically Conscience Computing](https://criticallyconsciouscomputing.org/), Amy J. Ko, Ph.D. talks about several ways programming is usually taught, and the positives and negatives of the different methods. Having TAed CPSC 110 and CPSC 210, and [taken some computer science courses](@/blog/courses/_index.md), I've noticed some differences between how programming is taught, and thus the differences in students' reactions to the course. 
+In [Critically Conscience Computing](@/blog/papers/compsci/cs-edu/ccc.md), Amy J. Ko, Ph.D. talks about several ways programming is usually taught, and the positives and negatives of the different methods. Having TAed CPSC 110 and CPSC 210, and [taken some computer science courses](@/blog/courses/_index.md), I've noticed some differences between how programming is taught, and thus the differences in students' reactions to the course. 
 
 CPSC 110 and CPSC 210 are based on teaching students a type of programming paradigm. In CPSC 110, students are taught to think in a functional paradigm, while in CPSC 210, students are taught to think in an OOP and imperative paradigm. Both courses tackle teaching students how to program in a particular paradigm with a different method: CPSC 110 uses problem sets and labs while CPSC 210 uses a self driven project and labs. I'll be discussing problem sets and self driven projects.
 
@@ -64,13 +64,12 @@ Most courses at UBC use problem sets to evaluate a student's understanding of co
 
 CPSC 110 uses problem sets to judge a student's ability to do domain analysis and to apply the appropriate template to a particular problem. Students don't just get to pass the test cases though! There's some human graded portion and students are called up at least once throughout the term to discuss their solutions with the TAs.
 
-Since students will all do the same problem set, this ensures some level of fairness, since all students will be answering the same problems. However, as [Critically Conscience Computing](https://criticallyconsciouscomputing.org/) mentions, problems sets may be divorced from someone's life. Most problem set questions may involve questions like "Traverse a tree numbers" or "Generate all the possible outcomes for a set of clowns". If a student is not intrinsically already interested in computer science, these types of questions in problem sets are usually divergent from a student's interests and may make them less interested in computer science as a whole. I experienced this same feeling. I couldn't see or understand how these problem sets would give me skills to contribute positively to society.
+Since students will all do the same problem set, this ensures some level of fairness, since all students will be answering the same problems. However, as [Critically Conscience Computing](@/blog/papers/compsci/cs-edu/ccc.md) mentions, problems sets may be divorced from someone's life. Most problem set questions may involve questions like "Traverse a tree numbers" or "Generate all the possible outcomes for a set of clowns". If a student is not intrinsically already interested in computer science, these types of questions in problem sets are usually divergent from a student's interests and may make them less interested in computer science as a whole. I experienced this same feeling. I couldn't see or understand how these problem sets would give me skills to contribute positively to society.
 
 {{ quote(text="Finally, because problem sets are often divorced from students’ lives, many students struggle to find a relationship between the abstract ideas of programming languages and their interests, values, and passions, limiting their motivation to learn.",
 source="Critically Conscience Computing",
 link="https://criticallyconsciouscomputing.org/languages",
 author="Amy J. Ko, Brett Wortzman") }}
-
 
 While problem sets ensure a student is up to a standard of knowledge (if they can complete the problem set correctly, this means they have understood most of the material), they can feel rigid and impersonal to a student. Something even worse is that students, especially women, could struggle on a problem set and decide that since they struggled so much solving questions on a problem set they didn't feel any personal connection to, to not pursue any further students in computer science (that was me in my first year of university).
 
@@ -83,8 +82,20 @@ During my time TAing CPSC 110, students who struggled usually continued to strug
 
 A possible solution to helping students' feel more personally engaged with programming is to center a course around being project-based, which I will discuss below.
 
-[Amy J. Ko, Ph.D.](https://faculty.washington.edu/ajko/) also discuss how students may have a brittle understanding of the programming language, further impeding their ability to complete problem sets. I think that CPSC 110 tries to remedy this problem by using BSL (Racket), a programming language designed for educational purposes that has a very simple syntax and one that many students have never encountered before, leveling the playing ground.
+Amy J. Ko, Ph.D. also discuss how students may have a brittle understanding of the programming language, further impeding their ability to complete problem sets. I think that CPSC 110 tries to remedy this problem by using [BSL (and later ISL and ASL) a programming language designed for educational purposes](@/blog/papers/compsci/cs-edu/developing-developers.md#fundamentals-1-designing-with-teaching-languages) that has a very simple syntax and one that many students have never encountered before, leveling the playing ground {{ ss(num="5")}}.
 
+Some reasoning behind choosing a programming language for a course from Matthias Felleisen, creator of HtDP which CPSC 110 is based on: 
+
+{{ quote(text="**Corollary 1** An introductory course cannot serve a wide spectrum of complete novices if it uses an off-the-shelf (industrial) language.
+
+Examples of ill-suited languages include C++, Java, JavaScript, Python, Racket, and Scheme—even though they are, or were, used for first courses. Pascal is also too large, even though Wirth explicitly motivated Pascal as a “small teaching language.”
+
+**Corollary 2** Reducing the size of the language improves its error messages.
+
+**Corollary 3** An introductory course needs a series of small languages that suffice to illustrate the design recipes.",
+link="https://felleisen.org/matthias/Thoughts/Developing_Developers.html",
+source="Developing Developers",
+author="Matthias Felleisen")}}
 
 ## Project-based courses
 Project-based courses aim to offer a personalized and individualized component for the student. Students can conceptualize their project, usually adhering to some rules that require using a certain programming language or implementing concepts like object-orientated design. 
@@ -122,4 +133,12 @@ For chemistry courses, we have dedicated lab instructors teaching us laboratory 
 
 Professors inevitably need to choose a programming language to use as a vessel to teach a concept, but having to program in a new programming language can make someone believe they aren't understanding the concepts, ultimately making them believe they aren't good at CS.
 
-Not teaching the programming language students must use can leave students feeling like learning a new programming language is supposed to be easy (hence no time spent on it in class) or simply cause a student to fall behind because they don't have the time to learn a new programming language in addition to completing assignments.
+Not teaching the programming language students must use can leave students feeling like learning a new programming language is supposed to be easy (hence no time spent on it in class) or simply cause a student to fall behind because they don't have the time to learn a new programming language in addition to completing assignments.[^6] [^cat]
+
+<center>✨</center>
+
+{{ footnote(num="1",title="Amy J. Ko, Ph.D.",link="https://faculty.washington.edu/ajko/")}}
+{{ footnote(num="2",title="Critically Conscious Computing: Methods for Secondary Education",link="https://criticallyconsciouscomputing.org/")}}
+{{ footnote(num="3",title="Learning to Code: Why we Fail, How We Flourish",link="https://www.youtube.com/watch?v=mkzHIhKaUX4")}}
+{{ footnote(num="4",title="Cracking the code: Why aren't more women majoring in computer science?",link="https://newsroom.ucla.edu/stories/cracking-the-code:-why-aren-t-more-women-majoring-in-computer-science")}}
+{{ footnote(num="5",title="Developing Developers",link="https://felleisen.org/matthias/Thoughts/Developing_Developers.html")}}

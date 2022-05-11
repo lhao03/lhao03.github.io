@@ -13,3 +13,5 @@ link="https://www.lesswrong.com/posts/48WeP7oTec3kBEada/two-more-things-to-unlea
 author="",
 source="",
 link="https://www.lesswrong.com/posts/48WeP7oTec3kBEada/two-more-things-to-unlearn-from-school")}}
+
+<center>✨</center>

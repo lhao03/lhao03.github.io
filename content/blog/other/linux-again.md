@@ -37,3 +37,5 @@ Some differences from last summer:
 - The bluetooth is kinda buggy, but this [reddit post](https://www.reddit.com/r/pop_os/comments/mtjysf/bluetooth_wont_turn_on/) helped kinda fix it? 
 - Gestures didn't work out of the box but after installing [Touchegg](https://github.com/JoseExposito/touchegg) they seem to work now.
 - I don't like 21.04 as much (and it was crashing my laptop). I reverted the update (reinstalled the OS from scratch) and I'm back on 20.10.
+
+<center>✨</center>

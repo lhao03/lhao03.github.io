@@ -13,3 +13,5 @@ It's time to try a new Linux Distro! But before I start trying out new distros, 
 
 # Pop!_OS
 [Docs](https://support.system76.com/#learn)
+
+<center>✨</center>
