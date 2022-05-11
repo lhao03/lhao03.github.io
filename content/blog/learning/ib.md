@@ -87,3 +87,5 @@ You're a student who <span>does not want</span> to take any science electives wi
 
 You're a student who <span>loves X</span> (and you want to get straight into the <span>higher level</span> X courses):
 - Take the HL version of X and you will be able to register into second year courses!
+
+<center>✨</center>

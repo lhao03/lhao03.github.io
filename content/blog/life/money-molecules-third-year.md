@@ -73,7 +73,7 @@ link="Critically Conscious Computing"
 Currently, not much personal or organizational will exists, and that troubles me. 
 
 ## learning about what i like
-I eventually came to enjoy learning about computer science. Specifically, the areas of programming languages and systems like compilers and operating systems. My fascination started when I took CPSC 213 and read [Critically Conscious Computing](https://criticallyconsciouscomputing.org/) by [Amy J. Ko](https://twitter.com/amyjko), which enabled me to view programming languages and operating systems in a different light; both technically and from a critically conscious point of view. I wouldn't have thought I'd be interested in something like an operating system. Why? Well, many upper-year computer science students said they dreaded every second of the third year computer hardware and operating systems course so I believed that I'd have the same experience. But it was quite the opposite for me, as hardware and operating systems finally clicked with me, whereas algorithm design and analysis was a course that tested my limits and made me doubt my abilities. 
+I eventually came to enjoy learning about computer science. Specifically, the areas of programming languages and systems like compilers and operating systems. My fascination started when I took CPSC 213 and read [Critically Conscious Computing](@/blog/papers/compsci/cs-edu/ccc.md), which enabled me to view programming languages and operating systems in a different light; both technically and from a critically conscious point of view. I wouldn't have thought I'd be interested in something like an operating system. Why? Well, many upper-year computer science students said they dreaded every second of the third year computer hardware and operating systems course so I believed that I'd have the same experience. But it was quite the opposite for me, as hardware and operating systems finally clicked with me, whereas algorithm design and analysis was a course that tested my limits and made me doubt my abilities. 
 
 At the end of my third year, I think the dust has finally settled down. I no longer try to learn what's "trending" and I do not touch web development (I'm not even good at web development). That full-stack app I mentioned I was going to make never happened, and never will. 
 
@@ -93,7 +93,8 @@ Currently, I'm listening to a bunch of Dreamcatcher and [reading papers](@/blog/
 
 <iframe allow="autoplay *; encrypted-media *; fullscreen *" frameborder="0" height="450" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/ca/album/1st-album-dystopia-the-tree-of-language/1499456109?theme=dark"></iframe>
 
-Something from my chemistry professor [Dr. Perrin](https://perrin.chem.ubc.ca/about-dr-perrin/) that I think a lot about:
+Something from my chemistry professor that I think a lot about:
+
 {{ quote(text="[...] I opted to make molecules because if I ever gave that up, I could always make money whereas if I chose the money option, I would never have a chance to make a molecule.",
 source="https://perrin.chem.ubc.ca/about-dr-perrin/",
 author="Dr. David Perrin",
@@ -102,3 +103,4 @@ link="https://perrin.chem.ubc.ca/about-dr-perrin/"
 
 I'll end this post with the same question my chemistry professor asked himself as an undergrad, which perhaps is the same question I'm going to have to answer soon: money or molecules?
 
+<center>✨</center>

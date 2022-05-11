@@ -11,7 +11,7 @@ draft = false
 # 5
 
 # 6 Sexism is a feature, not a bug
-{{ quote(text="As Safiya Noble has shown, existing problems become entrenched and magnified by profit-­seeking technologies masquerading as neutral public resources.",
+{{ quote(text="As Safiya Noble has shown, existing problems become entrenched and magnified by profit-seeking technologies masquerading as neutral public resources.",
 author="Mar Hicks",
 link="https://mitpress.mit.edu/books/your-computer-fire",
 source="Your Computer is on Fire"
@@ -124,9 +124,7 @@ source="Your Computer is on Fire"
 - harmful to believe tech industry is meritocratic
 
 {{ quote(text="If the exclusion of minorities is naturalized as reflecting their lack of merit, rather
-than a moral failing within the industry, then diversity initiatives can only be justi-
-fied in economic terms—­as a strategy to improve products or make companies more
-competitive.",
+than a moral failing within the industry, then diversity initiatives can only be justified in economic terms­as a strategy to improve products or make companies more competitive.",
 author="Janet Abbate",
 link="https://mitpress.mit.edu/books/your-computer-fire",
 source="Your Computer is on Fire"
@@ -147,12 +145,12 @@ source="Your Computer is on Fire"
 
 # 14 Skills with not set you free
 {{ quote(text="However, like the majority of skills training programs directed at marginalized youth in contemporary India, the Seelampur program produced precarious and low-paid workers at the fringes of the information economy.",
-author="Janet Abbate",
+author="Sreela Sarkar",
 link="https://mitpress.mit.edu/books/your-computer-fire",
 source="Your Computer is on Fire"
 )}}
 
-- focus on entrepreneurial individual deflected attention from responsiblity of government and an unprotected labor market
+- focus on entrepreneurial individual deflected attention from responsibility of government and an unprotected labor market
   - new risks of exploitation that functioned through deception and opportunism
 
 {{ quote(text="If leisure, creativity, and complex human emotions are intermeshed with work, then it becomes increasingly difficult for individuals to discern exploitative risks of labor and to practice resistance or moments of refusal to work.",

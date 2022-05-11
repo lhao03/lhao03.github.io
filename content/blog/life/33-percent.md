@@ -28,7 +28,7 @@ So when I saw that bolded “Outreach” in the email, I was scared. Outreach is
  
 As the months went by, I realized that outreach wasn’t so bad. There is one thing I didn’t mention about the essays I wrote in English class. The essays that I got 75% on; well those were critical analytical essays in which we had to write about a novel or poem. When we got to write a personal essay about our life experiences, I scored 90% on those. And that’s what outreach soon began to feel like; writing a personal essay. 
  
-You see, StarHacks’ mission is to create a community for women and non-binary individuals in computer science. While I didn’t know it at the time, I'm the same as all the girls who attended StarHacks; the girl who was scared of C++ and felt like dropping from the CS major in the first year (you can read about that [here](@/blog/lifesci/cs-bchem.md)). By writing newsletters, creating infographics, and talking with these girls and non-binary individuals, I could encourage them to try out CS. And that to me, is the entire reason why I decided to join the StarHacks team. Since being a woman in STEM is a large part of my identity, outreach no longer was something I dreaded doing. I’m excited to be joining nwPlus as a marketing coordinator and I'm looking forward to the impact that I can make!
+You see, StarHacks’ mission is to create a community for women and non-binary individuals in computer science. While I didn’t know it at the time, I'm the same as all the girls who attended StarHacks; the girl who was scared of C++ and felt like dropping from the CS major in the first year. By writing newsletters, creating infographics, and talking with these girls and non-binary individuals, I could encourage them to try out CS. And that to me, is the entire reason why I decided to join the StarHacks team. Since being a woman in STEM is a large part of my identity, outreach no longer was something I dreaded doing. I’m excited to be joining nwPlus as a marketing coordinator and I'm looking forward to the impact that I can make!
 
  
 ## 👩🏻‍💻 Career
@@ -36,7 +36,7 @@ The weeks leading up to my first co-op had me in a ball of nerves. Imposter synd
 
 Less than one month into my internship, I got an email for a first-round interview from a company. I nearly fell out of my chair and I ran to my father to show him the email. I was in disbelief, and after my shock wore off, I started to feel scared. This interview was for a software engineer position, so I knew there was going to be some leetcode style questions. And at the time I probably did less than 10 leetcode questions, so I got down to practicing my data structures and algorithms. Amazingly, I passed the first round of interviews and was invited for a final round of interviews! The final round of interviews included three 45 minute interviews with three different members of the company. I remember how exhausted I was when I finished my last interview and I just ended up staring at my laptop for the rest of the day. And to my shock, I received an email telling me that I had passed the final round of interviews! 
  
-I have to thank my boyfriend, [Ryan](https://github.com/rmehri01), and my friend [Jacky](https://github.com/jackyzha0), both of which helped me so much with preparation. Ryan would video call me for hours every day to practice everything from my leetcoding to my behavioral questions. Jacky also freed up time in his very busy schedule to do some mock interviews with me. I can’t thank them enough! In the next few weeks, you’ll see what this company is (I’m still in shock about getting an offer).
+I have to thank my boyfriend, Ryan{{ss(num="1")}}, and my friend Jacky{{ss(num="2")}}, both of which helped me so much with preparation. Ryan would video call me for hours every day to practice everything from my leetcoding to my behavioral questions. Jacky also freed up time in his very busy schedule to do some mock interviews with me. I can’t thank them enough! In the next few weeks, you’ll see what this company is (I’m still in shock about getting an offer).
  
  
 ## 🏋️‍♀️ Health and Fitness 
@@ -56,3 +56,8 @@ While physical health and nutrition are super important to me, my eye health and
 
 ## 🤔 Life
 Despite being 20, I still feel like an 18-year-old who just finished high school. I still can't drive, have never tried alcohol, and live at home (though I don't mind this one too much). Some of that can be attributed to the pandemic. While the pandemic sucks, I've gotten into the habit of having friendly debates with my dad, running terminal commands on my brother's laptop to look cool 😎, and more chats with my mom. And I'm very grateful for that.
+
+<center>✨</center>
+
+{{ footnote(num="1", title="Ryan's Website", link="https://www.ryanmehri.dev/")}}
+{{ footnote(num="2", title="Jacky's Website", link="https://jzhao.xyz/")}}

@@ -26,8 +26,3 @@ intro = "I'm a [chemistry nerd](/blog/courses/lifesci/) and [`filter` and `map` 
 - That which is important, as much for art as for science, is intuition, but neither can one ignore inspiration and chance, which are of great importance especially to the scientist. *André Lwoff*
 -  Society has not yet broadly decided to make programmers responsible for their code and its impact, and until it does, making room for algorithmic justice will require personal and organizational will. *Amy J. Ko*
 - [...] there is a widespread belief that computing science as such has been all but completed and that, consequently, computing has \"matured\" from a theoretical topic for the scientists to a practical issue for the engineers, the managers and the entrepreneurs, i.e. mostly people —and there are many of those!— who can accept the application of science for the obvious benefits, but feel rather uncomfortable with its creation because they don't understand what the doing of research, with its intangible goals and its uncertain rewards, entails. *prof. dr. Edsger W. Dijkstra*
-
-To get in touch with me or see my resume, send an email to `(string-append "hao" "." "lucyy" "@" "gmail" "." "com")`. I also like cats.
-
-
-

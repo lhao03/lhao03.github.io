@@ -23,7 +23,7 @@ I was the youngest and only co-op student hired to work at the PROOF Centre. I w
 
 I won't lie; when everyone around you has a master's/PhDs and you're just a second-year undergrad student, it can feel intimidating. But when I made a mistake or was unsure of how to do something, someone was always there to help me out. Someone was always available and willing to help me out, whether it be technical issues or more personal issues,  and that's what made this co-op term so great.
 
-Additionally, I got to attend a bunch of presentations put on by other PROOF members! Such presentations included topics like [SHAP (SHapley Additive exPlanations)](https://shap.readthedocs.io/en/latest/) and biomarker research on diseases like asthma, allergic rhinitis, and pulmonary exacerbations in cystic fibrosis (super cool stuff that I barely understood). I'm fortunate to have the opportunity to listen to such talented individuals and have learned so much!
+Additionally, I got to attend a bunch of presentations put on by other PROOF members! Such presentations included topics like SHAP (SHapley Additive exPlanations){{ss(num="1")}} and biomarker research on diseases like asthma, allergic rhinitis, and pulmonary exacerbations in cystic fibrosis (super cool stuff that I barely understood). I'm fortunate to have the opportunity to listen to such talented individuals and have learned so much!
 
 ## The not so great
 My father says that he loves remote work, but I don't think I can say the same 😅 (maybe it's because I haven't experienced the commute before). And being a first-time developer and intern, I wished I had done some things differently. With that being said, some not so great things I experienced include: 
@@ -42,3 +42,7 @@ These are things I'll be continuously working on improving in future internships
 ## Final thoughts
 When I had my first call with my supervisor in January I thought to myself "wow four months". And in a blink of an eye, these 4 months have passed. I've made many connections, learned a lot of things, and saw the impact of the work I was doing. I'm proud of what I was able to accomplish over the 4 months and am thankful for the PROOF Centre for having me as a first-time intern 💖.
 
+
+<center>✨</center>
+
+{{ footnote(num="1", title="SHAP (SHapley Additive exPlanations)", link="https://shap.readthedocs.io/en/latest/")}}
