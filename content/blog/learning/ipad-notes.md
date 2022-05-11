@@ -31,7 +31,7 @@ Taping paper over my mistakes.
 I've only typed out notes for two classes: History IBHL and MICB 201. But when I type up notes, I don't feel like I retain anything. When I type notes, its more so that I can quickly search through them. This is useful for brute memorization courses in which I would search up a piece of information (like when the Sino-Soviet split occurred or the difference between gram-negative and gram-positive bacteria). For other courses like math, computer science, or chemistry, or less memory-intensive courses, typed up notes weren't that useful because I liked to draw out things and drawing out things with a keyboard or mouse wasn't appealing to me. 
 
 # My Setup:
-I use GoodNotes{{ss(num="1")}} as my main (and only) note-taking app.
+I use GoodNotes[^1] as my main (and only) note-taking app.
 
 # What I've noticed since using the iPad
 I read my notes more often, and it's easier for me to find a concept I need to study. I also have stopped losing my notes.
@@ -45,4 +45,4 @@ I think the iPad is great for people who handwrite their notes or like writing d
 
 <center>✨</center>
 
-{{ footnote(num="1", title="GoodNotes", link="https://www.goodnotes.com/")}}
+[^1]: [GoodNotes](https://www.goodnotes.com/)
