@@ -9,6 +9,9 @@ draft = false
 - **UBC Department of Computer Science** (Jul - Aug 2021) 👾 Teaching Assistant for CPSC 210
 - **UBC Department of Computer Science** (Jan - Apr 2021) 👾 Teaching Assistant for CPSC 210
 
+## Papers
+- Chen, Y., **Hao, L.**, Zou, V.Z. et al. **Automated medical chart review for breast cancer outcomes research: a novel natural language processing extraction system.** BMC Med Res Methodol 22, 136 (2022). [https://doi.org/10.1186/s12874-022-01583-z](https://doi.org/10.1186/s12874-022-01583-z)
+
 ## Working Experience
 - **Microsoft** (May - Aug 2021) ⛏ Software Engineering Intern
 - **PROOF Centre** (Jan - May 2021) 🧬 Software Developer Intern
