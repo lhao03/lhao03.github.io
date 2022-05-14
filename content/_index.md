@@ -9,7 +9,7 @@ intro = "I'm a [chemistry nerd](/blog/courses/lifesci/) and [`filter` and `map` 
 +++
 
 ## Currently I'm...
-- reading Webtoons! Current obsessions are [Death: Rescheduled](https://www.webtoons.com/en/thriller/death-rescheduled/list?title_no=3515&page=1), [Purple Hyacinth](https://www.webtoons.com/en/mystery/purple-hyacinth/list?title_no=1621&page=1), [Men of the Harem](https://www.webtoons.com/en/fantasy/men-of-the-harem/list?title_no=2443&page=1), [Let's Play](https://www.webtoons.com/en/romance/letsplay/list?title_no=1218&page=1)
+- reading Webtoons! Current obsessions are [Death: Rescheduled](https://www.webtoons.com/en/thriller/death-rescheduled/list?title_no=3515&page=1), [Purple Hyacinth](https://www.webtoons.com/en/mystery/purple-hyacinth/list?title_no=1621&page=1), [Men of the Harem](https://www.webtoons.com/en/fantasy/men-of-the-harem/list?title_no=2443&page=1), and [Let's Play](https://www.webtoons.com/en/romance/letsplay/list?title_no=1218&page=1)
 - learning Rust
 - reading [papers](@/blog/papers/_index.md)
 
