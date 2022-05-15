@@ -20,7 +20,7 @@ But it's different in my computer science classes. I see and hear frequent compl
 With that being said, a computer science degree is still the most common degree for a software job. Since software is such an important and overreaching part of society, and I believe that just vocational skills aren't enough to get a job in software, because you must understand why something is the way it is or how something could fail. Nonetheless, a job as a software engineer requires coding and learning various technologies, with less emphasis on theoretical topics commonly taught in university. Should that be the responsibility of the university to teach these technologies over concepts? I'm not sure. But nowadays Canadian universities are teaching a mix of both for computer science, though much more emphasis on theoretical concepts. But how do we best teach theoretical concepts alongside programming language skills and proficiency?
 
 # How do we best teach theoretical concepts alongside programming language skills and proficiency?
-Educators like Amy J. Ko, Ph.D. hope that more people, especially from minority groups, can get involved in computer science. However, it's a challenge: even though there are more women in other areas like medicine and business than in previous years, you can't say the same for CS. Researchers from UCLA[^ctc] have pointed out: 
+Educators like Amy J. Ko, Ph.D. hope that more people, especially from minority groups, can get involved in computer science. However, it's a challenge: even though there are more women in other areas like medicine and business than in previous years, you can't say the same for computer science. Researchers from UCLA[^ctc] have pointed out: 
 
 {{ quote(text="Women who take intro-to-CS classes tend to be further along in their college careers than men, and they are usually not CS majors. Since women are better represented in CS intro courses (32%) than among actual CS degree earners (16% among BRAID schools), BRAID researchers believe that CS intro classes are particularly significant in whether a student chooses to go down the CS pathway.",
 author="Shana Vu",
@@ -82,11 +82,25 @@ During my time TAing CPSC 110, students who struggled usually continued to strug
 
 A possible solution to helping students' feel more personally engaged with programming is to center a course around being project-based, which I will discuss below.
 
-Amy J. Ko, Ph.D. also discuss how students may have a brittle understanding of the programming language, further impeding their ability to complete problem sets. I think that CPSC 110 tries to remedy this problem by using [BSL (and later ISL and ASL) a programming language designed for educational purposes](@/blog/papers/compsci/cs-edu/developing-developers.md#fundamentals-1-designing-with-teaching-languages) that has a very simple syntax and one that many students have never encountered before, leveling the playing ground[^dd].
+<details open>
+<summary class="noselect">
+An Aside
+</summary>
+
+Amy J. Ko, Ph.D. also discuss how students may have a brittle understanding of the programming language, further impeding their ability to complete problem sets. I think that CPSC 110 tries to remedy this problem by using BSL (and later ISL and ASL), a small programming language with a simple syntax and grammar designed for educational purposes[^dd]. The design of BSL is intentional such that all the features of BSL are all the features a student needs at a current stage in the course. BSL is then extended to ISL to include new concepts the student is learning. New data structures are introduced in lecture then introduced in the programming language. An example is `cons` and `list`. Students first learn to structure arbitrary sized data using `cons` in BSL. Then in ISL, they can use syntactic sugar `list`!
 
 Some reasoning behind choosing a programming language for a course from Matthias Felleisen, creator of HtDP which CPSC 110 is based on: 
 
-{{ quote(text="**Corollary 1** An introductory course cannot serve a wide spectrum of complete novices if it uses an off-the-shelf (industrial) language.
+{{ quote(text="
+When it comes to choosing a language for the first course, we must take into account the above goals and two relevant theorems:
+
+**Theorem 1** Novice programmers make mistakes.
+
+**Theorem 2** A compiler and the run-time system articulate error messages under the assumption that the programmer knows the entire language.
+
+These theorems have three immediate consequences relevant to Fundamentals I:
+
+**Corollary 1** An introductory course cannot serve a wide spectrum of complete novices if it uses an off-the-shelf (industrial) language.
 
 Examples of ill-suited languages include C++, Java, JavaScript, Python, Racket, and Scheme—even though they are, or were, used for first courses. Pascal is also too large, even though Wirth explicitly motivated Pascal as a “small teaching language.”
 
@@ -96,6 +110,9 @@ Examples of ill-suited languages include C++, Java, JavaScript, Python, Racket, 
 link="https://felleisen.org/matthias/Thoughts/Developing_Developers.html",
 source="Developing Developers",
 author="Matthias Felleisen")}}
+
+To put it briefly, programming languages like C require an understanding of pointers and memory management, before doing something like working with arbitrary sized data. Even with a higher level programming language, industry languages (like Java and Python) have too many features and confusing error messages, which can overwhelm students who have never programmed before.
+</details>
 
 ## Project-based courses
 Project-based courses aim to offer a personalized and individualized component for the student. Students can conceptualize their project, usually adhering to some rules that require using a certain programming language or implementing concepts like object-orientated design. 
@@ -136,6 +153,8 @@ Professors inevitably need to choose a programming language to use as a vessel t
 Not teaching the programming language students must use can leave students feeling like learning a new programming language is supposed to be easy (hence no time spent on it in class) or simply cause a student to fall behind because they don't have the time to learn a new programming language in addition to completing assignments.
 
 <center>✨</center>
+
+*Thanks to [Alex](https://github.com/ADSteele916) for pointing out my misinterpretation of why BSL is used in CPSC 110*
 
 [^amy]: [Amy J. Ko, Ph.D.](https://faculty.washington.edu/ajko/)
 

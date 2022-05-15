@@ -6,8 +6,6 @@ draft = false
 
 *Essay for MICB 308*
 
-A Focus on Inhibiting Host Proteases and Targeting Conserved Residues of SARS-CoV-2 Mpro to Inhibit SARS-CoV-2 VOCs Infection 
-
 Severe acute respiratory syndrome coronavirus 2, SARS-CoV-2, causes coronavirus 19, COVID-19. COVID-19 has two phases; the first phase involves virus transmission in the respiratory and gastrointestinal tract[^1], and the second phase involves collateral tissue damage and systemic failure[^1]. Thus, a broad spectrum therapeutic is needed to prevent the second phase of COVID-19.
 
 An approach would be to use a multidrug regimen, which combines multiple therapeutics that target different parts of the viral life cycle. A multidrug regimen is advantageous over using a single drug because “drug-resistant mutants emerge soon after single-agent antiviral therapy”[^2].
