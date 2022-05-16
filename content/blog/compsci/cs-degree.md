@@ -202,7 +202,7 @@ author="Dijkstra",
 link="https://en.wikipedia.org/wiki/On_the_Cruelty_of_Really_Teaching_Computer_Science",
 source="Wikipedia")}}
 
-I don't think universities are equipping computer science students to do research in areas like formal verification, dependent types, compiler correctness and more. I also don't think computer science degrees are equipping students well for the industry either. There needs to be a different path for computer scientists and software developers, like there is for chemists and chemical engineers.
+I don't think universities are equipping computer science students to do research in areas like formal verification, dependent types, compiler correctness and more. I also don't think computer science degrees are equipping students well for the industry either. There needs to be a different path for computer scientists and software developers, like there is for chemists and chemical engineers. Computer science is a different subject than software development[^advice].
 
 So is the computer science degree too theoretical? **If the computer science degree is to prepare students to do the hard work of thinking of correct and novel ideas in the field of computer science, then no, the computer science degree is not too theoretical. It actually isn't theoretical enough.** *Of course, this means there should be a different degree for people who want to work in the software industry.*
 
@@ -291,3 +291,5 @@ So how do we figure out the "limits of disentanglement" and "trade-offs"? By equ
 [^htpd]: [HtDP](http://cs.brown.edu/~sk/Publications/Papers/Published/fffk-htdp-vs-sicp-journal/)
 
 [^nasa]: [NASA](https://ti.arc.nasa.gov/m/pub-archive/1338h/1338%20(Brat).pdf)
+
+[^advice]: [Advice for Computer Science College Students](https://www.joelonsoftware.com/2005/01/02/advice-for-computer-science-college-students/)
