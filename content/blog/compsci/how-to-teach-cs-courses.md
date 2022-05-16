@@ -2,7 +2,7 @@
 title = "Comparisons of how CS Courses are taught at UBC"
 date = 2022-04-23
 draft = false
-updated = 2022-05-14
+updated = 2022-05-15
 +++
 
 *Disclaimer: I'm just a student and teaching assistant for the courses I will be talking about.*
@@ -141,7 +141,11 @@ I have witnessed that students enjoy CPSC 210 more than CPSC 110. However, shoul
 
 Project-based courses that have stricter rubrics or are "pre-designed" by the professor seem to be able to rectify issues like inconsistent projects between students and ensure all students are applying the same concepts learned in the lecture. But this then removes the creativity aspect of projects, which can make students feel the same way they did with problem sets.
 
-# Programming languages as vessels to teach concepts?
+<details open>
+<summary class="noselect">
+An Aside: Programming languages as vessels to teach concepts?
+</summary>
+
 Something I've noticed in all my computer science courses is how "programming languages are vessels to teach a concept". This means the course doesn't focus on all how a programming language works, the semantics, and the rules. It seems to be the idea that students are either able to quickly pick up the programming language or that they are supposed to learn the programming language outside of class.
 
 However, it's difficult for some students to understand a concept and apply it because they have the barrier of also learning the programming language. I nearly failed an assignment in my data structures and algorithms course because I was having so much trouble with C++. I didn't understand how memory was being allocated and freed and how to use pointers. But did this mean I understood the concepts? I'll never know.
@@ -152,9 +156,35 @@ Professors inevitably need to choose a programming language to use as a vessel t
 
 Not teaching the programming language students must use can leave students feeling like learning a new programming language is supposed to be easy (hence no time spent on it in class) or simply cause a student to fall behind because they don't have the time to learn a new programming language in addition to completing assignments.
 
-<center>✨</center>
+</details>
 
-*Thanks to [Alex](https://github.com/ADSteele916) for pointing out my misinterpretation of why BSL is used in CPSC 110*
+# Some more thoughts on problem sets vs. projects
+A problem set and a project can be defined in terms of two types of freedom. Implementation freedom, which is the "how" a program does something, and design freedom, which is "what" a program does.
+
+The problem-set would have little to no design freedom and any degree of implementation freedom. Some courses emphasize only getting the right result, meaning lots of implementation freedom, whereas other courses, like CPSC 110, will pay attention to implementation details, so there is less implementation freedom.
+
+A project-style assessment has any degree of design freedom, and any degree of implementation freedom. The implementation freedom could depend on the design or "what" the program does.
+
+Another difference between problem sets and projects is that projects are long-term pieces of code. How a student performs in an earlier problem set probably doesn't affect their performance in a later problem set. Students can start from a "clean" slate for each problem set. But if a student decides to poorly put together parts of their project, they can shoot themselves in the foot if they need to understand these parts a few weeks later, or realise later that the poorly implemented parts of their projects are buggy. Essentially, projects also teach students how to plan and manage code over a long period. Early computer science students have difficultly reasoning about programs, especially in a language like Java that has many features and confusing error messages, which makes project-style assessments difficult and leads to the issues mentioned above.
+
+The distinction between a problem set and project can be blurred, but the main difference is the potential for some more design freedom and the long-term nature of a project.
+
+## How much design freedom should be allowed to avoid issues associated with problem sets? 
+Determining how much design freedom to allow is a hard question, especially in introductory courses where there are many beginners. Strong students probably don't care about design freedom because they have other factors for pursuing computer science. To have more design freedom, I would also hope to avoid the issues with design freedom, such as students over overcomplicating or under complicating their design, by having more TA support. TA support could include having explicit meetings between students and TAs. During the meetings TAs evaluate the student's design and be honest and knowledgeable enough to see when a student is struggling and think of the right course of action. A way to introduce some personalization to a problem set could to to let students to define a part of the problem statement. 
+
+## A Fixed mindset vs. Growth mindset
+More difficult and abstract problem sets can be viewed as a opportunity to learn by a strong student (growth mindset), and a challenge that will cause struggle by a weaker student (fixed mindset)[^fix vs grow]. I don't think problem sets should become easier, because computer science is about coming up with solutions around abstract problems and upper year courses will also be difficult. It doesn't do the student any good to be "babied". The course cannot constantly and always provide motivation, which means motivation and a connection to computer science has to be provided early in the course or elsewhere, such as through clubs or advising. 
+
+Finding ways to motivate and help students in computer science courses is a hard problem to solve and more pronounced in computer science because students come from so many different backgrounds and have differing preexisting knowledge. This paper shows that an educator suggests "we should not teach and assess everyone in the same way"[^fix vs grow]. Unfortunately, teaching everyone at the individual level is impossible.
+
+## Freedom of designing your own project
+The freedom of open-ended projects is a double edged sword. When students change their vision due to difficulties in learning a hard concept, seeing another student be able to implement that hard concept could be a blow to their self-esteem and interest in the subject. Problem sets allow students to identify where they struggled, which give them an idea on how to improve on later problem sets. However, projects can amplify and compound a student's struggles, as a student's previous code choices will impact future code choices. Student's don't properly verify code is bug free and does what they want it to, because it's harder to spot mistakes with so much freedom, even for a TA (a TA may not understand the student's vision or misinterpret it). This then results in a student creating a subpar project, which they then may compare to their peers' projects. But even in the case a student does understand concepts and has implemented them in their project, they might just feel "behind" because their project is simpler than their peers'. Due to the freedom of self-driven projects, students create projects with differing levels of complexity, and by comparing projects with peers, this can potentially cause some students to feel inferior. While projects can give students a sense of pride when they demo them to each other, they can also become points of comparison among peers.
+
+There may also be limit to how helpful design freedom is for garnering interest. Students start out with a "high" since they are so excited when planning out a project, and then that "high" can drastically decrease as they begin implementation and start facing issues. And even worse, whatever interest the student has could decrease further when they compare themselves to "higher-performing" students.
+
+*Thanks to [Alex](https://github.com/ADSteele916) for pointing out my misinterpretation of why BSL is used in CPSC 110 as well as general feedback and new points.*
+
+<center>✨</center>
 
 [^amy]: [Amy J. Ko, Ph.D.](https://faculty.washington.edu/ajko/)
 
@@ -165,3 +195,9 @@ Not teaching the programming language students must use can leave students feeli
 [^ctc]: [Cracking the code: Why aren't more women majoring in computer science?](https://newsroom.ucla.edu/stories/cracking-the-code:-why-aren-t-more-women-majoring-in-computer-science)
 
 [^dd]: [Developing Developers](https://felleisen.org/matthias/Thoughts/Developing_Developers.html)
+
+
+[^fix vs grow]: [Folk Pedagogy and the Geek Gene: Geekiness Quotient](https://dl.acm.org/doi/10.1145/3017680.3017746)
+
+
+
