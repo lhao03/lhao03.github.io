@@ -2,7 +2,7 @@
 title = "Grad Schools"
 date = 2022-04-05
 draft = false
-updated = 2022-04-24
+updated = 2022-05-15
 +++
 
 # Resources:
@@ -10,6 +10,8 @@ updated = 2022-04-24
 - [What My PhD Was Like](https://jxyzabc.blogspot.com/2016/02/my-phd-abridged.html)
 - [Getting a Computer Science PhD in the USA](https://parentheticallyspeaking.org/articles/us-cs-phd-faq/)
 - [Computer Science Open Data](https://jeffhuang.com/computer-science-open-data/)
+- [Dissertation Advice](https://www.ccs.neu.edu/home/shivers/diss-advice.html)
+- [CS Master's Funding](https://cs.brown.edu/~sk/Memos/Funding-CS-Grad-School/)
 
 # Topics I'm interested in
 - Operating Systems
@@ -18,6 +20,16 @@ updated = 2022-04-24
 - Computer Science Education
 - Chemical Biology
 - Antiviral strategies & antiviral therapeutics
+
+# Journals/Conferences
+- [Formal Aspects of Computing](https://dl.acm.org/journal/fac) 
+- [ACM Transactions on Embedded Computing Systems](https://dl.acm.org/journal/tecs)
+- [ACM Journal on Emerging Technologies in Computing Systems](https://dl.acm.org/toc/jetc)
+- [Proceedings of the ACM on Programming Languages](https://dl.acm.org/toc/pacmpl)
+- [ACM Transactions on Architecture and Code Optimization](https://dl.acm.org/toc/taco)
+- [IEEE/ACM Transactions on Computational Biology and Bioinformatics](https://dl.acm.org/toc/tcbb)
+- [ACM Transactions on Computing Education](https://dl.acm.org/toc/toce)
+- [ACM Transactions on Programming Languages and Systems](https://dl.acm.org/toc/toplas)
 
 # Schools, Advisors, Application Details in no particular order
 
