@@ -2,6 +2,10 @@
 {% import "macros/macros.html" as macros %}
 {% set data = load_data(path="content/data/index.toml") %}
 
+{% block title %} 
+ {{section.title}}
+{% endblock %}
+
 {% block content %}
 
 <h1>{{ section.title }}</h1>
