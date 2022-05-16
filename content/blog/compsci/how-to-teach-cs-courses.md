@@ -2,7 +2,7 @@
 title = "Comparisons of how CS Courses are taught at UBC"
 date = 2022-04-23
 draft = false
-updated = 2022-04-24
+updated = 2022-05-14
 +++
 
 *Disclaimer: I'm just a student and teaching assistant for the courses I will be talking about.*
