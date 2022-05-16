@@ -1,7 +1,7 @@
 +++
 title = "The Computer Science Degree: Theory vs. Application"
 date = 2022-05-11
-update = 2022-5-15
+update = 2022-5-16
 draft = false
 +++
 
@@ -14,7 +14,7 @@ The natural sciences, like physics, chemistry and biology, are based on experime
 
 If you want to do research, think beyond the scope of what is known, and discover something new, then you need the theory, which means pursuing a theoretical degree (or learning the theory yourself). A scientist needs to think of ideas that don't even exist. I believe theory allows you to come up with ideas that are correct and novel; you can't come up with correct and novel ideas with just vocational skills. Thus, a scientist has to be both correct and novel to be successful[^think]. 
 
-But research has uncertain goals and uncertain rewards, which can scare people, including the people who decide to pursue research. Some people don't care about being correct and novel, they might just care about being correct. I would say being correct vs. *correct and novel* is the difference between chemical engineer a and a chemist: 
+But research has uncertain goals and uncertain rewards, which can scare people, including the people who decide to pursue research. Some people don't care about being correct and novel, they might just care about being correct. I would say being correct vs. *correct and novel* is the difference between a chemical engineer and a chemist: 
 
 > The old joke is that with chemistry you learn how to make a new molecule, but with ChemE you learn how to make 800 tons of it as cheaply as possible.[^chem reddit]
 

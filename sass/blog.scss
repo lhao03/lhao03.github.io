@@ -108,3 +108,21 @@ table, th, td  {
             user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome, Edge, Opera and Firefox */
 }
+
+table {
+  display: block;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  margin: 0 auto;
+  overflow-x: auto;
+  // white-space: nowrap;
+}
+table::-webkit-scrollbar {
+  background: none;
+  width: 5px;
+}
+table::-webkit-scrollbar-thumb {
+  background-color: $grey;
+  border-radius: 10px;
+}
+
