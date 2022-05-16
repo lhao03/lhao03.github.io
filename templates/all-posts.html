@@ -1,6 +1,10 @@
 {% extends "base.html" %}
 {% import "macros/macros.html" as macros %}
 
+{% block title %} 
+ {{section.title}}
+{% endblock %}
+
 {% block content %}
 
 <h1>{{ section.title }}</h1>

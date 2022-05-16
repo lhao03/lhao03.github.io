@@ -37,7 +37,7 @@
 {% macro displaypaginator(paginator,seeAll=0) %}
 <div class="blog flexcol">
     {% for page in paginator.pages %}
-    {{ macros::displaypage(page=page)}}
+    {{ macros::displaypage(page=page) }}
     {% endfor %}
     <div class="flex-row">
     {% if seeAll == 1 %}
@@ -53,3 +53,41 @@
 </div>
 </div>
 {% endmacro paginator %}
+
+{% macro tags(title) %}
+
+{% set data = load_data(path="content/data/index.toml") %}
+    <!-- basic favicon -->
+    <link rel="icon" href="{{get_url(path=data.favicon)}}" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{get_url(path=data.favicon)}}">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{get_url(path=data.favicon)}}">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{get_url(path=data.favicon)}}">
+    <link rel="apple-touch-icon-precomposed" href="{{get_url(path=data.favicon)}}">
+
+    <!-- Primary Meta Tags -->
+    <title>{{title}}</title>
+    <meta name="title" content="{{title}}">
+    <meta name="description" content="{{data.desc}}">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://metatags.io/">
+    <meta property="og:title" content="{{title}}">
+    <meta property="og:description" content="{{data.desc}}">
+
+    <!-- Twitter -->
+    <meta name="twitter:creator" content="@hoalycu">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="{{title}}">
+    <meta property="twitter:description" content="{{data.desc}}">
+    <meta property="twitter:image" content="{{get_url(path=data.favicon)}}">
+
+    <!-- Other Meta tags -->
+    <meta charset="UTF-8" />
+    <meta name="description" content="{{title}}" />
+    <meta property="og:image" content="{{get_url(path=data.favicon)}}">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://use.fontawesome.com/8e0ceafb9b.js"></script>
+    <link rel="stylesheet" href="{{get_url(path=data.css_path)}}">
+
+{% endmacro tags %}
