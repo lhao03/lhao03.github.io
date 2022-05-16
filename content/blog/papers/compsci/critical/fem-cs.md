@@ -20,14 +20,27 @@ draft = false
 
 > “The field of computer science education research has a cross-disciplinary structure, and encompasses computer science – of course – but also a wide range of other disciplines: pedagogy, psychology, cognitive science, learning technology, sociology to mention a few. What unifies this diversified field is the aim to improve learning and teaching within computer science, and thereby to contribute to computer science.” (Ibid p. 23). 
 
-> Since technology is seen as neutral, this stance has not seldom
-led to seeing women as the problem: women should be informed / educated / adapted
-to technology: “Women shall be enticed into existing practice and adapt to it.” (Trojer
-1999, p. 13). With this view, it is mainly women who are expected to change. [26]
+> Since technology is seen as neutral, this stance has not seldom led to seeing women as the problem: women should be informed / educated / adapted to technology: “Women shall be enticed into existing practice and adapt to it.” (Trojer 1999, p. 13). With this view, it is mainly women who are expected to change. [26]
 
-> Th ere
-is also a tendency within liberal feminism to treat men and women as homogeneous
-groups, ignoring diff erences between individuals, as well as for example ethnicity and
-class. In practice, liberal feminist projects have had very little impact on the gender
-balance within technology or computer science; in fact this approach can be seen as
+> There is also a tendency within liberal feminism to treat men and women as homogeneous groups, ignoring diff erences between individuals, as well as for example ethnicity and class. In practice, liberal feminist projects have had very little impact on the gender balance within technology or computer science; in fact this approach can be seen as
 reproducing and reinforcing the status quo. [26]
+
+> Feminist studies of technology can to a large extent be regarded as part of the STS tradition, in that the starting point and approach can be summarised as the social construction / shaping of technology. According to Vehviläinen (2001) this approach sees technology as a process consisting of three interrelated parts: artefacts, knowledge and social practices. [28]
+
+> However, as Wajcman (1991) notes, there are fundamental differences between (natural) science and technology: technology needs to be understood as more than applied science, since it is primarily about the creation of artefacts (ibid p.13).
+
+> Around this time, a shift towards understanding technology as culture became more apparent. According to this view, both gender and technology can be understood not as fixed and given, but as processes, which are constantly being formed and re-formed in ongoing negotiations in relation to each other. [28]
+
+> Henwood provides a good historical overview of how computing changed from a woman’s job to one occupied mainly by men, which she sees as linked to changing definitions of skill. [28]
+
+> “Technology meanings are not ‘given’, they are made. … We should be focused on that knowledge … we have to be involved at the level of definition, of making meanings and in creating technological culture.” (Ibid p. 44).
+
+> As pointed out by Grint and Gill (1995), the idea that technology and masculinity are intimately related seems to be accepted by most feminist writers within this tradition, who rather than challenging this idea try to understand why this is the case. [29]
+
+> One example of such a pervasive idea is that men are interested in technology per se, while women are interested in what it can be used for. [29]
+
+> “Observations are theory-laden, theories are paradigm-laden, and paradigms are culture laden: hence there are and can be no such things as value-neutral, objective facts.” (Harding 1986, p.102).
+
+> An example of a methodology is, in my opinion, the importance stressed within feminist research of placing the researcher in the same plane as the researched, which puts the entire research process (not only the research object) under scrutiny (Harding 1987). Th e researcher is not a neutral, invisible, anonymous person, but a visible, situated person with specific interests and behaviour who becomes part of the whole process. Th is approach can be called reflexivity, and I will discuss it in more detail below. This kind of methodology also follows explicitly from the epistemological positioning. [35]
+
+> Feminism is not a dogma but a set of critical questions [37]
