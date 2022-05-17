@@ -10,5 +10,5 @@
 <h1>{{ section.title }}</h1>
 {{ section.content | safe }}
 {{ macros::subsectionlinks(section=section) }}
-{{ macros::displaypaginator(paginator=paginator) }}
+{{ macros::displaypaginator(paginator=paginator,display=1) }}
 {% endblock content %}

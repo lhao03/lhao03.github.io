@@ -12,17 +12,12 @@
   {% endif %}
 
   <p class="subtitle">
-    Written:
-    <strong>
-      {{ page.date }}
-    </strong>
-    <br />
-    <strong>{{ page.word_count }} words, {{ page.reading_time }} mins</strong>
-    <br />
     {% if page.updated %}
-    Updated:
-    <strong>{{ page.updated }}</strong>
+    <strong>Updated: {{ page.updated }}.</strong>
+    {% else %}
+    <strong>Written: {{ page.date }}.</strong>
     {% endif %}
+    <strong>{{ page.word_count }} words, {{ page.reading_time }} mins</strong>
   </p>
   {% if page.extra.understanding and page.extra.interest %}
   <p>

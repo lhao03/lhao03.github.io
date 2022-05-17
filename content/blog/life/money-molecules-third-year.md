@@ -10,6 +10,8 @@ alt = "Molecule on top of C code"
 
 After three years in university, I finally switched my major to a combined major in Computer Science and Chemistry. I also dropped all extracurricular activities that no longer aligned with my values and interests. But why has it taken three years? And why did I have so much difficulty in making these changes?
 
+<!-- more -->
+
 # my values 
 I think my values about a lot of things have changed since I first entered university. For instance, my stance on computer science/technology, what I want to do with my life, and more. 
 

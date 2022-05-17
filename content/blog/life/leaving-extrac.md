@@ -5,11 +5,10 @@ draft = false
 +++
 CW: swearing, breaking down, negativity
 
+I think it was in my first year that I attended my first hackathon and that's when decided it would be cool to be behind the scenes of a hackathon. So that's when I decided to try applying to hackathon organization teams. <!-- more -->
+
 # Beginnings
-
-I think it was in my first year that I attended my first hackathon and that's when decided it would be cool to be behind the scenes of a hackathon. 
-
-So that's when I decided to try applying to hackathon organization teams. In my first year, I tried my hand at joining a development team and was rejected. My boyfriend was accepted and was involved in the team for a year. I'm glad I was rejected; the development work was not something I was interested in (At the time in my first year, I was trying to get any experience, and didn't really care what experience it was) and my boyfriend was even less interested in it (but was the one who had to do it, unfortunately). Also, the whole aspect of group work is awful, because if no one's doing it then shit doesn't get done; I would often see my boyfriend doing most of the work. And in fact, to this day he's still a top contributor on some project repositories even though he hasn't touched the code base for more than a year.
+In my first year, I tried my hand at joining a development team and was rejected. My boyfriend was accepted and was involved in the team for a year. I'm glad I was rejected; the development work was not something I was interested in (At the time in my first year, I was trying to get any experience, and didn't really care what experience it was) and my boyfriend was even less interested in it (but was the one who had to do it, unfortunately). Also, the whole aspect of group work is awful, because if no one's doing it then shit doesn't get done; I would often see my boyfriend doing most of the work. And in fact, to this day he's still a top contributor on some project repositories even though he hasn't touched the code base for more than a year.
 
 And that led me to be more interested in the logistics of hackathons. I had a small moment after my first year; I missed chemistry and it was hard to see why I should have stayed in computer science because I was a slow learner (in high school, I was among the top students in my chemistry class and in my first-year chemistry classes I got A+, so I wasn't used to struggling as I did in computer science classes) and the weird culture of computer science students thinking they were on the verge of something or that they were the future; no JavaScript and AI isn't going to change the world as you would hope so. So I decided I'd rather be involved in encouraging more minorities to pursue computer science alongside another field, which is where I am today studying computer science, biochemistry, and chemistry.
 

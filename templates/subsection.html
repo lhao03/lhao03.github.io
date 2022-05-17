@@ -14,9 +14,9 @@
 
 {% if paginator %}
 {{ macros::subsectionlinks(section=section) }}
-{{ macros::displaypaginator(paginator=paginator) }}
+{{ macros::displaypaginator(paginator=paginator,display=1) }}
 {% else %}
-{{ macros::displayblog(section=section) }}
+{{ macros::displayblog(section=section,display=1) }}
 {% endif %}
 <a {% if section.extra.backpage %} href="/blog/{{ section.extra.backpage}}" {% else %} href="/blog" {% endif %} class="highlight">
   <span style="font-weight: bolder;">ᐊ</span> go back to all {% if section.extra.backpage %} {{ section.extra.backpage }} {% else %}posts {% endif %}</a>
