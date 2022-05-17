@@ -3,7 +3,31 @@
 {% set data = load_data(path="content/data/index.toml") %}
 
 {% block title %} 
-{{section.title}}
+{{data.title}}
+{% endblock %}
+
+{% block metatitle %} 
+{{data.title}}
+{% endblock %}
+
+{% block metades %} 
+{{data.desc}}
+{% endblock %}
+
+{% block fbtitle %} 
+{{data.title}}
+{% endblock %}
+
+{% block fbdes %} 
+{{data.desc}}
+{% endblock %}
+
+{% block twittertitle %} 
+{{data.title}}
+{% endblock %}
+
+{% block twitterdes %} 
+{{data.desc}}
 {% endblock %}
 
 {% block content %}

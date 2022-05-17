@@ -26,25 +26,24 @@
 
     <!-- Primary Meta Tags -->
     <title>{% block title %} {% endblock %}</title>
-    <meta name="title" content="{{data.title}}">
-    <meta name="description" content="{{data.desc}}">
+    <meta name="title" content="{% block metatitle %} {% endblock %}">
+    <meta name="description" content="{% block metades %} {% endblock %}">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://metatags.io/">
-    <meta property="og:title" content="{{data.title}}">
-    <meta property="og:description" content="{{data.desc}}">
+    <meta property="og:title" content="{% block fbtitle %} {% endblock %}">
+    <meta property="og:description" content="{% block fbdes %} {% endblock %}">
 
     <!-- Twitter -->
     <meta name="twitter:creator" content="@hoalycu">
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:title" content="{{data.title}}">
-    <meta property="twitter:description" content="{{data.desc}}">
+    <meta property="twitter:title" content="{% block twittertitle %} {% endblock %}">
+    <meta property="twitter:description" content="{% block twitterdes %} {% endblock %}">
     <meta property="twitter:image" content="{{get_url(path=data.favicon)}}">
 
     <!-- Other Meta tags -->
     <meta charset="UTF-8" />
-    <meta name="description" content="{{data.title}}" />
     <meta property="og:image" content="{{get_url(path=data.favicon)}}">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="https://use.fontawesome.com/8e0ceafb9b.js"></script>
