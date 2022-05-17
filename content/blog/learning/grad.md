@@ -30,6 +30,7 @@ updated = 2022-05-15
 - [IEEE/ACM Transactions on Computational Biology and Bioinformatics](https://dl.acm.org/toc/tcbb)
 - [ACM Transactions on Computing Education](https://dl.acm.org/toc/toce)
 - [ACM Transactions on Programming Languages and Systems](https://dl.acm.org/toc/toplas)
+- [Architecture of OSS](https://aosabook.org/en/index.html)
 
 # Schools, Advisors, Application Details in no particular order
 

@@ -1,8 +1,8 @@
 +++
-title = "Digital contact tracing doesn't make much sense anymore"
+title = "Digital contact tracing apps don't make much sense anymore"
 date = 2022-04-18
 draft = false
-updated = 2022-05-08
+updated = 2022-05-16
 +++
 
 *I welcome thoughts and critique on this post. Contact me via Twitter or email.*
@@ -11,10 +11,10 @@ updated = 2022-05-08
 **TL;DR**: 
 Proximity and time based exposure notifications made sense as a way to measure exposure risk when SARS-CoV-2 was thought to spread through respiratory droplets that quickly dropped to the ground. Essentially, when SARS-CoV-2 was never even thought to be airborne. This would mean if you were *within two metres from an infected individual for less than 15 minutes*, or you were *farther than two metres from an infected individual* you could assume almost no viral load was transferred to you, and thus no exposure risk. 
 
-Now that we know SARS-CoV-2 is airborne and can linger in the air for minutes to hours and travel farther than two metres, other factors, like the infected’s quality of mask and quality air filtration/circulation, can more accurately determine how far the virus can travel and how long the virus lingers in the air, which then determines the viral load[^how viral load is measured] that someone may inhale. With a predicted or estimated viral load, then we could determine exposure risk.
+Now that we know SARS-CoV-2 is airborne and can linger in the air for minutes to hours and travel farther than two metres, other factors, like the infected’s quality of mask and quality air filtration/circulation, can more accurately determine how far the virus can travel and how long the virus lingers in the air, which then determines the viral load[^how viral load is measured] that someone may have been exposed to, aka exposure risk. 
 
  # The original paper
-A paper[^digital contact tracing paper] that suggested the idea of digital contact tracing made these reasons as to why a digital contact tracing app could be a tool to reduce infections during the COVID-19 pandemic:
+A paper[^digital contact tracing paper] that suggested the idea of digital contact tracing (a digital contact tracing app) made these reasons as to why a digital contact tracing app could be a tool to reduce infections during the COVID-19 pandemic:
 - manual contact tracing is too slow to bring down the R value, but a digital contact tracing app that instantaneously notified a exposed person to isolate would bring down the R value.
   - "There is no delay between case confirmation and notification of contacts; thus, the delay for the contact quarantine process is the period from an individual experiencing symptoms to their contacts entering quarantine. The delay between symptom development and case confirmation will decrease with faster testing protocols, and indeed could become instant if presumptive diagnosis of COVID-19 based on symptoms were accepted in high-prevalence areas."
 - "If testing capacity is limited, individuals who are identified by tracing may be presumed confirmed upon onset of symptoms, because the prior probability of them being positive is higher than for the index case, accelerating the algorithm further without compromising specificity."
