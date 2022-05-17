@@ -44,3 +44,24 @@ reproducing and reinforcing the status quo. [26]
 > An example of a methodology is, in my opinion, the importance stressed within feminist research of placing the researcher in the same plane as the researched, which puts the entire research process (not only the research object) under scrutiny (Harding 1987). Th e researcher is not a neutral, invisible, anonymous person, but a visible, situated person with specific interests and behaviour who becomes part of the whole process. Th is approach can be called reflexivity, and I will discuss it in more detail below. This kind of methodology also follows explicitly from the epistemological positioning. [35]
 
 > Feminism is not a dogma but a set of critical questions [37]
+
+> “Diff raction is a metaphor for another
+kind of critical consciousness … one committed to making a diff erence […] So I use
+it to talk about making a diff erence in the world, as opposed to just being endlessly
+self-refl ective.” (Haraway 2000, pp. 101f., 104). [38]
+
+# Introduction to Part A: Crossing Boundaries [45]
+> what it means to be simultaneously engineer/computer scientist and feminist technoscience researcher, to live on boundaries
+
+## Paper A1 [49]
+
+> As engineer, this type of critical reflexivity is not part of my repertoire [...]  
+
+> “The reality is that the “doing” of science is, at its best, a gripping and fully absorbing activity…. The net result is that scientists are probably less reflective of the “tacit assumptions” that guide their reasoning than any other intellectuals of the modern age. […] Indeed, the success of their enterprise does not, at least in the short run, seem to require reflexivity. Some would even argue that very success demands abstaining from reflection upon matters that do
+not lend themselves to “clear and distinct” answers”. (Fox Keller 1992, p. 27) [51]
+
+> The reality of engineering work today is a fragmented process, “in which most engineers occupy specialist roles, where reductionism is acceptable, while only a few ever occupy heterogeneous roles, where holism is necessary” [51]
+
+>  She argues that postmodernism, and in particular poststructuralism, by its insistence, indeed requirement, of recognising the knower as situated, actually frees the writer to explore new ways of knowing. Writing, according to Richardson, is not only the common academic form of reporting on one’s findings, but also a method of inquiry, as well as a method of knowing. [52]
+
+> experimental ones such as “narrative of the self”, in which the writer can write in a personalised way, telling stories about her or his lived experiences (Richardson 1994, p. 521). This form of writing can be used to “say what might be unsayable in other circumstances” (ibid, p. 521). [52]
