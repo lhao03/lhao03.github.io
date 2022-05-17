@@ -7,6 +7,8 @@ draft = false
 
 I recently wrote a [rant-like post](@/blog/compsci/cs-edu.md) about my thoughts on my path to CS. Since then, I’ve been thinking about how I was first introduced to computer science when I heard the phrase “Everyone should learn how to code”. The more I think about this tech marketing mantra that has been screamed at me from every coding boot camp, online MOOC, and even President Obama, the more and more I disagree with it. 
 
+<!-- more -->
+
 {{ blogImg(img="coding.png") }}
 
 # Does that mean Lucy doesn’t like coding?

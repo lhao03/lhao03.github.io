@@ -1,19 +1,19 @@
-{% macro displaypage(page) %}
-<a href="{{ page.permalink | safe }}">
+{% macro displaypage(page, display) %}
         <div class="blog-intro ">
+          <a href="{{ page.permalink | safe }}">
             <p class="blog-title">
                 {{ page.title }}
             </p>
+          </a>
             <div class="flex-row">
-            <p class="date-time">{{ page.word_count }} words</p>
-            {% if page.updated %}
-            <p>Updated: {{ page.updated }}</p>
-            {% else %}
-            <p>First written: {{ page.date }}</p>
-            {% endif %}
+            <p class="date-time">
+            {% if page.updated %}Updated: {{ page.updated }}{% else %}First written: {{ page.date }}{% endif %}. {{ page.word_count }} words
+            </p>
             </div>
+            {% if page.summary and display == 1 %}
+            {{ page.summary | safe }} 
+            {% endif %}
         </div>
-    </a>
 {% endmacro displaypage %}
 
 {% macro subsectionlinks(section) %}
@@ -23,21 +23,21 @@
   {% endfor %}
 {% endmacro subsectionlinks %}
 
-{% macro displayblog(section,num=-1) %}
+{% macro displayblog(section,num=-1,display=0) %}
 {{ self::subsectionlinks(section=section) }}
   <div class="blog flexcol">
   {% for page in section.pages %}
   {% if loop.index0 < num or num == -1 %}
-  {{ macros::displaypage(page=page) }}
+  {{ macros::displaypage(page=page,display=display) }}
   {% endif %}
   {% endfor %}
   </div>
 {% endmacro displayblog %}
 
-{% macro displaypaginator(paginator,seeAll=0) %}
+{% macro displaypaginator(paginator,seeAll=0,display=0) %}
 <div class="blog flexcol">
     {% for page in paginator.pages %}
-    {{ macros::displaypage(page=page) }}
+    {{ macros::displaypage(page=page,display=display) }}
     {% endfor %}
     <div class="flex-row">
     {% if seeAll == 1 %}

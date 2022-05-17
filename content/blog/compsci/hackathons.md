@@ -7,6 +7,8 @@ draft = false
 
 I've attended a few hackathons, in-person and remote, and at first, a hackathon seemed like the perfect event. Free food, tech companies, and swag? What else could you ask for? Well, under all the free food and company shirts lies copy-pasted Stack Overflow code, dry eyes, and more. Attending hackathons now seems like a chore I need to check off as a computer science student. And frankly, I feel guilty for feeling this way. But after reading [Design Justice](@/blog/papers/compsci/critical/design-justice.md)[^dj], this blog post from Jacky[^hacking the hackathon], and various other posts such as this[^programming contests], this[^not attending hackathon] and this[^fall out of love] I've realized that everything I feel towards hackathons is valid. For some context, I started going to hackathons in 2019 in my first year of university, so my hackathon experience may not match yours. These are purely my own experiences and may not reflect the majority of hackathon experiences.
 
+<!-- more -->
+
 ## My stomach and head hurt; all the health problems!
 When I attend a hackathon, I always plan for the next day to be a recovery day. From sore eyes to a constipated stomach, a throbbing headache, and back pain, that's the type of day I can expect right after a hackathon. The impact hackathons have on my health is a major reason I stopped attending. 
 

@@ -7,6 +7,8 @@ draft = false
 
 I grew up right when social media was just starting to exist. I had to fight my dad to get an email and didn’t even do anything with the email once I got it. Computers were not part of my life like reading books was. I didn’t notice or care about computers. I wasn't that kid who "took apart computers for fun".
 
+<!-- more -->
+
 But computers are now everywhere in society; cars, phones, traffic lights, dishwashers, to just name a few. 
 
 Computers are complex and do many amazing things. It’s easy to view computers as magical. But they aren’t as magical as they seem. Did you know the first computer included wood parts and always broke? Computers were (and are) ever-evolving, which I think is amazing.

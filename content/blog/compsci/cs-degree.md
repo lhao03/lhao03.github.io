@@ -5,9 +5,11 @@ update = 2022-5-16
 draft = false
 +++
 
-*I talk about research and ideas in this blog post from a natural sciences/mathematical point of view*
+*I talk about research and ideas in this blog post from a natural sciences/mathematical point of view. I am not a researcher, so take my ideas with a grain of salt.*
 
-The natural sciences, like physics, chemistry and biology, are based on experiments which require vocational skills. But data curation and collection is meaningless without the theory to understand the data. If you want to develop vaccines or drugs, you need to study chemistry and biology. If you want to find the next smallest particle (quark anyone?) or far away planet, you need to study physics
+The natural sciences, like physics, chemistry and biology, are based on experiments which require vocational skills. But data curation and collection is meaningless without the theory to understand the data. If you want to develop vaccines or drugs, you need to study chemistry and biology. If you want to find the next smallest particle (quark anyone?) or far away planet, you need to study physics.
+
+<!-- more -->
 
 {{ blogImg(img="quark.jpg")}}
 *Apparently this is evidence of a quark.*
