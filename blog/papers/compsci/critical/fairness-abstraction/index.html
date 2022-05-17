@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <link rel="preconnect" href="https://www.googletagmanager.com" />
+    <link rel="preconnect" href="https://www.google-analytics.com" />
+
+    <!-- basic favicon -->
+    <link rel="icon" href="https:&#x2F;&#x2F;lhao03.github.io&#x2F;emoji&#x2F;android-chrome-384x384.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https:&#x2F;&#x2F;lhao03.github.io&#x2F;emoji&#x2F;android-chrome-384x384.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https:&#x2F;&#x2F;lhao03.github.io&#x2F;emoji&#x2F;android-chrome-384x384.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https:&#x2F;&#x2F;lhao03.github.io&#x2F;emoji&#x2F;android-chrome-384x384.png">
+    <link rel="apple-touch-icon-precomposed" href="https:&#x2F;&#x2F;lhao03.github.io&#x2F;emoji&#x2F;android-chrome-384x384.png">
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KDGPVMHC9Q"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-KDGPVMHC9Q');
+    </script>
+
+    <!-- Primary Meta Tags -->
+    <title> 
+Paper: Fairness and Abstraction in Sociotechnical Systems
+</title>
+    <meta name="title" content=" 
+Paper: Fairness and Abstraction in Sociotechnical Systems
+">
+    <meta name="description" content=" 
+
+">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://metatags.io/">
+    <meta property="og:title" content=" 
+Paper: Fairness and Abstraction in Sociotechnical Systems
+">
+    <meta property="og:description" content=" 
+
+">
+
+    <!-- Twitter -->
+    <meta name="twitter:creator" content="@hoalycu">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content=" 
+Paper: Fairness and Abstraction in Sociotechnical Systems
+">
+    <meta property="twitter:description" content=" 
+
+">
+    <meta property="twitter:image" content="https:&#x2F;&#x2F;lhao03.github.io&#x2F;emoji&#x2F;android-chrome-384x384.png">
+
+    <!-- Other Meta tags -->
+    <meta charset="UTF-8" />
+    <meta property="og:image" content="https:&#x2F;&#x2F;lhao03.github.io&#x2F;emoji&#x2F;android-chrome-384x384.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://use.fontawesome.com/8e0ceafb9b.js"></script>
+    <link rel="stylesheet" href="https:&#x2F;&#x2F;lhao03.github.io&#x2F;style.css">
+
+    
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
+          
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
+
+          <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script>
+          <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/contrib/mathtex-script-type.min.js" integrity="sha384-zWYbd0NBwgTsgIdFKVprSfTh1mbMPe5Hz1X3yY4Sd1h/K1cQoUe36OGwAGz/PcDy" crossorigin="anonymous"></script>
+              
+          
+    
+<script type="text/javascript">
+    window.addEventListener('load', function() {
+        for (const ref of document.getElementsByClassName('footnote-reference')) {
+            const hash = ref.children[0].hash.substring(1);
+            const refhash = 'ref:' + hash;
+            ref.id = refhash;
+        }
+
+        for (const footnote of document.getElementsByClassName('footnote-definition')) {
+            const p = document.querySelector(".footnote-definition p");
+            const hash = footnote.id;
+            const refhash = 'ref:' + hash;
+            const backlink = document.createElement('a');
+            const spanText = document.createElement('span');
+            spanText.innerHTML = "<span>. </span>" + p.innerHTML + "<span> </span>";
+            backlink.href = '#' + refhash;
+            backlink.className = 'footnote-backlink';
+            backlink.innerText = '↩';
+            const paras = footnote.children;
+            const firstPara = paras[0];
+            firstPara.appendChild(spanText);
+            firstPara.appendChild(backlink);
+            footnote.removeChild(p);
+        }
+    });
+</script>
+
+</head>
+
+
+<body class="container blue-mesh">
+    <section>
+        <div class="page">
+        <div class="flex-row">
+        <a href="/">
+      <img class="top-left" src="https:&#x2F;&#x2F;lhao03.github.io&#x2F;emoji&#x2F;android-chrome-384x384.png"/>
+        </a>
+        </div>
+          
+<div class="post block">
+  <h1>Paper: Fairness and Abstraction in Sociotechnical Systems</h1>
+  
+
+  <p class="subtitle">
+    
+    <strong>Written: 2022-05-09.</strong>
+    
+    <strong>1367 words, 7 mins</strong>
+  </p>
+  
+  <p>
+  Interest: 7
+  <br />
+  Understanding: 6.5
+  </p>
+  
+  
+  <div class="toc">
+    <h3> Table of Contents </h3>
+    <ul>
+      
+      <li >
+        <a class="highlight" href="https://lhao03.github.io/blog/papers/compsci/critical/fairness-abstraction/#intro">intro</a>
+        
+      </li>
+      
+      <li >
+        <a class="highlight" href="https://lhao03.github.io/blog/papers/compsci/critical/fairness-abstraction/#abstraction-traps">abstraction traps</a>
+        
+        <ul>
+          
+          <li>
+            <a class="highlight" href="https://lhao03.github.io/blog/papers/compsci/critical/fairness-abstraction/#the-framing-trap">the framing trap</a>
+          </li>
+          
+          <li>
+            <a class="highlight" href="https://lhao03.github.io/blog/papers/compsci/critical/fairness-abstraction/#portability-trap">portability trap</a>
+          </li>
+          
+          <li>
+            <a class="highlight" href="https://lhao03.github.io/blog/papers/compsci/critical/fairness-abstraction/#formalism-trap">formalism trap</a>
+          </li>
+          
+          <li>
+            <a class="highlight" href="https://lhao03.github.io/blog/papers/compsci/critical/fairness-abstraction/#ripple-effect-trap">ripple effect trap</a>
+          </li>
+          
+          <li>
+            <a class="highlight" href="https://lhao03.github.io/blog/papers/compsci/critical/fairness-abstraction/#solutionism-trap">solutionism trap</a>
+          </li>
+          
+        </ul>
+        
+      </li>
+      
+      <li >
+        <a class="highlight" href="https://lhao03.github.io/blog/papers/compsci/critical/fairness-abstraction/#a-sociotechnical-perspective">a sociotechnical perspective</a>
+        
+        <ul>
+          
+          <li>
+            <a class="highlight" href="https://lhao03.github.io/blog/papers/compsci/critical/fairness-abstraction/#sts-lens-on-framing-trap">STS lens on framing trap</a>
+          </li>
+          
+          <li>
+            <a class="highlight" href="https://lhao03.github.io/blog/papers/compsci/critical/fairness-abstraction/#sts-lens-on-portability-problem">STS lens on portability problem</a>
+          </li>
+          
+          <li>
+            <a class="highlight" href="https://lhao03.github.io/blog/papers/compsci/critical/fairness-abstraction/#sts-lens-on-formalism-trap">STS lens on formalism trap</a>
+          </li>
+          
+          <li>
+            <a class="highlight" href="https://lhao03.github.io/blog/papers/compsci/critical/fairness-abstraction/#sts-lens-on-ripple-effect-trap">STS lens on ripple effect trap</a>
+          </li>
+          
+          <li>
+            <a class="highlight" href="https://lhao03.github.io/blog/papers/compsci/critical/fairness-abstraction/#sts-lens-on-solutionism-trap">STS lens on solutionism trap</a>
+          </li>
+          
+        </ul>
+        
+      </li>
+      
+    </ul>
+  </div>
+  <div class="toc_mobile">
+    <h3> Table of Contents </h3>
+    <ul>
+      
+      <li>
+        <a class="highlight" href="https://lhao03.github.io/blog/papers/compsci/critical/fairness-abstraction/#intro">intro</a>
+        
+      </li>
+      
+      <li>
+        <a class="highlight" href="https://lhao03.github.io/blog/papers/compsci/critical/fairness-abstraction/#abstraction-traps">abstraction traps</a>
+        
+        <ul>
+          
+          <li>
+            <a class="highlight" href="https://lhao03.github.io/blog/papers/compsci/critical/fairness-abstraction/#the-framing-trap">the framing trap</a>
+          </li>
+          
+          <li>
+            <a class="highlight" href="https://lhao03.github.io/blog/papers/compsci/critical/fairness-abstraction/#portability-trap">portability trap</a>
+          </li>
+          
+          <li>
+            <a class="highlight" href="https://lhao03.github.io/blog/papers/compsci/critical/fairness-abstraction/#formalism-trap">formalism trap</a>
+          </li>
+          
+          <li>
+            <a class="highlight" href="https://lhao03.github.io/blog/papers/compsci/critical/fairness-abstraction/#ripple-effect-trap">ripple effect trap</a>
+          </li>
+          
+          <li>
+            <a class="highlight" href="https://lhao03.github.io/blog/papers/compsci/critical/fairness-abstraction/#solutionism-trap">solutionism trap</a>
+          </li>
+          
+        </ul>
+        
+      </li>
+      
+      <li>
+        <a class="highlight" href="https://lhao03.github.io/blog/papers/compsci/critical/fairness-abstraction/#a-sociotechnical-perspective">a sociotechnical perspective</a>
+        
+        <ul>
+          
+          <li>
+            <a class="highlight" href="https://lhao03.github.io/blog/papers/compsci/critical/fairness-abstraction/#sts-lens-on-framing-trap">STS lens on framing trap</a>
+          </li>
+          
+          <li>
+            <a class="highlight" href="https://lhao03.github.io/blog/papers/compsci/critical/fairness-abstraction/#sts-lens-on-portability-problem">STS lens on portability problem</a>
+          </li>
+          
+          <li>
+            <a class="highlight" href="https://lhao03.github.io/blog/papers/compsci/critical/fairness-abstraction/#sts-lens-on-formalism-trap">STS lens on formalism trap</a>
+          </li>
+          
+          <li>
+            <a class="highlight" href="https://lhao03.github.io/blog/papers/compsci/critical/fairness-abstraction/#sts-lens-on-ripple-effect-trap">STS lens on ripple effect trap</a>
+          </li>
+          
+          <li>
+            <a class="highlight" href="https://lhao03.github.io/blog/papers/compsci/critical/fairness-abstraction/#sts-lens-on-solutionism-trap">STS lens on solutionism trap</a>
+          </li>
+          
+        </ul>
+        
+      </li>
+      
+    </ul>
+  </div>
+  
+  <p>Andrew D. Selbst, danah boyd, Sorelle A. Friedler, Suresh Venkatasubramanian, and Janet Vertesi. 2019. Fairness and Abstraction in Sociotechnical Systems. In FAT* ’19: Conference on Fairness, Accountability, and Transparency (FAT* ’19), January 29–31, 2019, Atlanta, GA, USA. ACM, New York, NY, USA, 10 pages. https://doi.org/10.1145/3287560.3287598</p>
+<ul>
+<li>computer science concepts like abstraction and modular design =&gt; used to define notions of fairness
+<ul>
+<li>these concepts render technical interventions ineffective, inaccurate and sometimes misguide when they enter the societal context</li>
+</ul>
+</li>
+</ul>
+<h1 id="intro">intro</h1>
+<ul>
+<li>fairness aware ML: engineer more fairer and more just ML algorithms and models by using fairness itself as property of the black box</li>
+<li>by attracting away social context that these systems are to be deployed, fair-ML researchers miss the broader context including information to create fairer outcomes or to even understand fairness
+<ul>
+<li>technical systems are subsystems</li>
+<li>fairness and justice are properties of social and legal systems, not properties of technical systems</li>
+<li>to treat fairness and justice as terms that have meaningful application to technology separate from social context is to make category error, or abstraction error</li>
+</ul>
+</li>
+<li>Science and Technology Studies: 
+<ul>
+<li>systems that consist of combination of technical and social components =&gt; sociotechnical systems</li>
+</ul>
+</li>
+<li>shift away from solutions-oriented approach to a process-oriented approach</li>
+<li>1990s: culture of and modes of knowledge production in computer science thwarted the social goals the field was trying to achieve</li>
+</ul>
+<h1 id="abstraction-traps">abstraction traps</h1>
+<h2 id="the-framing-trap">the framing trap</h2>
+<ul>
+<li>algorithmic frame: choosing representations of data and labeling of outcomes =&gt; efficacy of algorithm is evaluated as properties of the output as related to the input
+<ul>
+<li>this abstraction is taken as given and is rarely, if ever interrogated for validity</li>
+<li>abstraction choices occur implicitly, as accidents of opportunities and access to data</li>
+<li>fairness cannot be defined in this frame</li>
+</ul>
+</li>
+<li>data frame: algorithm, and inputs and outputs
+<ul>
+<li>input and output (was part of interface) can now be interrogated directly =&gt; can start thinking about fairness</li>
+</ul>
+</li>
+<li>sociotechnical frame: ML model is part of sociotechnical system and that other parts of the system need to be modeled
+<ul>
+<li>the person using the outcome of the ML model can also determine the model's fairness =&gt; does that person ignore the outcome, or always follow it, or only sometimes follow it</li>
+<li>failure to incorporate the person's reaction into the ML model cannot provide end-to-end guarantee this frame requires</li>
+</ul>
+</li>
+</ul>
+<h2 id="portability-trap">portability trap</h2>
+<ul>
+<li>repurposing algorithmic solutions designed for one social context to another</li>
+<li>computer science concept: portability 
+<ul>
+<li>suggests design will first aim to create tools independent of social context</li>
+</ul>
+</li>
+<li>fair ML: 
+<ul>
+<li>fix a definition of fairness as portable module and seek a to optimize a cost function</li>
+<li>building a &quot;fair wrapper&quot; around the classifier to make resulting outcomes fair</li>
+<li>both suggestions make certain assumptions</li>
+<li>if social context is modeled well enough and other traps are avoided: designer has created system not portable between social context</li>
+</ul>
+</li>
+</ul>
+<h2 id="formalism-trap">formalism trap</h2>
+<ul>
+<li>no way to arbitrate between conflicting definitions using purely mathematical means
+<ul>
+<li>social context must dictate the choice</li>
+</ul>
+</li>
+<li>maybe no definition is valid to describe fairness</li>
+<li>procedural: law is procedural and fair-ML is outcome-based</li>
+<li>contextuality: we make distinctions all the time, but only cultural context can determine when basis for discrimination is morally wrong</li>
+<li>contestability: values change</li>
+</ul>
+<blockquote>
+<p>To set them in stone—or in code [52]—is to pick sides, and to
+do so without transparent process violates democratic ideals.</p>
+</blockquote>
+<h2 id="ripple-effect-trap">ripple effect trap</h2>
+<ul>
+<li>failure to understand how insertion of technology into existing social system changes behaviours and embedded values of pre-existing system</li>
+<li>new tools offer possibility of unconsciously privileging quantifiable metrics</li>
+</ul>
+<h2 id="solutionism-trap">solutionism trap</h2>
+<ul>
+<li>law of the instrument: if you have a hammer, everything looks like a nail</li>
+<li>two broad situations in which starting with technology is wrong approach or where modeling the situation will not work no matter how many approximations one makes
+<ul>
+<li>definitions are politically contested or shifting
+<ul>
+<li>modeling requires pinning down definitions and &quot;code calcifies&quot;</li>
+</ul>
+</li>
+<li>modeling required would so be so complex as to be computationally intractable</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>When there is not enough information to understand everything that is important to a context, approximations are as likely to make things worse as better.</p>
+</blockquote>
+<h1 id="a-sociotechnical-perspective">a sociotechnical perspective</h1>
+<blockquote>
+<p>Chief among these insights is that the social must be considered alongside the technical in any design enterprise
+In reality, technology always involves social actors.</p>
+</blockquote>
+<h2 id="sts-lens-on-framing-trap">STS lens on framing trap</h2>
+<ul>
+<li>framing trap is result of only choosing certain technical parts of the system to model and manage =&gt; consider both human activities and machine one at same time =&gt; heterogeneous engineering</li>
+</ul>
+<blockquote>
+<p>think simultaneously about what different technical parts of the apparatus will do, and what the humans that operate, live alongside, and otherwise contribute to them will do as well.</p>
+</blockquote>
+<ul>
+<li>does not mean we can engineer human decisions, but to draw boundaries of abstraction to include people and social systems as well</li>
+</ul>
+<blockquote>
+<p>Because such systems are inherently fragile and complex, ignoring certain elements of the network or assuming that they are too unruly or unpredictable to incorporate undermines the ability of the system to operate as intended</p>
+</blockquote>
+<blockquote>
+<p>As Law puts it, &quot;we must be ready to handle heterogeneity in all its complexity, rather than adding the social as an explanatory afterthought.&quot;</p>
+</blockquote>
+<h2 id="sts-lens-on-portability-problem">STS lens on portability problem</h2>
+<blockquote>
+<p>Akrich realized that the user &quot;scripts&quot; that dictate how technologies are supposed to be used only work if all the social and technical elements of a network are assembled properly.
+A technology may be designed with many use cases in mind, but in each case, a designer or computer scientist hopes to embed certain &quot;scripts&quot; for action into their product.
+But the theory of scripts shows that such outcomes will always be disrupted as soon as the code, device, or software moves to a different context. At the very least, the code will be taken up in a new context that shifts the outcome of the system altogether to one that may or may not be fair.</p>
+</blockquote>
+<h2 id="sts-lens-on-formalism-trap">STS lens on formalism trap</h2>
+<blockquote>
+<p>The key elements of the SCOT framework are a period of interpretive flexibility experienced by relevant social groups, followed by stabilization, and eventually closure.</p>
+</blockquote>
+<blockquote>
+<p>Our choices prioritize certain views over others, exerting power in ways that must be accounted for. We may privilege the needs of people in our community—technical practitioners aiming to have precise modules of portable code or technical academics who need to publish innovative algorithms over those impacted by the use of fair-ML algorithms.</p>
+</blockquote>
+<blockquote>
+<p>In each case, the technologies that &quot;won&quot; did so not because they were technically superior to their competition, or solved actual users’ problems, or even because their uptake was subject to the free market—but because of powerful companies or actors with vested interests in their development. Closure is not always achieved when the best solution is found; it is typically a byproduct of other social mechanisms.</p>
+</blockquote>
+<blockquote>
+<p>More common is rhetorical closure, which occurs when the relevant social groups describe the problem as solved, and move on. In some cases, one design is deemed to achieve this goal, while other functional measures are said to not matter if this goal is achieved</p>
+</blockquote>
+<blockquote>
+<p>In other cases, individuals redefine the problem such that the solution they already have at hand, or can easily create, becomes the solution to a problem (i.e. if the algorithm runs the fastest, does it matter if it is only passably fair?). Pinch and Bijker call this closure by redefinition of the problem.</p>
+</blockquote>
+<h2 id="sts-lens-on-ripple-effect-trap">STS lens on ripple effect trap</h2>
+<blockquote>
+<p>existing groups use the occasion of this new technology to reinforce or argue for power and position. Computer scientist Rob Kling calls this process reinforcement politics [44].
+In other cases, new technologies become opportunities to argue for more power in an organizational context.
+Finally, the heterogeneous engineer must be aware that once a technology is part of the social context, new relevant social groups can arise and radically reinterpret it, return it to a state of interpretive flexibility, and suggest new mechanisms for closure.
+In this way, technologies that were first developed to produce fairness can be torqued to achieve other aims, even nefarious ones</p>
+</blockquote>
+<h2 id="sts-lens-on-solutionism-trap">STS lens on solutionism trap</h2>
+<blockquote>
+<p>Computer science programs do not typically incentivize the social science research necessary to ensure robust system use in the world—or even to fulfill the Hippocratic oath’s equivalent in engineering to &quot;first, do no harm.&quot;</p>
+</blockquote>
+
+</div>
+
+<div class="flex-row">
+  
+  <p>Previous:
+    <a href="https:&#x2F;&#x2F;lhao03.github.io&#x2F;blog&#x2F;papers&#x2F;compsci&#x2F;systems&#x2F;optimal-function-inlining&#x2F;">Paper: Understanding and Exploiting Optimal Function Inlining</a>
+  </p>
+  
+  
+  <p>Next:
+    <a href="https:&#x2F;&#x2F;lhao03.github.io&#x2F;blog&#x2F;papers&#x2F;compsci&#x2F;critical&#x2F;fem-cs&#x2F;">Notes for: Feminist Technoscience Strategies in Computer Science</a>
+  </p>
+  
+</div>
+    <a href="/blog">go back to all posts</a>
+
+        </div>
+        <div id="wcb" class="carbonbadge"></div>
+<script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>
+        <footer>
+            <div class="flex-row">
+                
+                <a href="https:&#x2F;&#x2F;github.com&#x2F;lhao03" target="_blank">
+            <p class="lucyfont">github</p>
+                </a>
+                
+                <a href="https:&#x2F;&#x2F;linkedin.com&#x2F;in&#x2F;lucy-hao" target="_blank">
+            <p class="lucyfont">linkedin</p>
+                </a>
+                
+                <a href="https:&#x2F;&#x2F;twitter.com&#x2F;hoalycu" target="_blank">
+            <p class="lucyfont">twitter</p>
+                </a>
+                
+            </div>
+            <p style="text-align: center; padding-bottom: 5vh;" class="lucyfont">made with 💖 and Zola by Lucy</p>
+        </footer>
+      <a href="https://www.ryanmehri.dev/" target="_blank">
+        <img class="animal-img bottom-left" src="https:&#x2F;&#x2F;lhao03.github.io&#x2F;animals&#x2F;hedgehog.png"/>
+      </a>
+      <a href="/">
+      <img class="animal-img top-right" src="https:&#x2F;&#x2F;lhao03.github.io&#x2F;animals&#x2F;cat_scared-removebg-preview.png"/>
+      </a>
+      <!-- <img class="animal-img bottom-right" src="https:&#x2F;&#x2F;lhao03.github.io&#x2F;animals&#x2F;shib_cool-removebg-preview.png"/> -->
+    </section>
+</body>
+
+</html>

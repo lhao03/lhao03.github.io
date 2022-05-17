@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <link rel="preconnect" href="https://www.googletagmanager.com" />
+    <link rel="preconnect" href="https://www.google-analytics.com" />
+
+    <!-- basic favicon -->
+    <link rel="icon" href="https:&#x2F;&#x2F;lhao03.github.io&#x2F;emoji&#x2F;android-chrome-384x384.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https:&#x2F;&#x2F;lhao03.github.io&#x2F;emoji&#x2F;android-chrome-384x384.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https:&#x2F;&#x2F;lhao03.github.io&#x2F;emoji&#x2F;android-chrome-384x384.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https:&#x2F;&#x2F;lhao03.github.io&#x2F;emoji&#x2F;android-chrome-384x384.png">
+    <link rel="apple-touch-icon-precomposed" href="https:&#x2F;&#x2F;lhao03.github.io&#x2F;emoji&#x2F;android-chrome-384x384.png">
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KDGPVMHC9Q"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-KDGPVMHC9Q');
+    </script>
+
+    <!-- Primary Meta Tags -->
+    <title> 
+Paper: Understanding and Exploiting Optimal Function Inlining
+</title>
+    <meta name="title" content=" 
+Paper: Understanding and Exploiting Optimal Function Inlining
+">
+    <meta name="description" content=" 
+
+">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://metatags.io/">
+    <meta property="og:title" content=" 
+Paper: Understanding and Exploiting Optimal Function Inlining
+">
+    <meta property="og:description" content=" 
+
+">
+
+    <!-- Twitter -->
+    <meta name="twitter:creator" content="@hoalycu">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content=" 
+Paper: Understanding and Exploiting Optimal Function Inlining
+">
+    <meta property="twitter:description" content=" 
+
+">
+    <meta property="twitter:image" content="https:&#x2F;&#x2F;lhao03.github.io&#x2F;emoji&#x2F;android-chrome-384x384.png">
+
+    <!-- Other Meta tags -->
+    <meta charset="UTF-8" />
+    <meta property="og:image" content="https:&#x2F;&#x2F;lhao03.github.io&#x2F;emoji&#x2F;android-chrome-384x384.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://use.fontawesome.com/8e0ceafb9b.js"></script>
+    <link rel="stylesheet" href="https:&#x2F;&#x2F;lhao03.github.io&#x2F;style.css">
+
+    
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
+          
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
+
+          <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script>
+          <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/contrib/mathtex-script-type.min.js" integrity="sha384-zWYbd0NBwgTsgIdFKVprSfTh1mbMPe5Hz1X3yY4Sd1h/K1cQoUe36OGwAGz/PcDy" crossorigin="anonymous"></script>
+              
+          
+    
+<script type="text/javascript">
+    window.addEventListener('load', function() {
+        for (const ref of document.getElementsByClassName('footnote-reference')) {
+            const hash = ref.children[0].hash.substring(1);
+            const refhash = 'ref:' + hash;
+            ref.id = refhash;
+        }
+
+        for (const footnote of document.getElementsByClassName('footnote-definition')) {
+            const p = document.querySelector(".footnote-definition p");
+            const hash = footnote.id;
+            const refhash = 'ref:' + hash;
+            const backlink = document.createElement('a');
+            const spanText = document.createElement('span');
+            spanText.innerHTML = "<span>. </span>" + p.innerHTML + "<span> </span>";
+            backlink.href = '#' + refhash;
+            backlink.className = 'footnote-backlink';
+            backlink.innerText = '↩';
+            const paras = footnote.children;
+            const firstPara = paras[0];
+            firstPara.appendChild(spanText);
+            firstPara.appendChild(backlink);
+            footnote.removeChild(p);
+        }
+    });
+</script>
+
+</head>
+
+
+<body class="container blue-mesh">
+    <section>
+        <div class="page">
+        <div class="flex-row">
+        <a href="/">
+      <img class="top-left" src="https:&#x2F;&#x2F;lhao03.github.io&#x2F;emoji&#x2F;android-chrome-384x384.png"/>
+        </a>
+        </div>
+          
+<div class="post block">
+  <h1>Paper: Understanding and Exploiting Optimal Function Inlining</h1>
+  
+
+  <p class="subtitle">
+    
+    <strong>Written: 2022-05-04.</strong>
+    
+    <strong>511 words, 3 mins</strong>
+  </p>
+  
+  <p>
+  Interest: 9
+  <br />
+  Understanding: 6.5
+  </p>
+  
+  
+  <div class="toc">
+    <h3> Table of Contents </h3>
+    <ul>
+      
+      <li >
+        <a class="highlight" href="https://lhao03.github.io/blog/papers/compsci/systems/optimal-function-inlining/#1-introduction">1 introduction</a>
+        
+      </li>
+      
+      <li >
+        <a class="highlight" href="https://lhao03.github.io/blog/papers/compsci/systems/optimal-function-inlining/#2-background">2 background</a>
+        
+      </li>
+      
+      <li >
+        <a class="highlight" href="https://lhao03.github.io/blog/papers/compsci/systems/optimal-function-inlining/#3-formulate-the-inlining-search-space">3 formulate the inlining search space</a>
+        
+      </li>
+      
+      <li >
+        <a class="highlight" href="https://lhao03.github.io/blog/papers/compsci/systems/optimal-function-inlining/#5-local-inlining-autotuner-for-size">5 local inlining autotuner for size</a>
+        
+      </li>
+      
+    </ul>
+  </div>
+  <div class="toc_mobile">
+    <h3> Table of Contents </h3>
+    <ul>
+      
+      <li>
+        <a class="highlight" href="https://lhao03.github.io/blog/papers/compsci/systems/optimal-function-inlining/#1-introduction">1 introduction</a>
+        
+      </li>
+      
+      <li>
+        <a class="highlight" href="https://lhao03.github.io/blog/papers/compsci/systems/optimal-function-inlining/#2-background">2 background</a>
+        
+      </li>
+      
+      <li>
+        <a class="highlight" href="https://lhao03.github.io/blog/papers/compsci/systems/optimal-function-inlining/#3-formulate-the-inlining-search-space">3 formulate the inlining search space</a>
+        
+      </li>
+      
+      <li>
+        <a class="highlight" href="https://lhao03.github.io/blog/papers/compsci/systems/optimal-function-inlining/#5-local-inlining-autotuner-for-size">5 local inlining autotuner for size</a>
+        
+      </li>
+      
+    </ul>
+  </div>
+  
+  <p>Theodoros Theodoridis, Tobias Grosser, and Zhendong Su. 2022. Understanding and Exploiting Optimal Function Inlining. In Proceedings of the 27th ACM International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS ’22), February 28 - March 4, 2022, Lausanne, Switzerland. ACM, New York, NY, USA, 13 pages. <a href="https://doi.org/10.1145/3503222.3507744">https://doi.org/10.1145/3503222.3507744</a></p>
+<ul>
+<li>inlining functions enables other optimizations because you can now see the function body</li>
+<li>however choosing which functions to inline are nontrivial because inlining a function can affect the rest of the compiler pipeline</li>
+<li>outperforms state-of-the-art LLVM by 7% on average</li>
+</ul>
+<h1 id="1-introduction">1 introduction</h1>
+<ul>
+<li>inlining can enable to dead code elimination or lead to code size bloat</li>
+<li>inlining is as hard as knapsack NP-complete problem; so there's many heuristics
+<ul>
+<li>heuristic: trial and error method </li>
+</ul>
+</li>
+<li>no systematic study to investigate optimal inlining</li>
+<li>focus on reducing binary size: deterministic and does not depend on workload selection, while performance does</li>
+<li>straightforward search space is 2^n, where <em>n</em> is the number of inlinable call sites</li>
+<li>local independence property =&gt; autotuning strategy</li>
+</ul>
+<p>contributions made</p>
+<ul>
+<li>novel formulation of the search space</li>
+<li>first extensive systematic study of optimal inlining </li>
+<li>simple, effective inlining autotuning strategy</li>
+</ul>
+<h1 id="2-background">2 background</h1>
+<ul>
+<li>notation: <script type="math/tex">{(A \rarr B) : inline, (B \rarr C) : no-inline}</script></li>
+<li>inlining may introduce multiple copies of the same call</li>
+</ul>
+<h1 id="3-formulate-the-inlining-search-space">3 formulate the inlining search space</h1>
+<ul>
+<li>given a call graph <em>G</em> with <script type="math/tex">|E_G|</script> edges, <script type="math/tex">2^{|E_G|}</script> configurations exist, and all of them must be evaluated to to find the optimal </li>
+<li>independent components can be independently explored
+<ul>
+<li>considering the connected components of a graph, <em>cc</em>, the search space becomes <script type="math/tex">\sum_{c \in cc} {2^{|E_G|}}</script></li>
+</ul>
+</li>
+<li>connected components: are independent w.r.t inlining</li>
+<li>not inlining a bridge is identical to deleting it w.r.t inlining: additional independent components are created
+<ul>
+<li>bridge: edge that when removed will increase the # of connected components</li>
+<li>each inlined call can potentially extend the scope of compiler transformations</li>
+<li>inlining callgraph <em>B</em> that connects two call graph components is the only way to combine their optimization scopes 
+<ul>
+<li>if <em>B</em> is not inlined the components can be independently searched</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>partitioning the search space can potentially lead to a smaller search space</li>
+<li>new bridges are created as callgrpah is dynamically updated by removing non-inlined edges or merged nodes across inlined ones =&gt; used to reduce the search space</li>
+<li>can be visualized through an inlining tree (it's recursive!)
+<ul>
+<li>outgoing edges are labeled inline or no-inline</li>
+<li>each path from root to leaf is inlining configuration</li>
+<li>the search space is the number of <code>InliningTreeLeafs</code> plus the number of <code>InliningTreeComponentNodes</code> in the tree
+<ul>
+<li>each leaf corresponds to a partial inline configuration and each set of independent inlining components require an extra evaluation to combine the best child configurations</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>partition edge selection: prioritize bridges so many independent components arise</li>
+</ul>
+<h1 id="5-local-inlining-autotuner-for-size">5 local inlining autotuner for size</h1>
+<ul>
+<li>a large percentage of edges is not inlined</li>
+<li>shorter inlined call chains are more prevalent</li>
+<li>all optimally inlined call chains contain only one edge, so they are either in different connected call graph components or no inlined edges connect them</li>
+</ul>
+
+</div>
+
+<div class="flex-row">
+  
+  <p>Previous:
+    <a href="https:&#x2F;&#x2F;lhao03.github.io&#x2F;blog&#x2F;papers&#x2F;compsci&#x2F;systems&#x2F;carat-cake&#x2F;">Paper: CARAT CAKE: Replacing Paging via Compiler&#x2F;Kernel Cooperation</a>
+  </p>
+  
+  
+</div>
+    <a href="/blog">go back to all posts</a>
+
+        </div>
+        <div id="wcb" class="carbonbadge"></div>
+<script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>
+        <footer>
+            <div class="flex-row">
+                
+                <a href="https:&#x2F;&#x2F;github.com&#x2F;lhao03" target="_blank">
+            <p class="lucyfont">github</p>
+                </a>
+                
+                <a href="https:&#x2F;&#x2F;linkedin.com&#x2F;in&#x2F;lucy-hao" target="_blank">
+            <p class="lucyfont">linkedin</p>
+                </a>
+                
+                <a href="https:&#x2F;&#x2F;twitter.com&#x2F;hoalycu" target="_blank">
+            <p class="lucyfont">twitter</p>
+                </a>
+                
+            </div>
+            <p style="text-align: center; padding-bottom: 5vh;" class="lucyfont">made with 💖 and Zola by Lucy</p>
+        </footer>
+      <a href="https://www.ryanmehri.dev/" target="_blank">
+        <img class="animal-img bottom-left" src="https:&#x2F;&#x2F;lhao03.github.io&#x2F;animals&#x2F;hedgehog.png"/>
+      </a>
+      <a href="/">
+      <img class="animal-img top-right" src="https:&#x2F;&#x2F;lhao03.github.io&#x2F;animals&#x2F;cat_scared-removebg-preview.png"/>
+      </a>
+      <!-- <img class="animal-img bottom-right" src="https:&#x2F;&#x2F;lhao03.github.io&#x2F;animals&#x2F;shib_cool-removebg-preview.png"/> -->
+    </section>
+</body>
+
+</html>

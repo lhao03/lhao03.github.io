@@ -1,0 +1,1492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <link rel="preconnect" href="https://www.googletagmanager.com" />
+    <link rel="preconnect" href="https://www.google-analytics.com" />
+
+    <!-- basic favicon -->
+    <link rel="icon" href="https:&#x2F;&#x2F;lhao03.github.io&#x2F;emoji&#x2F;android-chrome-384x384.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https:&#x2F;&#x2F;lhao03.github.io&#x2F;emoji&#x2F;android-chrome-384x384.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https:&#x2F;&#x2F;lhao03.github.io&#x2F;emoji&#x2F;android-chrome-384x384.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https:&#x2F;&#x2F;lhao03.github.io&#x2F;emoji&#x2F;android-chrome-384x384.png">
+    <link rel="apple-touch-icon-precomposed" href="https:&#x2F;&#x2F;lhao03.github.io&#x2F;emoji&#x2F;android-chrome-384x384.png">
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KDGPVMHC9Q"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-KDGPVMHC9Q');
+    </script>
+
+    <!-- Primary Meta Tags -->
+    <title> 
+🦀 Rust notes
+</title>
+    <meta name="title" content=" 
+🦀 Rust notes
+">
+    <meta name="description" content=" 
+
+">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://metatags.io/">
+    <meta property="og:title" content=" 
+🦀 Rust notes
+">
+    <meta property="og:description" content=" 
+
+">
+
+    <!-- Twitter -->
+    <meta name="twitter:creator" content="@hoalycu">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content=" 
+🦀 Rust notes
+">
+    <meta property="twitter:description" content=" 
+
+">
+    <meta property="twitter:image" content="https:&#x2F;&#x2F;lhao03.github.io&#x2F;emoji&#x2F;android-chrome-384x384.png">
+
+    <!-- Other Meta tags -->
+    <meta charset="UTF-8" />
+    <meta property="og:image" content="https:&#x2F;&#x2F;lhao03.github.io&#x2F;emoji&#x2F;android-chrome-384x384.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://use.fontawesome.com/8e0ceafb9b.js"></script>
+    <link rel="stylesheet" href="https:&#x2F;&#x2F;lhao03.github.io&#x2F;style.css">
+
+    
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
+          
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
+
+          <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script>
+          <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/contrib/mathtex-script-type.min.js" integrity="sha384-zWYbd0NBwgTsgIdFKVprSfTh1mbMPe5Hz1X3yY4Sd1h/K1cQoUe36OGwAGz/PcDy" crossorigin="anonymous"></script>
+              
+          
+    
+<script type="text/javascript">
+    window.addEventListener('load', function() {
+        for (const ref of document.getElementsByClassName('footnote-reference')) {
+            const hash = ref.children[0].hash.substring(1);
+            const refhash = 'ref:' + hash;
+            ref.id = refhash;
+        }
+
+        for (const footnote of document.getElementsByClassName('footnote-definition')) {
+            const p = document.querySelector(".footnote-definition p");
+            const hash = footnote.id;
+            const refhash = 'ref:' + hash;
+            const backlink = document.createElement('a');
+            const spanText = document.createElement('span');
+            spanText.innerHTML = "<span>. </span>" + p.innerHTML + "<span> </span>";
+            backlink.href = '#' + refhash;
+            backlink.className = 'footnote-backlink';
+            backlink.innerText = '↩';
+            const paras = footnote.children;
+            const firstPara = paras[0];
+            firstPara.appendChild(spanText);
+            firstPara.appendChild(backlink);
+            footnote.removeChild(p);
+        }
+    });
+</script>
+
+</head>
+
+
+<body class="container blue-mesh">
+    <section>
+        <div class="page">
+        <div class="flex-row">
+        <a href="/">
+      <img class="top-left" src="https:&#x2F;&#x2F;lhao03.github.io&#x2F;emoji&#x2F;android-chrome-384x384.png"/>
+        </a>
+        </div>
+          
+<div class="post block">
+  <h1>🦀 Rust notes</h1>
+  
+
+  <p class="subtitle">
+    
+    <strong>Updated: 2022-04-25.</strong>
+    
+    <strong>3564 words, 18 mins</strong>
+  </p>
+  
+  
+  <div class="toc">
+    <h3> Table of Contents </h3>
+    <ul>
+      
+      <li >
+        <a class="highlight" href="https://lhao03.github.io/blog/learning/rust/#ch-1-getting-started">ch 1: getting started</a>
+        
+        <ul>
+          
+          <li>
+            <a class="highlight" href="https://lhao03.github.io/blog/learning/rust/#adding-dependencies">adding dependencies</a>
+          </li>
+          
+          <li>
+            <a class="highlight" href="https://lhao03.github.io/blog/learning/rust/#hello-world">hello world</a>
+          </li>
+          
+          <li>
+            <a class="highlight" href="https://lhao03.github.io/blog/learning/rust/#hello-cargo">hello cargo</a>
+          </li>
+          
+        </ul>
+        
+      </li>
+      
+      <li >
+        <a class="highlight" href="https://lhao03.github.io/blog/learning/rust/#ch-2-programming-a-guessing-game">ch 2: programming a guessing game</a>
+        
+      </li>
+      
+      <li >
+        <a class="highlight" href="https://lhao03.github.io/blog/learning/rust/#ch-3-common-programming-concepts">ch 3: common programming concepts</a>
+        
+        <ul>
+          
+          <li>
+            <a class="highlight" href="https://lhao03.github.io/blog/learning/rust/#3-1-variables-and-mutability">3.1: variables and mutability</a>
+          </li>
+          
+          <li>
+            <a class="highlight" href="https://lhao03.github.io/blog/learning/rust/#3-2-data-types">3.2: data types</a>
+          </li>
+          
+          <li>
+            <a class="highlight" href="https://lhao03.github.io/blog/learning/rust/#3-2-functions">3.2: functions</a>
+          </li>
+          
+          <li>
+            <a class="highlight" href="https://lhao03.github.io/blog/learning/rust/#3-4-control-flow">3.4 control flow</a>
+          </li>
+          
+        </ul>
+        
+      </li>
+      
+      <li >
+        <a class="highlight" href="https://lhao03.github.io/blog/learning/rust/#ch-4-understanding-ownership">ch 4: understanding ownership</a>
+        
+        <ul>
+          
+          <li>
+            <a class="highlight" href="https://lhao03.github.io/blog/learning/rust/#4-1-what-is-ownership">4.1: what is ownership</a>
+          </li>
+          
+          <li>
+            <a class="highlight" href="https://lhao03.github.io/blog/learning/rust/#4-2-references-and-borrowing">4.2 references and borrowing</a>
+          </li>
+          
+        </ul>
+        
+      </li>
+      
+      <li >
+        <a class="highlight" href="https://lhao03.github.io/blog/learning/rust/#5-using-structs-to-structure-related-data">5: Using Structs to Structure Related Data</a>
+        
+        <ul>
+          
+          <li>
+            <a class="highlight" href="https://lhao03.github.io/blog/learning/rust/#5-1-defining-and-instantiating-structs">5.1 Defining and Instantiating Structs</a>
+          </li>
+          
+        </ul>
+        
+      </li>
+      
+      <li >
+        <a class="highlight" href="https://lhao03.github.io/blog/learning/rust/#5-2-method-syntax">5.2: Method Syntax</a>
+        
+        <ul>
+          
+          <li>
+            <a class="highlight" href="https://lhao03.github.io/blog/learning/rust/#associated-functions">Associated functions</a>
+          </li>
+          
+        </ul>
+        
+      </li>
+      
+      <li >
+        <a class="highlight" href="https://lhao03.github.io/blog/learning/rust/#6-enums-and-pattern-matching">6. Enums and Pattern Matching</a>
+        
+        <ul>
+          
+          <li>
+            <a class="highlight" href="https://lhao03.github.io/blog/learning/rust/#6-1-defining-an-enum">6.1. Defining an Enum</a>
+          </li>
+          
+          <li>
+            <a class="highlight" href="https://lhao03.github.io/blog/learning/rust/#6-2-the-match-control-flow-construct">6.2 the match Control Flow Construct</a>
+          </li>
+          
+          <li>
+            <a class="highlight" href="https://lhao03.github.io/blog/learning/rust/#6-3-concise-control-flow-with-if-let">6.3. Concise Control Flow with if let</a>
+          </li>
+          
+        </ul>
+        
+      </li>
+      
+      <li >
+        <a class="highlight" href="https://lhao03.github.io/blog/learning/rust/#7-managing-growing-projects-with-packages-crates-and-modules">7. Managing Growing Projects with Packages, Crates and Modules</a>
+        
+        <ul>
+          
+          <li>
+            <a class="highlight" href="https://lhao03.github.io/blog/learning/rust/#project-crates">project&#x2F;crates</a>
+          </li>
+          
+          <li>
+            <a class="highlight" href="https://lhao03.github.io/blog/learning/rust/#modules">modules</a>
+          </li>
+          
+          <li>
+            <a class="highlight" href="https://lhao03.github.io/blog/learning/rust/#paths">paths</a>
+          </li>
+          
+          <li>
+            <a class="highlight" href="https://lhao03.github.io/blog/learning/rust/#use">use</a>
+          </li>
+          
+        </ul>
+        
+      </li>
+      
+      <li >
+        <a class="highlight" href="https://lhao03.github.io/blog/learning/rust/#8-common-collections">8. Common Collections</a>
+        
+        <ul>
+          
+          <li>
+            <a class="highlight" href="https://lhao03.github.io/blog/learning/rust/#vector-vec-t">vector Vec&lt;T&gt;:</a>
+          </li>
+          
+          <li>
+            <a class="highlight" href="https://lhao03.github.io/blog/learning/rust/#string">String</a>
+          </li>
+          
+          <li>
+            <a class="highlight" href="https://lhao03.github.io/blog/learning/rust/#hash-maps-hashmap-k-v">Hash Maps HashMap&lt;K, V&gt;</a>
+          </li>
+          
+        </ul>
+        
+      </li>
+      
+      <li >
+        <a class="highlight" href="https://lhao03.github.io/blog/learning/rust/#9-error-handling">9. Error Handling</a>
+        
+        <ul>
+          
+          <li>
+            <a class="highlight" href="https://lhao03.github.io/blog/learning/rust/#panic-macro">panic! macro</a>
+          </li>
+          
+          <li>
+            <a class="highlight" href="https://lhao03.github.io/blog/learning/rust/#recoverable-errors-with-result">recoverable errors with Result</a>
+          </li>
+          
+          <li>
+            <a class="highlight" href="https://lhao03.github.io/blog/learning/rust/#shortcuts-for-panic-on-error-unwrap-and-expect">shortcuts for Panic on Error: unwrap and expect</a>
+          </li>
+          
+          <li>
+            <a class="highlight" href="https://lhao03.github.io/blog/learning/rust/#shortcut-for-propagating-errors">shortcut for propagating errors:</a>
+          </li>
+          
+        </ul>
+        
+      </li>
+      
+      <li >
+        <a class="highlight" href="https://lhao03.github.io/blog/learning/rust/#10-generic-types-traits-and-lifetimes">10. Generic Types, Traits and Lifetimes</a>
+        
+        <ul>
+          
+          <li>
+            <a class="highlight" href="https://lhao03.github.io/blog/learning/rust/#in-method-definitions">in method definitions</a>
+          </li>
+          
+          <li>
+            <a class="highlight" href="https://lhao03.github.io/blog/learning/rust/#performance-of-code-using-generics">performance of code using generics</a>
+          </li>
+          
+          <li>
+            <a class="highlight" href="https://lhao03.github.io/blog/learning/rust/#validating-references-with-lifetimes">validating references with lifetimes</a>
+          </li>
+          
+          <li>
+            <a class="highlight" href="https://lhao03.github.io/blog/learning/rust/#generic-lifetimes-in-functions">generic lifetimes in functions</a>
+          </li>
+          
+        </ul>
+        
+      </li>
+      
+      <li >
+        <a class="highlight" href="https://lhao03.github.io/blog/learning/rust/#13-fp-features-iterators-and-closures">13. FP Features: Iterators and Closures</a>
+        
+      </li>
+      
+      <li >
+        <a class="highlight" href="https://lhao03.github.io/blog/learning/rust/#14-cargo-and-crates-io">14. Cargo and Crates.io</a>
+        
+      </li>
+      
+      <li >
+        <a class="highlight" href="https://lhao03.github.io/blog/learning/rust/#15-smart-pointers">15. Smart Pointers</a>
+        
+      </li>
+      
+      <li >
+        <a class="highlight" href="https://lhao03.github.io/blog/learning/rust/#16-fearless-concurrency">16. Fearless Concurrency</a>
+        
+      </li>
+      
+      <li >
+        <a class="highlight" href="https://lhao03.github.io/blog/learning/rust/#17-oop-features-of-rust">17. OOP Features of Rust</a>
+        
+      </li>
+      
+      <li >
+        <a class="highlight" href="https://lhao03.github.io/blog/learning/rust/#18-patterns-and-matching">18. Patterns and Matching</a>
+        
+      </li>
+      
+      <li >
+        <a class="highlight" href="https://lhao03.github.io/blog/learning/rust/#19-advanced-features">19. Advanced Features</a>
+        
+      </li>
+      
+      <li >
+        <a class="highlight" href="https://lhao03.github.io/blog/learning/rust/#20-final-project-building-a-multithreaded-web-server">20. Final Project: Building A Multithreaded Web Server</a>
+        
+      </li>
+      
+    </ul>
+  </div>
+  <div class="toc_mobile">
+    <h3> Table of Contents </h3>
+    <ul>
+      
+      <li>
+        <a class="highlight" href="https://lhao03.github.io/blog/learning/rust/#ch-1-getting-started">ch 1: getting started</a>
+        
+        <ul>
+          
+          <li>
+            <a class="highlight" href="https://lhao03.github.io/blog/learning/rust/#adding-dependencies">adding dependencies</a>
+          </li>
+          
+          <li>
+            <a class="highlight" href="https://lhao03.github.io/blog/learning/rust/#hello-world">hello world</a>
+          </li>
+          
+          <li>
+            <a class="highlight" href="https://lhao03.github.io/blog/learning/rust/#hello-cargo">hello cargo</a>
+          </li>
+          
+        </ul>
+        
+      </li>
+      
+      <li>
+        <a class="highlight" href="https://lhao03.github.io/blog/learning/rust/#ch-2-programming-a-guessing-game">ch 2: programming a guessing game</a>
+        
+      </li>
+      
+      <li>
+        <a class="highlight" href="https://lhao03.github.io/blog/learning/rust/#ch-3-common-programming-concepts">ch 3: common programming concepts</a>
+        
+        <ul>
+          
+          <li>
+            <a class="highlight" href="https://lhao03.github.io/blog/learning/rust/#3-1-variables-and-mutability">3.1: variables and mutability</a>
+          </li>
+          
+          <li>
+            <a class="highlight" href="https://lhao03.github.io/blog/learning/rust/#3-2-data-types">3.2: data types</a>
+          </li>
+          
+          <li>
+            <a class="highlight" href="https://lhao03.github.io/blog/learning/rust/#3-2-functions">3.2: functions</a>
+          </li>
+          
+          <li>
+            <a class="highlight" href="https://lhao03.github.io/blog/learning/rust/#3-4-control-flow">3.4 control flow</a>
+          </li>
+          
+        </ul>
+        
+      </li>
+      
+      <li>
+        <a class="highlight" href="https://lhao03.github.io/blog/learning/rust/#ch-4-understanding-ownership">ch 4: understanding ownership</a>
+        
+        <ul>
+          
+          <li>
+            <a class="highlight" href="https://lhao03.github.io/blog/learning/rust/#4-1-what-is-ownership">4.1: what is ownership</a>
+          </li>
+          
+          <li>
+            <a class="highlight" href="https://lhao03.github.io/blog/learning/rust/#4-2-references-and-borrowing">4.2 references and borrowing</a>
+          </li>
+          
+        </ul>
+        
+      </li>
+      
+      <li>
+        <a class="highlight" href="https://lhao03.github.io/blog/learning/rust/#5-using-structs-to-structure-related-data">5: Using Structs to Structure Related Data</a>
+        
+        <ul>
+          
+          <li>
+            <a class="highlight" href="https://lhao03.github.io/blog/learning/rust/#5-1-defining-and-instantiating-structs">5.1 Defining and Instantiating Structs</a>
+          </li>
+          
+        </ul>
+        
+      </li>
+      
+      <li>
+        <a class="highlight" href="https://lhao03.github.io/blog/learning/rust/#5-2-method-syntax">5.2: Method Syntax</a>
+        
+        <ul>
+          
+          <li>
+            <a class="highlight" href="https://lhao03.github.io/blog/learning/rust/#associated-functions">Associated functions</a>
+          </li>
+          
+        </ul>
+        
+      </li>
+      
+      <li>
+        <a class="highlight" href="https://lhao03.github.io/blog/learning/rust/#6-enums-and-pattern-matching">6. Enums and Pattern Matching</a>
+        
+        <ul>
+          
+          <li>
+            <a class="highlight" href="https://lhao03.github.io/blog/learning/rust/#6-1-defining-an-enum">6.1. Defining an Enum</a>
+          </li>
+          
+          <li>
+            <a class="highlight" href="https://lhao03.github.io/blog/learning/rust/#6-2-the-match-control-flow-construct">6.2 the match Control Flow Construct</a>
+          </li>
+          
+          <li>
+            <a class="highlight" href="https://lhao03.github.io/blog/learning/rust/#6-3-concise-control-flow-with-if-let">6.3. Concise Control Flow with if let</a>
+          </li>
+          
+        </ul>
+        
+      </li>
+      
+      <li>
+        <a class="highlight" href="https://lhao03.github.io/blog/learning/rust/#7-managing-growing-projects-with-packages-crates-and-modules">7. Managing Growing Projects with Packages, Crates and Modules</a>
+        
+        <ul>
+          
+          <li>
+            <a class="highlight" href="https://lhao03.github.io/blog/learning/rust/#project-crates">project&#x2F;crates</a>
+          </li>
+          
+          <li>
+            <a class="highlight" href="https://lhao03.github.io/blog/learning/rust/#modules">modules</a>
+          </li>
+          
+          <li>
+            <a class="highlight" href="https://lhao03.github.io/blog/learning/rust/#paths">paths</a>
+          </li>
+          
+          <li>
+            <a class="highlight" href="https://lhao03.github.io/blog/learning/rust/#use">use</a>
+          </li>
+          
+        </ul>
+        
+      </li>
+      
+      <li>
+        <a class="highlight" href="https://lhao03.github.io/blog/learning/rust/#8-common-collections">8. Common Collections</a>
+        
+        <ul>
+          
+          <li>
+            <a class="highlight" href="https://lhao03.github.io/blog/learning/rust/#vector-vec-t">vector Vec&lt;T&gt;:</a>
+          </li>
+          
+          <li>
+            <a class="highlight" href="https://lhao03.github.io/blog/learning/rust/#string">String</a>
+          </li>
+          
+          <li>
+            <a class="highlight" href="https://lhao03.github.io/blog/learning/rust/#hash-maps-hashmap-k-v">Hash Maps HashMap&lt;K, V&gt;</a>
+          </li>
+          
+        </ul>
+        
+      </li>
+      
+      <li>
+        <a class="highlight" href="https://lhao03.github.io/blog/learning/rust/#9-error-handling">9. Error Handling</a>
+        
+        <ul>
+          
+          <li>
+            <a class="highlight" href="https://lhao03.github.io/blog/learning/rust/#panic-macro">panic! macro</a>
+          </li>
+          
+          <li>
+            <a class="highlight" href="https://lhao03.github.io/blog/learning/rust/#recoverable-errors-with-result">recoverable errors with Result</a>
+          </li>
+          
+          <li>
+            <a class="highlight" href="https://lhao03.github.io/blog/learning/rust/#shortcuts-for-panic-on-error-unwrap-and-expect">shortcuts for Panic on Error: unwrap and expect</a>
+          </li>
+          
+          <li>
+            <a class="highlight" href="https://lhao03.github.io/blog/learning/rust/#shortcut-for-propagating-errors">shortcut for propagating errors:</a>
+          </li>
+          
+        </ul>
+        
+      </li>
+      
+      <li>
+        <a class="highlight" href="https://lhao03.github.io/blog/learning/rust/#10-generic-types-traits-and-lifetimes">10. Generic Types, Traits and Lifetimes</a>
+        
+        <ul>
+          
+          <li>
+            <a class="highlight" href="https://lhao03.github.io/blog/learning/rust/#in-method-definitions">in method definitions</a>
+          </li>
+          
+          <li>
+            <a class="highlight" href="https://lhao03.github.io/blog/learning/rust/#performance-of-code-using-generics">performance of code using generics</a>
+          </li>
+          
+          <li>
+            <a class="highlight" href="https://lhao03.github.io/blog/learning/rust/#validating-references-with-lifetimes">validating references with lifetimes</a>
+          </li>
+          
+          <li>
+            <a class="highlight" href="https://lhao03.github.io/blog/learning/rust/#generic-lifetimes-in-functions">generic lifetimes in functions</a>
+          </li>
+          
+        </ul>
+        
+      </li>
+      
+      <li>
+        <a class="highlight" href="https://lhao03.github.io/blog/learning/rust/#13-fp-features-iterators-and-closures">13. FP Features: Iterators and Closures</a>
+        
+      </li>
+      
+      <li>
+        <a class="highlight" href="https://lhao03.github.io/blog/learning/rust/#14-cargo-and-crates-io">14. Cargo and Crates.io</a>
+        
+      </li>
+      
+      <li>
+        <a class="highlight" href="https://lhao03.github.io/blog/learning/rust/#15-smart-pointers">15. Smart Pointers</a>
+        
+      </li>
+      
+      <li>
+        <a class="highlight" href="https://lhao03.github.io/blog/learning/rust/#16-fearless-concurrency">16. Fearless Concurrency</a>
+        
+      </li>
+      
+      <li>
+        <a class="highlight" href="https://lhao03.github.io/blog/learning/rust/#17-oop-features-of-rust">17. OOP Features of Rust</a>
+        
+      </li>
+      
+      <li>
+        <a class="highlight" href="https://lhao03.github.io/blog/learning/rust/#18-patterns-and-matching">18. Patterns and Matching</a>
+        
+      </li>
+      
+      <li>
+        <a class="highlight" href="https://lhao03.github.io/blog/learning/rust/#19-advanced-features">19. Advanced Features</a>
+        
+      </li>
+      
+      <li>
+        <a class="highlight" href="https://lhao03.github.io/blog/learning/rust/#20-final-project-building-a-multithreaded-web-server">20. Final Project: Building A Multithreaded Web Server</a>
+        
+      </li>
+      
+    </ul>
+  </div>
+  
+  <h1 id="ch-1-getting-started">ch 1: getting started</h1>
+<p><code>Cargo.toml</code>: manifest file for Rust. </p>
+<ul>
+<li>metadata and dependencies
+<code>src/main.rs</code> where you write code.</li>
+</ul>
+<p><code>cargo new</code>: generates a hello world program
+<code>cargo run</code>: run the program</p>
+<h2 id="adding-dependencies">adding dependencies</h2>
+<p>you find libraries on crates.io, and packages are referred to as crates
+<code>cargo-build</code> to install the dependency.</p>
+<ul>
+<li>running this creates <code>Cargo.lock</code>, which is a log of the exact versions of dependencies we are using locally.</li>
+</ul>
+<h2 id="hello-world">hello world</h2>
+<ul>
+<li>indent with four spaces, not tab</li>
+<li><code>println!</code> is a macro; <code>!</code> means you're calling a macro.</li>
+</ul>
+<h2 id="hello-cargo">hello cargo</h2>
+<p>Cargo.toml
+<code>[package]</code>: indicates following statements are configuring a package.</p>
+<ul>
+<li>Cargo expects source files to live inside <code>src</code>.</li>
+<li><code>cargo build</code>: builds executable in <code>target/debug</code></li>
+<li><code>cargo run</code>: builds and runs executable</li>
+<li><code>cargo check</code>: check code compiles, but doesn't build executable.</li>
+<li><code>cargo build --release</code>: your project is ready for release, creates executable in <code>target/relesae</code> and is compiled with optimizations</li>
+</ul>
+<h1 id="ch-2-programming-a-guessing-game">ch 2: programming a guessing game</h1>
+<p><code>::</code> indicates the function is an associated function for that type.
+<code>&amp;mut var</code> vs. <code>&amp;var</code> to make it mutable.</p>
+<h1 id="ch-3-common-programming-concepts">ch 3: common programming concepts</h1>
+<h2 id="3-1-variables-and-mutability">3.1: variables and mutability</h2>
+<ul>
+<li>by default, variables are immutable.</li>
+<li>add <code>mut</code> to make it mutable.</li>
+<li><code>const</code> are immutable always.</li>
+<li>shadowing: </li>
+</ul>
+<pre style="background-color:#2e3440;">
+<code class="language-rust" data-lang="rust"><span style="color:#81a1c1;">let</span><span style="color:#d8dee9;"> x </span><span style="color:#81a1c1;">= </span><span style="color:#b48ead;">5</span><span style="color:#eceff4;">; </span><span style="color:#616e88;">// x is 5 here
+</span><span style="color:#81a1c1;">let</span><span style="color:#d8dee9;"> x </span><span style="color:#81a1c1;">=</span><span style="color:#d8dee9;"> x </span><span style="color:#81a1c1;">+ </span><span style="color:#b48ead;">1</span><span style="color:#eceff4;">; </span><span style="color:#616e88;">// x is 6 here
+</span><span style="color:#d8dee9;">{
+    </span><span style="color:#81a1c1;">let</span><span style="color:#d8dee9;"> x </span><span style="color:#81a1c1;">=</span><span style="color:#d8dee9;"> x </span><span style="color:#81a1c1;">* </span><span style="color:#b48ead;">2</span><span style="color:#eceff4;">; </span><span style="color:#616e88;">// x is 12 here
+</span><span style="color:#d8dee9;">}
+</span><span style="color:#616e88;">// x is 6 here
+</span></code></pre>
+<ul>
+<li>with shadowing we can perform a few transformations on a value but have the variable be immutable after those transformations have been completed.</li>
+<li>another difference between <code>mut</code> and shadowing is that by using <code>let</code>, we are creating a new variable; we can change the type of the value and reuse the same name.</li>
+</ul>
+<h2 id="3-2-data-types">3.2: data types</h2>
+<h3 id="scalar-types">scalar types</h3>
+<ul>
+<li>single value: integers, floating-point numbers, Booleans, characters</li>
+</ul>
+<h4 id="integer-types">integer types</h4>
+<ul>
+<li>to prevent integer overflow
+<ul>
+<li>wrap all modes with <code>wrapping_*</code> methods.</li>
+<li>return <code>None</code> is there is overflow with <code>checked_*</code> methods.</li>
+<li>return value and boolean indicating whether there was overflow with <code>overflowing_*</code> methods.</li>
+<li>saturate at the value's min or max values with <code>saturating_*</code> methods.</li>
+</ul>
+</li>
+</ul>
+<h4 id="floating-point-types">floating-point types</h4>
+<h4 id="boolean-type">boolean type</h4>
+<ul>
+<li>one byte</li>
+</ul>
+<h4 id="character-type">character type</h4>
+<ul>
+<li>4 bytes in size</li>
+</ul>
+<h3 id="compound-types">compound types</h3>
+<h3 id="tuple-type">tuple type</h3>
+<ul>
+<li>fixed length</li>
+<li>once declared, cannot grow or shrink in size</li>
+</ul>
+<pre style="background-color:#2e3440;">
+<code class="language-rust" data-lang="rust"><span style="color:#81a1c1;">let</span><span style="color:#d8dee9;"> tup </span><span style="color:#81a1c1;">= </span><span style="color:#d8dee9;">(</span><span style="color:#81a1c1;">i32</span><span style="color:#eceff4;">, </span><span style="color:#81a1c1;">f64</span><span style="color:#eceff4;">, </span><span style="color:#81a1c1;">u8</span><span style="color:#d8dee9;">) </span><span style="color:#81a1c1;">= </span><span style="color:#d8dee9;">(</span><span style="color:#b48ead;">500</span><span style="color:#eceff4;">, </span><span style="color:#b48ead;">6.4</span><span style="color:#eceff4;">, </span><span style="color:#b48ead;">1</span><span style="color:#d8dee9;">)</span><span style="color:#eceff4;">;
+</span><span style="color:#81a1c1;">let </span><span style="color:#d8dee9;">(x</span><span style="color:#eceff4;">,</span><span style="color:#d8dee9;"> y</span><span style="color:#eceff4;">,</span><span style="color:#d8dee9;"> z) </span><span style="color:#81a1c1;">=</span><span style="color:#d8dee9;"> tup</span><span style="color:#eceff4;">;
+</span><span style="color:#81a1c1;">let</span><span style="color:#d8dee9;"> one </span><span style="color:#81a1c1;">=</span><span style="color:#d8dee9;"> x</span><span style="color:#81a1c1;">.</span><span style="color:#b48ead;">2</span><span style="color:#eceff4;">;
+</span></code></pre>
+<ul>
+<li>to get individual values, we use pattern matching or period and index.</li>
+<li>tuple without any value, <code>()</code> is special type that has one vane, also written <code>()</code>. the type is called <em>unit type</em> and the value is called <em>unit value</em>.
+<ul>
+<li>expressions implicitly return unit value if they don't return any other value</li>
+</ul>
+</li>
+</ul>
+<h3 id="arrays">arrays</h3>
+<ul>
+<li>fixed length</li>
+<li>allocated on stack </li>
+</ul>
+<pre style="background-color:#2e3440;">
+<code class="language-rust" data-lang="rust"><span style="color:#81a1c1;">let</span><span style="color:#d8dee9;"> a</span><span style="color:#eceff4;">: </span><span style="color:#d8dee9;">[</span><span style="color:#81a1c1;">i32</span><span style="color:#eceff4;">; </span><span style="color:#b48ead;">5</span><span style="color:#d8dee9;">] </span><span style="color:#81a1c1;">= </span><span style="color:#d8dee9;">[</span><span style="color:#b48ead;">1</span><span style="color:#eceff4;">, </span><span style="color:#b48ead;">2</span><span style="color:#eceff4;">, </span><span style="color:#b48ead;">3</span><span style="color:#eceff4;">, </span><span style="color:#b48ead;">4</span><span style="color:#eceff4;">, </span><span style="color:#b48ead;">5</span><span style="color:#d8dee9;">]</span><span style="color:#eceff4;">;
+</span><span style="color:#81a1c1;">let</span><span style="color:#d8dee9;"> a </span><span style="color:#81a1c1;">= </span><span style="color:#d8dee9;">[</span><span style="color:#b48ead;">3</span><span style="color:#eceff4;">; </span><span style="color:#b48ead;">5</span><span style="color:#d8dee9;">]</span><span style="color:#eceff4;">; </span><span style="color:#616e88;">// a = [3, 3, 3, 3, 3];
+</span></code></pre><h2 id="3-2-functions">3.2: functions</h2>
+<ul>
+<li>statements: instructions that perform some action and do not return a value</li>
+<li>expressions: evaluate to resulting value</li>
+<li>function definitions are statements</li>
+</ul>
+<pre style="background-color:#2e3440;">
+<code class="language-rust" data-lang="rust"><span style="color:#81a1c1;">fn </span><span style="color:#88c0d0;">main</span><span style="color:#d8dee9;">() {
+    </span><span style="color:#81a1c1;">let</span><span style="color:#d8dee9;"> x </span><span style="color:#81a1c1;">= </span><span style="color:#d8dee9;">(</span><span style="color:#81a1c1;">let</span><span style="color:#d8dee9;"> y </span><span style="color:#81a1c1;">= </span><span style="color:#b48ead;">6</span><span style="color:#d8dee9;">)</span><span style="color:#eceff4;">; </span><span style="color:#616e88;">// this does not work
+</span><span style="color:#d8dee9;">}
+</span></code></pre>
+<ul>
+<li>the <code>let</code> statement does not return a value, so x has nothing to bind to.</li>
+<li>expressions include:
+<ul>
+<li>function calls, macro calls, <code>{}</code></li>
+</ul>
+</li>
+<li>adding <code>;</code> to the end of an expression turns it into a statement.</li>
+</ul>
+<h3 id="funcs-with-return-values">funcs with return values</h3>
+<ul>
+<li>don't name return values, but declare type after an arrow</li>
+</ul>
+<pre style="background-color:#2e3440;">
+<code class="language-rust" data-lang="rust"><span style="color:#81a1c1;">fn </span><span style="color:#88c0d0;">five</span><span style="color:#d8dee9;">() </span><span style="color:#eceff4;">-&gt; </span><span style="color:#81a1c1;">i32 </span><span style="color:#d8dee9;">{
+    </span><span style="color:#b48ead;">5
+</span><span style="color:#d8dee9;">}
+
+</span><span style="color:#81a1c1;">fn </span><span style="color:#88c0d0;">main</span><span style="color:#d8dee9;">() {
+    </span><span style="color:#81a1c1;">let</span><span style="color:#d8dee9;"> x </span><span style="color:#81a1c1;">= </span><span style="color:#88c0d0;">five</span><span style="color:#d8dee9;">()</span><span style="color:#eceff4;">;
+</span><span style="color:#d8dee9;">}
+</span></code></pre>
+<ul>
+<li>if we add a semicolon at the end of the return, we get an error.</li>
+</ul>
+<h2 id="3-4-control-flow">3.4 control flow</h2>
+<ul>
+<li>using loops; you can give loop labels.</li>
+<li><code>break</code> and <code>continue</code> apply to the innermost loop at that point.</li>
+</ul>
+<pre style="background-color:#2e3440;">
+<code class="language-rust" data-lang="rust"><span style="color:#5e81ac;">&#39;outer_loop</span><span style="color:#eceff4;">: </span><span style="color:#81a1c1;">loop </span><span style="color:#d8dee9;">{
+  </span><span style="color:#81a1c1;">loop </span><span style="color:#d8dee9;">{
+    </span><span style="color:#616e88;">// something happens
+    </span><span style="color:#81a1c1;">break</span><span style="color:#eceff4;">;
+    </span><span style="color:#616e88;">//something happens
+    </span><span style="color:#81a1c1;">break &#39;counting_up</span><span style="color:#eceff4;">;
+  </span><span style="color:#d8dee9;">}
+}
+</span></code></pre>
+<ul>
+<li>returning values from loops</li>
+</ul>
+<pre style="background-color:#2e3440;">
+<code class="language-rust" data-lang="rust"><span style="color:#81a1c1;">let</span><span style="color:#d8dee9;"> result </span><span style="color:#81a1c1;">= loop </span><span style="color:#d8dee9;">{
+  </span><span style="color:#616e88;">// something happens
+  </span><span style="color:#81a1c1;">break </span><span style="color:#b48ead;">10</span><span style="color:#eceff4;">;
+</span><span style="color:#d8dee9;">}
+</span></code></pre><h3 id="looping-through-a-collection-with-for">looping through a collection with for</h3>
+<ul>
+<li>we could use a <code>while</code> loop;</li>
+</ul>
+<pre style="background-color:#2e3440;">
+<code class="language-rust" data-lang="rust"><span style="color:#d8dee9;">    </span><span style="color:#81a1c1;">while</span><span style="color:#d8dee9;"> index </span><span style="color:#81a1c1;">&lt; </span><span style="color:#b48ead;">5 </span><span style="color:#d8dee9;">{
+        println!(</span><span style="color:#a3be8c;">&quot;the value is: </span><span style="color:#ebcb8b;">{}</span><span style="color:#a3be8c;">&quot;</span><span style="color:#eceff4;">,</span><span style="color:#d8dee9;"> a[index])</span><span style="color:#eceff4;">;
+
+</span><span style="color:#d8dee9;">        index </span><span style="color:#81a1c1;">+= </span><span style="color:#b48ead;">1</span><span style="color:#eceff4;">;
+    </span><span style="color:#d8dee9;">}
+</span></code></pre>
+<ul>
+<li>but this approach is error prone; program could panic if index or test condition is wrong.</li>
+<li>also slow; compiler adds runtime code to perform the conditional check of whether the index is within the bounds of the array on every iter through the loop.</li>
+<li>more concise is to use <code>for</code> loop:</li>
+</ul>
+<pre style="background-color:#2e3440;">
+<code class="language-rust" data-lang="rust"><span style="color:#81a1c1;">for</span><span style="color:#d8dee9;"> element </span><span style="color:#81a1c1;">in</span><span style="color:#d8dee9;"> a {
+  </span><span style="color:#616e88;">// do something
+</span><span style="color:#d8dee9;">}
+</span></code></pre>
+<ul>
+<li>increased safety of code.</li>
+</ul>
+<pre style="background-color:#2e3440;">
+<code class="language-rust" data-lang="rust"><span style="color:#81a1c1;">fn </span><span style="color:#88c0d0;">main</span><span style="color:#d8dee9;">() {
+    </span><span style="color:#81a1c1;">for</span><span style="color:#d8dee9;"> number </span><span style="color:#81a1c1;">in </span><span style="color:#d8dee9;">(</span><span style="color:#b48ead;">1</span><span style="color:#81a1c1;">..</span><span style="color:#b48ead;">4</span><span style="color:#d8dee9;">)</span><span style="color:#81a1c1;">.</span><span style="color:#88c0d0;">rev</span><span style="color:#d8dee9;">() {
+        println!(</span><span style="color:#a3be8c;">&quot;</span><span style="color:#ebcb8b;">{}</span><span style="color:#a3be8c;">!&quot;</span><span style="color:#eceff4;">,</span><span style="color:#d8dee9;"> number)</span><span style="color:#eceff4;">;
+    </span><span style="color:#d8dee9;">}
+    println!(</span><span style="color:#a3be8c;">&quot;LIFTOFF!!!&quot;</span><span style="color:#d8dee9;">)</span><span style="color:#eceff4;">;
+</span><span style="color:#d8dee9;">}
+</span></code></pre><h1 id="ch-4-understanding-ownership">ch 4: understanding ownership</h1>
+<ul>
+<li>enables Rust to make memory safety guarantees without needing a garbage collector.</li>
+</ul>
+<h2 id="4-1-what-is-ownership">4.1: what is ownership</h2>
+<ul>
+<li>rust manages memory through a system of ownership with a set of rules that compiler checks at compile time.</li>
+<li>ownership features do not slow down program whiles it's running.</li>
+</ul>
+<h3 id="ownership-rules">ownership rules</h3>
+<ul>
+<li>each value has a variable that's called it's owner</li>
+<li>there can only be one owner at a time</li>
+<li>when owner goes out of scope, value will be dropped</li>
+</ul>
+<h3 id="memory-and-allocation">memory and allocation:</h3>
+<h4 id="move">move</h4>
+<ul>
+<li><code>String::from</code>, requests memory it needs</li>
+<li>when a variable goes out of scope, Rust called <code>drop</code>, is where author of <code>String</code> can put the code to return the memory.</li>
+<li>to ensure memory safety: after <code>let s2 = s1</code>, Rust considers <code>s1</code> to no longer be valid; no need to free anything when <code>s1</code> goes out of scope.</li>
+</ul>
+<pre style="background-color:#2e3440;">
+<code class="language-rust" data-lang="rust"><span style="color:#d8dee9;">    </span><span style="color:#81a1c1;">let</span><span style="color:#d8dee9;"> s1 </span><span style="color:#81a1c1;">= </span><span style="color:#8fbcbb;">String</span><span style="color:#81a1c1;">::</span><span style="color:#d8dee9;">from(</span><span style="color:#a3be8c;">&quot;hello&quot;</span><span style="color:#d8dee9;">)</span><span style="color:#eceff4;">;
+    </span><span style="color:#81a1c1;">let</span><span style="color:#d8dee9;"> s2 </span><span style="color:#81a1c1;">=</span><span style="color:#d8dee9;"> s1</span><span style="color:#eceff4;">;
+
+    </span><span style="color:#d8dee9;">println!(</span><span style="color:#a3be8c;">&quot;</span><span style="color:#ebcb8b;">{}</span><span style="color:#a3be8c;">, world!&quot;</span><span style="color:#eceff4;">,</span><span style="color:#d8dee9;"> s1)</span><span style="color:#eceff4;">;
+</span></code></pre>
+<ul>
+<li>move: shallow copy and invalidates the first variable.</li>
+<li>Rust never automatically creates deep copies; any automatic copies are assumed to be inexpensive.</li>
+</ul>
+<h4 id="clone">clone</h4>
+<ul>
+<li>deeply copy the heap data, not just stack data</li>
+<li>expensive</li>
+</ul>
+<h4 id="copy">copy</h4>
+<ul>
+<li>types that have known size at compile time are stored entirely on the stack, so copies of actual type are quick to make.</li>
+<li>there's no reason we would want to prevent <code>x</code> from being valid after creating <code>y</code>.</li>
+</ul>
+<pre style="background-color:#2e3440;">
+<code class="language-rust" data-lang="rust"><span style="color:#d8dee9;">    </span><span style="color:#81a1c1;">let</span><span style="color:#d8dee9;"> x </span><span style="color:#81a1c1;">= </span><span style="color:#b48ead;">5</span><span style="color:#eceff4;">;
+    </span><span style="color:#81a1c1;">let</span><span style="color:#d8dee9;"> y </span><span style="color:#81a1c1;">=</span><span style="color:#d8dee9;"> x</span><span style="color:#eceff4;">;
+
+    </span><span style="color:#d8dee9;">println!(</span><span style="color:#a3be8c;">&quot;x = </span><span style="color:#ebcb8b;">{}</span><span style="color:#a3be8c;">, y = </span><span style="color:#ebcb8b;">{}</span><span style="color:#a3be8c;">&quot;</span><span style="color:#eceff4;">,</span><span style="color:#d8dee9;"> x</span><span style="color:#eceff4;">,</span><span style="color:#d8dee9;"> y)</span><span style="color:#eceff4;">;
+</span></code></pre>
+<ul>
+<li>no difference between deep and shallow copy here.</li>
+<li>Rust has special annotation called <code>Copy</code> trait that is placed on types like integers.</li>
+<li>Rust won't let us annotate a type with <code>Copy</code> trait if the type or any parts of it has implemented <code>Drop</code> trait.</li>
+</ul>
+<h3 id="ownership-and-functions">ownership and functions</h3>
+<ul>
+<li>passing a <code>String</code>, s, to a function means that s is no longer valid, the function <em>owns</em> s.</li>
+<li>returning values can also transfer ownership.</li>
+<li>ownership of a variable follows the same pattern: assigning a value to another variable moves it. </li>
+<li>when a variable that includes data on the heap goes out of scope, the value will be cleaned up by <code>drop</code> unless the data has been moved to be owned by another variable.</li>
+<li>taking ownership and then returning ownership with every function is a bit tedious.
+<ul>
+<li>what if we want to let a function use a value but not take ownership?</li>
+</ul>
+</li>
+<li>anything we pass in also needs to be passed back if we want to use it again.</li>
+</ul>
+<pre style="background-color:#2e3440;">
+<code class="language-rust" data-lang="rust"><span style="color:#81a1c1;">fn </span><span style="color:#88c0d0;">main</span><span style="color:#d8dee9;">() {
+    </span><span style="color:#81a1c1;">let</span><span style="color:#d8dee9;"> s1 </span><span style="color:#81a1c1;">= </span><span style="color:#8fbcbb;">String</span><span style="color:#81a1c1;">::</span><span style="color:#d8dee9;">from(</span><span style="color:#a3be8c;">&quot;hello&quot;</span><span style="color:#d8dee9;">)</span><span style="color:#eceff4;">;
+
+    </span><span style="color:#81a1c1;">let </span><span style="color:#d8dee9;">(s2</span><span style="color:#eceff4;">,</span><span style="color:#d8dee9;"> len) </span><span style="color:#81a1c1;">= </span><span style="color:#88c0d0;">calculate_length</span><span style="color:#d8dee9;">(s1)</span><span style="color:#eceff4;">;
+
+    </span><span style="color:#d8dee9;">println!(</span><span style="color:#a3be8c;">&quot;The length of &#39;</span><span style="color:#ebcb8b;">{}</span><span style="color:#a3be8c;">&#39; is </span><span style="color:#ebcb8b;">{}</span><span style="color:#a3be8c;">.&quot;</span><span style="color:#eceff4;">,</span><span style="color:#d8dee9;"> s2</span><span style="color:#eceff4;">,</span><span style="color:#d8dee9;"> len)</span><span style="color:#eceff4;">;
+</span><span style="color:#d8dee9;">}
+
+</span><span style="color:#81a1c1;">fn </span><span style="color:#88c0d0;">calculate_length</span><span style="color:#d8dee9;">(s</span><span style="color:#eceff4;">:</span><span style="color:#d8dee9;"> String) </span><span style="color:#eceff4;">-&gt; </span><span style="color:#d8dee9;">(String, </span><span style="color:#81a1c1;">usize</span><span style="color:#d8dee9;">) {
+    </span><span style="color:#81a1c1;">let</span><span style="color:#d8dee9;"> length </span><span style="color:#81a1c1;">=</span><span style="color:#d8dee9;"> s</span><span style="color:#81a1c1;">.</span><span style="color:#88c0d0;">len</span><span style="color:#d8dee9;">()</span><span style="color:#eceff4;">; </span><span style="color:#616e88;">// len() returns the length of a String
+
+    </span><span style="color:#d8dee9;">(s</span><span style="color:#eceff4;">,</span><span style="color:#d8dee9;"> length)
+}
+</span></code></pre>
+<ul>
+<li>we can return multiple values in a tuple, and we need to return the string so we can use it again later.</li>
+<li>we solve that issue by using <em>references</em></li>
+</ul>
+<h2 id="4-2-references-and-borrowing">4.2 references and borrowing</h2>
+<ul>
+<li>add <code>&amp;</code> to denote <em>references</em>, allow you to refer to some value without taking ownership of it.
+<ul>
+<li>called borrowing: we cannot modify a borrowed value; <em>references</em> are also immutable.</li>
+</ul>
+</li>
+</ul>
+<h3 id="mutable-references">mutable references</h3>
+<ol>
+<li>change the variable to be <code>mut</code>: <code>let mut s = String::from(&quot;hello&quot;)</code></li>
+<li>create a mutable reference with <code>&amp;mut s</code> and call the <code>change</code> function: <code>change(&amp;mut s)</code></li>
+<li>update the function signature to accept mutable reference, <code>some_string: &amp;mut String</code></li>
+</ol>
+<ul>
+<li>but you can only have one mutable reference to a particular piece of data at a time.</li>
+<li>allows for mutation in a controlled fashion.</li>
+<li>this prevents data races at compile time</li>
+</ul>
+<p>a <em>data race</em> is similar to a race condition and occurs when:</p>
+<ol>
+<li>two or more pointers access the same data at the same time</li>
+<li>at least one of the pointers is being used to write to the data</li>
+<li>there's no mechanism being used to synchronize access to the data</li>
+</ol>
+<p>Rust won't even compile code with data races!</p>
+<ul>
+<li>we can use curly braces to create a new scope.</li>
+</ul>
+<h1 id="5-using-structs-to-structure-related-data">5: Using Structs to Structure Related Data</h1>
+<h2 id="5-1-defining-and-instantiating-structs">5.1 Defining and Instantiating Structs</h2>
+<ul>
+<li>more flexible than tuples.</li>
+<li>use the init shorthand to above being repetitive.</li>
+</ul>
+<h3 id="creating-instances-from-other-instances-with-struct-update-syntax">Creating Instances From Other Instances With Struct Update Syntax</h3>
+<ul>
+<li><code>..</code> specifies that the remaining fields not explicitly set should have the same value as the fields in the given instance.
+<ul>
+<li>must come last</li>
+</ul>
+</li>
+</ul>
+<p>If we did:</p>
+<pre style="background-color:#2e3440;">
+<code class="language-rust" data-lang="rust"><span style="color:#81a1c1;">let</span><span style="color:#d8dee9;"> user2 </span><span style="color:#81a1c1;">=</span><span style="color:#d8dee9;"> User {
+  email</span><span style="color:#eceff4;">: </span><span style="color:#8fbcbb;">String</span><span style="color:#81a1c1;">::</span><span style="color:#d8dee9;">from(</span><span style="color:#a3be8c;">&quot;yeet@dab.com&quot;</span><span style="color:#d8dee9;">)</span><span style="color:#eceff4;">,
+  </span><span style="color:#81a1c1;">..</span><span style="color:#d8dee9;">user1
+  }
+</span></code></pre>
+<ul>
+<li>this means user1 is not longer usable
+<ul>
+<li>but if there are traits that use the <code>Copy</code> trait, then user1 is still valid</li>
+</ul>
+</li>
+</ul>
+<h3 id="unit-like-structs-without-any-fields">Unit-Like Structs Without Any Fields</h3>
+<ul>
+<li>useful when you need to implement a trait on some type bot don'th ave any data that you want to store in the type itself</li>
+</ul>
+<h1 id="5-2-method-syntax">5.2: Method Syntax</h1>
+<ul>
+<li>first parameter is always self in the form <code>self</code>, <code>&amp;self</code>, <code>&amp;mut self</code></li>
+<li>to define function within context of a Struct, start with an <code>impl</code> block.</li>
+</ul>
+<h3 id="associated-functions">Associated functions</h3>
+<ul>
+<li>don't have <code>self</code>, so aren't methods because they don't need an instance of the type to work with.</li>
+</ul>
+<pre style="background-color:#2e3440;">
+<code><span style="color:#d8dee9;">impl Rectangle {
+    fn square(size: u32) -&gt; Rectangle {
+        Rectangle {
+            width: size,
+            height: size,
+        }
+    }
+}
+
+let sq = Rectangle::square(3);
+</span></code></pre>
+<ul>
+<li>you can have multiple <code>impl</code> blocks</li>
+</ul>
+<h1 id="6-enums-and-pattern-matching">6. Enums and Pattern Matching</h1>
+<ul>
+<li>enums allow you to define a type by enumerating it's possible variants. </li>
+</ul>
+<h2 id="6-1-defining-an-enum">6.1. Defining an Enum</h2>
+<p>IP addresses are either V4 or V6, but not both. </p>
+<pre style="background-color:#2e3440;">
+<code class="language-rust" data-lang="rust"><span style="color:#81a1c1;">enum </span><span style="color:#8fbcbb;">IpAddrKind </span><span style="color:#d8dee9;">{
+  V4</span><span style="color:#eceff4;">,
+  </span><span style="color:#d8dee9;">V6
+}
+</span></code></pre>
+<ul>
+<li>create instances of enum:</li>
+</ul>
+<pre style="background-color:#2e3440;">
+<code class="language-rust" data-lang="rust"><span style="color:#81a1c1;">let</span><span style="color:#d8dee9;"> four </span><span style="color:#81a1c1;">= </span><span style="color:#d8dee9;">IpAddrKind</span><span style="color:#81a1c1;">::</span><span style="color:#d8dee9;">V4</span><span style="color:#eceff4;">;
+</span><span style="color:#81a1c1;">let</span><span style="color:#d8dee9;"> six </span><span style="color:#81a1c1;">= </span><span style="color:#d8dee9;">IpAddrKind</span><span style="color:#81a1c1;">::</span><span style="color:#d8dee9;">V6</span><span style="color:#eceff4;">;
+</span></code></pre>
+<p><code>four</code> and <code>six</code> have the same type.</p>
+<ul>
+<li>to represent data, might put a enum in a struct. but can put data directly into each enum variant.</li>
+</ul>
+<pre style="background-color:#2e3440;">
+<code class="language-rust" data-lang="rust"><span style="color:#81a1c1;">enum </span><span style="color:#8fbcbb;">IpAddrKind </span><span style="color:#d8dee9;">{
+  V4(</span><span style="color:#8fbcbb;">String</span><span style="color:#d8dee9;">)</span><span style="color:#eceff4;">,
+  </span><span style="color:#d8dee9;">V6(</span><span style="color:#8fbcbb;">String</span><span style="color:#d8dee9;">)
+}
+
+</span><span style="color:#81a1c1;">let</span><span style="color:#d8dee9;"> four </span><span style="color:#81a1c1;">= </span><span style="color:#d8dee9;">IpAddrKind</span><span style="color:#81a1c1;">::</span><span style="color:#d8dee9;">V4(</span><span style="color:#8fbcbb;">String</span><span style="color:#81a1c1;">::</span><span style="color:#d8dee9;">from(</span><span style="color:#a3be8c;">&quot;111&quot;</span><span style="color:#d8dee9;">))</span><span style="color:#eceff4;">;
+</span></code></pre>
+<p>another advantage to using enums rather than a struct is that each variant can have different types and amounts of associated data. </p>
+<h3 id="the-option">The <code>Option</code></h3>
+<pre style="background-color:#2e3440;">
+<code class="language-rust" data-lang="rust"><span style="color:#81a1c1;">enum </span><span style="color:#8fbcbb;">Option</span><span style="color:#d8dee9;">&lt;T&gt; {
+    </span><span style="color:#8fbcbb;">None</span><span style="color:#eceff4;">,
+    </span><span style="color:#8fbcbb;">Some</span><span style="color:#d8dee9;">(T)</span><span style="color:#eceff4;">,
+</span><span style="color:#d8dee9;">}
+</span></code></pre>
+<p>you have to convert <code>Option&lt;T&gt;</code> to a <code>T</code> before you can perform <code>T</code> operations with it.</p>
+<h2 id="6-2-the-match-control-flow-construct">6.2 the <code>match</code> Control Flow Construct</h2>
+<ul>
+<li>match arms can bind to parts of the values that match the pattern; this is how values are extracted out of enum variants.</li>
+<li>matches are exhaustive</li>
+<li><code>catch</code> catches everything else</li>
+<li><code>_</code> catches any value and does not bind to that value
+<ul>
+<li><code>_ =&gt; ()</code>: do nothing</li>
+</ul>
+</li>
+</ul>
+<h2 id="6-3-concise-control-flow-with-if-let">6.3. Concise Control Flow with <code>if let</code></h2>
+<ul>
+<li>handle values that match one pattern while ignoring the rest</li>
+<li>lose exhaustive checking that <code>match</code> enforces</li>
+<li>can use <code>else</code> to make exhaustive</li>
+</ul>
+<h1 id="7-managing-growing-projects-with-packages-crates-and-modules">7. Managing Growing Projects with Packages, Crates and Modules</h1>
+<p>the module system:</p>
+<ul>
+<li>packages: cargo feature that lets you build, test, and share crates</li>
+<li>crates: tree of modules that produces a library or executable</li>
+<li>modules and use: let you control the org, scope, and privacy of paths</li>
+<li>paths: a way of naming an item, such as a struct, function, or module</li>
+</ul>
+<h2 id="project-crates">project/crates</h2>
+<ul>
+<li>
+<p>crate: binary or library</p>
+<ul>
+<li>crate root: source file that Rust compiler starts from </li>
+</ul>
+</li>
+<li>
+<p>package: one or more creates that provide set of functionality; package contains a <code>Cargo.toml</code> file that describes how to build those crates</p>
+<ul>
+<li>can contain at most one library crate</li>
+</ul>
+</li>
+</ul>
+<h2 id="modules">modules</h2>
+<ul>
+<li><code>src/main.rs</code>, <code>src/lib.rc</code>: crate roots
+<ul>
+<li>contents of either of these two files form a module called <code>crate</code> at root of the crate's module structure, known as the module tree.</li>
+</ul>
+</li>
+<li><code>use</code>: brings a path into scope</li>
+<li><code>pub</code>: makes items public</li>
+<li><code>mod</code>: define module with </li>
+</ul>
+<h2 id="paths">paths</h2>
+<ul>
+<li>
+<p>two forms:</p>
+<ul>
+<li>absolute: starts from crate root by using crate name or literal <code>crate</code></li>
+<li>relative: starts from current module and uses <code>self</code>, <code>super</code>, or an identifier in the current module</li>
+</ul>
+</li>
+<li>
+<p>both types of paths followed by one or more identifiers separated by double colons <code>::</code></p>
+</li>
+<li>
+<p>all items are private by default</p>
+</li>
+<li>
+<p>items in parent module can't use the private items inside child modules, but items in child modules can use the items in their ancestor modules</p>
+<ul>
+<li>child modules can see the context in which they're defined </li>
+<li>hiding inner implementation details is the default</li>
+<li>expose inner parts of child modules' code to outer ancestor modules by using the <code>pub</code> keyword to make an item public</li>
+</ul>
+</li>
+<li>
+<p>adding <code>pub</code> to the module makes the module public but it's contents are still private; only code in its ancestor modules can refer to it</p>
+</li>
+<li>
+<p>using <code>super</code> with relative paths is like using <code>..</code></p>
+</li>
+<li>
+<p>adding <code>pub</code> to struct makes struct public but fields are still private</p>
+</li>
+<li>
+<p>if we make enum public then all of its variants are public</p>
+</li>
+</ul>
+<h2 id="use">use</h2>
+<ul>
+<li>to use module without the long path names</li>
+<li>functions: bring in function's parent module =&gt; makes it clear the function isn't locally defined</li>
+<li>structs, enums, other items: specify full path name</li>
+<li>provide new name with <code>as</code>, like Python</li>
+<li>reexporting: combine <code>pub</code> and <code>use</code></li>
+</ul>
+<h1 id="8-common-collections">8. Common Collections</h1>
+<ul>
+<li>unlike built in arrays/tuples, these collections have their data stored on the heap, so the amount of data doesn't need to be known at compile time and data can grow and shrink as program runs.</li>
+</ul>
+<p>3 common types:</p>
+<ul>
+<li>vector: store variable number of values next to each other </li>
+<li>string: collection of charterers</li>
+<li>hash map: associate value with particular key</li>
+</ul>
+<h2 id="vector-vec-t">vector <code>Vec&lt;T&gt;</code>:</h2>
+<ul>
+<li>only store values of same type</li>
+<li><code>vec!</code> macro which creates a new vector that holds values you give it</li>
+<li>dropping a vector drops it's elements</li>
+<li>access elements through <code>[]</code> (less safe) or <code>get()</code> (more safe)</li>
+<li>same rule of not being able to have mutable and immutable references applies for vectors:</li>
+</ul>
+<pre style="background-color:#2e3440;">
+<code class="language-rust" data-lang="rust"><span style="color:#81a1c1;">let mut</span><span style="color:#d8dee9;"> v </span><span style="color:#81a1c1;">= </span><span style="color:#d8dee9;">vec![</span><span style="color:#b48ead;">1</span><span style="color:#eceff4;">, </span><span style="color:#b48ead;">2</span><span style="color:#eceff4;">, </span><span style="color:#b48ead;">3</span><span style="color:#eceff4;">, </span><span style="color:#b48ead;">4</span><span style="color:#eceff4;">, </span><span style="color:#b48ead;">5</span><span style="color:#d8dee9;">]</span><span style="color:#eceff4;">;
+
+</span><span style="color:#81a1c1;">let</span><span style="color:#d8dee9;"> first </span><span style="color:#81a1c1;">= &amp;</span><span style="color:#d8dee9;">v[</span><span style="color:#b48ead;">0</span><span style="color:#d8dee9;">]</span><span style="color:#eceff4;">; </span><span style="color:#616e88;">// immutable borrow
+
+</span><span style="color:#d8dee9;">v</span><span style="color:#81a1c1;">.</span><span style="color:#88c0d0;">push</span><span style="color:#d8dee9;">(</span><span style="color:#b48ead;">6</span><span style="color:#d8dee9;">)</span><span style="color:#eceff4;">; </span><span style="color:#616e88;">// mutable borrow
+
+</span><span style="color:#d8dee9;">println!(</span><span style="color:#a3be8c;">&quot;The first element is: </span><span style="color:#ebcb8b;">{}</span><span style="color:#a3be8c;">&quot;</span><span style="color:#eceff4;">,</span><span style="color:#d8dee9;"> first)</span><span style="color:#eceff4;">;
+
+</span></code></pre>
+<ul>
+<li>doesn't work because of how vectors work: vectors put values next to each other in memory
+<ul>
+<li>adding a new element onto the end might require allocating new memory and copying old elements into new space, then <code>first</code> would be pointing to deallocated memory</li>
+</ul>
+</li>
+</ul>
+<h2 id="string">String</h2>
+<ul>
+<li>string slice <code>str</code> or <code>&amp;str</code></li>
+<li><code>String</code>type: growable, mutable, owned, UTF-8 encoded string type
+<ul>
+<li><code>String::from</code> and <code>to_string</code> do the same thing</li>
+</ul>
+</li>
+</ul>
+<pre style="background-color:#2e3440;">
+<code class="language-rust" data-lang="rust"><span style="color:#81a1c1;">let</span><span style="color:#d8dee9;"> s1 </span><span style="color:#81a1c1;">= </span><span style="color:#8fbcbb;">String</span><span style="color:#81a1c1;">::</span><span style="color:#d8dee9;">from(</span><span style="color:#a3be8c;">&quot;Hello, &quot;</span><span style="color:#d8dee9;">)</span><span style="color:#eceff4;">;
+</span><span style="color:#81a1c1;">let</span><span style="color:#d8dee9;"> s2 </span><span style="color:#81a1c1;">= </span><span style="color:#8fbcbb;">String</span><span style="color:#81a1c1;">::</span><span style="color:#d8dee9;">from(</span><span style="color:#a3be8c;">&quot;world!&quot;</span><span style="color:#d8dee9;">)</span><span style="color:#eceff4;">;
+</span><span style="color:#81a1c1;">let</span><span style="color:#d8dee9;"> s3 </span><span style="color:#81a1c1;">=</span><span style="color:#d8dee9;"> s1 </span><span style="color:#81a1c1;">+ &amp;</span><span style="color:#d8dee9;">s2</span><span style="color:#eceff4;">; </span><span style="color:#616e88;">// note s1 has been moved here and can no longer be used
+
+</span></code></pre>
+<p>Rust strings don't support indexing</p>
+<ul>
+<li><code>String</code> is wrapper over <code>Vec&lt;u8&gt;</code></li>
+<li>index into a string's bytes will not always correlate with valid Unicode scalar value</li>
+<li>if &amp;&quot;hello&quot;[0] were valid code that returned the byte value, it would return 104, not h</li>
+<li>three ways to look at strings: bytes, scalar values and grapheme clusters</li>
+<li>indexing operations are expected to take constant time <code>O(1)</code>, but it's not possible because Rust has to walk thought the contents to determine how many valid characters there are</li>
+<li>can use range to create string slices, but can crash your program</li>
+<li>be explicit if you want <code>chars</code> or <code>bytes</code></li>
+</ul>
+<h2 id="hash-maps-hashmap-k-v">Hash Maps <code>HashMap&lt;K, V&gt;</code></h2>
+<ul>
+<li>store data on the heap</li>
+<li>ways to construct:
+<ul>
+<li><code>use</code></li>
+</ul>
+</li>
+</ul>
+<pre style="background-color:#2e3440;">
+<code class="language-rust" data-lang="rust"><span style="color:#81a1c1;">use </span><span style="color:#d8dee9;">std</span><span style="color:#81a1c1;">::</span><span style="color:#d8dee9;">collections</span><span style="color:#eceff4;">:</span><span style="color:#d8dee9;">HashMap</span><span style="color:#eceff4;">;
+
+</span><span style="color:#81a1c1;">let mut</span><span style="color:#d8dee9;"> map </span><span style="color:#81a1c1;">= </span><span style="color:#d8dee9;">HashMap</span><span style="color:#81a1c1;">::</span><span style="color:#d8dee9;">new()</span><span style="color:#eceff4;">;
+
+</span><span style="color:#81a1c1;">mut.</span><span style="color:#88c0d0;">insert</span><span style="color:#d8dee9;">(</span><span style="color:#8fbcbb;">String</span><span style="color:#81a1c1;">::</span><span style="color:#d8dee9;">from(</span><span style="color:#a3be8c;">&quot;Yeet&quot;</span><span style="color:#d8dee9;">)</span><span style="color:#eceff4;">, </span><span style="color:#b48ead;">1</span><span style="color:#d8dee9;">)</span><span style="color:#eceff4;">;
+</span></code></pre>
+<ul>
+<li>iterators and <code>collect</code> method on vector of tuples</li>
+</ul>
+<pre style="background-color:#2e3440;">
+<code class="language-rust" data-lang="rust"><span style="color:#81a1c1;">use </span><span style="color:#d8dee9;">std</span><span style="color:#81a1c1;">::</span><span style="color:#d8dee9;">collections</span><span style="color:#eceff4;">:</span><span style="color:#d8dee9;">HashMap</span><span style="color:#eceff4;">;
+
+</span><span style="color:#81a1c1;">let</span><span style="color:#d8dee9;"> keys </span><span style="color:#81a1c1;">= </span><span style="color:#d8dee9;">vec![</span><span style="color:#8fbcbb;">String</span><span style="color:#81a1c1;">::</span><span style="color:#d8dee9;">from(</span><span style="color:#a3be8c;">&quot;A&quot;</span><span style="color:#d8dee9;">)</span><span style="color:#eceff4;">,</span><span style="color:#8fbcbb;">String</span><span style="color:#81a1c1;">::</span><span style="color:#d8dee9;">from(</span><span style="color:#a3be8c;">&quot;B&quot;</span><span style="color:#d8dee9;">)]</span><span style="color:#eceff4;">;
+</span><span style="color:#81a1c1;">let</span><span style="color:#d8dee9;"> vals </span><span style="color:#81a1c1;">= </span><span style="color:#d8dee9;">vec![</span><span style="color:#b48ead;">1</span><span style="color:#eceff4;">,</span><span style="color:#b48ead;">2</span><span style="color:#d8dee9;">]</span><span style="color:#eceff4;">;
+
+</span><span style="color:#81a1c1;">let mut</span><span style="color:#d8dee9;"> map</span><span style="color:#eceff4;">: </span><span style="color:#d8dee9;">HashMap&lt;</span><span style="color:#81a1c1;">_</span><span style="background-color:#bf616a;color:#d8dee9;">.</span><span style="color:#81a1c1;">_&gt; =</span><span style="color:#d8dee9;"> keys</span><span style="color:#81a1c1;">.</span><span style="color:#88c0d0;">into_iter</span><span style="color:#d8dee9;">()</span><span style="color:#81a1c1;">.</span><span style="color:#88c0d0;">zip</span><span style="color:#d8dee9;">(vals</span><span style="color:#81a1c1;">.</span><span style="color:#88c0d0;">into_iter</span><span style="color:#d8dee9;">())</span><span style="color:#81a1c1;">.</span><span style="color:#88c0d0;">collect</span><span style="color:#d8dee9;">()</span><span style="color:#eceff4;">;
+</span></code></pre>
+<ul>
+<li>uses <em>SipHash</em> which provides resistance to DoS attacks but is not the fastest hashing function.</li>
+</ul>
+<h1 id="9-error-handling">9. Error Handling</h1>
+<ul>
+<li>does not have exceptions, has:
+<ul>
+<li><code>Result&lt;T ,E&gt;</code> for recoverable errors</li>
+<li><code>panic!</code> macro that stops execution when the program encounters an unrecoverable error</li>
+</ul>
+</li>
+</ul>
+<h2 id="panic-macro"><code>panic!</code> macro</h2>
+<ul>
+<li>when <code>panic!</code> macro executes, program will print fail message, unwind and clean stack, then quit</li>
+<li>the stack can either be:
+<ul>
+<li>unwind: Rust walks back up the stack and cleans up the data from each function it encounters, however, this is a lot of work</li>
+<li>abort: ends program without cleaning up; the memory will need to be cleaned by the operating system</li>
+</ul>
+</li>
+</ul>
+<h2 id="recoverable-errors-with-result">recoverable errors with <code>Result</code></h2>
+<ul>
+<li>two generic type parameters: <code>T</code>, type of value that will be returned in success case within <code>Ok</code> variant, and <code>E</code>, type of error that will be returned in failure case within <code>Err</code> variant.</li>
+<li>can use <code>match</code> on the <code>Results</code></li>
+</ul>
+<h2 id="shortcuts-for-panic-on-error-unwrap-and-expect">shortcuts for Panic on Error: <code>unwrap</code> and <code>expect</code></h2>
+<ul>
+<li><code>unwrap</code>: if <code>Result</code> value is:
+<ul>
+<li><code>Ok</code>: return value inside <code>Ok</code></li>
+<li><code>Err</code>: call <code>panic!</code> macro</li>
+</ul>
+</li>
+<li><code>expect</code>: let's us choose our own error message</li>
+</ul>
+<h2 id="shortcut-for-propagating-errors">shortcut for propagating errors:</h2>
+<ul>
+<li><code>?</code> placed after <code>Result</code> value is defined to work in almost the same way as <code>match</code>
+<ul>
+<li>difference: error values that have <code>?</code> called on them go through the <code>from</code> function, which is used to convert errors from one type into another
+<ul>
+<li>the error type received is converted into the error type defined in the return type</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="where-can-be-used">where <code>?</code> can be used</h3>
+<ul>
+<li>can only be used in functions whose return type of compatible with the value the  <code>?</code> is used on</li>
+<li>you can use <code>?</code> on a  <code>Result</code> in a function that returns <code>Result</code></li>
+<li>you can use <code>?</code> on an <code>Option</code> in a function that returns <code>Option</code></li>
+</ul>
+<h1 id="10-generic-types-traits-and-lifetimes">10. Generic Types, Traits and Lifetimes</h1>
+<h2 id="in-method-definitions">in method definitions</h2>
+<pre style="background-color:#2e3440;">
+<code class="language-rust" data-lang="rust"><span style="color:#81a1c1;">impl</span><span style="color:#d8dee9;">&lt;T&gt; Point&lt;T&gt; {
+    </span><span style="color:#81a1c1;">fn </span><span style="color:#88c0d0;">x</span><span style="color:#d8dee9;">(</span><span style="color:#81a1c1;">&amp;</span><span style="color:#d8dee9;">self) </span><span style="color:#eceff4;">-&gt; </span><span style="color:#81a1c1;">&amp;</span><span style="color:#d8dee9;">T {
+        </span><span style="color:#81a1c1;">&amp;self.</span><span style="color:#d8dee9;">x
+    }
+}
+</span></code></pre>
+<ul>
+<li>Methods written within an <code>impl</code> that declares the generic type will be defined on any instance of the type, no matter what concrete type ends up substituting for the generic type.</li>
+</ul>
+<pre style="background-color:#2e3440;">
+<code class="language-rust" data-lang="rust"><span style="color:#81a1c1;">impl </span><span style="color:#d8dee9;">Point&lt;</span><span style="color:#81a1c1;">f32</span><span style="color:#d8dee9;">&gt; {
+    </span><span style="color:#81a1c1;">fn </span><span style="color:#88c0d0;">distance_from_origin</span><span style="color:#d8dee9;">(</span><span style="color:#81a1c1;">&amp;</span><span style="color:#d8dee9;">self) </span><span style="color:#eceff4;">-&gt; </span><span style="color:#81a1c1;">f32 </span><span style="color:#d8dee9;">{
+        (</span><span style="color:#81a1c1;">self.</span><span style="color:#d8dee9;">x</span><span style="color:#81a1c1;">.</span><span style="color:#88c0d0;">powi</span><span style="color:#d8dee9;">(</span><span style="color:#b48ead;">2</span><span style="color:#d8dee9;">) </span><span style="color:#81a1c1;">+ self.</span><span style="color:#d8dee9;">y</span><span style="color:#81a1c1;">.</span><span style="color:#88c0d0;">powi</span><span style="color:#d8dee9;">(</span><span style="color:#b48ead;">2</span><span style="color:#d8dee9;">))</span><span style="color:#81a1c1;">.</span><span style="color:#88c0d0;">sqrt</span><span style="color:#d8dee9;">()
+    }
+}
+</span></code></pre>
+<ul>
+<li>means only the type <code>Point&lt;f32&gt;</code> will have this method defined.</li>
+</ul>
+<h2 id="performance-of-code-using-generics">performance of code using generics</h2>
+<ul>
+<li>code with generics doesn't run any slower</li>
+<li>Rust performs monomorphization: process of turning generic code into specific code by filling in the concrete types</li>
+</ul>
+<h3 id="traits">Traits</h3>
+<ul>
+<li>use traits to define shared behaviour in abstract way.</li>
+<li>use trait bounds to specify that a generic type can be any type that has certain behaviour</li>
+<li>similar to interfaces in other languages</li>
+<li>we can implement a trait on a type only if at least one of the trait or the type is local to our crate
+<ul>
+<li>can't implement external traits on external types
+<ul>
+<li>coherence, orphan rule =&gt; parent type is not present</li>
+<li>rule ensures other people's code can't break your code</li>
+<li>without rule, two creates could implement same trait for the same type, and Rust wouldn't know which implementation to use</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>can't call default implementation from overriding implementation of same method.</li>
+<li>trait bounds:</li>
+</ul>
+<pre style="background-color:#2e3440;">
+<code class="language-rust" data-lang="rust"><span style="color:#81a1c1;">pub fn </span><span style="color:#88c0d0;">notify</span><span style="color:#d8dee9;">&lt;T</span><span style="color:#eceff4;">:</span><span style="color:#d8dee9;"> Summary&gt;(item1</span><span style="color:#eceff4;">: </span><span style="color:#81a1c1;">&amp;</span><span style="color:#d8dee9;">T, item2</span><span style="color:#eceff4;">: </span><span style="color:#81a1c1;">&amp;</span><span style="color:#d8dee9;">T) {
+</span></code></pre>
+<ul>
+<li>multiple trait bounds with +:</li>
+</ul>
+<pre style="background-color:#2e3440;">
+<code class="language-rust" data-lang="rust"><span style="color:#81a1c1;">pub fn </span><span style="color:#88c0d0;">notify</span><span style="color:#d8dee9;">(item</span><span style="color:#eceff4;">: </span><span style="color:#81a1c1;">&amp;</span><span style="color:#d8dee9;">(impl Summary + Display)) {
+</span><span style="color:#81a1c1;">pub fn </span><span style="color:#88c0d0;">notify</span><span style="color:#d8dee9;">&lt;T</span><span style="color:#eceff4;">:</span><span style="color:#d8dee9;"> Summary </span><span style="color:#81a1c1;">+</span><span style="color:#d8dee9;"> Display&gt;(item</span><span style="color:#eceff4;">: </span><span style="color:#81a1c1;">&amp;</span><span style="color:#d8dee9;">T) {
+</span></code></pre>
+<ul>
+<li>clearer trait bounds with <code>where</code> Clauses</li>
+</ul>
+<pre style="background-color:#2e3440;">
+<code class="language-rust" data-lang="rust"><span style="color:#81a1c1;">fn </span><span style="color:#88c0d0;">some_function</span><span style="color:#d8dee9;">&lt;T, U&gt;(t</span><span style="color:#eceff4;">: </span><span style="color:#81a1c1;">&amp;</span><span style="color:#d8dee9;">T, u</span><span style="color:#eceff4;">: </span><span style="color:#81a1c1;">&amp;</span><span style="color:#d8dee9;">U) </span><span style="color:#eceff4;">-&gt; </span><span style="color:#81a1c1;">i32
+    where</span><span style="color:#d8dee9;"> T</span><span style="color:#eceff4;">:</span><span style="color:#d8dee9;"> Display + Clone,
+          U</span><span style="color:#eceff4;">:</span><span style="color:#d8dee9;"> Clone + Debug
+{
+</span></code></pre>
+<ul>
+<li>can only return a single type (even if the trait is in the return)</li>
+<li>can use traits to conditionally implement methods</li>
+<li>can also conditionally implement a trait for any type that implements another trait
+<ul>
+<li>implementations of a trait on any type that satisfies the trait bounds are called <em>blanket implementations</em> </li>
+</ul>
+</li>
+</ul>
+<h2 id="validating-references-with-lifetimes">validating references with lifetimes</h2>
+<ul>
+<li>main aim is to prevent dangling pointers</li>
+<li>Rust determines code has gone out of scope with a borrow checker</li>
+</ul>
+<h2 id="generic-lifetimes-in-functions">generic lifetimes in functions</h2>
+<pre style="background-color:#2e3440;">
+<code class="language-rust" data-lang="rust"><span style="color:#81a1c1;">fn </span><span style="color:#88c0d0;">longest</span><span style="color:#d8dee9;">(x</span><span style="color:#eceff4;">: </span><span style="color:#81a1c1;">&amp;str</span><span style="color:#d8dee9;">, y</span><span style="color:#eceff4;">: </span><span style="color:#81a1c1;">&amp;str</span><span style="color:#d8dee9;">) </span><span style="color:#eceff4;">-&gt; </span><span style="color:#81a1c1;">&amp;str </span><span style="color:#d8dee9;">{
+    </span><span style="color:#81a1c1;">if</span><span style="color:#d8dee9;"> x</span><span style="color:#81a1c1;">.</span><span style="color:#88c0d0;">len</span><span style="color:#d8dee9;">() </span><span style="color:#81a1c1;">&gt;</span><span style="color:#d8dee9;"> y</span><span style="color:#81a1c1;">.</span><span style="color:#88c0d0;">len</span><span style="color:#d8dee9;">() {
+        x
+    } </span><span style="color:#81a1c1;">else </span><span style="color:#d8dee9;">{
+        y
+    }
+}
+</span></code></pre>
+<ul>
+<li>this code doesn't compile; we don't know if <code>&amp;str</code> refers to <code>x</code> or <code>y</code>.</li>
+<li>borrow checker can't check either; add generic lifetime parameters</li>
+</ul>
+<p><strong>Lifetime Annotation Syntax</strong></p>
+<ul>
+<li>lifetime annotations don't chance how long any of the references live</li>
+<li>lifetime annotations describe relationships of the lifetimes of multiple references to each other without affecting the lifetime</li>
+</ul>
+<pre style="background-color:#2e3440;">
+<code class="language-rust" data-lang="rust"><span style="color:#81a1c1;">&amp;i32        </span><span style="color:#616e88;">// a reference
+</span><span style="color:#81a1c1;">&amp;&#39;a i32     </span><span style="color:#616e88;">// a reference with an explicit lifetime
+</span><span style="color:#81a1c1;">&amp;&#39;a mut i32 </span><span style="color:#616e88;">// a mutable reference with an explicit lifetime
+</span></code></pre>
+<ul>
+<li>
+<p>when we specify lifetime parameters, we're not changing the lifetime of values, only telling the borrow checked to reject any values that don't adhere to these restraints.</p>
+</li>
+<li>
+<p>lifetime annotations become part of the contract of the function</p>
+</li>
+<li>
+<p>return value lifetime needs to be related to the lifetime of something (parameter or value created)</p>
+</li>
+<li>
+<p>patterns programmed into Rust's analysis of references: <em>lifetime elision rules</em></p>
+<ul>
+<li>set of particular cases that the compiler will consider, and if your code fits these cases you don't need to write lifetime explicitly</li>
+</ul>
+</li>
+<li>
+<p>input lifetime: lifetimes on functions or method parameters</p>
+</li>
+<li>
+<p>output lifetime: lifetime on return values</p>
+</li>
+<li>
+<p>three rules to figure out what lifetimes references have when there aren't explicit annotations:</p>
+<ol>
+<li>each parameter that is a reference gets its own lifetime parameter</li>
+<li>second rule is if there is exactly one input lifetime parameter, that lifetime is assigned to all output lifetime parameters</li>
+<li>there are multiple input lifetime parameters, but one of them is <code>&amp;self</code> or <code>&amp;mut self</code> because this is a method, the lifetime of self is assigned to all output lifetime parameters</li>
+</ol>
+</li>
+<li>
+<p><code>'static</code> lifetime, which means the reference can live for the entire duration of the program</p>
+</li>
+</ul>
+<h1 id="13-fp-features-iterators-and-closures">13. FP Features: Iterators and Closures</h1>
+<ul>
+<li>closure: anonymous function that capture their environment
+<ul>
+<li>can save in a variable or pass as arguments</li>
+</ul>
+</li>
+<li><code>let</code> statement means it contains the definition of an anonymous function, but not the resulting value of calling the anonymous function</li>
+<li>there aren't type annotations in the closure definition </li>
+<li>closures don't require you to annotate types of the parameters or the return type like <code>fn</code> functions do</li>
+<li>type annotations are required for functions because they're part of an explicit interface exposed to users
+<ul>
+<li>important so everyone agrees on what types of values a function uses and returns</li>
+</ul>
+</li>
+<li>closures aren't used in exposed interface like this. </li>
+</ul>
+<h1 id="14-cargo-and-crates-io">14. Cargo and Crates.io</h1>
+<h1 id="15-smart-pointers">15. Smart Pointers</h1>
+<h1 id="16-fearless-concurrency">16. Fearless Concurrency</h1>
+<h1 id="17-oop-features-of-rust">17. OOP Features of Rust</h1>
+<h1 id="18-patterns-and-matching">18. Patterns and Matching</h1>
+<h1 id="19-advanced-features">19. Advanced Features</h1>
+<h1 id="20-final-project-building-a-multithreaded-web-server">20. Final Project: Building A Multithreaded Web Server</h1>
+
+</div>
+
+<div class="flex-row">
+  
+  <p>Previous:
+    <a href="https:&#x2F;&#x2F;lhao03.github.io&#x2F;blog&#x2F;learning&#x2F;ipad-notes&#x2F;">🖊 My thoughts on using the iPad for notes</a>
+  </p>
+  
+  
+  <p>Next:
+    <a href="https:&#x2F;&#x2F;lhao03.github.io&#x2F;blog&#x2F;learning&#x2F;racket&#x2F;">λ Racket Shenanigans</a>
+  </p>
+  
+</div>
+    <a href="/blog">go back to all posts</a>
+
+        </div>
+        <div id="wcb" class="carbonbadge"></div>
+<script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>
+        <footer>
+            <div class="flex-row">
+                
+                <a href="https:&#x2F;&#x2F;github.com&#x2F;lhao03" target="_blank">
+            <p class="lucyfont">github</p>
+                </a>
+                
+                <a href="https:&#x2F;&#x2F;linkedin.com&#x2F;in&#x2F;lucy-hao" target="_blank">
+            <p class="lucyfont">linkedin</p>
+                </a>
+                
+                <a href="https:&#x2F;&#x2F;twitter.com&#x2F;hoalycu" target="_blank">
+            <p class="lucyfont">twitter</p>
+                </a>
+                
+            </div>
+            <p style="text-align: center; padding-bottom: 5vh;" class="lucyfont">made with 💖 and Zola by Lucy</p>
+        </footer>
+      <a href="https://www.ryanmehri.dev/" target="_blank">
+        <img class="animal-img bottom-left" src="https:&#x2F;&#x2F;lhao03.github.io&#x2F;animals&#x2F;hedgehog.png"/>
+      </a>
+      <a href="/">
+      <img class="animal-img top-right" src="https:&#x2F;&#x2F;lhao03.github.io&#x2F;animals&#x2F;cat_scared-removebg-preview.png"/>
+      </a>
+      <!-- <img class="animal-img bottom-right" src="https:&#x2F;&#x2F;lhao03.github.io&#x2F;animals&#x2F;shib_cool-removebg-preview.png"/> -->
+    </section>
+</body>
+
+</html>

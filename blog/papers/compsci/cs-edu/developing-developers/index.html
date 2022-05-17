@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <link rel="preconnect" href="https://www.googletagmanager.com" />
+    <link rel="preconnect" href="https://www.google-analytics.com" />
+
+    <!-- basic favicon -->
+    <link rel="icon" href="https:&#x2F;&#x2F;lhao03.github.io&#x2F;emoji&#x2F;android-chrome-384x384.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https:&#x2F;&#x2F;lhao03.github.io&#x2F;emoji&#x2F;android-chrome-384x384.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https:&#x2F;&#x2F;lhao03.github.io&#x2F;emoji&#x2F;android-chrome-384x384.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https:&#x2F;&#x2F;lhao03.github.io&#x2F;emoji&#x2F;android-chrome-384x384.png">
+    <link rel="apple-touch-icon-precomposed" href="https:&#x2F;&#x2F;lhao03.github.io&#x2F;emoji&#x2F;android-chrome-384x384.png">
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KDGPVMHC9Q"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-KDGPVMHC9Q');
+    </script>
+
+    <!-- Primary Meta Tags -->
+    <title> 
+Matthias Felleisen: Developing Developers
+</title>
+    <meta name="title" content=" 
+Matthias Felleisen: Developing Developers
+">
+    <meta name="description" content=" 
+
+">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://metatags.io/">
+    <meta property="og:title" content=" 
+Matthias Felleisen: Developing Developers
+">
+    <meta property="og:description" content=" 
+
+">
+
+    <!-- Twitter -->
+    <meta name="twitter:creator" content="@hoalycu">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content=" 
+Matthias Felleisen: Developing Developers
+">
+    <meta property="twitter:description" content=" 
+
+">
+    <meta property="twitter:image" content="https:&#x2F;&#x2F;lhao03.github.io&#x2F;emoji&#x2F;android-chrome-384x384.png">
+
+    <!-- Other Meta tags -->
+    <meta charset="UTF-8" />
+    <meta property="og:image" content="https:&#x2F;&#x2F;lhao03.github.io&#x2F;emoji&#x2F;android-chrome-384x384.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://use.fontawesome.com/8e0ceafb9b.js"></script>
+    <link rel="stylesheet" href="https:&#x2F;&#x2F;lhao03.github.io&#x2F;style.css">
+
+    
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
+          
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
+
+          <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script>
+          <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/contrib/mathtex-script-type.min.js" integrity="sha384-zWYbd0NBwgTsgIdFKVprSfTh1mbMPe5Hz1X3yY4Sd1h/K1cQoUe36OGwAGz/PcDy" crossorigin="anonymous"></script>
+              
+          
+    
+<script type="text/javascript">
+    window.addEventListener('load', function() {
+        for (const ref of document.getElementsByClassName('footnote-reference')) {
+            const hash = ref.children[0].hash.substring(1);
+            const refhash = 'ref:' + hash;
+            ref.id = refhash;
+        }
+
+        for (const footnote of document.getElementsByClassName('footnote-definition')) {
+            const p = document.querySelector(".footnote-definition p");
+            const hash = footnote.id;
+            const refhash = 'ref:' + hash;
+            const backlink = document.createElement('a');
+            const spanText = document.createElement('span');
+            spanText.innerHTML = "<span>. </span>" + p.innerHTML + "<span> </span>";
+            backlink.href = '#' + refhash;
+            backlink.className = 'footnote-backlink';
+            backlink.innerText = '↩';
+            const paras = footnote.children;
+            const firstPara = paras[0];
+            firstPara.appendChild(spanText);
+            firstPara.appendChild(backlink);
+            footnote.removeChild(p);
+        }
+    });
+</script>
+
+</head>
+
+
+<body class="container blue-mesh">
+    <section>
+        <div class="page">
+        <div class="flex-row">
+        <a href="/">
+      <img class="top-left" src="https:&#x2F;&#x2F;lhao03.github.io&#x2F;emoji&#x2F;android-chrome-384x384.png"/>
+        </a>
+        </div>
+          
+<div class="post block">
+  <h1>Matthias Felleisen: Developing Developers</h1>
+  
+
+  <p class="subtitle">
+    
+    <strong>Written: 2022-04-27.</strong>
+    
+    <strong>1516 words, 8 mins</strong>
+  </p>
+  
+  <p>
+  Interest: 9
+  <br />
+  Understanding: 9
+  </p>
+  
+  
+  <div class="toc">
+    <h3> Table of Contents </h3>
+    <ul>
+      
+      <li >
+        <a class="highlight" href="https://lhao03.github.io/blog/papers/compsci/cs-edu/developing-developers/#traditional-programming-courses">traditional programming courses</a>
+        
+      </li>
+      
+      <li >
+        <a class="highlight" href="https://lhao03.github.io/blog/papers/compsci/cs-edu/developing-developers/#explicit-design-rules">explicit design rules</a>
+        
+      </li>
+      
+      <li >
+        <a class="highlight" href="https://lhao03.github.io/blog/papers/compsci/cs-edu/developing-developers/#programming-is-a-people-discipline">programming is a people discipline</a>
+        
+      </li>
+      
+      <li >
+        <a class="highlight" href="https://lhao03.github.io/blog/papers/compsci/cs-edu/developing-developers/#fundamentals-1-designing-with-teaching-languages">fundamentals 1: designing with teaching languages</a>
+        
+      </li>
+      
+      <li >
+        <a class="highlight" href="https://lhao03.github.io/blog/papers/compsci/cs-edu/developing-developers/#note-on-the-trinity">note on the trinity</a>
+        
+      </li>
+      
+      <li >
+        <a class="highlight" href="https://lhao03.github.io/blog/papers/compsci/cs-edu/developing-developers/#fundamentals-2-designing-with-java">fundamentals 2: designing with java</a>
+        
+      </li>
+      
+      <li >
+        <a class="highlight" href="https://lhao03.github.io/blog/papers/compsci/cs-edu/developing-developers/#logic-reasoning-about-well-designed-code">logic: reasoning about well-designed code</a>
+        
+      </li>
+      
+      <li >
+        <a class="highlight" href="https://lhao03.github.io/blog/papers/compsci/cs-edu/developing-developers/#ood-scaling-it-up">OOD: scaling it up</a>
+        
+      </li>
+      
+      <li >
+        <a class="highlight" href="https://lhao03.github.io/blog/papers/compsci/cs-edu/developing-developers/#software-development-putting-it-all-together">Software Development: putting it all together</a>
+        
+      </li>
+      
+      <li >
+        <a class="highlight" href="https://lhao03.github.io/blog/papers/compsci/cs-edu/developing-developers/#what-s-missing">what&#x27;s missing?</a>
+        
+      </li>
+      
+      <li >
+        <a class="highlight" href="https://lhao03.github.io/blog/papers/compsci/cs-edu/developing-developers/#my-thoughts">my thoughts</a>
+        
+      </li>
+      
+    </ul>
+  </div>
+  <div class="toc_mobile">
+    <h3> Table of Contents </h3>
+    <ul>
+      
+      <li>
+        <a class="highlight" href="https://lhao03.github.io/blog/papers/compsci/cs-edu/developing-developers/#traditional-programming-courses">traditional programming courses</a>
+        
+      </li>
+      
+      <li>
+        <a class="highlight" href="https://lhao03.github.io/blog/papers/compsci/cs-edu/developing-developers/#explicit-design-rules">explicit design rules</a>
+        
+      </li>
+      
+      <li>
+        <a class="highlight" href="https://lhao03.github.io/blog/papers/compsci/cs-edu/developing-developers/#programming-is-a-people-discipline">programming is a people discipline</a>
+        
+      </li>
+      
+      <li>
+        <a class="highlight" href="https://lhao03.github.io/blog/papers/compsci/cs-edu/developing-developers/#fundamentals-1-designing-with-teaching-languages">fundamentals 1: designing with teaching languages</a>
+        
+      </li>
+      
+      <li>
+        <a class="highlight" href="https://lhao03.github.io/blog/papers/compsci/cs-edu/developing-developers/#note-on-the-trinity">note on the trinity</a>
+        
+      </li>
+      
+      <li>
+        <a class="highlight" href="https://lhao03.github.io/blog/papers/compsci/cs-edu/developing-developers/#fundamentals-2-designing-with-java">fundamentals 2: designing with java</a>
+        
+      </li>
+      
+      <li>
+        <a class="highlight" href="https://lhao03.github.io/blog/papers/compsci/cs-edu/developing-developers/#logic-reasoning-about-well-designed-code">logic: reasoning about well-designed code</a>
+        
+      </li>
+      
+      <li>
+        <a class="highlight" href="https://lhao03.github.io/blog/papers/compsci/cs-edu/developing-developers/#ood-scaling-it-up">OOD: scaling it up</a>
+        
+      </li>
+      
+      <li>
+        <a class="highlight" href="https://lhao03.github.io/blog/papers/compsci/cs-edu/developing-developers/#software-development-putting-it-all-together">Software Development: putting it all together</a>
+        
+      </li>
+      
+      <li>
+        <a class="highlight" href="https://lhao03.github.io/blog/papers/compsci/cs-edu/developing-developers/#what-s-missing">what&#x27;s missing?</a>
+        
+      </li>
+      
+      <li>
+        <a class="highlight" href="https://lhao03.github.io/blog/papers/compsci/cs-edu/developing-developers/#my-thoughts">my thoughts</a>
+        
+      </li>
+      
+    </ul>
+  </div>
+  
+  <ul>
+<li><a href="https://felleisen.org/matthias/Thoughts/Developing_Developers.html">Developing Developers</a></li>
+</ul>
+  <blockquote>
+  <p>
+  <p>Instead of the currently fashionable programming language, it focuses on explicit and systematic approaches to program design. To bring this idea across to the full range of Northeastern freshmen, the first course uses a simple teaching language that is tailored to our goals. Follow-up courses explain how to apply the design principles to industrial programming languages, how they enable logical reasoning about code, and why they matter when programmers deal with large and complex software.</p>
+
+  </p>
+  <p style="font-size:15px">
+  Matthias Felleisen, <a style="font-size:15px"
+    href="https:&#x2F;&#x2F;felleisen.org&#x2F;matthias&#x2F;Thoughts&#x2F;Developing_Developers.html">
+  Developing Developers
+  </a>
+  </p>
+</blockquote>
+<h1 id="traditional-programming-courses">traditional programming courses</h1>
+<ul>
+<li>&quot;tinker until it works&quot;</li>
+<li>use a currently fashionable programming language</li>
+<li>students learn to &quot;mimic their instructors&quot;</li>
+<li>students copy code snippets from classes and labs into homework assignments and modify the code snippets until the program seems to work.</li>
+<li>distance between code snippets from class and those needed to solve the homework grows to &quot;test students’ ability to generalize&quot;.</li>
+</ul>
+  <blockquote>
+  <p>
+  <p>In sum, traditional programming courses teach programming implicitly, with students picking it up via mimicking and experimenting. This approach may appeal to students who love to tinker with gadgets and video games, but it also turns off many others who might be equally talented for engineering actual software or benefit to the same extent from a properly taught course on programming and problem solving.</p>
+
+  </p>
+  <p style="font-size:15px">
+  Matthias Felleisen, <a style="font-size:15px"
+    href="https:&#x2F;&#x2F;felleisen.org&#x2F;matthias&#x2F;Thoughts&#x2F;Developing_Developers.html">
+  Developing Developers
+  </a>
+  </p>
+</blockquote>
+<p><em>This is what a lot of online code tutorials (freecodecamp) and coding bootcamps do. Students don't really learn generalizable concepts, just vocational skills.</em></p>
+<h1 id="explicit-design-rules">explicit design rules</h1>
+<ul>
+<li>HtDP: structural design, design and use of abstractions, generative recursion (divide and conquer), accumulators (loop variables)</li>
+<li>y-axis: six-step problem-solving process, x-axis: enumerates forms of data, increasing in complexity.</li>
+<li>each step =&gt; well defined outcome
+<ul>
+<li>instructors inspect outcomes to diagnose a students' problems</li>
+</ul>
+</li>
+<li>traditional programming courses focus a lot on atomic data:</li>
+</ul>
+  <blockquote>
+  <p>
+  <p>they rely on domain knowledge and thus fail to show how much computing and programming can contribute to systematic problem solving and design.</p>
+
+  </p>
+  <p style="font-size:15px">
+  Matthias Felleisen, <a style="font-size:15px"
+    href="https:&#x2F;&#x2F;felleisen.org&#x2F;matthias&#x2F;Thoughts&#x2F;Developing_Developers.html">
+  Developing Developers
+  </a>
+  </p>
+</blockquote>
+<h1 id="programming-is-a-people-discipline">programming is a people discipline</h1>
+<ul>
+<li>
+<p>design-oriented approach =&gt; programming is about coping with complexity in software</p>
+</li>
+<li>
+<p>compilers, interpreters, IDEs don't really help with controlling complexity, so programmers who need help turn to other programmers</p>
+<ul>
+<li>programmers need to be able to articulate their thoughts; converse about program designs</li>
+</ul>
+  <blockquote>
+<p>
+<p>The best way to do so, is to present programming as a discipline that is not about nerds sitting in a cubicle but people helping other people creating beautiful and well-designed artifacts.</p>
+
+</p>
+<p style="font-size:15px">
+Matthias Felleisen, <a style="font-size:15px"
+  href="https:&#x2F;&#x2F;felleisen.org&#x2F;matthias&#x2F;Thoughts&#x2F;Developing_Developers.html">
+Developing Developers
+</a>
+</p>
+</li>
+</ul>
+</blockquote>
+<h1 id="fundamentals-1-designing-with-teaching-languages">fundamentals 1: designing with teaching languages</h1>
+<ul>
+<li>introduce students to systematic and explicit problem solving/design and complexity of creating well-engineered software.</li>
+<li>choosing a language for the course (two theorems):
+<ul>
+<li>novice programmers make mistakes</li>
+<li>compiler and run time system error messages =&gt; assume programmer knows the entire language
+<ul>
+<li><em>Rust error messages are pretty clear, much more clear than C. Maybe more modern PLs have changed, but the majority of PL error messages are pretty bad.</em></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>the two theorems have three corollaries:</p>
+<ul>
+<li>an intro course can't serve a wide spectrum of novices if it uses an off the self (industrial) language</li>
+<li>reducing the size of the language improves its error messages
+<ul>
+<li><em>also so student's don't go ahead, so to speak</em></li>
+</ul>
+</li>
+<li>intro course needs <em>series of small languages</em> to suffice to illustrate the design recipes
+<ul>
+<li><em>like how CPSC 110 has BSL, ASL</em></li>
+</ul>
+</li>
+<li>pair programming: pilot and co-pilot
+<ul>
+<li>co-pilot checks design against the design recipe via question and answer</li>
+</ul>
+</li>
+</ul>
+<h1 id="note-on-the-trinity">note on the trinity</h1>
+<ul>
+<li>design, teaching languages, pedagogic IDE</li>
+<li>introduction of explicit design calls for careful composition of pieces that make a novice-friendly environment:
+<ul>
+<li>accessible error messages and pedagogic IDE</li>
+</ul>
+</li>
+</ul>
+<h1 id="fundamentals-2-designing-with-java">fundamentals 2: designing with java</h1>
+<ul>
+<li>show students how to:
+<ul>
+<li>systematically design programs in context of real-world language</li>
+</ul>
+</li>
+<li>incorporate existing libraries into design</li>
+</ul>
+<p>with regard to design, 3 concrete goals:</p>
+<ul>
+<li>
+<p>add type-checking</p>
+</li>
+<li>
+<p>cover OOP</p>
+</li>
+<li>
+<p>&quot;programming via composition of existing building blocks&quot;</p>
+</li>
+<li>
+<p>fundamentals 1 does not assume type-checking:</p>
+<ul>
+<li>most students will use a dynamically typed language</li>
+<li>type checking adds another layer to practice of programming =&gt; adding error messages </li>
+</ul>
+</li>
+<li>
+<p>Gregor Kiczales: fundamentals 1 is the best introduction to proper OOP</p>
+</li>
+<li>
+<p>fundamentals 2 spends 60% of the semester explaining how design concepts from fundamentals 1 apply to Java and on adapting design concepts for abstractions to an OO context.</p>
+<ul>
+<li><em>I feel like UBC doesn't really do this in CPSC 210. While TAing, lots of students would comment on piazza that CPSC 110 wasn't that helpful in doing well in CPSC 210.</em></li>
+<li><a href="https://arxiv.org/abs/1306.4713v2">this paper</a> discusses a solution to the confusion when transitioning from functional programming to OOP.</li>
+</ul>
+</li>
+<li>
+<p>java's failure to implement al tail calls =&gt; forces programmers to reformulate properly designed pieces of code with <code>while</code> and <code>for</code> loop</p>
+</li>
+<li>
+<p>in terms of people skills, CPSC 210 takes the approach of &quot;One possibility is to assign a small project toward the end of the course and to have students present an overview to the instructor. &quot;</p>
+<ul>
+<li>while students do develop skills such as clearly communicating their code and user stories, I discuss how <a href="https://lhao03.github.io/blog/compsci/how-to-teach-cs-courses/">projects can be hard for students</a>.</li>
+</ul>
+</li>
+</ul>
+  <blockquote>
+  <p>
+  <p>If a computer science unit has the luxury to spend an additional semester on preparing their students for real-world programming, this approach is highly commendable.</p>
+
+  </p>
+  <p style="font-size:15px">
+  Matthias Felleisen, <a style="font-size:15px"
+    href="https:&#x2F;&#x2F;felleisen.org&#x2F;matthias&#x2F;Thoughts&#x2F;Developing_Developers.html">
+  Developing Developers
+  </a>
+  </p>
+</blockquote>
+<h1 id="logic-reasoning-about-well-designed-code">logic: reasoning about well-designed code</h1>
+<ul>
+<li>validation systems can be:
+<ul>
+<li>sound: predictions are always true statements about executions</li>
+<li>unsound: makes correct and incorrect predictions</li>
+</ul>
+</li>
+<li>programmers contiguously make, rely on predictions with making code, consciously or subconsciously</li>
+<li>goals of logic in computer science:
+<ul>
+<li>make reasoning about programs explicit
+<ul>
+<li>introduction of classical logic, heavy emphasis on structural induction</li>
+</ul>
+</li>
+<li>introduce students to tools that assist programmers with this task
+<ul>
+<li>apply logic to sizable programs; use a proof assistant
+<ul>
+<li>ACL2: if students properly design the desired functions in fundamentals 1, ACL2 can prove the desired theorems easily. If students tinker their way, ACL2 tends to fail.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="ood-scaling-it-up">OOD: scaling it up</h1>
+<ul>
+<li>stating and exploiting such assertions during informal prediction process</li>
+<li>until formal reasoning is affordable, informal mode of thinking will inform the best designers in the field</li>
+</ul>
+<h1 id="software-development-putting-it-all-together">Software Development: putting it all together</h1>
+<ul>
+<li>students should have taken OOD, completed first co-op and explored programming languages</li>
+<li>students should be allowed to choose their own PL</li>
+<li>students aren't expected to be able to manage a large project, so instructors ought to introduce students to this aspect of engineering software explicitly, not via &quot;mimic and modify&quot;</li>
+</ul>
+  <blockquote>
+  <p>
+  <p>One way to accomplish this goal is to have students design parts of the projects each week, to expose the weaknesses of their designs during code review, and to then provide good versions of these designs later in the semester.</p>
+
+  </p>
+  <p style="font-size:15px">
+  Matthias Felleisen, <a style="font-size:15px"
+    href="https:&#x2F;&#x2F;felleisen.org&#x2F;matthias&#x2F;Thoughts&#x2F;Developing_Developers.html">
+  Developing Developers
+  </a>
+  </p>
+</blockquote>
+<ul>
+<li>students must revisit code created weeks ago and that the overall project is complex and large.
+<ul>
+<li><em>CPSC 310 has no deadlines, so this revisiting of code is hard if students just procrastinate their projects</em></li>
+</ul>
+</li>
+</ul>
+  <blockquote>
+  <p>
+  <p>This step may take the form of fixing bugs, adding features, replacing features, and even subtracting them. To complete such tasks, students must reconstruct the thoughts that the creators of the code had—and often did not write down as assertions or other validated statements. Hence, if code repositories are rotated among the students, this task drives home most clearly why (1) such additional assertions and comments matter and (2) pair programming leaves behind residue of design knowledge.</p>
+
+  </p>
+  <p style="font-size:15px">
+  Matthias Felleisen, <a style="font-size:15px"
+    href="https:&#x2F;&#x2F;felleisen.org&#x2F;matthias&#x2F;Thoughts&#x2F;Developing_Developers.html">
+  Developing Developers
+  </a>
+  </p>
+</blockquote>
+<ul>
+<li>introduction of code reviews</li>
+</ul>
+<h1 id="what-s-missing">what's missing?</h1>
+<ul>
+<li>independent exploration: students don't understand that <em>programming beyond the classroom</em> is essential to their growth
+<ul>
+<li>why do students lack incentives to explore on their own and how to provide incentives to do so.</li>
+</ul>
+</li>
+<li>performance debugging: difficulty from connecting knowledge from algorithms to program design
+<ul>
+<li>performance debugging</li>
+</ul>
+</li>
+<li>unsafe programming: learn to write code in world of seg faults, core dumps, etc. Use python to access unsafe layer.</li>
+<li>Further topics in Software engineering
+<ul>
+<li>testing</li>
+<li>programming in a team</li>
+<li>software modeling</li>
+</ul>
+</li>
+</ul>
+<p><strong>Emphasis on explicit ideas over &quot;mimic and learn implicitly&quot;</strong></p>
+<h1 id="my-thoughts">my thoughts</h1>
+<ul>
+<li>I liked reading the rationale for how UBC's CS courses are structured. </li>
+<li>as a first year student, I didn't really understand why UBC was using BSL and had a large focus on functional programming, while UoT and UofC used Python. Now I'm really glad I was introduced to the &quot;trinity&quot;</li>
+<li>I think the connection between CPSC 110 and CPSC 210 isn't that <em>clear</em>? While TAing CPSC 210, many students didn't really apply the knowledge from CPSC 110 (like design recipes). It was more of &quot;mimic and learn implicitly&quot;.</li>
+<li>CPSC 310 seems to be the Software Development course. But students are restricted to using TS and no hard deadlines, so not much code revisiting occurs.</li>
+<li>I think CPSC 213 (ironically) does a better job of incorporating in CPSC 110 content like design recipes</li>
+</ul>
+
+</div>
+
+<div class="flex-row">
+  
+  <p>Previous:
+    <a href="https:&#x2F;&#x2F;lhao03.github.io&#x2F;blog&#x2F;papers&#x2F;compsci&#x2F;cs-edu&#x2F;ccc&#x2F;">Notes for: Critically Conscious Computing: Methods for Secondary Education</a>
+  </p>
+  
+  
+  <p>Next:
+    <a href="https:&#x2F;&#x2F;lhao03.github.io&#x2F;blog&#x2F;papers&#x2F;compsci&#x2F;cs-edu&#x2F;cs-unplugged&#x2F;">Paper: Teaching CS Unplugged in the High School (with Limited Success)</a>
+  </p>
+  
+</div>
+    <a href="/blog">go back to all posts</a>
+
+        </div>
+        <div id="wcb" class="carbonbadge"></div>
+<script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>
+        <footer>
+            <div class="flex-row">
+                
+                <a href="https:&#x2F;&#x2F;github.com&#x2F;lhao03" target="_blank">
+            <p class="lucyfont">github</p>
+                </a>
+                
+                <a href="https:&#x2F;&#x2F;linkedin.com&#x2F;in&#x2F;lucy-hao" target="_blank">
+            <p class="lucyfont">linkedin</p>
+                </a>
+                
+                <a href="https:&#x2F;&#x2F;twitter.com&#x2F;hoalycu" target="_blank">
+            <p class="lucyfont">twitter</p>
+                </a>
+                
+            </div>
+            <p style="text-align: center; padding-bottom: 5vh;" class="lucyfont">made with 💖 and Zola by Lucy</p>
+        </footer>
+      <a href="https://www.ryanmehri.dev/" target="_blank">
+        <img class="animal-img bottom-left" src="https:&#x2F;&#x2F;lhao03.github.io&#x2F;animals&#x2F;hedgehog.png"/>
+      </a>
+      <a href="/">
+      <img class="animal-img top-right" src="https:&#x2F;&#x2F;lhao03.github.io&#x2F;animals&#x2F;cat_scared-removebg-preview.png"/>
+      </a>
+      <!-- <img class="animal-img bottom-right" src="https:&#x2F;&#x2F;lhao03.github.io&#x2F;animals&#x2F;shib_cool-removebg-preview.png"/> -->
+    </section>
+</body>
+
+</html>

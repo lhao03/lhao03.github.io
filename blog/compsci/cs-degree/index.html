@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <link rel="preconnect" href="https://www.googletagmanager.com" />
+    <link rel="preconnect" href="https://www.google-analytics.com" />
+
+    <!-- basic favicon -->
+    <link rel="icon" href="https:&#x2F;&#x2F;lhao03.github.io&#x2F;emoji&#x2F;android-chrome-384x384.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https:&#x2F;&#x2F;lhao03.github.io&#x2F;emoji&#x2F;android-chrome-384x384.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https:&#x2F;&#x2F;lhao03.github.io&#x2F;emoji&#x2F;android-chrome-384x384.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https:&#x2F;&#x2F;lhao03.github.io&#x2F;emoji&#x2F;android-chrome-384x384.png">
+    <link rel="apple-touch-icon-precomposed" href="https:&#x2F;&#x2F;lhao03.github.io&#x2F;emoji&#x2F;android-chrome-384x384.png">
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KDGPVMHC9Q"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-KDGPVMHC9Q');
+    </script>
+
+    <!-- Primary Meta Tags -->
+    <title> 
+The Computer Science Degree: Theory vs. Application
+</title>
+    <meta name="title" content=" 
+The Computer Science Degree: Theory vs. Application
+">
+    <meta name="description" content=" 
+&lt;p&gt;&lt;em&gt;I talk about research and ideas in this blog post from a natural sciences&#x2F;mathematical point of view. I am not a researcher, so take my ideas with a grain of salt.&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;The natural sciences, like physics, chemistry and biology, are based on experiments which require vocational skills. But data curation and collection is meaningless without the theory to understand the data. If you want to develop vaccines or drugs, you need to study chemistry and biology. If you want to find the next smallest particle (quark anyone?) or far away planet, you need to study physics.&lt;&#x2F;p&gt;
+
+">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://metatags.io/">
+    <meta property="og:title" content=" 
+The Computer Science Degree: Theory vs. Application
+">
+    <meta property="og:description" content=" 
+&lt;p&gt;&lt;em&gt;I talk about research and ideas in this blog post from a natural sciences&#x2F;mathematical point of view. I am not a researcher, so take my ideas with a grain of salt.&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;The natural sciences, like physics, chemistry and biology, are based on experiments which require vocational skills. But data curation and collection is meaningless without the theory to understand the data. If you want to develop vaccines or drugs, you need to study chemistry and biology. If you want to find the next smallest particle (quark anyone?) or far away planet, you need to study physics.&lt;&#x2F;p&gt;
+
+">
+
+    <!-- Twitter -->
+    <meta name="twitter:creator" content="@hoalycu">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content=" 
+The Computer Science Degree: Theory vs. Application
+">
+    <meta property="twitter:description" content=" 
+&lt;p&gt;&lt;em&gt;I talk about research and ideas in this blog post from a natural sciences&#x2F;mathematical point of view. I am not a researcher, so take my ideas with a grain of salt.&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;The natural sciences, like physics, chemistry and biology, are based on experiments which require vocational skills. But data curation and collection is meaningless without the theory to understand the data. If you want to develop vaccines or drugs, you need to study chemistry and biology. If you want to find the next smallest particle (quark anyone?) or far away planet, you need to study physics.&lt;&#x2F;p&gt;
+
+">
+    <meta property="twitter:image" content="https:&#x2F;&#x2F;lhao03.github.io&#x2F;emoji&#x2F;android-chrome-384x384.png">
+
+    <!-- Other Meta tags -->
+    <meta charset="UTF-8" />
+    <meta property="og:image" content="https:&#x2F;&#x2F;lhao03.github.io&#x2F;emoji&#x2F;android-chrome-384x384.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://use.fontawesome.com/8e0ceafb9b.js"></script>
+    <link rel="stylesheet" href="https:&#x2F;&#x2F;lhao03.github.io&#x2F;style.css">
+
+    
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
+          
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
+
+          <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script>
+          <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/contrib/mathtex-script-type.min.js" integrity="sha384-zWYbd0NBwgTsgIdFKVprSfTh1mbMPe5Hz1X3yY4Sd1h/K1cQoUe36OGwAGz/PcDy" crossorigin="anonymous"></script>
+              
+          
+    
+<script type="text/javascript">
+    window.addEventListener('load', function() {
+        for (const ref of document.getElementsByClassName('footnote-reference')) {
+            const hash = ref.children[0].hash.substring(1);
+            const refhash = 'ref:' + hash;
+            ref.id = refhash;
+        }
+
+        for (const footnote of document.getElementsByClassName('footnote-definition')) {
+            const p = document.querySelector(".footnote-definition p");
+            const hash = footnote.id;
+            const refhash = 'ref:' + hash;
+            const backlink = document.createElement('a');
+            const spanText = document.createElement('span');
+            spanText.innerHTML = "<span>. </span>" + p.innerHTML + "<span> </span>";
+            backlink.href = '#' + refhash;
+            backlink.className = 'footnote-backlink';
+            backlink.innerText = '↩';
+            const paras = footnote.children;
+            const firstPara = paras[0];
+            firstPara.appendChild(spanText);
+            firstPara.appendChild(backlink);
+            footnote.removeChild(p);
+        }
+    });
+</script>
+
+</head>
+
+
+<body class="container blue-mesh">
+    <section>
+        <div class="page">
+        <div class="flex-row">
+        <a href="/">
+      <img class="top-left" src="https:&#x2F;&#x2F;lhao03.github.io&#x2F;emoji&#x2F;android-chrome-384x384.png"/>
+        </a>
+        </div>
+          
+<div class="post block">
+  <h1>The Computer Science Degree: Theory vs. Application</h1>
+  
+
+  <p class="subtitle">
+    
+    <strong>Written: 2022-05-11.</strong>
+    
+    <strong>5512 words, 28 mins</strong>
+  </p>
+  
+  
+  <div class="toc">
+    <h3> Table of Contents </h3>
+    <ul>
+      
+      <li >
+        <a class="highlight" href="https://lhao03.github.io/blog/compsci/cs-degree/#the-computer-science-degree-an-impromptu-and-informal-analysis">The Computer Science Degree: An impromptu and informal analysis</a>
+        
+        <ul>
+          
+          <li>
+            <a class="highlight" href="https://lhao03.github.io/blog/compsci/cs-degree/#overall-observations">Overall Observations</a>
+          </li>
+          
+        </ul>
+        
+      </li>
+      
+      <li >
+        <a class="highlight" href="https://lhao03.github.io/blog/compsci/cs-degree/#the-different-types-of-schools">The Different Types of Schools</a>
+        
+        <ul>
+          
+          <li>
+            <a class="highlight" href="https://lhao03.github.io/blog/compsci/cs-degree/#the-engineering-pointer-school">The Engineering (Pointer) School</a>
+          </li>
+          
+          <li>
+            <a class="highlight" href="https://lhao03.github.io/blog/compsci/cs-degree/#the-functional-programming-theory-school">The Functional Programming (Theory) School</a>
+          </li>
+          
+          <li>
+            <a class="highlight" href="https://lhao03.github.io/blog/compsci/cs-degree/#the-java-or-python-industry-school">The Java or Python (Industry) School</a>
+          </li>
+          
+          <li>
+            <a class="highlight" href="https://lhao03.github.io/blog/compsci/cs-degree/#why-make-the-distinction-between-pointer-and-industry-school">Why make the distinction between &quot;Pointer&quot; and &quot;Industry&quot; School?</a>
+          </li>
+          
+        </ul>
+        
+      </li>
+      
+      <li >
+        <a class="highlight" href="https://lhao03.github.io/blog/compsci/cs-degree/#are-computer-science-degrees-too-theoretical">Are Computer Science Degrees too Theoretical?</a>
+        
+      </li>
+      
+    </ul>
+  </div>
+  <div class="toc_mobile">
+    <h3> Table of Contents </h3>
+    <ul>
+      
+      <li>
+        <a class="highlight" href="https://lhao03.github.io/blog/compsci/cs-degree/#the-computer-science-degree-an-impromptu-and-informal-analysis">The Computer Science Degree: An impromptu and informal analysis</a>
+        
+        <ul>
+          
+          <li>
+            <a class="highlight" href="https://lhao03.github.io/blog/compsci/cs-degree/#overall-observations">Overall Observations</a>
+          </li>
+          
+        </ul>
+        
+      </li>
+      
+      <li>
+        <a class="highlight" href="https://lhao03.github.io/blog/compsci/cs-degree/#the-different-types-of-schools">The Different Types of Schools</a>
+        
+        <ul>
+          
+          <li>
+            <a class="highlight" href="https://lhao03.github.io/blog/compsci/cs-degree/#the-engineering-pointer-school">The Engineering (Pointer) School</a>
+          </li>
+          
+          <li>
+            <a class="highlight" href="https://lhao03.github.io/blog/compsci/cs-degree/#the-functional-programming-theory-school">The Functional Programming (Theory) School</a>
+          </li>
+          
+          <li>
+            <a class="highlight" href="https://lhao03.github.io/blog/compsci/cs-degree/#the-java-or-python-industry-school">The Java or Python (Industry) School</a>
+          </li>
+          
+          <li>
+            <a class="highlight" href="https://lhao03.github.io/blog/compsci/cs-degree/#why-make-the-distinction-between-pointer-and-industry-school">Why make the distinction between &quot;Pointer&quot; and &quot;Industry&quot; School?</a>
+          </li>
+          
+        </ul>
+        
+      </li>
+      
+      <li>
+        <a class="highlight" href="https://lhao03.github.io/blog/compsci/cs-degree/#are-computer-science-degrees-too-theoretical">Are Computer Science Degrees too Theoretical?</a>
+        
+      </li>
+      
+    </ul>
+  </div>
+  
+  <p><em>I talk about research and ideas in this blog post from a natural sciences/mathematical point of view. I am not a researcher, so take my ideas with a grain of salt.</em></p>
+<p>The natural sciences, like physics, chemistry and biology, are based on experiments which require vocational skills. But data curation and collection is meaningless without the theory to understand the data. If you want to develop vaccines or drugs, you need to study chemistry and biology. If you want to find the next smallest particle (quark anyone?) or far away planet, you need to study physics.</p>
+<span id="continue-reading"></span><img 
+   class="norm"   src="/res/blog_photos/quark.jpg" alt="">
+<p><em>Apparently this is evidence of a quark.</em></p>
+<p>If you want to do research, think beyond the scope of what is known, and discover something new, then you need the theory, which means pursuing a theoretical degree (or learning the theory yourself). A scientist needs to think of ideas that don't even exist. I believe theory allows you to come up with ideas that are correct and novel; you can't come up with correct and novel ideas with just vocational skills. Thus, a scientist has to be both correct and novel to be successful<sup class="footnote-reference"><a href="#think">1</a></sup>. </p>
+<p>But research has uncertain goals and uncertain rewards, which can scare people, including the people who decide to pursue research. Some people don't care about being correct and novel, they might just care about being correct. I would say being correct vs. <em>correct and novel</em> is the difference between a chemical engineer and a chemist: </p>
+<blockquote>
+<p>The old joke is that with chemistry you learn how to make a new molecule, but with ChemE you learn how to make 800 tons of it as cheaply as possible.<sup class="footnote-reference"><a href="#chem reddit">2</a></sup></p>
+</blockquote>
+<p>Of course, I'm not saying engineers can't have novel and correct ideas, but you can be successful as an engineer just by being correct. If you're a scientist who can't think of novel ideas, it's hard to be successful. </p>
+<p>Thus, people may enjoy a certain field, but have no interest in advancing the field and that's totally okay. Some people just take the elements on the periodic table for for granted; they don't care to know how electrons are &quot;arranged&quot; for each element. However, the quantum nature of electrons is something I want to learn more about. On the other hand, I think genetics is cool, but I have no interest in understanding why certain alleles are closer to each other on a gene. </p>
+<img 
+   class="norm"   src="/res/blog_photos/ee.png" alt="">
+<p><em>Electron energy levels</em></p>
+<p>In the case that people just want to be correct, they may choose to do engineering. In terms of engineering, there are a lot of engineering disciplines to choose from, like chemical engineering, electrical engineering, computer engineering, environmental engineering, materials engineering, civil engineering, petroleum engineering, and many more. Compared to a degree in sciences like chemistry or biology, engineering degrees are more applied, and more focussed on correctness rather than preparing to discover new ideas. A chemist could probably work as a materials engineer, but someone with a degree in materials engineering would be more efficient and cheaper to employ. A materials engineer will study chemistry and physics, including topics like atomic bonding, elctrochemistry, free energy, etc<sup class="footnote-reference"><a href="#ubc materials engineering">3</a></sup>.  But a chemistry major and materials engineering major will study atomic bonds differently. For instance, a materials engineer will learn that ceramics include metallic and van der waals bonds<sup class="footnote-reference"><a href="#materials atomic bonding">4</a></sup>, and that would be the extent of a material engineer's course material on atomic bonding. A chemistry major would learn about <em>why</em> certain bonds exist between molecules in the first place in a series of courses like &quot;Electronic Structure of Atoms and Molecules&quot;<sup class="footnote-reference"><a href="#412">5</a></sup> and &quot;Introduction to Quantum Mechanics and Spectroscopy&quot;<sup class="footnote-reference"><a href="#312">6</a></sup>. Engineers learn about processes to be efficient, correct and useful to industry.</p>
+<p>The natural science degrees (chemistry, physics, biology, math) have their place and the engineering degrees have their place. But what is the computer science degree? I've noticed that computer science is taught differently at universities, with the differences being quite significant. At some universities, the computer science major is part of the sciences, while at other universities computer science is part of engineering. Some schools tend to teach more theory, while others are more applied. This has led me to the question, <em>&quot;Should the computer science degree prepare students to conceive novel and correct ideas or prep them with the processes they need in a technology industry?&quot;</em>. Well, let's look at a few universities computer science curriculums.</p>
+<h1 id="the-computer-science-degree-an-impromptu-and-informal-analysis">The Computer Science Degree: An impromptu and informal analysis</h1>
+<p>UBC, USC, UofT and NU all offer the computer science degree as a bachelor in science. However,</p>
+<ul>
+<li>at UBC (University of British Columbia), computer science is under the Faculty of Science</li>
+<li>at USC (University of Southern California), computer science is under the Viterbi School of Engineering</li>
+<li>at UofT (University of Toronto), computer science is under the Faculty of Arts and Science (for the St. George Campus at least)</li>
+<li>at NU (Northeastern University), computer science is under the Khoury College of Computer Sciences</li>
+</ul>
+<p><strong>Comparison of Core Computer Science Courses Required for the Degree</strong>
+I try to match the UBC version to other schools' version.</p>
+<table><thead><tr><th>UBC</th><th>USC</th><th>UofT</th><th>NU</th></tr></thead><tbody>
+<tr><td>CPSC 110: Computation, Programs, and Programming</td><td>CSCI 102L: Fundamentals of Computation</td><td>CSC108H1: Introduction to Computer Programming</td><td>CS 2500: Fundamentals of Computer Science 1</td></tr>
+<tr><td>CPSC 121: Models of Computation</td><td>CSCI 170: Discrete Methods in Computer Science</td><td>CSC165H1: Mathematical Expression and Reasoning for Computer Science</td><td>CS 1800: Discrete Structures</td></tr>
+<tr><td>NA</td><td>CSCI 103L: Introduction to Programming</td><td>CSC148H1: Introduction to Computer Science</td><td>CS 2510: Fundamentals of Computer Science 2</td></tr>
+<tr><td>CPSC 210: Software Construction</td><td>CSCI 201L: Principles of Software Development</td><td>CSC207H1: Software Design</td><td>CS 3500: Object-Oriented Design</td></tr>
+<tr><td>CPSC 221: Basic Algorithms and Data Structures</td><td>CSCI 104L: Data Structures and Object Oriented Design</td><td>CSC236H1: Introduction to the Theory of Computation/CSC263H1: Data Structures and Analysis</td><td>NA</td></tr>
+<tr><td>CPSC 320: Intermediate Algorithm Design and Analysis</td><td>CSCI 270: Introduction to Algorithms and Theory of Computing</td><td>CSC373H1: Algorithm Design, Analysis &amp; Complexity</td><td>CS 3000: Algorithms and Data/CS 3800: Theory of Computation</td></tr>
+<tr><td>CPSC 213: Introduction to Computer Systems</td><td>CSCI 356: Introduction to Computer Systems</td><td>CSC258H1: Computer Organization</td><td>NA</td></tr>
+<tr><td>CPSC 310: Introduction to Software Engineering</td><td>CSCI 310: Software Engineering</td><td>Co-op or 1 out of the project/inquiry based courses</td><td>CS 4500: Software Development</td></tr>
+<tr><td>CPSC 313: Computer Hardware and Operating Systems</td><td>CSCI 350: Introduction to Operating Systems</td><td>CSC209H1: Software Tools and Systems Programming/CSC369H1: Operating Systems</td><td>CS 3650: Computer Systems</td></tr>
+<tr><td>NA</td><td>CSCI 360: Introduction to Artificial Intelligence</td><td>NA</td><td>CS 2810: Mathematics of Data Models</td></tr>
+<tr><td>NA</td><td>CSCI 353: Introduction to Internetworking</td><td>NA</td><td>CY 4740: Network Security</td></tr>
+<tr><td>NA</td><td>NA</td><td>NA</td><td>CY 2550: Foundations of Cybersecurity</td></tr>
+</tbody></table>
+<h2 id="overall-observations">Overall Observations</h2>
+<p>After I compared computer science course offerings<sup class="footnote-reference"><a href="#ubc courses">7</a></sup>,<sup class="footnote-reference"><a href="#usc courses">8</a></sup>,<sup class="footnote-reference"><a href="#uoft courses">9</a></sup>,<sup class="footnote-reference"><a href="#nu cs">10</a></sup> and computer science core curriculums, here are some things that jump out to me:</p>
+<p><em>These thoughts are based on my experiences at UBC and any course information I could find online. I was able to easily find many course websites (which included a detailed syllabus, assignments, slides and labs) from USC and NU. I couldn't find many course websites for UofT. So take these thoughts with a grain of salt.</em></p>
+<h3 id="ubc">UBC<sup class="footnote-reference"><a href="#ubc cs">11</a></sup>:</h3>
+<ul>
+<li>introductory computer science course is taught in functional paradigm</li>
+<li>there is a large focus on <em>functional programming</em> which is regarded as more &quot;theoretical&quot; due to its mathematical nature
+<ul>
+<li>the result of a larger focus on functional programming means students engage more with concepts like recursion</li>
+</ul>
+</li>
+<li><em>students are introduced to pointers and memory management in the second year, later than other universities</em></li>
+<li>students must learn a lot more programming languages including BSL (dialect of Racket), Java, C, C++, etc.</li>
+<li>UBC has recently released a industry focussed course called &quot;Applied Industry Practices&quot;, though it's only offered in the summer
+<ul>
+<li>thus UBC does not have as many industry/skills type of courses as other universities</li>
+</ul>
+</li>
+<li>compilers course is based on functional paradigm (Racket)<sup class="footnote-reference"><a href="#ubc compilers">12</a></sup></li>
+</ul>
+<h3 id="uoft">UofT<sup class="footnote-reference"><a href="#uoft cs">13</a></sup></h3>
+<ul>
+<li>uses Python as first programming language</li>
+<li>no need for students to take explicit software engineering course if they have done co-op. They can also choose out of a list of courses (meaning they don't need to do a software engineering course)</li>
+<li>courses tend to use Python and C for systems courses, and Java for OOP course</li>
+<li>as a result of programming language choices, courses are <em>more OOP and imperative based</em></li>
+<li>has more industry type of courses like &quot;Programming on the Web&quot;, &quot;Natural Language Computing&quot;, &quot;High-Performance Scientific Computing&quot;</li>
+<li><em>students are introduced to OOP first and imperative programming first (no recursion, pointers or memory management like UBC and USC)</em></li>
+<li>compilers course is based on imperative paradigm (Using Python???)<sup class="footnote-reference"><a href="#uoft compilers">14</a></sup></li>
+</ul>
+<h3 id="usc">USC<sup class="footnote-reference"><a href="#usc cs">15</a></sup>:</h3>
+<ul>
+<li>uses C++ as first programming language</li>
+<li>courses seem more continuous, with 103L following right off from the end of 102L. 
+<ul>
+<li>probably because C++ is used, and C++ fits nicely with the operating systems course, data structures, and algorithms course</li>
+<li>only other language used is Java for OOP</li>
+</ul>
+</li>
+<li>required to take ENGR 102, the engineering freshman academy</li>
+<li>required to take Introductions to AI and Internetworking</li>
+<li>choice of choosing a capstone course of either &quot;Design and Construction of Large Software Systems&quot; or &quot;Creating Your High-Tech Startup&quot;</li>
+<li>required to take an embedded systems course</li>
+<li>has many &quot;skills&quot; focussed courses like &quot;Professional C++&quot;, &quot;Native Console Multiplayer Game Development&quot;, &quot;Programming Graphical User Interfaces&quot;</li>
+<li>also has more industry type of courses like &quot;Creating Your High-Tech Startup&quot;, </li>
+<li><em>students are introduced to pointers and memory management in their first year, while they are introduced to recursion/functional programming in their second/third year</em></li>
+</ul>
+<h3 id="northeastern">Northeastern<sup class="footnote-reference"><a href="#nu cs">10</a></sup></h3>
+<ul>
+<li>first year computer science course is similar to UBC's </li>
+<li>two fundamentals courses (2500 and 2510), whereas UBC only has one (CPSC 110), before the OOP course</li>
+<li>students are required to do a security course</li>
+<li>there are both theoretical and proof based courses like computer-aided reasoning, verification, synthesis. I haven't seen other universities have these type of courses at the undergrad level</li>
+<li>there are also very industry and skills focussed courses like mobile development and web development.</li>
+<li>there are several concentrations a student can choose to do, including concentrations that are more theoretical and concentrations that are very industry focussed. </li>
+<li>only one low level course required</li>
+<li>a theory of computation course is required</li>
+<li>there is also a statistics/mathematics course that is tailored for the computer science major: &quot;Studies the methods and ideas in linear algebra, multivariable calculus, and statistics that are most relevant for the practicing computer scientist doing machine learning, modeling, or hypothesis testing with data&quot;</li>
+<li>students learn about Turing machines, Church-Turing thesis, automata as part of their version of CPSC 320. Students at UBC can also learn about the mentioned concepts but in another course (so it's optional)</li>
+<li>there is a strong theory base for computer science degrees, but after that your degree can be very theoretical or industry/skills focussed</li>
+</ul>
+<p>In Canada, computer science seems to be treated closer to science, meaning students don't take many computer engineer-like courses. In the USA, computer science seems to be treated more as engineering, meaning students usually take a few low level hardware/systems courses that electrical and computer engineers take.</p>
+<p>The core curriculums are pretty similar in regards to courses in operating systems, systems programming/computer systems/computer organization. I'm guessing this is because many universities will teach students about the Linux operating system. This is probably because Linux is open sourced so it's easier for professors and students to access (they can access Linux through university servers), and how there's basically only two operating systems Linux (Unix/MacOS) and Windows. Of course there are differences between Linux and MacOS, but the general categories of operating systems will be Unix and Windows. Additionally, since most systems programming has been done in C, 99% of the time C is the language of choice for these courses.</p>
+<p>For data structure and algorithm courses: At UBC, C++ is used for CPSC 221. USC also uses C++ for CSCI 104L. At UofT, I can't seem to find what CSC263H1 is taught in, so I will assume no programming language is used, thought I may be completely wrong on this. NU also doesn't seem to use a programming language in their data structures and algorithms course. Other then that, the data structures and algorithms course is pretty similar in content between schools.</p>
+<p>What differs the most are the introductory computer science courses, and they differ drastically. UBC<sup class="footnote-reference"><a href="#110">16</a></sup> and NU's<sup class="footnote-reference"><a href="#dd">17</a></sup> introductory computer science course follows the HtDP curriculum (that teaches a functional programming paradigm) using teaching languages like BSL. USC<sup class="footnote-reference"><a href="#102">18</a></sup> uses C++ and teaches low-level concepts and imperative programming. UofT<sup class="footnote-reference"><a href="#108">19</a></sup> follows the book &quot;Practical Programming (3rd ed): An Introduction to Computer Science Using Python 3&quot; using Python to teach a bit of OOP but not really anything about pointers or functional programming(?).</p>
+<p>Additionally, some schools like UofT, USC and NU offer &quot;pathways&quot; which list suggested/required courses a student should take. For instance, there are specializations like &quot;HCI&quot;, &quot;Systems&quot;, &quot;Foundations&quot;, etc. UBC doesn't have something like this, but students could form their own pathway (it's just not as explicit). These pathways allow students to choose if they want their degree to be more theory based or skills based.</p>
+<h1 id="the-different-types-of-schools">The Different Types of Schools</h1>
+<p>There's a school of thought that functions are either pointers or values. A C programmer would say &quot;well functions are simply pointers in memory&quot;. A Racket or ML programmer would say &quot;well we treat functions just like data, so they are values&quot;. What about the Java or Python programmer? Well, I'm not sure. An introductory computer science course usually falls within one (or neither) of these schools.</p>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">The TAs for the class I&#39;m teaching, Principles of Imperative Computation, got me a &quot;Functions are Pointers&quot; jacket. (These jackets are in opposition to the &quot;Functions are Values&quot; jackets from the functional programming TAs.) I now wear it to point at functions. <a href="https://t.co/godT7tPf2g">pic.twitter.com/godT7tPf2g</a></p>&mdash; ✨ Jean Yang ✨ (@jeanqasaur) <a href="https://twitter.com/jeanqasaur/status/989578047757185025?ref_src=twsrc%5Etfw">April 26, 2018</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<p>I think the introductory computer science course, and higher year courses a university offers, greatly influence a student's degree, and their perception of computer science. Based on how a university conducts their introductory computer science course and the upper year offerings, I've come up with three types of schools.</p>
+<h2 id="the-engineering-pointer-school">The Engineering (Pointer) School</h2>
+<p>Schools in the USA that classify computer science under engineering such as USC fall into this category. The computer science degree will be similar to the computer engineering degree in the first year, with students learning C++ and some hardware-focussed courses like embedded systems. </p>
+<p>The Pointer school then uses C++ for majority of the computer science courses, including the introductory computer science course. This means students learn about pointers and memory management very early on in their computer science degrees. Theoretical concepts are covered in later years of the degree. </p>
+<p>Thus, the course is modeled around the programming language, rather than the programming language being modeled around the concepts. As an example, in the first computer science course at USC, students must learn data representation of integers and strings before they can use them in C++; this is because C++ is a low-level language. Concepts are more concrete rather than abstract, like learning about &quot;passing arrays&quot;. Someone learning functional programming doesn't need to know how integers and arrays are stored in memory or whether they should use <code>u16</code> or <code>u32</code> in order to use an integer or array.</p>
+<p>Engineering schools can also be industry schools because higher level courses will offer more industry skills and focus on teaching &quot;fashionable programming languages and currently popular programming paradigms&quot;<sup class="footnote-reference"><a href="#cs does not matter">20</a></sup>.</p>
+<h2 id="the-functional-programming-theory-school">The Functional Programming (Theory) School</h2>
+<p>Schools like UBC or NU fall into this category, and teach the introductory computer science course based on a systematic approach (Structure and Interpretation of Programs/HtDP)<sup class="footnote-reference"><a href="#htdp">21</a></sup> using an educational programming language in the functional programming paradigm. This systematic approach stresses &quot;explicit and systematic approaches to program design&quot;<sup class="footnote-reference"><a href="#dd">17</a></sup>, rather than worrying about number representation, pointers and memory management that pointer/engineering schools would focus on. A functional programming paradigm is usually used because it's easier to reason about: no mutation, data and state are separate, and it looks similar to algebra (given an input, you get an output). There is a large emphasis on forming well designed and correct programs and using concepts like recursion which can be easily proved correct through induction. Whereas to prove a <code>for loop</code> is correct you require more steps. Many more theoretical concepts are covered, due to the simple nature of the high level educational language, which allows students to focus more on learning and practicing abstract or theoretical concepts like recursion and higher order functions. In general, there is a focus on aligning programming with mathematics, for instance by the &quot;composition of functions and expressions&quot;<sup class="footnote-reference"><a href="#cs does not matter">20</a></sup>.</p>
+<p>In regards to upper year offerings, NU has course offerings in Computer-Aided Reasoning, Complexity Theory, and System Specification, Verification, and Synthesis (to name a few). These types of courses are more of the &quot;formal&quot; and &quot;mathematical&quot; nature, and rarely offered to undergrads at other universities, including UBC! Even similar courses can differ at a theory school. At UBC, the compiler course is taught in Racket and centers around creating a compiler for a functional language, whereas at UofT, the compiler course is taught in Python and focusses on creating a compiler for an imperative language.</p>
+<p>A theory school provides you a stronger theory background, which is good if you will plan to go into grad school or research.</p>
+<h2 id="the-java-or-python-industry-school">The Java or Python (Industry) School</h2>
+<p>I first learned about the concept when reading a paper<sup class="footnote-reference"><a href="#principles to practice">22</a></sup> about using teaching languages to introduce objects and eventually OOP. While reading the references, I was intrigued by a blog post called &quot;The Perils of JavaSchools&quot;<sup class="footnote-reference"><a href="#javaschool">23</a></sup>, which is where I learned the concept of a JavaSchool.</p>
+<p>So what is a JavaSchool, or more generally an &quot;industry&quot; school? An industry school is one that teaches what is currently popular in industry, aka &quot;teaching fashionable programming languages and currently popular programming paradigms&quot;<sup class="footnote-reference"><a href="#cs does not matter">20</a></sup>. For the introductory programming course, a popular mainstream programming language like Java or Python along with a popular programming paradigm, such as object orientated programming is taught. Concepts like pointers or recursion are merely brushed over, or never even mentioned until the systems course or the algorithms course.</p>
+  <blockquote>
+  <p>
+  <p>You may be wondering if teaching object oriented programming (OOP) is a good weed-out substitute for pointers and recursion. The quick answer: no. Without debating OOP on the merits, it is just not hard enough to weed out mediocre programmers. OOP in school consists mostly of memorizing a bunch of vocabulary terms like “encapsulation” and “inheritance” and taking multiple-choice quizzicles on the difference between polymorphism and overloading. Not much harder than memorizing famous dates and names in a history class, OOP poses inadequate mental challenges to scare away first-year students. When you struggle with an OOP problem, your program still works, it’s just sort of hard to maintain. Allegedly. But when you struggle with pointers, your program produces the line Segmentation Fault and you have no idea what’s going on, until you stop and take a deep breath and really try to force your mind to work at two different levels of abstraction simultaneously.</p>
+
+  </p>
+  <p style="font-size:15px">
+  Joel Spolsky, <a style="font-size:15px"
+    href="https:&#x2F;&#x2F;www.joelonsoftware.com&#x2F;2005&#x2F;12&#x2F;29&#x2F;the-perils-of-javaschools-2&#x2F;">
+  The Perils of JavaSchools
+  </a>
+  </p>
+</blockquote>
+<p>I didn't choose to attend UofT and UofC for computer science because they were industry schools that taught OOP using Python in the introductory computer science course, and many of their higher year courses didn't seem interesting to me. But they may seem interesting to someone more industry orientated.</p>
+<p>Another argument against teaching OOP in the introductory computer science course is that the &quot;complexity of object-orientated programming bears little fruit&quot;<sup class="footnote-reference"><a href="#cs does not matter">20</a></sup> for first year students.</p>
+  <blockquote>
+  <p>
+  <p>It makes no sense to teach students how to engineer structure of large programs when they are yet to write any programs with a complexity worth structuring.</p>
+
+  </p>
+  <p style="font-size:15px">
+  Matthias Felleisen, Shriram Krishnamurthi, <a style="font-size:15px"
+    href="http:&#x2F;&#x2F;cs.brown.edu&#x2F;~sk&#x2F;Publications&#x2F;Papers&#x2F;Published&#x2F;fk-why-cs-doesnt-matter&#x2F;">
+  Why Computer Science Doesn’t Matter
+  </a>
+  </p>
+</blockquote>
+<p>Industry schools will also have upper year courses like &quot;web development&quot;, &quot;mobile development&quot;, or computer science courses that are also business oriented. USC, UofT and NU have courses like this. </p>
+<p>With that being said, industry schools prepare you to with skills to write software for the industry.</p>
+<h2 id="why-make-the-distinction-between-pointer-and-industry-school">Why make the distinction between &quot;Pointer&quot; and &quot;Industry&quot; School?</h2>
+<p>Computer engineering and computer science are frequently confused. Is the operating system more part of computer science or web development? Should computer science students learn how to interact with memory if they probably won't be writing code that uses Linux system calls? </p>
+<p>Computer engineering is more associated with how a computer works, down to the circuits and metal bits, in addition to assembly and C. Pointer schools which classify computer science as part of engineering likely have more low-level courses and an emphasis on low-level concepts.</p>
+<p>On the other hand, an industry school sees computer science more for being software that has been created with high-level languages like Java. Thus, industry schools won't focus on low-level concepts that much, because popular languages like Java, Python and JavaScript have abstracted away the details of memory. </p>
+<p><em>This is how I would categorise the four schools I analyzed</em></p>
+<img 
+   class="norm"   src="/res/blog_photos/schoolRadarChart.png" alt="">
+<h1 id="are-computer-science-degrees-too-theoretical">Are Computer Science Degrees too Theoretical?</h1>
+<p>Time and time again I hear people complain that computer science degrees are useless. This probably occurs more at UBC than other schools because there aren't many courses that contain &quot;industry skills&quot; like web development. The only course that teaches web development technologies at UBC (CPSC 455)<sup class="footnote-reference"><a href="#455">24</a></sup> is only offered in the summer. UBC has many higher level theory based courses, like Definition of Programming Languages (taught in Racket), Introduction to Compiler Construction (which is applied because there's a project, but taught in (a functional paradigm) Racket, which students may feel is more &quot;theoretical&quot; than say using Python like UofT does), Numerical Linear Algebra, Computational Optimization and Advanced Algorithms Design and Analysis to name a few. Besides the web development course offer in the summer, there aren't many courses that directly teach &quot;popular and hot&quot;* industry skills at UBC.</p>
+<p>*There are game development courses at UBC, but most computer science students aren't interested in game development due to the lower end salary and grueling hours as compared to a Big Tech job.</p>
+<p>Meanwhile, at USC, NU, and UofT there are many more courses that directly teach industry skills. At USC, there are courses called &quot;Programming Graphical User Interfaces&quot; and &quot;Android App Development&quot;. Similarly, UofT has &quot;Programming on the Web&quot;, &quot;Designing Systems for Real World Problems&quot;, &quot;The Business of Software&quot;. At NU, students can choose to make their degree more industry focussed or theory focussed, hence why NU is strong in both theory and industry in the radar chart above.</p>
+<img 
+   class="norm"   src="/res/blog_photos/theory-vs-industry.png" alt="">
+<p>In regards to core curriculums, NU's is the most theory based. Students learn about the Turing thesis for instance, which none of the other 3 universities require. Next is UBC. UBC's focus on a functional paradigm makes it more theory based than USC or UofT, which teach their introductory computer science course with an low-level / OOP focus, respectively. USC and UofT are close in terms of core curriculums, but UofT edges USC over theory based on computer science course offerings; UofT has more theory based higher level course offerings than USC. This is just my observation.</p>
+<p>Maybe you're wondering why there's so many differences in how universities teach computer science. Different schools can really offer a different computer science education to their students. Well I think it's because of the confusion of what computer science is.</p>
+  <blockquote>
+  <p>
+  <p>there is a widespread belief that computing science as such has been all but completed and that, consequently, computing has 'matured' from a theoretical topic for the scientists to a practical issue for the engineers, the managers and the entrepreneurs, i.e. mostly people —and there are many of those!— who can accept the application of science for the obvious benefits, but feel rather uncomfortable with its creation because they don't understand what the doing of research, with its intangible goals and its uncertain rewards, entails.</p>
+
+  </p>
+  <p style="font-size:15px">
+  prof. dr. Edsger W. Dijkstra, <a style="font-size:15px"
+    href="https:&#x2F;&#x2F;www.cs.utexas.edu&#x2F;users&#x2F;EWD&#x2F;transcriptions&#x2F;EWD13xx&#x2F;EWD1304.html">
+  The end of Computing Science
+  </a>
+  </p>
+</blockquote> 
+<p>The question we need to ask then:</p>
+<p><strong>Is the computer science degree for students who wish to pursue research in computer science to think of correct and novel ideas, or for the student who only cares about being correct and making money in the software industry?</strong></p>
+<p>Currently, the computer science degree at many schools tries to do it all: prepare students for grad school and prepare students to create web applications in the software industry. I don't think this is good because one area severely lacking in many computer science degrees (not in the curriculum or offered in higher level courses) is reasoning and formal verification of systems (and security)! Dijkstra also thought the same many years ago!</p>
+  <blockquote>
+  <p>
+  <p>Until the end of his life, Dijkstra maintained that the central challenges of computing hadn't been met to his satisfaction, due to an insufficient emphasis on program correctness (though not obviating other requirements, such as maintainability and efficiency)</p>
+
+  </p>
+  <p style="font-size:15px">
+  Dijkstra, <a style="font-size:15px"
+    href="https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;On_the_Cruelty_of_Really_Teaching_Computer_Science">
+  Wikipedia
+  </a>
+  </p>
+</blockquote>
+<p>I don't think universities are equipping computer science students to do research in areas like formal verification, dependent types, compiler correctness and more. I also don't think computer science degrees are equipping students well for the industry either. There needs to be a different path for computer scientists and software developers, like there is for chemists and chemical engineers. Computer science is a different subject than software development<sup class="footnote-reference"><a href="#advice">25</a></sup>.</p>
+<p>So is the computer science degree too theoretical? <strong>If the computer science degree is to prepare students to do the hard work of thinking of correct and novel ideas in the field of computer science, then no, the computer science degree is not too theoretical. It actually isn't theoretical enough.</strong> <em>Of course, this means there should be a different degree for people who want to work in the software industry.</em></p>
+<p>For instance, we can all agree that software is laden with bugs and as Dijkstra says: </p>
+  <blockquote>
+  <p>
+  <p>On the contrary, most of our systems are much more complicated than can be considered healthy, and are too messy and chaotic to be used in comfort and confidence. The average customer of the computing industry has been served so poorly that he expects his system to crash all the time, and we witness a massive worldwide distribution of bug-ridden software for which we should be deeply ashamed.</p>
+
+  </p>
+  <p style="font-size:15px">
+  prof. dr. Edsger W. Dijkstra, <a style="font-size:15px"
+    href="https:&#x2F;&#x2F;www.cs.utexas.edu&#x2F;users&#x2F;EWD&#x2F;transcriptions&#x2F;EWD13xx&#x2F;EWD1304.html">
+  The end of Computing Science
+  </a>
+  </p>
+</blockquote> 
+<p>Verifying programs is hard. But everything is a program in computer science! A compiler is a program that takes in a program and outputs another program! It's one thing to write a program, and another thing to verify a program is both useful and correct.</p>
+<p>I liken it to the production of drugs. It's one thing to discover a drug, and it's another thing to synthesize that drug. Then it's another thing to learn how to synthesize that drug on a large scale as safely and effectively as possible. Without someone who understands the theory, you can't think of a way of making a drug. For instance, an novice chemistry student may find the formula to create a drug, and realise they have unfortunately created stereoisomers of the drug. But only one stereoisomer of the drug works; in most cases, the other stereoisomers are not effective or even harmful. There are ways to filter the products, but this means you waste around half of your products, which is not good because many drug precursors are byproducts of the oil and gas industry<sup class="footnote-reference"><a href="#benzene">26</a></sup>, so we don't have an infinite supply. This is a hard problem in chemistry, the solution being awarded a 2021 Nobel Prize in Chemistry<sup class="footnote-reference"><a href="#lemon">27</a></sup>.</p>
+<img 
+   class="norm"   src="/res/blog_photos/lemon.jpeg" alt="">
+<p>For a long time, drug makers were stuck having to filter out their products for the correct stereoisomer. After years of research, there are now ways to conduct &quot;asymmetric organocatalysis&quot;, meaning you only create one stereoisomer. Similarly to program verification, we are currently stuck writing tests. But &quot;testing cannot prove the absence of bugs it can prove their existence&quot;<sup class="footnote-reference"><a href="#bugs">28</a></sup>. For now, we are just stuck writing tests among tests and hoping for the best, like the novice chemistry student was stuck just filtering out the products for the correct stereoisomer. </p>
+<p>But how can be achieve this ability to easily verify a program is correct? How do we prove the absence of bugs so we don't get catastrophic scenarios like NASA<sup class="footnote-reference"><a href="#nasa">29</a></sup> sometimes does? With research. Which requires a strong understanding of theory. Right now, formal verification is an &quot;unmastered complexity&quot;. Many problems in computer science are an &quot;unmasterd complexity&quot;.</p>
+<blockquote>
+<p>You see, while we all know that unmastered complexity is at the root of the misery, we do not know what degree of simplicity can be obtained, nor to what extent the intrinsic complexity of the whole design has to show up in the interfaces. We simply do not know yet the limits of disentanglement. We do not know yet whether intrinsic intricacy can be distinguished from accidental intricacy. We do not know yet whether trade-offs will be possible. We do not know yet whether we can invent for intricacy a meaningful concept about which we can prove theorems that help. <strong>To put it bluntly, we simply do not know yet what we should be talking about, but that should not worry us, for it just illustrates what was meant by &quot;intangible goals and uncertain rewards&quot;</strong>.</p>
+</blockquote>
+<p>So how do we figure out the &quot;limits of disentanglement&quot; and &quot;trade-offs&quot;? By equipping students with the theory required to think of correct and novel ideas.</p>
+<center>✨</center>
+<div class="footnote-definition" id="think"><sup class="footnote-definition-label">1</sup>
+<p><a href="http://www.paulgraham.com/think.html">How to Think for Yourself</a></p>
+</div>
+<div class="footnote-definition" id="chem reddit"><sup class="footnote-definition-label">2</sup>
+<p><a href="https://www.reddit.com/r/chemistry/comments/3gi2wl/chemical_engineering_vs_chemistry/">Chemical Engineering vs. Chemistry</a></p>
+</div>
+<div class="footnote-definition" id="ubc materials engineering"><sup class="footnote-definition-label">3</sup>
+<p><a href="https://mtrl.ubc.ca/undergraduate/current-students/course-lists-and-descriptions">Department of Materials Engineering:Course lists and descriptions</a></p>
+</div>
+<div class="footnote-definition" id="materials atomic bonding"><sup class="footnote-definition-label">4</sup>
+<p><a href="https://docs.google.com/viewer?a=v&amp;pid=sites&amp;srcid=dWJjZml6ei5jb218d3d3fGd4OjNiODY2ZmQ0MGM4NzMyYTM">Bonding and Properties</a></p>
+</div>
+<div class="footnote-definition" id="412"><sup class="footnote-definition-label">5</sup>
+<p><a href="https://www.chem.ubc.ca/chemistry-412-structure-atoms-and-molecules">CHEM 412</a></p>
+</div>
+<div class="footnote-definition" id="312"><sup class="footnote-definition-label">6</sup>
+<p><a href="https://www.chem.ubc.ca/chemistry-312-introduction-quantum-mechanics-and-spectroscopy-15">CHEM 312</a></p>
+</div>
+<div class="footnote-definition" id="usc courses"><sup class="footnote-definition-label">8</sup>
+<p><a href="https://classes.usc.edu/term-20223/classes/csci">USC Computer Science Courses</a></p>
+</div>
+<div class="footnote-definition" id="ubc courses"><sup class="footnote-definition-label">7</sup>
+<p><a href="https://courses.students.ubc.ca/cs/courseschedule?pname=subjarea&amp;tname=subj-department&amp;dept=CPSC">UBC Computer Science Courses</a></p>
+</div>
+<div class="footnote-definition" id="uoft courses"><sup class="footnote-definition-label">9</sup>
+<p><a href="https://artsci.calendar.utoronto.ca/section/Computer-Science">UofT Computer Science Courses</a></p>
+</div>
+<div class="footnote-definition" id="uoft cs"><sup class="footnote-definition-label">13</sup>
+<p><a href="https://artsci.calendar.utoronto.ca/section/Computer-Science#programs">UofT CS Curriculum</a></p>
+</div>
+<div class="footnote-definition" id="usc cs"><sup class="footnote-definition-label">15</sup>
+<p><a href="https://www.cs.usc.edu/academic-programs/undergrad/computer-science/">UST CS Curriculum</a></p>
+</div>
+<div class="footnote-definition" id="ubc cs"><sup class="footnote-definition-label">11</sup>
+<p><a href="https://www.calendar.ubc.ca/vancouver/index.cfm?tree=12,215,410,421">UBC CS Curriculum</a></p>
+</div>
+<div class="footnote-definition" id="nu cs"><sup class="footnote-definition-label">10</sup>
+<p><a href="https://catalog.northeastern.edu/undergraduate/computer-information-science/computer-science/bscs/#programrequirementstext">NU CS Curriculum</a></p>
+</div>
+<div class="footnote-definition" id="principles to practice"><sup class="footnote-definition-label">22</sup>
+<p>Tobin-Hochstadt, S., &amp; Van Horn, D. (2013). From Principles to Practice with Class in the First Year. Electronic Proceedings in Theoretical Computer Science, 136, 1–15. doi:10.4204/eptcs.136.1</p>
+</div>
+<div class="footnote-definition" id="javaschool"><sup class="footnote-definition-label">23</sup>
+<p><a href="https://www.joelonsoftware.com/2005/12/29/the-perils-of-javaschools-2/">The Perils of JavaSchools</a></p>
+</div>
+<div class="footnote-definition" id="102"><sup class="footnote-definition-label">18</sup>
+<p><a href="https://ee.usc.edu/%7Eredekopp/cs102/Fa21Syllabus.pdf">CS102</a></p>
+</div>
+<div class="footnote-definition" id="108"><sup class="footnote-definition-label">19</sup>
+<p><a href="https://www.cs.toronto.edu/dcs/ugdocs/course-outlines/2021/Fall/CSC108H1-Fall2021.pdf">CSCI108</a></p>
+</div>
+<div class="footnote-definition" id="110"><sup class="footnote-definition-label">16</sup>
+<p><a href="http://cs110.students.cs.ubc.ca/syllabus.html">CPSC110</a></p>
+</div>
+<div class="footnote-definition" id="dd"><sup class="footnote-definition-label">17</sup>
+<p><a href="https://felleisen.org/matthias/Thoughts/Developing_Developers.html">Developing Developers</a></p>
+</div>
+<div class="footnote-definition" id="uoft compilers"><sup class="footnote-definition-label">14</sup>
+<p><a href="https://www.cs.toronto.edu/%7Epdm/csc488/winter2019/assignments/a3.html">CSC488</a></p>
+</div>
+<div class="footnote-definition" id="ubc compilers"><sup class="footnote-definition-label">12</sup>
+<p><a href="https://www.students.cs.ubc.ca/%7Ecs-411/2020w2/">CPSC 411</a></p>
+</div>
+<div class="footnote-definition" id="455"><sup class="footnote-definition-label">24</sup>
+<p><a href="https://courses.students.ubc.ca/cs/courseschedule?sesscd=S&amp;campuscd=UBC&amp;pname=subjarea&amp;tname=subj-section&amp;sessyr=2022&amp;course=455&amp;section=901&amp;dept=CPSC">CPSC 455</a></p>
+</div>
+<div class="footnote-definition" id="373"><sup class="footnote-definition-label">30</sup>
+<p><a href="https://www.cs.toronto.edu/%7Enisarg/teaching/373f19/schedule.html">CSC373</a></p>
+</div>
+<div class="footnote-definition" id="270"><sup class="footnote-definition-label">31</sup>
+<p><a href="https://viterbi-web.usc.edu/%7Eshaddin/cs270sp16/index.html#:%7E:text=The%20course%20CSCI%20270%20provides,NP%2Dcompleteness%20and%20computability%20theory.">CSCI270</a></p>
+</div>
+<div class="footnote-definition" id="science"><sup class="footnote-definition-label">32</sup>
+<p><a href="https://bentilly.blogspot.com/2009/09/what-makes-it-science.html">What Makes it Science</a></p>
+</div>
+<div class="footnote-definition" id="lemon"><sup class="footnote-definition-label">27</sup>
+<p><a href="https://www.nobelprize.org/prizes/chemistry/2021/press-release">2021 Nobel Prize in Chemistry</a></p>
+</div>
+<div class="footnote-definition" id="bugs"><sup class="footnote-definition-label">28</sup>
+<p><a href="https://wiki.c2.com/?TestsCantProveTheAbsenceOfBugs">Tests Cant Prove The Absence Of Bugs</a></p>
+</div>
+<div class="footnote-definition" id="benzene"><sup class="footnote-definition-label">26</sup>
+<p><a href="https://emergency.cdc.gov/agent/benzene/basics/facts.asp">Benzene</a></p>
+</div>
+<div class="footnote-definition" id="cs does not matter"><sup class="footnote-definition-label">20</sup>
+<p><a href="https://cs.brown.edu/%7Esk/Publications/Papers/Published/fk-why-cs-doesnt-matter/paper.pdf">Viewpoint: Why Computer Science Doesn’t Matter</a></p>
+</div>
+<div class="footnote-definition" id="htpd"><sup class="footnote-definition-label">33</sup>
+<p><a href="http://cs.brown.edu/%7Esk/Publications/Papers/Published/fffk-htdp-vs-sicp-journal/">HtDP</a></p>
+</div>
+<div class="footnote-definition" id="nasa"><sup class="footnote-definition-label">29</sup>
+<p><a href="https://ti.arc.nasa.gov/m/pub-archive/1338h/1338%20(Brat).pdf">NASA</a></p>
+</div>
+<div class="footnote-definition" id="advice"><sup class="footnote-definition-label">25</sup>
+<p><a href="https://www.joelonsoftware.com/2005/01/02/advice-for-computer-science-college-students/">Advice for Computer Science College Students</a></p>
+</div>
+
+</div>
+
+<div class="flex-row">
+  
+  <p>Previous:
+    <a href="https:&#x2F;&#x2F;lhao03.github.io&#x2F;blog&#x2F;life&#x2F;money-molecules-third-year&#x2F;">molecules or money? end of third year reflection</a>
+  </p>
+  
+  
+</div>
+    <a href="/blog">go back to all posts</a>
+
+        </div>
+        <div id="wcb" class="carbonbadge"></div>
+<script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>
+        <footer>
+            <div class="flex-row">
+                
+                <a href="https:&#x2F;&#x2F;github.com&#x2F;lhao03" target="_blank">
+            <p class="lucyfont">github</p>
+                </a>
+                
+                <a href="https:&#x2F;&#x2F;linkedin.com&#x2F;in&#x2F;lucy-hao" target="_blank">
+            <p class="lucyfont">linkedin</p>
+                </a>
+                
+                <a href="https:&#x2F;&#x2F;twitter.com&#x2F;hoalycu" target="_blank">
+            <p class="lucyfont">twitter</p>
+                </a>
+                
+            </div>
+            <p style="text-align: center; padding-bottom: 5vh;" class="lucyfont">made with 💖 and Zola by Lucy</p>
+        </footer>
+      <a href="https://www.ryanmehri.dev/" target="_blank">
+        <img class="animal-img bottom-left" src="https:&#x2F;&#x2F;lhao03.github.io&#x2F;animals&#x2F;hedgehog.png"/>
+      </a>
+      <a href="/">
+      <img class="animal-img top-right" src="https:&#x2F;&#x2F;lhao03.github.io&#x2F;animals&#x2F;cat_scared-removebg-preview.png"/>
+      </a>
+      <!-- <img class="animal-img bottom-right" src="https:&#x2F;&#x2F;lhao03.github.io&#x2F;animals&#x2F;shib_cool-removebg-preview.png"/> -->
+    </section>
+</body>
+
+</html>
