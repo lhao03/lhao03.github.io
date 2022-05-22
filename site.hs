@@ -37,12 +37,12 @@ main = hakyll $ do
         route $ setExtension "css"
         compile (fmap compressCss <$> sassCompiler)
 
-  -- match (fromList ["about.rst", "contact.markdown"]) $ do
-  --   route $ appendIndex
-  --   compile $
-  --     pandocCompilerWithAsciidoctor
-  --       >>= loadAndApplyTemplate "templates/default.html" defaultContext
-  --       >>= relativizeUrls
+  match (fromList ["about.rst", "404.md"]) $ do
+    route appendIndex
+    compile $
+      pandocCompilerWithAsciidoctor
+        >>= loadAndApplyTemplate "templates/default.html" defaultContext
+        >>= relativizeUrls
 
   -- build up tags
   tags <- buildTags "posts/**" (fromCapture "tags/*.html")
@@ -78,6 +78,7 @@ main = hakyll $ do
       let archiveCtx =
             listField "posts" postCtx (return posts)
               `mappend` constField "title" "Archives"
+              `mappend` mainCtx tags "posts/**"
               `mappend` defaultContext
 
       makeItem ""
@@ -86,12 +87,17 @@ main = hakyll $ do
         >>= relativizeUrls
         >>= cleanIndexUrls
 
+  match "posts/courses/**" $ do
+    compile $
+      pandocCompilerWithAsciidoctor
+        >>= loadAndApplyTemplate "template/courses.html" (postCtxWithTags tags)
+
   match "index.markdown" $ do
     route $ setExtension "html"
     compile $ do
-      posts <- recentFirst =<< loadAll "posts/*"
       let indexCtx =
-            listField "posts" postCtx (return posts)
+            listField "posts" postCtx (recentFirst =<< loadAll "posts/*")
+              -- `mappend` listField "courses" (postCtxWithTags tags) (recentFirst =<< loadAll "posts/courses/*")
               `mappend` defaultContext
 
       getResourceString
@@ -108,6 +114,21 @@ postCtx =
   dateField "date" "%B %e, %Y"
     `mappend` dropIndexHtml "url"
     `mappend` defaultContext
+
+postItems :: Pattern -> Compiler [Item String]
+postItems postsPattern = do
+  identifiers <- getMatches postsPattern
+  return [Item identifier "" | identifier <- identifiers]
+
+previewCtx :: Tags -> Context String
+previewCtx tags = teaserField "preview" "content" <> postCtxWithTags tags
+
+mainCtx :: Tags -> Pattern -> Context String
+mainCtx tags postsPattern =
+  let recentPosts = postItems postsPattern >>= fmap (take 5) . recentFirst
+   in listField "recentPosts" (previewCtx tags) recentPosts
+        <> tagCloudField "tagCloud" 100 200 tags
+        <> defaultContext
 
 postCtxWithTags :: Tags -> Context String
 postCtxWithTags tags =

@@ -2,7 +2,7 @@
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>My Hakyll Blog - $title$</title>
+        <title>Lucy H | $title$</title>
         <link rel="stylesheet" href="/css/main.css" />
 
         <link rel="preconnect" href="https://www.googletagmanager.com" />
@@ -22,12 +22,16 @@
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="@hoalycu" />
         <meta name="twitter:creator" content="@hoalycu" />
-        $if(description)$
-        <meta property="og:url" content="$url$" />
         <meta property="og:title" content="$title$" />
+        $if(description)$
+        <meta name="description" content="$description$">
         <meta property="og:description" content="$description$" />
+        $endif$
+        $if(url)$
+        <meta property="og:url" content="$url$" />
+        $endif$
+        $if(cover_image)$
         <meta property="og:image" content="$cover_image$" />
-        $else$
         $endif$
 
         <!-- basic favicon -->

@@ -12,7 +12,7 @@ _Updated: 2022-05-05_
 * deployed during World War II
 * thousands of women worked at Bletchley
 
-Women were: > […] positioned as a ``reserve'' labor force impelled into
+Women were: > […] positioned as a "reserve" labor force impelled into
 masculine-coded jobs due to the exigencies of war—and dispensed with
 immediately there-after.
 
@@ -34,8 +34,8 @@ ____
 === Creating Information Workers
 
 * British and American projects employed women as human computers
-* IBM UK: was so feminized that management measured production in ``girl
-hours'' in 1960s
+* IBM UK: was so feminized that management measured production in "girl
+hours" in 1960s
 * Comrie: general-purpose office machines could be used for complex
 scientific calculation
 ** young women workers were key to his success
@@ -71,15 +71,15 @@ but the most important and voluminous intelligence work of the war was
 machine-aided and feminized. Women’s labor formed the nucleus of the
 British wartime information machine. 1942: shortage of manpower required
 a total reliance on women trainees from then on. […] therefore that
-women were as of now ``eligible equally with men for all the training,''
-and ``as regards the actual curriculum of training, the same course is
-available to men and women.'' […] ``it has been found that women prove
-to be equally apt pupils,''
+women were as of now "eligible equally with men for all the training,"
+and "as regards the actual curriculum of training, the same course is
+available to men and women." […] "it has been found that women prove
+to be equally apt pupils,"
 ____
 
 ____
-[…] Ministry of Labour also noted that only women who ``show[ed]
-promise'' would be ``treated in the same way as men''
+[…] Ministry of Labour also noted that only women who "show[ed]
+promise" would be "treated in the same way as men"
 ____
 
 ____
@@ -140,9 +140,9 @@ ____
 === The Girls in the Machine
 
 ____
-Postwar unemployment for women was worsened by ``a recurring demand that
+Postwar unemployment for women was worsened by "a recurring demand that
 such jobs as were available should be reserved for men, and women should
-go back to the home, whatever that might mean,''
+go back to the home, whatever that might mean,"
 ____
 
 ____
@@ -168,7 +168,7 @@ and deploy large-scale computational projects
 ____
 
 ____
-Another description states that women ``tended'' the machines, rather
+Another description states that women "tended" the machines, rather
 than more accurately stating that they operated, troubleshot, tested,
 programmed, repaired, and even helped build them.
 ____

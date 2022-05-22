@@ -2,6 +2,7 @@
 title: My issues with Learn to Code
 tags: computer science education
 date: 2022-04-01
+description: 'I recently wrote a rant-like post about my thoughts on my path to CS. Since then, I’ve been thinking about how I was first introduced to computer science ...'
 ---
 
 :toc:

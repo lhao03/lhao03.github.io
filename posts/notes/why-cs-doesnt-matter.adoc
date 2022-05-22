@@ -1,5 +1,5 @@
 ---
-title:  "Viewpoint: Why Computer Science Doesn’t Matter"
+title: "Viewpoint: Why Computer Science Doesn’t Matter"
 date: 2022-05-03
 tags: computer science education
 ---

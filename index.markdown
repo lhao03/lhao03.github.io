@@ -1,12 +1,13 @@
 ---
 title: Hi, I'm Lucy!
+description: Hi, I'm Lucy! I'm a chemistry nerd and filter and map enthusiast studying Computer Science and Chemistry at the University of British Columbia.
 ---
 
 I'm a chemistry nerd and `filter` and `map` enthusiast studying [Computer Science](https://www.cs.ubc.ca/) and [Chemistry](https://www.chem.ubc.ca/) at the [University of British Columbia](https://www.ubc.ca/). I enjoy learning about how and why things work, especially pertaining to chemical biology, drugs, operating systems, compilers, and programming languages. I also enjoy [reading](/tags/book/) about computing history, the impact of technological systems on society and computer science education. Oh and I hate JavaScript. I not too fond of C either, but I'm willing to use C.
 
 ## Posts
 $partial("templates/post-list.html")$
-[See more ➤](/archive)
+[See more ▶](/archive)
 
 ### Currently 
 - reading Webtoons! Current obsessions are [Death: Rescheduled](https://www.webtoons.com/en/thriller/death-rescheduled/list?title_no=3515&page=1), [Purple Hyacinth](https://www.webtoons.com/en/mystery/purple-hyacinth/list?title_no=1621&page=1), [Men of the Harem](https://www.webtoons.com/en/fantasy/men-of-the-harem/list?title_no=2443&page=1), and [Let's Play](https://www.webtoons.com/en/romance/letsplay/list?title_no=1218&page=1)
@@ -25,6 +26,9 @@ $partial("templates/post-list.html")$
 - **Microsoft** (May - Aug 2021) ⛏ Software Engineering Intern
 - **PROOF Centre** (Jan - May 2021) 🧬 Software Developer Intern
   - [Preprint](https://www.medrxiv.org/content/10.1101/2021.05.04.21256134v1)
+
+## Coursework
+$partial("templates/courses.html")$
 
 ## Speaking Experience
 - **StarHacks II** 💫 [Panelist for Intersections of Technology](https://www.youtube.com/watch?v=klMP-K7nCd4)

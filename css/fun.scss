@@ -32,3 +32,14 @@
   margin: 0;
   z-index: 10000;
 }
+
+.coursework {
+  div {
+    background-color: #81a1c1;
+    margin: 5px 5px 5px 0;
+    color: $backgroundColor;
+    padding: 3px;
+    border-radius: 5px;
+    width: fit-content;
+  }
+}

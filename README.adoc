@@ -15,16 +15,7 @@
 * https://groups.google.com/g/hakyll/c/XewxMLIjRIw
 * https://groups.google.com/g/hakyll/c/IhKmFO9vCIw
 * https://css-tricks.com/css-link-hover-effects/
+* https://macbookandheels.com/programming/2015/10/19/next-and-previous-post-links/
+* https://dannysu.com/2013/03/20/hakyll-4/
+* http://limansky.me/posts/2016-12-28-pagination-with-hakyll.html
 
-
-* https://www.youtube.com/watch?v=XSKfHDMXIgg
-* https://dl.acm.org/doi/pdf/10.1145/3461648.3463850
-* https://dl.acm.org/doi/10.1145/3502742
-* https://dl.acm.org/doi/abs/10.1145/3479430
-* https://dl.acm.org/doi/10.1145/3498681
-* https://web.stanford.edu/~cpiech/bio/papers/generativeGrading.pdf
-* https://www.lesswrong.com/posts/7WxH7fAq76Mvkx5YC/a-harmful-idea
-* https://forum.effectivealtruism.org/posts/kageSSDLSMpuwkPKK/response-to-recent-criticisms-of-longtermism-1
-* https://os.phil-opp.com/freestanding-rust-binary/
-* https://dl.acm.org/doi/abs/10.1145/3479430
-* https://willcrichton.net/nota/

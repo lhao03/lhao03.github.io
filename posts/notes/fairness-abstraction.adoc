@@ -72,7 +72,7 @@ context
 * fair ML:
 ** fix a definition of fairness as portable module and seek a to
 optimize a cost function
-** building a ``fair wrapper'' around the classifier to make resulting
+** building a "fair wrapper" around the classifier to make resulting
 outcomes fair
 ** both suggestions make certain assumptions
 ** if social context is modeled well enough and other traps are avoided:
@@ -106,7 +106,7 @@ nail
 approach or where modeling the situation will not work no matter how
 many approximations one makes
 ** definitions are politically contested or shifting
-*** modeling requires pinning down definitions and ``code calcifies''
+*** modeling requires pinning down definitions and "code calcifies"
 ** modeling required would so be so complex as to be computationally
 intractable
 
@@ -147,19 +147,19 @@ operate as intended
 ____
 
 ____
-As Law puts it, ``we must be ready to handle heterogeneity in all its
+As Law puts it, "we must be ready to handle heterogeneity in all its
 complexity, rather than adding the social as an explanatory
-afterthought.''
+afterthought."
 ____
 
 === STS lens on portability problem
 
 ____
-Akrich realized that the user ``scripts'' that dictate how technologies
+Akrich realized that the user "scripts" that dictate how technologies
 are supposed to be used only work if all the social and technical
 elements of a network are assembled properly. A technology may be
 designed with many use cases in mind, but in each case, a designer or
-computer scientist hopes to embed certain ``scripts'' for action into
+computer scientist hopes to embed certain "scripts" for action into
 their product. But the theory of scripts shows that such outcomes will
 always be disrupted as soon as the code, device, or software moves to a
 different context. At the very least, the code will be taken up in a new
@@ -184,7 +184,7 @@ algorithms over those impacted by the use of fair-ML algorithms.
 ____
 
 ____
-In each case, the technologies that ``won'' did so not because they were
+In each case, the technologies that "won" did so not because they were
 technically superior to their competition, or solved actual users’
 problems, or even because their uptake was subject to the free
 market—but because of powerful companies or actors with vested interests
@@ -229,5 +229,5 @@ ____
 Computer science programs do not typically incentivize the social
 science research necessary to ensure robust system use in the world—or
 even to fulfill the Hippocratic oath’s equivalent in engineering to
-``first, do no harm.''
+"first, do no harm."
 ____

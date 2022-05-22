@@ -27,32 +27,24 @@ bloat
 heuristics
 ** heuristic: trial and error method
 * no systematic study to investigate optimal inlining
-* focus on reducing binary size: deterministic and does not depend on
-workload selection, while performance does
-* straightforward search space is 2^n, where _n_ is the number of
-inlinable call sites
+* focus on reducing binary size: deterministic and does not depend on workload selection, while performance does
+* straightforward search space is _2^n_, where _n_ is the number of inlinable call sites
 * local independence property => autotuning strategy
 
-contributions made 
+==== contributions made 
 * novel formulation of the search space 
-* first
-extensive systematic study of optimal inlining 
-* simple, effective
-inlining autotuning strategy
+* first extensive systematic study of optimal inlining 
+* simple, effective inlining autotuning strategy
 
 == 2 background
 
-* notation: \{\{ katex(body=``\{(A B) : inline, (B C) : no-inline}'') }}
 * inlining may introduce multiple copies of the same call
 
 == 3 formulate the inlining search space
 
-* given a call graph _G_ with \{\{ katex(body=``|E_G|'') }} edges, \{\{
-katex(body=``2^\{|E_G|}'') }} configurations exist, and all of them must
+* given a call graph _G_ with _|E_G|_ edges, _2^|E_G|_ configurations exist, and all of them must
 be evaluated to to find the optimal
 * independent components can be independently explored
-** considering the connected components of a graph, _cc_, the search
-space becomes \{\{ katex(body=“_\{c cc} \{2^\{|E_G|}}“) }}
 * connected components: are independent w.r.t inlining
 * not inlining a bridge is identical to deleting it w.r.t inlining:
 additional independent components are created

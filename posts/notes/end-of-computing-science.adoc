@@ -11,7 +11,7 @@ Version]
 prof. dr. Edsger W. Dijkstra talks about how
 
 ____
-computing has ``matured'' from a theoretical topic for the scientists to
+computing has "matured" from a theoretical topic for the scientists to
 a practical issue for the engineers, managers and the entrepreneurs
 ____
 
@@ -50,7 +50,7 @@ I’ve ever felt in any industry job.
 
 ____
 I would therefore like to posit that computing’s central challenge,
-viz. ``How not to make a mess of it'', has not been met. On the
+viz. "How not to make a mess of it", has not been met. On the
 contrary, most of our systems are much more complicated than can be
 considered healthy, and are too messy and chaotic to be used in comfort
 and confidence. The average customer of the computing industry has been
@@ -79,7 +79,7 @@ suddenly pulled me into a meeting to ask if the code refactor really was
 necessary. And there were no bugs discovered in my refactored code.
 
 Our apps have became more and more bloated, with data leaks every hour,
-and having something ``work'' isn’t the norm, but the outlier. Companies
+and having something "work" isn’t the norm, but the outlier. Companies
 deliberately choose horrible languages to write programs in like
 JavaScript, push confusing design changes instead of security
 improvements and freeze our computers with memory leaks. I can say with
@@ -110,7 +110,7 @@ obtained, nor to what extent the intrinsic complexity of the whole
 design has to show up in the interfaces.
 ____
 
-The statement ``unmastered complexity is the root of misery'' could be
+The statement "unmastered complexity is the root of misery" could be
 talking about the
 https://www.britannica.com/science/Dunning-Kruger-effect[Dunning-Kruger
 effect], in which Silicon Valley tech bros go around creating short
@@ -126,14 +126,14 @@ we can prove theorems that help.
 ____
 
 A professor once stated to my boyfriend who then told me, that
-``optimization is optimization until your optimization produces
-something wrong, and if that happens then you’re cheating''. I believe
-this is what these ``trade-offs'' are talking about. There’s a lot of
+"optimization is optimization until your optimization produces
+something wrong, and if that happens then you’re cheating". I believe
+this is what these "trade-offs" are talking about. There’s a lot of
 trade-offs in science in hopes of making a topic simpler. We use the
 Bohr model to represent the electrons and protons for an element; but
 there’s a trade-off. The trade-off is that for simplicity we may give
 students the impression that electrons orbit in circles or ovals or that
-electrons stay ``stuck'' in orbit. This is an ``optimization''. And
+electrons stay "stuck" in orbit. This is an "optimization". And
 sometimes optimizations can become cheating; an optimization works until
 it can’t. Obviously catching these cheating optimizations is important,
 but how can we? I think that is what prof. dr. Edsger W. Dijkstra’s
@@ -143,8 +143,8 @@ ____
 We do not know yet whether intrinsic intricacy can be distinguished from
 accidental intricacy. … To put it bluntly, we simply do not know yet
 what we should be talking about, but that should not worry us, for it
-just illustrates what was meant by ``intangible goals and uncertain
-rewards''.
+just illustrates what was meant by "intangible goals and uncertain
+rewards".
 ____
 
 Research is a dive into the unknown. For instance, virologists for many
@@ -164,7 +164,7 @@ is that virologists didn’t know they were looking for miRNA.
 In fact, microRNAs (miRNA) are non-coding RNA, which means they don’t
 become proteins themselves, but influence what and how much of the
 coding RNA become proteins. This makes it really hard to study since
-there’s ``nothing'' we can grasp onto. There’s no protein to take a
+there’s "nothing" we can grasp onto. There’s no protein to take a
 closer look at. We can only make guesses on which proteins are affected
 by the billions of non-coding regions. These molecules were discovered
 in worms in 1993 and only known to exist in humans in the last decade.
@@ -176,8 +176,8 @@ no one knew what they were looking for. Computing Science is still a
 relatively new area of research that has so much to be explored.
 Unfortunately, lots of money has been poured into AI, which other areas
 like ethics, hardware, compiler, proof verification and more much more
-underfunded. We need to do research that has ``intangible goals and
-uncertain rewards''. Research in AI seems to contradict this statement.
+underfunded. We need to do research that has "intangible goals and
+uncertain rewards". Research in AI seems to contradict this statement.
 There’s always a goal: make machines more like humans or make machines
 replace humans. And there’s always a desired reward: money.
 
