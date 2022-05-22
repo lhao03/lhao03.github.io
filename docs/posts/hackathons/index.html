@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="en">
+  <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Lucy H | My thoughts on hackathons</title>
+        <link rel="stylesheet" href="../../css/main.css" />
+
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="preconnect" href="https://www.google-analytics.com" />
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-KDGPVMHC9Q"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-KDGPVMHC9Q');
+        </script>
+
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@hoalycu" />
+        <meta name="twitter:creator" content="@hoalycu" />
+        <meta property="og:title" content="My thoughts on hackathons" />
+        
+        
+        <meta property="og:url" content="/posts/hackathons" />
+        
+        
+
+        <!-- basic favicon -->
+        <link rel="icon" href="../../images/android-chrome-384x384.png" /> 
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../images/android-chrome-384x384.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../images/android-chrome-384x384.png">
+        <link rel="apple-touch-icon-precomposed" href="../../images/android-chrome-384x384.png">
+    </head>
+
+
+        <body>
+        <header>
+            <div class="logo">
+                <a href="../../">
+                <img src="../../images/android-chrome-384x384.png" alt="Me">
+                </a>
+            </div>
+        </header>
+
+        <main role="main">
+            <h1>My thoughts on hackathons</h1>
+            <div>
+    <div class="header">
+        Posted on July 10, 2021
+        
+    </div>
+<div class="info">
+    
+    Tags: <a title="All pages tagged 'hackathons'." href="../../tags/hackathons/index.html">hackathons</a>
+    
+</div>
+    <div>
+        <div id="toc" class="toc">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_a_note">A note</a></li>
+<li><a href="#_on_with_the_post">On with the post</a></li>
+<li><a href="#_my_stomach_and_head_hurt_all_the_health_problems">My stomach and head hurt; all the health problems!</a></li>
+<li><a href="#_a_dumpster_fire_of_javascript_corporate_apis_ai_and_stuff_i_dont_understand_from_stack_overflow">A dumpster fire of JavaScript, corporate APIs, AI, and stuff I don’t understand from Stack Overflow</a></li>
+<li><a href="#_what_are_we_trying_to_solve_here">What are we trying to solve here?</a></li>
+<li><a href="#_not_beginner_friendly_if_you_dont_already_know_how_to_do_everything">Not beginner-friendly if you don’t already know how to do everything</a></li>
+<li><a href="#_so_what_am_i_doing_now">So what am I doing now?</a></li>
+</ul>
+</div>
+<div class="paragraph">
+<p><em>Update: Jan 2022</em></p>
+</div>
+<div class="sect1">
+<h2 id="_a_note">A note</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>I used to be involved with organizing hackathons and speaking at them. Unfortunately, I don’t vibe with hackathons anymore. When I was in my first year of university, everyone around me (computer science students) was buzzing about hackathons, so I thought I had to attend and like hackathons.</p>
+</div>
+<div class="paragraph">
+<p>However, the environment and atmosphere of hackathons were soon unappealing to me. Move fast and break things. Sit for 8 hours and eat junk food. Kiss up to companies. Hack together a prototype. These mantras were all against who I was: I liked to sit and think and stare, eat vegetables and move around, do projects slowly and little by little, and I never cared about working for a company before attending a hackathon.</p>
+</div>
+<div class="paragraph">
+<p>So why keep going to hackathons and organizing them if hackathons didn’t align with my work style, thought processes, and life goals?</p>
+</div>
+<div class="paragraph">
+<p>I don’t know if I will continue to speak at hackathons because many hackathons don’t align with my values anymore, so it wouldn’t make sense for me to be active in hackathons, even as an external speaker. I may do 1:1 mentoring or coffee chats instead. If any of my workshop/panel topics interest you, please reach out by email, LinkedIn, or Twitter.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_on_with_the_post">On with the post</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>I’ve attended a few hackathons, in-person and remote, and at first, a
+hackathon seemed like the perfect event. Free food, tech companies, and
+swag? What else could you ask for? Well, under all the free food and
+company shirts lies copy-pasted Stack Overflow code, dry eyes, and more.
+Attending hackathons now seems like a chore I need to check off as a
+computer science student. And frankly, I feel guilty for feeling this
+way. But after reading Design Justice<sup class="footnote">[<a id="_footnoteref_1" class="footnote" href="#_footnotedef_1" title="View footnote.">1</a>]</sup>,
+this blog post from Jacky<sup class="footnote">[<a id="_footnoteref_2" class="footnote" href="#_footnotedef_2" title="View footnote.">2</a>]</sup>, and various
+other posts such as this<sup class="footnote">[<a id="_footnoteref_3" class="footnote" href="#_footnotedef_3" title="View footnote.">3</a>]</sup>,
+this<sup class="footnote">[<a id="_footnoteref_4" class="footnote" href="#_footnotedef_4" title="View footnote.">4</a>]</sup> and
+this<sup class="footnote">[<a id="_footnoteref_5" class="footnote" href="#_footnotedef_5" title="View footnote.">5</a>]</sup>
+I’ve realized that everything I feel towards hackathons is valid. For some context, I started going to
+hackathons in 2019 in my first year of university, so my hackathon
+experience may not match yours. These are purely my own experiences and
+may not reflect the majority of hackathon experiences.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_my_stomach_and_head_hurt_all_the_health_problems">My stomach and head hurt; all the health problems!</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>When I attend a hackathon, I always plan for the next day to be a
+recovery day. From sore eyes to a constipated stomach, a throbbing
+headache, and back pain, that’s the type of day I can expect right after
+a hackathon. The impact hackathons have on my health is a major reason I
+stopped attending.</p>
+</div>
+<div class="paragraph">
+<p>Something like the hackathon diet always messes up my digestion for
+anywhere from a day to a week. I’m easily constipated by a lack of
+vegetables and a high intake of junk food. For instance, a hackathon
+diet made of a glass of orange juice and bagel, a few slices of pizza,
+and Chinese takeout is low in protein, vitamins, and minerals and high
+in fat, sodium, and sugar. And this is without the energy drinks and
+snacks one may eat throughout a hackathon. For me, a day eating at a
+hackathon causes painful bloating and constipation the next day.</p>
+</div>
+<div class="paragraph">
+<p>Hackathons rarely offer healthy alternatives, aside from some fruit at
+breakfast, and it makes eating difficult for me. Yes, I could bring my
+food but that involves packing 3 meals, carrying those meals around, and
+making sure those meals don’t go bad. And having healthy options is
+always a positive, as it’s proven eating unhealthy food makes you think
+and respond slowly - everyone wants maximum brainpower at a hackathon,
+right?</p>
+</div>
+<div class="paragraph">
+<p>Additionally, the lack of sleep nearly every participant will experience
+can cause anything from a slower cognitive response to a throbbing
+headache. Then there’s the back pain from sitting all day and the dry
+eyes from staring at a screen. And leg pains from sitting cross-legged
+if you’re me. A hackathon forces your body in awkward positions for
+hours.</p>
+</div>
+<div class="paragraph">
+<p>Unfortunately, this is what you can expect at 99% of hackathons.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_a_dumpster_fire_of_javascript_corporate_apis_ai_and_stuff_i_dont_understand_from_stack_overflow">A dumpster fire of JavaScript, corporate APIs, AI, and stuff I don’t understand from Stack Overflow</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>I have a burning hate for JavaScript (I’m sorry). JavaScript with a
+couple of APIs from Google (hopefully a blockchain deep learning API)
+and Stack Overflow posts gives you the typical hackathon project. This
+type of project is "built fast" and breaks even faster. I also believe
+that hackathons perpetuate the cycle of using JavaScript for everything
+and anything (which I do not agree with). One might argue JavaScript
+allows for an idea to quickly turn into a product, which is true and
+very attractive at a hackathon. But if you want that JavaScript product
+to last, you’re going to need a team and a lot of time just to maintain
+it. Now using another programming language like Reason might take longer
+to create a product, but the time needed to maintain and fix bugs in a
+project in Reason is almost
+none<sup class="footnote">[<a id="_footnoteref_6" class="footnote" href="#_footnotedef_6" title="View footnote.">6</a>]</sup>.</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Messenger used to receive bugs reports daily; since the introduction of
+Reason, there have been a total of 10 bugs (that’s during the whole
+year, not per week)!</p>
+</div>
+</blockquote>
+</div>
+<div class="paragraph">
+<p>and</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Refactoring speed went from days to hours to dozens of minutes.</p>
+</div>
+</blockquote>
+</div>
+<div class="paragraph">
+<p>In a world of exploding technological innovation, thinking about
+sustainability and maintainability is a must when building a product.
+And I believe using JavaScript is not the answer to creating sustainable
+or maintainable technology. This is my very personal opinion. Will I
+still work on projects with JavaScript, like at work? Unfortunately yes.
+But in my own time, I will be staying away from JavaScript as much as I
+can.</p>
+</div>
+<div class="paragraph">
+<p>Additionally, I don’t learn much by hastily copying a piece of code from
+Stack Overflow or using an API endpoint that does everything for me. And
+to be frank, there is no way I will produce any remotely helpful or
+useful in 24 hours. Much less so a functional product. Can some people
+do it? Maybe, but the vast majority of hackers have no understanding or
+a basic and lacking understanding of the context of an issue. This leads
+to my next point below…</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_what_are_we_trying_to_solve_here">What are we trying to solve here?</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>It’s funny how a microbiology class fundamentally changed the way I went
+about thinking about solving problems. In MICB 202, I learned about
+cholera, an acute diarrhoeal infection caused by ingesting water or food
+contaminated with the bacterium Vibrio cholerae. How would one go about
+reducing the number of cases of cholera? Well, by cleaning up the water.
+But how? Using chemicals? Using energy to kill off bacteria? While these
+are solutions, there’s one thing we are forgetting about: the context of
+the problem<sup class="footnote">[<a id="_footnoteref_7" class="footnote" href="#_footnotedef_7" title="View footnote.">7</a>]</sup>, and those who are actually affected. The
+context is that the location (Bangladeshi villages) where cholera is
+still an issue is in places where water is used for everything, usually
+not being filtered or cleaned before the water is used. The water that
+people use to drink is also used for washing. So you can’t just dump
+chemicals into the rivers and hope for the best. Additionally, there’s a
+lack of resources. Who’s going to synthesize chemicals and where would
+you even purify the water? Even boiling water would be a strain on
+resources (it would be better to use firewood for heating or cooking).
+To someone that is unfamiliar with the context of the issue, it’s easy
+to slap a solution together and actually cause more harm than good.</p>
+</div>
+<div class="paragraph">
+<p>So what was the solution the researchers came up with? The solution is
+quite simple and is a solution that can be easily adopted and pushed out
+into the public. It was to use a
+sari<sup class="footnote">[<a id="_footnoteref_8" class="footnote" href="#_footnotedef_8" title="View footnote.">8</a>]</sup>,
+a piece of cloth worn by Hindu women, but also now frequently worn by
+women of other religious groups. This solution is one I didn’t even
+think of when my professor presented the case study in class. Why? Well
+because I didn’t have a good or even basic understanding of the context
+of the problem, such as the cultural practices.</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>It is common practice in villages in Bangladesh to use cloth, frequently
+a flat, unfolded piece of an old sari, to filter home-prepared drinks.
+In laboratory experiments employing electron microscopy, we found that
+inexpensive sari cloth, folded four to eight times, provides a filter of
+≈20-μm mesh size, small enough to remove all zooplankton, most
+phytoplankton, and all V. cholerae attached to plankton and particulates
+&gt;20 μm. Laboratory studies showed that sari cloth folded at least four
+times retained the V. cholerae cells attached to plankton, effectively
+removing &gt;99% (&gt;2 logs) of V. cholerae (30).</p>
+</div>
+</blockquote>
+</div>
+<div class="paragraph">
+<p>Hackathons occur very frequently in privileged Western societies that
+are so isolated from the world. This means the context of a problem is
+ignored, and this results in most solutions being useless, or even
+worse, harmful. Hackers go away with the feeling that problems are easy
+to solve and that technology is a bandaid for all problems, which is
+simply not true. These tweets below also offer insight into my thoughts:</p>
+</div>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Want to help? Have technical skills? That's probably not a good idea. Here are some thoughts based on 10+ years seeing well-meaning technical folks getting involved in crises 🧵</p>&mdash; Alix Dunn (@alixtrot) <a href="https://twitter.com/alixtrot/status/1498217959654895618?ref_src=twsrc%5Etfw">February 28, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">In hard times, technology is intoxicating. It can feel like a shortcut to impact in a moment of impossible hardship. <br><br>It's not. <br><br>If you are getting high on your own supply, take a beat and think critically.</p>&mdash; Alix Dunn (@alixtrot) <a href="https://twitter.com/alixtrot/status/1498217964855869442?ref_src=twsrc%5Etfw">February 28, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">This is why I hate hackathons with a passion - they let volunteers do the fun part of the work and feel good about themselves, while sticking someone else with the burden of trying to implement and maintain something that's only half-done at best. (5/10)</p>&mdash; Andrew Therriault (@therriaultphd) <a href="https://twitter.com/therriaultphd/status/1497752571238400001?ref_src=twsrc%5Etfw">February 27, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<div class="paragraph">
+<p>I’ve seen horrible takes on hackathon projects trying to solve a
+problem. One was an "eating disorder diagnosis" and "treatment"
+project, which was a static website involving the user filling in a
+multiple choice quiz (to determine if they had an eating disorder) and
+then very generic tips for someone with an eating disorder.</p>
+</div>
+<div class="paragraph">
+<p>First of all, anyone can have an eating disorder, and these types of
+quizzes can lead someone to believe they don’t have an eating disorder
+when they do.</p>
+</div>
+<div class="paragraph">
+<p>Additionally, generic tips like "don’t look at calories" or "make
+sure you are eating a balanced meal" are phrases people with eating
+disorders can warp and bend into dangerous behaviour. If someone decides
+to stop looking at calories, they may just eat as little as possible
+because they live in fear of overeating and have no way to check if they
+are eating enough if they don’t look at calories. Part of my recovery
+was calorie counting to make sure I was eating enough.</p>
+</div>
+<div class="paragraph">
+<p>As someone who has had an eating disorder, I understand the intention is
+to help. But some things (like recovering from or diagnosing an eating disorder)
+cannot be solved with a web app.</p>
+</div>
+<div class="paragraph">
+<p><strong>We have to stop slapping code on everything and realize sometimes (most
+times), problems would be better off without the intervention of
+websites and phone apps.</strong></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_not_beginner_friendly_if_you_dont_already_know_how_to_do_everything">Not beginner-friendly if you don’t already know how to do everything</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>While hackathons are great places to be introduced to so many new
+concepts, are they the best place to learn and understand these new
+concepts? Hackathons celebrate this culture of "move fast and break
+things", and this implies that one must learn fast too. I don’t know
+about you, but I don’t learn fast, and especially not if I’ve been
+eating nothing but chocolate candy bars for the past 5 hours. Coupled
+with learning about something I’m not interested in, such as a company
+tool for a prize category, hackathons have made me lose the joy of
+learning about technology. It’s also demotivating to see a team of
+highly skilled individuals who come into an hackathon with every move
+planned out; not everyone has the time to plan for a hackathon weekend.
+And I am not as skilled as someone who’s been programming since high
+school. Always feeling "behind" others is partially why I felt like
+dropping out of computer science, which propelled my decision to pursue
+a minor in biochemistry a combined major in computer science and
+chemistry (more on that later).</p>
+</div>
+<div class="paragraph">
+<p>I’m a slow learner, and I’m slowly (haha) coming to terms with that. I’m
+also rediscovering the privilege of learning about things you’re
+interested in for no goal but to learn about these things; I’m not
+trying to become the next Elon Musk. For instance, I’ve recently become
+interested in developer tooling like
+Semantic<sup class="footnote">[<a id="_footnoteref_9" class="footnote" href="#_footnotedef_9" title="View footnote.">9</a>]</sup> and
+strongly typed programming languages like Haskell and ReScript. I’m
+learning them when I feel like it and as slow as I want to. I’m also a
+chemistry nerd at heart, so I’ve added a biochemistry minor to my degree
+for no purpose but to nerd out in biochemistry changed my major to
+computer science and chemistry so I can nerd out in chemistry classes.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_so_what_am_i_doing_now">So what am I doing now?</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>I’m not attending hackathons until I see that hackathons can become
+places where you are only expected to learn and to tinker, and there’s
+no pressure to become the next startup or solve some worldwide (or
+local) problem. I’ve also stopped organizing hackathons. I’m also just learning topics that interest me,
+in my free time and at school.</p>
+</div>
+</div>
+</div>
+<div id="footnotes">
+<hr>
+<div class="footnote" id="_footnotedef_1">
+<a href="#_footnoteref_1">1</a>. Costanza-Chock, S. (2020). Design Justice. The MIT Press.
+</div>
+<div class="footnote" id="_footnotedef_2">
+<a href="#_footnoteref_2">2</a>. <a href="https://jzhao.xyz/posts/hackathons">Hacking the Hackathon</a>
+</div>
+<div class="footnote" id="_footnotedef_3">
+<a href="#_footnoteref_3">3</a>. <a href="https://www.quora.com/Why-might-someone-really-like-programming-contests-but-have-no-desire-to-go-to-a-hackathon">Why might someone really like programming contests but have no desire to go to a hackathon?</a>
+</div>
+<div class="footnote" id="_footnotedef_4">
+<a href="#_footnoteref_4">4</a>. <a href="https://dev.to/shobhitic/why-i-am-not-going-to-attend-hackathons-anymore-2896">Why I am not going to attend Hackathons anymore</a>
+</div>
+<div class="footnote" id="_footnotedef_5">
+<a href="#_footnoteref_5">5</a>. <a href="https://thedailytexan.com/2018/05/02/fall-out-of-love-with-the-hackathon/">Fall out of love with the Hackathon</a>
+</div>
+<div class="footnote" id="_footnotedef_6">
+<a href="#_footnoteref_6">6</a>. <a href="https://reasonml.github.io/blog/2017/09/08/messenger-50-reason">Messenger.com Now 50% Converted to Reason</a>
+</div>
+<div class="footnote" id="_footnotedef_7">
+<a href="#_footnoteref_7">7</a>. Colwell, R. R., Huq, A., Islam, M. S., Aziz, K. M. A., Yunus, M., Khan, N. H., … Russek-Cohen, E. (2003). Reduction of cholera in Bangladeshi villages by simple filtration. Proceedings of the National Academy of Sciences, 100(3), 1051–1055. doi:10.1073/pnas.0237386100
+</div>
+<div class="footnote" id="_footnotedef_8">
+<a href="#_footnoteref_8">8</a>. <a href="https://www.encyclopedia.com/places/asia/iranian-political-geography/sari">Sari</a>
+</div>
+<div class="footnote" id="_footnotedef_9">
+<a href="#_footnoteref_9">9</a>. <a href="https://github.com/github/semantic">Semantic</a>
+</div>
+</div>
+
+    </div>
+    <p><a href="../../archive/">◀ Back to posts</a></p>
+</div>
+
+        </main>
+        
+        <footer>
+<center><p><a href="https://twitter.com/hoalycu" target="_blank">twitter</a> <a href="https://github.com/lhao03" target="_blank">github</a> <a href="https://www.linkedin.com/in/lucy-hao/" target="_blank">linkedin</a></p></center>
+            Site powered by cats, 🍫 and 
+            <a href="http://jaspervdj.be/hakyll">Hakyll</a>
+        </footer>
+    </body>
+</html>

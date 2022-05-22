@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Lucy H | Paper: Guiding Target Synthesis with Statistical Modeling Tools: A Case Study in Organocatalysis</title>
+        <link rel="stylesheet" href="../../../css/main.css" />
+
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="preconnect" href="https://www.google-analytics.com" />
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-KDGPVMHC9Q"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-KDGPVMHC9Q');
+        </script>
+
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@hoalycu" />
+        <meta name="twitter:creator" content="@hoalycu" />
+        <meta property="og:title" content="Paper: Guiding Target Synthesis with Statistical Modeling Tools: A Case Study in Organocatalysis" />
+        
+        
+        <meta property="og:url" content="/posts/notes/organocatalysis" />
+        
+        
+
+        <!-- basic favicon -->
+        <link rel="icon" href="../../../images/android-chrome-384x384.png" /> 
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../../images/android-chrome-384x384.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../../images/android-chrome-384x384.png">
+        <link rel="apple-touch-icon-precomposed" href="../../../images/android-chrome-384x384.png">
+    </head>
+
+
+        <body>
+        <header>
+            <div class="logo">
+                <a href="../../../">
+                <img src="../../../images/android-chrome-384x384.png" alt="Me">
+                </a>
+            </div>
+        </header>
+
+        <main role="main">
+            <h1>Paper: Guiding Target Synthesis with Statistical Modeling Tools: A Case Study in Organocatalysis</h1>
+            <div>
+    <div class="header">
+        Posted on April 27, 2022
+        
+    </div>
+<div class="info">
+    
+    Tags: <a title="All pages tagged 'chem'." href="../../../tags/chem/index.html">chem</a>, <a title="All pages tagged 'paper'." href="../../../tags/paper/index.html">paper</a>
+    
+</div>
+    <div>
+        <p><em>Understanding = 4, Interest: 7</em></p>
+<p>Guiding Target Synthesis with Statistical Modeling Tools: A Case Study in Organocatalysis
+Isaiah O. Betinol, Yutao Kuang, and Jolene P. Reid
+Organic Letters 2022 24 (7), 1429-1433
+DOI: <a href="https://doi.org/10.1021/acs.orglett.1c04134">10.1021/acs.orglett.1c04134</a></p>
+<ul>
+<li><p>reactions with considerable synthetic effort with uncertain results are not likely to be explored.</p></li>
+<li><p><a href="https://www.sciencedirect.com/topics/chemistry/organocatalyst">organocatalyst</a>: mimic enzyme catalysis that Mother Nature uses to control and regulate both biologically important reactions and synthesis of secondary metabolites.</p>
+<ul>
+<li>enantioselective: use of chiral coordination complexes as catalysts</li>
+</ul></li>
+<li><p>use Statistical models to distinguish between different catalysts and reactions to guide selection of synthetic routes.</p></li>
+<li><p>reactions optimized on simple substrates often fail on similar, but more complex systems due to differences in reaction requirements.</p>
+<ul>
+<li>there are limited amounts of high-value substrates</li>
+<li>use of multivariate linear regression as a tool to change in any reaction component will alter the experimental outcome.</li>
+</ul></li>
+</ul>
+<p>prediction tasks (taken directly from the paper)
+- Despite the diverse structural features embedded in target molecules, is it possible to predict the enantioselectivity of key steps toward their synthesis?
+- If so, can this be applied toward both complex scaffolds and single-molecule targets?
+- Finally, when different catalysts and reactions can be utilized to generate the same products, can statistical models allow the selection of the best synthetic route?</p>
+<ul>
+<li><p>three literature reactions that produced functionalized indole structures from enamine and in situ-generated iminiums</p></li>
+<li><p>goal: exrapolate to new reaction types that provide varying levels of enantioselectivity, catalyst was highly represented in training set but iminium and enamine was not.</p>
+<ul>
+<li>hmm</li>
+</ul></li>
+<li><p>model highlights iminium, nucleophile and catalyst as important contributors to enantioselectivity, required steps for ee (enantiomeric excess) prediction are:</p>
+<ul>
+<li>locate ground state of these reactions by DFT (density functional theory)</li>
+<li>obtain relevent model descriptors shown</li>
+<li>submit to mathematical equation</li>
+</ul></li>
+<li><p>model captures that 2-naphthyl-derived chiral phosphates will provide excellent levels of enantioselectivity even though training reactions emphasze importance of large catalyst groups for high ee.</p>
+<ul>
+<li>model clearly explains why these substrates work well with less bulky catalysts</li>
+</ul></li>
+<li><p>most significant contrast between target reaction and similar reactions: both nucleophile and iminium have large steric profiles.</p>
+<ul>
+<li>suggests matching a bulky nucleophile and iminium produces enhanced repulsive interactions with catalyst substituents in the TS leading to competing enantiomer.
+<ul>
+<li>high enantioselectivities can be obtained with smaller catalysts when they are paired with large reactants</li>
+</ul></li>
+<li>expanded to transformations catalyzed by secondary amines.
+<ul>
+<li>model describes reaction between aldehydes and reactants that proceed via chiral iminium/enamine intermediates.</li>
+<li>these reactions undergo formation of stereocenters implanted within common functional groups =&gt; these functional groups can undergo changes for product diversity =&gt; can model predict this step</li>
+<li>because there is a lot of important structural motifs</li>
+</ul></li>
+</ul></li>
+<li><p>model did well on amination reaction that was well represented</p></li>
+<li><p>challenged the model to predict enantioselectivity of alkenylation and Friedel-Crafts reactions</p>
+<ul>
+<li>model correctly predicted an alkenylation reactions that combine copper and secondary amine catalyst</li>
+<li>model can also effectively predict enantioselectivity outcome of Diels-Alder cyclization cascade even though this wasn’t represented in training set.</li>
+</ul></li>
+<li><p>model predicted using secondary amine catalyst would result in higher ee compared with chiral phosphate catalyst (consistent with experiment)</p>
+<ul>
+<li>model also suggests the choice is not critical since both catalysts show relatively high performance
+<ul>
+<li>other factors like cost or accessibility could lead in choosing a catalyst</li>
+</ul></li>
+</ul></li>
+</ul>
+    </div>
+    <p><a href="../../../archive/">◀ Back to posts</a></p>
+</div>
+
+        </main>
+        
+        <footer>
+<center><p><a href="https://twitter.com/hoalycu" target="_blank">twitter</a> <a href="https://github.com/lhao03" target="_blank">github</a> <a href="https://www.linkedin.com/in/lucy-hao/" target="_blank">linkedin</a></p></center>
+            Site powered by cats, 🍫 and 
+            <a href="http://jaspervdj.be/hakyll">Hakyll</a>
+        </footer>
+    </body>
+</html>

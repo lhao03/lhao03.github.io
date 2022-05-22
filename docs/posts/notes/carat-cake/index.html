@@ -1,0 +1,888 @@
+<!doctype html>
+<html lang="en">
+  <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Lucy H | Paper: CARAT CAKE: Replacing Paging via Compiler/Kernel Cooperation</title>
+        <link rel="stylesheet" href="../../../css/main.css" />
+
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="preconnect" href="https://www.google-analytics.com" />
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-KDGPVMHC9Q"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-KDGPVMHC9Q');
+        </script>
+
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@hoalycu" />
+        <meta name="twitter:creator" content="@hoalycu" />
+        <meta property="og:title" content="Paper: CARAT CAKE: Replacing Paging via Compiler/Kernel Cooperation" />
+        
+        
+        <meta property="og:url" content="/posts/notes/carat-cake" />
+        
+        
+
+        <!-- basic favicon -->
+        <link rel="icon" href="../../../images/android-chrome-384x384.png" /> 
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../../images/android-chrome-384x384.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../../images/android-chrome-384x384.png">
+        <link rel="apple-touch-icon-precomposed" href="../../../images/android-chrome-384x384.png">
+    </head>
+
+
+        <body>
+        <header>
+            <div class="logo">
+                <a href="../../../">
+                <img src="../../../images/android-chrome-384x384.png" alt="Me">
+                </a>
+            </div>
+        </header>
+
+        <main role="main">
+            <h1>Paper: CARAT CAKE: Replacing Paging via Compiler/Kernel Cooperation</h1>
+            <div>
+    <div class="header">
+        Posted on May  1, 2022
+        
+    </div>
+<div class="info">
+    
+    Tags: <a title="All pages tagged 'operating systems'." href="../../../tags/operating%20systems/index.html">operating systems</a>, <a title="All pages tagged 'paper'." href="../../../tags/paper/index.html">paper</a>
+    
+</div>
+    <div>
+        <div class="paragraph">
+<p><em>Understanding: 7, Interest: 8</em></p>
+</div>
+<div class="paragraph">
+<p>Brian Suchy, Souradip Ghosh, Drew Kersnar, Siyuan Chai, Zhen Huang,
+Aaron Nelson, Michael Cuevas, Alex Bernat, Gaurav Chaudhary, Nikos
+Hardavellas, Simone Campanoni, and Peter Dinda. 2022. CARAT CAKE:
+replacing paging via compiler/kernel cooperation. In Proceedings of the
+27th ACM International Conference on Architectural Support for
+Programming Languages and Operating Systems (ASPLOS 2022). Association
+for Computing Machinery, New York, NY, USA, 98–114.
+<a href="https://doi.org/10.1145/3503222.3507771" class="bare">https://doi.org/10.1145/3503222.3507771</a></p>
+</div>
+<div class="sect1">
+<h2 id="_1_intro">1 intro</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>paging requires hardware/software codesign spanning the hardware to
+main memory to deepest levels of the kernel</p>
+</li>
+<li>
+<p>hardware structures supporting virtual memory address translation
+together require same area as L1 cache</p>
+</li>
+<li>
+<p>TLB consumes a lot of energy and is thermal hot spot (13% of core
+power, 20-38% L1 cache energy)</p>
+</li>
+<li>
+<p>coupling of L1 cache and TLB (cache can start lookup in parallel with
+TLB lookup) limits numbers of sets in L1 cache, guarding against
+synonyms since cache is indexed by LSBs common to physical and virtual
+address</p>
+</li>
+<li>
+<p>CARAT removes this limitation ⇒ L1 cache could provide higher
+performance without needing to increase associativity</p>
+</li>
+<li>
+<p>compiler technology has been advancing ⇒ more available through
+vehicles such as LLVM</p>
+</li>
+<li>
+<p>CARAT can operate without hardware support</p>
+<div class="ulist">
+<ul>
+<li>
+<p>using compiler transformations along with runtime system to maintain
+precise view of a running program’s memory at granularity of program
+objects.</p>
+</li>
+<li>
+<p>transformations operate at level of the compiler intermediate
+representation (LLVM IR), CARAT is applicable to many unmanaged
+languages</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>previous work only demonstrated implementation/evaluation at the user
+level, basically on top of paging within Linux process</p>
+</li>
+<li>
+<p>now will address the challenges posed by kernal</p>
+</li>
+<li>
+<p>CARAT CAKE: kernal-based implementation of CARAT concept</p>
+<div class="ulist">
+<ul>
+<li>
+<p>extend existing single address space (Nautilus)</p>
+</li>
+<li>
+<p>compiler transformations applied to user programs and kernel</p>
+<div class="ulist">
+<ul>
+<li>
+<p>user programs linked and signed</p>
+</li>
+<li>
+<p>Nautilus loads signed user programs directly into kernel, running
+alongside kernel in kernel mode</p>
+</li>
+<li>
+<p>protection achieved by compiler toolchain introducing protection
+checks</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_2_1_software">2.1 software</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>use LLVM framework, level of LLVM intermediate representation
+(LLVM-IR) within the middle end</p>
+<div class="ulist">
+<ul>
+<li>
+<p>middle end provides API to develop custom program-wide code analyses
+and transformations</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Clang is frontend, but middle end allows CARAT CAKE to be used with
+numerous other language frontends to LLVM</p>
+</li>
+<li>
+<p>Whole-Program LLVM (WLLVM/GLLVM): extends LLVM compilation to
+aggregate all LLVM bitcode in a project that uses separate compilation</p>
+<div class="ulist">
+<ul>
+<li>
+<p>CARATE CAKE must target entire applications and entire kernel:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>WLLVM allows CARAT CAKE transformations to run on entire kernel at
+once</p>
+</li>
+<li>
+<p>whole-kernel bitcode source allows CARAT CAKE transformations to
+consider entire kernel as one module</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>NOELLE: provides high level abstractions on top of LLVM that allow for
+aggressive analyses and transformations</p>
+<div class="ulist">
+<ul>
+<li>
+<p>CARAT CAKE utilizes data flow engine, invariants and induction
+variables and dependence analysis to generate Program Dependence Graph
+(PDG) of program being compiled</p>
+</li>
+<li>
+<p>overheard of CARAT CAKE is inversely related to accuracy of PDG</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Nautilus Kernel Framework: open source kernel codebase</p>
+<div class="ulist">
+<ul>
+<li>
+<p>contains minimal set of features needed to support a tailored
+parallel run-time environment, avoiding general purpose features that
+inhibit scalability</p>
+</li>
+<li>
+<p>designed with goal of hybrid run-times</p>
+</li>
+<li>
+<p>HRT: mashup of extremely lightweight OS kernel framework and parallel
+run-time system</p>
+</li>
+<li>
+<p>all addresses mapped at boot, no swapping or page movement ⇒ TLB
+misses are rare and if TLB entries can cover physical address space of
+machine, there are no page faults</p>
+</li>
+<li>
+<p>memory management (including for NUMA) is explicit and allocations
+are done with buddy system allocators</p>
+</li>
+<li>
+<p>core set of I/O drivers have interrupt handler logic with
+deterministic path lengths</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>address space (ASpace) was added</p>
+<div class="ulist">
+<ul>
+<li>
+<p>memory map of regions, similar to <code>mm_struct</code> but designed without
+assumption of paging</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_3">3</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>escape: any reference to an Allocation stored outside of the initial
+Allocation pointer</p>
+</li>
+<li>
+<p>contained escape: an escape that is stored within an Allocation. This
+represents a subset of the Escapes within a program</p>
+</li>
+<li>
+<p>guard: protection check before memory access that ensures proper
+access permissions</p>
+</li>
+<li>
+<p>naive approach to software-based memory management and protection is
+horrifically slow</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>goal</strong>: provide the same capabilities as the traditional paging model
+<strong>trusted computing base</strong>: CARAT approach is based on trust relationship
+between kernel and compiler toolchain - expansion of software TCB is in
+the analysis and transformations added to compiler toolchain to suppoer
+CARAT and is offset by decrease is size and complexity of hardware TCB</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>compiler transforms the intermediate representation of all code,
+injecting runtime calls that match memory management features provided
+by paging</p>
+</li>
+<li>
+<p>Allocations and Escapes are tracked; all allocations produced from
+unmanaged language and visible at IR level are tracked</p>
+</li>
+<li>
+<p>compiler injects code that works at granularity of Allocations,
+instead of page granularity</p>
+</li>
+<li>
+<p>software checks, Guards, replace hardware-level checks</p>
+<div class="ulist">
+<ul>
+<li>
+<p>each memory access at IR level has Guard introduced before it</p>
+</li>
+<li>
+<p>protection of stack achieved by introducing Guards before calls</p>
+</li>
+<li>
+<p>Guard calls out to runtime to check</p>
+</li>
+<li>
+<p>with good CARAT-specific compiler optimizations, it is possible to
+avoid most direct protection checks ⇒ central to good performance</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>CARAT uses tracking information maintained by runtime to patch all
+relevant Escapes (when needing to move Allocations)</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_3_2_user_level_prototype">3.2 User-Level Prototype</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>compiler toolchain has specially-developed custom data flow analysis,
+loop invariant analysis and induction variable analysis to omit
+redundant guard checks</p>
+</li>
+<li>
+<p>reduce dynamically-encountered guards</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_3_3_benefits_of_carat_based_system">3.3 benefits of CARAT-Based System</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_no_more_address_translation_hardware">no more address translation hardware</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>no TLB misses because no more
+TLB</p>
+</li>
+<li>
+<p>save memory the size of L1 cache</p>
+</li>
+<li>
+<p>removal of synonyms/homonyms
+from cache design ⇒ larger L1 caches</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_software_benefits">software benefits</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>memory can be managed at an arbitrary granularity</p>
+</li>
+<li>
+<p>improvement of CARAT software would increase performance of existing
+programs on existing hardware</p>
+</li>
+<li>
+<p>no longer need to test and verify
+hardware of address translation</p>
+</li>
+<li>
+<p>bugs in protection/management fixed by
+software updates rather than microcode patching or major abstraction
+changes</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_4_design_and_implementation_baking_a_carat_cake">4 design and implementation: baking a CARAT CAKE</h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="_4_1_system_and_design_choices">4.1 system and design choices</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>centered around mapping and protection</p>
+</li>
+<li>
+<p>compiler:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>performs analysis and transformation to propel Allocation/Escape
+Tracking within kernel/user programs ⇒ memory mapping/movement</p>
+</li>
+<li>
+<p>guard injections</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>kernel: manage single physical address space in which all code and
+data coexist</p>
+<div class="ulist">
+<ul>
+<li>
+<p>allocates Memory Regions and groups them into ASpaces, which then
+kernel can delegate, expand, assign to entities needing memory</p>
+</li>
+<li>
+<p>entities include kernel itself and processes</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>compiler’s instrumentation of kernel/user programs + runtime ⇒ memory
+tracking and protections per ASpace</p>
+</li>
+<li>
+<p>memory and protections are managed at level of Memory Regions</p>
+<div class="ulist">
+<ul>
+<li>
+<p>can be of arbitrary size ⇒ external fragmentation is concern</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>compiler performs protections/tracking via statis
+analysis/transformations of application code ⇒ user-level developres
+don’t need to know about CARAT-based system below.</p>
+</li>
+<li>
+<p>kernel builds stacks, heaps, for process by chucking physical memory
+directly without address translation</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_4_2_compiler">4.2 compiler</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>CARAT CAKE compiler instruments both user and kernel code to track
+Allocations and Escapes and guide memory references in user code</p>
+<div class="ulist">
+<ul>
+<li>
+<p>now responsible for enforcing protections</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>intertwines tracking and protections with kernel-level permissions</p>
+</li>
+<li>
+<p>apply Address Checking for Data Custody data-flow analysis from
+previous work, loop invariant analysis, scalar evaluation analysis</p>
+</li>
+<li>
+<p>generalize compiler so it knows how to manage/optimize programs memory
+management at IR level where underlying assumptions about
+semantics/safety of memory accesses can differ</p>
+</li>
+<li>
+<p>compiler can elide guards for the following types of references:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>explicit stack locations on IR</p>
+<div class="ulist">
+<ul>
+<li>
+<p>references within bounds of stack that the kernel set up itself and
+hands to program</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>global variables</p>
+<div class="ulist">
+<ul>
+<li>
+<p>section of executable that kernel will load and verify for the
+program</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>memory received from library allocator (malloc)</p>
+<div class="ulist">
+<ul>
+<li>
+<p>from region that kernel allocates and controls who it gives access
+to</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>compiler passes that inject guards use NOELLE’s PDG to do this
+efficiently</p>
+</li>
+<li>
+<p>in loop/nested loops, NOELLE finds induction variable(s) and CARAT
+CAKE can use them to compute bounds that an IR memory instruction uses
+⇒ enforce protection using these bounds</p>
+<div class="ulist">
+<ul>
+<li>
+<p>when induction variable analysis is not sufficient, revert to scalar
+evolution-based protection</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>user programs: whole program compilation and optimization to all
+targets</p>
+<div class="ulist">
+<ul>
+<li>
+<p>tracking and protections passes</p>
+</li>
+<li>
+<p>final bitcode prepared to be compiled into object code and linked
+specially for the kernel</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>kernel compilation: apple whole program compilation, NOELLE’s
+normalizaiton and enabler passes to entire kernel</p>
+<div class="ulist">
+<ul>
+<li>
+<p>only tracking pass applied</p>
+</li>
+<li>
+<p>no guards injected by default ⇒ behaves like monolithic kernel with
+paging</p>
+</li>
+<li>
+<p>CARAT CAKE can allow kernel to disable tracking for certain parts
+because it is part of TCB.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_4_3_kernel">4.3 kernel</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>process: address space combined with thread group</p>
+</li>
+<li>
+<p>specialized ASpace: set of memory regions (permissions and constructs
+of user program), set of threads currently assigned to it.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>kernel exists as memory region mapped into each ASpace but is only
+accessible from user process through valid front/back door</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>tracking: compiler’s tracking callbacks drive edits to AllocationTable</p>
+<div class="ulist">
+<ul>
+<li>
+<p>AllocationTable: maping between initialization pointers and
+Allocations</p>
+</li>
+<li>
+<p>each ASpace contains an AllocationTable</p>
+</li>
+<li>
+<p>needs to store metadata and Escapes to Allocations</p>
+</li>
+<li>
+<p>kernel CARAT CAKE runtime manages memory across all existing ASpaces
+⇒ manage entire physical address space</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>protection: protection check of adress invoked by Guard Injection or
+Guard, determines if address is member of set of Memory Regions in
+ASpace</p>
+<div class="ulist">
+<ul>
+<li>
+<p>requires CARAT CAKE runtime to perform lookup in ASpace using memory
+addresses as keys</p>
+</li>
+<li>
+<p>real execution time of region lookup can worsen as number of regions
+increase ⇒ individual Guard must be optimized for performance</p>
+<div class="ulist">
+<ul>
+<li>
+<p>optimization: addresses vetted in simple hierarchical manner. large
+portion of memory accesses and references interact with stack or global
+state of program</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>movement: to improve inefficiencies that accumulate over time
+(fragmentation)</p>
+<div class="ulist">
+<ul>
+<li>
+<p>paging: relies on ability to manipulate the virtual to physical
+address mappings</p>
+</li>
+<li>
+<p>CARAT CAKE: must actually move memory during each update ⇒ can be
+accomplished because CARAT CAKE system is omnipotent</p>
+<div class="ulist">
+<ul>
+<li>
+<p>system can perform hierarchy of different kinds of moves, with each
+layer relying on the last</p>
+</li>
+<li>
+<p>without mappings, moving an Allocation generates new destination
+address and triggers a patch of all objects or instructions in program</p>
+</li>
+<li>
+<p>CARAT CAKE performs this change in mapping ``eagerly''</p>
+</li>
+<li>
+<p>patching: pointing each Escape to the Allocations new address</p>
+<div class="ulist">
+<ul>
+<li>
+<p>caveats: register allocation; Allocation may escape to a register
+or to spilled location on stack ⇒ CARAT CAKE scans program stack and
+register state to patch such escapes</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>defragmentation: rely on hierarchy</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_4_4_other_implementation_aspects">4.4 other implementation aspects</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>granularity and alignment:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>CARAT CAKE has byte granularity, while paging has page granularity</p>
+</li>
+<li>
+<p>reality is CARAT CAKE operates at different granularities</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>address space abstraction data structures: regions can be
+allocated/delegated for processes to use by adding to a processe’s
+ASpace</p>
+<div class="ulist">
+<ul>
+<li>
+<p>memory map: set of regions</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>library allocators: allow all CARATIzed user programs to use malloc</p>
+<div class="ulist">
+<ul>
+<li>
+<p>CARAT CAKE allocates and expends each heap’s memory as contiguous
+Region of physical memory ⇒ mimics invariants assumed by malloc</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>tracking stack allocations: does not track each stack variable; treats
+entire stack as singular Allocation</p>
+<div class="ulist">
+<ul>
+<li>
+<p>restricts stack to being single contiguous chuck of memory which can
+be expanded</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>resolving race between guards and protection changes: limited
+permission-changing functionality ⇒ no turning back permissions mode</p>
+<div class="ulist">
+<ul>
+<li>
+<p>when Guard is invoked and permission check succeeds, permissions are
+stored</p>
+</li>
+<li>
+<p>permissions can only be downgraded, but compiler could introduce code
+to release the region</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_5_3_carat_cake_and_the_trusted_back_door">5.3 CARAT CAKE and the Trusted Back Door</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>only injected code has access to trusted backdoor into kernel</p>
+</li>
+<li>
+<p>no system calls are involved in using the trusted backdoor ⇒ quickly
+invoke kernel</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_6_evaluation">6 evaluation</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>steady-state operation: kernel is making few changes to virtual to
+physical mapping (for paging), physical location of allocations (for
+CARAT CAKE) or protections</p>
+<div class="ulist">
+<ul>
+<li>
+<p>comparable to Linux; tracking and protections overheads from
+compiler-injected CARAT CAKE code in kernel and user program are not
+that big</p>
+</li>
+<li>
+<p>CARAT CAKE is still using paging because it can’t deactivate it on
+x64 ⇒ still paying TLB cost</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>engineering investment:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>CARAT CAKE needs expansion of software TCB</p>
+</li>
+<li>
+<p>compiler bug</p>
+<div class="ulist">
+<ul>
+<li>
+<p>paging: consequence is random kernel bug</p>
+</li>
+<li>
+<p>CARAT CAKE: could subvert protection</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>hardware bug: CARAT CAKE avoids</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_generality_and_future_work">generality and future work</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>JIT: protection and tracking done dynamically vs. statically</p>
+</li>
+<li>
+<p>garbage collection: CARAT CAKE defragmenter with language specific
+garbage collectors</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+    </div>
+    <p><a href="../../../archive/">◀ Back to posts</a></p>
+</div>
+
+        </main>
+        
+        <footer>
+<center><p><a href="https://twitter.com/hoalycu" target="_blank">twitter</a> <a href="https://github.com/lhao03" target="_blank">github</a> <a href="https://www.linkedin.com/in/lucy-hao/" target="_blank">linkedin</a></p></center>
+            Site powered by cats, 🍫 and 
+            <a href="http://jaspervdj.be/hakyll">Hakyll</a>
+        </footer>
+    </body>
+</html>

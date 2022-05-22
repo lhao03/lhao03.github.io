@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+  <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Lucy H | Paper: Understanding and Exploiting Optimal Function Inlining</title>
+        <link rel="stylesheet" href="../../../css/main.css" />
+
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="preconnect" href="https://www.google-analytics.com" />
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-KDGPVMHC9Q"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-KDGPVMHC9Q');
+        </script>
+
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@hoalycu" />
+        <meta name="twitter:creator" content="@hoalycu" />
+        <meta property="og:title" content="Paper: Understanding and Exploiting Optimal Function Inlining" />
+        
+        
+        <meta property="og:url" content="/posts/notes/optimal-function-inlining" />
+        
+        
+
+        <!-- basic favicon -->
+        <link rel="icon" href="../../../images/android-chrome-384x384.png" /> 
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../../images/android-chrome-384x384.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../../images/android-chrome-384x384.png">
+        <link rel="apple-touch-icon-precomposed" href="../../../images/android-chrome-384x384.png">
+    </head>
+
+
+        <body>
+        <header>
+            <div class="logo">
+                <a href="../../../">
+                <img src="../../../images/android-chrome-384x384.png" alt="Me">
+                </a>
+            </div>
+        </header>
+
+        <main role="main">
+            <h1>Paper: Understanding and Exploiting Optimal Function Inlining</h1>
+            <div>
+    <div class="header">
+        Posted on May  4, 2022
+        
+    </div>
+<div class="info">
+    
+    Tags: <a title="All pages tagged 'inlining'." href="../../../tags/inlining/index.html">inlining</a>, <a title="All pages tagged 'paper'." href="../../../tags/paper/index.html">paper</a>
+    
+</div>
+    <div>
+        <div class="paragraph">
+<p><em>Understanding: 6.5, Interest: 9</em></p>
+</div>
+<div class="paragraph">
+<p>Theodoros Theodoridis, Tobias Grosser, and Zhendong Su. 2022.
+Understanding and Exploiting Optimal Function Inlining. In Proceedings
+of the 27th ACM International Conference on Architectural Support for
+Programming Languages and Operating Systems (ASPLOS ’22), February 28 -
+March 4, 2022, Lausanne, Switzerland. ACM, New York, NY, USA, 13 pages.
+<a href="https://doi.org/10.1145/3503222.3507744" class="bare">https://doi.org/10.1145/3503222.3507744</a></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>inlining functions enables other optimizations because you can now see
+the function body</p>
+</li>
+<li>
+<p>however choosing which functions to inline are nontrivial because
+inlining a function can affect the rest of the compiler pipeline</p>
+</li>
+<li>
+<p>outperforms state-of-the-art LLVM by 7% on average</p>
+</li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="_1_introduction">1 introduction</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>inlining can enable to dead code elimination or lead to code size
+bloat</p>
+</li>
+<li>
+<p>inlining is as hard as knapsack NP-complete problem; so there’s many
+heuristics</p>
+<div class="ulist">
+<ul>
+<li>
+<p>heuristic: trial and error method</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>no systematic study to investigate optimal inlining</p>
+</li>
+<li>
+<p>focus on reducing binary size: deterministic and does not depend on workload selection, while performance does</p>
+</li>
+<li>
+<p>straightforward search space is <em>2^n</em>, where <em>n</em> is the number of inlinable call sites</p>
+</li>
+<li>
+<p>local independence property ⇒ autotuning strategy</p>
+</li>
+</ul>
+</div>
+<div class="sect3">
+<h4 id="_contributions_made">contributions made</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>novel formulation of the search space</p>
+</li>
+<li>
+<p>first extensive systematic study of optimal inlining</p>
+</li>
+<li>
+<p>simple, effective inlining autotuning strategy</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_2_background">2 background</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>inlining may introduce multiple copies of the same call</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_3_formulate_the_inlining_search_space">3 formulate the inlining search space</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>given a call graph <em>G</em> with <em>|E_G|</em> edges, <em>2^|E_G|</em> configurations exist, and all of them must
+be evaluated to to find the optimal</p>
+</li>
+<li>
+<p>independent components can be independently explored</p>
+</li>
+<li>
+<p>connected components: are independent w.r.t inlining</p>
+</li>
+<li>
+<p>not inlining a bridge is identical to deleting it w.r.t inlining:
+additional independent components are created</p>
+<div class="ulist">
+<ul>
+<li>
+<p>bridge: edge that when removed will increase the # of connected
+components</p>
+</li>
+<li>
+<p>each inlined call can potentially extend the scope of compiler
+transformations</p>
+</li>
+<li>
+<p>inlining callgraph <em>B</em> that connects two call graph components is the
+only way to combine their optimization scopes</p>
+<div class="ulist">
+<ul>
+<li>
+<p>if <em>B</em> is not inlined the components can be independently searched</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>partitioning the search space can potentially lead to a smaller search
+space</p>
+</li>
+<li>
+<p>new bridges are created as callgrpah is dynamically updated by
+removing non-inlined edges or merged nodes across inlined ones ⇒ used
+to reduce the search space</p>
+</li>
+<li>
+<p>can be visualized through an inlining tree (it’s recursive!)</p>
+<div class="ulist">
+<ul>
+<li>
+<p>outgoing edges are labeled inline or no-inline</p>
+</li>
+<li>
+<p>each path from root to leaf is inlining configuration</p>
+</li>
+<li>
+<p>the search space is the number of <code>InliningTreeLeafs</code> plus the number
+of <code>InliningTreeComponentNodes</code> in the tree</p>
+<div class="ulist">
+<ul>
+<li>
+<p>each leaf corresponds to a partial inline configuration and each set
+of independent inlining components require an extra evaluation to
+combine the best child configurations</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>partition edge selection: prioritize bridges so many independent
+components arise</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_5_local_inlining_autotuner_for_size">5 local inlining autotuner for size</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>a large percentage of edges is not inlined</p>
+</li>
+<li>
+<p>shorter inlined call chains are more prevalent</p>
+</li>
+<li>
+<p>all optimally inlined call chains contain only one edge, so they are
+either in different connected call graph components or no inlined edges
+connect them</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+    </div>
+    <p><a href="../../../archive/">◀ Back to posts</a></p>
+</div>
+
+        </main>
+        
+        <footer>
+<center><p><a href="https://twitter.com/hoalycu" target="_blank">twitter</a> <a href="https://github.com/lhao03" target="_blank">github</a> <a href="https://www.linkedin.com/in/lucy-hao/" target="_blank">linkedin</a></p></center>
+            Site powered by cats, 🍫 and 
+            <a href="http://jaspervdj.be/hakyll">Hakyll</a>
+        </footer>
+    </body>
+</html>
