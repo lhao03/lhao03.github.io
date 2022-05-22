@@ -1,0 +1,147 @@
+---
+title: "Paper: From Principles to Practice with Class in the First Year"
+date: 2022-04-28
+tags:   computer science education, paper
+---
+
+_Understanding: 8, Interest: 8_
+
+Tobin-Hochstadt, S., & Van Horn, D. (2013). From Principles to Practice
+with Class in the First Year. Electronic Proceedings in Theoretical
+Computer Science, 136, 1–15.
+https://doi.org/10.4204/eptcs.136.1[doi:10.4204/eptcs.136.1]
+
+_In progress_
+
+== My interest in reading the paper
+
+I talked about I noticed students were struggling with the project based
+nature of
+link:how-to-teach-cs-courses/#project-based-courses[CPSC 210] and how I was worried that students were leaving the course without
+a good understanding of OOP. Then I realized maybe the problem isn’t
+just that the course is project based, but that students may be having a
+hard time transitioning from CPSC 110 (functional programming in BSL and
+ASL) to CPSC 210 (OOP in Java).
+
+In fact, I TAed CPSC 210 and remember a student who frequently came to
+me to review questions they got wrong on midterms. The student was a
+hard worker, but just couldn’t wrap their head around OOP. I then took a
+break from CPSC 210 to TA CPSC 110 and was surprised to see the same
+student as a TA for CPSC 110! That got me thinking, this student must
+have done well in CPSC 110 to be TAing the course, but why did they
+struggle in CPSC 210?
+
+I was came across Matthias Felleisen’s
+https://felleisen.org/matthias/Thoughts/Developing_Developers.html[Developing
+Developers] and saw some researchers had the same observation that I did
+about students having confusion when transitioning from functional
+programming to OOP, and they came up with a solution: another course to
+bridge between functional programming and OOP.
+
+== Notes on the paper
+
+* transition from simple language, functional programming, pedagogic IDE
+has obstacles: confusing details of development environments, syntax and
+libraries with fundamentals of OO programming
+* propose a bridge course with sequence of custom teaching languages
+which minimize transition and allow students to focus on key ideas
+
+=== intro
+
+* the issue with using Java in the second term:
+** violates:
+*** include only language constructs that are necessary to teach
+programming language principles
+*** choose language with as few language constructs as possible, and one
+in which they can be introduced one at a time
+* problems with going from pedagogic functional language to Java (large
+gap):
+** highly regular, minimal _(and I think simpler)_ syntax to complicated
+irregular syntax
+** untyped language to typed language
+** pedagogical programming environment to professional programming
+environment
+** from numeric values => mathematical objects to numeric values =>
+common machine representations _(floats?)_
+** language with easy graphical libraries to one which graphical
+programming is tedious
+** from indication-orientated language and tool suite to compiled,
+batch-oriented language
+* the consequences:
+** less focus, emphasis on OOP
+** struggling with the programming environment is frustrating
+** favors students with prior knowledge
+** *creates false impression that courses are discrete units of
+instruction that can be discarded after successful completion rather
+than being part of a continuous and cumulative education experience*
+
+solution: gradual introduction to OOP, by only introducing the concept
+of programming with objects, with other concepts being introduced when
+they are relevant and motived
+
+== Background: the context at Northeastern
+
+* term 1: discrete mathematics and HtDP
+* term 2: OOP and formal reasoning (paper and ACL2 theorem prover)
+
+== A small shift in focus
+
+* introduce idea of an object, to the unchanged context of the previous
+semester
+** pairing of two concepts: data and functionality
+*** data: is like compound data
+*** functionality: set of functions that has behaviour (it computes)
+* suggests objects are natural fit for well-designed programs
+* two important consequences:
+** students already know how to design programs oriented about objects
+*** students know the two concepts (data and functionality), so they
+already know how to design programs, even if they have not heard the
+term ``object'' before
+*** objects enable new kinds of abstraction and composition: open up new
+approaches to construction of computations
+
+== basics of objects
+
+* an object understands some set of messages
+* messages are sent with `send` keyword, followed by object, a message
+name and some number of arguments
+* once students understand `send` use shorthand: `(x . m)` for
+`(send x m)`
+** can be nested: `(x . m . n)` for `(send (send x m) n)`
+* defining methods: extend the set of messages an object understands
+
+== where did cond go?
+
+* in context of binary tree; when a tree object is sent the sum method,
+there is no function with conditional to determine whether the object is
+a leaf, rather the object itself takes care of computing the sum using
+it’s own sum method.
+** shift: objects contain their own behaviour and case analysis
+previously done in functions is eliminated
+
+== worlds
+
+* easy in functional approach to use the state pattern for data
+representing a rocket, it is more difficult to have states of behaviour
+** in functional, would add conditionals to all event handlers
+* in OO: states of behaviour are just as natural as data => leads to
+discussion of inheritance => overriding
+
+== language levels
+
+* intro to OO is built on language levels, each of which introduce
+additional features
+* classes and objects => abbreviated notation for method calls => super
+classes => overriding => constructors
+* all the language levels are purely functional
+** no imperative I/O or side-effects (until transitioning to Java in
+second half of the course)
+* are super set of ISL
+* design of language levels: no features of the language are added
+purely to support "software engineering" concerns
+** there was confusion about relationship between explicit interface
+specifications, type systems and the informal data definitions and
+contracts students had to write => remove interfaces and making them
+purely a specification contract => confusion disappeared
+
+=== # from principles to industrial languages

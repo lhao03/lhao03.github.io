@@ -1,0 +1,49 @@
+@import "variables";
+
+a {
+  color: $fontColor;
+  text-decoration: none;
+}
+
+a {
+  background: linear-gradient(to right, $highlightColor, $highlightColor),
+    linear-gradient(to right, $highlightLeft, $highlightMiddle, $highlightRight);
+  background-size: 100% 3px, 0 3px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+}
+
+a:hover {
+  background-size: 0 3px, 100% 3px;
+}
+
+h1 {
+  font-size: 2.4rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+article .header {
+  font-size: 1.4rem;
+  font-style: italic;
+  color: $fontColor;
+}
+
+.logo {
+  img {
+    width: 100px;
+    @media (max-width: $smallDimensionPlusOne) {
+      width: 50px;
+    }
+  }
+  margin: 0;
+  text-align: left;
+
+  a {
+    background: none;
+    float: left;
+  }
+}

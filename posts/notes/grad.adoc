@@ -1,0 +1,142 @@
+---
+title: Grad Schools
+date: 2022-04-05
+tags: grad
+---
+
+_Updated: 2022-05-15_
+
+== Resources:
+
+* https://koronkevi.ch/posts/applying-to-grad-school.html[Applying to
+Grad School: Programming Languages Edition]
+* https://jxyzabc.blogspot.com/2016/02/my-phd-abridged.html[What My PhD
+Was Like]
+* https://parentheticallyspeaking.org/articles/us-cs-phd-faq/[Getting a
+Computer Science PhD in the USA]
+* https://jeffhuang.com/computer-science-open-data/[Computer Science
+Open Data]
+* https://www.ccs.neu.edu/home/shivers/diss-advice.html[Dissertation
+Advice]
+* https://cs.brown.edu/~sk/Memos/Funding-CS-Grad-School/[CS Master’s
+Funding]
+
+== Topics I’m interested in
+
+* Operating Systems
+* Compilers
+* Programming Languages
+* Computer Science Education
+* Chemical Biology
+* Antiviral strategies & antiviral therapeutics
+
+== Journals/Conferences
+
+* https://dl.acm.org/journal/fac[Formal Aspects of Computing]
+* https://dl.acm.org/journal/tecs[ACM Transactions on Embedded Computing
+Systems]
+* https://dl.acm.org/toc/jetc[ACM Journal on Emerging Technologies in
+Computing Systems]
+* https://dl.acm.org/toc/pacmpl[Proceedings of the ACM on Programming
+Languages]
+* https://dl.acm.org/toc/taco[ACM Transactions on Architecture and Code
+Optimization]
+* https://dl.acm.org/toc/tcbb[IEEE/ACM Transactions on Computational
+Biology and Bioinformatics]
+* https://dl.acm.org/toc/toce[ACM Transactions on Computing Education]
+* https://dl.acm.org/toc/toplas[ACM Transactions on Programming
+Languages and Systems]
+* https://aosabook.org/en/index.html[Architecture of OSS]
+
+== Schools, Advisors, Application Details in no particular order
+
+=== Berkeley
+
+* https://chemistry.berkeley.edu/chem-research[Chemistry]
+** no GRE due to COVID
+* https://chemistry.berkeley.edu/cbe-research[Chemical Engineering]
+** no GRE
+* https://chembio.berkeley.edu/[Chemical Biology]
+** get into Chemistry PhD first
+
+Application Details - superior performance and research experience in
+past two years of undergrad studies - statement of purpose - personal
+history statement - The personal statement should give concrete evidence
+of your promise as a member of the academic community, giving the
+committee an image of you as a person. - This is also where you
+represent your potential to bring to your academic career a critical
+perspective rooted in a non-traditional educational background, or your
+understanding of the experiences of groups historically
+under-represented in higher education and your commitment to increase
+participation by a diverse population in higher education. - 3 letters
+of recommendation
+
+=== CMU
+
+=== MIT
+
+=== UBC
+
+*Chemistry* +
+- https://chem-reid-2020.sites.olt.ubc.ca/publications/[The Reid Group]
+- https://mehr.chem.ubc.ca/[Mehrkhodavandi Research Group] -
+https://withers.chem.ubc.ca/s-withers/[Withers Research Group] -
+https://withers.chem.ubc.ca/research/[research] - how enzymes function
+as such formidable catalysts - The role of non-covalent interactions
+between the enzyme and substrate in stabilisation of ground and
+transition states has held a particular fascination for me, as well as
+the development of methodologies to stabilise or trap intermediates in
+catalysis. Increasingly I am becoming interested in applying our
+understanding to the development of new tools and hopefully
+therapeutics. - https://www.chem.ubc.ca/amani-hariri[Amani Hariri -
+Assistant Professor- Starting January 2023] -
+https://perrin.chem.ubc.ca/?login[David Perrin Research Group] -
+https://tanner.chem.ubc.ca/[Tanner Research Group] -
+https://schafer.chem.ubc.ca/home-page/[The Schafer Group] -
+https://groups.chem.ubc.ca/algar/[Algar Research Group] - interface of
+analytical, biological, physical, and materials chemistry
+
+*Virology* -
+https://www.microbiology.ubc.ca/research/labs/jean/pi[FRANÇOIS JEAN] -
+https://www.microbiology.ubc.ca/research/labs/jean[Lab]
+
+*Computer Science* https://spl.cs.ubc.ca/index.html[SPL] -
+https://www.cs.ubc.ca/~rtholmes/publications.html[Reid Holmes] -
+https://www.cs.ubc.ca/~rxg/#pubs[Ronald Garcia] -
+https://www.williamjbowman.com/papers/index.html[William Bowman]
+
+https://systopia.cs.ubc.ca/[Systopia]
+
+=== Stanford
+
+=== UofT
+
+*Chemistry* - https://helen-t.com/[HELEN TRAN]
+
+=== EPFL
+
+=== University of Cambridge
+
+=== UCLA
+
+*CS* - https://safiyaunoble.com/[Safiya U. Noble, Ph.D.]
+
+=== UWashington
+
+*CS* - https://faculty.washington.edu/ajko/essays[Amy J. Ko, Ph.D.]
+
+=== Brown
+
+*CS* - https://cs.brown.edu/~sk/[Shriram Krishnamurthi]
+
+=== Indiana
+
+* Scheme
+
+=== Northeastern
+
+* Scheme
+
+=== UT Austin
+
+=== ETH Zurich

@@ -1,0 +1,34 @@
+.animal-img {
+  height: 150px;
+  width: auto;
+  @media (max-width: 320px) {
+    height: 75px;
+  }
+}
+
+.bottom-left {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+}
+
+.bottom-right {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+
+.top-right {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  transform: rotate(180deg);
+}
+
+.top-left {
+  max-width: 100px;
+  min-width: 60px;
+  top: 0;
+  margin: 0;
+  z-index: 10000;
+}

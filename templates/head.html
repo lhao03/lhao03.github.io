@@ -1,0 +1,39 @@
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>My Hakyll Blog - $title$</title>
+        <link rel="stylesheet" href="/css/main.css" />
+
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="preconnect" href="https://www.google-analytics.com" />
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-KDGPVMHC9Q"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-KDGPVMHC9Q');
+        </script>
+
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@hoalycu" />
+        <meta name="twitter:creator" content="@hoalycu" />
+        $if(description)$
+        <meta property="og:url" content="$url$" />
+        <meta property="og:title" content="$title$" />
+        <meta property="og:description" content="$description$" />
+        <meta property="og:image" content="$cover_image$" />
+        $else$
+        $endif$
+
+        <!-- basic favicon -->
+        <link rel="icon" href="/images/android-chrome-384x384.png" /> 
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/images/android-chrome-384x384.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/android-chrome-384x384.png">
+        <link rel="apple-touch-icon-precomposed" href="/images/android-chrome-384x384.png">
+    </head>
+

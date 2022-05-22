@@ -1,0 +1,7 @@
+resolver: lts-19.0  # Adapt this as needed
+packages:
+  - .
+extra-deps:
+  - hakyll-4.15.1.1  # Or a later version you installed
+  - hakyll-sass-0.2.4
+system-ghc: true

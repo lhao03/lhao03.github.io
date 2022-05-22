@@ -1,0 +1,30 @@
+@import "variables";
+
+.toc {
+  @media (max-width: $smallDimension) {
+    padding-top: 15px;
+  }
+
+  @media (min-width: $smallDimensionPlusOne) {
+    padding-top: 15px;
+  }
+
+  @media (min-width: $middleDimension) {
+    display: block;
+    overflow-y: auto;
+    padding: 25px;
+    position: fixed;
+    left: 4vw;
+    top: 10vh;
+    height: 80vh;
+    max-width: 20vw;
+  }
+}
+.toc::-webkit-scrollbar {
+  background: none;
+  width: 7px;
+}
+.toc::-webkit-scrollbar-thumb {
+  background-color: $highlightColor;
+  border-radius: 10px;
+}

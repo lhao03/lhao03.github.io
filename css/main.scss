@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Kalam:wght@300;400;700&display=swap");
+@import "background";
+@import "variables";
+@import "letters";
+@import "fun";
+@import "flex";
+@import "blockquote";
+@import "table";
+@import "toc";
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $backgroundColor;
+  font-family: $font;
+  font-size: 1.6rem;
+  color: $fontColor;
+  min-height: 100vh;
+  @media (max-width: $smallDimension) {
+    width: 90%;
+    margin: 0;
+    padding: 0 5%;
+  }
+
+  @media (min-width: $smallDimensionPlusOne) {
+    width: 90%;
+    margin: 0;
+    padding: 0 5%;
+  }
+
+  @media (min-width: $middleDimension) {
+    width: 60rem;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+header {
+  @media (max-width: $smallDimension) {
+    margin: 4.2rem 0;
+  }
+  @media (min-width: $smallDimensionPlusOne) {
+    margin: 4.2rem 0;
+  }
+  @media (min-width: $middleDimension) {
+    margin: 0 0 3rem;
+    padding: 1.2rem 0;
+  }
+}
+
+footer {
+  margin-top: 3rem;
+  padding: 1.2rem 0;
+  border-top: 0.2rem solid $fontColor;
+  font-size: 1.2rem;
+  color: $fontColor;
+  @media (max-width: $smallDimension) {
+    text-align: center;
+  }
+  @media (min-width: $smallDimensionPlusOne) {
+    text-align: center;
+  }
+  @media (min-width: $middleDimension) {
+    text-align: right;
+  }
+}
+
+.content img {
+  width: 100%;
+}
+
+.unselectable {
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}

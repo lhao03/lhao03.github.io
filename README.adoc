@@ -1,0 +1,30 @@
+= lhao03.github.io
+* Written in Hakyll
+
+== Helpful Links
+* https://groups.google.com/g/hakyll/c/ooMEwuiQZ24
+* https://github.com/jaspervdj/hakyll/issues/486
+* https://cabal.readthedocs.io/en/latest/developing-packages.html#editing-the-cabal-file
+* https://github.com/meoblast001/hakyll-sass/blob/master/README.md
+* https://github.com/tnfink/simple-hakyll-sass-foundation-template
+* https://www.rohanjain.in/hakyll-clean-urls/
+* https://github.com/crodjer/rohanjain.in/blob/37d97e6940479a30110cfdb62a873454189b958b/site.hs
+* https://github.com/elaye/hakyll-favicon/blob/master/example/site.hs
+* https://svejcar.dev/posts/2019/10/11/using-sass-with-hakyll/
+* https://github.com/jaspervdj/hakyll/issues/690
+* https://groups.google.com/g/hakyll/c/XewxMLIjRIw
+* https://groups.google.com/g/hakyll/c/IhKmFO9vCIw
+* https://css-tricks.com/css-link-hover-effects/
+
+
+* https://www.youtube.com/watch?v=XSKfHDMXIgg
+* https://dl.acm.org/doi/pdf/10.1145/3461648.3463850
+* https://dl.acm.org/doi/10.1145/3502742
+* https://dl.acm.org/doi/abs/10.1145/3479430
+* https://dl.acm.org/doi/10.1145/3498681
+* https://web.stanford.edu/~cpiech/bio/papers/generativeGrading.pdf
+* https://www.lesswrong.com/posts/7WxH7fAq76Mvkx5YC/a-harmful-idea
+* https://forum.effectivealtruism.org/posts/kageSSDLSMpuwkPKK/response-to-recent-criticisms-of-longtermism-1
+* https://os.phil-opp.com/freestanding-rust-binary/
+* https://dl.acm.org/doi/abs/10.1145/3479430
+* https://willcrichton.net/nota/

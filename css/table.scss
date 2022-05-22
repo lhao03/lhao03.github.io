@@ -1,0 +1,27 @@
+@import "variables";
+
+th,
+td {
+  border: 1px solid $fontColor;
+  color: $fontColor;
+  font-family: $font;
+  padding: 5px;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  margin: 0 auto;
+  overflow-x: auto;
+  // white-space: nowrap;
+}
+table::-webkit-scrollbar {
+  background: none;
+  width: 5px;
+}
+table::-webkit-scrollbar-thumb {
+  background-color: $fontColor;
+  border-radius: 10px;
+}
