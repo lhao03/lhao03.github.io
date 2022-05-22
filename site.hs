@@ -51,8 +51,8 @@ main = hakyllWith config $ do
         >>= loadAndApplyTemplate "templates/default.html" defaultContext
         >>= relativizeUrls
 
-  match "404.md" $ do
-    route appendIndex
+  match "404.html" $ do
+    route idRoute
     compile $
       pandocCompilerWithAsciidoctor
         >>= loadAndApplyTemplate "templates/default.html" defaultContext
