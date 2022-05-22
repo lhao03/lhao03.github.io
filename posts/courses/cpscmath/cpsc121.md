@@ -1,5 +1,6 @@
 ---
-title: "CPSC 121: Models of Computation"
+title: "CPSC 121"
+description: "CPSC 121: Models of Computation"
 date: 2019-12-31
 tags: courses, CPSC
 ---

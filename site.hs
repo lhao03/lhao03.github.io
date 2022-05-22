@@ -97,7 +97,7 @@ main = hakyll $ do
     compile $ do
       let indexCtx =
             listField "posts" postCtx (recentFirst =<< loadAll "posts/*")
-              -- `mappend` listField "courses" (postCtxWithTags tags) (recentFirst =<< loadAll "posts/courses/*")
+              `mappend` listField "courses" (postCtxWithTags tags) (recentFirst =<< loadAll "posts/courses/**")
               `mappend` defaultContext
 
       getResourceString

@@ -1,5 +1,6 @@
 ---
-title: "MATH 101: Integral Calculus with Applications to Physical Sciences and Engineering"
+title: "MATH 101"
+description: "MATH 101: Integral Calculus with Applications to Physical Sciences and Engineering"
 date: 2020-05-31
 tags: courses, MATH
 ---

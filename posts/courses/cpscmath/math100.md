@@ -1,5 +1,6 @@
 ---
-title: "MATH 100: Differential Calculus with Applications to Physical Sciences and Engineering"
+title: "MATH 100"
+description: "MATH 100: Differential Calculus with Applications to Physical Sciences and Engineering"
 date: 2019-12-31
 tags: courses, MATH
 ---

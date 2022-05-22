@@ -1,5 +1,6 @@
 ---
-title: "CPSC 313: Computer Hardware and Operating Systems"
+title: "CPSC 313"
+description: "CPSC 313: Computer Hardware and Operating Systems"
 date: 2022-01-01
 tags: courses, CPSC
 ---

@@ -1,5 +1,6 @@
 ---
-title: "MICB 201: Introductory Environmental Microbiology"
+title: "MICB 201"
+description: "MICB 201: Introductory Environmental Microbiology"
 tags: courses, MICB
 date: 2020-12-31
 ---

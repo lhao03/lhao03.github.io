@@ -1,5 +1,6 @@
 ---
-title: "BIOC 202: Introductory Medical Biochemistry"
+title: "BIOC 202"
+description: "BIOC 202: Introductory Medical Biochemistry"
 date: 2021-12-31
 tags: courses, BIOC
 ---

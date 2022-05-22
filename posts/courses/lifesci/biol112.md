@@ -1,5 +1,6 @@
 ---
-title: "BIOL 112:Biology of the Cell"
+title: "BIOL 112"
+description: "BIOL 112: Biology of the Cell"
 tags: courses, BIOL
 date: 2020-08-31
 ---

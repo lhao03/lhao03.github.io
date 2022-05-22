@@ -1,5 +1,6 @@
 ---
-title: "CHEM 130: Thermodynamics, Kinetics and Organic Chemistry"
+title: "CHEM 130"
+description: "CHEM 130: Thermodynamics, Kinetics and Organic Chemistry"
 date: 2020-08-31
 tags: courses, CHEM
 ---

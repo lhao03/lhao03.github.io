@@ -1,5 +1,6 @@
 ---
-title: "BIOL 200: Fundamentals of Cell Biology"
+title: "BIOL 200"
+description: "BIOL 200: Fundamentals of Cell Biology"
 date: 2020-12-31
 tags: courses, BIOL
 ---

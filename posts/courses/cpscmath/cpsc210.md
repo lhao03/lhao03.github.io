@@ -1,5 +1,6 @@
 ---
-title: "CPSC 210: Software Construction"
+title: "CPSC 210"
+description: "CPSC 210: Software Construction"
 date: 2020-05-31
 tags: courses, CPSC
 ---

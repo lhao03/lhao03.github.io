@@ -1,5 +1,6 @@
 ---
-title: "MATH 200: Calculus III"
+title: "MATH 200"
+description: "MATH 200: Calculus III"
 date: 2021-12-31
 tags: courses, MATH
 ---

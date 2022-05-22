@@ -1,5 +1,6 @@
 ---
-title: "DSCI 100: Introduction to Data Science"
+title: "DSCI 100"
+description: "DSCI 100: Introduction to Data Science"
 date: 2020-05-31
 tags: courses, DSCI
 ---

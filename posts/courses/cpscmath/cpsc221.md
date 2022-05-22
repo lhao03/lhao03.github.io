@@ -1,5 +1,6 @@
 ---
-title: "CPSC 221: Basic Algorithms and Data Structures"
+title: "CPSC 221"
+description: "CPSC 221: Basic Algorithms and Data Structures"
 date: 2020-12-31
 tags: courses, CPSC
 ---

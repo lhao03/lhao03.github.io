@@ -1,5 +1,6 @@
 ---
-title: "CHEM 233: Organic Chemistry for the Biological Sciences"
+title: "CHEM 233"
+description: "CHEM 233: Organic Chemistry for the Biological Sciences"
 date: 2020-12-31
 tags: courses, CHEM
 ---

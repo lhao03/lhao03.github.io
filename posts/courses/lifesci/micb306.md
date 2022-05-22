@@ -1,5 +1,6 @@
 ---
-title: "MICB 306: Molecular Virology"
+title: "MICB 306"
+description: "MICB 306: Molecular Virology"
 date: 2021-12-31
 tags: courses, MICB
 ---

@@ -1,5 +1,6 @@
 ---
-title: "CHEM 213: Organic Chemistry"
+title: "CHEM 213"
+description: "CHEM 213: Organic Chemistry"
 date: 2022-01-01
 tags: courses, CHEM
 ---

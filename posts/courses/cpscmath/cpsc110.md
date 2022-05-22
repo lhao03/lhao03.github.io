@@ -1,5 +1,6 @@
 ---
-title: "CPSC 110: Computation, Programs, and Programming"
+title: "CPSC 110"
+description: "CPSC 110: Computation, Programs, and Programming"
 date: 2019-12-31
 tags: courses, CPSC
 ---

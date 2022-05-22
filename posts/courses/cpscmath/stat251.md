@@ -1,5 +1,6 @@
 ---
-title: "STAT 251:Elementary Statistics"
+title: "STAT 251"
+description: "STAT 251: Elementary Statistics"
 date: 2021-05-31
 tags: courses, MATH
 ---

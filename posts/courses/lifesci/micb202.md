@@ -1,5 +1,6 @@
 ---
-title: "MICB 202: Introductory Medical Microbiology and Immunology"
+title: "MICB 202"
+description: "MICB 202: Introductory Medical Microbiology and Immunology"
 date: 2020-12-31
 tags: courses, MICB
 ---

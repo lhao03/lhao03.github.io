@@ -1,5 +1,6 @@
 ---
-title: "ATSC 113: Applied Meteorology"
+title: "ATSC 113"
+description: "ATSC 113: Applied Meteorology"
 date: 2020-05-31
 tags: courses, ATSC
 ---
