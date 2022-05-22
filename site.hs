@@ -23,7 +23,7 @@ import System.FilePath.Posix
 config :: Configuration
 config =
   defaultConfiguration
-    { deployCommand = "git checkout hakyll && stack exec site clean && stack exec site build && git add . && git commit -m 'publish' && git push",
+    { deployCommand = "git checkout hakyll && stack clean && stack build && stack exec site clean && stack exec site build && git add . && git commit -m 'publish' && git push",
       destinationDirectory = "docs"
     }
 
