@@ -19,3 +19,5 @@
 * https://dannysu.com/2013/03/20/hakyll-4/
 * http://limansky.me/posts/2016-12-28-pagination-with-hakyll.html
 
+
+NOTE: My Haskell is messy, read at your own risk. 
