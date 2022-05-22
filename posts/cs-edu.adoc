@@ -1,6 +1,6 @@
 ---
 title: Thoughts on Minority Programs for CS
-tags: computer science, computer science education
+tags:  computer science education
 date: 2022-02-14
 ---
 

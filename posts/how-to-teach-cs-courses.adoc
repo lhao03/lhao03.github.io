@@ -1,6 +1,6 @@
 ---
 title: Comparisons of how CS Courses are taught at UBC
-tags: computer science, computer science education
+tags:  computer science education
 date: 2022-04-23
 ---
 :toc:

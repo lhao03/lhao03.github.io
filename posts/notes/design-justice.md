@@ -1,7 +1,7 @@
 ---
 title:  "Notes for: Design Justice"
 date: 2019-12-31
-tags:  book, computer science
+tags:  book, technology
 ---
 
 # Introduction:

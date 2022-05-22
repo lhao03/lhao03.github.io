@@ -94,11 +94,6 @@ main = hakyllWith config $ do
         >>= relativizeUrls
         >>= cleanIndexUrls
 
-  match "posts/courses/**" $ do
-    compile $
-      pandocCompilerWithAsciidoctor
-        >>= loadAndApplyTemplate "template/courses.html" (postCtxWithTags tags)
-
   match "index.markdown" $ do
     route $ setExtension "html"
     compile $ do

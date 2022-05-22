@@ -1,7 +1,7 @@
 ---
 title: "Matthias Felleisen: Developing Developers"
 date: 2022-04-27
-tags: computer science, computer science education
+tags: computer science education
 ---
 
 _Understanding: 9, Interest: 9_

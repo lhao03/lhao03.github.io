@@ -1,7 +1,7 @@
 ---
 title: "Notes for: Your Computer is On Fire"
 date: 2022-05-02
-tags: computer science, book
+tags: computer science, book, history
 ---
 
 == 1

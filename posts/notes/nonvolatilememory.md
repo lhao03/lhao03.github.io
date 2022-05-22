@@ -1,7 +1,7 @@
 ---
 title: "Paper: Non-Volatile Memory for Fast, Reliable File Systems"
 date: 2022-04-28
-tags: computer science, paper
+tags: file systems, paper
 ---
 
 _Understanding: 7, Interest: 7_

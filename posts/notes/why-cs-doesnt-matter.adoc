@@ -4,6 +4,7 @@ date: 2022-05-03
 tags: computer science education
 ---
 
+https://cs.brown.edu/~sk/Publications/Papers/Published/fk-why-cs-doesnt-matter/paper.pdf[Source]
 
 * high school curriculum: teaching fashionable programming languages and
 currently popular programming paradigms.

@@ -1,11 +1,12 @@
 ---
 title: The Computer
-tags: computer science
+tags: computer science, operating systems, programming languages, file systems
 date: 2022-04-01
 ---
 
 :toc:
 
+_Updated: 2022-05-22_
 _Updated: 2022-04-26_
 
 I grew up right when social media was just starting to exist. I had to
@@ -13,6 +14,33 @@ fight my dad to get an email and didn’t even do anything with the email
 once I got it. Computers were not part of my life like reading books
 was. I didn’t notice or care about computers. I wasn’t that kid who
 took apart computers for fun.
+
+I felt neutral at best towards computers. Something like this:
+
+"More and more students use a computer in their daily lives but have
+little to no understanding of the inner workings of computers, models of
+computation, or computer programs. Using a computer is like riding the
+bus; it’s just how life is. You may use Google Docs because your school
+requires you to. Ignoring the capitalistic argument for pursuing
+computer science, I don’t think many students are passionate or enjoy
+learning about computer science solely to just learn how a computer
+works. Rather, students want to learn about the vocational skills
+associated with computer science, while ignoring the theory. That may be
+because the link between computer science and society, or the impacts of
+computer science (besides Big Tech and AI, where there’s a lot of money
+involved) is hard to see."
+-- Lucy Hao, link:/posts/how-to-teach-cs-courses/[Comparisons of how CS Courses are taught at UBC]
+
+The computer wasn't seen as something I could pick apart and understand like chemistry. While I could pick apart the world with chemistry, I didn't know what skills and knowledge I needed to pick apart a computer. K-12 schools also didn't put emphasis on "the computer" but only "using the computer".
+
+[quote, 'https://criticallyconsciouscomputing.org/history[Critically Conscious Computing]']
+____
+While CS education in post-secondary was growing and shaping a powerful new industry, CS education in K-12 schools was ultimately conflated with education technology (using computers to learn) and digital literacy (learning to use computers). Thus, the modern ideas of CS, while shaping government, business, and higher education across the world throughout the 20th century, failed to shape primary and secondary education in meaningful ways. 
+
+[...]
+
+These visions imagined that simply by placing computers in school, learning would happen automatically, without any structure or guidance. This same basic narrative of computers as a path to liberation spread far beyond the United States, with many influential CS leaders attempting to spread computers to the global south, and largely failing, as there was once again no vision for how the computer would be used.
+____
 
 But computers are now everywhere in society; cars, phones, traffic
 lights, dishwashers, to just name a few.

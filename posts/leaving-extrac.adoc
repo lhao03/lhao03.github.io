@@ -1,6 +1,6 @@
 ---
 title: Why I’m done organizing hackathons
-tags: life
+tags: life, hackathons
 date: 2022-02-10
 ---
 
