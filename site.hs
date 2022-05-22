@@ -44,12 +44,18 @@ main = hakyllWith config $ do
         route $ setExtension "css"
         compile (fmap compressCss <$> sassCompiler)
 
-  match (fromList ["about.rst", "404.md"]) $ do
+  match (fromList ["papers.adoc"]) $ do
     route appendIndex
     compile $
       pandocCompilerWithAsciidoctor
         >>= loadAndApplyTemplate "templates/default.html" defaultContext
         >>= relativizeUrls
+
+  match "404.md" $ do
+    route appendIndex
+    compile $
+      pandocCompilerWithAsciidoctor
+        >>= loadAndApplyTemplate "templates/default.html" defaultContext
 
   -- build up tags
   tags <- buildTags "posts/**" (fromCapture "tags/*.html")
