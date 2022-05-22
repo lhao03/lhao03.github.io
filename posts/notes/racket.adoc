@@ -4,6 +4,8 @@ date: 2022-01-01
 tags: learning
 ---
 
+:source-highlighter: highlight.js
+
 https://beautifulracket.com/stacker/recap.html[awesome book on creating
 languages in racket]
 
@@ -14,7 +16,7 @@ These are my notes on creating programming languages with Racket.
 You can find the full tutorial
 https://beautifulracket.com/funstacker/[here].
 
-[source,rkt]
+[source,scheme]
 ----
 (define (read-syntax path port)
   (define src-lines (port->lines port))
@@ -33,7 +35,7 @@ change it into `(handle 1 2 + 3 *)`.
 
 === for/fold
 
-[source,rkt]
+[source,scheme]
 ----
 (for/fold ([sum 0])
           ([int (list 1 2 3 4 5 6 7 8 9 10)])
@@ -111,7 +113,7 @@ In Racket, a parse tree can be notated as an S-expression. A parse tree
 describes structure of code, but doesn’t tell us how the code will
 actually run.
 
-[source,python3]
+[source,python]
 ----
 if y > 0:
   x / y
@@ -119,15 +121,16 @@ else:
   print("nope")
 ----
 
-....
+[source,scheme]
+----
 '(if (> y 0)
      :
      (/ x y)
      else:
      (print "nope"))
-....
+----
 
-[source,rkt]
+[source,scheme]
 ----
 (if (> y 0)
   (/ x y)
@@ -292,7 +295,7 @@ characters from port as possible while still matching a rule pattern
 (greedy matching). - right side of rule with convert matched characters
 into token, which is returned
 
-[source,rkt]
+[source,scheme]
 ----
 (require brag/support) ;; we need to so we can get lexer
 (define (make-tokenizer port)
@@ -341,7 +344,7 @@ with one input argument: - ``>''
 
 `bf-program` macro: `bf-program: (bf-op | bf-loop)*`
 
-[source,rkt]
+[source,scheme]
 ----
 (bf-program OP-OR-LOOP-ARG ...)
 ----
@@ -385,7 +388,7 @@ values.
 function while using those values as input arguments - these two
 expressions are equivalent - kind of like takes the list apart.
 
-[source,rkt]
+[source,scheme]
 ----
 (apply func (list arg1 arg2 arg3 arg4))
 (func arg1 arg2 arg3 arg4)
@@ -395,7 +398,7 @@ expressions are equivalent - kind of like takes the list apart.
 macro; macros cannot be passed as an argument to any higher order
 function.
 
-[source,rkt]
+[source,scheme]
 ----
 (define (fold-funcs apl bf-funcs)
   (for/fold ([current-apl apl])
@@ -417,7 +420,7 @@ function.
 
 now we can write the macro for `bf-program`
 
-[source,rkt]
+[source,scheme]
 ----
 (define-macro (bf-program OP-OR-LOOP-ARG ...)
   #'(begin
@@ -439,7 +442,7 @@ when `bf-loop` arrives at `fold-funcs`, it is expected to behave as
 that has two input args and 1 output arg. - `bf-loop` is mini `bf`
 program that runs repeatedly until a certain condition is met.
 
-[source,rkt]
+[source,scheme]
 ----
 (define-macro (bf-loop "[" OP-OR-LOOP-ARG ... "]")
   #'(lambda (arr ptr)

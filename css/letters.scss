@@ -47,3 +47,17 @@ article .header {
     float: left;
   }
 }
+
+.tagcloud {
+  a {
+    all: unset;
+    cursor: pointer;
+    background-color: #81a1c1;
+    margin: 4px 0;
+    display: inline-block;
+    color: $backgroundColor;
+    padding: 3px;
+    border-radius: 5px;
+    width: fit-content;
+  }
+}

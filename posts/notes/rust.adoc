@@ -4,6 +4,8 @@ date: 2022-01-01
 tags: learning
 ---
 
+:source-highlighter: highlight.js
+
 == ch 1: getting started
 
 `Cargo.toml`: manifest file for Rust. - metadata and dependencies
