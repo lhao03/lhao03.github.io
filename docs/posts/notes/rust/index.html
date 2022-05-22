@@ -6,6 +6,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Lucy H | 🦀 Rust notes</title>
         <link rel="stylesheet" href="../../../css/main.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/default.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
+        <!-- and it's easy to individually load additional languages -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/languages/scheme.min.js"></script>
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/base16/onedark.min.css">
+        <script>hljs.highlightAll();</script>
 
         <link rel="preconnect" href="https://www.googletagmanager.com" />
         <link rel="preconnect" href="https://www.google-analytics.com" />
@@ -140,7 +146,7 @@ optimizations</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-rust" data-lang="rust">let x = 5; // x is 5 here
+<pre class="highlightjs highlight"><code class="language-rust hljs" data-lang="rust">let x = 5; // x is 5 here
 let x = x + 1; // x is 6 here
 {
     let x = x * 2; // x is 12 here
@@ -238,7 +244,7 @@ methods.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-rust" data-lang="rust">let tup = (i32, f64, u8) = (500, 6.4, 1);
+<pre class="highlightjs highlight"><code class="language-rust hljs" data-lang="rust">let tup = (i32, f64, u8) = (500, 6.4, 1);
 let (x, y, z) = tup;
 let one = x.2;</code></pre>
 </div>
@@ -278,7 +284,7 @@ other value</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-rust" data-lang="rust">let a: [i32; 5] = [1, 2, 3, 4, 5];
+<pre class="highlightjs highlight"><code class="language-rust hljs" data-lang="rust">let a: [i32; 5] = [1, 2, 3, 4, 5];
 let a = [3; 5]; // a = [3, 3, 3, 3, 3];</code></pre>
 </div>
 </div>
@@ -302,7 +308,7 @@ value</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-rust" data-lang="rust">fn main() {
+<pre class="highlightjs highlight"><code class="language-rust hljs" data-lang="rust">fn main() {
     let x = (let y = 6); // this does not work
 }</code></pre>
 </div>
@@ -339,7 +345,7 @@ to.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-rust" data-lang="rust">fn five() -&gt; i32 {
+<pre class="highlightjs highlight"><code class="language-rust hljs" data-lang="rust">fn five() -&gt; i32 {
     5
 }
 
@@ -371,7 +377,7 @@ fn main() {
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-rust" data-lang="rust">'outer_loop: loop {
+<pre class="highlightjs highlight"><code class="language-rust hljs" data-lang="rust">'outer_loop: loop {
   loop {
     // something happens
     break;
@@ -390,7 +396,7 @@ fn main() {
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-rust" data-lang="rust">let result = loop {
+<pre class="highlightjs highlight"><code class="language-rust hljs" data-lang="rust">let result = loop {
   // something happens
   break 10;
 }</code></pre>
@@ -407,7 +413,7 @@ fn main() {
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-rust" data-lang="rust">    while index &lt; 5 {
+<pre class="highlightjs highlight"><code class="language-rust hljs" data-lang="rust">    while index &lt; 5 {
         println!("the value is: {}", a[index]);
 
         index += 1;
@@ -432,7 +438,7 @@ through the loop.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-rust" data-lang="rust">for element in a {
+<pre class="highlightjs highlight"><code class="language-rust hljs" data-lang="rust">for element in a {
   // do something
 }</code></pre>
 </div>
@@ -446,7 +452,7 @@ through the loop.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-rust" data-lang="rust">fn main() {
+<pre class="highlightjs highlight"><code class="language-rust hljs" data-lang="rust">fn main() {
     for number in (1..4).rev() {
         println!("{}!", number);
     }
@@ -520,7 +526,7 @@ scope.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-rust" data-lang="rust">    let s1 = String::from("hello");
+<pre class="highlightjs highlight"><code class="language-rust hljs" data-lang="rust">    let s1 = String::from("hello");
     let s2 = s1;
 
     println!("{}, world!", s1);</code></pre>
@@ -567,7 +573,7 @@ creating <code>y</code>.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-rust" data-lang="rust">    let x = 5;
+<pre class="highlightjs highlight"><code class="language-rust hljs" data-lang="rust">    let x = 5;
     let y = x;
 
     println!("x = {}, y = {}", x, y);</code></pre>
@@ -629,7 +635,7 @@ again.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-rust" data-lang="rust">fn main() {
+<pre class="highlightjs highlight"><code class="language-rust hljs" data-lang="rust">fn main() {
     let s1 = String::from("hello");
 
     let (s2, len) = calculate_length(s1);
@@ -757,7 +763,7 @@ have the same value as the fields in the given instance.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-rust" data-lang="rust">let user2 = User {
+<pre class="highlightjs highlight"><code class="language-rust hljs" data-lang="rust">let user2 = User {
   email: String::from("yeet@dab.com"),
   ..user1
   }</code></pre>
@@ -860,7 +866,7 @@ variants.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-rust" data-lang="rust">enum IpAddrKind {
+<pre class="highlightjs highlight"><code class="language-rust hljs" data-lang="rust">enum IpAddrKind {
   V4,
   V6
 }</code></pre>
@@ -875,7 +881,7 @@ variants.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-rust" data-lang="rust">let four = IpAddrKind::V4;
+<pre class="highlightjs highlight"><code class="language-rust hljs" data-lang="rust">let four = IpAddrKind::V4;
 let six = IpAddrKind::V6;</code></pre>
 </div>
 </div>
@@ -892,7 +898,7 @@ directly into each enum variant.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-rust" data-lang="rust">enum IpAddrKind {
+<pre class="highlightjs highlight"><code class="language-rust hljs" data-lang="rust">enum IpAddrKind {
   V4(String),
   V6(String)
 }
@@ -908,7 +914,7 @@ variant can have different types and amounts of associated data.</p>
 <h4 id="_the_option">The <code>Option</code></h4>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-rust" data-lang="rust">enum Option&lt;T&gt; {
+<pre class="highlightjs highlight"><code class="language-rust hljs" data-lang="rust">enum Option&lt;T&gt; {
     None,
     Some(T),
 }</code></pre>
@@ -1159,7 +1165,7 @@ applies for vectors:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-rust" data-lang="rust">let mut v = vec![1, 2, 3, 4, 5];
+<pre class="highlightjs highlight"><code class="language-rust hljs" data-lang="rust">let mut v = vec![1, 2, 3, 4, 5];
 
 let first = &amp;v[0]; // immutable borrow
 
@@ -1207,7 +1213,7 @@ to deallocated memory</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-rust" data-lang="rust">let s1 = String::from("Hello, ");
+<pre class="highlightjs highlight"><code class="language-rust hljs" data-lang="rust">let s1 = String::from("Hello, ");
 let s2 = String::from("world!");
 let s3 = s1 + &amp;s2; // note s1 has been moved here and can no longer be used</code></pre>
 </div>
@@ -1245,7 +1251,7 @@ but can crash your program - be explicit if you want <code>chars</code> or <code
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-rust" data-lang="rust">use std::collections:HashMap;
+<pre class="highlightjs highlight"><code class="language-rust hljs" data-lang="rust">use std::collections:HashMap;
 
 let mut map = HashMap::new();
 
@@ -1261,7 +1267,7 @@ mut.insert(String::from("Yeet"), 1);</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-rust" data-lang="rust">use std::collections:HashMap;
+<pre class="highlightjs highlight"><code class="language-rust hljs" data-lang="rust">use std::collections:HashMap;
 
 let keys = vec![String::from("A"),String::from("B")];
 let vals = vec![1,2];
@@ -1412,7 +1418,7 @@ value the <code>?</code> is used on</p>
 <h3 id="_in_method_definitions">in method definitions</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-rust" data-lang="rust">impl&lt;T&gt; Point&lt;T&gt; {
+<pre class="highlightjs highlight"><code class="language-rust hljs" data-lang="rust">impl&lt;T&gt; Point&lt;T&gt; {
     fn x(&amp;self) -&gt; &amp;T {
         &amp;self.x
     }
@@ -1430,7 +1436,7 @@ ends up substituting for the generic type.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-rust" data-lang="rust">impl Point&lt;f32&gt; {
+<pre class="highlightjs highlight"><code class="language-rust hljs" data-lang="rust">impl Point&lt;f32&gt; {
     fn distance_from_origin(&amp;self) -&gt; f32 {
         (self.x.powi(2) + self.y.powi(2)).sqrt()
     }
@@ -1508,7 +1514,7 @@ same method.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-rust" data-lang="rust">pub fn notify&lt;T: Summary&gt;(item1: &amp;T, item2: &amp;T) {</code></pre>
+<pre class="highlightjs highlight"><code class="language-rust hljs" data-lang="rust">pub fn notify&lt;T: Summary&gt;(item1: &amp;T, item2: &amp;T) {</code></pre>
 </div>
 </div>
 <div class="ulist">
@@ -1520,7 +1526,7 @@ same method.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-rust" data-lang="rust">pub fn notify(item: &amp;(impl Summary + Display)) {
+<pre class="highlightjs highlight"><code class="language-rust hljs" data-lang="rust">pub fn notify(item: &amp;(impl Summary + Display)) {
 pub fn notify&lt;T: Summary + Display&gt;(item: &amp;T) {</code></pre>
 </div>
 </div>
@@ -1533,7 +1539,7 @@ pub fn notify&lt;T: Summary + Display&gt;(item: &amp;T) {</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-rust" data-lang="rust">fn some_function&lt;T, U&gt;(t: &amp;T, u: &amp;U) -&gt; i32
+<pre class="highlightjs highlight"><code class="language-rust hljs" data-lang="rust">fn some_function&lt;T, U&gt;(t: &amp;T, u: &amp;U) -&gt; i32
     where T: Display + Clone,
           U: Clone + Debug
 {</code></pre>
@@ -1580,7 +1586,7 @@ bounds are called <em>blanket implementations</em></p>
 <h3 id="_generic_lifetimes_in_functions">generic lifetimes in functions</h3>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-rust" data-lang="rust">fn longest(x: &amp;str, y: &amp;str) -&gt; &amp;str {
+<pre class="highlightjs highlight"><code class="language-rust hljs" data-lang="rust">fn longest(x: &amp;str, y: &amp;str) -&gt; &amp;str {
     if x.len() &gt; y.len() {
         x
     } else {
@@ -1608,7 +1614,7 @@ without affecting the lifetime</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-rust" data-lang="rust">&amp;i32        // a reference
+<pre class="highlightjs highlight"><code class="language-rust hljs" data-lang="rust">&amp;i32        // a reference
 &amp;'a i32     // a reference with an explicit lifetime
 &amp;'a mut i32 // a mutable reference with an explicit lifetime</code></pre>
 </div>
