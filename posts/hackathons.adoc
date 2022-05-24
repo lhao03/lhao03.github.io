@@ -2,6 +2,7 @@
 title: My thoughts on hackathons
 tags: hackathons
 date: 2021-07-10
+cover_image: /images/hackathons/cmd_f.png
 ---
 
 :toc:
@@ -216,8 +217,7 @@ planned out; not everyone has the time to plan for a hackathon weekend.
 And I am not as skilled as someone who’s been programming since high
 school. Always feeling "behind" others is partially why I felt like
 dropping out of computer science, which propelled my decision to pursue
-a minor in biochemistry a combined major in computer science and
-chemistry (more on that later).
+a minor in biochemistryfootnote:[link:/posts/money-molecules-third-year[I've now changed my major to a combined major in computer science and chemistry]].
 
 I’m a slow learner, and I’m slowly (haha) coming to terms with that. I’m
 also rediscovering the privilege of learning about things you’re
@@ -228,8 +228,7 @@ Semanticfootnote:[https://github.com/github/semantic[Semantic]] and
 strongly typed programming languages like Haskell and ReScript. I’m
 learning them when I feel like it and as slow as I want to. I’m also a
 chemistry nerd at heart, so I’ve added a biochemistry minor to my degree
-for no purpose but to nerd out in biochemistry changed my major to
-computer science and chemistry so I can nerd out in chemistry classes.
+for no purpose but to nerd out in biochemistry.
 
 == So what am I doing now?
 
