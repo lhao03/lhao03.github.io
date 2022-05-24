@@ -3,6 +3,7 @@ title: My thoughts on hackathons
 tags: hackathons
 date: 2021-07-10
 cover_image: /images/hackathons/cmd_f.png
+description: I’ve attended a few hackathons, in-person and remote, and at first, a hackathon seemed like the perfect event. Free food, tech companies, and swag? What else could you ask for? Well, under all the free food and company shirts lies copy-pasted Stack Overflow code, dry eyes, and more.
 ---
 
 :toc:
