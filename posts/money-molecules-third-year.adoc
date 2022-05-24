@@ -3,6 +3,7 @@ title: "molecules or money? end of third year reflection"
 tags: life
 date: 2022-05-01
 description: After three years in university, I finally switched my major to a combined major in Computer Science and Chemistry. I also dropped all extracurricular activities that no longer aligned with my values and interests. But why has it taken three years? And why did I have so much difficulty in making these changes?
+cover_image: /images/money-molecules/money_or_molecules.png
 ---
 
 _Updated: 2022-05-06_

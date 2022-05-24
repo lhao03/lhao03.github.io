@@ -2,6 +2,7 @@
 title: The Computer
 tags: computer science, operating systems, programming languages, file systems
 date: 2022-04-01
+cover_image: /images/computers/computers.png
 ---
 
 :toc:

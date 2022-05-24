@@ -1,5 +1,6 @@
 ---
-title: Digital contact tracing apps don’t make much sense anymore
+title: Digital contact tracing apps don’t make sense anymore
+cover_image: /images/digital-contact-tracing/dct.png
 tags: public health, paper
 date: 2022-04-18
 ---

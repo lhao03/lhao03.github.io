@@ -1,4 +1,9 @@
 <div>
+  $if(cover_image)$
+  <div class="content">
+  <img src="$cover_image$" alt="">
+  </div>
+  $endif$
     <div class="header">
         Posted on $date$
         $if(author)$

@@ -213,7 +213,7 @@ math behind the one-sided paper, and that sound travels in waves. Does
 learning to code accomplish one’s desire to understand how a computer
 works?
 
-image:/images/learn-to-code/Mobius.jpg[]
+image::/images/learn-to-code/Mobius.jpg[]
 
 No, not always. Coding in high-level languages like Python, JavaScript,
 or scripting languages like HTML or CSS does not. This high-level coding

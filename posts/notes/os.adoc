@@ -1,0 +1,19 @@
+---
+title: OS in Rust
+date: 2022-05-23
+tags: operating systems
+---
+
+* use of `#![no_std]` because the standard library requires `libc` which
+requires the operating system and because features like files, networking and
+threads (part of standard library) require the operating system.
+
+* `#[panic_handler]`: must define a function to run when panic occurs
+
+* language item: special functions and types that are required internally by the compiler
+** `eh_personality`: marks a function that is used for stack unwinding
+** Rust use unwinding to ensure all memory freed on panic
+
+* https://www.nongnu.org/libunwind/
+* https://docs.microsoft.com/en-us/windows/win32/debug/structured-exception-handling
+* https://www.bogotobogo.com/cplusplus/stackunwinding.php
