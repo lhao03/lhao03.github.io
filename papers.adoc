@@ -7,13 +7,13 @@ I'm currently reading a bunch of papers and books to see what I'm interested in 
 == Interest
 1. I'm falling asleep.
 2. Reading through the paper is a like a task and I'd rather read another paper.
-3. 
-4. 
+3. [TODO]
+4. [TODO]
 5. The paper is neutral. I don't mind reading it, but I don't think I'd miss reading it.
 6. Has some interesting points.
-7. 
-8. 
-9. 
+7. [TODO]
+8. [TODO]
+9. [TODO]
 10. I feel excited reading this and would love researching more about this topic.
 
 == Understanding
@@ -49,7 +49,11 @@ I'm currently reading a bunch of papers and books to see what I'm interested in 
 * Developing Behavioral Concepts of Higher-Order Functions
 * Every Walk’s a Hit: Making Page Walks Single-Access Cache Hits `[Write up TODO]`
 * Fairness and Abstraction in Sociotechnical Systems
-* Street-Level Algorithms: A Theory at the Gaps Between Policy and Decisions`[Write up TODO]`
-* Glycerol-3-Phosphate Dehydrogenase: The K120 and K204 Side Chains Define an Oxyanion Hole at the Enzyme Active Site`[Write up TODO]`
+* Street-Level Algorithms: A Theory at the Gaps Between Policy and Decisions `[Write up TODO]`
+* Glycerol-3-Phosphate Dehydrogenase: The K120 and K204 Side Chains Define an Oxyanion Hole at the Enzyme Active Site `[Write up TODO]`
 * Secrets of the Glasgow Haskell Compiler Inliner
+** will reread 
+** interest: 7, understanding: 6
+* How to Enable Index Scheme for Reducing the Writing Cost of DNA Storage on Insertion and Deletion
+** interest: 8, understanding: 7.5
 

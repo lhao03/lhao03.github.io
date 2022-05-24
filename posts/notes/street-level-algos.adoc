@@ -1,0 +1,7 @@
+---
+date: 2022-05-24
+title: "Paper: Street–Level Algorithms: A Theory At The Gaps Between Policy and Decisions."
+tags: fairness, paper
+---
+
+Ali Alkhatib and Michael Bernstein. 2019. Street–Level Algorithms: A Theory At The Gaps Between Policy and Decisions. In Proceedings of CHI Conference on Human Factors in Computing Systems (CHI '19), April 2019, Glasgow, Scotland UK. ACM, New York, NY, USA 13 Pages. https://doi.org/10.1145/3290605.3300760

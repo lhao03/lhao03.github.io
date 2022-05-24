@@ -1,0 +1,34 @@
+---
+title: "Paper: A Sociocultural Perspective on Computer Science Capital and its Pedagogical Implications in Computer Science Education"
+date: 2022-05-23
+tags: comptuer science education
+---
+
+Tina Vrieler and Minna Salminen-Karlsson. 2021. A Sociocultural Perspective on Computer Science Capital and its Pedagogical Implications in Computer Science Education. ACM Trans. Comput. Educ. Just Accepted (September 2021). https://doi.org/10.1145/3487052
+
+there needs to be a distinction between science capital and computer science capital because the types of capital that are considered legitimate vary between the field of natural sciences and computer science
+
+== 1 introduction
+* what, how, when and why to teach different CS concepts => little concensus has been reached on this
+* lack of trained educators => affects how children perceive and thrive in learning CS and how they negotiate meaning of CS
+* diversity problems and high dropout rates due to psychosocial problems related to learning environment
+
+== 2 background: young people's computer science aspirations
+* limited access to computing courses, limited contact to others who engage in computing-related things => factors that systematically preclude underrepresented students from accessing CS education
+* first time children come into contact with computing principles/culture are from informal activities => home, outreach activities
+
+== 3 three theoretical lenses underpinning the computer science capital framework
+
+=== first theoretical lens: bourdieu's theory of capital
+* capital: access to particular resources can promote or impede an individual's social mobility in stratified society
+* economic, social, cultural (embodied, objectified, institutionalised) => person's internalized matrix of dispositions, symbolic (convert the other capitals into something that is symbolically valuable and recognized by other people in social setting)
+** cultural capital is contextually bound and must be understood/defined in particular context or field
+*** are all forms of cultural capital equally valuable in CS?
+* during war: programming was "largely clerical and intellectually undemanding" => now: knowledge of programming considered essential for individuals both to understand digitalization in society and to be active participants in digitalized economy
+** people must maintain their forms of capital to maintain their position in a social field => not a conscious process
+* a person's prerequisites for learning are defined by their to capital => because each person has a unique set of forms of capital we cannot assume that aspirations in CS are the same for all learners
+* people continually acquire capitals
+
+==== role of instructors/educators as transmitters of the dominant culture
+computer engineering ethos and identity
+> ‘individual, logic, reasoning, abstractions, obsession for computers, self-righteousness, lack of reflection and masculinity’

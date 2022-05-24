@@ -1,13 +1,13 @@
 ---
 title: Thoughts on Minority Programs for CS
-tags:  computer science education
+tags:  computer science education, feminism
 date: 2022-02-14
 ---
 
-_Updated: 2022-05-20_
-
-_Originally named: Thoughts based on my path to CS, and opinions on
-CS Education_
+_Updates: typos and added better photos. Changed to mainly/only teach
+front-end because there is now some focus on other types of development.
+Added more to final thoughts. Renamed the post, was originally named: 
+Thoughts based on my path to CS, and opinions on CS Education_
 
 .Some Lore
 [%collapsible]
@@ -81,7 +81,7 @@ that programming language is turned into assembly and how hardware and
 software communicate with each other). So I don’t think I’ll be taking
 that database course.
 
-== Why I no longer wish that I did computer science in high school
+*Why I no longer wish that I did computer science in high school*
 
 One large reason I never ventured into computer science in high school
 was that I didn’t have good resources near me. Out of all the women in
@@ -112,22 +112,21 @@ me until my last year of high school, which was when computer science
 became the next hottest thing to major in.
 
 I was scared that a major in chemistry would result in a futile career,
-which is why I decided to major in computer science. I don’t like that
-this was the reason for me to set foot into computer science, but I’m
+which is why I decided to major in computer science: so I could secure a good job.
+I don’t like that this was the reason for me to set foot into computer science, but I’m
 glad this is no longer the reason that I’m staying. There are many
 reasons why I’m staying:
 
 * computers can help us in many other areas, like drug research and DNA sequencing
 * the way computers work is very interesting; it’s both fragile and robust, like the way our bodies work. Crazy stuff.
-* I like knowing exactly how something works. This is a reason why I’m
-interested in low-level computing/compiler/operating systems. Lots of
-abstractions hide the ugly details, but I like to know those ugly details.
+* I like knowing exactly how something works. This is a reason why I’m interested in low-level computing/compiler/operating systems. Lots of abstractions hide the ugly details, but I like to know those ugly details.
 
 Many university courses helped me realize those reasons why I’m staying
 in computer science; CPSC 110 and CPSC 213. Not only did I enjoy the
 content, but the professors inspired me and interested me!
 
 CPSC 110 taught me so many concepts I didn’t even know I was learning. I learned about:
+
 * data structures like graphs and linked lists and how we can use data structures to model data from the real world
 * graph traversals, to extract relationships out of data structures 
 * program design 
@@ -135,6 +134,7 @@ CPSC 110 taught me so many concepts I didn’t even know I was learning. I learn
 * abstraction
 
 CPSC 213 was the course that FINALLY allowed me to understand: 
+
 * pointers 
 * how code becomes understandable to a computer 
 * how and why a stack overflow can occur from too many recursive calls 
@@ -221,7 +221,7 @@ job or high salary may not be true in a few years.). Oh, and SheCodes
 isn’t free.
 
 "Reform efforts driven by serving capitalist labor markets tended not to be concerned with who learns, as long as they are learning well and serving industry."
--- Amy, https://criticallyconsciouscomputing.org/[Critically Conscious Computing]
+-- Amy J. Ko, https://criticallyconsciouscomputing.org/[Critically Conscious Computing]
 
 This quote drives the point home that programs like KodeWithKlossy and
 SheCodes don’t seem to really focus on helping those who are
@@ -395,7 +395,5 @@ science, they must commit to delivering a well rounded education in
 computer science, that includes theory and vocational skills, or they
 are simply exploiting people for their own gain.
 
-_Updates: typos and added better photos. Changed to mainly/only teach
-front-end because there is now some focus on back-end but not really
-what back-end concepts. Added more to final thoughts._
+
 
