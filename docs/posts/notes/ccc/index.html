@@ -1,0 +1,856 @@
+<!doctype html>
+<html lang="en">
+  <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Lucy H | Notes for: Critically Conscious Computing: Methods for Secondary Education</title>
+        <link rel="stylesheet" href="../../../css/main.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/default.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
+        <!-- and it's easy to individually load additional languages -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/languages/scheme.min.js"></script>
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/base16/onedark.min.css">
+        <script>hljs.highlightAll();</script>
+
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="preconnect" href="https://www.google-analytics.com" />
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-KDGPVMHC9Q"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-KDGPVMHC9Q');
+        </script>
+
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@hoalycu" />
+        <meta name="twitter:creator" content="@hoalycu" />
+        <meta property="og:title" content="Notes for: Critically Conscious Computing: Methods for Secondary Education" />
+        
+        
+        <meta property="og:url" content="/posts/notes/ccc" />
+        
+        
+
+        <!-- basic favicon -->
+        <link rel="icon" href="../../../images/android-chrome-384x384.png" /> 
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../../images/android-chrome-384x384.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../../images/android-chrome-384x384.png">
+        <link rel="apple-touch-icon-precomposed" href="../../../images/android-chrome-384x384.png">
+    </head>
+
+
+        <body>
+        <header>
+            <div class="logo">
+                <a href="../../../">
+                <img src="../../../images/android-chrome-384x384.png" alt="Me">
+                </a>
+            </div>
+        </header>
+
+        <main role="main">
+            <h1>Notes for: Critically Conscious Computing: Methods for Secondary Education</h1>
+            <div>
+    <div class="header">
+        Posted on April 23, 2022
+        
+    </div>
+<div class="tags">
+    
+    Tags: <a title="All pages tagged 'computer science education'." href="../../../tags/computer%20science%20education/index.html">computer science education</a>, <a title="All pages tagged 'book'." href="../../../tags/book/index.html">book</a>
+    
+</div>
+    <div>
+        <div id="toc" class="toc">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_data_structures">Data Structures</a></li>
+<li><a href="#_algorithms">Algorithms</a>
+<ul class="sectlevel3">
+<li><a href="#_should_canonical_algorithms_be_taught">should canonical algorithms be taught?</a></li>
+<li><a href="#_teaching_algorithms">Teaching Algorithms</a></li>
+</ul>
+</li>
+<li><a href="#_abstractions">Abstractions</a>
+<ul class="sectlevel2">
+<li><a href="#_using_apis_requires_different_knowledge">Using APIs requires different knowledge:</a></li>
+<li><a href="#_social_tradeoffs_of_abstraction">social tradeoffs of abstraction</a></li>
+<li><a href="#_teaching_abstraction_use">teaching abstraction use</a></li>
+<li><a href="#_teaching_abstraction_design">teaching abstraction design</a></li>
+</ul>
+</li>
+<li><a href="#_artificial_intelligence">Artificial Intelligence</a>
+<ul class="sectlevel2">
+<li><a href="#_teaching_ai">Teaching AI</a></li>
+</ul>
+</li>
+<li><a href="#_programming">Programming</a>
+<ul class="sectlevel2">
+<li><a href="#_teaching_programming">Teaching programming</a></li>
+<li><a href="#_developing_skills">developing skills</a></li>
+</ul>
+</li>
+<li><a href="#_verification_and_debugging">Verification and Debugging</a>
+<ul class="sectlevel2">
+<li><a href="#_teaching_verification_and_debugging">teaching verification and debugging</a></li>
+</ul>
+</li>
+<li><a href="#_tools">Tools</a></li>
+</ul>
+</div>
+<div class="paragraph">
+<p><em>Updated: 2022-04-25</em>
+<em>Understanding: 9, Interest: 8</em></p>
+</div>
+<div class="paragraph">
+<p>Amy J. Ko, Anne Beitlers, Brett Wortzman, Matt Davidson, Alannah Oleson,
+Mara Kirdani-Ryan, Stefania Druga (2022). Critically Conscious
+Computing: Methods for Secondary Education.
+<a href="https://criticallyconsciouscomputing.org/" class="bare">https://criticallyconsciouscomputing.org/</a>, retrieved 4/23/2022.</p>
+</div>
+<div class="paragraph">
+<p>I didn’t take notes for the prior chapters because I just read them on
+my iPad and just highlighted.</p>
+</div>
+<div class="paragraph">
+<p>Blog posts that were inspired by
+<a href="https://criticallyconsciouscomputing.org/">Critically Conscious
+Computing</a></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="../../../posts/how-to-teach-cs-courses" class="bare">/posts/how-to-teach-cs-courses</a></p>
+</li>
+<li>
+<p><a href="../../../posts/computers" class="bare">/posts/computers</a></p>
+</li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="_data_structures"><a href="https://criticallyconsciouscomputing.org/data">Data Structures</a></h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>data is information encoded</p>
+</li>
+<li>
+<p>many approaches to teaching data Structures involve visual
+descriptions; excludes students who are blind</p>
+</li>
+<li>
+<p>databases hold a lot of data that tries to represent us</p>
+</li>
+<li>
+<p>data structures impose conformity</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_algorithms"><a href="https://criticallyconsciouscomputing.org/algorithms">Algorithms</a></h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>model the world imperfectly ⇒ reinforce, perpetuate, amplify unjust
+phenomena</p>
+</li>
+<li>
+<p>algorithms have mostly been taught as "how to use" vs applications
+in the world</p>
+</li>
+<li>
+<p>algorithms aren’t particular to CS, but CS adds two things:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>precise ways of expressing and reasoning about algorithms</p>
+</li>
+<li>
+<p>ways of expressing algorithms as code so computers can execute them
+for us</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>if we use algorithms we have to prove they aren’t faulty in some way</p>
+<div class="ulist">
+<ul>
+<li>
+<p>USA no fly list misidentified people because of their algorithm;
+there should be some way to formally verify this or at least test it out
+in the real world</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>sorting names can give names at the front of the list an advantage;
+sorting algorithm isn’t at fault but the question is why sort by name in
+the first place?</p>
+</li>
+<li>
+<p>lots of decisions are being made by software systems with algorithms
+that aren’t open to the public (like the sorting of student’s names in
+grading software)</p>
+</li>
+</ul>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>However, because algorithm design often occurs in the context of for-profit businesses driven by sales and marketing, not by design, companies usually advance products independent of their social impacts.</p>
+</div>
+</blockquote>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>algorithms are faster than humans, so we are more wiling to replace
+human labour with computers</p>
+</li>
+<li>
+<p>only efficiency is the most focused on factor of an algorithm</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>algorithms can make assumptions about the world:
+* sorting: does something need to be sorted and how?
+* searching: information isn’t
+always organized in ways to make it discoverable (SEO)
+* pathfinding: google sometimes returns the shortest path but it’s through an ally way
+so it’s not always the safest. Sometimes I just use the map and find my
+own way, but in a place I’m unfamiliar with I put a lot of faith in the
+path that google maps finds.
+* parsing: computers imply there is
+structure in text</p>
+</div>
+<div class="sect3">
+<h4 id="_should_canonical_algorithms_be_taught">should canonical algorithms be taught?</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>yes: because they are ubiquitous</p>
+</li>
+<li>
+<p>no: since most canonical algorithms are already
+implemented, students don’t need to know how they work</p>
+</li>
+<li>
+<p>yes: everyone should know how they work <strong>"because they are the basis for the many
+ways that algorithms and data oppress: one cannot critique and resist
+algorithms that one does not understand."</strong></p>
+</li>
+</ul>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Over and over, algorithm designers make the same
+mistake of meticulously analyzing algorithms for their overall
+correctness, efficiency, and accuracy, but overlooking the impact on the
+margins of diversity. And the public, still enamored with the power of
+algorithms to automate human tasks, freely delegate vital human
+activities to algorithms, in the hopes of saving some time, but often at
+the expense of justice.</p>
+</div>
+</blockquote>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_teaching_algorithms">Teaching Algorithms</h3>
+<div class="sect3">
+<h4 id="_teaching_algorithms_as_canon">teaching algorithms as canon</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>learn about efficiency of algorithms,
+differences between algorithms and practice implementing algorithms</p>
+</li>
+<li>
+<p>"creates a sense of membership in the CS community, where most members
+had to learn the same ideas"</p>
+</li>
+<li>
+<p>but it’s hard to learn algorithms as canon:</p>
+</li>
+</ul>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Students demonstrate an abundance of
+misconceptions about how canonical algorithms behave, including
+difficulties with data structures and how canonical algorithms
+manipulate them. Teaching algorithms in the abstract (or with
+lightweight problem contexts, such as situating search algorithms in a
+specific problem domain), can make algorithms feel separate from the
+world. The result is that students often struggle to develop
+self-efficacy with algorithms, especially with algorithm design and
+analysis.</p>
+</div>
+</blockquote>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>there are methods to engage students themselves as data for the
+algorithm: sorting themselves in a list, but may not be an effective way
+to teach algorithms:</p>
+</li>
+</ul>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>These methods can be engaging ways of visualizing
+algorithm behavior, but some evidence suggests that the older students
+are, the more awkward they might find the physical interaction with
+their peers, and the less likely they are to view these visualization
+activities as authentic practice. Other results with middle school
+students suggest that the physical embodiment involved is hard for
+students to link to the substantially different representations of
+algorithms they find in code, and that they actually decreased students’
+desire to further study CS.</p>
+</div>
+</blockquote>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_teaching_algorithms_as_infrastructure">teaching algorithms as infrastructure</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>canon is already taught in
+post secondary CS education, so might now be worth the time to teach in
+secondary education.</p>
+</li>
+<li>
+<p>most students will never implement a canonical
+algorithm themselves, and will use an already implemented version of it.</p>
+</li>
+</ul>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>spending significant time teaching students to understand algorithms that have already been invented takes time away from the very different challenges of designing algorithms to solve problems in the world, and evaluating how well algorithms might solve problems. These are just as, if not more important to students who eventually pursue CS careers, but also important to those who won’t, as critically evaluating the quality of algorithms is something everyone that interacts with computers must do.</p>
+</div>
+</blockquote>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>teaching algorithms related to society poses different challenges</p>
+</li>
+</ul>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>The critical question about algorithms, then, is not how to automate something with an algorithm, but whether to and why.</p>
+</div>
+</blockquote>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_abstractions"><a href="https://criticallyconsciouscomputing.org/abstractions">Abstractions</a></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_using_apis_requires_different_knowledge">Using APIs requires different knowledge:</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Domain Knowledge: knowledge
+about the domain in the world that the API is modeling and how it is
+modeling it</p>
+</li>
+<li>
+<p>Execution Semantics: how a function in an API behaves
+(types of input, how input maps to output, errors that could be
+produced, how long the function takes, how accurate the results are)</p>
+</li>
+<li>
+<p>Usage patterns: functions may have to be used in a particular way (input
+may have to be preprocessed).</p>
+</li>
+</ul>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>This means that anyone that creates software —
+professional software developers, hobbyists, students learning CS in
+classes — will necessarily be engaging in informal learning about API
+abstractions, usually without well-designed instructional materials to
+support them. Thus, while removing details through abstraction can make
+complex things easier to use, it does not make them easy to use.</p>
+</div>
+</blockquote>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_social_tradeoffs_of_abstraction">social tradeoffs of abstraction</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>algorithms centralize decision making</p>
+</li>
+<li>
+<p>functions, classes, APIs → centralizing decisions</p>
+</li>
+<li>
+<p>and privatize decision making</p>
+</li>
+</ul>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Therefore, encapsulation by private companies is a
+transfer of power from the transparent, public, human processes, to
+opaque, private, algorithmic processes.</p>
+</div>
+</blockquote>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>also abstraction is a form of automation</p>
+<div class="ulist">
+<ul>
+<li>
+<p>automation is a vessel for hiding social consequences of automation</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_teaching_abstraction_use">teaching abstraction use</h3>
+<div class="sect3">
+<h4 id="_teaching_abstraction_use_2">teaching abstraction use:</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>teach the use of functions through practicing conforming to the syntax of function calls, trying different
+inputs, using functions in combination</p>
+</li>
+<li>
+<p>but also requires coverage of domain concepts, execution semantics and design patterns</p>
+</li>
+<li>
+<p>best way to learn these things is through documentation, but documentation is hard
+to read</p>
+</li>
+<li>
+<p>this results in students being confused, copying code they
+don’t understand</p>
+</li>
+</ul>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Another challenge with teaching APIs, especially in
+project-based learning, is that no API can support every imaginable
+thing a student might want to make.</p>
+</div>
+</blockquote>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>The expressive power of an API to make many things
+possible is also a great risk to teaching, as students may find
+themselves needing to learn ideas that no one in the class, including
+the teacher, knows anything about.</p>
+</div>
+</blockquote>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_teaching_abstraction_design">teaching abstraction design</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>HtDP: design recipes (CPSC 110!)</p>
+</li>
+</ul>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Students often struggle to self-regulate during such
+structured problem solving, often deviating from the sequence, or
+struggling to independently perform a particular aspect of the
+process.</p>
+</div>
+</blockquote>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>but not everyone may want to program, but they should still understand
+the role abstraction plays in society.</p>
+</li>
+<li>
+<p>code written years ago are in effect today and are making decisions
+today</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Moreover, teaching abstractions as apolitical
+has consequences: rather than connecting students with the rich history
+of code that others have written over the past decades, abstractions and
+their goal of encapsulate and hide details, can create a kind of “wall''
+between students the ideas contained in them. This tradeoff, especially
+in the context of integrating CS into other disciplines, may actually
+harm literacy, as it eliminates opportunities to critically examine the
+assumptions and models embedded in abstractions.</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>This is a tradeoff in
+learning objectives: students who focus on designing functions will be
+more capable of writing programs to solve particular computational
+problems, but may not see the social problems they might create with
+their designs, whereas students who focus on critically examining the
+implications of functions might see their consequences more clearly, but
+be less well positioned to design them.</p>
+</div>
+</blockquote>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>learn designing and use in university, critically examine in
+secondary school</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_artificial_intelligence"><a href="https://criticallyconsciouscomputing.org/ai">Artificial Intelligence</a></h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>symbolic AI (using logic) vs statistical (using patterns in
+probabilities)</p>
+</li>
+<li>
+<p>strong AI is out of reach</p>
+</li>
+</ul>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>In contrast, other applications of AI often enrich and liberate groups that already have
+power and wealth.</p>
+</div>
+</blockquote>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>AI, then, just like any other code, is often deployed
+as a tool of wealthy, dominant groups to accrue power, increase wealth,
+and maintain the matrix of oppression that erases diversity, denies
+equity, and shuns equality.</p>
+</div>
+</blockquote>
+</div>
+<div class="sect2">
+<h3 id="_teaching_ai">Teaching AI</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Teaching AI Theory</p>
+</li>
+<li>
+<p>Teaching AI application</p>
+</li>
+<li>
+<p>Data is a record of the past; past injustices perpetuated into the
+future</p>
+</li>
+<li>
+<p>Data encodes values, assumptions, goals of people who create it</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_programming"><a href="https://criticallyconsciouscomputing.org/programming">Programming</a></h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>requirement of self-regulated skills</p>
+</li>
+<li>
+<p>process monitoring: reflecting on the process, like checking if you
+are following your plan</p>
+</li>
+<li>
+<p>comprehension monitoring: asking if you understand what happens if you
+change something in your code/do you know enough to change your code</p>
+</li>
+<li>
+<p>self explanation</p>
+</li>
+</ul>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Society has not yet broadly decided to make
+programmers responsible for their code and its impact, and until it
+does, making room for algorithmic justice will require personal and
+organizational will.</p>
+</div>
+</blockquote>
+</div>
+<div class="sect2">
+<h3 id="_teaching_programming">Teaching programming</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>modern cs education conflates coding with cs</p>
+</li>
+<li>
+<p>programming is a skill not really taught in post-secondary <em>(well CPSC
+110 teaches programming systematically pretty well, but most
+universities don’t really teach it well, they just hope students can "absorb" good programming practices)</em></p>
+</li>
+<li>
+<p>programming skills viewed as something students will learn on their
+own</p>
+</li>
+<li>
+<p>secondary: does programming need to be taught?</p>
+<div class="ulist">
+<ul>
+<li>
+<p>argument: learning to code will transfer problem solving skills in
+other settings ⇒ mixed evidence on this</p>
+<div class="ulist">
+<ul>
+<li>
+<p>modest transfer for tasks requiring meta-cognition and creative
+thinking, but no evidence on effects on school achievement, literacy or
+other outcomes</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>no evidence that learning to code has impact on critical conciousness
+of computing in society</strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p>help see how software is constructed but not how software impacts
+people’s lives</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_developing_skills">developing skills</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>careful choice of PL, editor, tools and problems.</p>
+</li>
+<li>
+<p>how do students receive feedback?</p>
+<div class="ulist">
+<ul>
+<li>
+<p>autograder: automatic checking, immediate feedback that is shallow
+and leads to gaming behaviour</p>
+</li>
+<li>
+<p>teacher: deep diagnostic feedback but is time consuming and requires
+substantial pedagogical content knowledge</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>methods to explicitly scaffold self-regulation skills ⇒ HtDP</p>
+</li>
+<li>
+<p><a href="../../../posts/notes/developing-developers">Notes on Developing Developers</a></p>
+</li>
+<li>
+<p>programming is a moral activity, which should be taken seriously with
+responsibility and care</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_verification_and_debugging"><a href="https://criticallyconsciouscomputing.org/verification">Verification and Debugging</a></h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>vagueness in requirements ⇒ failures</p>
+</li>
+<li>
+<p>contracting of government services to tech companies ⇒ tech companies
+become the ones in charge of making sure the service was being provided
+to citizens, rather than the government</p>
+</li>
+</ul>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>In fact, because of the way the contract was structured, Deloitte received maintenance payments every month because there were failures to debug and fix, essentially rewarding Deloitte for making mistakes.</p>
+</div>
+</blockquote>
+</div>
+<div class="sect2">
+<h3 id="_teaching_verification_and_debugging">teaching verification and debugging</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>requirements are vague</p>
+<div class="ulist">
+<ul>
+<li>
+<p>if students are in charge of defining requirements, they may change
+them if they have trouble verifying and debugging, to avoid finding
+defects</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>no simple separation between skill of writing programs and skill of
+verifying and debugging them.</p>
+</li>
+<li>
+<p>students will be doing both, and need support for both</p>
+</li>
+<li>
+<p>most students do not verify their programs in any systematic way</p>
+</li>
+<li>
+<p>fragile knowledge when debugging → unproductive strategies from
+underdeveloped self-regulation and impulse control skills</p>
+<div class="ulist">
+<ul>
+<li>
+<p>even when taught effective debugging strategies, and even when they
+know them, they resist following them and use trial and error</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="sect3">
+<h4 id="_scaffolding_verification_and_debugging">scaffolding verification and debugging</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>block based editors: can only allow edits in syntactically valid ways</p>
+<div class="ulist">
+<ul>
+<li>
+<p>perceived as inauthentic because professionals don’t use them</p>
+</li>
+<li>
+<p>but don’t prevent logic errors</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>separate learning of program writing, verification and debugging ⇒
+practice one at a time without added cognitive load of the other</p>
+</li>
+<li>
+<p>also can have students engage in code reviews or walk-throughs</p>
+</li>
+<li>
+<p>separate writing periods from verification periods</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_tools"><a href="https://criticallyconsciouscomputing.org/tools">Tools</a></h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>overwhelmed by number of new tools and rely on social communities to
+learn new tools.</p>
+</li>
+<li>
+<p>large investments in tools, small investments in materials and
+opportunities to learn them</p>
+</li>
+<li>
+<p>professional tools or educational tools designed for learning ⇒ CPSC
+210</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+    </div>
+    <p><a href="../../../archive/">◀ Back to posts</a></p>
+</div>
+
+        </main>
+        
+        <footer>
+<center><p><a href="https://twitter.com/hoalycu" target="_blank">twitter</a> <a href="https://github.com/lhao03" target="_blank">github</a> <a href="https://www.linkedin.com/in/lucy-hao/" target="_blank">linkedin</a></p></center>
+            Site powered by cats, 🍫 and 
+            <a href="http://jaspervdj.be/hakyll">Hakyll</a>
+        </footer>
+    </body>
+</html>

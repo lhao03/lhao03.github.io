@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="en">
+  <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Lucy H | Paper: Non-Volatile Memory for Fast, Reliable File Systems</title>
+        <link rel="stylesheet" href="../../../css/main.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/default.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
+        <!-- and it's easy to individually load additional languages -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/languages/scheme.min.js"></script>
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/base16/onedark.min.css">
+        <script>hljs.highlightAll();</script>
+
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="preconnect" href="https://www.google-analytics.com" />
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-KDGPVMHC9Q"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-KDGPVMHC9Q');
+        </script>
+
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@hoalycu" />
+        <meta name="twitter:creator" content="@hoalycu" />
+        <meta property="og:title" content="Paper: Non-Volatile Memory for Fast, Reliable File Systems" />
+        
+        
+        <meta property="og:url" content="/posts/notes/nonvolatilememory" />
+        
+        
+
+        <!-- basic favicon -->
+        <link rel="icon" href="../../../images/android-chrome-384x384.png" /> 
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../../images/android-chrome-384x384.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../../images/android-chrome-384x384.png">
+        <link rel="apple-touch-icon-precomposed" href="../../../images/android-chrome-384x384.png">
+    </head>
+
+
+        <body>
+        <header>
+            <div class="logo">
+                <a href="../../../">
+                <img src="../../../images/android-chrome-384x384.png" alt="Me">
+                </a>
+            </div>
+        </header>
+
+        <main role="main">
+            <h1>Paper: Non-Volatile Memory for Fast, Reliable File Systems</h1>
+            <div>
+    <div class="header">
+        Posted on April 28, 2022
+        
+    </div>
+<div class="tags">
+    
+    Tags: <a title="All pages tagged 'file systems'." href="../../../tags/file%20systems/index.html">file systems</a>, <a title="All pages tagged 'paper'." href="../../../tags/paper/index.html">paper</a>
+    
+</div>
+    <div>
+        <p><em>Understanding: 7, Interest: 7</em></p>
+<p>Mary Baker, Satoshi Asami, Etienne Deprit, John Ouseterhout, and Margo Seltzer. 1992. Non-volatile memory for fast, reliable file systems. In Proceedings of the fifth international conference on Architectural support for programming languages and operating systems (ASPLOS V). Association for Computing Machinery, New York, NY, USA, 10–22. <a href="https://doi.org/10.1145/143365.143380">https://doi.org/10.1145/143365.143380</a></p>
+<p>Mary Baker, Satoshi Asami, Etienne Deprit, John Ouseterhout, and Margo Seltzer. 1992. Non-volatile memory for fast, reliable file systems. SIGPLAN Not. 27, 9 (Sept. 1992), 10–22. <a href="https://doi.org/10.1145/143365.143380">https://doi.org/10.1145/143371.143380</a></p>
+<ul>
+<li>non-volatile RAM (NVRAM)</li>
+<li>two uses of NVRAM to improve I/O performance in distributed file systems:
+<ul>
+<li>non-volatile file caches on client workstations to reduce write traffic to file servers</li>
+<li>write buffers for write-optimized file systems to reduce server disk access</li>
+</ul></li>
+<li>increasing amount of NVRAM shows diminishing returns and block replacement policy makes little difference</li>
+</ul>
+<h1 id="introduction">1. introduction</h1>
+<ul>
+<li>large, main-memory file systems better at reducing read traffic than write traffic
+<ul>
+<li>write traffic will become increasingly important in distributed file systems =&gt; could become a bottleneck</li>
+</ul></li>
+<li>failure to reduce write traffic is due to dirty data:
+<ul>
+<li>the longer dirty data stays, the higher chance it will be sent to cache by being overwritten or deleted, but the data becomes more vulnerable to machine failures
+<ul>
+<li>systems like UNIX limit the time dirty data remains in cache =&gt; most data is written back to due this</li>
+</ul></li>
+</ul></li>
+<li>by storing dirty data in NVRAM: guarantee permanence without cost of transferring it from client cache to server cache to disk</li>
+</ul>
+<h2 id="ways-to-implement-nvram">ways to implement NVRAM</h2>
+<ul>
+<li><p>some RAM with battery backup for time-of-day in workstations</p>
+<ul>
+<li>since systems include overhead of batteries, incremental additions may not be costly</li>
+</ul></li>
+<li><p>SIMMS (overheard of batteries and failover systems) can be amortized over more megabytes of memory</p></li>
+<li><p>uninterruptible power supply (UPS): more expensive for small amounts of memory</p></li>
+<li><p>EEPROM: has write access times significantly slower than RAM (not appropriate)</p></li>
+<li><p>NVRAM: high performance relative to disks and permanence relative to volatile RAM =&gt; worthwhile for small caches and write buffers</p></li>
+</ul>
+<p>Section 2
+- allow dirty data to remain longer in client cache without loss of reliability
+- one megabyte NVRAM =&gt; reduce file write traffic from clients to servers by more than 50%
+- but @ today’s prices, adding NVRAM is only worth if cache already includes 16 megabytes volatile memory</p>
+<p>Section 3
+- using non-volatile buffer to collect large amounts of data before writing =&gt; reduce disk write accesses by 10 - 25%</p>
+<p>Section 4
+- data in non-volatile client cache systems must reach non-volatile storage on server to be considered permanent and before the data is removed from client cache
+- avoid latency of synchronous disk access by writing data into NVRAM on the server
+- modified data may be lost if it resides on NVRAM on crashed client
+- must be possible to move NVRAM to another client to retrieve data</p>
+<h1 id="non-volatile-client-file-caches">2. non-volatile client file caches</h1>
+<ul>
+<li>write events take up 1/3 total file bytes transferred
+<ul>
+<li>most are triggered by 30-second delayed write back and cache consistency policy rather than cache block replacement</li>
+</ul></li>
+<li>since most data overwritten/deleted within 1/2 hour of creation =&gt; using non-volatile client cache may reduce server write traffic</li>
+</ul>
+<p>questions to address:
+- how long does dirty data last before being overwritten or deleted?
+- <em>if dirty data lasts a long time before being overwritten, then NVRAM would help by storing that dirty data to reduce chance of dirty data being lost through a crash, while reducing writes</em>
+- <em>if dirty data is constantly or being written back frequently due to block replacement (overwritten), maybe NVRAM would not be that useful.</em>
+- if there was infinite room in the non-volatile cache, what % of dirty data would be overwritten or deleted? how much would be written back to the file server due to cache consistency policy?
+- given omniscient block replacement policy, how much NVRAM would it take to get a significant reduction in write traffic?
+- what block replacement policies work best in non-volatile cache?
+- how to integrate NVRAM into cache organization to get the most of the benefits?
+- given current costs, does it make more sense to invest in NVRAM or buy more volatile memory</p>
+<h1 id="caching-models">2.1. caching models</h1>
+<ul>
+<li>write-aside, unified and compared to volatile</li>
+<li>assumed caches of static size and did not give dirty blocks preference
+<ul>
+<li>giving preference reduces write traffic but increases read traffic</li>
+</ul></li>
+</ul>
+<p>Sprite client cache:
+- two lists of 4 kilobyte blocks: free list and LRU list
+- free block, then look at first clean block on LRU for block replacement
+- dirty blocks that are less-recently accessed than selected clean block are scheduled to be written back to the server, block cleaner started
+- our volatile model: the LRU block is replaced, whether clean or dirty</p>
+<p>Sprite cache consistency policy:
+- server keeps track of last client to write each file
+- concurrent write-sharing: if another client opens the file, the server recalls any dirty data not yet flushed from the last writer’s cache. if 2+ clients have same file open and at least one has it open for writing, server disables client caching on file until all clients have closed it.
+- all read and write requests for the file bypass client cache and go directly to file server</p>
+<ul>
+<li>volatile model: all read/write requests directed to single volatile cache</li>
+<li>write-aside: NVRAM used as backup to protect dirty data
+<ul>
+<li>holds copies of blocks that are also present in volatile memory</li>
+<li>never read expect during crash recovery</li>
+<li>dirty blocks remain in NVRAM until replaced by other blocks or flushed back to server by consistency mechanism</li>
+<li>when dirty blocks are written to file server, they are removed from NVRAM but may remain as clean blocks in volatile cache</li>
+<li>no 30-second delayed write on dirty data</li>
+<li>LRU</li>
+</ul></li>
+<li>unified: blocks not duplicated between NVRAM and volatile cache
+<ul>
+<li>dirty blocks only in NVRAM</li>
+<li>clean blocks in either place
+<ul>
+<li>clean block may be put in NVRAM if volatile cache full or NVRAM has free block or contains the LRU block</li>
+</ul></li>
+<li>application writes directed only to NVRAM</li>
+<li>read request to either</li>
+<li>no 30-second delayed write on dirty data</li>
+<li>dirty data only leaves due to consistency mechanism or replacement</li>
+<li>LRU</li>
+</ul></li>
+</ul>
+<h1 id="simulations">2.2 simulations</h1>
+<ul>
+<li>not possible to deduce order and amount of write operations or which were caused by application <code>fsync</code> requests</li>
+<li>input parameters: maximum size of volatile and non-volatile caches, NVRAM model, and replacement policy in non-volatile cache</li>
+</ul>
+<h1 id="byte-lifetimes">2.3 byte lifetimes</h1>
+<p>figure 2
+- 35 - 50% bytes die within 30 seconds
+- 60% die within few hours</p>
+<p>trace 3,4
+- large amounts data transferred: 5 - 10% bytes die within 30 seconds, 80%+ die within few hours</p>
+<ul>
+<li><p>more bytes will die in cache than suggested by figure 2 because:</p>
+<ul>
+<li>traces are finite length and its assumed all bytes left in NVRAM at the end of trace are written back to the server</li>
+<li>simulation started out with empty caches, misclassifying some writes as new data rather than overwrites</li>
+</ul></li>
+<li><p>holding dirty blocks in cache for longer than traditional 30 seconds will reduce write traffic from clients to servers</p></li>
+<li><p>with cache of infinite size, no bytes are ever written back to file server due to cache block replacement</p></li>
+<li><p>across all traces: 85% of bytes written could be absorbed by sufficiently large NVRAM</p>
+<ul>
+<li>excluding trace 3 and 4: only 65% absorption is possible</li>
+</ul></li>
+<li><p>server traffic almost entirely from cache consistency mechanism</p>
+<ul>
+<li>reducing write traffic would require choosing more efficient cache consistency policy like block-by-block invalidation and flushing rather than whole-file invalidation and flushing</li>
+</ul></li>
+</ul>
+<h1 id="small-nvram-reduces-traffic">2.4. small NVRAM reduces traffic</h1>
+<ul>
+<li>results optimal in terms of blocks but not always in bytes:
+<ul>
+<li>block with next modify time furthest in the future may contain many dirty bytes</li>
+<li>block spared replacement may only contain few dirty bytes</li>
+<li>1/8 megabyte of NVRAM eliminates 30-50% of server write traffic</li>
+<li>increasing NVRAM is diminishing returns</li>
+<li>one megabyte NVRAM reduce traffic by 50%</li>
+</ul></li>
+</ul>
+<h1 id="replacement-policies">2.5. replacement policies</h1>
+<ul>
+<li>LRU favors short-lived blocks in cache</li>
+<li>only small differences</li>
+<li>omniscient policy only performs 10 - 15% better</li>
+</ul>
+<h1 id="comparison-of-cache-models">2.6. comparison of cache models</h1>
+<ul>
+<li>unified model does better with read traffic
+<ul>
+<li>overall cache size is increased for clean blocks because they can go in non-volatile cache or volatile cache</li>
+</ul></li>
+<li>adding NVRAM to write-aside doesn’t increase cache size for clean blocks</li>
+</ul>
+<p>total (read and write) traffic:
+compared to volatile:
+- write-aside: 8% worse with addition of 4 extra megabytes of cache memory
+- only reduces write traffic
+- unified: 8% better with addition of 4 extra megabytes of cache memory
+- reduces read and write
+- NVRAM should be closely integrated with cache mechanism for best effect</p>
+<ul>
+<li>for NVRAM amounts less than half megabyte, volatile model performs better
+<ul>
+<li>pool of blocks available for replace of newly-written data consists of entire volatile cache
+<ul>
+<li>only consists of NVRAM for NVRAM models (smaller)</li>
+</ul></li>
+<li>a model that allows dirty blocks to be written to NVRAM and volatile cache would perform better than all models mentioned (but with 30-second delay so dirty data would be vulnerable)</li>
+</ul></li>
+</ul>
+<p>traffic on memory bus
+- write-aside cache starts out with twice as much memory traffic
+- one megabyte NVRAM absorbs about half the bytes written by applications
+- unified model transfers at most 50% of original blocks to volatile cache
+- unified model generates at least 25% less file cache traffic than write-aside model</p>
+<p>number of accesses generated on NVRAM
+- unified cache model generates many more accesses to NVRAM than write-aside
+- because only writes occur in write-aside NVRAM
+- unified model generates 2 - 2.5 times more NVRAM accesses than write-aside</p>
+<h1 id="non-volatile-vs-volatile-caches">2.7. non-volatile vs volatile caches</h1>
+<ul>
+<li>cost effectiveness of NVRAM depends on amount of volatile memory already present in system</li>
+<li>2 megabytes NVRAM on top of 8 megabytes volatile cache == 12 megabytes volatile cache</li>
+<li>4 megabytes NVRAM on top of 8 megabytes volatile cache == 16 megabytes volatile cache</li>
+<li>16 megabytes: NVRAM performs better because larger volatile cache has already reduced read traffic, but can no longer reduce write traffic
+<ul>
+<li>adding half byte NVRAM performs better than 6 additional megabytes volatile memory</li>
+</ul></li>
+<li>NVRAM only makes sense on systems that cache dirty data on clients (Sprite, AFS)</li>
+</ul>
+<h1 id="using-nvram-as-file-system-write-buffer">3. using NVRAM as file system write buffer</h1>
+<ul>
+<li>better for systems like NFS (dirty data written back immediately)</li>
+<li>reduce physical writes from server to disk</li>
+<li>NVRAM as write buffer in front of disk</li>
+<li>UNIX fast file system in NFS environment already uses NVRAM to reduce disk traffic</li>
+<li>NFS protocol requires many synchronous write operations</li>
+<li>buffering writes also allows more efficient disk utilization since the system can sort its I/O operations to reduce disk read motion.</li>
+<li>only 7% of disk bandwidth is used when writing dirty data randomly to disk</li>
+<li>1000 I/Os requiring 4 megabytes of NVRAM can be buffered and sorted =&gt; utilize 40% disk bandwidth</li>
+<li>vs traditional UNIX file systems, LFS is optimized for writing rather than reading
+<ul>
+<li>amortizes cost of writes by collecting large segments of data before issuing contiguous disk writes</li>
+<li>file system layout is sequence of segments that comprise a log of the system.</li>
+<li>file metadata describes location of blocks in file to support efficient reads</li>
+<li>traditional file systems seek to predetermined disk location to update metadata or write different files, LFS gathers all dirty file data and metadata into single segment, appends summary block describing segment’s contents and writes out the whole unit with a single seek</li>
+</ul></li>
+<li>two causes of LFS not being able to write a full segment:
+<ul>
+<li>30-second timeout: do not impact disk bandwidth</li>
+<li><em>fsync</em>: requires LFS immediately write out dirty data, regardless of disk traffic, and these forced synchronous writes reduce efficiency (Sprite)</li>
+</ul></li>
+<li>write-buffer can reduce/avoid disk accesses because writes remain in NVRAM buffer until whole segment accumulates</li>
+<li>LFS: appends a 4 kilobyte block of metadata after each segment (full or partial), and 512 byte summary block (only reclaimed after garbage collection)</li>
+<li>using NVRAM would eliminate partial segment writes, reduce disk space overhead (less than 1% for full segments), improve disk utilization by 5 - 33% and reduce garbage collection load</li>
+</ul>
+<h1 id="impact-on-system-design">4. impact on system design</h1>
+<ul>
+<li>NVRAM must be able to be moved from dead machine to live machine</li>
+<li>make NVRAM blocks self-identifying =&gt; moved from machine to machine</li>
+</ul>
+    </div>
+    <p><a href="../../../archive/">◀ Back to posts</a></p>
+</div>
+
+        </main>
+        
+        <footer>
+<center><p><a href="https://twitter.com/hoalycu" target="_blank">twitter</a> <a href="https://github.com/lhao03" target="_blank">github</a> <a href="https://www.linkedin.com/in/lucy-hao/" target="_blank">linkedin</a></p></center>
+            Site powered by cats, 🍫 and 
+            <a href="http://jaspervdj.be/hakyll">Hakyll</a>
+        </footer>
+    </body>
+</html>
