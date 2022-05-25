@@ -220,6 +220,7 @@ sortIdentifiersByDate = sortBy (flip byDate) $
     --     let fn1 = takeFileName $ toFilePath id1
     --         fn2 = takeFileName $ toFilePath id2
     --         parseTime' fn = parseTimeM True defaultTimeLocale "%Y-%m-%d" $ intercalate "-" $ take 3 $ splitAll "-" fn
+    --- https://github.com/rgoulter/my-hakyll-blog/blob/master/site.hs
     compare
       >>= d1
       >>= d2
