@@ -20,8 +20,6 @@ The third drug is Glecaprevir, which targets conserved residues in the binding p
 
 There will need to be more research done to determine proper scheduling of use; how late after infection are the drugs still effective, and in what order or schedule results in maximal inhibition of infection. Additionally, we would need to manipulate the drugs into forms that are easily administered. N-0385 can be administered as a spray, but CMK and Glecaprevir administration were not discussed. TMPRSS-2 is not a cell essential gene[^5], so inhibiting it would probably cause “negligible side effects”[^5]. Similarly, since furin is a “ubiquitously expressed endoprotease”[^5], the same could be predicted, but more research needs to be done.
 
-<center>✨</center>
-
 [^1]: Trougakos, I.P., Stamatelopoulos, K., Terpos, E. et al. Insights to SARS-CoV-2 life cycle, pathophysiology, and rationalized treatments that target COVID-19 clinical complications. J Biomed Sci 28, 9 (2021). [https://doi.org/10.1186/s12929-020-00703-5](https://doi.org/10.1186/s12929-020-00703-5)
 
 [^2]: Cheng YW, Chao TL, Li CL, Chiu MF, Kao HC, Wang SH, Pang YH, Lin CH, Tsai YM, Lee WH, Tao MH, Ho TC, Wu PY, Jang LT, Chen PJ, Chang SY, Yeh SH. Furin Inhibitors Block SARS-CoV-2 Spike Protein Cleavage to Suppress Virus Production and Cytopathic Effects. Cell Rep. 2020 Oct 13;33(2):108254. doi: 10.1016/j.celrep.2020.108254. Epub 2020 Sep 23. PMID: 33007239; PMCID: PMC7510585.
