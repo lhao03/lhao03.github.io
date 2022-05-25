@@ -30,5 +30,77 @@ there needs to be a distinction between science capital and computer science cap
 * people continually acquire capitals
 
 ==== role of instructors/educators as transmitters of the dominant culture
-computer engineering ethos and identity
-> ‘individual, logic, reasoning, abstractions, obsession for computers, self-righteousness, lack of reflection and masculinity’
+computer engineering ethos and identity => ‘individual, logic, reasoning, abstractions, obsession for computers, self-righteousness, lack of reflection and masculinity’
+
+* attractive to white males and privileged students
+
+> [...] socialization process in CS education is, according to Bourdieu and Passeron [16], a form of symbolic violence, where certain types of cultural and symbolic capital are offered to students in a hidden way and are legitimated by the dominant culture.
+
+> the way dominated groups (in this case, marginalized students) ‘take things for granted’ by perceiving and accepting the computing education they encounter as natural, rather than ‘recognizing that there are ways that their [education] could be transformed’ [65, p. 82], and ultimately empower them with capital.
+
+> Symbolic violence is, in many ways, related to the concept of ‘hidden curriculum’.
+
+
+=== second theoretical lens: science capital 
+> children with a significant level of interest in science still did not consider science as a career path due to the ‘powerful structuring context that influences how children formulate their aspirations’. The ‘powerful structuring context’ refers to the fact that the ways young people identify with computing is not straightforward but rather is a product of their prior experiences and their interaction with society at large, and is shaped by factors such as gender, socioeconomic status, ethnicity, access to various types of capital and other traits.
+> students’ uneven patterns of CS aspirations are a product of a close interplay between the structuring context and the students’ access to social and cultural resources.
+
+=== third theoretical lens: sociocultural perspective on learning
+* impact of social and cultural factors on learners' possibilities of succeeding in their learning enterprise
+* shits learning to a process that must be understood in relation to a context
+
+== 4 the computer science capital framework
+> As Albert and Kleinman [2, p. 268] point out: ‘For each scientific space (as for any field in any area of social activity), the identification of the efficient properties and resources and, accordingly, of the dominant forms of capital, remains an empirical question’. As a result, the theory of science capital is inadequate to understand the mechanisms behind students’ aspirations and trajectory in CS.
+
+=== computer science-related social capital
+* role models
+** role models must convey sense of belonging for those that look up to them
+* family support
+** close family members => encouragement and support
+** computing usually introduced through the home
+* community support
+** children who talk to other people about science tend to have stronger interest in science
+
+=== computer science-related cultural capital
+* positive attitude towards CS (embodied cultural capital)
+** high aspirations in science doesn't correlate with aspirations to work or study science
+** interest in computing doesn't mean students want to work or study computing
+** students who had positive attitudes towards science and thought they were good at science had higher science aspirations
+** students who valued science (see the usefulness of science in daily life) had higher science aspirations
+
+> There is, however, a distinguishing difference between CS and other fields of natural science. Previous studies have found that students who went on to study CS in higher education do so either because they have developed a lifelong, passionate interest for computers [59, 68, 76] or because they saw computing as a tool for self-expression, e.g. their broader interest in computing technology and society [40, 54, 71]. Although both of these student groups have positive views of CS, their understanding of the usefulness and values of CS in their daily lives differed. Prior studies have shown that students who can relate what they learn in computing classes with what they find personally meaningful are also more likely to persist in their studies and feel as though they belong [20, 59].
+
+* computer experiences and self-efficacy (institutionalized and embodied cultural capital)
+
+* access to computing devices and software applications (objectified cultural capital)
+** access to or ownership of objectified state of cultural capital is "indicator of material wealth" or economic capital
+
+* perceptions of CS and its career opportunities aligned with intrinsic values (embodied cultural capital)
+
+> lack of understanding or a misunderstanding of what CS entails and stereotypical views of computer scientists as barriers to attracting students from diverse backgrounds to the field
+
+> students who appreciate the range of opportunities for self-expression that exists in CS can leverage this knowledge to compensate for the lack of capital and remain motivated to continue with computing
+
+=== computer science-related behaviors and practices
+activities found among students with high aspirations of CS
+* participation in informal learning of CS
+** There is, however, evidence that many informal learning initiatives related to CS attract mostly learners who are already interested in CS and fail to attract a diversity of participants [25, 62].
+
+* consumption of CS-related media
+** boys attributed interest in CS due to popular media more than girls
+
+> The Swedish Media Council [79] noted a significant divergence in interest in computer games starting from the age of ten. From that point on, boys spent at least twice as much time playing computer games as girls did. Previous studies have also found evidence that the consumption of computer games and CS-related media is uneven for boys and girls, resulting in differences in access to cultural capital related to CS.
+
+== 5 implications
+
+=== recruitment and CS-related social capital
+> The recruitment of instructors, teachers and students (in other words, potential role models) in CS learning settings should be broad and diverse because this facilitates the setting of norms, behaviours, and achievements that differ from those of the dominant culture. Having access to a diversity of peers and adults will likely increase individual students’ possibility of forming an identity of participation in CS. This is because students will have a greater chance of identifying with and relating to someone in a learning context.
+
+=== teaching to enhance stuednts' CS-related social acpital
+> When it comes to the decision to study CS, children are naturally influenced by their parents’/caregivers’ opinion about CS. Overall, there is evidence that children’s socialization process among close family members produces values, attitudes, habits, interests, and ultimately CSC that can lead a child aspire to a state similar to that of the people who are close to them. In other words, the inheritance of capital is an unconscious process brought about by socialization into the family’s cultural values. Previous studies suggest that students with low ‘family capital’ related to CS will have lower aspirations in CS. Not only do they lack privileges that prepare them to acquire CS-related skills, knowledge and attitudes at home; they might also lack support from home to pursue CS.
+
+> Data from several intervention studies suggest that the building of social networks can successfully retain students in CS studies [26, 36, 60]. Activities such as mentorships, seminars, early advising, professional develop- ment, awareness of opportunities and alumni networking have been proven to strengthen students’ social capital and reinforce their sense of belonging, which in turn affects the retention rates positively [24, 26, 36].
+
+* social support particularly important for students who do not come from academic homes
+
+=== teaching to enhance students' CS-related cultural capital

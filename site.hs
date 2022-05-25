@@ -1,14 +1,18 @@
 --------------------------------------------------------------------------------
 {-# LANGUAGE OverloadedStrings #-}
 
+import Control.Applicative (Alternative (..))
 import Data.List
   ( intercalate,
     isInfixOf,
     isPrefixOf,
     isSuffixOf,
     sort,
+    sortBy,
   )
 import Data.Monoid (mappend)
+import Data.Time.Clock (UTCTime)
+import Data.Time.Format (defaultTimeLocale, parseTimeM)
 import Hakyll
 import Hakyll.Web.Sass (sassCompiler)
 import System.FilePath.Posix
@@ -78,10 +82,14 @@ main = hakyllWith config $ do
 
   match "posts/**" $ do
     route appendIndex
-    compile $
+    compile $ do
+      let ctxWithPrevNext =
+            field "nextPost" nextPostUrl
+              `mappend` field "prevPost" previousPostUrl
+              `mappend` postCtxWithTags tags
       pandocCompilerWithAsciidoctor
-        >>= loadAndApplyTemplate "templates/post.html" (postCtxWithTags tags)
-        >>= loadAndApplyTemplate "templates/default.html" (postCtxWithTags tags)
+        >>= loadAndApplyTemplate "templates/post.html" ctxWithPrevNext
+        >>= loadAndApplyTemplate "templates/default.html" ctxWithPrevNext
         >>= relativizeUrls
 
   create ["archive.html"] $ do
@@ -172,3 +180,48 @@ cleanIndexUrls = return . fmap (withUrls clean)
     clean url
       | idx `isSuffixOf` url = take (length url - length idx) url
       | otherwise = url
+
+---- Next/Prev Post
+previousPostUrl :: Item String -> Compiler String
+previousPostUrl post = do
+  posts <- getMatches "posts/**"
+  sortedPosts <- sortIdentifiersByDate posts
+  let ident = itemIdentifier post
+      ident' = itemBefore sortedPosts ident
+  maybe empty (fmap (maybe empty toUrl) . getRoute) ident'
+
+nextPostUrl :: Item String -> Compiler String
+nextPostUrl post = do
+  posts <- getMatches "posts/**"
+  let ident = itemIdentifier post
+      sortedPosts = sortIdentifiersByDate posts
+      ident' = itemAfter sortedPosts ident
+  maybe empty (fmap (maybe empty toUrl) . getRoute) ident'
+
+itemAfter :: Eq a => [a] -> a -> Maybe a
+itemAfter xs x =
+  lookup x $ zip xs (tail xs)
+
+itemBefore :: Eq a => [a] -> a -> Maybe a
+itemBefore xs x =
+  lookup x $ zip (tail xs) xs
+
+urlOfPost :: Item String -> Compiler String
+urlOfPost =
+  fmap (maybe empty toUrl) . getRoute . itemIdentifier
+
+sortIdentifiersByDate :: [Identifier] -> Compiler [Identifier]
+sortIdentifiersByDate = sortBy (flip byDate) $
+  do
+    d1 <- getMetadataField' id1 "date"
+    d2 <- getMetadataField' id2 "date"
+    -- where
+    --   byDate id1 id2 =
+    --     let fn1 = takeFileName $ toFilePath id1
+    --         fn2 = takeFileName $ toFilePath id2
+    --         parseTime' fn = parseTimeM True defaultTimeLocale "%Y-%m-%d" $ intercalate "-" $ take 3 $ splitAll "-" fn
+    compare
+      >>= d1
+      >>= d2
+
+----
