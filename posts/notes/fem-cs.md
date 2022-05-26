@@ -323,3 +323,41 @@ has been used as an argument for making CS into a science.
 - situatedness: concious epistemological positioning => part of practice and knowledge production and it means actively taking a stand
 
 > Thus, her alternative to relativism and universalism is partial, locatable, situated knowledge.
+
+> Thus, feminist epistemologies acknowledge (embodied) experience as a valid basis for knowledge, and argue for a unity of knowledges, to borrow Hilary Rose’s expression, of “hand, heart and brain”.
+
+> Crutzen and Gerrissen argue that object orientation is based on the idea of objectivity and neutrality of representation, as well as the idea that everything and everybody can be represented in terms of objects.
+
+* treat as concrete science => new ways of gaining knowledge
+
+> What consequences can naturalisation have? For one thing, it is easy to see how everything, from hardware to software tend to be taken as ‘natural’, as something given, once they have existed for some time.
+
+> This means that the reasons why things are constructed in a certain way are forgotten, and hence there is likely to be a tendency not to question whether this was actually ‘the best way’ to do something, thus contributing to technical inertia. Designers, machines and software are made invisible, thus hiding the choices that have been made during the processes.
+
+> This will mean that the objects and the processes will become situated in the context where they were created, and this situating brings with it valuable knowledge about the different circumstances surrounding the creation.
+
+> All processes that produce knowledge are situated, socially, culturally and historically.
+
+> To exclude social and cultural aspects from knowledge and artefacts relates to attempts at universalising, a process that Donna Haraway, along with naturalising, sees as connected to the “view from nowhere”, the disembodied knowledge.
+
+> information is considered to have objective semantic content. He defines  objective as “mind-independent or external, and informee-independent” (p. 42). This means that information exists independently of its encoding and transmission. This view tends to prioritise a view of information as ‘object’, rather than as process. Can information really be said to exist if there is no receiver, and if no communication is going on? Is information just lying around, waiting to be exposed?
+
+> I oppose to this view of information. Instead, I take the position that information is,
+(at least to a non-trivial extent), dependent on the position and situation of the informed
+subject, dependent upon his or hers (situated) interpretation. This means a view that
+focuses on the subject and the process, instead of on the object. I agree that data can
+exist ‘in itself ’, but I think this is doubtful when it comes to information.
+
+
+> To Colburn, abstractions are fundamental. He argues that “software developers need to become conversant in the analytical tools of philosophers”, such as logics, classifications, hierarchies “and other convenient abstractions.” (p. 325). This again, reveals a view that prioritises the abstract, disembodied knowledge. I want to argue that that is not what software developers primarily need today, instead they need the competencies connected with the domains of use, for example to understand and account for complexity and heterogeneity among users.
+
+> Is the world understandable and describable in formal terms? My position is that it is
+not. Whose world is captured in the formal methods/models? I believe a fundamental
+question becomes: what is computing mostly about: formal systems and abstractions or
+‘thinking things’, i.e. people? The answer to this question will depend to a great deal on
+the view one takes not only of computer science, but also of technology on the whole,
+and of course, of one’s epistemology.
+
+> Colburn (p. 319) gives an interesting example regarding two fundamentally different views on programs: one that sees computer programs as mathematical expressions, and another that sees them from the perspective of functionality.
+
+> the formal view (mathematical expressions) used to be the strongest, but is losing ground to the more use- and functionality oriented view.

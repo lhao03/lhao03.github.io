@@ -68,12 +68,23 @@
     
 </div>
     <div>
-        <div class="ulist">
+        <div id="toc" class="toc">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_freestanding_rust_binary">freestanding rust binary</a></li>
+<li><a href="#_a_minimal_rust_kernel">a minimal rust kernel</a></li>
+</ul>
+</div>
+<div class="paragraph">
+<p><a href="https://os.phil-opp.com/" class="bare">https://os.phil-opp.com/</a></p>
+</div>
+<div class="sect1">
+<h2 id="_freestanding_rust_binary">freestanding rust binary</h2>
+<div class="sectionbody">
+<div class="ulist">
 <ul>
 <li>
-<p>use of <code>#![no_std]</code> because the standard library requires <code>libc</code> which
-requires the operating system and because features like files, networking and
-threads (part of standard library) require the operating system.</p>
+<p>use of <code>#![no_std]</code> because the standard library requires <code>libc</code> which requires the operating system and because features like files, networking and threads (part of standard library) require the operating system.</p>
 </li>
 <li>
 <p><code>#[panic_handler]</code>: must define a function to run when panic occurs</p>
@@ -88,6 +99,9 @@ threads (part of standard library) require the operating system.</p>
 <li>
 <p>Rust use unwinding to ensure all memory freed on panic</p>
 </li>
+<li>
+<p>disabling unwinding reduces binary size</p>
+</li>
 </ul>
 </div>
 </li>
@@ -100,7 +114,144 @@ threads (part of standard library) require the operating system.</p>
 <li>
 <p><a href="https://www.bogotobogo.com/cplusplus/stackunwinding.php" class="bare">https://www.bogotobogo.com/cplusplus/stackunwinding.php</a></p>
 </li>
+<li>
+<p><code>start</code> attribute: the first program that runs is the runtime system, which is called before <code>main</code></p>
+<div class="ulist">
+<ul>
+<li>
+<p>in a Rust binary that links stdlib ⇒ calls <code>crt0</code> ⇒ creating a stack and placing right arguments there</p>
+</li>
+<li>
+<p>C runtime invokes entry point of Rust runtime, which is marked by <code>start</code> language item ⇒ Rust runtime then calls <code>main</code></p>
+</li>
 </ul>
+</div>
+</li>
+<li>
+<p>we don’t have access to Rust runtime and <code>crt0</code> ⇒ need to overwrite <code>crt0</code> entry point ⇒ add <code>#![no_main]</code> and add own `<em>start</em> function</p>
+<div class="ulist">
+<ul>
+<li>
+<p><code>extern "C"</code>: tells compiler to use C calling convention</p>
+</li>
+<li>
+<p><code>!</code>: return type means the function is diverging, never allowed to return</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>linker: program that combines generated code into executable</p>
+<div class="ulist">
+<ul>
+<li>
+<p>to avoid error, we must compile for a different environment with no underlying os ⇒ bare-metal</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_a_minimal_rust_kernel">a minimal rust kernel</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>when you turn on computer ⇒ begins executing firmware code stored in motherboard ROM ⇒ code performs power-on self-test, detects available RAM ⇒ pre-inits CPU and hardware ⇒ looks for bootable disk and starts booting os kernel</p>
+</li>
+<li>
+<p>BIOS: basic input/output system</p>
+</li>
+<li>
+<p>UEFI: unified extensible firmware interface</p>
+</li>
+<li>
+<p>BIOS Boot: almost all x86 systems have support for BIOS.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>CPU is put into a 16-bit compatibility mode called real mode before booting so old bootloaders would still work</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>turn on computer ⇒ loads BIOS ⇒ self test and init routines ⇒ look for bootable disks ⇒ control transferred to bootloader ⇒ determine location of kernel image on disk and load into memory ⇒ switch CPU from 16-bit real mode to 32-bit protected mode then 64-bit long mode (64-bit registers and complete main memory are avail) ⇒ query information from BIOS and pass to OS</p>
+<div class="ulist">
+<ul>
+<li>
+<p>real mode: addresses in real mode actually correspond to real locations in memory</p>
+</li>
+<li>
+<p>protected mode: allow to use virtual memory, paging, safe multi-tasking</p>
+</li>
+<li>
+<p>long mode: access to 64-bit instructions and registers</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>multiboot standard: GNU GRUB</p>
+<div class="ulist">
+<ul>
+<li>
+<p>to make kernel Multiboot compliant, insert Multiboot header at beginning of file</p>
+</li>
+<li>
+<p>designed to make bootloader simple instead of kernel ⇒ kernel needs to be linked with adjusted default page size because GRUB can’t find Multiboot header otherwise</p>
+</li>
+<li>
+<p>boot information: contains lots of architecture dependent structures instead of ocean abstraction</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>redzone is disabled because it could cause stack corruptions when dealing with interrupts</p>
+<div class="ulist">
+<ul>
+<li>
+<p>allows functions to temporally use the 128 bytes below its stack frame without adjusting the stack pointer</p>
+</li>
+<li>
+<p>on exceptions or hardware interrupts, the red zone is overwritten</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><code>"features": "-mmx,-sse,+soft-float",</code>: <code>mmx</code> and <code>sse</code> features determine support for SIMD, which can speed up programs significantly</p>
+<div class="ulist">
+<ul>
+<li>
+<p>performance problems: the kernel has to restore all registers to their original state before continuing an interrupted program</p>
+</li>
+<li>
+<p>for every interrupt, the complete SIMD state has to be saved</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>memory-related intrinsics: memory-related functions in the <code>compiler_builtins</code> crate that aren’t enabled by default because they normally are provided by the C library</p>
+<div class="ulist">
+<ul>
+<li>
+<p>can’t link to the C library so we could: implement our own functions</p>
+</li>
+<li>
+<p>enable the implementations provided by the crate</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
 </div>
 
     </div>
