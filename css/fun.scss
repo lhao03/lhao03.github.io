@@ -61,3 +61,37 @@ hr:after {
   padding: 0 0.25em;
   background: $backgroundColor;
 }
+
+.admonitionblock {
+  td {
+    border-top: hidden !important;
+    border-bottom: hidden !important;
+  }
+  .content {
+    border-right: hidden !important;
+    padding-left: 15px;
+  }
+  .icon {
+    border-left: hidden !important;
+    padding-right: 15px;
+  }
+  padding: 0 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  border-color: $fontColor;
+  text-align: left;
+  .title {
+    font-weight: bold;
+  }
+  &.note,
+  &.tips {
+    background-color: darken(#a3be8c, 15%);
+  }
+  &.warning {
+    background-color: #e44675;
+  }
+  &.important {
+    background-color: darken(#81a1c1, 15%);
+  }
+}

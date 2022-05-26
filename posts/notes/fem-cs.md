@@ -1,6 +1,6 @@
 ---
 title: "Notes for: Feminist Technoscience Strategies in Computer Science"
-tags: book, feminism
+tags: book, feminism, computer science education
 date: 2022-05-10
 ---
 
@@ -80,6 +80,7 @@ the gender segregated teaching project for instance). [74]
 ## Paper B2
 
 ### Why should the issue of lack of women in CS be given attention?
+
 - shortage of labor force: women are reserve for a shortage of men => rather cynical, regarding women as inferior
 - missing women contribution:
  - "is the idea that women have special qualities simply by virtue of the fact that they are women."
@@ -91,6 +92,7 @@ the gender segregated teaching project for instance). [74]
   - “The more diverse our profession, the more creative and flexible we can be – and the more important our contribution to the world we live in” (Pfleeger 1990 p. 14)
 
 ### How is the problem perceived?
+
 - individual: female students have usually have less experience with computers/programming than male peers when entering university
 - structural: form of structure of curriculum and pedagogy of education programmers, and structure of hierarchies within academia and industry
 - symbolic: strongly male-dominated culture and image of what it is to be a computer scientist
@@ -102,10 +104,12 @@ the gender segregated teaching project for instance). [74]
 - one-sided adaptation on the part of women
 
 *fourth level of obstacles*
+
 > discipline and epistemological issues concerning computer science itself and its knowledge processes. 
 
 #### Who perceives the problem?
 **Computer Scientists**
+
 - "women into technology" approach has been adopted
 - focus on low number of women and issues of recruitment, education, training, equity
 - mainly individual level
@@ -119,6 +123,7 @@ the gender segregated teaching project for instance). [74]
 > “Could it be the ill-defined nature of computing is what drives them away?”
 
 **Summary of how the problem is commonly viewed**
+
 (1) Lack of Knowledge about Career Prospects
 (2) The Image of Computer Science and Information Technology
 (3) A Perceived Lack of Confidence Amongst Women Students Despite Their
@@ -143,6 +148,7 @@ Learning Theory
 - problem has been constructed in a way to limit the solutions
 
 **Social Scientists** [97]
+
 - focus on "gender and CS"
 - early research appraochs problem on individual level: "that changes within CS may offer women a unique opportunity because changes in the mental model of computing will make it more ‘feminine’, or that object-oriented programming would require a reconsideration of traditional concepts of masculinity and femininity"
 - Sherry Turkle:
@@ -173,6 +179,7 @@ _ Nissen: technology as made by men for men, control of machine as masculine sym
 > There can be a tendency to focus on questions of why, i.e. to explain, rather than to suggest what can be done about the problem. [100]
 
 **Cross- and Interdisciplinary Groups and Forums**
+
 > “the decline in the number of young women selecting computer science majors was attributable to a male-oriented paradigm in computer science” [101]
 
 >“the decline in young women…can be attributed to the existing educational paradigm that separates studies of science, math, and computer science from studies of the humanities” (Ibid p. 1), and she advocates a more integrated approach. Thus, she focuses on the structural level combined with the symbolic level. [101]
@@ -198,3 +205,121 @@ _ Nissen: technology as made by men for men, control of machine as masculine sym
 > “The computer science culture assumes that men will succeed. […] Hence it bolsters men’s confidence and sense of belonging. This same culture does not assume (often accurately) that women conform; hence they enjoy no default expectation of success, and their interests and attachments to computing may be regarded as deviant from the norm, and less serious than those of the male students”
 
 > The aim of the group has been to broaden the culture and curriculum, to show that there are multiple ways to be a computer scientist and to be interested in the subject, and to demonstrate that valuable contributions to the field come from people with different sets of attachment to computers (Margolis et al 2000). Among examples of the changes that they have implemented are: different entry points to the curriculum, depending on the level of experience, an “immigration course” to expose new students to a wide variety of CS issues and applications in order to counteract the “all programming” stereotype, and interdisciplinary courses. The project has been a success, with an increase in female enrolment in the computer science programme from 7% in 1995 to 42% in 2000 (Margolis, Fisher 2002).
+
+> “…change computer science into a field that is engaging and interesting for a much larger and more diverse group of students. The goal is not to fit women into computer science as it is currently taught and conceived. Rather, a cultural and curricular revolution is required to change computer science so that the valuable contributions and perspective of women are respected within the discipline.” (Margolis, Fisher 2002, p. 6).
+
+> “The perspective that computer science can make itself stronger by incorporating the values typical of women in the field changes the question from ”how can women change to fit into computer science” to “how can CS change to attract more women”.” (ibid. p. 60)
+
+* but what are the perspectives and values of women? 
+** risk of reduction and essentialism
+** oversimplification leads to dichotomic deadlock => we gain nothing by putting men and women against each other
+
+is "cultural and curricular revolution" enough? nothing at the discipline level mentioned
+
+> It is not only about how computer science is “taught and conceived”, it is also about how it is thought, talked and understood as knowledge and discipline.
+
+> The attitude of the authors appears to be that they take the fundamentals of CS as given. As noted above, they explicitly concentrate on curriculum, pedagogy and culture. As I have argued above, this will lead to a limited understanding. I argue that by exclusively focusing on social and cultural factors, we limit ourselves and fail to see other deeply rooted influences (such as issues of knowledge).
+
+> However, the problems of acceptance for a ‘foreign’ discipline within CS should not be underestimated and can necessitate compromises in order to be accepted and to be able to work towards transformation.
+
+**Feminist/Gender Researchers Within CS**
+
+> “Whose science? Whose knowledge?” (Harding 1991)
+
+> The use of language has proved to be very important in our understanding of ideas and the images they call to mind. The presence of clearly gender-marked metaphors can be a factor in supporting the gender structure within the discipline. Metaphors create images that will be of importance in the knowledge process (Keller 1995).
+
+* feminist perspective of cs: Tone Bratteteig and Guri Verne
+
+> As a totally different example, they discuss the idea of getting girls interested in computing through games, but they find it difficult and questionable to design alternative games for girls: “The question we are left with is whether we change anything or rather conserve status quo by implementing the conditions and characteristics of some present female culture” (Ibid, p. 67).
+
+> Among other topics, she discusses the differences between propositional knowledge (‘knowing that’) and skills knowledge (‘knowing how’), or mental vs. embodied knowledge, and how the former, which is usually associated with men, has been seen as superior to the latter (often seen as linked to women).
+
+> “Knowing is not necessarily a matter of saying and representing what is the case but can also be a kind of practical involvement with the world” (Belenky et al.199723, quoted in Moggridge 1998, p. 34).
+
+> She discusses what she sees as three levels of criticism and solution: “add- more-women”, the “liberal level” (qualitative changes to the environment, including teaching), and the “radical level”: “This is where we start looking for a really new science and encouraging a transformation not only of the way we do it, but also what it is that we do” (Grundy 1997, p. 9).
+
+> Anne Moggridge points out that there is an increasing amount of relevant literature on gender and computing, but that most of it has been produced outside of the discipline
+
+
+> If the problem is defined in terms of arguments such as: women have less experience with computers, women lack self-confidence, women have too few role models, then the approaches are rather straightforward: give women experience with computers, strengthen their self-confidence, provide role models. What happens then when the expected effect of the action fails to appear? Do we return to the definition of the problem or do we blame the women?
+
+* women are compared to an existing ‘male’ norm of success, albeit most often implicitly.
+
+> We have to “ask what is wrong with computing rather than what is wrong with women” (Clegg and Trayhurn 1999).
+
+### Paper B2 [117]
+
+> ”The reasons for the divergence in perception between feminist critics and women scientists are deep and complex. Though undoubtedly fuelled by political concerns, they rest finally neither on vocabulary, nor on logic, nor even on empirical evidence. Rather, they reflect a fundamental difference in mind-set between feminist critics and working scientists – a difference so radical that a “feminist scientist” appears today as much a contradiction in terms as a “woman scientist” once did”.
+
+> “CS departments in engineering colleges graduate proportionately fewer women on average than CS departments in non-engineering colleges” (p. 107).
+
+> Why does Tracy Camp use the argument of labour shortage? This argument implies that women are regarded as a reserve labour force. In itself, this is not a neutral argu- ment: are women a concern only in their capacity as a ‘reserve’, i.e. when there are not enough (talented) men? It then becomes a cynical argument, even though it is presented as a completely reasonable one, that points to a (perhaps subconscious) view of women as inferior to men, as ‘second best’.
+
+> For example, she writes: “there are a number of reasons…”. The argument of labour shortage is sometimes used in the belief that this is politically acceptable or neutral. By using this argument, it is possible to avoid discussions concerning equality and gender issues, which are often considered more or less irrelevant by the community (Egeland 2001). It thus becomes a means to obtain changes that might actually be wanted for other reasons (e.g. gender equality). So the motive of a critical labour shortage might in this context be used strategically.
+
+> “We need to keep open the possibility that a particular representation has been selected for purely instrumental reasons, to achieve a particular goal, and has nothing to do with the values of the one making the representation” (Bacchi 1999, p. 9).
+
+> This is yet another sign of the epistemology: the invisible researcher confirms the objectivity paradigm, “the god-trick of seeing everything from nowhere” (Haraway 1991, p. 189).
+
+### Paper B3 [125]
+> The approaches to knowledge and epistemological basis for computer science (CS), on which research and education as well as development of applications are founded, are fundamental for its production of knowledge. These have however been fairly little reflected upon and studied, in contrast to societal impacts of CS.
+
+> Computer science comprises both internal and external theories or stories (Fox Keller 1992)
+
+> Is CS a mixture of other disciplines or does it have its own unique core?
+
+> CS is fairly young as a discipline in its own right and is still being formed and the subject of many discussions regarding its core character and content. The boundaries of CS are constantly debated: what is to be considered to be within the discipline and what is to be considered to be outside (but connected to) it, for example where does software engineering and human-computer interaction belong?
+
+**ACM Task Force on the Core of Computer Science (1989)**
+- theory => mathematics
+- abstraction => modelling and rooted in experimental scientific method
+- design => engineering
+
+> The fundamental question underlying all of computing is, “What can be (effectively) automated?”” (Ibid p. 12)
+
+
+> The algorithmic side of computer science is emphasized by Judith Gal-Ezer and David Harel in their discussion “What is CS” (Gal-Ezer and Harel 1998 p. 78): “The point is that CS is not only the scientific basis of a major technological revolution, but has at its heart a special and powerful way of thinking—algorithmically—which is required in dealing with the ever-complex modern world, and which is becoming crucial in many other scientific and engineering disciplines, too.”
+
+> Abelson and Sussman directly address this (Abelson and Sussman 19858, quoted in Denning et al. 1989 p.11-12): “The computer revolution is a revolution in the way we think and in the way we express what we think. The essence of this change is the emergence of what might best be called procedural epistemology – the study of the structure of knowledge from an imperative point of view, as opposed to the more declarative point of view taken by classical mathematical subjects. Mathematics provides a framework for dealing precisely with notions of ‘what is’. Computation 9 provides a framework for dealing precisely with notions of ‘how to’”.
+
+* CS: dichotomies => algorithmic side and systems side
+
+> “On the cruelty of really teaching computing science”, Edsger Dijkstra claims that “computing science is—and will always be—concerned with the interplay between mechanized and human symbol manipulation usually referred to as ‘computing’ and ‘programming’, respectively” (Dijkstra 1989 p. 1401), and that computing should be localised in “the direction of formal mathematics and applied logic” (Ibid p. 1402).
+
+> One of the central changes that can be seen in CC2001 is the inclusion of professional practice as an integral component in the CS curricula. Where the 1989 report identified three paradigms, this could now be seen as expanded: “All computer science students must learn to integrate theory and practice, to recognize the importance of abstraction, and to appreciate the value of good engineering design”
+
+* inclusion of professional practice and computing became broader
+
+
+* applications domains are front lines and skills connect technical performance with customer
+> Peter Denning regards computing as the discipline and IT as the profession, and he claims that there is currently a gap between the two. Computing is no longer the driving force, controlling the field, and he advocates that it should cross the chasm and seek leadership within the new profession, by for example accommodating “embodied professional knowledge” (Denning 2001, p. 24). A similar argument is made by Steve Cunningham: “Any computing education that does not pay attention to the user’s role in computing is missing the most vibrant and exciting part of computing today.” (Cunningham 1998, p. 4a).
+
+> Lynn Andrea Stein argues the need for a shift in the underlying metaphor of computing, from the traditional metaphor, “computation as calculation”, towards a metaphor of “computation as interaction” (Stein 1999).
+
+#### paradigms of cs
+
+> Frances Grundy raises questions concerning the ‘fundamental nature’ of the discipline
+of computer science. She challenges the three major paradigms identified within CS:
+mathematics, science and engineering (Grundy 2000a, 2000b, 1998). She discusses the
+role of mathematics in computing, and in particular what role mathematics actually
+plays for abstraction. Her argument is that mathematics is only one type of abstraction
+involved in computing, and she further claims that mathematics is a status symbol and
+has been used as an argument for making CS into a science.
+
+> Abstraction is considered very important for CS. However, the products of CS are very concrete. Why is abstract, formal and logical thinking and knowing seen as superior within CS? Sue Clegg (Clegg 2001) argues that computing is neither an extension of mathematical thinking nor an applied science.
+
+- computing as concrete science with materiality and social practices
+
+- concrete thinking in CS => feminist epistemology with dedication to concrete learning introduces new ideas for gaining knowledge
+
+- OO: based on idea everything and everybody can be represented in terms of objects
+- OO should not be used for analysis of human worlds, only realization of software
+
+## Paper B4 [155]
+> “…observations are theory-laden, theories are paradigm-laden, and paradigms are culture- laden: hence there are and can be no such things as value-neutral, objective facts.” (Harding 1986, p.102).
+
+> Feminist epistemologies are thus critical of objectivity paradigms, and of the neutral and objective observer, what Donna Haraway terms “the God-trick of seeing everything from nowhere” (Haraway 1991, p. 189). Instead, Donna Haraway develops the concept of situated knowledge.
+
+- situatedness: concious epistemological positioning => part of practice and knowledge production and it means actively taking a stand
+
+> Thus, her alternative to relativism and universalism is partial, locatable, situated knowledge.

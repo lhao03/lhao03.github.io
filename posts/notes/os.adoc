@@ -4,16 +4,63 @@ date: 2022-05-23
 tags: operating systems
 ---
 
-* use of `#![no_std]` because the standard library requires `libc` which
-requires the operating system and because features like files, networking and
-threads (part of standard library) require the operating system.
+:toc:
+
+https://os.phil-opp.com/
+
+== freestanding rust binary 
+
+* use of `#![no_std]` because the standard library requires `libc` which requires the operating system and because features like files, networking and threads (part of standard library) require the operating system.
 
 * `#[panic_handler]`: must define a function to run when panic occurs
 
 * language item: special functions and types that are required internally by the compiler
 ** `eh_personality`: marks a function that is used for stack unwinding
 ** Rust use unwinding to ensure all memory freed on panic
+** disabling unwinding reduces binary size
 
 * https://www.nongnu.org/libunwind/
 * https://docs.microsoft.com/en-us/windows/win32/debug/structured-exception-handling
 * https://www.bogotobogo.com/cplusplus/stackunwinding.php
+
+* `start` attribute: the first program that runs is the runtime system, which is called before `main`
+** in a Rust binary that links stdlib => calls `crt0` => creating a stack and placing right arguments there
+** C runtime invokes entry point of Rust runtime, which is marked by `start` language item => Rust runtime then calls `main`
+
+* we don't have access to Rust runtime and `crt0` => need to overwrite `crt0` entry point => add `#![no_main]` and add own `_start_ function
+** `extern "C"`: tells compiler to use C calling convention
+** `!`: return type means the function is diverging, never allowed to return
+
+* linker: program that combines generated code into executable
+** to avoid error, we must compile for a different environment with no underlying os => bare-metal
+
+== a minimal rust kernel
+
+* when you turn on computer => begins executing firmware code stored in motherboard ROM => code performs power-on self-test, detects available RAM => pre-inits CPU and hardware => looks for bootable disk and starts booting os kernel
+* BIOS: basic input/output system
+* UEFI: unified extensible firmware interface
+
+* BIOS Boot: almost all x86 systems have support for BIOS.
+** CPU is put into a 16-bit compatibility mode called real mode before booting so old bootloaders would still work
+
+* turn on computer => loads BIOS => self test and init routines => look for bootable disks => control transferred to bootloader => determine location of kernel image on disk and load into memory => switch CPU from 16-bit real mode to 32-bit protected mode then 64-bit long mode (64-bit registers and complete main memory are avail) => query information from BIOS and pass to OS
+** real mode: addresses in real mode actually correspond to real locations in memory
+** protected mode: allow to use virtual memory, paging, safe multi-tasking
+** long mode: access to 64-bit instructions and registers
+
+* multiboot standard: GNU GRUB
+** to make kernel Multiboot compliant, insert Multiboot header at beginning of file
+** designed to make bootloader simple instead of kernel => kernel needs to be linked with adjusted default page size because GRUB can't find Multiboot header otherwise
+** boot information: contains lots of architecture dependent structures instead of ocean abstraction
+
+* redzone is disabled because it could cause stack corruptions when dealing with interrupts
+** allows functions to temporally use the 128 bytes below its stack frame without adjusting the stack pointer
+** on exceptions or hardware interrupts, the red zone is overwritten
+
+* `"features": "-mmx,-sse,+soft-float",`: `mmx` and `sse` features determine support for SIMD, which can speed up programs significantly
+** performance problems: the kernel has to restore all registers to their original state before continuing an interrupted program
+** for every interrupt, the complete SIMD state has to be saved
+
+* memory-related intrinsics: memory-related functions in the `compiler_builtins` crate that aren't enabled by default because they normally are provided by the C library
+** can't link to the C library so we could: implement our own functions
+** enable the implementations provided by the crate

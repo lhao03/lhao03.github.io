@@ -53,16 +53,11 @@ successful.
 Thus, people may enjoy a certain field, but have no interest in
 advancing the field and that’s totally okay. Some people just take the
 elements on the periodic table for for granted; they don’t care to know
-how electrons are "arranged" for each element. However, the quantum
-nature of electrons is something I want to learn more about. On the
+how electrons are "arranged" for molecules. However, the benzene's arrangement of electrons is something I want to learn more about. On the
 other hand, I think genetics is cool, but I have no interest in
 understanding why certain alleles are closer to each other on a gene.
 
-image::/images/cs-degree/ee.png[Electron energy levels]
-
-:ubc-materials-eng: footnote:[https://mtrl.ubc.ca/undergraduate/current-students/course-lists-and-descriptions[Department of Materials Engineering:Course lists and descriptions]]
-
-:materials-atomic-bonding: footnote:[https://docs.google.com/viewer?a=v&pid=sites&srcid=dWJjZml6ei5jb218d3d3fGd4OjNiODY2ZmQ0MGM4NzMyYTM[Bonding and Properties]]
+image::/images/cs-degree/benzene.png[Notes on Benzene]
 
 In the case that people just want to be correct, they may choose to do
 engineering. In terms of engineering, there are a lot of engineering
@@ -75,10 +70,11 @@ preparing to discover new ideas. A chemist could probably work as a
 materials engineer, but someone with a degree in materials engineering
 would be more efficient and cheaper to employ. A materials engineer will
 study chemistry and physics, including topics like atomic bonding,
-elctrochemistry, free energy, etc{ubc-materials-end}. But a
+elctrochemistry, free energy, etcfootnote:[https://mtrl.ubc.ca/undergraduate/current-students/course-lists-and-descriptions[Department of Materials Engineering:Course lists and descriptions]]. But a
 chemistry major and materials engineering major will study atomic bonds
 differently. For instance, a materials engineer will learn that ceramics
-include metallic and van der waals bonds{materials-atomic-bonding}, and
+include metallic and van der waals bondsfootnote:[https://docs.google.com/viewer?a=v&pid=sites&srcid=dWJjZml6ei5jb218d3d3fGd4OjNiODY2ZmQ0MGM4NzMyYTM[Bonding and Properties]]
+, and
 that would be the extent of a material engineer’s course material on
 atomic bonding. A chemistry major would learn about _why_ certain bonds
 exist between molecules in the first place in a series of courses like
@@ -100,6 +96,7 @@ prep them with the processes they need in a technology industry?_.
 Well, let’s look at a few universities computer science curriculums.
 
 == The Computer Science Degree: An impromptu and informal analysis
+IMPORTANT: These thoughts are based on my experiences at UBC and any course information I could find online. I was able to easily find many course websites (which included a detailed syllabus, assignments, slides and labs) from USC and NU. I couldn’t find many course websites for UofT. So take these thoughts with a grain of salt.
 
 UBC, USC, UofT and NU all offer the computer science degree as a
 bachelor in science. However,
@@ -113,8 +110,9 @@ of Arts and Science (for the St. George Campus at least)
 * at NU (Northeastern University), computer science is under the Khoury
 College of Computer Sciences
 
-*Comparison of Core Computer Science Courses Required for the Degree* I
-try to match the UBC version to other schools’ version.
+*Comparison of Core Computer Science Courses Required for the Degree* 
+
+I try to match the UBC version to other schools’ version.
 
 [width="100%",cols="25%,25%,25%,25%",options="header",]
 |===
@@ -170,7 +168,7 @@ Security
 
 After I compared computer science course offerings{ubc-courses},{usc-courses},{uoft-courses},footnote:nu-cs[https://catalog.northeastern.edu/undergraduate/computer-information-science/computer-science/bscs/#programrequirementstext[NU CS Curriculum]] and computer science core curriculums, here are some things that jump out to me:
 
-NOTE: _These thoughts are based on my experiences at UBC and any course information I could find online. I was able to easily find many course websites (which included a detailed syllabus, assignments, slides and labs) from USC and NU. I couldn’t find many course websites for UofT. So take these thoughts with a grain of salt._
+
 
 [[UBC-CS,UBC CS Curriculum]]
 ==== UBCfootnote:[https://www.calendar.ubc.ca/vancouver/index.cfm?tree=12,215,410,421[UBC CS Curriculum]]:
