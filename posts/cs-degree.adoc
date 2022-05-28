@@ -6,7 +6,7 @@ date: 2022-05-11
 
 :toc:
 
-_Update: 2022-5-16_
+_Update: 2022-5-27_
 
 _I talk about research and ideas in this blog post from a natural
 sciences/mathematical point of view. I am not a researcher, so take my
@@ -27,11 +27,9 @@ theoretical degree (or learning the theory yourself). A scientist needs
 to think of ideas that don’t even exist. I believe theory allows you to
 come up with ideas that are correct and novel; you can’t come up with
 correct and novel ideas with just vocational skills. Thus, a scientist
-has to be both correct and novel to be
-successfulfootnote:[http://www.paulgraham.com/think.html[How to Think
-for Yourself]].
+has to be both correct and novel to be successfulfootnote:[http://www.paulgraham.com/think.html[How to Think for Yourself]].
 
-But research has uncertain goals and uncertain rewards, which can scare
+Research has uncertain goals and uncertain rewards, which can scare
 people, including the people who decide to pursue research. Some people
 don’t care about being correct and novel, they might just care about
 being correct. I would say being correct vs. _correct and novel_ is the
@@ -52,7 +50,7 @@ successful.
 
 Thus, people may enjoy a certain field, but have no interest in
 advancing the field and that’s totally okay. Some people just take the
-elements on the periodic table for for granted; they don’t care to know
+elements on the periodic table for granted; they don’t care to know
 how electrons are "arranged" for molecules. However, the benzene's arrangement of electrons is something I want to learn more about. On the
 other hand, I think genetics is cool, but I have no interest in
 understanding why certain alleles are closer to each other on a gene.
@@ -70,12 +68,11 @@ preparing to discover new ideas. A chemist could probably work as a
 materials engineer, but someone with a degree in materials engineering
 would be more efficient and cheaper to employ. A materials engineer will
 study chemistry and physics, including topics like atomic bonding,
-elctrochemistry, free energy, etcfootnote:[https://mtrl.ubc.ca/undergraduate/current-students/course-lists-and-descriptions[Department of Materials Engineering:Course lists and descriptions]]. But a
+electrochemistry, free energy, etcfootnote:[https://mtrl.ubc.ca/undergraduate/current-students/course-lists-and-descriptions[Department of Materials Engineering:Course lists and descriptions]]. But a
 chemistry major and materials engineering major will study atomic bonds
 differently. For instance, a materials engineer will learn that ceramics
 include metallic and van der waals bondsfootnote:[https://docs.google.com/viewer?a=v&pid=sites&srcid=dWJjZml6ei5jb218d3d3fGd4OjNiODY2ZmQ0MGM4NzMyYTM[Bonding and Properties]]
-, and
-that would be the extent of a material engineer’s course material on
+, and that would be the extent of a material engineer’s course material on
 atomic bonding. A chemistry major would learn about _why_ certain bonds
 exist between molecules in the first place in a series of courses like
 "Electronic Structure of Atoms and Molecules"footnote:[https://www.chem.ubc.ca/chemistry-412-structure-atoms-and-molecules[CHEM 412]] and "Introduction to Quantum Mechanics and
@@ -93,10 +90,11 @@ engineering. Some schools tend to teach more theory, while others are
 more applied. This has led me to the question, _Should the computer
 science degree prepare students to conceive novel and correct ideas or
 prep them with the processes they need in a technology industry?_.
-Well, let’s look at a few universities computer science curriculums.
+Well, let’s look at the computer science curriculum of some
+universities.
 
 == The Computer Science Degree: An impromptu and informal analysis
-IMPORTANT: These thoughts are based on my experiences at UBC and any course information I could find online. I was able to easily find many course websites (which included a detailed syllabus, assignments, slides and labs) from USC and NU. I couldn’t find many course websites for UofT. So take these thoughts with a grain of salt.
+IMPORTANT: These thoughts are based on my experiences at UBC and any course information I could find online. I was able to easily find many course websites (which included a detailed syllabus, assignments, slides and labs) from USC and NU. I couldn’t find many course websites for UofT. Thus, take these thoughts with a grain of salt.
 
 UBC, USC, UofT and NU all offer the computer science degree as a
 bachelor in science. However,
@@ -166,14 +164,12 @@ Security
 :usc-courses: footnote:[https://classes.usc.edu/term-20223/classes/csci[USC Computer Science Courses]]
 :uoft-courses: footnote:[https://artsci.calendar.utoronto.ca/section/Computer-Science[UofT Computer Science Courses]]
 
-After I compared computer science course offerings{ubc-courses},{usc-courses},{uoft-courses},footnote:nu-cs[https://catalog.northeastern.edu/undergraduate/computer-information-science/computer-science/bscs/#programrequirementstext[NU CS Curriculum]] and computer science core curriculums, here are some things that jump out to me:
-
-
+After I compared computer science course offerings{ubc-courses},{usc-courses},{uoft-courses},footnote:nu-cs[https://catalog.northeastern.edu/undergraduate/computer-information-science/computer-science/bscs/#programrequirementstext[NU CS Curriculum]] and the computer science core curriculum from each university, here are some things that jump out to me:
 
 [[UBC-CS,UBC CS Curriculum]]
 ==== UBCfootnote:[https://www.calendar.ubc.ca/vancouver/index.cfm?tree=12,215,410,421[UBC CS Curriculum]]:
 
-* introductory computer science course is taught in functional paradigm
+* introductory computer science course taught in functional paradigm
 * there is a large focus on _functional programming_ which is regarded
 as more "theoretical" due to its mathematical nature
 ** the result of a larger focus on functional programming means students
@@ -203,8 +199,7 @@ imperative based_
 "Natural Language Computing", "High-Performance Scientific Computing"
 * _students are introduced to OOP first and imperative programming first
 (no recursion, pointers or memory management like UBC and USC)_
-* compilers course is based on imperative paradigm (Using
-Python???)footnote:488[https://www.cs.toronto.edu/~pdm/csc488/winter2019/assignments/a3.html[CSC488]]
+* compilers course is based on imperative paradigm (Using Python?)footnote:488[https://www.cs.toronto.edu/~pdm/csc488/winter2019/assignments/a3.html[CSC488]]
 
 [[USC-CS, USC CS Curriculum]]
 ==== USCfootnote:[https://www.cs.usc.edu/academic-programs/undergrad/computer-science/[USC CS Curriculum]]:
@@ -215,7 +210,7 @@ end of 102L.
 ** probably because C++ is used, and C++ fits nicely with the operating
 systems course, data structures, and algorithms course
 ** only other language used is Java for OOP
-* required to take ENGR 102, the engineering freshman academy
+* required to take ENGR 102, the engineering first-year students academy
 * required to take Introductions to AI and Internetworking
 * choice of choosing a capstone course of either "Design and
 Construction of Large Software Systems" or "Creating Your High-Tech Startup"
@@ -238,11 +233,11 @@ programming in their second/third year_
 * there are both theoretical and proof based courses like computer-aided
 reasoning, verification, synthesis. I haven’t seen other universities
 have these type of courses at the undergrad level
-* there are also very industry and skills focussed courses like mobile
+* there are also more industry and skills focussed courses like mobile
 development and web development.
 * there are several concentrations a student can choose to do, including
 concentrations that are more theoretical and concentrations that are
-very industry focussed.
+more industry focussed.
 * only one low level course required
 * a theory of computation course is required
 * there is also a statistics/mathematics course that is tailored for the
@@ -254,7 +249,7 @@ or hypothesis testing with data"
 as part of their version of CPSC 320. Students at UBC can also learn
 about the mentioned concepts but in another course (so it’s optional)
 * there is a strong theory base for computer science degrees, but after
-that your degree can be very theoretical or industry/skills focussed
+that your degree can be theoretical or industry/skills focussed
 
 In Canada, computer science seems to be treated closer to science,
 meaning students don’t take many computer engineer-like courses. In the
@@ -262,7 +257,7 @@ USA, computer science seems to be treated more as engineering, meaning
 students usually take a few low level hardware/systems courses that
 electrical and computer engineers take.
 
-The core curriculums are pretty similar in regards to courses in
+Each university's core curriculum are pretty similar in regards to courses in
 operating systems, systems programming/computer systems/computer
 organization. I’m guessing this is because many universities will teach
 students about the Linux operating system. This is probably because
@@ -333,7 +328,7 @@ systems.
 
 The Pointer school then uses C++ for majority of the computer science
 courses, including the introductory computer science course. This means
-students learn about pointers and memory management very early on in
+students learn about pointers and memory management early on in
 their computer science degrees. Theoretical concepts are covered in
 later years of the degree.
 
@@ -365,7 +360,7 @@ Developers]], rather than worrying about number representation, pointers
 and memory management that pointer/engineering schools would focus on. A
 functional programming paradigm is usually used because it’s easier to
 reason about: no mutation, data and state are separate, and it looks
-similar to algebra (given an input, you get an output). There is a large
+similar to algebra (given an input, you get an output). Thus, there is a large
 emphasis on forming well designed and correct programs and using
 concepts like recursion which can be easily proved correct through
 induction. Whereas to prove a `for loop` is correct you require more
@@ -383,8 +378,8 @@ more of the "formal" and "mathematical" nature, and rarely offered
 to undergrads at other universities, including UBC! Even similar courses
 can differ at a theory school. At UBC, the compiler course is taught in
 Racket and centers around creating a compiler for a functional language,
-whereas at UofT, the compiler course is taught in Python and focusses on
-creating a compiler for an imperative language.
+whereas at UofT, the compiler course is taught in Python and the project is a compiler that 
+targets an imperative language.
 
 A theory school provides you a stronger theory background, which is good
 if you will plan to go into grad school or research.
@@ -399,7 +394,7 @@ JavaSchools"footnote:[https://www.joelonsoftware.com/2005/12/29/the-perils-of-ja
 Perils of JavaSchools]], which is where I learned the concept of a
 JavaSchool.
 
-So what is a JavaSchool, or more generally an "industry" school? An
+What is a JavaSchool, or more generally an "industry" school? An
 industry school is one that teaches what is currently popular in
 industry, aka "teaching fashionable programming languages and currently
 popular programming paradigms"footnote:cs-does-not-matter[]. For the
@@ -472,7 +467,7 @@ image::/images/cs-degree/schoolRadarChart.png[]
 
 == Are Computer Science Degrees too Theoretical?
 
-Time and time again I hear people complain that computer science degrees
+T frequently hear people complain that computer science degrees
 are useless. This probably occurs more at UBC than other schools because
 there aren’t many courses that contain "industry skills" like web
 development. The only course that teaches web development technologies
@@ -503,12 +498,12 @@ theory and industry in the radar chart above.
 
 image::/images/cs-degree/theory-vs-industry.png[]
 
-In regards to core curriculums, NU’s is the most theory based. Students
+In regards to the core computer science curriculum, NU’s is the most theory based. Students
 learn about the Turing thesis for instance, which none of the other 3
 universities require. Next is UBC. UBC’s focus on a functional paradigm
 makes it more theory based than USC or UofT, which teach their
 introductory computer science course with an low-level / OOP focus,
-respectively. USC and UofT are close in terms of core curriculums, but
+respectively. USC and UofT are close in terms of their core computer science curriculum, but
 UofT edges USC over theory based on computer science course offerings;
 UofT has more theory based higher level course offerings than USC. This
 is just my observation.
@@ -559,8 +554,8 @@ different subject than software
 developmentfootnote:[https://www.joelonsoftware.com/2005/01/02/advice-for-computer-science-college-students/[Advice
 for Computer Science College Students]].
 
-So is the computer science degree too theoretical? *If the computer
-science degree is to prepare students to do the hard work of thinking of
+The question is then is the computer science degree too theoretical? *If the computer
+science degree is to prepare students to do research where they must think of
 correct and novel ideas in the field of computer science, then no, the
 computer science degree is not too theoretical. It actually isn’t
 theoretical enough.* _Of course, this means there should be a different
@@ -591,7 +586,7 @@ you can’t think of a way of making a drug. For instance, an novice
 chemistry student may find the formula to create a drug, and realise
 they have unfortunately created stereoisomers of the drug. But only one
 stereoisomer of the drug works; in most cases, the other stereoisomers
-are not effective or even harmful. There are ways to filter the
+are not effective or even harmful. While there are ways to filter the
 products, but this means you waste around half of your products, which
 is not good because many drug precursors are byproducts of the oil and
 gas
@@ -615,13 +610,12 @@ tests among tests and hoping for the best, like the novice chemistry
 student was stuck just filtering out the products for the correct
 stereoisomer.
 
-But how can be achieve this ability to easily verify a program is
-correct? How do we prove the absence of bugs so we don’t get
+How can the ability to easily verify a program is correct be achieved? How do we prove the absence of bugs so we don’t get
 catastrophic scenarios like
 NASAfootnote:[https://ti.arc.nasa.gov/m/pub-archive/1338h/1338%20(Brat).pdf[NASA]]
 sometimes does? With research. Which requires a strong understanding of
 theory. Right now, formal verification is an "unmastered complexity".
-Many problems in computer science are an "unmasterd complexity".
+Many problems in computer science are an "unmastered complexity".
 
 ____
 You see, while we all know that unmastered complexity is at the root of

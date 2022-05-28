@@ -10,11 +10,11 @@ date: 2022-05-10
 
 > The experiences I had are shared by many others (e.g. female students) who do not feel at home in the discipline, and, just as Maria Lugones writes, might see this as a lack in themselves. These experiences and feelings of ‘outsiderness’ are driving forces for making the discipline more inclusive, so that different ways of ‘being’ are accepted. [p20]
 
-> When I started my research, my thinking was (implicitly) dominated by the idea of defining a problem and then finding a way to resolve it. This is fundamentally and deeply rooted within the engineer, although it is seldom articulated and made visible. I was trained to delimit a problem, make it as simple as possible, and then apply the most straightforward solution. This is an approach where logical and abstract thinking are emphasised. Within CS, I was further trained in the use of algorithmic approaches to problem solving. This tends to encourage linear thinking about problems. Thus, my education and professional life had trained me in a certain way of thinking and approaching problems.  [21]
+> When I started my research, my thinking was (implicitly) dominated by the idea of defining a problem and then finding a way to resolve it. This is fundamentally and deeply rooted within the engineer, although it is seldom articulated and made visible. I was trained to delimit a problem, make it as simple as possible, and then apply the most straightforward solution. This is an approach where logical and abstract thinking are emphasized. Within CS, I was further trained in the use of algorithmic approaches to problem solving. This tends to encourage linear thinking about problems. Thus, my education and professional life had trained me in a certain way of thinking and approaching problems.  [21]
 
 > My argument for focusing on this ‘paradigmatic basis’ of computer science was that issues concerning CS itself and its knowledge processes were for the most part absent in research and discussions on gender and CS. [21]
 
-> The process of blackboxing is equivalent to the process of naturalisation, in which something (an artefact, an idea, a concept, etc.) is stripped of its origins, context and consequences and is regarded as given, as self-evident. [22]
+> The process of blackboxing is equivalent to the process of naturalisation, in which something (an artifact, an idea, a concept, etc.) is stripped of its origins, context and consequences and is regarded as given, as self-evident. [22]
 
 - knowledge is intertwined with communication and language.
 
@@ -22,10 +22,10 @@ date: 2022-05-10
 
 > Since technology is seen as neutral, this stance has not seldom led to seeing women as the problem: women should be informed / educated / adapted to technology: “Women shall be enticed into existing practice and adapt to it.” (Trojer 1999, p. 13). With this view, it is mainly women who are expected to change. [26]
 
-> There is also a tendency within liberal feminism to treat men and women as homogeneous groups, ignoring diff erences between individuals, as well as for example ethnicity and class. In practice, liberal feminist projects have had very little impact on the gender balance within technology or computer science; in fact this approach can be seen as
+> There is also a tendency within liberal feminism to treat men and women as homogeneous groups, ignoring differences between individuals, as well as for example ethnicity and class. In practice, liberal feminist projects have had very little impact on the gender balance within technology or computer science; in fact this approach can be seen as
 reproducing and reinforcing the status quo. [26]
 
-> Feminist studies of technology can to a large extent be regarded as part of the STS tradition, in that the starting point and approach can be summarised as the social construction / shaping of technology. According to Vehviläinen (2001) this approach sees technology as a process consisting of three interrelated parts: artefacts, knowledge and social practices. [28]
+> Feminist studies of technology can to a large extent be regarded as part of the STS tradition, in that the starting point and approach can be summarized as the social construction / shaping of technology. According to Vehviläinen (2001) this approach sees technology as a process consisting of three interrelated parts: artefacts, knowledge and social practices. [28]
 
 > However, as Wajcman (1991) notes, there are fundamental differences between (natural) science and technology: technology needs to be understood as more than applied science, since it is primarily about the creation of artefacts (ibid p.13).
 

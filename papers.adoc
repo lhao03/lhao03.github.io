@@ -56,4 +56,6 @@ I'm currently reading a bunch of papers and books to see what I'm interested in 
 ** interest: 7, understanding: 6
 * How to Enable Index Scheme for Reducing the Writing Cost of DNA Storage on Insertion and Deletion
 ** interest: 8, understanding: 7.5
+* A Programmable Programming Language
+** interest: 8, understanding: 8
 

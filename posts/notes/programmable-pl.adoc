@@ -1,0 +1,96 @@
+---
+title: "Paper: A Programmable Programming Language"
+tags:  programming languages, paper
+date: 2022-05-27
+---
+
+ACM Reference format:
+Matthias Felleisen, Robert Bruce Findler, Matthew Flatt, Shriram Krishna-
+murthi, Eli Barzilay, Jay McCarthy, Sam Tobin-Hochstadt. 2017. A Pro-
+grammable Programming Language. 0, 0, Article 0 ( 2017), 7 pages.
+DOI: 10.1145/nnnnnnn.nnnnnnn
+
+* people are forced to use a programming language like JavaScript and to deal with incompentencies with the language, build eDSLs.
+** React, jQuery
+* but the underlying language, JavaScript does not give any support to the eDSL.
+* results in needing to use so many different tools to "put everything together"
+* we need programming languages that makes it easy to make eDSLs (as easy as making a library)
+
+== 1 Problems vs. Programming Languages
+* reality is most programmers use an mainstream PL that was chosen for them
+** to compensate, they build an eDSL
+** developers write multi-lingual software in common host language
+** host language fails to support proper and sound integration of components in different eDSLs
+*** ad hoc and cumbersome
+** IDEs don't usuallyt understand or percieve presenec of code written in eDSLs
+
+*Goal of Racket*: language-oriented programming (LOP)
+* at the practical level: build a PL that enables language-oriented software design => easy creation of eDSLs
+* at the conceptual level: the case of LOP is similar to ones for OOP or concurrency-oriented programming.
+
+== 2 The Principles of Racket
+* language itself is a problem solving tool
+
+> Empower programmers to create new programming
+languages easily and to add them with a friction-free
+process to a code base.
+
+* in support of creating eDSLs: Racket has `syntax-parse` eDSL which targets domain of eDSL creation
+
+=== LOP principle guidelines:
+* enable creators of a language to enforce its invariants. 
+** a PL is an abstraction and abstractions are about integrity. 
+** when program consists of pieces in different languages, values flow from one context into another and need protection from operations that might violate their integrity.
+* turn extra-linguistic mechanisms into linguistic constructs.
+** LOP programmer who resorts to extra-linguistic mechanisms effectively acknowledges that the chosen language lacks expressive power => Java
+
+*Sapir-Whorf hypothesis*
+
+== 3 Libraries and Languages Reconciled
+* Racket: heir to Lisp and Scheme, emphasizes functional over imperative without forcing an ideology
+* eliminates the hard boundary between library and language
+* key innovation:
+** modular syntax system
+** improvement of Scheme's macro system
+** improves on Lisp's tree-transformation system 
+* creating new language means creating a module that provides the services for a language
+** `provides` and `require`
+
+* ability to incrementally _re-define the meaning of existing language constructs_ via the module system => allows eDSL creators to ease users into a new language by reusing familiar syntax, re-interpreted
+
+== 4 Sound Cooperation Between Languages
+* cooperating multi-lingual components must respect the invariants that each participating language establishes
+** Racket mirrors spectrum of soundness at two levels:
+*** level of language implementation itself
+**** higher order contracts: to protect when using unsafe library/modules (dynamic)
+*** level of cooperation between two components written in different embedded languages
+**** contract wraps exported values with a proxy that controls access to that value => Matthews and Findler
+**** Tobin-Hochstadt and Felleisen Blame Theorem: if something goes wrong with such a mixed system, the run-time exception points to two faulty components and their boundary as the provable source of the problem
+
+== 5 Universality vs. Expressiveness
+* a general purpose language cannot express all of a programmer's ideas about programs
+* for a PL researcher => stepping outside the language is a failure
+* os is a system of things that don't fit into a language[; there] shouldn't be one
+* constructs that can be implemented in RAcket (used to not be able to) => sandboxes, inspectors, custodians
+
+== 6 The State of Affairs
+Racket enables programmers to: 
+* create languages for specific tasks/aspects of a problem
+* equip a language with almost any conventional level of soundness
+* exploit variety of internalized operating-system services
+
+* incrementality => create new languages from old ones, one construct at at time
+** do not need to make a sound and secure product all at once: gradually make the language more sound or secure
+* whole process takes place in Racket ecosystem => tight coupling
+** developmental tools of eco-system can be used for the creation of language modules and their clients
+** language becomes available for creating new languages
+
+* recognizing whena library sbould become a language => judgement call
+* static typing => Racket currently forces development of of checkers all at once, not on incremental basis => typed/racket
+* what is really wanted; attach type checking rules to linguistic constructs and that such algorithms can be synthesized as needed
+* dynamic checking: developers must create soundess harnesses on an ad hoc basis => need theoretical framework and abstractions for the partial automation of this task
+* available spectrum of soundness mechanisms lack power at both ends => to achieve full control over its context, Racket probably needs access to assembly languages on all possible platforms
+** to realize full power of types, typed/racket will have to be equipped with dependent types
+** Racket checks what goes in and what comes out, but indexing is left to a contractual check on the run-time system
+* security: turn security into integral part of language creation
+* challenges of LOP: LOP calls for customization of tools to many languages, their abstractions, their invariants
