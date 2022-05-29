@@ -6,11 +6,9 @@ date: 2022-05-11
 
 :toc:
 
-_Update: 2022-5-27_
+_Update: 2022-05-28_
 
-_I talk about research and ideas in this blog post from a natural
-sciences/mathematical point of view. I am not a researcher, so take my
-ideas with a grain of salt._
+NOTE: I talk about research and ideas in this blog post from a natural sciences/mathematical point of view. I'm not a researcher, so take my ideas with a grain of salt. I'm also trying to figure out for myself "What is Computer Science", so my ideas may be half-formed or contradictory.
 
 The natural sciences, like physics, chemistry and biology, are based on
 experiments which require vocational skills. But data curation and
@@ -527,16 +525,17 @@ The question we need to ask then:
 
 *Is the computer science degree for students who wish to pursue research
 in computer science to think of correct and novel ideas, or for the
-student who only cares about being correct and making money in the
+student who only cares about being correct and working in the
 software industry?*
 
 Currently, the computer science degree at many schools tries to do it
 all: prepare students for grad school and prepare students to create web
-applications in the software industry. I don’t think this is good
-because one area severely lacking in many computer science degrees (not
+applications in the software industry. 
+
+I don’t think this is good because one area severely lacking in many computer science degrees (not
 in the curriculum or offered in higher level courses) is reasoning and
-formal verification of systems (and security)! Dijkstra also thought the
-same many years ago!
+formal verification of systems and type theory, among other areas of theoretical science.
+Dijkstra also thought the same many years ago! 
 
 "Until the end of his life, Dijkstra maintained that
 the central challenges of computing hadn’t been met to his satisfaction,
@@ -558,8 +557,27 @@ The question is then is the computer science degree too theoretical? *If the com
 science degree is to prepare students to do research where they must think of
 correct and novel ideas in the field of computer science, then no, the
 computer science degree is not too theoretical. It actually isn’t
-theoretical enough.* _Of course, this means there should be a different
-degree for people who want to work in the software industry._
+theoretical enough.*
+
+_Of course, this means there should be a different degree for people who want
+to work in the software industry, with coursework that is more user focussed
+and practicalfootnote:[I differentiate between computer science and software
+development. I think software development is concerned with the user (creating
+products for users), implementation, practices (agile), etc. Computer
+science is concerned with theory such as such as the Church-Turing thesis,
+satisfiability modulo theories, formal verification,
+etc. There is now also the notion of "Software Engineering Research". Philp Guo 
+gives a blurb on what his research during his Ph.D was about, which I think falls into Software
+Engineering research: "Research into software development tools for
+non-software engineers, but rather for scientists, engineers, and researchers
+who need to program for their jobs – they’re not gonna care
+about specs., model checking, etc. – they just want pragmatic,
+lightweight, and conceptually-simple tools that they can pick
+up quickly and use all the time."], rather than theoretical. The issue is that
+there's no clear definition of the "Software Engineer" discipline like there is
+for chemical engineering, so Computer Science is treated as a giant umbrella term.
+While there are overlaps between the two fields, I believe they are distinct
+enough to warrant a split._
 
 For instance, we can all agree that software is laden with bugs and as
 Dijkstra says:
