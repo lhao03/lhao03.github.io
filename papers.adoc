@@ -1,5 +1,5 @@
 ---
-title: "Papers and Books"
+title: "Papers and Books and Other Things"
 ---
 
 I'm currently reading a bunch of papers and books to see what I'm interested in and I wanted a way to rank each paper. I'm going to use two criteria, understanding and interest. 
@@ -58,4 +58,9 @@ I'm currently reading a bunch of papers and books to see what I'm interested in 
 ** interest: 8, understanding: 7.5
 * A Programmable Programming Language
 ** interest: 8, understanding: 8
+* Forward build systems, formally
 
+
+== Videos Watched
+* https://www.youtube.com/watch?v=mkzHIhKaUX4[Learning to Code: Why we Fail, How We Flourish]
+* https://www.youtube.com/watch?v=ho7oagHeqNc[Category Theory in Life]

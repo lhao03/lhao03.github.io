@@ -361,3 +361,8 @@ and of course, of one’s epistemology.
 > Colburn (p. 319) gives an interesting example regarding two fundamentally different views on programs: one that sees computer programs as mathematical expressions, and another that sees them from the perspective of functionality.
 
 > the formal view (mathematical expressions) used to be the strongest, but is losing ground to the more use- and functionality oriented view.
+
+## Paper C1 [175]
+> Bringing up issues of gender in relation to technology, there is always a risk that the discussion comes to focus either on the missing women, and what could be done to increase the number of women, or on differences between men and women. The problem with these approaches is the underlying assumptions of technological determinism and/or essentialism in the view of men and women. This can result in a tendency to see women as the problem
+
+> “In order to bring about a meeting of awarenesses, the teacher has to take the part of the learner,…see the experience through the learner’s eyes, become aware of the experience through the learner’s awareness.” (Marton and Both p. 179).

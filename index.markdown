@@ -3,7 +3,7 @@ title: Hi, I'm Lucy!
 description: Hi, I'm Lucy! I'm a chemistry nerd and filter and map enthusiast studying Computer Science and Chemistry at the University of British Columbia.
 ---
 
-I'm a chemistry nerd and `filter` and `map` enthusiast studying [Computer Science](https://www.cs.ubc.ca/) and [Chemistry](https://www.chem.ubc.ca/) at the [University of British Columbia](https://www.ubc.ca/). I enjoy learning about how and why things work, especially pertaining to chemical biology, drugs, operating systems, compilers, and programming languages. I also enjoy [reading](/tags/book/) about computing history, the impact of technological systems on society and computer science education. Oh and I hate JavaScript. I not too fond of C either, but I'm willing to use C.
+I'm a [chemistry nerd](https://www.chem.ubc.ca) and [functional programming enthusiast](https://www.cs.ubc.ca/) at the [University of British Columbia](https://www.ubc.ca/). I enjoy learning about how and why things work, especially pertaining to chemical biology, drugs, operating systems, compilers, and programming language theory. I also enjoy [reading](/tags/book/) about computing history, the impact of technological systems on society and computer science education. Oh and I hate JavaScript. I not too fond of C either, but I'm willing to use C.
 
 ## Posts
 $partial("templates/post-list.html")$
