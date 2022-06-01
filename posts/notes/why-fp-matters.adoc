@@ -1,0 +1,5 @@
+---
+title: "Paper: Why Functional Programming Matters"
+tags: functional programming, paper
+date: 2022-05-30
+---
