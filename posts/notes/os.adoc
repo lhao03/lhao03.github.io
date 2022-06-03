@@ -64,3 +64,33 @@ https://os.phil-opp.com/
 * memory-related intrinsics: memory-related functions in the `compiler_builtins` crate that aren't enabled by default because they normally are provided by the C library
 ** can't link to the C library so we could: implement our own functions
 ** enable the implementations provided by the crate
+
+== vga buffer
+* `'static` lifetime: says reference is valid for whole program run
+* `repr(C)`: Rust lays out structs like C (field ordering in default structs is undefined in Rust)
+* `repr(transparent)`: same memory layout for single field
+* compiler optimization: compiler doesn't know we access VGA Buffer Memory and doesn't know about the side effects of printing, so it might decide these writes are not needed, and omit them
+
+== Testing
+* can't use `test` create because it relies on the standard library
+* can replace default test framework with the `custome_test_frameworks` feature
+** collects all functions with `#[test_case]` and invokes user-specified runner function with list of tests as arguments
+
+== CPU Exceptions
+* to respond to CPU exceptions => set up interrupt handler descriptor table that has handler functions
+* on x86 there are about 20 different exceptions. the most important ones are: page fault, invalid opcode, general protection fault, double fault (fault occurs while calling the exception handler or there is no handler function registered for that exception), triple fault (CPU tries to double fault handler function. cannot catch or handle a triple fault, so most processors reboot + restart the OS)
+** hardware uses the table directly, each has the following 16-byte structure
+
+[cols="1,1"]
+|===
+|Cell in column 1, header row |Cell in column 2, header row 
+
+|Cell in column 1, row 2
+|Cell in column 2, row 2
+
+|Cell in column 1, row 3
+|Cell in column 2, row 3
+
+|Cell in column 1, row 4
+|Cell in column 2, row 4
+|===

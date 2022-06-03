@@ -64,3 +64,13 @@ I'm currently reading a bunch of papers and books to see what I'm interested in 
 == Videos Watched
 * https://www.youtube.com/watch?v=mkzHIhKaUX4[Learning to Code: Why we Fail, How We Flourish]
 * https://www.youtube.com/watch?v=ho7oagHeqNc[Category Theory in Life]
+
+== Books Read
+* https://criticallyconsciouscomputing.org/[Critically Conscious Computing _Methods for Secondary Education_]
+* Your Computer is On Fire [Currently]
+* Programmed Inequality [Currently]
+* Design Justice [Currently]
+
+== Dissertations
+* http://www.diva-portal.org/smash/record.jsf?pid=diva2%3A837505&dswid=3179[Feminist Technoscience Strategies]
+

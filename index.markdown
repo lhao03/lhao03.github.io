@@ -11,8 +11,10 @@ $partial("templates/post-list.html")$
 
 ### Currently 
 - reading Webtoons! Current obsessions are [Death: Rescheduled](https://www.webtoons.com/en/thriller/death-rescheduled/list?title_no=3515&page=1), [Purple Hyacinth](https://www.webtoons.com/en/mystery/purple-hyacinth/list?title_no=1621&page=1), [Men of the Harem](https://www.webtoons.com/en/fantasy/men-of-the-harem/list?title_no=2443&page=1), and [Let's Play](https://www.webtoons.com/en/romance/letsplay/list?title_no=1218&page=1).
-- reading [papers](/tags/paper/). See all the papers I've read [here](/papers/).
+- reading [papers](/tags/paper/). See all the papers, books, and videos I've consumed [here](/papers/).
 - learning Rust.
+
+[Check out the daily log ▶](/log)
 
 ## Papers
 - Chen, Y., **Hao, L.**, Zou, V.Z., Hollander, Z., Ng, R.T., Isaac, K.V. **Automated medical chart review for breast cancer outcomes research: a novel natural language processing extraction system.** BMC Med Res Methodol 22, 136 (2022). [https://doi.org/10.1186/s12874-022-01583-z](https://doi.org/10.1186/s12874-022-01583-z)

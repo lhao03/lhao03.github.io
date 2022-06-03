@@ -1,12 +1,25 @@
 ---
 title: Daily Log
-tags: life
 date: 2022-05-31
 ---
 
-I used to have a failures page, but I thought, why not just record I feel everyday? I think it gives more insight into my struggles and thoughts.
+:toc: 
+
+
+Just a informal log of day to day feelings.
+ 
+= June
+
+== June 2:
+was trying to get some rust stuff to work and it wasn't and that kinda annoyed me. i don't think i like "learning through hacking". i like having enough knowledge to "figure it out myself", so to speak. i don't think i don't like "unfamiliar problems" but i really hate just feeling like i'm in the dark. in chemistry and cpsc 110, i'd frequently do "hard problems" or "new problems" (of course to a computer scientist or chemist these problems aren't hrd or new but to a noob like me they are.) like my ochem class kicked my ass, and we had to literally create reaction mechanisms for chemical molecules that don't exist. there's no "search that chemical molecule up on google" because my chem proof literally pulled it out of his brain. anyways, people always say "you didn't waste your time" when you struggle to learn. when i've spent 4 hours trying to think of a reaction mechanism i've reinforced my knowledge of chemistry and i now "know what doesn't work and why". but when i "learn through hacking" and i come across the solution by luck after like 5 hours, i just feel like i've wasted all this time. i don't know why what i was doing doesn't work and why this random internet solution does work. 
+
+i was never the kid who "put computers together" like lmfao. i just read books about fairies and shit. my dad bought me a circuit game thing, and i put together the circuits, saw the light blink and was like ok.
+
+== June 1:
+tired.
 
 = May
+
 == May 31: 
 ubc does course registration based on your year standing, and i majorly fucked
 up in second year by not making sure i was taking enough cs/math courses to be

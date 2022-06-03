@@ -73,6 +73,9 @@
 <ul class="sectlevel1">
 <li><a href="#_freestanding_rust_binary">freestanding rust binary</a></li>
 <li><a href="#_a_minimal_rust_kernel">a minimal rust kernel</a></li>
+<li><a href="#_vga_buffer">vga buffer</a></li>
+<li><a href="#_testing">Testing</a></li>
+<li><a href="#_cpu_exceptions">CPU Exceptions</a></li>
 </ul>
 </div>
 <div class="paragraph">
@@ -251,6 +254,97 @@
 </li>
 </ul>
 </div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_vga_buffer">vga buffer</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><code>'static</code> lifetime: says reference is valid for whole program run</p>
+</li>
+<li>
+<p><code>repr©</code>: Rust lays out structs like C (field ordering in default structs is undefined in Rust)</p>
+</li>
+<li>
+<p><code>repr(transparent)</code>: same memory layout for single field</p>
+</li>
+<li>
+<p>compiler optimization: compiler doesn’t know we access VGA Buffer Memory and doesn’t know about the side effects of printing, so it might decide these writes are not needed, and omit them</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_testing">Testing</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>can’t use <code>test</code> create because it relies on the standard library</p>
+</li>
+<li>
+<p>can replace default test framework with the <code>custome_test_frameworks</code> feature</p>
+<div class="ulist">
+<ul>
+<li>
+<p>collects all functions with <code>#[test_case]</code> and invokes user-specified runner function with list of tests as arguments</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_cpu_exceptions">CPU Exceptions</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>to respond to CPU exceptions ⇒ set up interrupt handler descriptor table that has handler functions</p>
+</li>
+<li>
+<p>on x86 there are about 20 different exceptions. the most important ones are: page fault, invalid opcode, general protection fault, double fault (fault occurs while calling the exception handler or there is no handler function registered for that exception), triple fault (CPU tries to double fault handler function. cannot catch or handle a triple fault, so most processors reboot + restart the OS)</p>
+<div class="ulist">
+<ul>
+<li>
+<p>hardware uses the table directly, each has the following 16-byte structure</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Cell in column 1, header row</th>
+<th class="tableblock halign-left valign-top">Cell in column 2, header row</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cell in column 1, row 2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cell in column 2, row 2</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cell in column 1, row 3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cell in column 2, row 3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cell in column 1, row 4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cell in column 2, row 4</p></td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 
