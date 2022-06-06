@@ -3,7 +3,7 @@ title: Hi, I'm Lucy!
 description: Hi, I'm Lucy! I'm a chemistry nerd and filter and map enthusiast studying Computer Science and Chemistry at the University of British Columbia.
 ---
 
-I'm a [chemistry nerd](https://www.chem.ubc.ca) and [functional programming enthusiast](https://www.cs.ubc.ca/) at the [University of British Columbia](https://www.ubc.ca/). I enjoy learning about how and why things work, especially pertaining to chemical biology, drugs, operating systems, compilers, and programming language theory. I also enjoy [reading](/tags/book/) about computing history, the impact of technological systems on society and computer science education. Oh and I hate JavaScript. I not too fond of C either, but I'm willing to use C.
+I'm a chemistry nerd and functional/[language orientated programming enthusiast](https://cacm.acm.org/magazines/2018/3/225475-a-programmable-programming-language/fulltext) at the [University of British Columbia](https://www.ubc.ca/). I enjoy learning about how and why things work, especially pertaining to chemical biology, drugs, operating systems, compilers, and programming language theory. I also enjoy [reading](/papers) about computing history, the impact of technological systems on society and computer science education. Oh and I hate JavaScript. I not too fond of C either, but I'm willing to use C.
 
 ## Posts
 $partial("templates/post-list.html")$
@@ -25,6 +25,7 @@ $partial("templates/post-list.html")$
 - **UBC Department of Computer Science** (Jan - Apr 2021) 👾 Teaching Assistant for CPSC 210
 
 ## Working Experience
+- **Capital One** (Jun - present) 💳 Software Engineering Intern
 - **Microsoft** (May - Aug 2021) ⛏ Software Engineering Intern
 - **PROOF Centre** (Jan - May 2021) 🧬 Software Developer Intern
   - [Preprint](https://www.medrxiv.org/content/10.1101/2021.05.04.21256134v1)
