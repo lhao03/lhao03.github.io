@@ -5,10 +5,10 @@ tags: life
 ---
 
 Who would have thought that my first job would take place in my bedroom?
-Definitely not me. Even less did I think I would end up: - writing over
-6000 lines of Python - being part of a research paper (in the progress
-of being published to a peer-reviewed journal! Check out the unofficial
-manuscript: https://www.medrxiv.org/content/10.1101/2021.05.04.21256134v1
+Definitely not me. Even less did I think I would end up: 
+
+* writing over 6000 lines of Python 
+* being part of a research paper (in the progress of being published to a peer-reviewed journal! Check out the unofficial manuscript: https://www.medrxiv.org/content/10.1101/2021.05.04.21256134v1
 
 But not everything was _great_. I also ended up: 
 

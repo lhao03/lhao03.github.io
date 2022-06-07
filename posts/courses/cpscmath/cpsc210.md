@@ -5,10 +5,13 @@ date: 2020-05-31
 tags: courses, CPSC
 ---
 
-*Difficulty Rating:* 4/10
+## Course Format
+The course is more of the traditional lecture format, vs CPSC 110 and CPSC 121. For the most part, you still have to watch pre-videos before class and answer pre-class questions, but during lecture you just sit and listen. There are also weekly labs, which I think are much simpler than the labs for CPSC 110.
 
-I found this course one of the easiest computer science courses I've taken so far as a computer science student. This course is all about Java, OOP, and design patterns! This is also the first course that has a large project associated with it. The project requirements aren't that hard, but anything becomes hard if you don't have enough time to do it. This course uses the same video platform that CPSC 110 did. I liked drawing out relationships between classes, objects, and methods to understand what was going on. I'm also currently a teaching assistant for this course, so hit me up if you are in this course and need help.
+This is the first computer science course that has a large project associated with it. The project requirements aren't that hard, but anything becomes hard if you don't have enough time to do it, so I recommend that you start working on the project very early.
 
-*Would I recommend?* Yes.
+## Importance of Course
+This course is all about Java, OOP, and design patterns. While UBC makes you take this course before co-op, I don't think many of the concepts are used in industry anymore. To be honest, I think this is the "least useful" course of my computer science degree thus far.
 
-*What I love about the course:* The content in this computer science course is super important to writing good code. Design patterns are also super cool to learn about (they are used a lot in Android development if you're interested in that.)
+## My Thoughts
+This is the easiest computer science course I've ever taken.  In terms of studying, I liked drawing out relationships between classes, objects, and methods to understand what was going on. I've also TAed for this course twice, so hit me up if you are in this course and need help.

@@ -1,0 +1,83 @@
+---
+title: SICP vs HtDP
+tags: computer science education
+date: 2022-05-05
+---
+
+Problems with SICP:
+* lack of explicit program design
+* reliance on domain knowledge
+* whimsies of Scheme
+
+* SICP: frees the course from revolving around the syntax of the language, allowing the course to present deep concepts in computing such as FP, higher-order functions, data abstracttion, data-directed programming, streams, message passing, logic programming, interpreters, register machines
+* however, many schools in US have switched to mainstream OOP PL
+* criticism of SICP: FP, electrical engineering bias, Scheme, advanced topics (OOP, design patterns, FP)
+
+== Constraints
+* parents, students, faculty
+** students: come in with notion of programming based on latest industry trends and expect to see these presented in class, want to use fancy IDEs
+** second year course faculty members depend on first year courses to build a foundation
+* language choice: mainstream and fashionable, or us PL that is used in upper year courses (like the OS course)
+* students take intro CS courses for different reasons: some want to see what CS is about, others want to make games
+* math background: some not good at algebra, some great at calculus
+
+[quote]
+____
+For that reason, many colleges teach the same programming language in the first two courses and often just allocate cer- tain language topics to one or the other course. While this solution is easy to implement, it is ad hoc and lacks a rational goal structure.
+____
+
+Goal of university: 
+
+> the university’s goal is to produce effective software developers who can quickly adapt to current practice and who can survive in a software- related profession for decades.
+
+> Hence, a computer science curriculum must acknowledge the realities of the current software world without becoming a vocational training ground.
+
+Students will usually intern for the first time in the first summer, and then in the last academic year when they prepare themselves for the industry (_I think most students intern every summer now_)
+
+> a university curriculum concentrate on principles for most of the time and accommodate industrial needs during the second semester of the first year and the last year of the program.
+
+> After all, college is the only time in a programmer’s life when he is exposed to principled ideas on a regular and rigorous basis. Once a programmer has a full-time position, there are too many constraints and distraction for additional courses on principles.
+
+> Ideally, software professionals should continue to educate themselves like medical profes- sionals. But neither industry nor universities encourage this form of continuing education in a serious manner.
+
+== Corollary
+> The first year should start by emphasizing principles and should add some industrially relevant concepts during the second semester.
+
+* _But universities are usually behind with what is trending._ 
+* _Would it make more sense to teach React? Than Java?_
+
+> The first semester should teach a high-level model of computation and robust, portable programming habits, i.e., habits that should apply in a spectrum of pro- gramming languages (functional, OO, scripting languages). To accommodate industrial needs, the second semester should place these principles of comput- ing and programming into the context of a currently fashionable industrial pro- gramming language.
+
+Idenfitying good programming principles and and habits => 
+* read problem statements carefully
+* use this information to organize programs
+** _transfering of FP to OOP seems to be hard to do implicitly => not sure if making it explicit would help though_
+* learn to test their program
+
+These principles don't favor one PL over the other => what context is it easiest to teach these principles? 
+
+=> Scheme
+* syntax is toos simple => easy to make paren issues => make a series of subsets of in DrScheme
+** each subset is strictly enforced and produces error messages that only use concepts from the learner's corresponding knowledge level
+
+* easy to understand semantics => understand through stepper
+* Scheme is safe (no weird memory issues)
+* Scheme is dynamically typed
+** statically typed PLs introduce two complications
+*** students have hard time distinguishing between the computer, the program, the runtime, and now must deal with another layer (types)
+** different type systems capture different classes of invariants
+
+* emotional judgements about language: "fancy" IDEs, and "usefulness"
+
+== Interpretation
+* SICP does not teach programming design, just illistrates programming with a long series of examples
+** program design is taught implicitly
+** SICP does not discuss how programmers determine which procedures are needed or how to organize these procedures
+
+> If teachers don’t state such principles explicitly,6 the first program- ming course turns into a course on syntax, no matter how simple the underlying programming language. In our experience, implicit learning does not work well for the majority of students. Most students are not the type of learner who can extract abstract principles on program design from a series of examples. As a matter of fact, across the spectrum of universities that the authors represent, most students simply are not prepared to abstract anything from a series of exer- cises. Instead students focus on the surface level of knowledge in such a course, which is the syntax of the programming language. Worse, they think that this fo- cus on syntax is natural and accept it as a key insight for future learning efforts concerning computing and programming.
+
+* SICP relies on complex domain knowledge in it's choice of examples and exercises.
+
+* HtDP: distinguishes between structural and generative recursion (SICP does not)
+
+> They force students to focus on design principles rather than the random use of features they may not under- stand; in turn, students understand syntactic and semantic error messages much better because the explanations are restricted to the student’s ken.

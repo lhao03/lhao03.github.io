@@ -75,7 +75,12 @@
 <li><a href="#_a_minimal_rust_kernel">a minimal rust kernel</a></li>
 <li><a href="#_vga_buffer">vga buffer</a></li>
 <li><a href="#_testing">Testing</a></li>
-<li><a href="#_cpu_exceptions">CPU Exceptions</a></li>
+<li><a href="#_cpu_exceptions">CPU Exceptions</a>
+<ul class="sectlevel2">
+<li><a href="#_options_field_format">Options Field Format</a></li>
+<li><a href="#_interrupt_calling_convention">interrupt calling convention</a></li>
+</ul>
+</li>
 </ul>
 </div>
 <div class="paragraph">
@@ -321,30 +326,171 @@
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
-<col style="width: 50%;">
-<col style="width: 50%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Cell in column 1, header row</th>
-<th class="tableblock halign-left valign-top">Cell in column 2, header row</th>
+<th class="tableblock halign-left valign-top">Type</th>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Cell in column 1, row 2</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Cell in column 2, row 2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">u16</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Function Pointer [0:15]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The lower bits of the pointer to the handler function.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Cell in column 1, row 3</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Cell in column 2, row 3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">u16</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">GDT selector</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Selector of a code segment in the global descriptor table.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Cell in column 1, row 4</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Cell in column 2, row 4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">u16</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Options</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="../../../posts/notes/os/#_options_field_format">See below</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">u16</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Function Pointer [16:31]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Middle bits of the pointer to handler function</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">u32</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Function Pointer [32:63]</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Remaining bits of the pointer to handler function</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">u32</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Reserved</p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 </tbody>
 </table>
+<div class="sect2">
+<h3 id="_options_field_format">Options Field Format</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Bits</th>
+<th class="tableblock halign-left valign-top">Name</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0-2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Interrupt Stack Table Index</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0: Don’t switch stacks, 1-7: Switch to the n-th stack in the Interrupt Stack Table when this handler is called.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">u16</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Reserved</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">u16</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0: Interrupt Gate, 1: Trap Gate</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">If this bit is 0, interrupts are disabled when this handler is called.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9-11</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">must be one</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">12</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">must be zero</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">13-14</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Descriptor Privilege Level (DPL)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Minimum privilege level required for calling this handler</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Present</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<ul>
+<li>
+<p>each exception has a predefined IDT value.</p>
+</li>
+<li>
+<p>when an exception occurs, the CPU does:</p>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>push registers on stack, including instruction pointer and RFLAGS register</p>
+</li>
+<li>
+<p>read entry from IDT</p>
+</li>
+<li>
+<p>check if entry is available, double fault if not</p>
+</li>
+<li>
+<p>disable hardware interrupts if entry is an interrupt gate (bit 40 not set)</p>
+</li>
+<li>
+<p>load specified GDT selector into CS segment</p>
+</li>
+<li>
+<p>jump to the specified handler function</p>
+</li>
+</ol>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_interrupt_calling_convention">interrupt calling convention</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>functions are invoked voluntarily by a compiler inserted <code>call</code> instruction while an exception could occur at any instruction</p>
+</li>
+<li>
+<p>Rust does not follow C ABI</p>
+</li>
+<li>
+<p>need calling convention that saves all registers (only registers that are overwritten by the function are backed up)</p>
+</li>
+<li>
+<p>for exception and interrupt handlers, pushing return address does not suffice because interrupt handlers run in different context. Instead the CPU does:</p>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>align the stack pointer: the stack pointer can have any value when an interupt occurs. some cpu instructions require the stack pointer to be aligned on 16 byte boundry</p>
+</li>
+<li>
+<p>switching stacks: occurs when cpu privilege level changes (or through interrupt stack table)</p>
+</li>
+<li>
+<p>push the old stack pointer: CPU push value of <code>rsp</code> and stack segment at time when interrupt occurs, but before alignment.</p>
+</li>
+<li>
+<p>pushing and updating the RFLAGS register:</p>
+</li>
+</ol>
+</div>
+</li>
+</ul>
+</div>
+</div>
 </div>
 </div>
 

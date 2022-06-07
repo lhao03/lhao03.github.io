@@ -81,16 +81,86 @@ https://os.phil-opp.com/
 * on x86 there are about 20 different exceptions. the most important ones are: page fault, invalid opcode, general protection fault, double fault (fault occurs while calling the exception handler or there is no handler function registered for that exception), triple fault (CPU tries to double fault handler function. cannot catch or handle a triple fault, so most processors reboot + restart the OS)
 ** hardware uses the table directly, each has the following 16-byte structure
 
-[cols="1,1"]
+[cols="1,1,1"]
 |===
-|Cell in column 1, header row |Cell in column 2, header row 
+|Type|Name|Description
 
-|Cell in column 1, row 2
-|Cell in column 2, row 2
+|u16
+|Function Pointer [0:15]
+|The lower bits of the pointer to the handler function.
 
-|Cell in column 1, row 3
-|Cell in column 2, row 3
+|u16
+|GDT selector
+|Selector of a code segment in the global descriptor table.
 
-|Cell in column 1, row 4
-|Cell in column 2, row 4
+|u16
+|Options
+|link:/posts/notes/os/#_options_field_format[See below]
+
+|u16
+|Function Pointer [16:31]
+|Middle bits of the pointer to handler function
+
+|u32
+|Function Pointer [32:63]
+|Remaining bits of the pointer to handler function
+
+|u32
+|Reserved
+|
 |===
+
+=== Options Field Format
+[cols="1,1,1"]
+|===
+|Bits|Name|Description
+
+|0-2
+|Interrupt Stack Table Index
+|0: Don’t switch stacks, 1-7: Switch to the n-th stack in the Interrupt Stack Table when this handler is called.
+
+|u16
+|Reserved
+|
+
+|u16
+|0: Interrupt Gate, 1: Trap Gate
+|If this bit is 0, interrupts are disabled when this handler is called.
+
+|9-11
+|must be one
+|
+
+|12
+|must be zero
+|
+
+|13-14
+|Descriptor Privilege Level (DPL)
+|Minimum privilege level required for calling this handler
+
+|15
+|Present
+|
+|===
+
+* each exception has a predefined IDT value.
+* when an exception occurs, the CPU does:
+
+1. push registers on stack, including instruction pointer and RFLAGS register
+2. read entry from IDT
+3. check if entry is available, double fault if not
+4. disable hardware interrupts if entry is an interrupt gate (bit 40 not set)
+5. load specified GDT selector into CS segment
+6. jump to the specified handler function
+
+=== interrupt calling convention
+* functions are invoked voluntarily by a compiler inserted `call` instruction while an exception could occur at any instruction
+* Rust does not follow C ABI 
+* need calling convention that saves all registers (only registers that are overwritten by the function are backed up)
+* for exception and interrupt handlers, pushing return address does not suffice because interrupt handlers run in different context. Instead the CPU does:
+
+1. align the stack pointer: the stack pointer can have any value when an interupt occurs. some cpu instructions require the stack pointer to be aligned on 16 byte boundry 
+2. switching stacks: occurs when cpu privilege level changes (or through interrupt stack table)
+3. push the old stack pointer: CPU push value of `rsp` and stack segment at time when interrupt occurs, but before alignment.
+4. pushing and updating the RFLAGS register: 

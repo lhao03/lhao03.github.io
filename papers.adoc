@@ -59,11 +59,13 @@ I'm currently reading a bunch of papers and books to see what I'm interested in 
 * A Programmable Programming Language
 ** interest: 8, understanding: 8
 * Forward build systems, formally
+* The Structure and Interpretation of the Computer Science Curriculum
 
 
 == Videos Watched
 * https://www.youtube.com/watch?v=mkzHIhKaUX4[Learning to Code: Why we Fail, How We Flourish]
 * https://www.youtube.com/watch?v=ho7oagHeqNc[Category Theory in Life]
+* https://www.janestreet.com/tech-talks/curriculumn-design/[Shriram Krishnamurthi's Talk: Curriculum Design as an Engineering Problem]
 
 == Books Read
 * https://criticallyconsciouscomputing.org/[Critically Conscious Computing _Methods for Secondary Education_]

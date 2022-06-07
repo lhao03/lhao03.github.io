@@ -8,7 +8,7 @@ https://cs.brown.edu/~sk/Publications/Papers/Published/fk-why-cs-doesnt-matter/p
 
 * high school curriculum: teaching fashionable programming languages and
 currently popular programming paradigms.
-** repeated in introductory high schools
+** repeated in introductory university programs
 * imaginative programming: weds programming to algorithm through use of
 rich media => use mathematics as a programming language
 ** composition of functions and expressions

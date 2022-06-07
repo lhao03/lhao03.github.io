@@ -42,7 +42,7 @@ $partial("templates/courses.html")$
 - **Citro Hacks** 🍋 [Workshop Host for Intro to Git and GitHub](https://www.figma.com/proto/QwLUq2jdFJ0kisBOxh0RNM/Intro-to-Git-and-Github-(Copy)?node-id=1%3A160)
 - **Hydrangea Hacks** 💮 [Workshop Host for Intro to NLP](https://www.youtube.com/watch?v=7DLUbxgfrD4&t=2s)
 - **Hacking 4 Community** 👏🏻 Panelist for Pursuing a Successful Career in CS + Technology
-- **StarHacks I** 💫 Workshop Host for Into to Git and GitHub and Intro to Python
+- **StarHacks I** 💫 Workshop Host for Intro to Git and GitHub and Intro to Python
 
 <p>
 To get in touch with me or see my resume, send an email to <code>
