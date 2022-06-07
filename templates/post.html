@@ -18,11 +18,13 @@
   <div>
     $body$
   </div>
-  <div class="flex-row pagination">
+  <div class="flex-row link-no-style">
     $if(prevPost)$
     <a href="$prevPost$">Newer post</a>
     $endif$
+    $if(isPost)$
     <a href="/archive/">Back to archive</a>
+    $endif$
     $if(nextPost)$
     <a href="$nextPost$">Older post</a>
     $endif$

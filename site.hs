@@ -102,10 +102,19 @@ main = hakyllWith config $ do
             field "nextPost" (lookupPostUrl nextPostHM)
               `mappend` field "prevPost" (lookupPostUrl prevPostHM)
               `mappend` postCtxWithTags tags
+	      `mappend` constField "isPost" "yes"
 
       pandocCompilerWithAsciidoctor
         >>= loadAndApplyTemplate "templates/post.html" postContext
         >>= loadAndApplyTemplate "templates/default.html" postContext
+        >>= relativizeUrls
+
+  match "courses/**" $ do
+    route appendIndex
+    compile $ do
+      pandocCompilerWithAsciidoctor
+        >>= loadAndApplyTemplate "templates/post.html" postCtx
+        >>= loadAndApplyTemplate "templates/default.html" postCtx
         >>= relativizeUrls
 
   create ["archive.html"] $ do
@@ -129,7 +138,7 @@ main = hakyllWith config $ do
     compile $ do
       let indexCtx =
             listField "posts" postCtx (recentFirst =<< loadAll "posts/*")
-              `mappend` listField "courses" (postCtxWithTags tags) (recentFirst =<< loadAll "posts/courses/**")
+              `mappend` listField "courses" postCtx (recentFirst =<< loadAll "courses/**")
               `mappend` defaultContext
 
       getResourceString
