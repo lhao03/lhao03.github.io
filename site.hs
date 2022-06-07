@@ -1,23 +1,37 @@
 --------------------------------------------------------------------------------
 {-# LANGUAGE OverloadedStrings #-}
 
+import Control.Applicative (Alternative (..))
+import Control.Monad (forM_, liftM, zipWithM_, (>=>))
+import qualified Data.HashMap.Strict as HM
+import Data.Hashable (Hashable, hashWithSalt)
 import Data.List
-  ( intercalate,
+  ( findIndex,
+    intercalate,
     isInfixOf,
     isPrefixOf,
     isSuffixOf,
     sort,
+    sortBy,
+    tails,
   )
+import Data.Maybe (fromMaybe, isNothing)
 import Data.Monoid (mappend)
+import Data.Time.Clock (UTCTime)
+import Data.Time.Format (defaultTimeLocale, parseTimeM)
+import GHC.IO.Encoding (setLocaleEncoding, utf8)
 import Hakyll
 import Hakyll.Web.Sass (sassCompiler)
+import System.Environment (lookupEnv)
+import System.FilePath (takeFileName)
 import System.FilePath.Posix
   ( splitFileName,
     takeBaseName,
     takeDirectory,
-    takeFileName,
     (</>),
   )
+import qualified Text.Blaze.Html5 as H
+import qualified Text.Blaze.Html5.Attributes as A
 
 --------------------------------------------------------------------------------
 config :: Configuration
@@ -60,6 +74,11 @@ main = hakyllWith config $ do
   -- build up tags
   tags <- buildTags "posts/**" (fromCapture "tags/*.html")
 
+  allPosts <- getMatches "posts/**"
+  let sortedPosts = sortIdentifiersByDate allPosts
+      -- build hashmap of prev/next posts
+      (prevPostHM, nextPostHM) = buildAdjacentPostsHashMap sortedPosts
+
   tagsRules tags $ \tag pattern -> do
     let title = "Posts tagged \"" ++ tag ++ "\""
     route appendIndex
@@ -78,10 +97,15 @@ main = hakyllWith config $ do
 
   match "posts/**" $ do
     route appendIndex
-    compile $
+    compile $ do
+      let postContext =
+            field "nextPost" (lookupPostUrl nextPostHM)
+              `mappend` field "prevPost" (lookupPostUrl prevPostHM)
+              `mappend` postCtxWithTags tags
+
       pandocCompilerWithAsciidoctor
-        >>= loadAndApplyTemplate "templates/post.html" (postCtxWithTags tags)
-        >>= loadAndApplyTemplate "templates/default.html" (postCtxWithTags tags)
+        >>= loadAndApplyTemplate "templates/post.html" postContext
+        >>= loadAndApplyTemplate "templates/default.html" postContext
         >>= relativizeUrls
 
   create ["archive.html"] $ do
@@ -172,3 +196,33 @@ cleanIndexUrls = return . fmap (withUrls clean)
     clean url
       | idx `isSuffixOf` url = take (length url - length idx) url
       | otherwise = url
+
+----
+type AdjPostHM = HM.HashMap Identifier Identifier
+
+instance Hashable Identifier where
+  hashWithSalt salt = hashWithSalt salt . show
+
+buildAdjacentPostsHashMap :: [Identifier] -> (AdjPostHM, AdjPostHM)
+buildAdjacentPostsHashMap posts =
+  let buildHM :: [Identifier] -> [Identifier] -> AdjPostHM
+      buildHM [] _ = HM.empty
+      buildHM _ [] = HM.empty
+      buildHM (k : ks) (v : vs) = HM.insert k v $ buildHM ks vs
+   in (buildHM (tail posts) posts, buildHM posts (tail posts))
+
+lookupPostUrl :: AdjPostHM -> Item String -> Compiler String
+lookupPostUrl hm post =
+  let ident = itemIdentifier post
+      ident' = HM.lookup ident hm
+   in (fmap (maybe empty toUrl) . maybe empty getRoute) ident'
+
+---
+sortIdentifiersByDate :: [Identifier] -> [Identifier]
+sortIdentifiersByDate = sortBy (flip byDate)
+  where
+    byDate id1 id2 =
+      let fn1 = takeFileName $ toFilePath id1
+          fn2 = takeFileName $ toFilePath id2
+          parseTime' fn = parseTimeM True defaultTimeLocale "%Y-%m-%d" $ intercalate "-" $ take 3 $ splitAll "-" fn
+       in compare (parseTime' fn1 :: Maybe UTCTime) (parseTime' fn2 :: Maybe UTCTime)

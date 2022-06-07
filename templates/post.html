@@ -1,22 +1,30 @@
 <div>
   $if(cover_image)$
   <div class="content">
-  <img src="$cover_image$" alt="">
+    <img src="$cover_image$" alt="">
   </div>
   $endif$
-    <div class="header">
-        Posted on $date$
-        $if(author)$
-            by $author$
-        $endif$
-    </div>
-<div class="tags">
+  <div class="header">
+    Posted on $date$
+    $if(author)$
+    by $author$
+    $endif$
+  </div>
+  <div class="tags">
     $if(tags)$
     Tags: $tags$
     $endif$
-</div>
-    <div>
-        $body$
-    </div>
-    <p><a href="/archive/">◀ Back to posts</a></p>
+  </div>
+  <div>
+    $body$
+  </div>
+  <div class="flex-row pagination">
+    $if(prevPost)$
+    <a href="$prevPost$">Newer post</a>
+    $endif$
+    <a href="/archive/">Back to archive</a>
+    $if(nextPost)$
+    <a href="$nextPost$">Older post</a>
+    $endif$
+  </div>
 </div>

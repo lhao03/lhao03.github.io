@@ -22,6 +22,10 @@ dependencies:
 - hakyll
 - hakyll-sass
 - filepath
+- blaze-html
+- hashable
+- time
+- unordered-containers
 
 executables:
   site:
