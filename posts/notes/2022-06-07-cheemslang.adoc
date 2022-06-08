@@ -1,0 +1,32 @@
+---
+title: cheemslang
+tags: experimenting
+---
+
+:source-highlighter: highlight.js
+
+== Possible Representation Formats
+[source,scheme]
+----
+(+ AB DC) -> (+ AC DB)
+----
+
+[source,scheme]
+----
+AB + DC -> AC + DB
+----
+
+* a periodic table (hashmap) of elements and their valence electrons
+* charge must be balanced on both sides
+
+== Expander
+[source,scheme]
+----
+AB + DC -> AC + DB
+
+(+ AB DC) -> (+ AC DB)
+
+(-> (+ AB DC) (+ AC DB))
+
+()
+----
