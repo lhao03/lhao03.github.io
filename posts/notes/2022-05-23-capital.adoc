@@ -28,7 +28,14 @@ there needs to be a distinction between science capital and computer science cap
 ** people must maintain their forms of capital to maintain their position in a social field => not a conscious process
 * a person's prerequisites for learning are defined by their to capital => because each person has a unique set of forms of capital we cannot assume that aspirations in CS are the same for all learners
 * people continually acquire capitals
+* Bourdieu argued that a fundamental part of what it means to be human was our struggle to acquire symbolic capital [51]: i.e., our effort to gain recognition from people who belong to a group we admire and respect.
 
 ==== role of instructors/educators as transmitters of the dominant culture
 computer engineering ethos and identity
 > ‘individual, logic, reasoning, abstractions, obsession for computers, self-righteousness, lack of reflection and masculinity’
+* which means that many instructors lack formal training in education and basic knowledge of learning theories.
+* Since the instructors’ background in technical education does not prepare them for teaching, they lack training in diversity-conscious pedagogy and critical understanding of how learning communities, regardless of their formal or informal nature, are transmitters of the dominant culture. Foor et al. [37] argues that a first step for educators to change this dominant culture is to examine the underlying beliefs of the CS culture and how they impact learners.
+
+> We argue that outreach programs (and other learning contexts) need to reflect on and question their own values, norms, interaction styles and beliefs related to CS as to whether they perpetuate the dominant culture in CS.
+
+* symbolic violence related to hidden curriculum

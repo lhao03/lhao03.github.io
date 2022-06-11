@@ -60,6 +60,7 @@ I'm currently reading a bunch of papers and books to see what I'm interested in 
 ** interest: 8, understanding: 8
 * Forward build systems, formally
 * The Structure and Interpretation of the Computer Science Curriculum
+* Finding missed optimizations through the lens of dead code elimination
 
 
 == Videos Watched
@@ -69,9 +70,12 @@ I'm currently reading a bunch of papers and books to see what I'm interested in 
 
 == Books Read
 * https://criticallyconsciouscomputing.org/[Critically Conscious Computing _Methods for Secondary Education_]
-* Your Computer is On Fire [Currently]
-* Programmed Inequality [Currently]
-* Design Justice [Currently]
+
+== Books Reading
+* Your Computer is On Fire 
+* Programmed Inequality 
+* The Little Typer
+* Introduction to the Theory of Computation
 
 == Dissertations
 * http://www.diva-portal.org/smash/record.jsf?pid=diva2%3A837505&dswid=3179[Feminist Technoscience Strategies]

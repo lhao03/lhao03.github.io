@@ -196,12 +196,28 @@ bunch of people with the same skills.
 
 == Is teaching everyone to code the right thing to do?
 
-I think we should all be learning about how a computer works. To many,
-computers are "magical intelligent pieces of metal". Yet computers are
-impacting every single part of our lives, and many people do not
-understand how a link:/posts/computers/#_a_misunderstandinglack_of_understanding_of_a_file_system[file
-system] works or how a link:/posts/computers/#_how_memory_works_in_progress[computers
-reads and writes from memory].
+I honestly don't think so. Why are we teaching everyone to code in the first
+place? Is it get more minorities into the tech industry? Is it to prepare
+people for a digitized future? Is it so that someone can create a coding
+bootcamp to earn a few extra bucks? Is it to preapre people for most jobs to
+involve a computing component?  Is it so that people can better understand how
+technology impacts their lives? Is it so that people learn engage in
+computational thinking?
+
+Many organizations and people have different reasons for why everyone must
+learn to code or learn about technology. I'll list my two reasons: People
+should understand how technology is impacting their lives, and also understand
+that _some_ jobs will involve a computing component, with the former being more
+important in my opinion.
+
+How can we enable everyone to understand how technology impacts their lives? I
+believe we can start with all learning about how computers were first invented
+and how a modern computer works. Computers are impacting every single part of
+our lives, and many people do not understand how a
+link:/posts/computers/#_a_misunderstandinglack_of_understanding_of_a_file_system[file
+system] works or how a
+link:/posts/computers/#_how_memory_works_in_progress[computers reads and writes
+from memory]. To many computers are "magical intelligent pieces of metal". 
 
 Before you learned about physics, chemistry, math, and biology you might
 have thought other events were magical, like how baking powder works,
@@ -215,23 +231,26 @@ works?
 
 image::/images/learn-to-code/Mobius.jpg[]
 
-No, not always. Coding in high-level languages like Python, JavaScript,
-or scripting languages like HTML or CSS does not. This high-level coding
-is what is mostly taught by boot camps and current elementary and
-secondary computer science curriculums. Coding in Python simply lets us
-tell a computer what we want it to do (thanks to computer scientists who
-abstracted away a lot of details, it’s easy for anyone to write an easy
-program now). When you save a text file to your computer do you know how
-it’s saved on your computer? Coding in Python doesn’t tell you much if
-anything about how the computer saves your file. Before I studied
-computer science, I had no idea how computers did anything! How does the
-computer save files and then find them later, what is an operating
-system and what does it manage and control, how does the computer
-manipulate incoming information, and much more? Learning to code from
-boot camps or online MOOCs tells you nothing about this. So if you’re
-interested in coding, link:/posts/computers[check out why
-computers are actually cool, and I hope you instead learn about
-computers]!
+No, not always. Coding in high-level languages like Python, JavaScript, or
+scripting languages like HTML or CSS does not. This high-level coding is what
+is mostly taught by boot camps and current elementary and secondary computer
+science curriculums. In fact, another avenue of teaching computer science is to
+teach about computatinal thinking. Programs that teach web development seldom
+touch on this idea of computational thinking.
+
+Teaching computational thinking can enable people to apply this type of
+thinking into other activities, like their jobs. While this sounds great,
+transfer learning is actually more difficult to achieve than you think. Another
+path is to teach link:/posts/notes/2022-05-05-sicp-vs-htdp[HTDP], which teaches
+students to design programs using explicit design rules. Many other areas of
+science include these "explict" rules, such
+as balancing chemistry equations.
+
+While teaching web development is a way to express creativity through online
+formats, too often web development is conflated with computer science. This
+creates a wrong impression of what computer science is! Programming is also
+conflated with computer science, which claos creates the flawed idea that
+computer science is only about programming, when it's closer to math.
 
 == End
 

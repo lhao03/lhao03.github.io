@@ -1,0 +1,10 @@
+---
+title: Tech Notes
+tags: technology
+---
+
+== technologies
+* AWS Device Farm
+* Docker
+* REST API
+* Appium
