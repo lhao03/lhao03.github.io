@@ -61,6 +61,7 @@ I'm currently reading a bunch of papers and books to see what I'm interested in 
 * Forward build systems, formally
 * The Structure and Interpretation of the Computer Science Curriculum
 * Finding missed optimizations through the lens of dead code elimination
+* A Sociocultural Perspective on Computer Science Capital and its Pedagogical Implications in Computer Science Education
 
 
 == Videos Watched
@@ -80,3 +81,6 @@ I'm currently reading a bunch of papers and books to see what I'm interested in 
 == Dissertations
 * http://www.diva-portal.org/smash/record.jsf?pid=diva2%3A837505&dswid=3179[Feminist Technoscience Strategies]
 
+
+== Articles I want to read over and over
+* https://www.wired.com/story/the-unwritten-laws-of-physics/[The Unwritten Laws of Physics for Black Women]

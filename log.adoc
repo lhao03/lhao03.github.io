@@ -9,6 +9,55 @@ date: 2022-05-31
 Just a informal log of day to day feelings.
  
 = June
+== June 15
+finally wrote some code. 😩 using vim at work is a flex until u start making a mess of commands.
+
+== June 14 
+went shopping and got a donut. 
+
+== June 13
+nothing much.
+
+== June 12
+i got lost buying groceries, found a street with a bunch of food trucks, bought tacos, and then while walking back to the apartment walked into a movie set.
+
+== June 11
+for some reason i can't sleep at night but i can fall asleep in seconds during
+	the day? i slept at 1, woke up at 6, went ot the gym, then slept from 7
+	to 930.
+
+gonna just read some papers, write a bit, relax. i wanna buy new running shoes and shorts though.
+
+== June 10
+how does taxes work for a dual citizen. 
+
+anyways, on a whim i joined the other interns and went to central park and times square!
+
+image::/images/log/june10/walk.png[]
+
+image::/images/log/june10/IMG_0989.jpg[]
+
+image::/images/log/june10/IMG_0981.jpg[]
+
+image::/images/log/june10/IMG_0988.jpg[]
+
+image::/images/log/june10/IMG_3011.JPEG[]
+
+== June 9
+macbook is still busted. been speedrunning onboarding and kind of realizing i
+do not really like living in downtown. entities that are very valuble to my
+	daily happiness include wholesale stores (like Costco), Asian stores
+	(T&T), lots of empty or near empty trails for running, and air that
+	doesn't smell like garbage? lots of interns here are going to bars and
+	eating out most days of the week, and i can't really force myself to
+	join them, because i feel like i'm spending a lot of money and im kinda scared of going to a bar.
+	another dynamic difference is that there are alot more male interns. at
+	microsoft, the split was pretty even, whereas at capital one there's
+	probably like 10 male interns for every female intern. it's a bit
+	isolating to say the least. 
+
+on the other hand, i've been reading a theory of computation textbook and
+beautiful racket and i really enjoy it. 
 
 == June 8
 i slept past my alarm by 4 hours and missed the first laptop set up session. ooooof
@@ -19,15 +68,36 @@ got a bagel.
 image::/images/log/bagel.jpg[]
 
 == June 6
-nyc day 2. arrived last night very tired. currently just vibing. wall street is pretty nice. the architecture in nyc is very variable. sometimes it reminds me of downtown vancouver. took a walk around, there's a body of water and i saw people with ice cream but i couldn't figure out where they were getting that ice cream. also there's just like trash bags everywhere.
+nyc day 2. arrived last night very tired. currently just vibing. wall street is
+pretty nice. the architecture in nyc is very variable. sometimes it reminds me
+of downtown vancouver. took a walk around, there's a body of water and i saw
+people with ice cream but i couldn't figure out where they were getting that
+ice cream. also there's just like trash bags everywhere.
 
 == June 3
 another day where i did nothing. was exhausted. 
 
 == June 2
-was trying to get some rust stuff to work and it wasn't and that kinda annoyed me. i don't think i like "learning through hacking". i like having enough knowledge to "figure it out myself", so to speak. i don't think i don't like "unfamiliar problems" but i really hate just feeling like i'm in the dark. in chemistry and cpsc 110, i'd frequently do "hard problems" or "new problems" (of course to a computer scientist or chemist these problems aren't hrd or new but to a noob like me they are.) like my ochem class kicked my ass, and we had to literally create reaction mechanisms for chemical molecules that don't exist. there's no "search that chemical molecule up on google" because my chem proof literally pulled it out of his brain. anyways, people always say "you didn't waste your time" when you struggle to learn. when i've spent 4 hours trying to think of a reaction mechanism i've reinforced my knowledge of chemistry and i now "know what doesn't work and why". but when i "learn through hacking" and i come across the solution by luck after like 5 hours, i just feel like i've wasted all this time. i don't know why what i was doing doesn't work and why this random internet solution does work. 
+was trying to get some rust stuff to work and it wasn't and that kinda annoyed
+me. i don't think i like "learning through hacking". i like having enough
+knowledge to "figure it out myself", so to speak. i don't think i don't like
+"unfamiliar problems" but i really hate just feeling like i'm in the dark. in
+chemistry and cpsc 110, i'd frequently do "hard problems" or "new problems" (of
+course to a computer scientist or chemist these problems aren't hrd or new but
+to a noob like me they are.) like my ochem class kicked my ass, and we had to
+literally create reaction mechanisms for chemical molecules that don't exist.
+there's no "search that chemical molecule up on google" because my chem proof
+literally pulled it out of his brain. anyways, people always say "you didn't
+waste your time" when you struggle to learn. when i've spent 4 hours trying to
+think of a reaction mechanism i've reinforced my knowledge of chemistry and i
+now "know what doesn't work and why". but when i "learn through hacking" and i
+come across the solution by luck after like 5 hours, i just feel like i've
+wasted all this time. i don't know why what i was doing doesn't work and why
+this random internet solution does work. 
 
-i was never the kid who "put computers together" like lmfao. i just read books about fairies and shit. my dad bought me a circuit game thing, and i put together the circuits, saw the light blink and was like ok.
+i was never the kid who "put computers together" like lmfao. i just read books
+about fairies and shit. my dad bought me a circuit game thing, and i put
+together the circuits, saw the light blink and was like ok.
 
 == June 1
 tired.

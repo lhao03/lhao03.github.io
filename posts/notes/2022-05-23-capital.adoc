@@ -39,3 +39,50 @@ computer engineering ethos and identity
 > We argue that outreach programs (and other learning contexts) need to reflect on and question their own values, norms, interaction styles and beliefs related to CS as to whether they perpetuate the dominant culture in CS.
 
 * symbolic violence related to hidden curriculum
+
+
+=== second theoretical lens: science capital
+* significant level of interest in science does not correlate with a career in science due to: powerful structuring context that influences how children formulate their aspirations
+
+* The ‘powerful structuring context’ refers to the fact that the ways young people identify with computing is not straightforward but rather is a product of their prior experiences and their interaction with society at large, and is shaped by factors such as gender, socioeconomic status, ethnicity, access to various types of capital and other traits.
+
+
+=== third theoretical lens: sociocultural perspective on learning
+* impact of social and cultural factors on learners' possibilites of succeeding in their learning enterprise
+* shifts learning from individual process to social process that be understood in relation to a context
+
+
+== 4 the computer science capital framework
+* need to distinguish between science capital and CSC
+
+* ‘For each scientific space (as for any field in any area of social activity), the identification of the efficient properties and resources and, accordingly, of the dominant forms of capital, remains an empirical question’. As a result, the theory of science capital is inadequate to understand the mechanisms behind students’ aspirations and trajectory in CS.
+
+* CSC: form of symbolic capital that is influential in facilitating students' possiblity to fully participate in, engage with, and form aspirations in CS learning context
+
+==== computer science-related social capital
+* access to role models: role model has to convey sense of belonging in the field
+* family suppot: many students introduced to CS at home
+* community support: female students report significantly less support from peers to persist in CS
+
+==== computer science-related cultural capital
+* positive attitude towards CS (embodied cultural capital)
+** There is, however, a distinguishing difference between CS and other fields of natural science. Previous studies have found that students who went on to study CS in higher education do so either because they have developed a lifelong, passionate interest for computers [59, 68, 76] or because they saw computing as a tool for self-expression, e.g. their broader interest in computing technology and society [40, 54, 71]. Although both of these student groups have positive views of CS, their understanding of the usefulness and values of CS in their daily lives differed.
+* computer experiences and self-efficacy (institutionalized and embodied)
+** implies personal investment in terms of time and effort, and positive thinking to cope with challenges and become successful in a given endeavour.
+* access to computing devices and software applications (objectified)
+* perceptions of CS and its career opportunities aligned with intrinsic values (embodied cultural capital)
+** Previous studies have highlighted a lack of understanding or a misunderstanding of what CS entails and stereotypical views of computer scientists as barriers to attracting students from diverse backgrounds to the field
+** However, knowledge of the opportunities that a CS degree can offer must be aligned with students’ various intrinsic values to study CS, otherwise the motivation to persist could be easily undermined.
+
+=== computer science-related behaviours and practices
+* participation in informal learning of CS
+* consumption of cs-related media
+** A state-wide study by Guzdial et al. [41] found that male students were more likely to mention computer games and programming as the reason they chose computing as their major or minor. On the other hand, female students were more likely to choose computing because of their societal interests.
+** Previous studies have also found evidence that the consumption of computer games and CS-related media is uneven for boys and girls, resulting in differences in access to cultural capital related to CS.
+
+== 5 implications 
+* building of social networks can successfully retain students in CS
+* think about "taken for granted" knowledge, relate computing with materials that resonate with their lives
+* move beyond traditional methods (considered reductionist, context-free), that deprive students of finding meaning in their education 
+* subjectively engage students
+** without students' engagement, may unknowingly favour the already-passionate CS student
