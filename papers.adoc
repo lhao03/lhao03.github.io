@@ -62,12 +62,14 @@ I'm currently reading a bunch of papers and books to see what I'm interested in 
 * The Structure and Interpretation of the Computer Science Curriculum
 * Finding missed optimizations through the lens of dead code elimination
 * A Sociocultural Perspective on Computer Science Capital and its Pedagogical Implications in Computer Science Education
+* The development and deployment of formal methods in the UK
 
 
 == Videos Watched
 * https://www.youtube.com/watch?v=mkzHIhKaUX4[Learning to Code: Why we Fail, How We Flourish]
 * https://www.youtube.com/watch?v=ho7oagHeqNc[Category Theory in Life]
 * https://www.janestreet.com/tech-talks/curriculumn-design/[Shriram Krishnamurthi's Talk: Curriculum Design as an Engineering Problem]
+* https://www.youtube.com/watch?v=4HgShra-KnY&t=771s[ASPLOS Keynote: The Golden Age of Compiler Design in an Era of HW/SW Co-design by Dr. Chris Lattner]
 
 == Books Read
 * https://criticallyconsciouscomputing.org/[Critically Conscious Computing _Methods for Secondary Education_]
@@ -82,5 +84,5 @@ I'm currently reading a bunch of papers and books to see what I'm interested in 
 * http://www.diva-portal.org/smash/record.jsf?pid=diva2%3A837505&dswid=3179[Feminist Technoscience Strategies]
 
 
-== Articles I want to read over and over
+== Articles I resonated with
 * https://www.wired.com/story/the-unwritten-laws-of-physics/[The Unwritten Laws of Physics for Black Women]

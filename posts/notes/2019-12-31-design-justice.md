@@ -87,11 +87,58 @@ that this distribution is influenced by intersecting structures of race, class, 
   - in digital domain => adaptive design
 - culturally adaptive systems:
 
-> However, in practice this approach also leads to the reproduction and reification of existing social categories through algorithmic surveillance, tracking users across sites, gathering and selling their data, and the development of filter bubbles (only showing users content that we believe they are comfortable with).
+> However, in practice this approach also leads to the reproduction and
+> reification of existing social categories through algorithmic surveillance,
+> tracking users across sites, gathering and selling their data, and the
+> development of filter bubbles (only showing users content that we believe
+> they are comfortable with).
 
-> Universalization erases difference and produces self-­reinforcing spirals of exclusion, but personalized and culturally adaptive systems too
+> Universalization erases difference and produces self-­reinforcing spirals of
+> exclusion, but personalized and culturally adaptive systems too often are
+> deployed in ways that reinforce surveillance capitalism.
 
-often are deployed in ways that reinforce surveillance capitalism.
+- design justice: making intentional decisions about which users we choose to
+  center and be held accountable for those choices
+- A/B testing is always deployed within universalist design paradigm.
 
-- design justice: making intentional decisions about which users we choose to center and be held accountable for those choices
-- A/B testing is always deployed within universalist design paradigm: 
+> First, we should critique (trouble, queer, or denormalize) the assump- tion
+> that A/B testing is always geared toward improving UX, for the simple reason
+> that it is actually geared toward increasing the decision-­ making power of
+> the product designer.
+
+# 2 Design Practices: “Nothing about Us without Us”
+> Third (and most salient here), prominent critiques of the Google memo, like
+> most stories about sexism and racism in Silicon Valley, are typically framed
+> in terms of the untapped capacity of women, Black people, Indigenous people,
+> and/or people of color (B/I/PoC), to per- form well in jobs currently
+> dominated by white and Asian cisgender men. Many laud the benefits of
+> “diverse teams” for capitalist profit- ability.
+
+> Sexist and racist discourse and practice within the technology industry are
+> nearly always delinked from broader and deeper critiques of the ways that
+> tech reproduces white supremacy, heteropatriarchy, capitalism, and settler
+> colonialism—­ not only through employment practices, but through all aspects
+> of technology design.
+
+* design as a human activity
+
+> The wants and needs of young, healthy, middle-­class people with connections
+> and a reasonable amount of spare cash are overrepresented among Start-­up
+> City’s priorities. For one thing, those are the problems with solutions that
+> sell. For another, given a few million dollars and a team of semi-­geniuses,
+> those problems are easy to solve. Structural social injustice and systemic
+> racism are harder to tackle.
+
+> User-­centered design (UCD) refers to a design process that is “based upon
+an explicit understanding of users, tasks, and environments; is driven
+and refined by user-­centered evaluation; and addresses the whole user
+experience.
+
+> However, UCD faces a paradox: it prioritizes
+“real-­world users.” Yet if, for broader reasons of structural inequality,
+the universe of real-­world users falls within a limited range compared
+to the full breadth of potential users, then UCD reproduces exclusion
+by centering their needs.
+
+> designers tend to unconsciously default to imag-
+ined users whose experiences are similar to their own.
