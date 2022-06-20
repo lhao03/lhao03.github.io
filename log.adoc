@@ -45,6 +45,8 @@ nothing much.
 == June 12
 i got lost buying groceries, found a street with a bunch of food trucks, bought tacos, and then while walking back to the apartment walked into a movie set.
 
+image::images/log/june12/taco.jpg[]
+
 == June 11
 for some reason i can't sleep at night but i can fall asleep in seconds during
 	the day? i slept at 1, woke up at 6, went ot the gym, then slept from 7
@@ -89,7 +91,7 @@ i slept past my alarm by 4 hours and missed the first laptop set up session. ooo
 == June 7
 got a bagel. 
 
-image::/images/log/bagel.jpg[]
+image::/images/log/june7/bagel.jpg[]
 
 == June 6
 nyc day 2. arrived last night very tired. currently just vibing. wall street is
