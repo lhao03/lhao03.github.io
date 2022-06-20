@@ -16,20 +16,10 @@ existential thinking about what i wanna do.
 == June 18
 went to hmart and trader joe's today! also got pastrami, corned beef and reuben sandwiches and mango green tea. 
 
-image::images/log/june18/boba.jpg[]
-
-image::images/log/june18/pastrami.jpg[]
+image::images/log/june18.png[]
 
 == June 17
-image::images/log/june17/donot.jpg[]
-
-image::images/log/june17/pasta.jpg[]
-
-image::images/log/june17/gelato.jpg[]
-
-image::images/log/june17/chinatown.jpg[]
-
-image::images/log/june17/walk.jpeg[]
+image::images/log/june17.png[]
 
 == June 16
 boring day. was sleepy.
@@ -46,7 +36,7 @@ nothing much.
 == June 12
 i got lost buying groceries, found a street with a bunch of food trucks, bought tacos, and then while walking back to the apartment walked into a movie set.
 
-image::images/log/june12/taco.jpg[]
+image::images/log/june12.jpg[]
 
 == June 11
 for some reason i can't sleep at night but i can fall asleep in seconds during
@@ -60,15 +50,7 @@ how does taxes work for a dual citizen.
 
 anyways, on a whim i joined the other interns and went to central park and times square!
 
-image::/images/log/june10/walk.png[]
-
-image::/images/log/june10/IMG_0989.jpg[]
-
-image::/images/log/june10/IMG_0981.jpg[]
-
-image::/images/log/june10/IMG_0988.jpg[]
-
-image::/images/log/june10/IMG_3011.JPEG[]
+image::/images/log/june10.png[]
 
 == June 9
 macbook is still busted. been speedrunning onboarding and kind of realizing i
@@ -92,7 +74,7 @@ i slept past my alarm by 4 hours and missed the first laptop set up session. ooo
 == June 7
 got a bagel. 
 
-image::/images/log/june7/bagel.jpg[]
+image::/images/log/june7.jpg[]
 
 == June 6
 nyc day 2. arrived last night very tired. currently just vibing. wall street is
