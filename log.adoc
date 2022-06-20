@@ -16,10 +16,10 @@ existential thinking about what i wanna do.
 == June 18
 went to hmart and trader joe's today! also got pastrami, corned beef and reuben sandwiches and mango green tea. 
 
-image::images/log/june18.png[]
+image::/images/log/june18.png[]
 
 == June 17
-image::images/log/june17.png[]
+image::/images/log/june17.png[]
 
 == June 16
 boring day. was sleepy.
@@ -36,7 +36,7 @@ nothing much.
 == June 12
 i got lost buying groceries, found a street with a bunch of food trucks, bought tacos, and then while walking back to the apartment walked into a movie set.
 
-image::images/log/june12.jpg[]
+image::/images/log/june12.jpg[]
 
 == June 11
 for some reason i can't sleep at night but i can fall asleep in seconds during
