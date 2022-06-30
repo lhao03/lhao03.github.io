@@ -140,5 +140,8 @@ the universe of real-­world users falls within a limited range compared
 to the full breadth of potential users, then UCD reproduces exclusion
 by centering their needs.
 
-> designers tend to unconsciously default to imag-
-ined users whose experiences are similar to their own.
+> designers tend to unconsciously default to imag- ined users whose experiences are similar to their own.
+
+> even diverse design teams tend to default to imagined users who belong to the dominant social group.
+
+* stand-in strategy: user personas
