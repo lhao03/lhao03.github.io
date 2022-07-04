@@ -7,6 +7,29 @@ date: 2022-05-31
 
 
 Just a informal log of day to day feelings.
+
+== July
+=== June 30 - July 3 
+well i haven't been tracking what's occured in the past few days, but i will list it out now.  so everyone knows a bad manager can ruin everything. i think thats what happened at microsoft, and it's clouded my feelings about the tech industry. i chose to work at capital one because it's also in finance, so i wanted to see the differences between a tech company like microsoft and a company like capital one. i'll just list the reasons out in no particular order. 
+
+* use of third party software: capital one has libraries hosted on their own platform and indepedently reviews each aws service. you also have to install and access third party software through a VPN and proxy. many of my debugging issue have been due to the proxy. it's definitely interesting to see how many more levels there are to using third party software here than at microsoft. 
+
+* java everywhere: it's true, banks are slow on the tech. though i was surprised to see that some interns were using go. but the languages being used are pretty standard: java, python, go, js, swift
+
+* less "company spirit"?: in a good way. people are more treating this as a job, rather than their life's dream like what many interns at microsoft would (it's my dream to work at microsoft). i kind of find this refreshing, in comparision to the garage program where we had culture constantly screamed about at us
+
+* better work lift balance than microsoft: microsoft likes to talk about their work life balance but at capital one this is where i've seen the most chill interns. microsoft work life balance isn't bad, but capital one's is even more.
+
+well that was work updates, time for personal updates
+* going to the gym opened up a whole can of worms of body dismorphia. in the past few monthes i've avoided looking in the mirror and been mostly wearing sweats. but going to the gym has caused alot of the "old days" to resurface, to when i was more fit, physically and mentally in regards to strength training. weightlifting is something that helps me with mental health though, and as i'm regaining my strength i feel better about myself
+
+* i also ate american brunch for the first time, authentic tacos (which i didn't like) and levain cookies!
+
+* also dyed my hair!
+
+* also trader joe's is awesome
+
+image::/images/log/june-july3.png[]
  
 = June
 == June 29
