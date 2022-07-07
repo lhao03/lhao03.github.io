@@ -3,7 +3,7 @@ title: Hi, I'm Lucy!
 description: Hi, I'm Lucy! I'm a chemistry nerd and filter and map enthusiast studying Computer Science and Chemistry at the University of British Columbia.
 ---
 
-I'm a chemistry nerd and functional/[language orientated programming enthusiast](https://cacm.acm.org/magazines/2018/3/225475-a-programmable-programming-language/fulltext) at the [University of British Columbia](https://www.ubc.ca/). I enjoy learning about how and why things work, especially pertaining to chemical biology, drugs, operating systems, compilers, and programming language theory. I also enjoy [reading](/papers) about computing history, the impact of technological systems on society and computer science education. Oh and I hate JavaScript. I not too fond of C either, but I'm willing to use C. I believe someone's choice in [software is a reflection of their values](https://podcasts.apple.com/ca/podcast/corecursive-coding-stories/id1330329512?i=1000426047619).
+I'm a chemistry nerd and functional/[language orientated programming enthusiast](https://cacm.acm.org/magazines/2018/3/225475-a-programmable-programming-language/fulltext) at the [University of British Columbia](https://www.ubc.ca/). I enjoy learning about how and why things work, especially pertaining to chemical biology, drugs, operating systems, compilers, and programming language theory. I also enjoy [reading](/papers) about computing history, the impact of technological systems on society and computer science education. Oh and I hate JavaScript. I not too fond of C either, but I'm willing to use C. I believe someone's choice of [software is a reflection of their values](https://podcasts.apple.com/ca/podcast/corecursive-coding-stories/id1330329512?i=1000426047619).
 
 ## Posts
 $partial("templates/post-list.html")$
@@ -12,7 +12,7 @@ $partial("templates/post-list.html")$
 ### Currently 
 - reading Webtoons! Current obsessions are [Death: Rescheduled](https://www.webtoons.com/en/thriller/death-rescheduled/list?title_no=3515&page=1), [Purple Hyacinth](https://www.webtoons.com/en/mystery/purple-hyacinth/list?title_no=1621&page=1), [Men of the Harem](https://www.webtoons.com/en/fantasy/men-of-the-harem/list?title_no=2443&page=1), and [Let's Play](https://www.webtoons.com/en/romance/letsplay/list?title_no=1218&page=1).
 - reading [papers](/tags/paper/). See all the papers, books, and videos I've consumed [here](/papers/).
-- learning Rust.
+- learning about the theory of computation.
 
 [Check out the daily log ⇒](/log)
 
