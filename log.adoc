@@ -9,6 +9,16 @@ date: 2022-05-31
 Just a informal log of day to day feelings.
 
 == July
+
+=== July 7 - 13 
+some time in this range of days i hit a 205 deadlift (it was sumo tho, so kind of sus???? is sumo legit??) i've never hit more than 200 on conventional and the last time i tried i pulled my hamstring and couldn't do any deadlifts or squats for a few monthes. going to the gym also reminds me of the days in high school when i was training for a body building comp. i think it's a thing i'd still wanna do in the future. 
+
+drinking culture is also something im not really into. tbh im scared of drinking since i dont know what id do while drunk. i think there is a possibility that i could abuse alcohol, given my history of an eating disorder and addiction to exercise. its hard to tell people thats why i dont drink alcohol because thats essentially me pouring out my entire story. 
+
+in one event i was surrounded by people and felt super alone. i was doing some chemistry and overthinking/daydreaming and suddenly realized how alone i was. my comfort person was half a country away and i sometimes don't know what thoughts are appropriate to share with other people. with bf i could juts about share anything. but now i have to really filter my thoughts and think about if i should even be sharing these thoughts in the first place, maybe they would be better just kept in my head. 
+
+i also feel like i really headed into a CS degree blind as fuck. most of my friends in high school were similar to me, all interested in something in the pure sciences, whether it be chemistry, physics or biology. most headed to premed. most are now in med school. and it's gotten me thinking "do i wanna even be in the tech industry". there's so much i've learned having interned in the tech industry. sometimes i wish i never learned any of the shit involved in the tech industry. 
+
 === July 4 - 6 
 oh god these past few days have really drained my social and physical batteries. i went with two other interns to see the fireworks for july 4th (honestly fuck july 4th, but i went because its an eXpeRiEncE) and everyone else seemed want to see the fireworks too since all the fucking parks were so crowsed and it smelled like weed the entire time. it got really crowded, and it truly seems like everyone just fucking forgot about covid. but that wasn't the worst part of the night. not only were the fireworks kinda shit, but getting back to the apartment was fucking terrible. everyone's trying to go to the metro and people are so fucking inconsiderate of other people, they will push and shove you to get into the subway. people also packed themselves like sardines (many didnt wear masks) into the subway. that was truly fucking god awful. these past few days have given me confirmation that i do not want to ever live in nyc. i was also constantly thinking about the shootings that were occuring in other states. there's nothing special about me or nyc that makes nyc any less likly to have a shooting. i kept thinking, "if this is my last day, would i be ok?". it's really not fair that americans have to ask themselves that every day they wake up. along with the news about roe vs wade being overturned, i do not want to contribute any more money or support to the usa after this internship ends. 
 
@@ -27,11 +37,12 @@ well i haven't been tracking what's occured in the past few days, but i will lis
 
 * java everywhere: it's true, banks are slow on the tech. though i was surprised to see that some interns were using go. but the languages being used are pretty standard: java, python, go, js, swift
 
-* less "company spirit"?: in a good way. people are more treating this as a job, rather than their life's dream like what many interns at microsoft would (it's my dream to work at microsoft). i kind of find this refreshing, in comparision to the garage program where we had culture constantly screamed about at us
+* less "company spirit"?: in a good way. people are more treating this as a job, rather than their life's dream like what many interns at microsoft would. i kind of find this refreshing, in comparision to the garage program where we had culture constantly screamed about at us
 
 * better work lift balance than microsoft: microsoft likes to talk about their work life balance but at capital one this is where i've seen the most chill interns. microsoft work life balance isn't bad, but capital one's is even more.
 
 well that was work updates, time for personal updates
+
 * going to the gym opened up a whole can of worms of body dismorphia. in the past few monthes i've avoided looking in the mirror and been mostly wearing sweats. but going to the gym has caused alot of the "old days" to resurface, to when i was more fit, physically and mentally in regards to strength training. weightlifting is something that helps me with mental health though, and as i'm regaining my strength i feel better about myself
 
 * i also ate american brunch for the first time, authentic tacos (which i didn't like) and levain cookies!
