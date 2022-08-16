@@ -3,7 +3,7 @@ title: Hi, I'm Lucy!
 description: Hi, I'm Lucy! I'm a chemistry nerd and filter and map enthusiast studying Computer Science and Chemistry at the University of British Columbia.
 ---
 
-I'm a chemistry nerd and functional/[language orientated programming enthusiast](https://cacm.acm.org/magazines/2018/3/225475-a-programmable-programming-language/fulltext) at the [University of British Columbia](https://www.ubc.ca/). I enjoy learning about how and why things work, especially pertaining to chemical biology, drugs, operating systems, compilers, and programming language theory. I also enjoy [reading](/papers) about computing history, the impact of technological systems on society and computer science education. See my ramblings [here](/archive).
+I'm a chemistry nerd and functional/[language orientated programming enthusiast](https://cacm.acm.org/magazines/2018/3/225475-a-programmable-programming-language/fulltext) at the [University of British Columbia](https://www.ubc.ca/). I enjoy learning about how and why things work, especially pertaining to chemical biology, drugs, operating systems, compilers, and programming language theory. I also enjoy [reading](/papers) about computing history, the impact of technological systems on society and computer science education. See my ramblings [here](/archive). See my CV [here](/images/Lucy_Hao_CV.pdf).
 
 ### Currently 
 - getting ready to apply to grad school.
