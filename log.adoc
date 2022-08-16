@@ -8,6 +8,28 @@ date: 2022-05-31
 
 Just a informal log of day to day feelings.
 
+== Aug 
+=== Aug 15 
+i am back in canada. nyc has been quite the adventure and i met some awesome people, unfortunatly they are all in the usa so that sucks. i've solidified my plans to go to grad school, now comes the taunting journey of grad apps :/
+
+I think my dream as a kid was to do research in chemistry. I didn't understand the steps needed to pursue that dream, but I vividly remember telling my math teacher I wanted to do research in chemistry and he told me that I should go to UC Berkeley.
+
+Then in high school that's what I went with: I was going to major in Chemistry at UC Berkeley. I don't know what happened along the way, what fucked up my thinking but computer science became very popular. I was weirdly rebellious and would not dare touch biology since there was "so many girls in biology", so I took physics and chemistry. As a result I was surrounded by lots of boys (in physics) and many of them had aspirations as engineers and later on as software developers. Maybe if I was in biology I'd be more influenced to do a degree in the pure sciences.
+
+Anyways now I'm going into my 4th year at UBC. I'm trying to change my program to a combined major in computer science and chemistry. Most of my courses are going to chemistry based next year which I'm excited for. But now comes the question of whether I should do a PhD in chemistry or computer science. There's also the question of whether I should even do a PhD. Anyways, the reasons for studying chemistry and computer science are pretty opposite for me.
+
+If I never did a degree in computer science everything would be much more straight forward. Now I have a pro and cons list laid out in front me of: PhD in CS or PhD in Chemistry? Can I even get into a PhD program for CS? For chemistry? I'm not even that extraordinary.
+
+I'm also finding it really hard to do stuff, so today I'm going to try and review a chemistry lecture. One step a day is better than zero steps a day.
+
+=== Aug 8 
+i got sick aug 5 and have been isolating and sleeping for the weekend. tbh i've been going out so much that me getting sick was a highly likely event, but i was hoping that it wouldn't be the case. 
+
+working in industry sucks.
+
+=== Aug 2 
+chinatown got all the affordable foods.
+
 == July
 === July 26
 played board/card games with the interns yesterday and went to the office today. took back lots of free food :p
@@ -54,7 +76,7 @@ and while nyc is walkable, its fucking terrible to walk around in. trucks are pa
 
 and the metro is terrible. the trains screech so much i think i'll be deaf from the screeching soon. the platforms are like half a metre wide in some stations and thats just fucking great because you have to keep watching to make sure no one fucking pushes you off. 
 
-also there's so many small inconveniences that pushed me over the edge. my work project is boring, im bored, none of the dryers were free and i had to wait 2 hours for someone to take their fucking clothes out of the dryer, no one wears masks (unless they are on the train?? what makes you think the train could have covid yet the work office doesn't) (and people seem to be fucking surprised out of their damn pants when they get sick are yall that ignorant of how transmissive covid is? yes going to a bar is a high risk location for covid). like im really just done.
+also there's so many small inconveniences that pushed me over the edge. my work project is boring, im bored, none of the dryers were free and i had to wait 2 hours for someone to take their fucking clothes out of the dryer.
 
 === June 30 - July 3 
 well i haven't been tracking what's occured in the past few days, but i will list it out now.  so everyone knows a bad manager can ruin everything. i think thats what happened at microsoft, and it's clouded my feelings about the tech industry. i chose to work at capital one because it's also in finance, so i wanted to see the differences between a tech company like microsoft and a company like capital one. i'll just list the reasons out in no particular order. 

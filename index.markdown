@@ -3,32 +3,29 @@ title: Hi, I'm Lucy!
 description: Hi, I'm Lucy! I'm a chemistry nerd and filter and map enthusiast studying Computer Science and Chemistry at the University of British Columbia.
 ---
 
-I'm a chemistry nerd and functional/[language orientated programming enthusiast](https://cacm.acm.org/magazines/2018/3/225475-a-programmable-programming-language/fulltext) at the [University of British Columbia](https://www.ubc.ca/). I enjoy learning about how and why things work, especially pertaining to chemical biology, drugs, operating systems, compilers, and programming language theory. I also enjoy [reading](/papers) about computing history, the impact of technological systems on society and computer science education. Oh and I hate JavaScript. I not too fond of C either, but I'm willing to use C. I believe someone's choice of [software is a reflection of their values](https://podcasts.apple.com/ca/podcast/corecursive-coding-stories/id1330329512?i=1000426047619).
-
-## Posts
-$partial("templates/post-list.html")$
-[See more ⇒](/archive)
+I'm a chemistry nerd and functional/[language orientated programming enthusiast](https://cacm.acm.org/magazines/2018/3/225475-a-programmable-programming-language/fulltext) at the [University of British Columbia](https://www.ubc.ca/). I enjoy learning about how and why things work, especially pertaining to chemical biology, drugs, operating systems, compilers, and programming language theory. I also enjoy [reading](/papers) about computing history, the impact of technological systems on society and computer science education. See my ramblings [here](/archive).
 
 ### Currently 
-- reading Webtoons! Current obsessions are [Death: Rescheduled](https://www.webtoons.com/en/thriller/death-rescheduled/list?title_no=3515&page=1), [Purple Hyacinth](https://www.webtoons.com/en/mystery/purple-hyacinth/list?title_no=1621&page=1), [Men of the Harem](https://www.webtoons.com/en/fantasy/men-of-the-harem/list?title_no=2443&page=1), and [Let's Play](https://www.webtoons.com/en/romance/letsplay/list?title_no=1218&page=1).
-- reading [papers](/tags/paper/). See all the papers, books, and videos I've consumed [here](/papers/).
-- learning about the theory of computation.
+- getting ready to apply to grad school.
+- trying to learn about programming language theory!
+- reviewing organic chemistry.
 
 [Check out the daily log ⇒](/log)
 
 ## Papers
 - Chen, Y., **Hao, L.**, Zou, V.Z., Hollander, Z., Ng, R.T., Isaac, K.V. **Automated medical chart review for breast cancer outcomes research: a novel natural language processing extraction system.** BMC Med Res Methodol 22, 136 (2022). [https://doi.org/10.1186/s12874-022-01583-z](https://doi.org/10.1186/s12874-022-01583-z)
 
-## Teaching Experience
-- **UBC Department of Computer Science** (Sep - Dec 2021) λ Teaching Assistant for CPSC 110 
-- **UBC Department of Computer Science** (Jul - Aug 2021) 👾 Teaching Assistant for CPSC 210
-- **UBC Department of Computer Science** (Jan - Apr 2021) 👾 Teaching Assistant for CPSC 210
-
-## Working Experience
-- **Capital One** (Jun - present) 💳 Software Engineering Intern
-- **Microsoft** (May - Aug 2021) ⛏ Software Engineering Intern
+## Research Experience
 - **PROOF Centre** (Jan - May 2021) 🧬 Software Developer Intern
   - [Preprint](https://www.medrxiv.org/content/10.1101/2021.05.04.21256134v1)
+
+## Teaching Experience
+- **Winter 2022, Winter 2021** λ Teaching Assistant for CPSC 110 
+- **Summer 2021, Winter 2020** 👾 Teaching Assistant for CPSC 210
+
+## Working Experience
+- **Capital One** (Jun - Aug 2022) 💳 Software Engineering Intern
+- **Microsoft** (May - Aug 2021) ⛏ Software Engineering Intern
 
 ## Coursework
 $partial("templates/courses.html")$
