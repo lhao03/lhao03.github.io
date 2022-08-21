@@ -63,6 +63,7 @@ I'm currently reading a bunch of papers and books to see what I'm interested in 
 * Finding missed optimizations through the lens of dead code elimination
 * A Sociocultural Perspective on Computer Science Capital and its Pedagogical Implications in Computer Science Education
 * The development and deployment of formal methods in the UK
+* Structural versus Pipeline Composition of Higher-Order Functions (Experience Report)
 
 
 == Videos Watched
