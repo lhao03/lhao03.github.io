@@ -7,7 +7,7 @@ I'm a chemistry nerd and functional/[language orientated programming enthusiast]
 
 Right now I'm getting ready to apply to grad school, reviewing organic chemistry and learning about programming language theory!
 
-See my ramblings [here](/archive) and the [papers I've read](/papers). You can also see my [CV](/images/Lucy_Hao_CV.pdf), or check out the [daily log](/log).
+See my ramblings [here](/archive) and the [papers I've read](/papers). You can also see my [CV](/cv/cv.pdf), or check out the [daily log](/log).
 
 ## Coursework
 $partial("templates/courses.html")$

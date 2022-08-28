@@ -47,6 +47,10 @@ main = hakyllWith config $ do
     route idRoute
     compile copyFileCompiler
 
+  match "cv/**" $ do
+    route idRoute
+    compile copyFileCompiler
+
   match "css/*.otf" $ do
     route idRoute
     compile copyFileCompiler
