@@ -51,6 +51,10 @@ main = hakyllWith config $ do
     route idRoute
     compile copyFileCompiler
 
+  match "resume-lucy/**" $ do
+    route idRoute
+    compile copyFileCompiler
+
   match "css/*.otf" $ do
     route idRoute
     compile copyFileCompiler

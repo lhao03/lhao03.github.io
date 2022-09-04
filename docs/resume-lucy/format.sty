@@ -1,0 +1,117 @@
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[margin = 0.5in]{geometry}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{wrapfig}
+\usepackage{import}
+\usepackage{graphicx}
+
+\usepackage{contour}
+\usepackage{ulem}
+
+\renewcommand{\ULdepth}{3.8pt}
+\contourlength{0.8pt}
+\color{darkgray}
+
+\newcommand{\myuline}[1]{%
+	\uline{\phantom{#1}}%
+	\llap{\contour{white}{#1}}%
+}
+
+\usepackage{fontspec}
+\usepackage{fontawesome5}
+
+\newfontfamily{\OpenSansRegular}{OpenSans-Regular}[
+	Path = fonts/,
+	Extension = .ttf,
+	UprightFont = OpenSans-Regular
+]
+
+\newfontfamily{\OpenSansBold}{OpenSans-Bold}[
+	Path = fonts/,
+	Extension = .ttf,
+	UprightFont = OpenSans-Bold
+]
+
+\newfontfamily{\OpenSansItalic}{OpenSans-Italic}[
+	Path = fonts/,
+	Extension = .ttf,
+	UprightFont = OpenSans-Italic
+]
+
+\newfontfamily{\OpenSansSemiBold}{OpenSans-SemiBold}[
+	Path = fonts/,
+	Extension = .ttf,
+	UprightFont = OpenSans-SemiBold
+]
+
+\pagestyle{fancy}
+\fancyhf{} 
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\iffalse
+	% \iftrue
+	\addtolength{\oddsidemargin}{0.3in}
+	\addtolength{\marginparsep}{0.3in}
+	\addtolength{\evensidemargin}{0.3in}
+	\addtolength{\textwidth}{-0.5in}
+	\addtolength{\topmargin}{0.3in}
+	\addtolength{\textheight}{0.3in}
+\fi
+
+\urlstyle{same}
+
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+	\vspace{1pt}\scshape\raggedright\OpenSansBold\Large
+}{}{0pt}{}
+
+\newcommand{\resumeItem}[1]{
+	\item\small{
+		{#1 \vspace{-2pt}}
+	}
+}
+
+\newcommand{\resumeSubheading}[4]{
+	\vspace{-2pt}\item
+	\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+		\OpenSansSemiBold{#1} & \OpenSansRegular{#2} \\
+		\OpenSansItalic{\small#3} & \OpenSansItalic{\small #4} \\
+	\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+	\item
+	\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+		\textit{\small#1} & \textit{\small #2} \\
+	\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+	\item
+	\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+		\OpenSansRegular{\small#1} & \OpenSansRegular{#2} \\
+	\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+		\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}\OpenSansRegular}
+		\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
