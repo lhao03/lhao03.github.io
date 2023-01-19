@@ -1,0 +1,6 @@
+---
+title: Algorithms in Bioinformatics
+tags: computer science
+---
+
+== Lecture 1 (Jan 10)

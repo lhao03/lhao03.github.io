@@ -1,4 +1,0 @@
----
-description: "CPSC 436R"
-title: "CPSC 436R: RANDOMIZED ALGS"
----

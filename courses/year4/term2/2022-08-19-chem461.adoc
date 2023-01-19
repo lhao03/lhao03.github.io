@@ -1,4 +1,0 @@
----
-description: "CHEM 461"
-title: "CHEM 461: Synthetic Chemical Biology"
----
