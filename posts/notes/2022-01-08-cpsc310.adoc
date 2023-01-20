@@ -34,3 +34,19 @@ how to read a specification to write tests:
 === input/output partitioning
 - partitioning of all the possible inputs to CUT into equivalence classes which characterize sets of inputs with something in common
 - choose representitive to test and if those tests pass all values from that representitive should work
+
+== Automated Testing
+- generate test inputs that expose bugs in a program
+- generate test suites that expose bugs in a program
+- concolic + symbolic execution
+- finds violations that are very broad
+
+== Fuzz Testing
+- aims to solve the test-input generation problem
+- fuzzing algorithms are test-input generation algorithms where: elements of randomness, use feedback execution or analyze P(i) to guide generation of next input
+
+Less random inputs
+- generator-based fuzzing
+- property-based fuzzing
+- grammar-based fuzzing
+- mutational fuzzing: start from existing inputs and alter them slightly
