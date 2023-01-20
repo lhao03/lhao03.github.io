@@ -1,0 +1,55 @@
+---
+title: CPSC539B Reviews
+tags: programming languages
+---
+
+== Lambda Calculus Variables
+- https://www3.cs.stonybrook.edu/~cram/cse526/Spring20/Lectures/untyped-lambda.pdf
+
+
+```
+t ::=         Terms
+          x   Variable
+        | λx. t Abstraction
+        | t t Application
+```
+
+- `(λx. t)` is a function with formal parameter `x` that returns the term `t`
+- `(λx.λy x)` is a function that takes two arguments x and y and returns the first argument
+- `(t_1 t_2)` is a function call where `t_1` is a function and `t_2` is the supplied argument
+- `((λx. x) y)` supplies `y` as the argument to the identity function
+
+Parentheses can be dropped:
+- application is left associative `((f f) x)` is the same as `f f x`
+- λ binds as much as possible to the right: `λf. λx. f (f x)` is the same as `(λf. (λx. f (f x)))`
+
+- multiple consecutive abstractions can be combined: `λf.λx.f (f x)` is same as `λf x. f (f x)`
+
+1. `((λwyx. y (w y x)) (λsz. z))`
+2. `((λyx. y ((λsz. z) y x)))`
+3. `(λyx. y ((λsz. z) y x))`
+3. `(λyx. y x)`
+
+Another way:
+1. `((λwyx. y (w y x)) (λsz. z))`
+2. `(λyx. y ((λsz. z) y x))`
+3. `(λyx. y ((λz. z) x))`
+3. `(λyx. y x)`
+
+- an application: replace every occurance of the formal parameter in the body of the function with the given argument
+
+Encoding Booleans in the λ-Calclus
+
+
+== TAPL 9 (Simply Typed Lambda-Calculus)
+- want to introduce typing rules for variables, abstractions, applications that maintain type safety and are not too conservative
+- since pure lambda-calculus is Turing commplete, no hope of giving an exact type analysis for these primitives
+- no way of determining what a program yields because some parts might diverge and any typechecker will also diverge
+
+`λx.t : →`
+- the → type is a function given to every λ-abstraction
+- however, functions like λx.true and λx.λy.y are lumped together in the same type
+- we need to know what the function returns
+
+
+== TAPL 11
