@@ -1,4 +1,0 @@
----
-description: "CPSC 539b"
-title: "Topics in Programming Languages"
----

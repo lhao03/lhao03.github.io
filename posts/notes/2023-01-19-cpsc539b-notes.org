@@ -1,0 +1,297 @@
+#+title: CPSC539B Notes
+#+author: meow meow
+
+#+STARTUP: latexpreview
+
+* TAPL 9 (Simply Typed Lambda-Calculus)
+- want to introduce typing rules for variables, abstractions, applications that maintain type safety and are not too conservative
+- since pure lambda-calculus is Turing complete, no hope of giving an exact type analysis for these primitives
+- no way of determining what a program yields because some parts might diverge and any typechecker will also diverge
+
+* $\lambda  x.t : \rightarrow$
+- the → type is a function given to every λ-abstraction
+- however, functions like $\lambda x.true$ and $\lambda x \lambda y.y$ are lumped together in the same type
+- we need to know what the function returns
+- to ensure function will behave correctly when called, need to keep track of types of arguments it expects
+- thus, replace $\rightarrow$ with $T_1 \rightarrow T_2$, each classifying functions that expect arguments of type $T_1$ and return results of type $T_2$
+
+** The Typing Relation
+- how do we know what type of arguments to expect: annotate the $\lambda$ -abstraction or analyze body of abstraction to see how argument is used and deduce it
+- explicitly typed: languages with type annotations
+- implicitly typed: languages in which we ask type checker to infer/reconstruct
+
+$\lambda x:T_1. t_2$: assume $x$ is type $T_1$; occurrences of $x$ in $t_2$ are assumed to denote terms of type $T_1$
+
+this is captured by this typing rule:
+\begin{equation}
+\tfrac{x:T_1 \vdash t_2 : T_2}{\vdash \lambda x:T_1.t_2 : T_1 \rightarrow T_2 }
+\end{equation}
+
+since terms contain nested $\lambda$ -abstractions: change typing relations from two-place relation $t : T$ to three-place relation, $\Gamma \vdash t : T$, where $\Gamma$ is a set of assumption about the types of the free variables in $t$
+
+formally, a typing context, $\Gamma$, is a sequence of variables and their types and "comma" operator extends Γ by adding a new binding on the right.
+
+- $\vdash t : T$: means closed term t has type T under the empty set of assumptions
+- $\Gamma$ can be thought of as finite function from variables to their types.
+- $dom(T)$: set of variables bound by \Gamma
+- the typing rule for variables also follows: a variable has whatever type we are currently assuming it to have
+  $\tfrac{x:T \in \Gamma}{\Gamma ⊢ t : T}$ : the type assumed for x in $\Gamma$ is T
+
+typing rule for applications:
+\begin{equation}
+\tfrac{\Gamma \vdash t_1 : T_{11} \rightarrow T_{12} \; \Gamma \vdash t_2 : T_11}{\Gamma \vdash t_1 t_2 : T_12}
+\end{equation}
+
+
+the typing rule for boolean constants and conditional expressions
+\begin{equation}
+\tfrac{\Gamma \vdash t_1 : Bool \; \Gamma \vdash t_2 : T \; \Gamma \vdash t_3 : T}{\Gamma \vdash if t_1 then t_2 else t_3 : T}
+\end{equation}
+
+- for boolean must add context $\Gamma$ to every typing statement
+
+- purely simply typed lambda-calculus with no base types is actually degenerate (no well-typed terms at all)
+
+  instances of typing rules can be combined into derivation trees.
+
+  exercise: show that the following terms have the indicated types
+  1. $f: Bool \rightarrow Bool \vdash$ f (if alse then true else false) :Bool
+
+** properties of typing
+- inversion lemma: records a collection of observations about how typing derivations are built: the clause for each syntactic form tells us "if a term of this form is well typed, then its subterms must have types of these forms"
+
+*** lemma [inversion of the typing relation]
+1. if $\Gamma \vdash x : R$ then $x:R \in \Gamma$
+2. if $\Gamma \vdash \lambda x : T_1 . t_2 : R$, then $R = T_1 \rightarrow R_2$ for some $R_2$ with $\Gamma, x: T_1 \vdash t_2 : R_2$
+3. if $\Gamma \vdash t_1 t_2 : R$, then there is some type $T_{11}$ such that $\Gamma \vdash t_1 : T_{11} \rightarrow R$ and $\Gamma \vdash t_2 : T_{11}$ (don't really understand)
+4. if $\Gamma \vdash true : R$ then $R = Bool$
+5. if $\Gamma \vdash false : R$ then $R = Bool$
+6. if
+   $\Gamma \vdash$ if t_1 then t_2 else t_3 $: R$, then $\Gamma \vdash t_1 : Bool$ and $\Gamma \vdash t_2, t_3 : R$
+
+the typing relation is an `iff`, aka bidirectional?
+
+exercise: is there any context $\Gamma$ and type $T$ such that $\Gamma \vdash x x :T$?
+
+- we added type annotations to bound variables in function abstractions but no where else
+- is this enough? $\rightarrow$ uniqueness of types theorem: well-typed terms are in one-to-one correspondence with their typing derivations: the typing derivation cab be recovered uniquely from the term (and vice versa)
+    - so not ambiguous?
+
+theorem: uniqueness of types: in a given typing context $\Grammer$, a term $t$, with free variables all in the domain of $\Grammer$, has at most one type. if a term is typable, then its type is unique. there is just one derivation of this typing built from the inference rules that generate the typing relation.
+- different from CFG where there is ambiguity.
+
+however, for many systems later in the book, this simple correspondence between terms and derivations will not hold; a single term is assigned many types and each of these will be justified by many type derivations $\rightarrow$ lots of work involved in showing typing derivations can be recovered effectively from terms
+
+*** lemma [canonical forms]
+1. if $v$ is a value of type $Bool$, then $v$ is either true or false
+2. if $v$ is a value of type $T_1 \rightarrow T_2$, then $v = \lambda x: T_1.t_2$
+
+theorem [progress]: suppose $t$ is a close, well typed term ($\vdash t: T$). then either $t$ is a value or else there is some $t \rightarrow t'$
+- this is saying $t$ is a value or evaluates to a value?
+
+  proof: abstraction case is immediate because abstractions are values. case for boolean constants and conditions exactly same as in proof of progress for typed arithmetic expressions
+  applications ($t \rightarrow t_1 t_2$): by induction hypothesis, either $t_1$ is a value else it can make a step of evaluation, and likewise $t_2$.
+  if $t_1$ can take a step: $\tfrac{t_1 \rightarrow t_1'}{t_1 t_2 \rightarrow t_1' t_2}$
+  if $t_2$ can take a step: $\tfrac{t_2 \rightarrow t_2'}{v_1 t_2 \rightarrow v_1 t_2'}$
+  if $t_1$ and $t_2 are both values:, $t_1$ has the form $\lambda x:T_{11}.t_{12}$,
+  and so rule $(\lambda x: T_{11}.t_{12}) v_2 \rightarrow [x \mapsto v_2]t_{12}$
+
+next need to prove evaluation preserves types (evaluation is dynamic, so cannot check during runtime or could run into halting problem)
+
+*** structural lemmas:
+- [permutation]: if $\Gamma \vdash t : T$ and $\Delta$ is a permutation of $\Gamma$, then $\Delta \vdash t : T$
+- [weakening]: if $\Gamma \vdash t : T$ and $x \notin dom(\Gamma)$, then $\Gamma, x:S \vdash t : T$
+
+prove a crucial property of typing relation: well-typedness is preserved when variables are substituted with terms of appropriate types
+
+lemma [preservation of types under substitution]: if $\Gamma, x:S \vdash t : T$ and $\Gamma \vdash s: S$, then $\Gamma \vdash [x \mapsto s]t : T$
+
+theorem [preservation]: if $\Gamma \vdash t : T$ and $t \rightarrow t'$, then $\Gamma \vdash t' : T$
+
+** the curry-howard correspondence
+the $\rightarrow$ type constructor comes with typing rules of two kinds
+- the introduction rule (T-ABS): how elements of the type can be created
+- the elimination rule (T-APP): how elements of the type can be used
+
+| Logic                     | PL                     |
+|---------------------------+------------------------|
+| propositions              | types                  |
+| proposition $P \supset Q$ | type $P \rightarrow Q$ |
+| proposition $P \land Q$   | type $P \times Q$      |
+| proof of proposition P    | term $t$ of type $P$   |
+| proposition P is provable | type $P$ is inhabited  |
+
+** erasure and typability
+- most compilers avoid carrying annotations at runtime, they are used during typechecking.
+- in effect, programs are converted back to an untyped form before they are evaluated
+- this style of semantics can be formalized using erasure function mapping simply typed terms into the corresponding untyped terms
+- evaluation commutes with erasure
+
+
+theorem:
+1. if $t \rightarrow t'$ under the typed evaluation relation, then $erase(t) \rightarrow erase(t')$
+2. if $erase(t) \rightarrow m'$ under the typed evaluation relation, then there is a simply typed term $t'$ s.t $t \rightarrow t'$ and $erase(t') = m'$
+
+- "high level" semantics, expressed directly in terms of the PL, coincides with an alternative, lower level eval strat actually used by implementation of the language
+
+given an untyped lambda-term $m$, can we find simply typed term $t$ that erases to $m$?
+
+definition: a term $m$ in the untyped lambda calclus is said to be typable in $\lambda_{\rightarrow}$ if there is some simply typed term $t$, type $T$ and context $\Gamma$ such that $erase(t) = m$ and $\Gamma \vdash t : T$
+
+** curry-style vs church-style
+- evaluation relation defined directly on the syntax of the simply typed calculus
+- compilation to an untyped calculus plus evaluation relation on untyped terms
+
+- in both styles make sense to talk about behaviour of term $t$, whether or not it is well typed
+- define terms, define semantics showing how they behave, then give type system: curry style
+  - semantics prior to typing
+  - implicit
+- define terms, then identify well-typed terms, then give semantics to just these: church style
+  - never ask what is behaviour of ill typed term
+  - explicit
+
+* TAPL 11 (Simple Extensions)
+
+
+** base types
+- every PL provides these
+- for theoretical purposes, useful to abstract these away as some set $A$ of $uninterpreted$ or $unknown$ base types with no primitive operations on th em
+  - also thought of as atomic types, no internal structure
+
+** the unit type
+- found commonly in ML languages
+- interpreted in simplest way possible
+- $unit$ is an element of type Unit
+- $unit$ is the only possible result of evaluating an expression of type Unit
+- main application in languages with side effects: when we care about side effect of expression, Unit is appropriate result type for such expressions (is void in Java and C)
+
+** derived forms: sequencing and wildcards
+- sequencing notation: $t_1;t_2$ evaluate $t_1$, throw away its trivial result, then evaluate $t_2$
+- ways to formalize sequencing:
+  1. add $t_1;t_2$ as new alternative in the syntax of terms, then add two evaluation rules to capture behaviour of ;
+  2. or regard as abbreviation for the term $(\lambda x :$ Unit.$t_2) t_1$ where variable $x$ is chosen fresh (different from free variables of $t_2$)
+
+theorem [sequencing is a derived form]: let $e \in \lambda^E \rightarrow \lambda^I$ be the elaboration function that translates between external and internal language by replacing $t_1;t_2$ with $(\lambda x :$ Unit.$t_2) t_1$ where $x$ is chosen fresh in each case. now for each term $t$ of $\lambda^E$ we have:
+- $t \rightarrow_E t' \iff e(t) \rightarrow_I e(t')$
+- $\Gamma \vdash^E t:T \iff \Gamma \vdash^I e(t) : T$
+
+- advantage of introducing features as derived forms rather than full fledged language constructs: can extend surface syntax without adding complexity to internal language
+- often called syntactic sugar
+  - replacing derived form with lower level form: desugaring
+- wildcard: $\lambda\_:S.t$
+
+** ascription
+- ~t as T~ ascribe particular type for given term
+- useful for printing types a certain way or abstraction (term $t$ may have many different types)
+
+** let bindings
+- call by value evaluation order: $let$ -bound term must be fully evaluated before evaluation of the $let -body can begin
+- type of let can be calculated by calculating the type of the let-bound term, extending the context with a binding with this type,and in enriched context calculating the type of the body, which is then the type of the whole $let$ expression
+- $let$ can also be defined as derived term: use combination of abstraction and application:
+
+let x=$t_1$ in $t_2$ $\stackrel{def}{=}$($\lambda$ x: $T_1$.$t_2$) $t_1$
+
+- right hand side includes $T_1$, but left hand side does not: how does parser know to generate $T_1$ as type annotation?
+  - this information comes typechecker
+- treat ~let~ as transformation on typing derivations
+- can derive its evaluation behaviour by desugaring it but its typing behaviour must be built into internal language
+- ~let~ construct is treated specially by typechecker which uses it for generalizing polymorphic definitions to obtain typings that cannot be emulated using ordinary $\lambda-$ abstraction and application
+
+question: is it good to define let as a derived form to desugar it by executing it immediately ($[x \mapsto t_1]t_2$)? ask this
+
+** pairs
+- two new forms of terms: pairing: ${t_1,t_2}$ and projection $t.1$
+- one new type constructor: $T_1 \times T_2$ called product of $T_1$ and $T_2$
+
+** tuples
+- generalize pairs into n-ary products
+- cost to generalization: to formalize the system, need to invent notations for uniformly describing structures of arbitrary arity
+- $\{t_i^{i \in 1...n}\}$ for a tuple of n terms and $\{T_i^{i \in 1...n}\}$ for its type
+
+** records
+- generalization from n-ary tuples to labeled records
+- in many PLs, order of fields does not matter
+- in current presentation, order matters
+- the computation rule for pattern matching: generalizes the let-binding rule
+- relies on auxiliary matching function: given a pattern $p$ and value $v$, either fails or yields a substituion that maps variahbles appearing in $p$ to the corresponding parts of $v$
+
+** sums
+- deal with heterogeneous collections of values
+- varient types
+- binary sum types: describes set of values drawn from exactly two given types
+  - to use elements of sum types, introduce ~case~ construct with ~lnl~ and ~lnr~
+  - to syntax: add left and right injections and ~case~ construct
+  - to types add sum constructor
+  - to evaluation add two "beta-reduction" rules for case construct
+
+*** sum and uniqueness of types
+most of the properties of typing relations of pure $\lambda_{\rightarrow}$ extend to the system with sums but one fails: the Uniqueness of Types theorem
+- typing rule T-INL, says that once we have shown $t_1$ is an element of $T_1$, we can derive that ~inl $t_1$~ is an element of $T_1+T_2$ for any type $T_2$.
+- failure of uniqueness of types means we cannot build a typechecking algorithm simply by reading the rules from bottom to top
+- options:
+  1. guess a value for $T_2$; hold $T_2$ indeterminate and try to discover later what its value should have been
+  2. refine language of types to all possible values for $T_2$ to somehow be represented uniformly
+  3. demand programmer to provide explicit annotation to indicate which type $T_2$ is intended
+
+** variants
+- binary sums generalize to labeled variants
+- $<l_1:T_1, l_2:T_2>$ where $l$ are field labels
+- label case with same labels as corresponding sum type
+
+** options
+- ~OptionalNat = <none:Unit, some:Nat>~
+
+** enums
+- varient type in which the field type with each label is ~Unit~
+** single field varients
+- ~V = <l:T>~
+- usual operations on ~T~ cannot be applied to elements of ~V~ without unpackaging them first
+- ~V~ cannot be accidentally mistaken for a ~T~
+
+** varients vs. datatypes
+- datatype definition may be recursive (type being defined is allowed to appear in the body of definition)
+
+** variants as disjoint unions
+- $T_1 + T_2$ is union of $T_1$ and $T_2$ because its elements include all elements of $T_1$ and $T_2$; disjoint because sets of elements of $T_1$ or $T_2$ are tagged with ~inl~ or ~inr~
+
+** type dynamic
+- data whose type cannot be determined at compile time
+- type ~Dynamic~ whose values are pairs of value ~v~ and type tag ~T~ where ~v~ has type ~T~
+
+** general recursion
+- no expression that can lead to non-terminating computations can be typed using only simple types
+- ability to form the fixed point of a function of type $T \rightarrow T$ for any $T$: implies every type is inhabited by some term
+- letrec x: $T_1$=$t_1$ in $t_2$ $\stackrel{def}{+} let x = fix($\lambda x : T_1.t_1$) in $t_2$
+
+** lists
+- for every type $T$, the type ~List T~ describes finite length lists whose elements are drawn from ~T~
+
+* jan 23 notes
+- no integers, no booleans, only functions
+- can't write program in this type system
+- have to keep defining (infinite)
+- can add new rules to these systems
+- study these rules in isolation
+- can plug into other type systems
+- Nat as a base type, more well behaved
+  - can't go below zero
+- curry-howard correspondence: not really formal, just a way to think about it
+  - more of an observation
+  - erase types to view as logic
+- $\Gamma$ instroduce implication
+- intro rules: create a new type (constructs a value)
+- elim rules: know the rule already (if rule)
+  - some computation
+- pair intro and elim rule to create computation
+- permutation lemma: ?
+- preservation of types under substitution: each step of eval/computation does not change the type
+- separate eval from typing: view a program from many different type systems
+- or only eval typed programs: preservation trivial
+- principal typing: types can be joined back together
+- in math: only well typed terms exist
+
+  rust
+- curry: can have errors, can define errors
+- church: no errors, everything well defined
+
+- unit type: bottom type

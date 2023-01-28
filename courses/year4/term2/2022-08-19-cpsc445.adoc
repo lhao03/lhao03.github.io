@@ -1,4 +1,0 @@
----
-description: "CPSC 445"
-title: "Algorithms in Bioinformatics"
----
