@@ -68,80 +68,83 @@
     
   </div>
   <div>
-    <h1 id="tapl-9-simply-typed-lambda-calculus">TAPL 9 (Simply Typed Lambda-Calculus)</h1>
+    <h1 id="sec:orge60f8d7">TAPL 9 (Simply Typed Lambda-Calculus)</h1>
 <ul>
-<li>want to introduce typing rules for variables, abstractions, applications that maintain type safety and are not too conservative</li>
-<li>since pure lambda-calculus is Turing complete, no hope of giving an exact type analysis for these primitives</li>
-<li>no way of determining what a program yields because some parts might diverge and any typechecker will also diverge</li>
+<li><p>want to introduce typing rules for variables, abstractions, applications that maintain type safety and are not too conservative</p></li>
+<li><p>since pure lambda-calculus is Turing complete, no hope of giving an exact type analysis for these primitives</p></li>
+<li><p>no way of determining what a program yields because some parts might diverge and any typechecker will also diverge</p></li>
 </ul>
-<h1 id="lambda-x.t-rightarrow"><span class="math inline"><em>λ</em><em>x</em>.<em>t</em> : →</span></h1>
+<h1 id="sec:orga660a4c"><span class="math inline"><em>λ</em><em>x</em>.<em>t</em> : →</span></h1>
 <ul>
-<li>the → type is a function given to every λ-abstraction</li>
-<li>however, functions like <span class="math inline"><em>λ</em><em>x</em>.<em>t</em><em>r</em><em>u</em><em>e</em></span> and <span class="math inline"><em>λ</em><em>x</em><em>λ</em><em>y</em>.<em>y</em></span> are lumped together in the same type</li>
-<li>we need to know what the function returns</li>
-<li>to ensure function will behave correctly when called, need to keep track of types of arguments it expects</li>
-<li>thus, replace <span class="math inline">→</span> with <span class="math inline"><em>T</em><sub>1</sub> → <em>T</em><sub>2</sub></span>, each classifying functions that expect arguments of type <span class="math inline"><em>T</em><sub>1</sub></span> and return results of type <span class="math inline"><em>T</em><sub>2</sub></span></li>
+<li><p>the <span class="math inline">→</span> type is a function given to every <span class="math inline"><em>λ</em></span>-abstraction</p></li>
+<li><p>however, functions like <span class="math inline"><em>λ</em><em>x</em>.<em>t</em><em>r</em><em>u</em><em>e</em></span> and <span class="math inline"><em>λ</em><em>x</em><em>λ</em><em>y</em>.<em>y</em></span> are lumped together in the same type</p></li>
+<li><p>we need to know what the function returns</p></li>
+<li><p>to ensure function will behave correctly when called, need to keep track of types of arguments it expects</p></li>
+<li><p>thus, replace <span class="math inline">→</span> with <span class="math inline"><em>T</em><sub>1</sub> → <em>T</em><sub>2</sub></span>, each classifying functions that expect arguments of type <span class="math inline"><em>T</em><sub>1</sub></span> and return results of type <span class="math inline"><em>T</em><sub>2</sub></span></p></li>
 </ul>
-<h2 id="the-typing-relation">The Typing Relation</h2>
+<h2 id="sec:org94ca3aa">The Typing Relation</h2>
 <ul>
-<li>how do we know what type of arguments to expect: annotate the <span class="math inline"><em>λ</em></span> -abstraction or analyze body of abstraction to see how argument is used and deduce it</li>
-<li>explicitly typed: languages with type annotations</li>
-<li>implicitly typed: languages in which we ask type checker to infer/reconstruct</li>
+<li><p>how do we know what type of arguments to expect: annotate the <span class="math inline"><em>λ</em></span> -abstraction or analyze body of abstraction to see how argument is used and deduce it</p></li>
+<li><p>explicitly typed: languages with type annotations</p></li>
+<li><p>implicitly typed: languages in which we ask type checker to infer/reconstruct</p></li>
 </ul>
 <p><span class="math inline"><em>λ</em><em>x</em> : <em>T</em><sub>1</sub>.<em>t</em><sub>2</sub></span>: assume <span class="math inline"><em>x</em></span> is type <span class="math inline"><em>T</em><sub>1</sub></span>; occurrences of <span class="math inline"><em>x</em></span> in <span class="math inline"><em>t</em><sub>2</sub></span> are assumed to denote terms of type <span class="math inline"><em>T</em><sub>1</sub></span></p>
-<p>this is captured by this typing rule:</p>
+<p>this is captured by this typing rule:
+<span class="math display">$$\tfrac{x:T_1 \vdash t_2 : T_2}{\vdash \lambda x:T_1.t_2 : T_1 \rightarrow T_2 }$$</span></p>
 <p>since terms contain nested <span class="math inline"><em>λ</em></span> -abstractions: change typing relations from two-place relation <span class="math inline"><em>t</em> : <em>T</em></span> to three-place relation, <span class="math inline"><em>Γ</em> ⊢ <em>t</em> : <em>T</em></span>, where <span class="math inline"><em>Γ</em></span> is a set of assumption about the types of the free variables in <span class="math inline"><em>t</em></span></p>
-<p>formally, a typing context, <span class="math inline"><em>Γ</em></span>, is a sequence of variables and their types and “comma” operator extends Γ by adding a new binding on the right.</p>
+<p>formally, a typing context, <span class="math inline"><em>Γ</em></span>, is a sequence of variables and their types and “comma” operator extends <span class="math inline"><em>Γ</em></span> by adding a new binding on the right.</p>
 <ul>
-<li><span class="math inline"> ⊢ <em>t</em> : <em>T</em></span>: means closed term t has type T under the empty set of assumptions</li>
-<li><span class="math inline"><em>Γ</em></span> can be thought of as finite function from variables to their types.</li>
-<li><span class="math inline"><em>d</em><em>o</em><em>m</em>(<em>T</em>)</span>: set of variables bound by Γ</li>
-<li>the typing rule for variables also follows: a variable has whatever type we are currently assuming it to have
-<span class="math inline">$\tfrac{x:T \in \Gamma}{\Gamma ⊢ t : T}$</span> : the type assumed for x in <span class="math inline"><em>Γ</em></span> is T</li>
+<li><p><span class="math inline"> ⊢ <em>t</em> : <em>T</em></span>: means closed term t has type T under the empty set of assumptions</p></li>
+<li><p><span class="math inline"><em>Γ</em></span> can be thought of as finite function from variables to their types.</p></li>
+<li><p><span class="math inline"><em>d</em><em>o</em><em>m</em>(<em>T</em>)</span>: set of variables bound by <span class="math inline"><em>Γ</em></span></p></li>
+<li><p>the typing rule for variables also follows: a variable has whatever type we are currently assuming it to have
+<span class="math inline">$\tfrac{x:T \in \Gamma}{\Gamma \vdash t : T}$</span> : the type assumed for x in <span class="math inline"><em>Γ</em></span> is T</p></li>
 </ul>
-<p>typing rule for applications:</p>
-<p>the typing rule for boolean constants and conditional expressions</p>
+<p>typing rule for applications:
+<span class="math display">$$\tfrac{\Gamma \vdash t_1 : T_{11} \rightarrow T_{12} \; \Gamma \vdash t_2 : T_11}{\Gamma \vdash t_1 t_2 : T_12}$$</span></p>
+<p>the typing rule for boolean constants and conditional expressions
+<span class="math display">$$\tfrac{\Gamma \vdash t_1 : Bool \; \Gamma \vdash t_2 : T \; \Gamma \vdash t_3 : T}{\Gamma \vdash if t_1 then t_2 else t_3 : T}$$</span></p>
 <ul>
 <li><p>for boolean must add context <span class="math inline"><em>Γ</em></span> to every typing statement</p></li>
 <li><p>purely simply typed lambda-calculus with no base types is actually degenerate (no well-typed terms at all)</p>
 <p>instances of typing rules can be combined into derivation trees.</p>
 <p>exercise: show that the following terms have the indicated types</p>
-<ol type="1">
-<li><span class="math inline"><em>f</em> : <em>B</em><em>o</em><em>o</em><em>l</em> → <em>B</em><em>o</em><em>o</em><em>l</em>⊢</span> f (if alse then true else false) :Bool</li>
+<ol>
+<li><p><span class="math inline"><em>f</em> : <em>B</em><em>o</em><em>o</em><em>l</em> → <em>B</em><em>o</em><em>o</em><em>l</em>⊢</span> f (if alse then true else false) :Bool</p></li>
 </ol></li>
 </ul>
-<h2 id="properties-of-typing">properties of typing</h2>
+<h2 id="sec:org149403c">properties of typing</h2>
 <ul>
-<li>inversion lemma: records a collection of observations about how typing derivations are built: the clause for each syntactic form tells us “if a term of this form is well typed, then its subterms must have types of these forms”</li>
+<li><p>inversion lemma: records a collection of observations about how typing derivations are built: the clause for each syntactic form tells us “if a term of this form is well typed, then its subterms must have types of these forms”</p></li>
 </ul>
-<h3 id="lemma-inversion-of-the-typing-relation">lemma [inversion of the typing relation]</h3>
-<ol type="1">
-<li>if <span class="math inline"><em>Γ</em> ⊢ <em>x</em> : <em>R</em></span> then <span class="math inline"><em>x</em> : <em>R</em> ∈ <em>Γ</em></span></li>
-<li>if <span class="math inline"><em>Γ</em> ⊢ <em>λ</em><em>x</em> : <em>T</em><sub>1</sub>.<em>t</em><sub>2</sub> : <em>R</em></span>, then <span class="math inline"><em>R</em> = <em>T</em><sub>1</sub> → <em>R</em><sub>2</sub></span> for some <span class="math inline"><em>R</em><sub>2</sub></span> with <span class="math inline"><em>Γ</em>, <em>x</em> : <em>T</em><sub>1</sub> ⊢ <em>t</em><sub>2</sub> : <em>R</em><sub>2</sub></span></li>
-<li>if <span class="math inline"><em>Γ</em> ⊢ <em>t</em><sub>1</sub><em>t</em><sub>2</sub> : <em>R</em></span>, then there is some type <span class="math inline"><em>T</em><sub>11</sub></span> such that <span class="math inline"><em>Γ</em> ⊢ <em>t</em><sub>1</sub> : <em>T</em><sub>11</sub> → <em>R</em></span> and <span class="math inline"><em>Γ</em> ⊢ <em>t</em><sub>2</sub> : <em>T</em><sub>11</sub></span> (don’t really understand)</li>
-<li>if <span class="math inline"><em>Γ</em> ⊢ <em>t</em><em>r</em><em>u</em><em>e</em> : <em>R</em></span> then <span class="math inline"><em>R</em> = <em>B</em><em>o</em><em>o</em><em>l</em></span></li>
-<li>if <span class="math inline"><em>Γ</em> ⊢ <em>f</em><em>a</em><em>l</em><em>s</em><em>e</em> : <em>R</em></span> then <span class="math inline"><em>R</em> = <em>B</em><em>o</em><em>o</em><em>l</em></span></li>
-<li>if
-<span class="math inline"><em>Γ</em>⊢</span> if t<sub>1</sub> then t<sub>2</sub> else t<sub>3</sub> <span class="math inline"> : <em>R</em></span>, then <span class="math inline"><em>Γ</em> ⊢ <em>t</em><sub>1</sub> : <em>B</em><em>o</em><em>o</em><em>l</em></span> and <span class="math inline"><em>Γ</em> ⊢ <em>t</em><sub>2</sub>, <em>t</em><sub>3</sub> : <em>R</em></span></li>
+<h3 id="sec:org3cb47f3">lemma [inversion of the typing relation]</h3>
+<ol>
+<li><p>if <span class="math inline"><em>Γ</em> ⊢ <em>x</em> : <em>R</em></span> then <span class="math inline"><em>x</em> : <em>R</em> ∈ <em>Γ</em></span></p></li>
+<li><p>if <span class="math inline"><em>Γ</em> ⊢ <em>λ</em><em>x</em> : <em>T</em><sub>1</sub>.<em>t</em><sub>2</sub> : <em>R</em></span>, then <span class="math inline"><em>R</em> = <em>T</em><sub>1</sub> → <em>R</em><sub>2</sub></span> for some <span class="math inline"><em>R</em><sub>2</sub></span> with <span class="math inline"><em>Γ</em>, <em>x</em> : <em>T</em><sub>1</sub> ⊢ <em>t</em><sub>2</sub> : <em>R</em><sub>2</sub></span></p></li>
+<li><p>if <span class="math inline"><em>Γ</em> ⊢ <em>t</em><sub>1</sub><em>t</em><sub>2</sub> : <em>R</em></span>, then there is some type <span class="math inline"><em>T</em><sub>11</sub></span> such that <span class="math inline"><em>Γ</em> ⊢ <em>t</em><sub>1</sub> : <em>T</em><sub>11</sub> → <em>R</em></span> and <span class="math inline"><em>Γ</em> ⊢ <em>t</em><sub>2</sub> : <em>T</em><sub>11</sub></span> (don’t really understand)</p></li>
+<li><p>if <span class="math inline"><em>Γ</em> ⊢ <em>t</em><em>r</em><em>u</em><em>e</em> : <em>R</em></span> then <span class="math inline"><em>R</em> = <em>B</em><em>o</em><em>o</em><em>l</em></span></p></li>
+<li><p>if <span class="math inline"><em>Γ</em> ⊢ <em>f</em><em>a</em><em>l</em><em>s</em><em>e</em> : <em>R</em></span> then <span class="math inline"><em>R</em> = <em>B</em><em>o</em><em>o</em><em>l</em></span></p></li>
+<li><p>if
+<span class="math inline"><em>Γ</em>⊢</span> if t<sub>1</sub> then t<sub>2</sub> else t<sub>3</sub> <span class="math inline"> : <em>R</em></span>, then <span class="math inline"><em>Γ</em> ⊢ <em>t</em><sub>1</sub> : <em>B</em><em>o</em><em>o</em><em>l</em></span> and <span class="math inline"><em>Γ</em> ⊢ <em>t</em><sub>2</sub>, <em>t</em><sub>3</sub> : <em>R</em></span></p></li>
 </ol>
-<p>the typing relation is an `iff`, aka bidirectional?</p>
+<p>the typing relation is an ‘iff‘, aka bidirectional?</p>
 <p>exercise: is there any context <span class="math inline"><em>Γ</em></span> and type <span class="math inline"><em>T</em></span> such that <span class="math inline"><em>Γ</em> ⊢ <em>x</em><em>x</em> : <em>T</em></span>?</p>
 <ul>
-<li>we added type annotations to bound variables in function abstractions but no where else</li>
-<li>is this enough? <span class="math inline">→</span> uniqueness of types theorem: well-typed terms are in one-to-one correspondence with their typing derivations: the typing derivation cab be recovered uniquely from the term (and vice versa)
+<li><p>we added type annotations to bound variables in function abstractions but no where else</p></li>
+<li><p>is this enough? <span class="math inline">→</span> uniqueness of types theorem: well-typed terms are in one-to-one correspondence with their typing derivations: the typing derivation cab be recovered uniquely from the term (and vice versa)</p>
 <ul>
-<li>so not ambiguous?</li>
+<li><p>so not ambiguous?</p></li>
 </ul></li>
 </ul>
-<p>theorem: uniqueness of types: in a given typing context <span class="math inline">$\Grammer$</span>, a term <span class="math inline"><em>t</em></span>, with free variables all in the domain of <span class="math inline">$\Grammer$</span>, has at most one type. if a term is typable, then its type is unique. there is just one derivation of this typing built from the inference rules that generate the typing relation.</p>
+<p>theorem: uniqueness of types: in a given typing context <span class="math inline"><em>Γ</em></span>, a term <span class="math inline"><em>t</em></span>, with free variables all in the domain of <span class="math inline"><em>Γ</em></span>, has at most one type. if a term is typable, then its type is unique. there is just one derivation of this typing built from the inference rules that generate the typing relation.</p>
 <ul>
-<li>different from CFG where there is ambiguity.</li>
+<li><p>different from CFG where there is ambiguity.</p></li>
 </ul>
 <p>however, for many systems later in the book, this simple correspondence between terms and derivations will not hold; a single term is assigned many types and each of these will be justified by many type derivations <span class="math inline">→</span> lots of work involved in showing typing derivations can be recovered effectively from terms</p>
-<h3 id="lemma-canonical-forms">lemma [canonical forms]</h3>
-<ol type="1">
-<li>if <span class="math inline"><em>v</em></span> is a value of type <span class="math inline"><em>B</em><em>o</em><em>o</em><em>l</em></span>, then <span class="math inline"><em>v</em></span> is either true or false</li>
-<li>if <span class="math inline"><em>v</em></span> is a value of type <span class="math inline"><em>T</em><sub>1</sub> → <em>T</em><sub>2</sub></span>, then <span class="math inline"><em>v</em> = <em>λ</em><em>x</em> : <em>T</em><sub>1</sub>.<em>t</em><sub>2</sub></span></li>
+<h3 id="sec:orgba10307">lemma [canonical forms]</h3>
+<ol>
+<li><p>if <span class="math inline"><em>v</em></span> is a value of type <span class="math inline"><em>B</em><em>o</em><em>o</em><em>l</em></span>, then <span class="math inline"><em>v</em></span> is either true or false</p></li>
+<li><p>if <span class="math inline"><em>v</em></span> is a value of type <span class="math inline"><em>T</em><sub>1</sub> → <em>T</em><sub>2</sub></span>, then <span class="math inline"><em>v</em> = <em>λ</em><em>x</em> : <em>T</em><sub>1</sub>.<em>t</em><sub>2</sub></span></p></li>
 </ol>
 <p>theorem [progress]: suppose <span class="math inline"><em>t</em></span> is a close, well typed term (<span class="math inline"> ⊢ <em>t</em> : <em>T</em></span>). then either <span class="math inline"><em>t</em></span> is a value or else there is some <span class="math inline"><em>t</em> → <em>t</em>′</span></p>
 <ul>
@@ -154,107 +157,109 @@ if <span class="math inline"><em>t</em><sub>1</sub></span> and $t<sub>2</sub> ar
 and so rule <span class="math inline">(<em>λ</em><em>x</em>:<em>T</em><sub>11</sub>.<em>t</em><sub>12</sub>)<em>v</em><sub>2</sub> → [<em>x</em>↦<em>v</em><sub>2</sub>]<em>t</em><sub>12</sub></span></p></li>
 </ul>
 <p>next need to prove evaluation preserves types (evaluation is dynamic, so cannot check during runtime or could run into halting problem)</p>
-<h3 id="structural-lemmas">structural lemmas:</h3>
+<h3 id="sec:orgb7f303f">structural lemmas:</h3>
 <ul>
-<li>[permutation]: if <span class="math inline"><em>Γ</em> ⊢ <em>t</em> : <em>T</em></span> and <span class="math inline"><em>Δ</em></span> is a permutation of <span class="math inline"><em>Γ</em></span>, then <span class="math inline"><em>Δ</em> ⊢ <em>t</em> : <em>T</em></span></li>
-<li>[weakening]: if <span class="math inline"><em>Γ</em> ⊢ <em>t</em> : <em>T</em></span> and <span class="math inline"><em>x</em> ∉ <em>d</em><em>o</em><em>m</em>(<em>Γ</em>)</span>, then <span class="math inline"><em>Γ</em>, <em>x</em> : <em>S</em> ⊢ <em>t</em> : <em>T</em></span></li>
+<li><p>: if <span class="math inline"><em>Γ</em> ⊢ <em>t</em> : <em>T</em></span> and <span class="math inline"><em>Δ</em></span> is a permutation of <span class="math inline"><em>Γ</em></span>, then <span class="math inline"><em>Δ</em> ⊢ <em>t</em> : <em>T</em></span></p></li>
+<li><p>: if <span class="math inline"><em>Γ</em> ⊢ <em>t</em> : <em>T</em></span> and <span class="math inline"><em>x</em> ∉ <em>d</em><em>o</em><em>m</em>(<em>Γ</em>)</span>, then <span class="math inline"><em>Γ</em>, <em>x</em> : <em>S</em> ⊢ <em>t</em> : <em>T</em></span></p></li>
 </ul>
 <p>prove a crucial property of typing relation: well-typedness is preserved when variables are substituted with terms of appropriate types</p>
 <p>lemma [preservation of types under substitution]: if <span class="math inline"><em>Γ</em>, <em>x</em> : <em>S</em> ⊢ <em>t</em> : <em>T</em></span> and <span class="math inline"><em>Γ</em> ⊢ <em>s</em> : <em>S</em></span>, then <span class="math inline"><em>Γ</em> ⊢ [<em>x</em>↦<em>s</em>]<em>t</em> : <em>T</em></span></p>
 <p>theorem [preservation]: if <span class="math inline"><em>Γ</em> ⊢ <em>t</em> : <em>T</em></span> and <span class="math inline"><em>t</em> → <em>t</em>′</span>, then <span class="math inline"><em>Γ</em> ⊢ <em>t</em>′ : <em>T</em></span></p>
-<h2 id="the-curry-howard-correspondence">the curry-howard correspondence</h2>
+<h2 id="sec:orgc6c7588">the curry-howard correspondence</h2>
 <p>the <span class="math inline">→</span> type constructor comes with typing rules of two kinds</p>
 <ul>
-<li>the introduction rule (T-ABS): how elements of the type can be created</li>
-<li>the elimination rule (T-APP): how elements of the type can be used</li>
+<li><p>the introduction rule (T-ABS): how elements of the type can be created</p></li>
+<li><p>the elimination rule (T-APP): how elements of the type can be used</p></li>
 </ul>
+<div class="center">
 <table>
-<thead>
-<tr class="header">
-<th>Logic</th>
-<th>PL</th>
-</tr>
-</thead>
 <tbody>
 <tr class="odd">
-<td>propositions</td>
-<td>types</td>
+<td style="text-align: left;">Logic</td>
+<td style="text-align: left;">PL</td>
 </tr>
 <tr class="even">
-<td>proposition <span class="math inline"><em>P</em> ⊃ <em>Q</em></span></td>
-<td>type <span class="math inline"><em>P</em> → <em>Q</em></span></td>
+<td style="text-align: left;"><p>propositions</p></td>
+<td style="text-align: left;">types</td>
 </tr>
 <tr class="odd">
-<td>proposition <span class="math inline"><em>P</em> ∧ <em>Q</em></span></td>
-<td>type <span class="math inline"><em>P</em> × <em>Q</em></span></td>
+<td style="text-align: left;"><p>proposition <span class="math inline"><em>P</em> ⊃ <em>Q</em></span></p></td>
+<td style="text-align: left;">type <span class="math inline"><em>P</em> → <em>Q</em></span></td>
 </tr>
 <tr class="even">
-<td>proof of proposition P</td>
-<td>term <span class="math inline"><em>t</em></span> of type <span class="math inline"><em>P</em></span></td>
+<td style="text-align: left;"><p>proposition <span class="math inline"><em>P</em> ∧ <em>Q</em></span></p></td>
+<td style="text-align: left;">type <span class="math inline"><em>P</em> × <em>Q</em></span></td>
 </tr>
 <tr class="odd">
-<td>proposition P is provable</td>
-<td>type <span class="math inline"><em>P</em></span> is inhabited</td>
+<td style="text-align: left;"><p>proof of proposition P</p></td>
+<td style="text-align: left;">term <span class="math inline"><em>t</em></span> of type <span class="math inline"><em>P</em></span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><p>proposition P is provable</p></td>
+<td style="text-align: left;">type <span class="math inline"><em>P</em></span> is inhabited</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
-<h2 id="erasure-and-typability">erasure and typability</h2>
+</div>
+<h2 id="sec:org32708e1">erasure and typability</h2>
 <ul>
-<li>most compilers avoid carrying annotations at runtime, they are used during typechecking.</li>
-<li>in effect, programs are converted back to an untyped form before they are evaluated</li>
-<li>this style of semantics can be formalized using erasure function mapping simply typed terms into the corresponding untyped terms</li>
-<li>evaluation commutes with erasure</li>
+<li><p>most compilers avoid carrying annotations at runtime, they are used during typechecking.</p></li>
+<li><p>in effect, programs are converted back to an untyped form before they are evaluated</p></li>
+<li><p>this style of semantics can be formalized using erasure function mapping simply typed terms into the corresponding untyped terms</p></li>
+<li><p>evaluation commutes with erasure</p></li>
 </ul>
 <p>theorem:</p>
-<ol type="1">
-<li>if <span class="math inline"><em>t</em> → <em>t</em>′</span> under the typed evaluation relation, then <span class="math inline"><em>e</em><em>r</em><em>a</em><em>s</em><em>e</em>(<em>t</em>) → <em>e</em><em>r</em><em>a</em><em>s</em><em>e</em>(<em>t</em>′)</span></li>
-<li>if <span class="math inline"><em>e</em><em>r</em><em>a</em><em>s</em><em>e</em>(<em>t</em>) → <em>m</em>′</span> under the typed evaluation relation, then there is a simply typed term <span class="math inline"><em>t</em>′</span> s.t <span class="math inline"><em>t</em> → <em>t</em>′</span> and <span class="math inline"><em>e</em><em>r</em><em>a</em><em>s</em><em>e</em>(<em>t</em>′) = <em>m</em>′</span></li>
+<ol>
+<li><p>if <span class="math inline"><em>t</em> → <em>t</em>′</span> under the typed evaluation relation, then <span class="math inline"><em>e</em><em>r</em><em>a</em><em>s</em><em>e</em>(<em>t</em>) → <em>e</em><em>r</em><em>a</em><em>s</em><em>e</em>(<em>t</em>′)</span></p></li>
+<li><p>if <span class="math inline"><em>e</em><em>r</em><em>a</em><em>s</em><em>e</em>(<em>t</em>) → <em>m</em>′</span> under the typed evaluation relation, then there is a simply typed term <span class="math inline"><em>t</em>′</span> s.t <span class="math inline"><em>t</em> → <em>t</em>′</span> and <span class="math inline"><em>e</em><em>r</em><em>a</em><em>s</em><em>e</em>(<em>t</em>′) = <em>m</em>′</span></p></li>
+<li><p>“high level” semantics, expressed directly in terms of the PL, coincides with an alternative, lower level eval strat actually used by implementation of the language</p></li>
 </ol>
-<ul>
-<li>“high level” semantics, expressed directly in terms of the PL, coincides with an alternative, lower level eval strat actually used by implementation of the language</li>
-</ul>
 <p>given an untyped lambda-term <span class="math inline"><em>m</em></span>, can we find simply typed term <span class="math inline"><em>t</em></span> that erases to <span class="math inline"><em>m</em></span>?</p>
 <p>definition: a term <span class="math inline"><em>m</em></span> in the untyped lambda calclus is said to be typable in <span class="math inline"><em>λ</em><sub>→</sub></span> if there is some simply typed term <span class="math inline"><em>t</em></span>, type <span class="math inline"><em>T</em></span> and context <span class="math inline"><em>Γ</em></span> such that <span class="math inline"><em>e</em><em>r</em><em>a</em><em>s</em><em>e</em>(<em>t</em>) = <em>m</em></span> and <span class="math inline"><em>Γ</em> ⊢ <em>t</em> : <em>T</em></span></p>
-<h2 id="curry-style-vs-church-style">curry-style vs church-style</h2>
+<h2 id="sec:orgbe0c883">curry-style vs church-style</h2>
 <ul>
 <li><p>evaluation relation defined directly on the syntax of the simply typed calculus</p></li>
 <li><p>compilation to an untyped calculus plus evaluation relation on untyped terms</p></li>
 <li><p>in both styles make sense to talk about behaviour of term <span class="math inline"><em>t</em></span>, whether or not it is well typed</p></li>
 <li><p>define terms, define semantics showing how they behave, then give type system: curry style</p>
 <ul>
-<li>semantics prior to typing</li>
-<li>implicit</li>
+<li><p>semantics prior to typing</p></li>
+<li><p>implicit</p></li>
 </ul></li>
 <li><p>define terms, then identify well-typed terms, then give semantics to just these: church style</p>
 <ul>
-<li>never ask what is behaviour of ill typed term</li>
-<li>explicit</li>
+<li><p>never ask what is behaviour of ill typed term</p></li>
+<li><p>explicit</p></li>
 </ul></li>
 </ul>
-<h1 id="tapl-11-simple-extensions">TAPL 11 (Simple Extensions)</h1>
-<h2 id="base-types">base types</h2>
+<h1 id="sec:orgb027f56">TAPL 11 (Simple Extensions)</h1>
+<h2 id="sec:org19fd38b">base types</h2>
 <ul>
-<li>every PL provides these</li>
-<li>for theoretical purposes, useful to abstract these away as some set <span class="math inline"><em>A</em></span> of <span class="math inline"><em>u</em><em>n</em><em>i</em><em>n</em><em>t</em><em>e</em><em>r</em><em>p</em><em>r</em><em>e</em><em>t</em><em>e</em><em>d</em></span> or <span class="math inline"><em>u</em><em>n</em><em>k</em><em>n</em><em>o</em><em>w</em><em>n</em></span> base types with no primitive operations on th em
+<li><p>every PL provides these</p></li>
+<li><p>for theoretical purposes, useful to abstract these away as some set <span class="math inline"><em>A</em></span> of <span class="math inline"><em>u</em><em>n</em><em>i</em><em>n</em><em>t</em><em>e</em><em>r</em><em>p</em><em>r</em><em>e</em><em>t</em><em>e</em><em>d</em></span> or <span class="math inline"><em>u</em><em>n</em><em>k</em><em>n</em><em>o</em><em>w</em><em>n</em></span> base types with no primitive operations on th em</p>
 <ul>
-<li>also thought of as atomic types, no internal structure</li>
+<li><p>also thought of as atomic types, no internal structure</p></li>
 </ul></li>
 </ul>
-<h2 id="the-unit-type">the unit type</h2>
+<h2 id="sec:org57ce461">the unit type</h2>
 <ul>
-<li>found commonly in ML languages</li>
-<li>interpreted in simplest way possible</li>
-<li><span class="math inline"><em>u</em><em>n</em><em>i</em><em>t</em></span> is an element of type Unit</li>
-<li><span class="math inline"><em>u</em><em>n</em><em>i</em><em>t</em></span> is the only possible result of evaluating an expression of type Unit</li>
-<li>main application in languages with side effects: when we care about side effect of expression, Unit is appropriate result type for such expressions (is void in Java and C)</li>
+<li><p>found commonly in ML languages</p></li>
+<li><p>interpreted in simplest way possible</p></li>
+<li><p><span class="math inline"><em>u</em><em>n</em><em>i</em><em>t</em></span> is an element of type Unit</p></li>
+<li><p><span class="math inline"><em>u</em><em>n</em><em>i</em><em>t</em></span> is the only possible result of evaluating an expression of type Unit</p></li>
+<li><p>main application in languages with side effects: when we care about side effect of expression, Unit is appropriate result type for such expressions (is void in Java and C)</p></li>
 </ul>
-<h2 id="derived-forms-sequencing-and-wildcards">derived forms: sequencing and wildcards</h2>
+<h2 id="sec:org7ebd13a">derived forms: sequencing and wildcards</h2>
 <ul>
-<li>sequencing notation: <span class="math inline"><em>t</em><sub>1</sub>; <em>t</em><sub>2</sub></span> evaluate <span class="math inline"><em>t</em><sub>1</sub></span>, throw away its trivial result, then evaluate <span class="math inline"><em>t</em><sub>2</sub></span></li>
-<li>ways to formalize sequencing:
-<ol type="1">
-<li>add <span class="math inline"><em>t</em><sub>1</sub>; <em>t</em><sub>2</sub></span> as new alternative in the syntax of terms, then add two evaluation rules to capture behaviour of ;</li>
-<li>or regard as abbreviation for the term <span class="math inline">(<em>λ</em><em>x</em>:</span> Unit.<span class="math inline"><em>t</em><sub>2</sub>)<em>t</em><sub>1</sub></span> where variable <span class="math inline"><em>x</em></span> is chosen fresh (different from free variables of <span class="math inline"><em>t</em><sub>2</sub></span>)</li>
+<li><p>sequencing notation: <span class="math inline"><em>t</em><sub>1</sub>; <em>t</em><sub>2</sub></span> evaluate <span class="math inline"><em>t</em><sub>1</sub></span>, throw away its trivial result, then evaluate <span class="math inline"><em>t</em><sub>2</sub></span></p></li>
+<li><p>ways to formalize sequencing:</p>
+<ol>
+<li><p>add <span class="math inline"><em>t</em><sub>1</sub>; <em>t</em><sub>2</sub></span> as new alternative in the syntax of terms, then add two evaluation rules to capture behaviour of ;</p></li>
+<li><p>or regard as abbreviation for the term <span class="math inline">(<em>λ</em><em>x</em>:</span> Unit.<span class="math inline"><em>t</em><sub>2</sub>)<em>t</em><sub>1</sub></span> where variable <span class="math inline"><em>x</em></span> is chosen fresh (different from free variables of <span class="math inline"><em>t</em><sub>2</sub></span>)</p></li>
 </ol></li>
 </ul>
 <p>theorem [sequencing is a derived form]: let <span class="math inline"><em>e</em> ∈ <em>λ</em><sup><em>E</em></sup> → <em>λ</em><sup><em>I</em></sup></span> be the elaboration function that translates between external and internal language by replacing <span class="math inline"><em>t</em><sub>1</sub>; <em>t</em><sub>2</sub></span> with <span class="math inline">(<em>λ</em><em>x</em>:</span> Unit.<span class="math inline"><em>t</em><sub>2</sub>)<em>t</em><sub>1</sub></span> where <span class="math inline"><em>x</em></span> is chosen fresh in each case. now for each term <span class="math inline"><em>t</em></span> of <span class="math inline"><em>λ</em><sup><em>E</em></sup></span> we have:</p>
@@ -264,119 +269,119 @@ and so rule <span class="math inline">(<em>λ</em><em>x</em>:<em>T</em><sub>11</
 <li><p>advantage of introducing features as derived forms rather than full fledged language constructs: can extend surface syntax without adding complexity to internal language</p></li>
 <li><p>often called syntactic sugar</p>
 <ul>
-<li>replacing derived form with lower level form: desugaring</li>
+<li><p>replacing derived form with lower level form: desugaring</p></li>
 </ul></li>
 <li><p>wildcard: <span class="math inline"><em>λ</em>_ : <em>S</em>.<em>t</em></span></p></li>
 </ul>
-<h2 id="ascription">ascription</h2>
+<h2 id="sec:orge39d8bc">ascription</h2>
 <ul>
-<li><code>t as T</code> ascribe particular type for given term</li>
-<li>useful for printing types a certain way or abstraction (term <span class="math inline"><em>t</em></span> may have many different types)</li>
+<li><p><code>t as T</code> ascribe particular type for given term</p></li>
+<li><p>useful for printing types a certain way or abstraction (term <span class="math inline"><em>t</em></span> may have many different types)</p></li>
 </ul>
-<h2 id="let-bindings">let bindings</h2>
+<h2 id="sec:org0c812c4">let bindings</h2>
 <ul>
-<li>call by value evaluation order: <span class="math inline"><em>l</em><em>e</em><em>t</em></span> -bound term must be fully evaluated before evaluation of the $let -body can begin</li>
-<li>type of let can be calculated by calculating the type of the let-bound term, extending the context with a binding with this type,and in enriched context calculating the type of the body, which is then the type of the whole <span class="math inline"><em>l</em><em>e</em><em>t</em></span> expression</li>
-<li><span class="math inline"><em>l</em><em>e</em><em>t</em></span> can also be defined as derived term: use combination of abstraction and application:</li>
+<li><p>call by value evaluation order: <span class="math inline"><em>l</em><em>e</em><em>t</em></span> -bound term must be fully evaluated before evaluation of the $let -body can begin</p></li>
+<li><p>type of let can be calculated by calculating the type of the let-bound term, extending the context with a binding with this type,and in enriched context calculating the type of the body, which is then the type of the whole <span class="math inline"><em>l</em><em>e</em><em>t</em></span> expression</p></li>
+<li><p><span class="math inline"><em>l</em><em>e</em><em>t</em></span> can also be defined as derived term: use combination of abstraction and application:</p></li>
 </ul>
-<p>let x=<span class="math inline"><em>t</em><sub>1</sub></span> in <span class="math inline"><em>t</em><sub>2</sub></span> $$(<span class="math inline"><em>λ</em></span> x: <span class="math inline"><em>T</em><sub>1</sub></span>.<span class="math inline"><em>t</em><sub>2</sub></span>) <span class="math inline"><em>t</em><sub>1</sub></span></p>
+<p>let x=<span class="math inline"><em>t</em><sub>1</sub></span> in <span class="math inline"><em>t</em><sub>2</sub></span> <span class="math inline">$\stackrel{def}{=}$</span>(<span class="math inline"><em>λ</em></span> x: <span class="math inline"><em>T</em><sub>1</sub></span>.<span class="math inline"><em>t</em><sub>2</sub></span>) <span class="math inline"><em>t</em><sub>1</sub></span></p>
 <ul>
-<li>right hand side includes <span class="math inline"><em>T</em><sub>1</sub></span>, but left hand side does not: how does parser know to generate <span class="math inline"><em>T</em><sub>1</sub></span> as type annotation?
+<li><p>right hand side includes <span class="math inline"><em>T</em><sub>1</sub></span>, but left hand side does not: how does parser know to generate <span class="math inline"><em>T</em><sub>1</sub></span> as type annotation?</p>
 <ul>
-<li>this information comes typechecker</li>
+<li><p>this information comes typechecker</p></li>
 </ul></li>
-<li>treat <code>let</code> as transformation on typing derivations</li>
-<li>can derive its evaluation behaviour by desugaring it but its typing behaviour must be built into internal language</li>
-<li><code>let</code> construct is treated specially by typechecker which uses it for generalizing polymorphic definitions to obtain typings that cannot be emulated using ordinary <span class="math inline"><em>λ</em>−</span> abstraction and application</li>
+<li><p>treat <code>let</code> as transformation on typing derivations</p></li>
+<li><p>can derive its evaluation behaviour by desugaring it but its typing behaviour must be built into internal language</p></li>
+<li><p><code>let</code> construct is treated specially by typechecker which uses it for generalizing polymorphic definitions to obtain typings that cannot be emulated using ordinary <span class="math inline"><em>λ</em>−</span> abstraction and application</p></li>
 </ul>
 <p>question: is it good to define let as a derived form to desugar it by executing it immediately (<span class="math inline">[<em>x</em>↦<em>t</em><sub>1</sub>]<em>t</em><sub>2</sub></span>)? ask this</p>
-<h2 id="pairs">pairs</h2>
+<h2 id="sec:orge165765">pairs</h2>
 <ul>
-<li>two new forms of terms: pairing: <span class="math inline"><em>t</em><sub>1</sub>, <em>t</em><sub>2</sub></span> and projection <span class="math inline"><em>t</em>.1</span></li>
-<li>one new type constructor: <span class="math inline"><em>T</em><sub>1</sub> × <em>T</em><sub>2</sub></span> called product of <span class="math inline"><em>T</em><sub>1</sub></span> and <span class="math inline"><em>T</em><sub>2</sub></span></li>
+<li><p>two new forms of terms: pairing: <span class="math inline"><em>t</em><sub>1</sub>, <em>t</em><sub>2</sub></span> and projection <span class="math inline"><em>t</em>.1</span></p></li>
+<li><p>one new type constructor: <span class="math inline"><em>T</em><sub>1</sub> × <em>T</em><sub>2</sub></span> called product of <span class="math inline"><em>T</em><sub>1</sub></span> and <span class="math inline"><em>T</em><sub>2</sub></span></p></li>
 </ul>
-<h2 id="tuples">tuples</h2>
+<h2 id="sec:org3530369">tuples</h2>
 <ul>
-<li>generalize pairs into n-ary products</li>
-<li>cost to generalization: to formalize the system, need to invent notations for uniformly describing structures of arbitrary arity</li>
-<li><span class="math inline">{<em>t</em><sub><em>i</em></sub><sup><em>i</em> ∈ 1...<em>n</em></sup>}</span> for a tuple of n terms and <span class="math inline">{<em>T</em><sub><em>i</em></sub><sup><em>i</em> ∈ 1...<em>n</em></sup>}</span> for its type</li>
+<li><p>generalize pairs into n-ary products</p></li>
+<li><p>cost to generalization: to formalize the system, need to invent notations for uniformly describing structures of arbitrary arity</p></li>
+<li><p><span class="math inline">{<em>t</em><sub><em>i</em></sub><sup><em>i</em> ∈ 1...<em>n</em></sup>}</span> for a tuple of n terms and <span class="math inline">{<em>T</em><sub><em>i</em></sub><sup><em>i</em> ∈ 1...<em>n</em></sup>}</span> for its type</p></li>
 </ul>
-<h2 id="records">records</h2>
+<h2 id="sec:org3a56e3e">records</h2>
 <ul>
-<li>generalization from n-ary tuples to labeled records</li>
-<li>in many PLs, order of fields does not matter</li>
-<li>in current presentation, order matters</li>
-<li>the computation rule for pattern matching: generalizes the let-binding rule</li>
-<li>relies on auxiliary matching function: given a pattern <span class="math inline"><em>p</em></span> and value <span class="math inline"><em>v</em></span>, either fails or yields a substituion that maps variahbles appearing in <span class="math inline"><em>p</em></span> to the corresponding parts of <span class="math inline"><em>v</em></span></li>
+<li><p>generalization from n-ary tuples to labeled records</p></li>
+<li><p>in many PLs, order of fields does not matter</p></li>
+<li><p>in current presentation, order matters</p></li>
+<li><p>the computation rule for pattern matching: generalizes the let-binding rule</p></li>
+<li><p>relies on auxiliary matching function: given a pattern <span class="math inline"><em>p</em></span> and value <span class="math inline"><em>v</em></span>, either fails or yields a substituion that maps variahbles appearing in <span class="math inline"><em>p</em></span> to the corresponding parts of <span class="math inline"><em>v</em></span></p></li>
 </ul>
-<h2 id="sums">sums</h2>
+<h2 id="sec:orgedda38a">sums</h2>
 <ul>
-<li>deal with heterogeneous collections of values</li>
-<li>varient types</li>
-<li>binary sum types: describes set of values drawn from exactly two given types
+<li><p>deal with heterogeneous collections of values</p></li>
+<li><p>varient types</p></li>
+<li><p>binary sum types: describes set of values drawn from exactly two given types</p>
 <ul>
-<li>to use elements of sum types, introduce <code>case</code> construct with <code>lnl</code> and <code>lnr</code></li>
-<li>to syntax: add left and right injections and <code>case</code> construct</li>
-<li>to types add sum constructor</li>
-<li>to evaluation add two “beta-reduction” rules for case construct</li>
+<li><p>to use elements of sum types, introduce <code>case</code> construct with <code>lnl</code> and <code>lnr</code></p></li>
+<li><p>to syntax: add left and right injections and <code>case</code> construct</p></li>
+<li><p>to types add sum constructor</p></li>
+<li><p>to evaluation add two “beta-reduction” rules for case construct</p></li>
 </ul></li>
 </ul>
-<h3 id="sum-and-uniqueness-of-types">sum and uniqueness of types</h3>
+<h3 id="sec:org4a3c66d">sum and uniqueness of types</h3>
 <p>most of the properties of typing relations of pure <span class="math inline"><em>λ</em><sub>→</sub></span> extend to the system with sums but one fails: the Uniqueness of Types theorem</p>
 <ul>
-<li>typing rule T-INL, says that once we have shown <span class="math inline"><em>t</em><sub>1</sub></span> is an element of <span class="math inline"><em>T</em><sub>1</sub></span>, we can derive that <code>inl $t_1$</code> is an element of <span class="math inline"><em>T</em><sub>1</sub> + <em>T</em><sub>2</sub></span> for any type <span class="math inline"><em>T</em><sub>2</sub></span>.</li>
-<li>failure of uniqueness of types means we cannot build a typechecking algorithm simply by reading the rules from bottom to top</li>
-<li>options:
-<ol type="1">
-<li>guess a value for <span class="math inline"><em>T</em><sub>2</sub></span>; hold <span class="math inline"><em>T</em><sub>2</sub></span> indeterminate and try to discover later what its value should have been</li>
-<li>refine language of types to all possible values for <span class="math inline"><em>T</em><sub>2</sub></span> to somehow be represented uniformly</li>
-<li>demand programmer to provide explicit annotation to indicate which type <span class="math inline"><em>T</em><sub>2</sub></span> is intended</li>
+<li><p>typing rule T-INL, says that once we have shown <span class="math inline"><em>t</em><sub>1</sub></span> is an element of <span class="math inline"><em>T</em><sub>1</sub></span>, we can derive that <code>inl $t_1$</code> is an element of <span class="math inline"><em>T</em><sub>1</sub> + <em>T</em><sub>2</sub></span> for any type <span class="math inline"><em>T</em><sub>2</sub></span>.</p></li>
+<li><p>failure of uniqueness of types means we cannot build a typechecking algorithm simply by reading the rules from bottom to top</p></li>
+<li><p>options:</p>
+<ol>
+<li><p>guess a value for <span class="math inline"><em>T</em><sub>2</sub></span>; hold <span class="math inline"><em>T</em><sub>2</sub></span> indeterminate and try to discover later what its value should have been</p></li>
+<li><p>refine language of types to all possible values for <span class="math inline"><em>T</em><sub>2</sub></span> to somehow be represented uniformly</p></li>
+<li><p>demand programmer to provide explicit annotation to indicate which type <span class="math inline"><em>T</em><sub>2</sub></span> is intended</p></li>
 </ol></li>
 </ul>
-<h2 id="variants">variants</h2>
+<h2 id="sec:orgc5665cc">variants</h2>
 <ul>
-<li>binary sums generalize to labeled variants</li>
-<li><span class="math inline"> &lt; <em>l</em><sub>1</sub> : <em>T</em><sub>1</sub>, <em>l</em><sub>2</sub> : <em>T</em><sub>2</sub>&gt;</span> where <span class="math inline"><em>l</em></span> are field labels</li>
-<li>label case with same labels as corresponding sum type</li>
+<li><p>binary sums generalize to labeled variants</p></li>
+<li><p><span class="math inline"> &lt; <em>l</em><sub>1</sub> : <em>T</em><sub>1</sub>, <em>l</em><sub>2</sub> : <em>T</em><sub>2</sub>&gt;</span> where <span class="math inline"><em>l</em></span> are field labels</p></li>
+<li><p>label case with same labels as corresponding sum type</p></li>
 </ul>
-<h2 id="options">options</h2>
+<h2 id="sec:org1cbd71e">options</h2>
 <ul>
-<li><code>OptionalNat = &lt;none:Unit, some:Nat&gt;</code></li>
+<li><p><code>OptionalNat = &lt;none:Unit, some:Nat&gt;</code></p></li>
 </ul>
-<h2 id="enums">enums</h2>
+<h2 id="sec:orga383d90">enums</h2>
 <ul>
-<li>varient type in which the field type with each label is <code>Unit</code></li>
+<li><p>varient type in which the field type with each label is <code>Unit</code></p></li>
 </ul>
-<h2 id="single-field-varients">single field varients</h2>
+<h2 id="sec:org58c09fc">single field varients</h2>
 <ul>
-<li><code>V = &lt;l:T&gt;</code></li>
-<li>usual operations on <code>T</code> cannot be applied to elements of <code>V</code> without unpackaging them first</li>
-<li><code>V</code> cannot be accidentally mistaken for a <code>T</code></li>
+<li><p><code>V = &lt;l:T&gt;</code></p></li>
+<li><p>usual operations on <code>T</code> cannot be applied to elements of <code>V</code> without unpackaging them first</p></li>
+<li><p><code>V</code> cannot be accidentally mistaken for a <code>T</code></p></li>
 </ul>
-<h2 id="varients-vs.-datatypes">varients vs. datatypes</h2>
+<h2 id="sec:org738588c">varients vs. datatypes</h2>
 <ul>
-<li>datatype definition may be recursive (type being defined is allowed to appear in the body of definition)</li>
+<li><p>datatype definition may be recursive (type being defined is allowed to appear in the body of definition)</p></li>
 </ul>
-<h2 id="variants-as-disjoint-unions">variants as disjoint unions</h2>
+<h2 id="sec:org9e1be6f">variants as disjoint unions</h2>
 <ul>
-<li><span class="math inline"><em>T</em><sub>1</sub> + <em>T</em><sub>2</sub></span> is union of <span class="math inline"><em>T</em><sub>1</sub></span> and <span class="math inline"><em>T</em><sub>2</sub></span> because its elements include all elements of <span class="math inline"><em>T</em><sub>1</sub></span> and <span class="math inline"><em>T</em><sub>2</sub></span>; disjoint because sets of elements of <span class="math inline"><em>T</em><sub>1</sub></span> or <span class="math inline"><em>T</em><sub>2</sub></span> are tagged with <code>inl</code> or <code>inr</code></li>
+<li><p><span class="math inline"><em>T</em><sub>1</sub> + <em>T</em><sub>2</sub></span> is union of <span class="math inline"><em>T</em><sub>1</sub></span> and <span class="math inline"><em>T</em><sub>2</sub></span> because its elements include all elements of <span class="math inline"><em>T</em><sub>1</sub></span> and <span class="math inline"><em>T</em><sub>2</sub></span>; disjoint because sets of elements of <span class="math inline"><em>T</em><sub>1</sub></span> or <span class="math inline"><em>T</em><sub>2</sub></span> are tagged with <code>inl</code> or <code>inr</code></p></li>
 </ul>
-<h2 id="type-dynamic">type dynamic</h2>
+<h2 id="sec:org9629e5c">type dynamic</h2>
 <ul>
-<li>data whose type cannot be determined at compile time</li>
-<li>type <code>Dynamic</code> whose values are pairs of value <code>v</code> and type tag <code>T</code> where <code>v</code> has type <code>T</code></li>
+<li><p>data whose type cannot be determined at compile time</p></li>
+<li><p>type <code>Dynamic</code> whose values are pairs of value <code>v</code> and type tag <code>T</code> where <code>v</code> has type <code>T</code></p></li>
 </ul>
-<h2 id="general-recursion">general recursion</h2>
+<h2 id="sec:orgc949956">general recursion</h2>
 <ul>
-<li>no expression that can lead to non-terminating computations can be typed using only simple types</li>
-<li>ability to form the fixed point of a function of type <span class="math inline"><em>T</em> → <em>T</em></span> for any <span class="math inline"><em>T</em></span>: implies every type is inhabited by some term</li>
-<li>letrec x: $T<sub>1</sub>$=<span class="math inline"><em>t</em><sub>1</sub></span> in <span class="math inline"><em>t</em><sub>2</sub></span> $ let x = fix(<span class="math inline"><em>λ</em><em>x</em> : <em>T</em><sub>1</sub>.<em>t</em><sub>1</sub></span>) in <span class="math inline"><em>t</em><sub>2</sub></span></li>
+<li><p>no expression that can lead to non-terminating computations can be typed using only simple types</p></li>
+<li><p>ability to form the fixed point of a function of type <span class="math inline"><em>T</em> → <em>T</em></span> for any <span class="math inline"><em>T</em></span>: implies every type is inhabited by some term</p></li>
+<li><p>letrec x: <span class="math inline">$T\textsubscript{1}$</span>=<span class="math inline"><em>t</em><sub>1</sub></span> in <span class="math inline"><em>t</em><sub>2</sub></span> <span class="math inline">$\stackrel{def}{=}$</span> let x = fix(<span class="math inline"><em>λ</em><em>x</em> : <em>T</em><sub>1</sub>.<em>t</em><sub>1</sub></span>) in <span class="math inline"><em>t</em><sub>2</sub></span></p></li>
 </ul>
-<h2 id="lists">lists</h2>
+<h2 id="sec:org19e7d0a">lists</h2>
 <ul>
-<li>for every type <span class="math inline"><em>T</em></span>, the type <code>List T</code> describes finite length lists whose elements are drawn from <code>T</code></li>
+<li><p>for every type <span class="math inline"><em>T</em></span>, the type <code>List T</code> describes finite length lists whose elements are drawn from <code>T</code></p></li>
 </ul>
-<h1 id="jan-23-notes">jan 23 notes</h1>
+<h1 id="sec:org3f9d011">jan 23 notes</h1>
 <ul>
 <li><p>no integers, no booleans, only functions</p></li>
 <li><p>can’t write program in this type system</p></li>
@@ -386,18 +391,18 @@ and so rule <span class="math inline">(<em>λ</em><em>x</em>:<em>T</em><sub>11</
 <li><p>can plug into other type systems</p></li>
 <li><p>Nat as a base type, more well behaved</p>
 <ul>
-<li>can’t go below zero</li>
+<li><p>can’t go below zero</p></li>
 </ul></li>
 <li><p>curry-howard correspondence: not really formal, just a way to think about it</p>
 <ul>
-<li>more of an observation</li>
-<li>erase types to view as logic</li>
+<li><p>more of an observation</p></li>
+<li><p>erase types to view as logic</p></li>
 </ul></li>
 <li><p><span class="math inline"><em>Γ</em></span> instroduce implication</p></li>
 <li><p>intro rules: create a new type (constructs a value)</p></li>
 <li><p>elim rules: know the rule already (if rule)</p>
 <ul>
-<li>some computation</li>
+<li><p>some computation</p></li>
 </ul></li>
 <li><p>pair intro and elim rule to create computation</p></li>
 <li><p>permutation lemma: ?</p></li>

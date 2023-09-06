@@ -1,0 +1,4 @@
+---
+description: "CHEM 304"
+title: "CHEM 304: Fundamentals of Thermodynamics and Statistical Mechanics"
+---

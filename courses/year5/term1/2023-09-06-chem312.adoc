@@ -1,0 +1,4 @@
+---
+description: "CHEM 312"
+title: "CHEM 312; Introduction to Quantum Mechanics and Spectroscopy"
+---

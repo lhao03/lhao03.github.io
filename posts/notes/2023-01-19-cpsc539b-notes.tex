@@ -1,0 +1,460 @@
+% Created 2023-01-28 Sat 11:14
+% Intended LaTeX compiler: pdflatex
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\author{meow meow}
+\date{\today}
+\title{CPSC539B Notes}
+\hypersetup{
+ pdfauthor={meow meow},
+ pdftitle={CPSC539B Notes},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 28.2 (Org mode 9.6)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+
+\section{TAPL 9 (Simply Typed Lambda-Calculus)}
+\label{sec:orge60f8d7}
+\begin{itemize}
+\item want to introduce typing rules for variables, abstractions, applications that maintain type safety and are not too conservative
+\item since pure lambda-calculus is Turing complete, no hope of giving an exact type analysis for these primitives
+\item no way of determining what a program yields because some parts might diverge and any typechecker will also diverge
+\end{itemize}
+
+\section{\(\lambda  x.t : \rightarrow\)}
+\label{sec:orga660a4c}
+\begin{itemize}
+\item the $\rightarrow$ type is a function given to every $\lambda$-abstraction
+\item however, functions like \(\lambda x.true\) and \(\lambda x \lambda y.y\) are lumped together in the same type
+\item we need to know what the function returns
+\item to ensure function will behave correctly when called, need to keep track of types of arguments it expects
+\item thus, replace \(\rightarrow\) with \(T_1 \rightarrow T_2\), each classifying functions that expect arguments of type \(T_1\) and return results of type \(T_2\)
+\end{itemize}
+
+\subsection{The Typing Relation}
+\label{sec:org94ca3aa}
+\begin{itemize}
+\item how do we know what type of arguments to expect: annotate the \(\lambda\) -abstraction or analyze body of abstraction to see how argument is used and deduce it
+\item explicitly typed: languages with type annotations
+\item implicitly typed: languages in which we ask type checker to infer/reconstruct
+\end{itemize}
+
+\(\lambda x:T_1. t_2\): assume \(x\) is type \(T_1\); occurrences of \(x\) in \(t_2\) are assumed to denote terms of type \(T_1\)
+
+this is captured by this typing rule:
+\begin{equation}
+\tfrac{x:T_1 \vdash t_2 : T_2}{\vdash \lambda x:T_1.t_2 : T_1 \rightarrow T_2 }
+\end{equation}
+
+since terms contain nested \(\lambda\) -abstractions: change typing relations from two-place relation \(t : T\) to three-place relation, \(\Gamma \vdash t : T\), where \(\Gamma\) is a set of assumption about the types of the free variables in \(t\)
+
+formally, a typing context, \(\Gamma\), is a sequence of variables and their types and ``comma'' operator extends $\Gamma$ by adding a new binding on the right.
+
+\begin{itemize}
+\item \(\vdash t : T\): means closed term t has type T under the empty set of assumptions
+\item \(\Gamma\) can be thought of as finite function from variables to their types.
+\item \(dom(T)\): set of variables bound by \(\Gamma\)
+\item the typing rule for variables also follows: a variable has whatever type we are currently assuming it to have
+\(\tfrac{x:T \in \Gamma}{\Gamma \vdash t : T}\) : the type assumed for x in \(\Gamma\) is T
+\end{itemize}
+
+typing rule for applications:
+\begin{equation}
+\tfrac{\Gamma \vdash t_1 : T_{11} \rightarrow T_{12} \; \Gamma \vdash t_2 : T_11}{\Gamma \vdash t_1 t_2 : T_12}
+\end{equation}
+
+
+the typing rule for boolean constants and conditional expressions
+\begin{equation}
+\tfrac{\Gamma \vdash t_1 : Bool \; \Gamma \vdash t_2 : T \; \Gamma \vdash t_3 : T}{\Gamma \vdash if t_1 then t_2 else t_3 : T}
+\end{equation}
+
+\begin{itemize}
+\item for boolean must add context \(\Gamma\) to every typing statement
+
+\item purely simply typed lambda-calculus with no base types is actually degenerate (no well-typed terms at all)
+
+instances of typing rules can be combined into derivation trees.
+
+exercise: show that the following terms have the indicated types
+\begin{enumerate}
+\item \(f: Bool \rightarrow Bool \vdash\) f (if alse then true else false) :Bool
+\end{enumerate}
+\end{itemize}
+
+\subsection{properties of typing}
+\label{sec:org149403c}
+\begin{itemize}
+\item inversion lemma: records a collection of observations about how typing derivations are built: the clause for each syntactic form tells us ``if a term of this form is well typed, then its subterms must have types of these forms''
+\end{itemize}
+
+\subsubsection{lemma [inversion of the typing relation]}
+\label{sec:org3cb47f3}
+\begin{enumerate}
+\item if \(\Gamma \vdash x : R\) then \(x:R \in \Gamma\)
+\item if \(\Gamma \vdash \lambda x : T_1 . t_2 : R\), then \(R = T_1 \rightarrow R_2\) for some \(R_2\) with \(\Gamma, x: T_1 \vdash t_2 : R_2\)
+\item if \(\Gamma \vdash t_1 t_2 : R\), then there is some type \(T_{11}\) such that \(\Gamma \vdash t_1 : T_{11} \rightarrow R\) and \(\Gamma \vdash t_2 : T_{11}\) (don't really understand)
+\item if \(\Gamma \vdash true : R\) then \(R = Bool\)
+\item if \(\Gamma \vdash false : R\) then \(R = Bool\)
+\item if
+\(\Gamma \vdash\) if t\textsubscript{1} then t\textsubscript{2} else t\textsubscript{3} \(: R\), then \(\Gamma \vdash t_1 : Bool\) and \(\Gamma \vdash t_2, t_3 : R\)
+\end{enumerate}
+
+the typing relation is an `iff`, aka bidirectional?
+
+exercise: is there any context \(\Gamma\) and type \(T\) such that \(\Gamma \vdash x x :T\)?
+
+\begin{itemize}
+\item we added type annotations to bound variables in function abstractions but no where else
+\item is this enough? \(\rightarrow\) uniqueness of types theorem: well-typed terms are in one-to-one correspondence with their typing derivations: the typing derivation cab be recovered uniquely from the term (and vice versa)
+\begin{itemize}
+\item so not ambiguous?
+\end{itemize}
+\end{itemize}
+
+theorem: uniqueness of types: in a given typing context \(\Gamma\), a term \(t\), with free variables all in the domain of \(\Gamma\), has at most one type. if a term is typable, then its type is unique. there is just one derivation of this typing built from the inference rules that generate the typing relation.
+\begin{itemize}
+\item different from CFG where there is ambiguity.
+\end{itemize}
+
+however, for many systems later in the book, this simple correspondence between terms and derivations will not hold; a single term is assigned many types and each of these will be justified by many type derivations \(\rightarrow\) lots of work involved in showing typing derivations can be recovered effectively from terms
+
+\subsubsection{lemma [canonical forms]}
+\label{sec:orgba10307}
+\begin{enumerate}
+\item if \(v\) is a value of type \(Bool\), then \(v\) is either true or false
+\item if \(v\) is a value of type \(T_1 \rightarrow T_2\), then \(v = \lambda x: T_1.t_2\)
+\end{enumerate}
+
+theorem [progress]: suppose \(t\) is a close, well typed term (\(\vdash t: T\)). then either \(t\) is a value or else there is some \(t \rightarrow t'\)
+\begin{itemize}
+\item this is saying \(t\) is a value or evaluates to a value?
+
+proof: abstraction case is immediate because abstractions are values. case for boolean constants and conditions exactly same as in proof of progress for typed arithmetic expressions
+applications (\(t \rightarrow t_1 t_2\)): by induction hypothesis, either \(t_1\) is a value else it can make a step of evaluation, and likewise \(t_2\).
+if \(t_1\) can take a step: \(\tfrac{t_1 \rightarrow t_1'}{t_1 t_2 \rightarrow t_1' t_2}\)
+if \(t_2\) can take a step: \(\tfrac{t_2 \rightarrow t_2'}{v_1 t_2 \rightarrow v_1 t_2'}\)
+if \(t_1\) and \$t\textsubscript{2} are both values:, \(t_1\) has the form \(\lambda x:T_{11}.t_{12}\),
+and so rule \((\lambda x: T_{11}.t_{12}) v_2 \rightarrow [x \mapsto v_2]t_{12}\)
+\end{itemize}
+
+next need to prove evaluation preserves types (evaluation is dynamic, so cannot check during runtime or could run into halting problem)
+
+\subsubsection{structural lemmas:}
+\label{sec:orgb7f303f}
+\begin{itemize}
+\item\relax [permutation]: if \(\Gamma \vdash t : T\) and \(\Delta\) is a permutation of \(\Gamma\), then \(\Delta \vdash t : T\)
+\item\relax [weakening]: if \(\Gamma \vdash t : T\) and \(x \notin dom(\Gamma)\), then \(\Gamma, x:S \vdash t : T\)
+\end{itemize}
+
+prove a crucial property of typing relation: well-typedness is preserved when variables are substituted with terms of appropriate types
+
+lemma [preservation of types under substitution]: if \(\Gamma, x:S \vdash t : T\) and \(\Gamma \vdash s: S\), then \(\Gamma \vdash [x \mapsto s]t : T\)
+
+theorem [preservation]: if \(\Gamma \vdash t : T\) and \(t \rightarrow t'\), then \(\Gamma \vdash t' : T\)
+
+\subsection{the curry-howard correspondence}
+\label{sec:orgc6c7588}
+the \(\rightarrow\) type constructor comes with typing rules of two kinds
+\begin{itemize}
+\item the introduction rule (T-ABS): how elements of the type can be created
+\item the elimination rule (T-APP): how elements of the type can be used
+\end{itemize}
+
+\begin{center}
+\begin{tabular}{ll}
+Logic & PL\\\empty
+\hline
+propositions & types\\\empty
+proposition \(P \supset Q\) & type \(P \rightarrow Q\)\\\empty
+proposition \(P \land Q\) & type \(P \times Q\)\\\empty
+proof of proposition P & term \(t\) of type \(P\)\\\empty
+proposition P is provable & type \(P\) is inhabited\\\empty
+\end{tabular}
+\end{center}
+
+\subsection{erasure and typability}
+\label{sec:org32708e1}
+\begin{itemize}
+\item most compilers avoid carrying annotations at runtime, they are used during typechecking.
+\item in effect, programs are converted back to an untyped form before they are evaluated
+\item this style of semantics can be formalized using erasure function mapping simply typed terms into the corresponding untyped terms
+\item evaluation commutes with erasure
+\end{itemize}
+
+
+theorem:
+\begin{enumerate}
+\item if \(t \rightarrow t'\) under the typed evaluation relation, then \(erase(t) \rightarrow erase(t')\)
+\item if \(erase(t) \rightarrow m'\) under the typed evaluation relation, then there is a simply typed term \(t'\) s.t \(t \rightarrow t'\) and \(erase(t') = m'\)
+
+\item ``high level'' semantics, expressed directly in terms of the PL, coincides with an alternative, lower level eval strat actually used by implementation of the language
+\end{enumerate}
+
+given an untyped lambda-term \(m\), can we find simply typed term \(t\) that erases to \(m\)?
+
+definition: a term \(m\) in the untyped lambda calclus is said to be typable in \(\lambda_{\rightarrow}\) if there is some simply typed term \(t\), type \(T\) and context \(\Gamma\) such that \(erase(t) = m\) and \(\Gamma \vdash t : T\)
+
+\subsection{curry-style vs church-style}
+\label{sec:orgbe0c883}
+\begin{itemize}
+\item evaluation relation defined directly on the syntax of the simply typed calculus
+\item compilation to an untyped calculus plus evaluation relation on untyped terms
+
+\item in both styles make sense to talk about behaviour of term \(t\), whether or not it is well typed
+\item define terms, define semantics showing how they behave, then give type system: curry style
+\begin{itemize}
+\item semantics prior to typing
+\item implicit
+\end{itemize}
+\item define terms, then identify well-typed terms, then give semantics to just these: church style
+\begin{itemize}
+\item never ask what is behaviour of ill typed term
+\item explicit
+\end{itemize}
+\end{itemize}
+
+\section{TAPL 11 (Simple Extensions)}
+\label{sec:orgb027f56}
+
+
+\subsection{base types}
+\label{sec:org19fd38b}
+\begin{itemize}
+\item every PL provides these
+\item for theoretical purposes, useful to abstract these away as some set \(A\) of \(uninterpreted\) or \(unknown\) base types with no primitive operations on th em
+\begin{itemize}
+\item also thought of as atomic types, no internal structure
+\end{itemize}
+\end{itemize}
+
+\subsection{the unit type}
+\label{sec:org57ce461}
+\begin{itemize}
+\item found commonly in ML languages
+\item interpreted in simplest way possible
+\item \(unit\) is an element of type Unit
+\item \(unit\) is the only possible result of evaluating an expression of type Unit
+\item main application in languages with side effects: when we care about side effect of expression, Unit is appropriate result type for such expressions (is void in Java and C)
+\end{itemize}
+
+\subsection{derived forms: sequencing and wildcards}
+\label{sec:org7ebd13a}
+\begin{itemize}
+\item sequencing notation: \(t_1;t_2\) evaluate \(t_1\), throw away its trivial result, then evaluate \(t_2\)
+\item ways to formalize sequencing:
+\begin{enumerate}
+\item add \(t_1;t_2\) as new alternative in the syntax of terms, then add two evaluation rules to capture behaviour of ;
+\item or regard as abbreviation for the term \((\lambda x :\) Unit.\(t_2) t_1\) where variable \(x\) is chosen fresh (different from free variables of \(t_2\))
+\end{enumerate}
+\end{itemize}
+
+theorem [sequencing is a derived form]: let \(e \in \lambda^E \rightarrow \lambda^I\) be the elaboration function that translates between external and internal language by replacing \(t_1;t_2\) with \((\lambda x :\) Unit.\(t_2) t_1\) where \(x\) is chosen fresh in each case. now for each term \(t\) of \(\lambda^E\) we have:
+\begin{itemize}
+\item \(t \rightarrow_E t' \iff e(t) \rightarrow_I e(t')\)
+\item \(\Gamma \vdash^E t:T \iff \Gamma \vdash^I e(t) : T\)
+
+\item advantage of introducing features as derived forms rather than full fledged language constructs: can extend surface syntax without adding complexity to internal language
+\item often called syntactic sugar
+\begin{itemize}
+\item replacing derived form with lower level form: desugaring
+\end{itemize}
+\item wildcard: \(\lambda\_:S.t\)
+\end{itemize}
+
+\subsection{ascription}
+\label{sec:orge39d8bc}
+\begin{itemize}
+\item \texttt{t as T} ascribe particular type for given term
+\item useful for printing types a certain way or abstraction (term \(t\) may have many different types)
+\end{itemize}
+
+\subsection{let bindings}
+\label{sec:org0c812c4}
+\begin{itemize}
+\item call by value evaluation order: \(let\) -bound term must be fully evaluated before evaluation of the \$let -body can begin
+\item type of let can be calculated by calculating the type of the let-bound term, extending the context with a binding with this type,and in enriched context calculating the type of the body, which is then the type of the whole \(let\) expression
+\item \(let\) can also be defined as derived term: use combination of abstraction and application:
+\end{itemize}
+
+let x=\(t_1\) in \(t_2\) \(\stackrel{def}{=}\)(\(\lambda\) x: \(T_1\).\(t_2\)) \(t_1\)
+
+\begin{itemize}
+\item right hand side includes \(T_1\), but left hand side does not: how does parser know to generate \(T_1\) as type annotation?
+\begin{itemize}
+\item this information comes typechecker
+\end{itemize}
+\item treat \texttt{let} as transformation on typing derivations
+\item can derive its evaluation behaviour by desugaring it but its typing behaviour must be built into internal language
+\item \texttt{let} construct is treated specially by typechecker which uses it for generalizing polymorphic definitions to obtain typings that cannot be emulated using ordinary \(\lambda-\) abstraction and application
+\end{itemize}
+
+question: is it good to define let as a derived form to desugar it by executing it immediately (\([x \mapsto t_1]t_2\))? ask this
+
+\subsection{pairs}
+\label{sec:orge165765}
+\begin{itemize}
+\item two new forms of terms: pairing: \({t_1,t_2}\) and projection \(t.1\)
+\item one new type constructor: \(T_1 \times T_2\) called product of \(T_1\) and \(T_2\)
+\end{itemize}
+
+\subsection{tuples}
+\label{sec:org3530369}
+\begin{itemize}
+\item generalize pairs into n-ary products
+\item cost to generalization: to formalize the system, need to invent notations for uniformly describing structures of arbitrary arity
+\item \(\{t_i^{i \in 1...n}\}\) for a tuple of n terms and \(\{T_i^{i \in 1...n}\}\) for its type
+\end{itemize}
+
+\subsection{records}
+\label{sec:org3a56e3e}
+\begin{itemize}
+\item generalization from n-ary tuples to labeled records
+\item in many PLs, order of fields does not matter
+\item in current presentation, order matters
+\item the computation rule for pattern matching: generalizes the let-binding rule
+\item relies on auxiliary matching function: given a pattern \(p\) and value \(v\), either fails or yields a substituion that maps variahbles appearing in \(p\) to the corresponding parts of \(v\)
+\end{itemize}
+
+\subsection{sums}
+\label{sec:orgedda38a}
+\begin{itemize}
+\item deal with heterogeneous collections of values
+\item varient types
+\item binary sum types: describes set of values drawn from exactly two given types
+\begin{itemize}
+\item to use elements of sum types, introduce \texttt{case} construct with \texttt{lnl} and \texttt{lnr}
+\item to syntax: add left and right injections and \texttt{case} construct
+\item to types add sum constructor
+\item to evaluation add two ``beta-reduction'' rules for case construct
+\end{itemize}
+\end{itemize}
+
+\subsubsection{sum and uniqueness of types}
+\label{sec:org4a3c66d}
+most of the properties of typing relations of pure \(\lambda_{\rightarrow}\) extend to the system with sums but one fails: the Uniqueness of Types theorem
+\begin{itemize}
+\item typing rule T-INL, says that once we have shown \(t_1\) is an element of \(T_1\), we can derive that \texttt{inl \$t\_1\$} is an element of \(T_1+T_2\) for any type \(T_2\).
+\item failure of uniqueness of types means we cannot build a typechecking algorithm simply by reading the rules from bottom to top
+\item options:
+\begin{enumerate}
+\item guess a value for \(T_2\); hold \(T_2\) indeterminate and try to discover later what its value should have been
+\item refine language of types to all possible values for \(T_2\) to somehow be represented uniformly
+\item demand programmer to provide explicit annotation to indicate which type \(T_2\) is intended
+\end{enumerate}
+\end{itemize}
+
+\subsection{variants}
+\label{sec:orgc5665cc}
+\begin{itemize}
+\item binary sums generalize to labeled variants
+\item \(<l_1:T_1, l_2:T_2>\) where \(l\) are field labels
+\item label case with same labels as corresponding sum type
+\end{itemize}
+
+\subsection{options}
+\label{sec:org1cbd71e}
+\begin{itemize}
+\item \texttt{OptionalNat = <none:Unit, some:Nat>}
+\end{itemize}
+
+\subsection{enums}
+\label{sec:orga383d90}
+\begin{itemize}
+\item varient type in which the field type with each label is \texttt{Unit}
+\end{itemize}
+\subsection{single field varients}
+\label{sec:org58c09fc}
+\begin{itemize}
+\item \texttt{V = <l:T>}
+\item usual operations on \texttt{T} cannot be applied to elements of \texttt{V} without unpackaging them first
+\item \texttt{V} cannot be accidentally mistaken for a \texttt{T}
+\end{itemize}
+
+\subsection{varients vs. datatypes}
+\label{sec:org738588c}
+\begin{itemize}
+\item datatype definition may be recursive (type being defined is allowed to appear in the body of definition)
+\end{itemize}
+
+\subsection{variants as disjoint unions}
+\label{sec:org9e1be6f}
+\begin{itemize}
+\item \(T_1 + T_2\) is union of \(T_1\) and \(T_2\) because its elements include all elements of \(T_1\) and \(T_2\); disjoint because sets of elements of \(T_1\) or \(T_2\) are tagged with \texttt{inl} or \texttt{inr}
+\end{itemize}
+
+\subsection{type dynamic}
+\label{sec:org9629e5c}
+\begin{itemize}
+\item data whose type cannot be determined at compile time
+\item type \texttt{Dynamic} whose values are pairs of value \texttt{v} and type tag \texttt{T} where \texttt{v} has type \texttt{T}
+\end{itemize}
+
+\subsection{general recursion}
+\label{sec:orgc949956}
+\begin{itemize}
+\item no expression that can lead to non-terminating computations can be typed using only simple types
+\item ability to form the fixed point of a function of type \(T \rightarrow T\) for any \(T\): implies every type is inhabited by some term
+\item letrec x: $T\textsubscript{1}$=\(t_1\) in \(t_2\) $\stackrel{def}{=}$ let x = fix(\(\lambda x : T_1.t_1\)) in \(t_2\)
+\end{itemize}
+
+\subsection{lists}
+\label{sec:org19e7d0a}
+\begin{itemize}
+\item for every type \(T\), the type \texttt{List T} describes finite length lists whose elements are drawn from \texttt{T}
+\end{itemize}
+
+\section{jan 23 notes}
+\label{sec:org3f9d011}
+\begin{itemize}
+\item no integers, no booleans, only functions
+\item can't write program in this type system
+\item have to keep defining (infinite)
+\item can add new rules to these systems
+\item study these rules in isolation
+\item can plug into other type systems
+\item Nat as a base type, more well behaved
+\begin{itemize}
+\item can't go below zero
+\end{itemize}
+\item curry-howard correspondence: not really formal, just a way to think about it
+\begin{itemize}
+\item more of an observation
+\item erase types to view as logic
+\end{itemize}
+\item \(\Gamma\) instroduce implication
+\item intro rules: create a new type (constructs a value)
+\item elim rules: know the rule already (if rule)
+\begin{itemize}
+\item some computation
+\end{itemize}
+\item pair intro and elim rule to create computation
+\item permutation lemma: ?
+\item preservation of types under substitution: each step of eval/computation does not change the type
+\item separate eval from typing: view a program from many different type systems
+\item or only eval typed programs: preservation trivial
+\item principal typing: types can be joined back together
+\item in math: only well typed terms exist
+
+rust
+\item curry: can have errors, can define errors
+\item church: no errors, everything well defined
+
+\item unit type: bottom type
+\end{itemize}
+\end{document}
