@@ -1,0 +1,29 @@
+---
+title: "grad school"
+tags: life
+date: 2023-12-05
+---
+
+Statement of Purpose
+
+Template
+First paragraph – Describe the general areas of research that interest you and why. (This is helpful for a committee to determine which professors should read your application.)
+Second paragraph, Third, and Fourth paragraphs – Describe some research projects that you worked on. What was the problem you were trying to solve? Why was it important? What approaches did you try? What did you learn? It’s fine to say that you were unable to fully solve your problem.
+Fifth paragraph – Tell us why you feel you need a Ph.D.. Look back to section 2 and explain what in there appealed to you.
+Sixth paragraph – Tell us why you want to come to CMU. Whom might you like to work with? What papers have you looked at from CMU that you enjoyed reading? Why is CMU the right place for you?
+
+Why am I pursuing a PhD in Computer Science/Computational Biology/Chemistry?
+Interest in the school
+Mention professors
+Experience
+Mention technical terms if appropriate
+Multidiscpinary research 
+NLP and Breast Cancer
+Classical methods
+Passionate
+Writing paper
+Spent summer reading papers and writing about them in blog 
+Industry
+Issues in code correctness
+Testing is hard
+After PhD

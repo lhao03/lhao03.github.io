@@ -1,0 +1,27 @@
+---
+title: "Git, GitHub, Gluework"
+tags: technical
+date: 2023-12-10
+---
+
+= Git, GitHub, Gluework
+
+== Slide 1: gluework (5 mins) 
+https://noidea.dog/glue
+https://locallyoptimistic.com/post/glue-work/
+
+* Glue Work, Caitlin Moorman (Locally Optimistic blog, Oct 2019)
+* Being Glue, Tanya Reilly (No Idea Blog, s/d)
+* The Confidence Gap, Kate Purmal (Women 2.0, July 2020)
+* Why Do So Many Incompetent Men Become Leaders?, Tomas Chamorro-Premuzic (Harvard Business Review, Aug, 2013)
+* Tell Me Something I Don’t Know About Women in the Workplace, Gretchen Gavett (Harvard Business Review, Aug, 2013)
+* Gender Differences in Accepting and Receiving Requests for Tasks with Low Promotability, Linda Babcock, Maria P. Recalde, Lise Vesterlund and Laurie Weingart, American Economic Review, 2019
+* Why Women Volunteer for Tasks That Don’t Lead to Promotions, Linda Babcock, Maria P. Recalde and Lise Vesterlund, Harvard Business Review, July 16th 2018.
+
+== Slide 2: workshop schedule (1 min)
+== Slide 3: why documentation (is gluework) (5 mins) 
+== Slide 4: internal wiki walk through (5 mins) 
+== Slide 5: git vs github (4 mins) 
+== Slide 6: interactive (30 mins) 
+
+Total: 50 mins
