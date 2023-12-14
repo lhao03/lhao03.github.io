@@ -1,9 +1,0 @@
----
-title: "that did not just happen; the day i really blanked out on an exam"
-tags: life
-date: 2023-09-19
----
-
-:toc:
-
-I skipped the gym again to sleep in an extra 30 minetes, which consisted of me laying in bed and looking at my watch every 4 minutes to make sure that I'd be up before 7 AM. It was the day of my CPSC 311 midterm, 
