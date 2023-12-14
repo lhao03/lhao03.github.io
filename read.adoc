@@ -2,7 +2,22 @@
 title: "Papers and Books and Other Things"
 ---
 
-I'm currently reading a bunch of papers and books to see what I'm interested in and I wanted a way to rank each paper. I'm going to use two criteria, understanding and interest. 
+== Books 
+2023
+* Throne of Glass (reading)
+* House of Sky and Breath
+* House of Earth and Blood
+* A Court of Silver Flames
+* A Court of Wings and Ruin
+* A Court of Mist and Fury
+* A Court of Thorns and Roses
+
+2022 
+* https://criticallyconsciouscomputing.org/[Critically Conscious Computing _Methods for Secondary Education_]
+* Your Computer is On Fire 
+* Programmed Inequality 
+
+I wanted a way to rank each paper. I'm going to use two criteria, understanding and interest. 
 
 == Interest
 1. I'm falling asleep.
@@ -71,15 +86,6 @@ I'm currently reading a bunch of papers and books to see what I'm interested in 
 * https://www.youtube.com/watch?v=ho7oagHeqNc[Category Theory in Life]
 * https://www.janestreet.com/tech-talks/curriculumn-design/[Shriram Krishnamurthi's Talk: Curriculum Design as an Engineering Problem]
 * https://www.youtube.com/watch?v=4HgShra-KnY&t=771s[ASPLOS Keynote: The Golden Age of Compiler Design in an Era of HW/SW Co-design by Dr. Chris Lattner]
-
-== Books Read
-* https://criticallyconsciouscomputing.org/[Critically Conscious Computing _Methods for Secondary Education_]
-
-== Books Reading
-* Your Computer is On Fire 
-* Programmed Inequality 
-* The Little Typer
-* Introduction to the Theory of Computation
 
 == Dissertations
 * http://www.diva-portal.org/smash/record.jsf?pid=diva2%3A837505&dswid=3179[Feminist Technoscience Strategies]
