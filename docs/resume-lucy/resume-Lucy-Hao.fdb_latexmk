@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1702406772 "/home/lucy/Codes/lhao03.github.io/resume-lucy/resume-Lucy-Hao.tex" "resume-Lucy-Hao.pdf" "resume-Lucy-Hao" 1702406773 2
-  "/home/lucy/Codes/lhao03.github.io/resume-lucy/resume-Lucy-Hao.tex" 1702406119 267 e3c3660ec54f243e086d4d914c013fc4 ""
+["pdflatex"] 1703222208 "/home/lucy/Codes/lhao03.github.io/resume-lucy/resume-Lucy-Hao.tex" "resume-Lucy-Hao.pdf" "resume-Lucy-Hao" 1703222209 2
+  "/home/lucy/Codes/lhao03.github.io/resume-lucy/resume-Lucy-Hao.tex" 1702758397 269 c98f811be3a049e435486a8de7a756d1 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/latex-fonts/lasy6.tfm" 1136768653 520 4889cce2180234b97cad636b6039c722 ""
   "/usr/share/texlive/texmf-dist/tex/generic/atbegshi/atbegshi.sty" 1575674566 24708 5584a51a7101caf7e6bbf1fc27d8f7b1 ""
@@ -74,8 +74,8 @@
   "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1684972800 40326 aba987258e6d6b6da5dec3a727ea174b ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1699659258 7863016 b8bfd123c603ea07f57cba5543500e12 ""
   "format.sty" 1661728496 2722 48ddc4814af13924cc80c13454034ab4 ""
-  "resume-Lucy-Hao.aux" 1702406772 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
-  "resume-Lucy-Hao.tex" 1702406119 267 e3c3660ec54f243e086d4d914c013fc4 ""
+  "resume-Lucy-Hao.aux" 1703222208 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "resume-Lucy-Hao.tex" 1702758397 269 c98f811be3a049e435486a8de7a756d1 ""
   (generated)
   "resume-Lucy-Hao.aux"
   "resume-Lucy-Hao.log"
