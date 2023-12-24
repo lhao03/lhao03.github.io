@@ -1,0 +1,29 @@
+---
+title: "quantum computing, quantum chemistry and statistical thermodynamics reading log"
+tags: quantum, chemistry, thermodynamics
+date: 2023-12-22
+---
+
+dec 22: reading "Quantum Gaussian process model of potential energy surface for a polyatomic molecule"
+
+terms I don't know:
+. https://en.wikipedia.org/wiki/Quantum_logic_gate:[Quantum logic gate]
+. https://en.wikipedia.org/wiki/Qubit[Qubit] 
+. https://en.wikipedia.org/wiki/Unitarity_(physics)[Unitarity]
+. https://en.wikipedia.org/wiki/Unitary_operator[Unitary Operator]
+. https://en.wikipedia.org/wiki/Reversible_computing[Reversible computing]
+. Kernel
+. https://en.wikipedia.org/wiki/Hilbert_space[Hilbert Space]
+. Fixed Ansatz Implementable
+. Qubit entanglement
+. Born-Oppenheimer Approximation
+. https://en.wikipedia.org/wiki/Kernel_method[Kernal Method]
+. https://qiskit.org/ecosystem/machine-learning/tutorials/03_quantum_kernel.html
+. Bayesian optimization
+. Gaussian process
+. Radial basis function
+
+reading "
+
+terms I don't know: "How Long Can A C−C σ‑Single Bond Be?"
+. Lennard Jones type potential
