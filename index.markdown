@@ -9,7 +9,7 @@ List of things currently doing (in no particular order):
 
 - playing [Legends of Runeterra](https://playruneterra.com/en-us/) and TFT
 - reading fantasy books
-- co-leading dry lab and leading the wiki team at UBC iGEM, where I'm creating an [internal documentation](https://github.com/UBC-iGEM/internal-wiki-2023-24) system at iGEM UBC
+- co-leading dry lab and leading the wiki team at UBC iGEM, where I'm creating an [internal documentation](https://github.com/UBC-iGEM/internal-wiki-2023-24) system
 - learning about quantum chemistry
 
 
