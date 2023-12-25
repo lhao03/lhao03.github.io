@@ -1,27 +1,35 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   $partial("templates/head.html")$
-        <body>
-        <header>
-            <div class="logo">
-                <a href="/">
-                <img src="/images/android-chrome-384x384.png" style="padding-right:10px;">
-                </a>
-            </div>
-        </header>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="/">
+          <img
+            src="/images/android-chrome-384x384.png"
+            style="padding-right: 10px"
+          />
+        </a>
+      </div>
+    </header>
 
-        <main role="main">
-            <h1>$title$</h1>
-            $body$
-        </main>
-        
-        <footer>
-		<center><p>
-			<a href="/archive">archive</a> <a href="https://twitter.com/hoalycu" target="_blank">twitter</a> <a href="https://github.com/lhao03" target="_blank">github</a> <a href="https://www.linkedin.com/in/lucy-hao/" target="_blank">linkedin</a>
-			</p>
-		</center>
-            Site powered by cats, 🍫 and 
-            <a href="http://jaspervdj.be/hakyll">Hakyll</a>
-        </footer>
-    </body>
+    <main role="main">
+      <h1>$title$</h1>
+      $body$
+    </main>
+
+    <footer>
+      <center>
+        <p>
+          <a href="/archive">archive</a>
+          <a href="https://github.com/lhao03" target="_blank">github</a>
+          <a href="https://www.linkedin.com/in/lucy-hao/" target="_blank"
+            >linkedin</a
+          >
+        </p>
+      </center>
+      Site powered by cats, 🍫 and
+      <a href="http://jaspervdj.be/hakyll">Hakyll</a>
+    </footer>
+  </body>
 </html>
