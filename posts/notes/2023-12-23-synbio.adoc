@@ -22,4 +22,30 @@ plasmids: transfer useful properties to e.coli
 two timelines: 
 
 1. palsson timeline: focus on early developments and synthethic cells
+
+. fundamental basis of synbio (bottom up)
+. putting life together -> lets use understand it better 
+	. minimalist cells and synthethic chromosomes enable fundamental discoveries about roles genes play in cell viabiliy.
+
 2. collins timeline: focus on development of genetic tools and their applications
+
+. putting life together -> lets us use it better
+	. genetic tools let us manipulate cells with more control
+
+DNA synthesis and sequencing important for both
+
+*through purpose*
+an engineering discipline -> social, ethical and global implications and financial and commerial applications 
+
+
+*study and design life to discover truths and benefit society, humans and environment.*
+if this is the purpose of synbio, there must be judgement made by governing bodies to regulate and support this intent.
+
+== mosquito, farmers and bio-furturism
+. primary medicinal ingredient is artemisinin -> found in Artemisia Annua
+. unstable production lead to huge price fluctuations for ACTs
+
+=== natural biosynthesis of artemisinin 
+CO2 -> acetyl-CoA -> FPP -> Amorphadiene -> Artemisinic acid -> Dihydroartemisnic acid -> Artemisinin 
+
+=== engineered synthesis of artemisinin 
