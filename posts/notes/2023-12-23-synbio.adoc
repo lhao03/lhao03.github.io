@@ -54,3 +54,28 @@ image::/images/synbio/Scheme-2-Total-synthesis-of-artemisinin-by-Xu-et-al.png[]
 image::/images/synbio/engineer-artemisinin.png[]
 
 selection of chassis: important (e.coli which has more scientific research behind it) or an industrially relevant strain or yeast
+
+computation design and simulation
+
+. flux based analysis
+. linear programming
+. stochastic modelling
+. dynamic control, strain optimization, kinetic modelling
+. directed evolution rational design (QM/MM)
+. ML
+
+=== HP 
+. problem analysis
+. stakeholder engagement and outreach
+. science and math communication
+. risk assessment and induction of risk
+. policy development
+
+=== wet lab
+. DNA
+. protein
+
+=== dry lab
+. fundamentals of modelling biology
+. bioreactors
+. computational protein design
