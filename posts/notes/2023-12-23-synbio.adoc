@@ -86,6 +86,14 @@ computation design and simulation
 **genes and parts**
 
 . genes are made of parts: transcriptional and translational elements
+. promoter: initiate mRNA production of ORF
+. terminator: RNA polymerase must stop
+. ORF: RNA/protein of interest
+. RBS: initiate protein production
+. START/STOP codons designate where the ORF begin and end
+
+** genetic circuit diagram symbols**
+
 
 
 
