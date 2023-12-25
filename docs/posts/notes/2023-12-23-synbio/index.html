@@ -63,6 +63,8 @@
     <div class="sect1">
 <h2 id="_dec_24">dec 24</h2>
 <div class="sectionbody">
+<div class="sect2">
+<h3 id="_introduction">introduction</h3>
 <div class="paragraph">
 <p><strong>defining synbio</strong>:
 making biology more modular, robut, simulation, prototyping, standardization, more accessble to the engineering discpline.
@@ -133,6 +135,7 @@ an engineering discipline → social, ethical and global implications and financ
 <div class="paragraph">
 <p><strong>study and design life to discover truths and benefit society, humans and environment.</strong>
 if this is the purpose of synbio, there must be judgement made by governing bodies to regulate and support this intent.</p>
+</div>
 </div>
 </div>
 </div>
@@ -243,6 +246,365 @@ if this is the purpose of synbio, there must be judgement made by governing bodi
 </li>
 <li>
 <p>computational protein design</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_dec_25">dec 25</h3>
+
+</div>
+<div class="sect2">
+<h3 id="_molecular_cloning_13">molecular cloning 1/3</h3>
+<div class="paragraph">
+<p><strong>genes and parts</strong></p>
+</div>
+<div class="paragraph">
+<p><strong>architecture</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>genes are made of parts: transcriptional and translational elements
+image::/images/synbio/mrna.png[]</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><strong>genetic symbols</strong></p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../../images/synbio/symbols.png" alt="symbols">
+</div>
+</div>
+<div class="paragraph">
+<p><strong>combinations</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>composite parts: no gene expression</p>
+</li>
+<li>
+<p>devices: gene expression</p>
+</li>
+<li>
+<p>systems: combination of devices for complex tasks</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><strong>logic</strong></p>
+</div>
+<div class="paragraph">
+<p>can express boolean logic and truth tables</p>
+</div>
+<div class="paragraph">
+<p><strong>control</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>promoter and terminator: affect rate of transcription → mRNA</p>
+</li>
+<li>
+<p>RBS: affect rate of translation → protein</p>
+</li>
+<li>
+<p>degrons: affect rate of translation</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><strong>promoters</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>initiate mRNA production of ORF</p>
+</li>
+<li>
+<p>strong promoter →  more protein</p>
+</li>
+<li>
+<p>physical basis behind TATA box can affect polymerase to protein mRNA</p>
+</li>
+<li>
+<p>mutate TATA box → affect binding affinity</p>
+</li>
+<li>
+<p>binding affinity between RNA polymerase 2 and promoter sequence</p>
+</li>
+<li>
+<p>-35 region, -10 region, initiation society</p>
+</li>
+<li>
+<p>constitutive: not repressed, always active</p>
+</li>
+<li>
+<p>inducible: controlled by operator</p>
+</li>
+</ol>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../../images/synbio/promoter.png" alt="promoter">
+</div>
+</div>
+<div class="paragraph">
+<p><strong>TT</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>determine where transcription must stop</p>
+</li>
+<li>
+<p>Rho-independent: formation of hairpin that sterically interrupts RNAP</p>
+</li>
+<li>
+<p>Rho-dependent: binding of Rho factor to specific sequences in nascent RNA</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><strong>RBS</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>init protein production</p>
+</li>
+<li>
+<p>consensus RBS sequence: 5AGGAGG3 → strength of RBS</p>
+</li>
+<li>
+<p>strength of RBS is related to binding affinity between mRNA and ribosome (RBS and RNA component)</p>
+</li>
+</ol>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../../images/synbio/rbsbinding.png" alt="rbsbinding">
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>RBS calculator: predict RBS and generate new ones</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><strong>degrons</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>post-translational effects</p>
+</li>
+<li>
+<p>protein degradation tags (control rate of translation by changing protein stability)</p>
+</li>
+<li>
+<p>can be engineered or endogenous</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><strong>prediction</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>when given pooly annotated gene, must annotate to better understand what you’re working with</p>
+</li>
+<li>
+<p>look for AGGAGG or TATA</p>
+</li>
+<li>
+<p>use online web tools</p>
+</li>
+<li>
+<p>bioinformatics</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><strong>copy and paste</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>use PCR, polymerase chain reaction and thermocycler</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><strong>PCR</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>small sample of DNA (you want to replicate)</p>
+</li>
+<li>
+<p>primers and nucleotides (allow you to keep building new copies of your target DNA)</p>
+</li>
+<li>
+<p>thermocycling process (increase 30 times)</p>
+</li>
+<li>
+<p>denature (94-100C). double stranded DNA → single stranded DNA. allow for the primer to complementary to parts of the DNA you want to ampliy</p>
+</li>
+<li>
+<p>annealing phase: lower the temperature only primer can bind and not DNA (forward primer)</p>
+</li>
+<li>
+<p>elongation phase: polymerase in reaction makes DNA</p>
+</li>
+<li>
+<p>final extension: much more prolonged (step 3) allow for any unfinished replication finishes</p>
+</li>
+</ol>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../../images/synbio/pcr.png" alt="pcr">
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>primers ampliy segment of DNA</p>
+</li>
+<li>
+<p>can also be designed to give new segment with an overhang (append something to the target DNA)</p>
+<div class="ulist">
+<ul>
+<li>
+<p>pasting*</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>assembling and disassembling DNA: hydrogen bonding</p>
+</li>
+<li>
+<p>linear dna: fragment</p>
+</li>
+<li>
+<p>circular dna: plasmid</p>
+</li>
+<li>
+<p>cloning vector: put dna construct into plasmid for long periods of time (more stable)</p>
+</li>
+<li>
+<p>expression vector: want device or system or be expressed (one promoter inside of them, produce protein for you)</p>
+</li>
+<li>
+<p>3 major functions: only have bacteria to only have that plasmid that has your dna construct</p>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>selection of correct plasmid</p>
+</li>
+<li>
+<p>replication of plasmid</p>
+</li>
+<li>
+<p>propagation of gene of interest</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>amp: selection marker</p>
+</li>
+<li>
+<p>(ori: replication element (origin of replication)) high copy numbers: for cloning/storing dna</p>
+</li>
+<li>
+<p>polylinker: insertion of GOI allows cell to replicate plasmid and make more GOI copies (blue colonies if no GOI, white colonies if GOI)</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><strong>restriction enzymes</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>MCS is based on restriction-enzyme, ligation-dependent cloning</p>
+</li>
+<li>
+<p>restriction enzymes are DNA scissors</p>
+</li>
+<li>
+<p>recognize palindromic sequences</p>
+</li>
+</ol>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../../images/synbio/resenzyme.png" alt="resenzyme">
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>MoClo and Golden Gate Assembly
+image::/images/synbio/gg.png[]</p>
+</li>
+<li>
+<p>RE-LDC and MoClo require ligase to stitch together DNA’s phosphate backbone for one contiguous segment</p>
+</li>
+<li>
+<p>ligation independent cloning: gibson is LIC varient (use DNA polymerase)</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><strong>editing</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>stitching PCR: remove small and large chucks of DNA with primers and gel extraction</p>
+</li>
+<li>
+<p>self-directed mutagenesis (SDM) for plasmids</p>
+</li>
+<li>
+<p>CRISPR!</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><strong>cell-free expression: transformation</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>put vector into e.coli</p>
+</li>
+<li>
+<p>to get plasmids into e.coli</p>
+</li>
+<li>
+<p>chemical transformation (increase permeability of membrane)</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><strong>cell-free expression: concept</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>remove machinary and put in lysate</p>
 </li>
 </ol>
 </div>
