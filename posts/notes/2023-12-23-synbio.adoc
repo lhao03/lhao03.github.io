@@ -92,6 +92,13 @@ computation design and simulation
 *architecture*
 
 . genes are made of parts: transcriptional and translational elements
+. promoter: initiate mRNA production of ORF
+. terminator: RNA polymerase must stop
+. ORF: RNA/protein of interest
+. RBS: initiate protein production
+. START/STOP codons designate where the ORF begin and end
+
+<<<<<<< HEAD
 image::/images/synbio/mrna.png[]
 
 *genetic symbols*
@@ -156,6 +163,16 @@ image::/images/synbio/rbsbinding.png[]
 . look for AGGAGG or TATA
 . use online web tools
 . bioinformatics
+=======
+. promoter: initiate mRNA production of ORF
+. terminator: RNA polymerase must stop
+. ORF: RNA/protein of interest
+. RBS: initiate protein production
+. START/STOP codons designate where the ORF begin and end
+
+** genetic circuit diagram symbols**
+
+>>>>>>> 5d9a551d3073872169a3f34851314f838a0876f4
 
 
 *copy and paste*
