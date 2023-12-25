@@ -1,10 +1,14 @@
 ---
 title: "Papers and Books and Other Things"
+date: 2023-12-24
 ---
 
 == Books 
 2023
-* Throne of Glass (reading)
+
+* Heir of Fire (reading)
+* Crown of Midnight
+* Throne of Glass
 * House of Sky and Breath
 * House of Earth and Blood
 * A Court of Silver Flames
@@ -13,13 +17,14 @@ title: "Papers and Books and Other Things"
 * A Court of Thorns and Roses
 
 2022 
+
 * https://criticallyconsciouscomputing.org/[Critically Conscious Computing _Methods for Secondary Education_]
 * Your Computer is On Fire 
 * Programmed Inequality 
 
-I wanted a way to rank each paper. I'm going to use two criteria, understanding and interest. 
+== Paper Ranking
 
-== Interest
+=== Interest
 1. I'm falling asleep.
 2. Reading through the paper is a like a task and I'd rather read another paper.
 3. [TODO]
@@ -31,7 +36,7 @@ I wanted a way to rank each paper. I'm going to use two criteria, understanding 
 9. [TODO]
 10. I feel excited reading this and would love researching more about this topic.
 
-== Understanding
+=== Understanding
 1. I don't understand a single sentence.
 2. I know less than half of the key words and have a very limited (non existent) understanding of the paper.
 3. I know most key words but I can't really understand the main idea of the paper.

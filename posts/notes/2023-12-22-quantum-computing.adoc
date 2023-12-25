@@ -4,9 +4,12 @@ tags: quantum, chemistry, thermodynamics
 date: 2023-12-22
 ---
 
-dec 22: reading "Quantum Gaussian process model of potential energy surface for a polyatomic molecule"
+== reading "Quantum Gaussian process model of potential energy surface for a polyatomic molecule"
+
+days: dec 22, 24
 
 terms I don't know:
+
 . https://en.wikipedia.org/wiki/Quantum_logic_gate:[Quantum logic gate]
 . https://en.wikipedia.org/wiki/Qubit[Qubit] 
 . https://en.wikipedia.org/wiki/Unitarity_(physics)[Unitarity]
@@ -23,7 +26,10 @@ terms I don't know:
 . Gaussian process
 . Radial basis function
 
-reading "
+== reading "How Long Can A C−C σ‑Single Bond Be?"
 
-terms I don't know: "How Long Can A C−C σ‑Single Bond Be?"
+days: dec 22
+
+terms I don't know: 
+
 . Lennard Jones type potential

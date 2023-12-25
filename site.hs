@@ -66,7 +66,7 @@ main = hakyllWith config $ do
         route $ setExtension "css"
         compile (fmap compressCss <$> sassCompiler)
 
-  match (fromList ["papers.adoc", "log.adoc"]) $ do
+  match (fromList ["read.adoc", "log.adoc"]) $ do
     route appendIndex
     compile $
       pandocCompilerWithAsciidoctor

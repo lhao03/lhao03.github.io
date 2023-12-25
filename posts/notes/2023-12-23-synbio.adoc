@@ -6,7 +6,6 @@ tags: synbio
 
 == dec 24
 
-=== 
 *defining synbio*: 
 making biology more modular, robut, simulation, prototyping, standardization, more accessble to the engineering discpline. 
 treating biology like a system. design and construction of new biologicla parts, devices and systems.
@@ -15,10 +14,12 @@ the redesign of existing natural biological systems for useful purposes. the end
 *through history*
 molecular biology -> molecular biotechnology -> synthethic biology
 plasmids: transfer useful properties to e.coli
+
 1. discovery of DNA structure and role in heredity (fundamental science at the moledular level)
 2. development of plasmids, systems biology, Sanger DNA Sequencing (fundamental and applied science and the molecular level, fundamantal science at systems level)
 3. DNA synthesis, geneti circuits, redesigning phage genome (fundamental and applied science at moledular and system level)
 
-two timeslines: 
+two timelines: 
+
 1. palsson timeline: focus on early developments and synthethic cells
 2. collins timeline: focus on development of genetic tools and their applications
