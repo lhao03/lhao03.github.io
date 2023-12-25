@@ -79,3 +79,26 @@ computation design and simulation
 . fundamentals of modelling biology
 . bioreactors
 . computational protein design
+
+
+=== dec 25
+
+**genes and parts**
+
+. genes are made of parts: transcriptional and translational elements
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
