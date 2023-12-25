@@ -48,4 +48,9 @@ if this is the purpose of synbio, there must be judgement made by governing bodi
 === natural biosynthesis of artemisinin 
 CO2 -> acetyl-CoA -> FPP -> Amorphadiene -> Artemisinic acid -> Dihydroartemisnic acid -> Artemisinin 
 
+image::/images/synbio/Scheme-2-Total-synthesis-of-artemisinin-by-Xu-et-al.png[]
+
 === engineered synthesis of artemisinin 
+image::/images/synbio/engineer-artemisinin.png[]
+
+selection of chassis: important (e.coli which has more scientific research behind it) or an industrially relevant strain or yeast
