@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lucy H | DNA Storage</title>
+  <link rel="stylesheet" href="../../../css/main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
+  <!-- and it's easy to individually load additional languages -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/languages/scheme.min.js"></script>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/base16/onedark.min.css" />
+  <script>
+    hljs.highlightAll();
+  </script>
+
+  <link rel="preconnect" href="https://www.googletagmanager.com" />
+  <link rel="preconnect" href="https://www.google-analytics.com" />
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KDGPVMHC9Q"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-KDGPVMHC9Q");
+  </script>
+
+  <!-- basic favicon -->
+  <link rel="icon" href="../../../images/android-chrome-384x384.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../../images/android-chrome-384x384.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../../images/android-chrome-384x384.png" />
+  <link rel="apple-touch-icon-precomposed" href="../../../images/android-chrome-384x384.png" />
+</head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <a href="../../../">
+          <img src="../../../images/android-chrome-384x384.png" style="padding-right: 10px" />
+        </a>
+      </div>
+    </header>
+
+    <main role="main">
+      <h1>DNA Storage</h1>
+      <div>
+  
+  <div class="header">
+    Posted on December 25, 2023
+    
+  </div>
+  <div class="tags">
+    
+    Tags: <a title="All pages tagged 'synbio'." href="../../../tags/synbio/index.html">synbio</a>
+    
+  </div>
+  <div>
+    <div class="sect1">
+<h2 id="_points_about_dna">points about dna</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>no preexisting media</p>
+</li>
+<li>
+<p>detached from array based structure (metadata encoded within each dna segment)</p>
+</li>
+<li>
+<p>error characteristics</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_overview">overview</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>encoding</p>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>turning binary into ternary into bases</p>
+</li>
+<li>
+<p>more error prone sequences should be avoided</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>synthesis</p>
+</li>
+<li>
+<p>storage</p>
+</li>
+<li>
+<p>retrieval</p>
+</li>
+<li>
+<p>sequencing</p>
+</li>
+<li>
+<p>decoding</p>
+</li>
+</ol>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../../images/synbio/dnachannel.png" alt="dnachannel">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_application_presentation_session">application, presentation, session</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>done in binary</p>
+</li>
+<li>
+<p>application: how is this storage to be used?</p>
+</li>
+<li>
+<p>most likely archival</p>
+</li>
+<li>
+<p>presentation: preparation of bitstreams</p>
+</li>
+<li>
+<p>session: access to the DNA storage interface</p>
+</li>
+<li>
+<p>object based</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_dna_channel">DNA channel</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>takes bitstream or digital object from session layer and processes those bits</p>
+</li>
+<li>
+<p>implemented as software codec</p>
+</li>
+<li>
+<p>when bitstream is presented:</p>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>packetization: longest strand of DNA that can be currently made (300 bases), so the bitsreams must be broken down</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>add indices to each segment</p>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>error correction: add redundant information to reduce probability of random errors</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>augment segments (inner code) or add segments (outer code)</p>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>translation: binary to bases</p>
+</li>
+<li>
+<p>transformations: repeated bases (homopolymers), high proportion of G and C and some other patterns can cause errors</p>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_dna_physical_layer">DNA physical layer</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>synthesis (writing)</p>
+</li>
+<li>
+<p>silcon technology based implementations that miniaturize synthesis device</p>
+</li>
+<li>
+<p>storage</p>
+</li>
+<li>
+<p>store in dry and chemically inert environment</p>
+</li>
+<li>
+<p>organized with physical tape system</p>
+</li>
+<li>
+<p>reading (sequencing)</p>
+</li>
+<li>
+<p>sequencing-by-synthesis: high accuracy, high latency</p>
+</li>
+<li>
+<p>nanopore sequencing: lower latency,  lower accuracy</p>
+</li>
+<li>
+<p>retrieval (important for DNA storage!)</p>
+</li>
+<li>
+<p>easy: read entire archive</p>
+</li>
+<li>
+<p>if multiple objects stored in archive, random access operations are required</p>
+</li>
+<li>
+<p>PCR and DNA pull-out with magngetic nanoparticles</p>
+</li>
+<li>
+<p>PCR:</p>
+</li>
+<li>
+<p>session layer assign a set of object IDs, and at encoding time channal layer appends a set of predefined DNA base sequences to both ends of a DNA sequence belonging to an object (target sites)</p>
+</li>
+<li>
+<p>probes (short DNA sequences): that complement target site attach to target molecule along with polymerases</p>
+</li>
+<li>
+<p>now the primers enable polymerase to copy target DNA molecules, creating more DNA molecules of the object of interest than other DNA molecukes</p>
+</li>
+<li>
+<p>result is pool of mostly DNA molecules belonging to object we want</p>
+</li>
+<li>
+<p>DNA pull-out</p>
+</li>
+<li>
+<p>channel layer only needs to append the object IDs as target sites at one end of every DNA sequence belonging to an object</p>
+</li>
+<li>
+<p>probes attached to magnetic nanoparticles</p>
+</li>
+<li>
+<p>probes bind to DNA molecules and can separate them</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_problem_for_our_team_to_investigate">problem for our team to investigate</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>make retrieval of information easier</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_sources">sources</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><a href="https://ieeexplore.ieee.org/document/10154188?denied=">The DNA Data Storage Model</a></p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+  </div>
+  <div class="flex-row link-no-style">
+    
+    <a href="../../../posts/2023-12-26-not-written-inawhile/index.html">⇐ Newer post</a>
+    
+    
+    <a href="../../../posts/notes/2023-12-24-qmmm/index.html">Older post ⇒</a>
+    
+  </div>
+</div>
+
+
+    </main>
+
+    <footer>
+      <center>
+        <p>
+          <a href="../../../archive">archive</a>
+          <a href="https://github.com/lhao03" target="_blank">github</a>
+          <a href="https://www.linkedin.com/in/lucy-hao/" target="_blank">linkedin</a>
+        </p>
+      </center>
+      Site powered by cats, 🍫 and
+      <a href="http://jaspervdj.be/hakyll">Hakyll</a>
+    </footer>
+  </body>
+</html>

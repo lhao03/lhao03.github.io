@@ -6,7 +6,7 @@ date: 2023-12-22
 
 == reading "Quantum Gaussian process model of potential energy surface for a polyatomic molecule"
 
-days: dec 22, 24
+days: dec 22, 24, 25
 
 terms I don't know:
 
@@ -25,6 +25,20 @@ terms I don't know:
 . Bayesian optimization
 . Gaussian process
 . Radial basis function
+. Regression vs classification problem
+. noiseless
+. unentangled and entangled kernels
+. Bayesian Information Criterion
+
+points
+
+. first principles
+. impact of entanglement
+. show quantum kernels can produce regression models of similar accuracy as classical kernels
+. entanglement improves accuracy; critical for quantum kernel computation algorithm
+. Bayesian optimization is valid strategy for optimizing quantum circuits for quantum regression problems
+
+done on dec 25! will reread again when I fill in my gaps of knowledge
 
 == reading "How Long Can A C−C σ‑Single Bond Be?"
 

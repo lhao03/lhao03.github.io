@@ -1,0 +1,72 @@
+---
+title: "DNA Storage"
+date: 2023-12-25
+tags: synbio
+---
+
+== points about dna
+. no preexisting media 
+. detached from array based structure (metadata encoded within each dna segment)
+. error characteristics
+
+== overview 
+1. encoding
+    . turning binary into ternary into bases
+    . more error prone sequences should be avoided
+2. synthesis
+3. storage
+4. retrieval 
+5. sequencing
+6. decoding
+
+image::/images/synbio/dnachannel.png[]
+
+== application, presentation, session
+. done in binary 
+. application: how is this storage to be used? 
+    . most likely archival 
+. presentation: preparation of bitstreams
+. session: access to the DNA storage interface
+    . object based
+
+== DNA channel
+. takes bitstream or digital object from session layer and processes those bits 
+. implemented as software codec
+. when bitstream is presented: 
+    1. packetization: longest strand of DNA that can be currently made (300 bases), so the bitsreams must be broken down
+        . add indices to each segment
+    2. error correction: add redundant information to reduce probability of random errors
+        . augment segments (inner code) or add segments (outer code)
+
+    3. translation: binary to bases 
+    4. transformations: repeated bases (homopolymers), high proportion of G and C and some other patterns can cause errors
+
+== DNA physical layer
+. synthesis (writing)
+    . silcon technology based implementations that miniaturize synthesis device
+. storage 
+    . store in dry and chemically inert environment
+    . organized with physical tape system
+. reading (sequencing)
+    . sequencing-by-synthesis: high accuracy, high latency
+    . nanopore sequencing: lower latency,  lower accuracy
+. retrieval (important for DNA storage!)
+    . easy: read entire archive
+    . if multiple objects stored in archive, random access operations are required
+        . PCR and DNA pull-out with magngetic nanoparticles
+        . PCR:
+            . session layer assign a set of object IDs, and at encoding time channal layer appends a set of predefined DNA base sequences to both ends of a DNA sequence belonging to an object (target sites)
+            . probes (short DNA sequences): that complement target site attach to target molecule along with polymerases
+                . now the primers enable polymerase to copy target DNA molecules, creating more DNA molecules of the object of interest than other DNA molecukes
+                . result is pool of mostly DNA molecules belonging to object we want
+        . DNA pull-out  
+            . channel layer only needs to append the object IDs as target sites at one end of every DNA sequence belonging to an object
+            . probes attached to magnetic nanoparticles
+            . probes bind to DNA molecules and can separate them
+
+
+== problem for our team to investigate
+. make retrieval of information easier
+
+== sources
+1. https://ieeexplore.ieee.org/document/10154188?denied=[The DNA Data Storage Model]
