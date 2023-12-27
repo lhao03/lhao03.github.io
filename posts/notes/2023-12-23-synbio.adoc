@@ -229,3 +229,16 @@ image::/images/synbio/gg.png[]
 *cell-free expression: concept*
 
 . remove machinary and put in lysate
+
+== dec 26
+
+=== deterministic modelling of genetic circuits: part 1
+
+. ingalls ch 2, 3, 7
+. Toggle switch (Garder, et al, Nature, 2000)
+. Stochasticity in bacterial gene expression: Elowitz, et al. Science 2002
+
+. part 1: modelling unregulated gene expression
+. part 2: modelling regulated gene expression
+. part 3: toggle switch
+. part 4: stochasticity 

@@ -1,0 +1,39 @@
+---
+title: "Quantum Computing and QM/MM"
+date: 2023-12-24
+tags: synbio
+---
+
+== Quantum Computation and Quantum Information
+=== 1.1 global perspectives
+. QC and QI: study of information processing tasks accomplished using QM systems
+
+=== 1.1.1 
+. classical physics were predicting absurdities -> UV catastrophe or electrons spiraling into the nucleus -> creation of QM 
+. QM: set of rules for construction of physical theories
+    . possible to use quantum effects to signal faster than light -> whether it is possible to clone an unknown quantum state (construct copy of QS) -> not possible in general with QM -> no-cloning theorem
+. controlling single quantum systems -> trap single atom in atom trap, isolating from world allowing us to probe it -> explore untouched regimes in Nature
+. computer science -> Church-Turing Theorem -> UTM complexly captures what it means to perform a task by algorithmic means
+. quantum effects beginning to interfere in functioning of electronic devices as they are getting smaller and smaller
+. failure of Moore's Law -> move to different computing paradigm
+    . ordinary computer can simulate QC but not efficiently (polynomial time)
+. strengthened version of Church-Turing thesis:Any algorithmic process can be simulated efficiently using a Turing machine -> for purposes of analyzing whether a given computational task can be accomplished efficiently, restrict ourselves to analysis of Turing machine model
+. analog computation: analog computers can solve efficiently when Turing machines can't -> violation? but when assumption about presence of noise in analog computers is made, their power disappears?? 
+    . unlike analog computation, QM can tolerate finite amount of noise and retain computational advantages
+. first challenge: number is prime or composite using randomized algorithm -> could only determine if probably prime/composite -> perform the algorithm a few times
+. ad hoc modification -> Any algorithmic process can be simulated efficiently using a probabilistic Turing machine
+. Deutsch: can laws of physics be used to derive stronger version of Church-Turing thesis -> computational device capable of efficiently simulating an arbitrary physical system -> because laws of physics were QM -> quantum analogs of machines defined by Turing
+
+- http://theory.caltech.edu/~preskill/ph229/
+- https://phas.ubc.ca/~phys304/2008-Phys304Website/
+
+== QM/MM
+- https://www.mpinat.mpg.de/634655/Groenhof_2013_Meth_Mol_Biol.pdf[Introduction to QM/MM Simulations]
+- https://dasher.wustl.edu/chem478/lectures/lecture-26.pdf[Quantum Mechanics/ Molecular Mechanics (QM/MM)]
+- https://www.gromacs.org/topic/qmmm.html[Hybrid Quantum-Classical simulations (QM/MM) with CP2K interface]
+- https://pubs.acs.org/doi/10.1021/acs.jctc.0c01112[Machine Learning in QM/MM Molecular Dynamics Simulations of Condensed-Phase Systems]
+- https://manual.gromacs.org/current/reference-manual/special/mimic-qmmm.html[MiMiC Hybrid Quantum Mechanical/Molecular Mechanical simulations]
+- https://manual.gromacs.org/2021.2/reference-manual/special/qmmm.html[Mixed Quantum-Classical simulation techniques]
+- https://onlinelibrary.wiley.com/doi/abs/10.1002/qua.26486[A user-friendly, Python-based quantum mechanics/Gromacs interface: gmx2qmmm]
+- http://cmb.bio.uni-goettingen.de/pract/p7/[Practical: Introduction to quantum mechanics / molecular mechanics (QM/MM) simulations]
+- https://www.ebi.ac.uk/training/materials/biomolecular-simulations-materials/introduction-to-qm-mm/introduction-to-qm-mm/[Introduction to QM/MM]

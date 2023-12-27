@@ -1,5 +1,5 @@
 ---
-title: "quantum computing, quantum chemistry and statistical thermodynamics reading log"
+title: "notes on papers related to chemistry"
 tags: quantum, chemistry, thermodynamics
 date: 2023-12-22
 ---
