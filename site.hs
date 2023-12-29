@@ -124,6 +124,14 @@ main = hakyllWith config $ do
         >>= loadAndApplyTemplate "templates/post.html" postCtx
         >>= loadAndApplyTemplate "templates/default.html" postCtx
         >>= relativizeUrls
+  
+    match "books/**" $ do
+      route appendIndex
+      compile $ do
+        pandocCompilerWithAsciidoctor
+          >>= loadAndApplyTemplate "templates/post.html" postCtx
+          >>= loadAndApplyTemplate "templates/default.html" postCtx
+          >>= relativizeUrls
 
   create ["archive.html"] $ do
     route appendIndex
@@ -147,6 +155,7 @@ main = hakyllWith config $ do
       let indexCtx =
             listField "posts" postCtx (recentFirst =<< loadAll "posts/*")
               `mappend` listField "courses" postCtx (recentFirst =<< loadAll "courses/**")
+              `mappend` listField "books" postCtx (recentFirst =<< loadAll "books/**")
               `mappend` defaultContext
 
       getResourceString

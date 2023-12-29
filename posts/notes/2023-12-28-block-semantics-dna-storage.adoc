@@ -1,0 +1,49 @@
+---
+title: "Paper: Efficiently Enabling Block Semantics and Data Updates in DNA Storage"
+date: 2023-12-28
+tags: synbio, paper
+---
+
+https://arxiv.org/abs/2212.13447[Source]
+
+:toc:
+
+== abstract
+* storage space into fixed-sized units
+* pair of random access PCR primers of length 20 define an independent storage partition, which is managed indepedently of other partitions
+* transform internal addressing scheme of a partition into an equivalent PCR-compatible -> run PCR with primers that can be variably elongated to include desired part of internal address
+** retrieve a specific block with high accuracy
+** 140x reduction in sequencing cost and latency
+
+== introduction
+* similarity search
+* runtimes for automating wetlab protocols
+* provide random access at nearly constant latency via PCR
+* current state of the art: key-valye object stores
+** pair of primers define kay and arbitrarly sized value stored in molecules tagged with same primers
+* large objects stored across many molecules, all of which are retrieved with sufficient uniformity
+** internal address: part of molecule that uniquely identify and re-establish order
+** object than spans N molecules requires log_4 N bases for indexing
+* primers:
+** lots of unique combinations but all aren't appropriate
+** must be balanced: GC content (50%)
+** all primers used in same DNA sample must be significantly different from each other in Hamming distance to avoid amplication of unwanted data
+*** minimum pairwise distance (a problem) only around 1000-3000 primers can fit the constraints
+* can only chemically distinguish 1000 different objects
+* with 1TB of data, the smallest unit of access is 1GB, so we always have to sequence this much DNA, no matter how small the unit we want is
+* using longer primers doesn't work: compatible primers scale linearly
+* can't build a functional data storage because of:
+** allowing arbitrary size, can't easily get small objects
+*** high Hamming distance
+*** many cycles of PCR
+*** object-based design results in flat architechture
+**** no logical order/distance metric between objects
+*** limiting sequential access to a single object -> random access
+
+paper's proposal: block storage semantics
+- each block independently read/written to
+- group of consecutive blocks can be efficieetnly retriveed
+- numer of mutually compatible primer pairs is limited, internal address space avalible to any pair of primers is virutally unlimited
+
+contributions
+-

@@ -4,8 +4,6 @@ date: 2022-04-27
 tags: computer science education
 ---
 
-_Understanding: 9, Interest: 9_
-
 Original Post: https://felleisen.org/matthias/Thoughts/Developing_Developers.html[Developing
 Developers]
 

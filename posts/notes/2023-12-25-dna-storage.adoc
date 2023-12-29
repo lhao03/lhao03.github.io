@@ -1,8 +1,10 @@
 ---
-title: "DNA Storage"
+title: "Paper: The DNA Data Storage Model"
 date: 2023-12-25
-tags: synbio
+tags: synbio, paper
 ---
+
+https://www.computer.org/csdl/magazine/co/2023/07/10154188/1O1wUGjK41O[Source]
 
 == points about dna
 *  no preexisting media 

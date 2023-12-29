@@ -4,8 +4,6 @@ date: 2022-05-01
 tags: computer science education, paper
 ---
 
-_Understanding: 9, Interest: 6_
-
 Laurie Murphy and Lynda Thomas. 2008. Dangers of a fixed mindset:
 implications of self-theories research for computer science education.
 In Proceedings of the 13th annual conference on Innovation and

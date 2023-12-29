@@ -1,4 +1,0 @@
----
-description: "CPSC 322"
-title: "CPSC 322: Introduction to Artificial Intelligence"
----

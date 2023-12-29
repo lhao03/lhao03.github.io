@@ -1,0 +1,7 @@
+---
+title: "Paper: First-principles computational studies of the torsional potential energy surface of the sec-butyl radical"
+tags: first-principles, chemistry, thermodynamics, paper
+date: 2023-12-22
+---
+
+https://groups.chem.ubc.ca/wang/papers/CJC_89_1469_2011.pdf[Source]

@@ -1,0 +1,246 @@
+---
+title: "Programmed Inequality"
+tags: feminism
+---
+
+_Updated: 2022-06-01_
+
+== 1. War Machines
+
+* Colossus: first digital, electronic, programmable computers
+* deployed during World War II
+* thousands of women worked at Bletchley
+
+Women were: > […] positioned as a "reserve" labor force impelled into
+masculine-coded jobs due to the exigencies of war—and dispensed with
+immediately there-after.
+
+____
+When women do not fulfill the role of inventor or entrepreneur in a way
+comparable to the men who have up until now been the main focus of
+computing history, their labor is often regarded as not being integral
+to the main narrative of computing’s history.
+____
+
+____
+computing’s early beginnings as a feminized field presaged specific
+gendered labor hierarchies in peacetime—ones that put computing work at
+the bottom of the white-collar labor pyramid until the rise of
+technocratic ideals in the 1960s that reshaped the expectations and
+status of machine workers
+____
+
+=== Creating Information Workers
+
+* British and American projects employed women as human computers
+* IBM UK: was so feminized that management measured production in "girl
+hours" in 1960s
+* Comrie: general-purpose office machines could be used for complex
+scientific calculation
+** young women workers were key to his success
+
+____
+In addition, their numbers in the labor force were plentiful and, Comrie
+asserted, they diligently did work that young men saw as boring,
+dead-end drudgery. Like many other men in charge of computing systems,
+Comrie saw women’s labor not as an add-on but as foundational to his
+systems’ success.
+____
+
+____
+Turnover through marriage was supposed to ensure women didn’t tire of
+the work or require promotion to better—and better paid—work, as that
+would throw his system out of alignment.
+____
+
+____
+In both the private and public sector, women clustered in low-level
+office jobs. Often, this work was referred to as subclerical—that is,
+below real clerical work, an idea later echoed by the informal
+appellation pink-collar labor. Defined by a lack of authority over other
+workers as much as by an assumption of skilllessness, subclerical work
+increasingly became seen as ideal for young women in the twentieth
+century.
+____
+
+=== Gendered War Work and High-Stakes Electronic Computing
+
+____
+but the most important and voluminous intelligence work of the war was
+machine-aided and feminized. Women’s labor formed the nucleus of the
+British wartime information machine. 1942: shortage of manpower required
+a total reliance on women trainees from then on. […] therefore that
+women were as of now "eligible equally with men for all the training,"
+and "as regards the actual curriculum of training, the same course is
+available to men and women." […] "it has been found that women prove
+to be equally apt pupils,"
+____
+
+____
+[…] Ministry of Labour also noted that only women who "show[ed]
+promise" would be "treated in the same way as men"
+____
+
+____
+tried to make the most of available labor pool by increasingly adapting
+to the living patterns of married women and women with children.
+____
+
+____
+Their labor was important enough to the war effort to warrant the waste
+and logistical inconvenience of rearranging training schedules and
+configuring shortened shifts.
+____
+
+== From Listening to Morse Code to Breaking Enigma: Codebreaking’s Layers of Data Processing
+
+____
+men and machines formed an unstoppable cybernetic system […] In reality,
+this relationship was far less neat and far more mediated by layers of
+communication and data-processing. Given that these young women had
+family and friends in the line of fire, the idiosyncracies of their
+machines were as frightening as they were frustrating. In the opinion of
+leading Post Office engineer Tommy Flowers, the only way to speed the
+pace of codebreaking further—and enhance accuracy—was to use an
+all-electronic computer.
+____
+
+== Killing the Golden Geese
+
+____
+The male-oriented nature of apprenticeship to engineering maintenance
+work created a dire shortage of maintenance engineers for Bletchley’s
+machines
+____
+
+____
+As a result, a special nationwide program of recruitment for engineering
+trainees was established for sixteen- to nineteen-year-old boys. These
+very young men with no experience were seen as a better investment than
+women who already worked with the machines because they were expected to
+have much longer careers, justifying the training involved.
+____
+
+____
+Interestingly, men who supervised machine work were there less to
+facilitate the work or give guidance to the operators, and more for
+their own benefit.
+____
+
+____
+One woman from the wireless transmission section at Bletchley tried to
+make a career in industry after VE day. Having been given over a year’s
+training as a high-speed wireless operator while in the Women’s
+Auxiliary Air Force, she was well qualified. Yet her plans evaporated
+when she found, to her surprise, that the main cable company was now
+only accepting men.
+____
+
+=== The Girls in the Machine
+
+____
+Postwar unemployment for women was worsened by "a recurring demand that
+such jobs as were available should be reserved for men, and women should
+go back to the home, whatever that might mean,"
+____
+
+____
+this was not a key factor in computing work, which had been gendered
+feminine even before the war.
+____
+
+____
+computerization’s history is largely a narrative of how the
+data-intensive state expands its reach and power by taking for granted,
+and rendering invisible, ever-greater numbers of information workers.
+____
+
+____
+[…] work itself was meanwhile constructed as feminized and deskilled
+despite its apparent complexity.
+____
+
+____
+The double-edged sword of feminization both helped and hurt the progress
+of computing early on, as it defined understandings of how to structure
+and deploy large-scale computational projects
+____
+
+____
+Another description states that women "tended" the machines, rather
+than more accurately stating that they operated, troubleshot, tested,
+programmed, repaired, and even helped build them.
+____
+
+____
+Much of women’s wartime training became wasted—not because they chose to
+drop out of the workforce, but because they were no longer considered
+good candidates to hire when men returned to the labor pool.
+____
+
+____
+Only in certain jobs—ones that both retained a feminized image and
+suffered labor shortages—did women have a fighting chance.
+____
+
+____
+[…] an emerging technological regime based on ever-greater computing
+power would have a critical impact on women’s labor equality.
+____
+
+____
+As more massive, more complex, and faster data-processing systems took
+hold in government and industry, these workers were consolidated into an
+essential underclass of non-working-class, sub-white-collar office
+labor.
+____
+
+____
+The Civil Service would become ground zero for the changes in computing
+labor that would define women’s position in the new technology landscape
+as not only subordinate but as fundamentally separate from their male
+peers.
+____
+
+=== Equal Pay, Marriage Bars, and Dead-End Machine Work
+
+____
+Women’s growing numbers and their potential power in the white-collar
+labor market were fast becoming seen as one of the biggest threats to
+the national order since industrial labor organization.
+____
+
+____
+In the aftermath of World War II, the gov-
+ernment’s attitude had changed little from just after World War I, when a
+War Cabinet report stated: “Girls and women have regarded their work
+as incidental rather than as a main purpose of their lives.” (50)
+____
+
+____
+“It seems sensible to assume that virtually all men are and
+always have been and always will be in the market for employment. But
+experience shows that the proportion of women seeking employment is
+variable within limits in response to the influence of social forces” (italics
+mine). (50)
+____
+
+____
+The government’s expectation that women would resign on mar-
+riage aligned with a general perception of women workers as an elastic
+and incidental labor force who conveniently inhabited a holding pattern
+doing unpaid work in the home when not needed in the paid labor force. (54)
+____
+
+
+____
+Seen as temporary workers, women
+were usually given less responsible jobs that were not likely to lead to
+careers. (55)
+____
+
+____
+Successive governments recognized harnessing the power of these early computing systems, which were often untested and unwieldy, as a crucial component of national progress. (57)
+____
+
+== 2. Data Processing in Peacetime

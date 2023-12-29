@@ -1,10 +1,8 @@
 ---
 title: "Paper: Guiding Target Synthesis with Statistical Modeling Tools: A Case Study in Organocatalysis"
 date: 2022-04-27
-tags: chem, paper
+tags: chemistry, paper
 ---
-
-_Understanding = 4, Interest: 7_
 
 Guiding Target Synthesis with Statistical Modeling Tools: A Case Study in Organocatalysis
 Isaiah O. Betinol, Yutao Kuang, and Jolene P. Reid

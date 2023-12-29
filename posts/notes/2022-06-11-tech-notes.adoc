@@ -1,6 +1,6 @@
 ---
 title: Tech Notes
-tags: technology
+tags: technical
 ---
 
 == technologies

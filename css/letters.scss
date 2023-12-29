@@ -79,4 +79,17 @@ article .header {
   }
 }
 
-
+.link-no-style-books {
+  margin-top: 15px;
+  a {
+    all: unset;
+    cursor: pointer;
+    margin: 4px 0;
+    text-align: center;
+    color: $backgroundColor;
+    padding: 3px 15px;
+    margin: auto;
+    font-weight: bold;
+    border-radius: 8px;
+  }
+}

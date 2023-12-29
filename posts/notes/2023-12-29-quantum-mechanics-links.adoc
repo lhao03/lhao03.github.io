@@ -1,0 +1,9 @@
+---
+title: "QM Links"
+date: 2023-12-29
+tags: quantum
+---
+
+== Link
+- http://theory.caltech.edu/~preskill/ph229/
+- https://phas.ubc.ca/~phys304/2008-Phys304Website/

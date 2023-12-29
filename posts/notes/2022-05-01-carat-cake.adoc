@@ -4,10 +4,6 @@ date: 2022-05-01
 tags: operating systems, paper
 ---
 
-
-
-_Understanding: 7, Interest: 8_
-
 Brian Suchy, Souradip Ghosh, Drew Kersnar, Siyuan Chai, Zhen Huang,
 Aaron Nelson, Michael Cuevas, Alex Bernat, Gaurav Chaudhary, Nikos
 Hardavellas, Simone Campanoni, and Peter Dinda. 2022. CARAT CAKE:

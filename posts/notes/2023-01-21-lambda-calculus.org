@@ -1,5 +1,9 @@
-* Lambda Calculus Variables
-- https://www3.cs.stonybrook.edu/~cram/cse526/Spring20/Lectures/untyped-lambda.pdf
+---
+title: Lambda Calculus Variables
+tags: programming languages
+---
+
+https://www3.cs.stonybrook.edu/~cram/cse526/Spring20/Lectures/untyped-lambda.pdf
 
 
 #+BEGIN_SRC

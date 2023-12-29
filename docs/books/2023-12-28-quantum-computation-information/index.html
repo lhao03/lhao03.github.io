@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lucy H | Quantum Computation and Quantum Information</title>
+  <link rel="stylesheet" href="../../css/main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
+  <!-- and it's easy to individually load additional languages -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/languages/scheme.min.js"></script>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/base16/onedark.min.css" />
+  <script>
+    hljs.highlightAll();
+  </script>
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+  <link rel="preconnect" href="https://www.googletagmanager.com" />
+  <link rel="preconnect" href="https://www.google-analytics.com" />
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KDGPVMHC9Q"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-KDGPVMHC9Q");
+  </script>
+
+  <!-- basic favicon -->
+  <link rel="icon" href="../../images/android-chrome-384x384.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../images/android-chrome-384x384.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../images/android-chrome-384x384.png" />
+  <link rel="apple-touch-icon-precomposed" href="../../images/android-chrome-384x384.png" />
+</head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <a href="../../">
+          <img src="../../images/android-chrome-384x384.png" style="padding-right: 10px" />
+        </a>
+      </div>
+    </header>
+
+    <main role="main">
+      <h1>Quantum Computation and Quantum Information</h1>
+      <div>
+  
+  <div class="header">
+    Posted on December 28, 2023
+    
+  </div>
+  <div class="tags">
+    
+    Tags: quantum
+    
+  </div>
+  <div class="content">
+    <h2 id="global-perspectives">1.1: global perspectives</h2>
+<ul>
+<li>QC and QI: study of information processing tasks accomplished using QM systems</li>
+</ul>
+<h3 id="section-1">1.1.1:</h3>
+<ul>
+<li>classical physics were predicting absurdities -&gt; UV catastrophe or electrons spiraling into the nucleus -&gt; creation of QM</li>
+<li>QM: set of rules for construction of physical theories
+<ul>
+<li>possible to use quantum effects to signal faster than light -&gt; whether it is possible to clone an unknown quantum state (construct copy of QS) -&gt; not possible in general with QM -&gt; no-cloning theorem</li>
+</ul></li>
+<li>controlling single quantum systems -&gt; trap single atom in atom trap, isolating from world allowing us to probe it -&gt; explore untouched regimes in Nature</li>
+<li>computer science -&gt; Church-Turing Theorem -&gt; UTM complexly captures what it means to perform a task by algorithmic means</li>
+<li>quantum effects beginning to interfere in functioning of electronic devices as they are getting smaller and smaller</li>
+<li>failure of Moore’s Law -&gt; move to different computing paradigm
+<ul>
+<li>ordinary computer can simulate QC but not efficiently (polynomial time)</li>
+</ul></li>
+<li>strengthened version of Church-Turing thesis:Any algorithmic process can be simulated efficiently using a Turing machine -&gt; for purposes of analyzing whether a given computational task can be accomplished efficiently, restrict ourselves to analysis of Turing machine model</li>
+<li>analog computation: analog computers can solve efficiently when Turing machines can’t -&gt; violation? but when assumption about presence of noise in analog computers is made, their power disappears??
+<ul>
+<li>unlike analog computation, QM can tolerate finite amount of noise and retain computational advantages</li>
+</ul></li>
+<li>first challenge: number is prime or composite using randomized algorithm -&gt; could only determine if probably prime/composite -&gt; perform the algorithm a few times</li>
+<li>ad hoc modification -&gt; Any algorithmic process can be simulated efficiently using a probabilistic Turing machine</li>
+<li>Deutsch: can laws of physics be used to derive stronger version of Church-Turing thesis -&gt; computational device capable of efficiently simulating an arbitrary physical system -&gt; because laws of physics were QM -&gt; quantum analogs of machines defined by Turing</li>
+<li>Universal Quantum Computer ?</li>
+<li>quantum computers may be able to efficiently solve problems that have no efficient solution on a probabilistic Turing machine
+<ul>
+<li>Shor and Grover algorithms</li>
+</ul></li>
+<li>Feynman: essential difficulties in simulating quantum mechanics with classical computers -&gt; build computers based on principles of quantum mechanics to avoid difficulties</li>
+<li>algorithm design for quantum computers is hard because
+. human intuition is rooted in classical world
+. must design an algorithm that is better than existing classical algorithm, not just QM!</li>
+<li>while computer science was exploding, information theory was too</li>
+<li>Shannon: mathematically define concept of information
+<ul>
+<li>two key questions about communication of information:
+<ul>
+<li>what resources are required to send information over communications channel?</li>
+<li>can information be transmitted in a way that is protected against noise in communications channel</li>
+</ul></li>
+<li>two fundamental theories:
+<ul>
+<li>noiseless channel coding theorem: quantifies physical resources required to store the output from information source</li>
+<li>noisy channel coding theorem: quantifies how much information it is possible to reliably transmit through noisy communications channel -&gt; upper limit on protection afforded by error-correcting codes</li>
+</ul></li>
+</ul></li>
+<li>to achieve reliable transmission in presence of noise: error-correcting codes</li>
+<li>quantum information theory:
+<ul>
+<li>Schumacher: quantum bit/qubit has tangible physical resource (analogue to noiseless coding theorem)</li>
+<li>but no analogue to noisy channel coding theorem</li>
+</ul></li>
+<li>theory of quantum error-correction has been developed: allows QC to compute efficiently in presence of noise and allow communication over noisy quantum channels</li>
+<li>CSS (Calderbank, Shor, Steane) codes and stabilizer codes (Calderbank, Rains, Shor, Sloane)
+<ul>
+<li>quantum error-correcting codes: protect quantum states against noise - transmitting ordinary classical information using quantum channel?</li>
+<li>Bennett/Wiesner: transmit two classical bits of information while only transmitting one quantum bit -&gt; superdense coding</li>
+</ul></li>
+<li>distributed QC: QC require exponentially less communication to solve certain problems</li>
+<li>study of information theory: properties of single communications channel
+<ul>
+<li>in applications: networks of many channels -&gt; networked information theory: information carrying properties of networks of communication channels -&gt; very developed</li>
+<li>networked quantum information theory, still in infancy, no unifying theory of networked information theory exists for quantum channels</li>
+</ul></li>
+<li>cryptography: communication and computation between two paries who may not trust each other
+<ul>
+<li>private key cryptosystems: A and B communicate by sharing a private key (only they know)
+<ul>
+<li>problems: how to distribute the keys?</li>
+<li>QM can be used to distrbute keys such that A and B’s security is not compromised -&gt; quantum cryptography -&gt; observation disturbs the system being observed -&gt; an observer would be visible as disturbance of communications channel</li>
+</ul></li>
+<li>public key cryptosystems: B publishes a key available to the general public, A can use this key to encrypt a message but a third party cannot use the public key to decrypt the message. B has secret key matched to the public key.
+<ul>
+<li>solve problem of key distribution</li>
+<li>RSA cryptosystem -&gt; most widely deployed key cryptosystem</li>
+<li>difficult to invert encryption stage if only public key available -&gt; belief that this cannot be solved on classical computer (factoring), but it can be solved on QC!</li>
+</ul></li>
+</ul></li>
+<li>quantum entanglement: uniquely QM resource</li>
+</ul>
+<h3 id="future">1.1.2: future</h3>
+<ul>
+<li>think physically about computation</li>
+<li>any physical theory -&gt; basis for theory of information processing and communication</li>
+<li>think computationally about physics -&gt; physics about understanding elementary objects/simple systems, interesting things happen when things are larger and more complicated (chemistry and engineering, ad hoc fashion)</li>
+<li>computation and algorithms as systematic means of constructing and understanding (small and relatively complex) systems</li>
+</ul>
+<h2 id="quantum-bits">1.2: quantum bits</h2>
+<ul>
+<li>mathematical objects with certain specific properties</li>
+<li>abstract entity: construct a general theory of QC/QI that doesn’t depend on specific system</li>
+<li>qubit can be <span class="math inline">|0⟩</span>, <span class="math inline">|1⟩</span> or a linear combination of states <span class="math inline">|<em>ψ</em>⟩=<em>α</em>|0⟩ + <em>β</em>|1⟩</span> (superposition)
+<ul>
+<li>vector in 2D space</li>
+<li>computational basis states: <span class="math inline">|0⟩</span>, <span class="math inline">|1⟩</span> -&gt; form orthoormal basis for this vector space</li>
+<li>we cannot examine a qubit to determine it’s quantum state</li>
+<li>qubit’s state is unit vector in 2D complex vector space</li>
+<li>lack of direct correspondence between elements of abstraction and real world with qubits -&gt; there is indirect correspondence for qubit states to be manipulated and transformed to lead to measurement outcomes -&gt; these quantum states have real, experimentally verifiable consequences.</li>
+</ul></li>
+<li>exist in continuum of states until it is observed</li>
+<li>because <span class="math inline">|<em>α</em>|<sup>2</sup> + |<em>β</em>|<sup>2</sup> = 1</span> we can say: <span class="math inline">|<em>ψ</em>⟩ = <em>e</em><sup><em>i</em><em>γ</em></sup>(<em>c</em><em>o</em><em>s</em>(<em>θ</em>/2)+<em>e</em><sup><em>i</em><em>ϕ</em></sup><em>s</em><em>i</em><em>n</em>(<em>θ</em>/2))</span>
+<ul>
+<li><span class="math inline"><em>θ</em></span> and <span class="math inline"><em>ϕ</em></span> define a point on unit three-dimensional sphere (Bloch sphere)</li>
+<li>Bloch sphere can be used to describe single qubits</li>
+</ul></li>
+</ul>
+<p><img src="../../../images/qc/bloch.png" /></p>
+<ul>
+<li>how much information represented by a qubit -&gt; infinite number of points on unit sphere so infinite binary expansion of <span class="math inline"><em>θ</em></span>
+<ul>
+<li>not true: measurement changes the state of qubit, collasping the superposition
+<ul>
+<li>only 0 or 1, so measurement only returns one state</li>
+</ul></li>
+</ul></li>
+<li>would need to measure infinite number of qubits to determine <span class="math inline"><em>α</em></span> and <span class="math inline"><em>β</em></span>
+<ul>
+<li>how much information is represented by a qubit if we do not measure it? -&gt; potential amount of “hidden information” grows exponentially with more qubits</li>
+</ul></li>
+</ul>
+<h3 id="multiple-qubits">1.2.1: multiple qubits</h3>
+<ul>
+<li>two qubits have four computational basis states:
+<span class="math display">|<em>ψ</em>⟩=<em>α</em><sub>00</sub>|00⟩ + <em>α</em><sub>01</sub>|01⟩+<em>α</em><sub>10</sub>|10⟩ + <em>α</em><sub>11</sub>|11⟩</span></li>
+<li><span class="math inline">{0, 1}<sup>2</sup></span>: set of strings of length 2 with each letter either one or zero</li>
+<li>measuring the first qubit as 0 gives probability <span class="math inline">|<em>α</em><sub>00</sub>|<sup>2</sup> + |<em>α</em><sub>01</sub>|<sup>2</sup></span> and post-measurement state: <span class="math display">$$|\psi ' \rangle = \frac{(\alpha_{00} | 00 \rangle + \alpha_{01} | 01 \rangle)} {\sqrt{|\alpha_{00}|^2 + |\alpha_{01}|^2)}}$$</span></li>
+<li>important two qubit state, Bell state or EPR pair: <span class="math display">$$\frac{|00\rangle + |11 \rangle}{\sqrt{2}}$$</span>
+<ul>
+<li>key ingredient in quantum teleportation and superdense coding</li>
+</ul></li>
+</ul>
+  </div>
+  <div class="flex-row link-no-style">
+    
+    
+  </div>
+</div>
+
+
+    </main>
+
+    <footer>
+      <center>
+        <p>
+          <a href="../../archive">archive</a>
+          <a href="https://github.com/lhao03" target="_blank">github</a>
+          <a href="https://www.linkedin.com/in/lucy-hao/" target="_blank">linkedin</a>
+        </p>
+      </center>
+      Site powered by cats, 🍫 and
+      <a href="http://jaspervdj.be/hakyll">Hakyll</a>
+    </footer>
+  </body>
+</html>

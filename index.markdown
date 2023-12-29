@@ -13,7 +13,10 @@ List of things currently doing (in no particular order):
 - learning about quantum chemistry
 
 
-See my ramblings [here](/archive) and what I'm currently [reading](/read). You can also see my [CV](/cv/cv.pdf) or [resume](/resume-lucy/resume-Lucy-Hao.pdf).
+See my ramblings [here](/archive) and my paper log [here](/read). You can also see my [CV](/cv/cv.pdf) or [resume](/resume-lucy/resume-Lucy-Hao.pdf).
+
+## Books 
+$partial("templates/books.html")$
 
 ## Coursework
 $partial("templates/courses.html")$

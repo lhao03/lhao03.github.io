@@ -1,0 +1,12 @@
+---
+title: "Paper: How Long Can A C−C σ‑Single Bond Be"
+tags:  chemistry,paper
+date: 2023-12-22
+---
+https://pubs.acs.org/doi/pdf/10.1021/acs.jpca.0c08924[Source]
+
+days: dec 22
+
+terms I don't know: 
+
+. Lennard Jones type potential

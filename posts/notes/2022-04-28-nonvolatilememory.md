@@ -1,10 +1,8 @@
 ---
 title: "Paper: Non-Volatile Memory for Fast, Reliable File Systems"
 date: 2022-04-28
-tags: file systems, paper
+tags: systems, paper
 ---
-
-_Understanding: 7, Interest: 7_
 
 Mary Baker, Satoshi Asami, Etienne Deprit, John Ouseterhout, and Margo Seltzer. 1992. Non-volatile memory for fast, reliable file systems. In Proceedings of the fifth international conference on Architectural support for programming languages and operating systems (ASPLOS V). Association for Computing Machinery, New York, NY, USA, 10–22. [https://doi.org/10.1145/143365.143380](https://doi.org/10.1145/143365.143380)
 

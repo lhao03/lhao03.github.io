@@ -1,7 +1,7 @@
 ---
 title: Grad Schools
 date: 2022-04-05
-tags: grad
+tags: grad, school
 ---
 
 See my updated Notion with advisors https://band-atlasaurus-b04.notion.site/82456a9f86b04f3c8768c3ec0e0d8ef3?v=253cf96b73914f1dacecd152591f8d50[here].

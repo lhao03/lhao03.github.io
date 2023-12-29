@@ -4,8 +4,6 @@ tags: fairness, paper
 date: 2022-05-09
 ---
 
-_Understanding: 6.5, Interest: 7_
-
 Andrew D. Selbst, danah boyd, Sorelle A. Friedler, Suresh
 Venkatasubramanian, and Janet Vertesi. 2019. Fairness and Abstraction in
 Sociotechnical Systems. In FAT* ’19: Conference on Fairness,

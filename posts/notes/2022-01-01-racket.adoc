@@ -1,7 +1,7 @@
 ---
 title: λ Racket Shenanigans
 date: 2022-01-01
-tags: learning
+tags: learning, programming languages
 ---
 
 :source-highlighter: highlight.js
