@@ -14,6 +14,8 @@
   <script>
     hljs.highlightAll();
   </script>
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
 
   <link rel="preconnect" href="https://www.googletagmanager.com" />
   <link rel="preconnect" href="https://www.google-analytics.com" />
@@ -63,8 +65,8 @@
     <div class="sect1">
 <h2 id="_points_about_dna">points about dna</h2>
 <div class="sectionbody">
-<div class="olist arabic">
-<ol class="arabic">
+<div class="ulist">
+<ul>
 <li>
 <p>no preexisting media</p>
 </li>
@@ -74,7 +76,7 @@
 <li>
 <p>error characteristics</p>
 </li>
-</ol>
+</ul>
 </div>
 </div>
 </div>
@@ -85,15 +87,15 @@
 <ol class="arabic">
 <li>
 <p>encoding</p>
-<div class="olist arabic">
-<ol class="arabic">
+<div class="ulist">
+<ul>
 <li>
 <p>turning binary into ternary into bases</p>
 </li>
 <li>
 <p>more error prone sequences should be avoided</p>
 </li>
-</ol>
+</ul>
 </div>
 </li>
 <li>
@@ -123,35 +125,43 @@
 <div class="sect1">
 <h2 id="_application_presentation_session">application, presentation, session</h2>
 <div class="sectionbody">
-<div class="olist arabic">
-<ol class="arabic">
+<div class="ulist">
+<ul>
 <li>
 <p>done in binary</p>
 </li>
 <li>
 <p>application: how is this storage to be used?</p>
-</li>
+<div class="ulist">
+<ul>
 <li>
 <p>most likely archival</p>
+</li>
+</ul>
+</div>
 </li>
 <li>
 <p>presentation: preparation of bitstreams</p>
 </li>
 <li>
 <p>session: access to the DNA storage interface</p>
-</li>
+<div class="ulist">
+<ul>
 <li>
 <p>object based</p>
 </li>
-</ol>
+</ul>
+</div>
+</li>
+</ul>
 </div>
 </div>
 </div>
 <div class="sect1">
 <h2 id="_dna_channel">DNA channel</h2>
 <div class="sectionbody">
-<div class="olist arabic">
-<ol class="arabic">
+<div class="ulist">
+<ul>
 <li>
 <p>takes bitstream or digital object from session layer and processes those bits</p>
 </li>
@@ -160,85 +170,103 @@
 </li>
 <li>
 <p>when bitstream is presented:</p>
-<div class="olist arabic">
-<ol class="arabic">
+<div class="ulist">
+<ul>
 <li>
 <p>packetization: longest strand of DNA that can be currently made (300 bases), so the bitsreams must be broken down</p>
-</li>
-</ol>
-</div>
-</li>
+<div class="ulist">
+<ul>
 <li>
 <p>add indices to each segment</p>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>error correction: add redundant information to reduce probability of random errors</p>
 </li>
-</ol>
+</ul>
 </div>
 </li>
 <li>
+<p>error correction: add redundant information to reduce probability of random errors</p>
+<div class="ulist">
+<ul>
+<li>
 <p>augment segments (inner code) or add segments (outer code)</p>
-<div class="olist arabic">
-<ol class="arabic">
+</li>
+</ul>
+</div>
+</li>
 <li>
 <p>translation: binary to bases</p>
 </li>
 <li>
 <p>transformations: repeated bases (homopolymers), high proportion of G and C and some other patterns can cause errors</p>
 </li>
-</ol>
+</ul>
 </div>
 </li>
-</ol>
+</ul>
 </div>
 </div>
 </div>
 <div class="sect1">
 <h2 id="_dna_physical_layer">DNA physical layer</h2>
 <div class="sectionbody">
-<div class="olist arabic">
-<ol class="arabic">
+<div class="ulist">
+<ul>
 <li>
 <p>synthesis (writing)</p>
-</li>
+<div class="ulist">
+<ul>
 <li>
 <p>silcon technology based implementations that miniaturize synthesis device</p>
 </li>
+</ul>
+</div>
+</li>
 <li>
 <p>storage</p>
-</li>
+<div class="ulist">
+<ul>
 <li>
 <p>store in dry and chemically inert environment</p>
 </li>
 <li>
 <p>organized with physical tape system</p>
 </li>
+</ul>
+</div>
+</li>
 <li>
 <p>reading (sequencing)</p>
-</li>
+<div class="ulist">
+<ul>
 <li>
 <p>sequencing-by-synthesis: high accuracy, high latency</p>
 </li>
 <li>
 <p>nanopore sequencing: lower latency,  lower accuracy</p>
 </li>
+</ul>
+</div>
+</li>
 <li>
 <p>retrieval (important for DNA storage!)</p>
-</li>
+<div class="ulist">
+<ul>
 <li>
 <p>easy: read entire archive</p>
 </li>
 <li>
 <p>if multiple objects stored in archive, random access operations are required</p>
 </li>
+</ul>
+</div>
+</li>
 <li>
 <p>PCR and DNA pull-out with magngetic nanoparticles</p>
-</li>
+<div class="ulist">
+<ul>
 <li>
 <p>PCR:</p>
-</li>
+<div class="ulist">
+<ul>
 <li>
 <p>session layer assign a set of object IDs, and at encoding time channal layer appends a set of predefined DNA base sequences to both ends of a DNA sequence belonging to an object (target sites)</p>
 </li>
@@ -251,9 +279,13 @@
 <li>
 <p>result is pool of mostly DNA molecules belonging to object we want</p>
 </li>
+</ul>
+</div>
+</li>
 <li>
 <p>DNA pull-out</p>
-</li>
+<div class="ulist">
+<ul>
 <li>
 <p>channel layer only needs to append the object IDs as target sites at one end of every DNA sequence belonging to an object</p>
 </li>
@@ -263,19 +295,25 @@
 <li>
 <p>probes bind to DNA molecules and can separate them</p>
 </li>
-</ol>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
 </div>
 </div>
 </div>
 <div class="sect1">
 <h2 id="_problem_for_our_team_to_investigate">problem for our team to investigate</h2>
 <div class="sectionbody">
-<div class="olist arabic">
-<ol class="arabic">
+<div class="ulist">
+<ul>
 <li>
 <p>make retrieval of information easier</p>
 </li>
-</ol>
+</ul>
 </div>
 </div>
 </div>
@@ -298,7 +336,7 @@
     <a href="../../../posts/2023-12-26-not-written-inawhile/index.html">⇐ Newer post</a>
     
     
-    <a href="../../../posts/notes/2023-12-24-qmmm/index.html">Older post ⇒</a>
+    <a href="../../../posts/notes/2023-12-25-quantum-compute/index.html">Older post ⇒</a>
     
   </div>
 </div>

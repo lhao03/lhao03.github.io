@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lucy H | Quantum Computation and Quantum Information (org mode notes)</title>
+  <link rel="stylesheet" href="../../../css/main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
+  <!-- and it's easy to individually load additional languages -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/languages/scheme.min.js"></script>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/base16/onedark.min.css" />
+  <script>
+    hljs.highlightAll();
+  </script>
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+  <link rel="preconnect" href="https://www.googletagmanager.com" />
+  <link rel="preconnect" href="https://www.google-analytics.com" />
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KDGPVMHC9Q"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-KDGPVMHC9Q");
+  </script>
+
+  <!-- basic favicon -->
+  <link rel="icon" href="../../../images/android-chrome-384x384.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../../images/android-chrome-384x384.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../../images/android-chrome-384x384.png" />
+  <link rel="apple-touch-icon-precomposed" href="../../../images/android-chrome-384x384.png" />
+</head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <a href="../../../">
+          <img src="../../../images/android-chrome-384x384.png" style="padding-right: 10px" />
+        </a>
+      </div>
+    </header>
+
+    <main role="main">
+      <h1>Quantum Computation and Quantum Information (org mode notes)</h1>
+      <div>
+  
+  <div class="header">
+    Posted on December 28, 2023
+    
+  </div>
+  <div class="tags">
+    
+    Tags: <a title="All pages tagged 'quantum'." href="../../../tags/quantum/index.html">quantum</a>
+    
+  </div>
+  <div>
+    <h2 id="quantum-bits">1.2: quantum bits</h2>
+<ul>
+<li>mathematical objects with certain specific properties</li>
+<li>abstract entity: construct a general theory of QC/QI that doesn’t depend on specific system</li>
+<li>qubit can be <span class="math inline">|0⟩</span>, <span class="math inline">|1⟩</span> or a linear combination of states <span class="math inline">|<em>ψ</em>⟩=<em>α</em>|0⟩ + <em>β</em>|1⟩</span> (superposition)
+<ul>
+<li>vector in 2D space</li>
+<li>computational basis states: <span class="math inline">|0⟩</span>, <span class="math inline">|1⟩</span> -&gt; form orthoormal basis for this vector space</li>
+<li>we cannot examine a qubit to determine it’s quantum state</li>
+<li>qubit’s state is unit vector in 2D complex vector space</li>
+<li>lack of direct correspondence between elements of abstraction and real world with qubits -&gt; there is indirect correspondence for qubit states to be manipulated and transformed to lead to measurement outcomes -&gt; these quantum states have real, experimentally verifiable consequences.</li>
+</ul></li>
+<li>exist in continuum of states until it is observed</li>
+<li>because <span class="math inline">|<em>α</em>|<sup>2</sup> + |<em>β</em>|<sup>2</sup> = 1</span> we can say: <span class="math inline">|<em>ψ</em>⟩ = <em>e</em><sup><em>i</em><em>γ</em></sup>(<em>c</em><em>o</em><em>s</em>(<em>θ</em>/2)+<em>e</em><sup><em>i</em><em>ϕ</em></sup><em>s</em><em>i</em><em>n</em>(<em>θ</em>/2))</span>
+<ul>
+<li><span class="math inline"><em>θ</em></span> and <span class="math inline"><em>ϕ</em></span> define a point on unit three-dimensional sphere (Bloch sphere)</li>
+<li>Bloch sphere can be used to describe single qubits</li>
+</ul></li>
+</ul>
+<p><img src="../../images/qc/bloch.png" /></p>
+<ul>
+<li>how much information represented by a qubit -&gt; infinite number of points on unit sphere so infinite binary expansion of <span class="math inline"><em>θ</em></span>
+<ul>
+<li>not true: measurement changes the state of qubit, collasping the superposition
+<ul>
+<li>only 0 or 1, so measurement only returns one state</li>
+</ul></li>
+</ul></li>
+<li>would need to measure infinite number of qubits to determine <span class="math inline"><em>α</em></span> and <span class="math inline"><em>β</em></span>
+<ul>
+<li>how much information is represented by a qubit if we do not measure it? -&gt; potential amount of “hidden information” grows exponentially with more qubits</li>
+</ul></li>
+</ul>
+<h2 id="multiple-qubits">1.2.1 multiple qubits</h2>
+<ul>
+<li>two qubits have four computational basis states:
+<span class="math display">|<em>ψ</em>⟩=<em>α</em><sub>00</sub>|00⟩ + <em>α</em><sub>01</sub>|01⟩+<em>α</em><sub>10</sub>|10⟩ + <em>α</em><sub>11</sub>|11⟩</span></li>
+<li><span class="math inline">{0, 1}<sup>2</sup></span>: set of strings of length 2 with each letter either one or zero</li>
+<li>measuring the first qubit as 0 gives probability <span class="math inline">|<em>α</em><sub>00</sub>|<sup>2</sup> + |<em>α</em><sub>01</sub>|<sup>2</sup></span> and post-measurement state: <span class="math display">$$|\psi ' \rangle = \frac{(\alpha_{00} | 00 \rangle + \alpha_{01} | 01 \rangle)} {\sqrt{|\alpha_{00}|^2 + |\alpha_{01}|^2)}}$$</span></li>
+<li>important two qubit state: <span class="math display">$$\frac{|00\rangle + |11 \rangle}{\sqrt{2}}$$</span>
+<ul>
+<li>key ingredient in quantum teleportation and superdense coding</li>
+</ul></li>
+<li>Bell state:</li>
+</ul>
+  </div>
+  <div class="flex-row link-no-style">
+    
+    
+    <a href="../../../posts/2023-12-26-not-written-inawhile/index.html">Older post ⇒</a>
+    
+  </div>
+</div>
+
+
+    </main>
+
+    <footer>
+      <center>
+        <p>
+          <a href="../../../archive">archive</a>
+          <a href="https://github.com/lhao03" target="_blank">github</a>
+          <a href="https://www.linkedin.com/in/lucy-hao/" target="_blank">linkedin</a>
+        </p>
+      </center>
+      Site powered by cats, 🍫 and
+      <a href="http://jaspervdj.be/hakyll">Hakyll</a>
+    </footer>
+  </body>
+</html>
