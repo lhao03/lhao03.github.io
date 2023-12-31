@@ -13,6 +13,7 @@ author:         Lucy H.
 maintainer:     Lucy H.
 copyright:      2022 Lucy H.
 license:        BSD3
+license-file:   LICENSE
 build-type:     Simple
 extra-source-files:
     README.adoc
