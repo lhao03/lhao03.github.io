@@ -13,8 +13,8 @@ Here you can see how I rank my papers (when I don't forget to rank them) and the
 |Number |Interest |Understanding 
 
 |Efficiently Enabling Block Semantics and Data Updates in DNA Storage
-|
-|
+| 8
+| 6
 
 |First-principles computational studies of the torsional potential energy surface of the sec-butyl radical
 |

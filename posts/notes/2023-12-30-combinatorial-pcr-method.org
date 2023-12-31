@@ -1,0 +1,8 @@
+---
+title: "Paper: Combinatorial PCR Method for Eﬃcient, Selective Oligo Retrieval from Complex Oligo Pools"
+date: 2023-12-31
+tags: synbio, paper
+---
+
+#+title: 2023 12 30 Combinatorial Pcr Method
+

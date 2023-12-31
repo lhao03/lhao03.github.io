@@ -1,0 +1,53 @@
+---
+title: The Mythical Man Month
+tags: processes
+---
+
+After working in iGEM, I realized the club wasn't being run very well, so I started looking into how software teams work, my past experiences working in tech and books. This one, which I found out through https://jzhao.xyz/thoughts/The-Mythical-Man-Month[here] seems something I should read.
+
+== The Tar Pit
+
+* First, one must perform perfectly. The computer resembles the
+magic of legend in this respect, too. If one character, one pause, of
+the incantation is not strictly in proper form, the magic doesn't
+work. Human beings are not accustomed to being perfect, and few
+areas of human activity demand it. Adjusting to the requirement
+for perfection is, I think, the most difficult part of learning to
+program.
+
+* The obsolescence of an implementation must be measured against other existing implementations, not against unrealized concepts. The challenge and the mission are to find real solutions to real problems on actual schedules with
+available resources. 
+
+== The Mythical Man Month
+
+* Second, our estimating techniques fallaciously confuse effort with progress, hiding the assumption that men and months are interchangeable.
+
+* Fourth, schedule progress is poorly monitored. Techniques proven and routine in other engineering disciplines are considered radical innovations in software engineering.
+
+* Fifth, when schedule slippage is recognized, the natural (and traditional) response is to add manpower. Like dousing a fire with gasoline, this makes matters worse, much worse. More fire re- quires more gasoline, and thus begins a regenerative cycle which ends in disaster.
+
+* For the human makers of things, the incompletenesses and inconsistencies of our ideas , become clear only during implementation. Thus it is that writing, experimentation, "working out" are essential disciplines for the theoretician.
+
+* Cost does indeed vary as the product of the number of men and the number of months. Progress does not. Hence the man-month as a unit for measuring the size of a job is a dangerous and deceptive myth. It implies that men and months are interchangeable.
+
+* Men and months are interchangeable commodities only whena task can be partitioned among many workers with no communication among them.
+
+* The added burden of communication is made up of two parts, training and intercommunication. Each worker must be trained in the technology, the goals of the effort, the overall strategy, and the plan of work.
+
+* The maximum number of men depends upon the number of independent subtasks. From these two quantities one can derive schedules using fewer men and more months. (The only risk is product obsolescence.) One cannot, however, get workable schedules using more men and fewer months. 
+
+== The Surgical Team
+
+* I have earlier argued that the sheer number of minds to be coordinated affects the cost of the effort, for a major part of the cost is communication and correcting the ill effects of miscommunication (system debugging). This, too, suggests that one wants the system to be built by as few minds as possible.
+
+* The dilemma is a cruel one. For efficiency and conceptual integrity, one prefers a few good minds doing design and construction. Yet for large systems one wants a way to bring considerable manpower to bear, so that the product can make a timely appearance. How can these two needs be reconciled?
+
+* Mill's Proposal: A proposal by Harlan Mills offers a fresh and creative solution. Mills proposes that each segment of a large job be tackled by a team, but that the team be organized like a surgical team rather than a hog-butchering team. That is, instead of each member cutting away on the problem, one does the cutting and the others give him every support that will enhance his effectiveness and productivity.
+
+* Absolutely vital to Mills's concept is the transformation of programming "from private art to public practice" by making all the computer runs visible to all team members and identifying all programs and data as team property, not private property.
+
+* The program clerk: relieves programmers of clerical chores, systematizes and ensures proper performance of those oft-neglected chores, and enhances the team's most valuable asset—its work-product. Clearly the concept as set forth above assumes batch runs. When interactive terminals are used, particularly those with no hard-copy output, the program clerk's functions do not diminish, but they change. Now he logs all updates of team program copies from private working copies, still handles all batch runs, and uses his own interactive facility to control the integrity and availability of the growing product.
+
+== Aristocracy, Democracy and System Design
+
+* I will contend that conceptual integrity is the most important consideration in system design. It is better to have a system omit certain anomalous features and improvements, but to reflect one set of design ideas, than to have one that contains many good but independent and uncoordinated ideas. 

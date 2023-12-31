@@ -1,0 +1,73 @@
+---
+title: "Scalable DNA Storage with SynBio"
+date: 2023-12-31
+tags: synbio, paper
+---
+
+== Slide 1
+
+== Slide 2
+What is long term storage? Long term storage is defined as storage that [TODO]. Silicon based long term storage includes: external hard drives, flash drives, CDs which last around 5-20 years. Silicon based storage works broadly like this: file is turned into a stream of bits of 0s or 1s, and these bits are stored as charges based on the binary encoding. However, since most people don't wanna lug around pieces of storage, most people store their data on the cloud. But cloud storage isn't really in the cloud. Cloud storage is stored in giant buildings full of hard drives, some buildings taking up "nearly 200 acres of land apiece". In addition, cloud data centers get hot, which requires lots of cooling, resulting in data centers using as much energy as an airline. While cloud storage isn't as great a factor in global warming as oil and gas, information is growing rapidly, which will force these data centers to eat up more land and energy. Generally speaking, data centers have reached their peak efficiency with the level of scalability required.
+
+DNA storage is an emerging technology for long term storage. Generally the steps of storing information into DNA goes as follows:
+
+Compared to traditional long term storage mediums, DNA is more:
+* durable
+* dense
+*
+
+== Slide 3
+Currently DNA storage is the most durable and dense storage medium. However, it is not a easily scalable technology, which is what I believe synthetic biology can help with.
+
+Firstly, with synthesis:
+
+Secondly, with storage and retrieval:
+
+== Slide 4: Solution
+
+== Slide 5: Why enzymatic DNA sequencing?
+
+== Slide 6: Why block based semantics? 
+
+== Wet lab
+*
+
+== Dry Lab
+We can employ the engineering cycle with our software algorithms, which we can referred to as the software codec. 
+
+There needs to be a process for: 
+1. Encoding
+* requires generating primers and splitting a file across several DNA molecules if necessary 
+
+2. Decoding
+* error correction, reconstructing the file and applying update patches
+
+3. Updating data
+* because we aren't applying updates chemically, instead reading a DNA molecule gives us the original information and updates, which with long term storage shouldn't be alot. Using algorithms we can apply these updates to produce the final version of the data with updates applied.
+
+For Modelling, we can model:
+
+* the TdT enzyme using Michals-Menten kinetics 
+* how likely a primer is to "misprime" with protein modelling.
+* optimal concentrations of DNA molecules are required to keep sequencing costs low and 
+** this requires a feedback loop of wet lab giving us data from "Amplify-then-Measure" then dry lab using these numbers to estimate the costs of sequencing based on concentrations
+
+== Human Practices
+*
+
+== Sources
+=== Current Long Term Storage
+* https://mit-serc.pubpub.org/pub/the-cloud-is-material/release/1
+* https://contenteratechspace.com/6-best-ways-for-long-term-data-storage/
+* https://medium.com/stanford-magazine/carbon-and-the-cloud-d6f481b79dfe
+* https://www.cbc.ca/radio/spark/digital-data-has-an-environmental-cost-calling-it-the-cloud-conceals-that-researcher-says-1.6641268
+* https://thereader.mitpress.mit.edu/the-staggering-ecological-impacts-of-computation-and-the-cloud/
+
+=== Wet lab
+* https://www.nature.com/articles/s41467-019-10258-1[Terminator-free template-independent enzymatic DNA synthesis for digital information storage]
+* https://2021.igem.org/Team:Aachen
+* https://pubs.acs.org/doi/10.1021/acssynbio.3c00044[Spatially Selective Electrochemical Cleavage of a Polymerase-Nucleotide Conjugate]
+
+=== Dry Lab
+* https://www.nature.com/articles/srep14138
+* https://arxiv.org/abs/2212.13447

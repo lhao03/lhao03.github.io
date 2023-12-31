@@ -11,7 +11,9 @@ tags: fantasy
 
 == Heir of Fire ✅
 
-== Queen of Shadows 📖
+== Queen of Shadows ✅
+
+image::/images/books/qos/wild.jpeg[]
 
 == Empire of Storms
 

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lucy H | The Mythical Man Month</title>
+  <link rel="stylesheet" href="../../css/main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
+  <!-- and it's easy to individually load additional languages -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/languages/scheme.min.js"></script>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/base16/onedark.min.css" />
+  <script>
+    hljs.highlightAll();
+  </script>
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+  <link rel="preconnect" href="https://www.googletagmanager.com" />
+  <link rel="preconnect" href="https://www.google-analytics.com" />
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KDGPVMHC9Q"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-KDGPVMHC9Q");
+  </script>
+
+  <!-- basic favicon -->
+  <link rel="icon" href="../../images/android-chrome-384x384.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../images/android-chrome-384x384.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../images/android-chrome-384x384.png" />
+  <link rel="apple-touch-icon-precomposed" href="../../images/android-chrome-384x384.png" />
+</head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <a href="../../">
+          <img src="../../images/android-chrome-384x384.png" style="padding-right: 10px" />
+        </a>
+      </div>
+    </header>
+
+    <main role="main">
+      <h1>The Mythical Man Month</h1>
+      <div>
+  
+  <div class="header">
+    Posted on December 29, 2023
+    
+  </div>
+  <div class="tags">
+    
+    Tags: processes
+    
+  </div>
+  <div class="content">
+    <div class="paragraph">
+<p>After working in iGEM, I realized the club wasn’t being run very well, so I started looking into how software teams work, my past experiences working in tech and books. This one, which I found out through <a href="https://jzhao.xyz/thoughts/The-Mythical-Man-Month">here</a> seems something I should read.</p>
+</div>
+<div class="sect1">
+<h2 id="_the_tar_pit">The Tar Pit</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>First, one must perform perfectly. The computer resembles the
+magic of legend in this respect, too. If one character, one pause, of
+the incantation is not strictly in proper form, the magic doesn’t
+work. Human beings are not accustomed to being perfect, and few
+areas of human activity demand it. Adjusting to the requirement
+for perfection is, I think, the most difficult part of learning to
+program.</p>
+</li>
+<li>
+<p>The obsolescence of an implementation must be measured against other existing implementations, not against unrealized concepts. The challenge and the mission are to find real solutions to real problems on actual schedules with
+available resources.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_the_mythical_man_month">The Mythical Man Month</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Second, our estimating techniques fallaciously confuse effort with progress, hiding the assumption that men and months are interchangeable.</p>
+</li>
+<li>
+<p>Fourth, schedule progress is poorly monitored. Techniques proven and routine in other engineering disciplines are considered radical innovations in software engineering.</p>
+</li>
+<li>
+<p>Fifth, when schedule slippage is recognized, the natural (and traditional) response is to add manpower. Like dousing a fire with gasoline, this makes matters worse, much worse. More fire re- quires more gasoline, and thus begins a regenerative cycle which ends in disaster.</p>
+</li>
+<li>
+<p>For the human makers of things, the incompletenesses and inconsistencies of our ideas , become clear only during implementation. Thus it is that writing, experimentation, "working out" are essential disciplines for the theoretician.</p>
+</li>
+<li>
+<p>Cost does indeed vary as the product of the number of men and the number of months. Progress does not. Hence the man-month as a unit for measuring the size of a job is a dangerous and deceptive myth. It implies that men and months are interchangeable.</p>
+</li>
+<li>
+<p>Men and months are interchangeable commodities only whena task can be partitioned among many workers with no communication among them.</p>
+</li>
+<li>
+<p>The added burden of communication is made up of two parts, training and intercommunication. Each worker must be trained in the technology, the goals of the effort, the overall strategy, and the plan of work.</p>
+</li>
+<li>
+<p>The maximum number of men depends upon the number of independent subtasks. From these two quantities one can derive schedules using fewer men and more months. (The only risk is product obsolescence.) One cannot, however, get workable schedules using more men and fewer months.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_the_surgical_team">The Surgical Team</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>I have earlier argued that the sheer number of minds to be coordinated affects the cost of the effort, for a major part of the cost is communication and correcting the ill effects of miscommunication (system debugging). This, too, suggests that one wants the system to be built by as few minds as possible.</p>
+</li>
+<li>
+<p>The dilemma is a cruel one. For efficiency and conceptual integrity, one prefers a few good minds doing design and construction. Yet for large systems one wants a way to bring considerable manpower to bear, so that the product can make a timely appearance. How can these two needs be reconciled?</p>
+</li>
+<li>
+<p>Mill’s Proposal: A proposal by Harlan Mills offers a fresh and creative solution. Mills proposes that each segment of a large job be tackled by a team, but that the team be organized like a surgical team rather than a hog-butchering team. That is, instead of each member cutting away on the problem, one does the cutting and the others give him every support that will enhance his effectiveness and productivity.</p>
+</li>
+<li>
+<p>Absolutely vital to Mills’s concept is the transformation of programming "from private art to public practice" by making all the computer runs visible to all team members and identifying all programs and data as team property, not private property.</p>
+</li>
+<li>
+<p>The program clerk: relieves programmers of clerical chores, systematizes and ensures proper performance of those oft-neglected chores, and enhances the team’s most valuable asset—its work-product. Clearly the concept as set forth above assumes batch runs. When interactive terminals are used, particularly those with no hard-copy output, the program clerk’s functions do not diminish, but they change. Now he logs all updates of team program copies from private working copies, still handles all batch runs, and uses his own interactive facility to control the integrity and availability of the growing product.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_aristocracy_democracy_and_system_design">Aristocracy, Democracy and System Design</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>I will contend that conceptual integrity is the most important consideration in system design. It is better to have a system omit certain anomalous features and improvements, but to reflect one set of design ideas, than to have one that contains many good but independent and uncoordinated ideas.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+  </div>
+  <div class="flex-row link-no-style">
+    
+    
+  </div>
+</div>
+
+
+    </main>
+
+    <footer>
+      <center>
+        <p>
+          <a href="../../archive">archive</a>
+          <a href="https://github.com/lhao03" target="_blank">github</a>
+          <a href="https://www.linkedin.com/in/lucy-hao/" target="_blank">linkedin</a>
+        </p>
+      </center>
+      Site powered by cats, 🍫 and
+      <a href="http://jaspervdj.be/hakyll">Hakyll</a>
+    </footer>
+  </body>
+</html>
