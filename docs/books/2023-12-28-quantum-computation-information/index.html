@@ -200,7 +200,10 @@
 <li>consider a system of <span class="math inline"><em>n</em></span> qubits:
 <ul>
 <li>computational basis states: <span class="math display">|<em>x</em><sub>1</sub>, <em>x</em><sub>2</sub>...<em>x</em><sub><em>n</em></sub>⟩</span></li>
-<li>quantum state is represented by <span class="math inline">2<sup><em>n</em></sup></span> amplitudes</li>
+<li>quantum state is represented by <span class="math inline">2<sup><em>n</em></sup></span> amplitudes
+<ul>
+<li>amplitude, <span class="math display"><em>α</em></span>, is for <span class="math display"><em>α</em>|0⟩</span></li>
+</ul></li>
 </ul></li>
 </ul>
 <h2 id="quantum-computation">1.3 quantum computation</h2>
@@ -285,6 +288,67 @@
 <li>formalism allows us to describe observed experimental results</li>
 </ul>
 <h3 id="quantum-circuits">1.3.4 quantum circuits</h3>
+<ul>
+<li><p>features in classical circuits not usually present in quantum circuits:</p>
+<ul>
+<li>no loops, circuit is acyclic</li>
+<li>no joining wires together (FANIN), resulting single wire containing bitwise OR of inputs
+<ul>
+<li>not reversible, not unitary</li>
+</ul></li>
+<li>FANOUT: QM forbids copying of qubit</li>
+</ul></li>
+<li><p>controlled U Gate: suppose <span class="math inline"><em>U</em></span> is a unitary matrix, define as a natural extension of controlled-NOT gate</p>
+<ul>
+<li>single control qubit and <span class="math inline"><em>n</em></span> target bits</li>
+</ul></li>
+<li><p>measurement: convert single qubit state into probabilisticclassical bit <span class="math inline"><em>M</em></span></p>
+<p><img src="../../../images/qc/measurement.png" /></p></li>
+</ul>
+<h3 id="qubit-copying-circuit">1.3.5 qubit copying circuit</h3>
+<ul>
+<li>no cloning theorem:
+<ul>
+<li>can we create <span class="math display">|<em>ψ</em>⟩|<em>ψ</em>⟩</span>
+<ul>
+<li>once we measure one qubit, the state of the other is determined</li>
+<li>measuring the first qubit loses the extra hidden information, but if we could make a copy then the second qubit still contains the extra hidden information -&gt; therefore cannot create a copy</li>
+</ul></li>
+</ul></li>
+</ul>
+<h3 id="example-bell-states">1.3.6 example: bell states</h3>
+<ol type="1">
+<li>Hadamard gate: puts top qubit in a superposition</li>
+<li>CNOT: top qubit is control input</li>
+</ol>
+<ul>
+<li>transforms 4 computational basis states into Bell states</li>
+</ul>
+<p><span class="math display">$$|\beta_{xy}\rangle = \frac{|0,y\rangle + (-1)^x |1,\bar{y}\rangle}{\sqrt{2}}$$</span></p>
+<h3 id="example-quantum-teleportation">1.3.7 example: quantum teleportation</h3>
+<ul>
+<li>moving quantum states around, even in absence of channel</li>
+<li>A and B generate an EPR pair, and each one takes a qubit from EPR pair.
+<ul>
+<li>A wants to send a qubit <span class="math display">|<em>ψ</em>⟩</span> to B but does not know state of qubit and can only send classical information (A and B don’t where each other are)
+<ul>
+<li>A doesn’t know state of <span class="math display">|<em>ψ</em>⟩</span></li>
+<li>describing <span class="math display">|<em>ψ</em>⟩</span> takes infinite amount of classical information because <span class="math display">|<em>ψ</em>⟩</span> takes values on continuous space</li>
+</ul></li>
+</ul></li>
+<li>use quantum teleportation:
+<ol type="1">
+<li>A interacts the <span class="math display">|<em>ψ</em>⟩</span> with half of the EPR pair -&gt; 00,01,10,11</li>
+<li>B gets the two bits from A and can recover original state <span class="math display">|<em>ψ</em>⟩</span></li>
+</ol></li>
+</ul>
+<p><img src="../../../images/qc/qtransport.jpeg" /></p>
+<ul>
+<li>not faster than light due to need to transport two clasical bits using classical communication channel</li>
+<li>appears to create copy of quantum state being transported: only target qubit in state <span class="math display">|<em>ψ</em>⟩</span> and original data qubit is a computational basis</li>
+<li>one shared EPR pair and two classical bits equal to one qubit</li>
+</ul>
+<h2 id="quantum-algorithms">1.4 quantum algorithms</h2>
   </div>
   <div class="flex-row link-no-style">
     

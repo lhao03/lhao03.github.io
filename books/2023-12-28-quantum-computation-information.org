@@ -98,6 +98,7 @@ tags: quantum
 - consider a system of $n$ qubits:
     - computational basis states: $$| x_1, x_2 ... x_n \rangle$$
     - quantum state is represented by $2^n$ amplitudes
+      - amplitude, $$\alpha$$, is for $$\alpha|0\rangle$$
 
 ** 1.3 quantum computation
 - changes occurring to a quantum state
@@ -175,3 +176,44 @@ $$ X \begin{bmatrix}
 - formalism allows us to describe observed experimental results
 
 *** 1.3.4 quantum circuits
+- features in classical circuits not usually present in quantum circuits:
+  - no loops, circuit is acyclic
+  - no joining wires together (FANIN), resulting single wire containing bitwise OR of inputs
+    - not reversible, not unitary
+  - FANOUT: QM forbids copying of qubit
+- controlled U Gate: suppose $U$ is a unitary matrix, define as a natural extension of controlled-NOT gate
+    - single control qubit and $n$ target bits
+- measurement: convert single qubit state into probabilisticclassical bit $M$
+
+  [[../../../images/qc/measurement.png]]
+
+*** 1.3.5 qubit copying circuit
+- no cloning theorem:
+  - can we create $$|\psi\rangle|\psi\rangle$$
+    - once we measure one qubit, the state of the other is determined
+    - measuring the first qubit loses the extra hidden information, but if we could make a copy then the second qubit still contains the extra hidden information -> therefore cannot create a copy
+
+*** 1.3.6 example: bell states
+1. Hadamard gate: puts top qubit in a superposition
+2. CNOT: top qubit is control input
+- transforms 4 computational basis states into Bell states
+$$|\beta_{xy}\rangle = \frac{|0,y\rangle + (-1)^x |1,\bar{y}\rangle}{\sqrt{2}}$$
+
+
+*** 1.3.7 example: quantum teleportation
+- moving quantum states around, even in absence of channel
+- A and B generate an EPR pair, and each one takes a qubit from EPR pair.
+  - A wants to send a qubit $$|\psi\rangle$$ to B but does not know state of qubit and can only send classical information (A and B don't where each other are)
+    - A doesn't know state of $$|\psi\rangle$$
+    - describing $$|\psi\rangle$$ takes infinite amount of classical information because $$|\psi\rangle$$ takes values on continuous space
+- use quantum teleportation:
+  1. A interacts the $$|\psi\rangle$$ with half of the EPR pair -> 00,01,10,11
+  2. B gets the two bits from A and can recover original state $$|\psi\rangle$$
+
+[[../../../images/qc/qtransport.jpeg]]
+
+- not faster than light due to need to transport two clasical bits using classical communication channel
+- appears to create copy of quantum state being transported: only target qubit in state  $$|\psi\rangle$$ and original data qubit is a computational basis
+- one shared EPR pair and two classical bits equal to one qubit
+
+** 1.4 quantum algorithms

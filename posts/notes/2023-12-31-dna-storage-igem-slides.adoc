@@ -7,37 +7,68 @@ tags: synbio, paper
 == Slide 1
 
 == Slide 2
-What is long term storage? Long term storage is defined as storage that [TODO]. Silicon based long term storage includes: external hard drives, flash drives, CDs which last around 5-20 years. Silicon based storage works broadly like this: file is turned into a stream of bits of 0s or 1s, and these bits are stored as charges based on the binary encoding. However, since most people don't wanna lug around pieces of storage, most people store their data on the cloud. But cloud storage isn't really in the cloud. Cloud storage is stored in giant buildings full of hard drives, some buildings taking up "nearly 200 acres of land apiece". In addition, cloud data centers get hot, which requires lots of cooling, resulting in data centers using as much energy as an airline. While cloud storage isn't as great a factor in global warming as oil and gas, information is growing rapidly, which will force these data centers to eat up more land and energy. Generally speaking, data centers have reached their peak efficiency with the level of scalability required.
-
-DNA storage is an emerging technology for long term storage. Generally the steps of storing information into DNA goes as follows:
-
-Compared to traditional long term storage mediums, DNA is more:
-* durable
-* dense
-*
 
 == Slide 3
-Currently DNA storage is the most durable and dense storage medium. However, it is not a easily scalable technology, which is what I believe synthetic biology can help with.
+Cloud storage is ubiquitous. In addition to cloud storage data centers operated by technology companies and data-critical (healthcare, finance, and government) org anizations, these entities must deal with a growing reliance on storing a lot of information that is rarely changed but required to be stored for long periods of time. This is referred to as an information explosion. We are predicted to generate around 180 zettabytes of information, with 22 zettabytes of data being shipped around, 60% in the form of hard drives.
 
-Firstly, with synthesis:
+== Slide 4
+What is long term storage? Long term storage is defined as storage that can persist information without the requirement for constant electricity. Silicon based long term storage includes: external hard drives, flash drives, CDs which last around 5-20 years. Silicon based storage works broadly like this: file is turned into a stream of bits of 0s or 1s, and these bits are stored as charges based on the binary encoding, then after these bits have been encoded, the storage media is stored in conditions that try to preserve this charge. Ubitquits storage in the form of "the cloud" is becoming an everyday norm because most people do not wanna lug around pieces of storage. But cloud storage isn't really in the cloud. Cloud storage is stored in giant buildings full of hard drives, some buildings taking up "nearly 200 acres of land apiece". In addition, because Google and Microsoft promise that your data is perserved, multiple copies of your data is written to different data centers. Multiply that process a few times, and you can see that cloud data centers get hot, which requires lots of cooling, resulting in data centers using as much energy as an airline. It's that the actual storage that requires so much cooling, but the computers that write all that data to disk which must be cooled. While these data centers account for around 2% of global energy usage, and because information is growing rapidly, these data centers will continue to eat up more land and energy. Generally speaking, data centers have reached their peak efficiency with the level of scalability require, which we can implictly observe from Moore's Law.
 
-Secondly, with storage and retrieval:
+DNA storage is an emerging technology for long term storage. Generally the steps of storing information into DNA goes as follows: are encoding, synthesis, storage, retrieval, and decoding. Compared to traditional long term storage mediums, DNA is more:
+
+1. durable: if stored in optimal conditions and dehydrated, DNA can possibly endure for millions of years.
+2. dense: up to 10^{19} bits per cubic centermerter, which is eight times more dense than other storage media.
+3. energy efficient: due to the failure rate of current long term storage media, such as charges flipping, I predict less energy will be needed to store information in DNA molecules because we can store less copies of data given DNA's density. In fact, there are estimates that "it could reduce the energy consumption by 1,000 times compared to today's data centres"footnote:[https://www.nature.com/articles/d42473-022-00319-3].
+
+== Slide 3
+Currently DNA storage the most durable and dense storage medium we have. However, it is not a easily scalable technology, which is what I believe synthetic biology can help with. Current industry standards of DNA synthesis is done through chemical means, phosphoramidite synthesis. Phosphoramidite synthesis is expensive and requires the use of toxic organic solvents. With sequencing, because DNA is so dense, with a naive storage model, it's easy for too much data to be sequenced, and this results in the output from sequencing to be wasted. And lastly, because DNA is not great at updates, this is another roadblock in realizing DNA as a long term storage medium.
 
 == Slide 4: Solution
+Thus, because synthesis and sequencing remain as bottlenecks for using DNA as storage, our solution is to design a scalable DNA storage process with improved sequencing and storage.
 
-== Slide 5: Why enzymatic DNA sequencing?
+An emerging method of DNA synthesis is enzymatic DNA synthesis with the use of TdT (template-independent polymerase). Aachen 2020 successfully demonstrated the use of TdT to synthesize DNA. We can go further to paralelize this process with an microelectrode array; this will be driven by wet lab.
 
-== Slide 6: Why block based semantics? 
+To improve storage, our dry lab can implement block based sementics with elongated primers and an update system with "patches". Dry lab will also either write software or use open source code to enable the DNA storage process, based on time constraints.
+
+== Slide 5: Why enzymatic DNA synthesis?
+* terminal deoxynucleotidyl transferase (TdT) is the enzyme behind enzymatic DNA synthesis:
+  . does not require preexisting strand of DNA
+  . Uses soft chemicals
+  . Provides kinetic control with enzymes
+  . produce longer strands than with chemical synthesisfootnote:[https://www.forbes.com/sites/johncumbers/2022/03/25/dna-synthesis-goes-green/?sh=49f785fb532c]
+
+* of course some downsides include that different bases add differently, which is an issue Aachen tackled.
+
+== Slide 6: Why block based semantics and updates via patches?
+
+A flat key-value object based architecture forces the user to sequence an entire unit of random access, whether they want all that information or not. This results in a lot of waste because DNA is very dense.
+
+With block based semantics:
+
+* we design primers designed with main prefix and extended bases representing blocks:
+** retrieve a block in a partition with higher accuracy
+** blocks can be smaller than the unit of random access: sequencing smaller blocks of data
+** reductions in sequencing cost and latency
+** ability for sequential access by elongating a primer, simiarly done in array based storage
+** primers based on tree based structure
+
+* versioning: only write updates as new DNA molecule and tag with appropriate primer
+** updates applied in software is: faster, more reliable
 
 == Wet lab
-*
+
+* based on Aachen's work, we can first set up the enzymatic DNA synthesis process as described by Church's paper.
+* then to demonstrate improvement, we work on creating the novel, cleavable polymerase-nucleotide conjugate which allows for attachment to the microelectrode array, while maintaining the activity of the TdT.
+** this allows for electrochemical cleavage/deblocking.
+** compared to parallized methods that rely on kinetic competitions, conjugate allows for single-base additions and the ability to further extend the oligonucleotide.
+** electrochemical control vs. nitrous acid-mediated deblocking also means we don't rely on environmentally hazardous chemicals
 
 == Dry Lab
 We can employ the engineering cycle with our software algorithms, which we can referred to as the software codec. 
 
 There needs to be a process for: 
 1. Encoding
-* requires generating primers and splitting a file across several DNA molecules if necessary 
+* requires generating primers (via Hamming/Edit distance constraints and chemistry constraints like GC content) and splitting a file across several DNA molecules if necessary
 
 2. Decoding
 * error correction, reconstructing the file and applying update patches
@@ -47,27 +78,51 @@ There needs to be a process for:
 
 For Modelling, we can model:
 
-* the TdT enzyme using Michals-Menten kinetics 
+* the TdT enzyme using Michals-Menten kinetics
 * how likely a primer is to "misprime" with protein modelling.
 * optimal concentrations of DNA molecules are required to keep sequencing costs low and 
 ** this requires a feedback loop of wet lab giving us data from "Amplify-then-Measure" then dry lab using these numbers to estimate the costs of sequencing based on concentrations
+* optimal conditions of added different bases
 
 == Human Practices
-*
+This project is very much interdisplinary, so we must reach to many experts. Our wet lab portion is also chemistry heavy, so I have listed to chemistry professors who I beleive will be very helpful.
 
-== Sources
+* Specialists:
+** Electrochemistry: Dr. Eva Nichols (UBC)
+** Synthetic DNA: Dr. David Perrin (UBC)
+** Data management: Dr. Richard Arias-Hernández (UBC)
+** Bioinformatics (Error correction): Dr. Jiarui Ding (UBC)
+* Outreach
+** Education:
+*** Computation and Information
+*** DNA Storage
+* BC Government, Hospitals
+* Cloud storage companies
+
+== Sources and Notes
 === Current Long Term Storage
+* https://en.wikipedia.org/wiki/Zettabyte_Era
 * https://mit-serc.pubpub.org/pub/the-cloud-is-material/release/1
 * https://contenteratechspace.com/6-best-ways-for-long-term-data-storage/
 * https://medium.com/stanford-magazine/carbon-and-the-cloud-d6f481b79dfe
 * https://www.cbc.ca/radio/spark/digital-data-has-an-environmental-cost-calling-it-the-cloud-conceals-that-researcher-says-1.6641268
 * https://thereader.mitpress.mit.edu/the-staggering-ecological-impacts-of-computation-and-the-cloud/
 
+=== DNA storage
+* https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10296570
+* https://www.computer.org/csdl/magazine/co/2023/07/10154188/1O1wUGjK41O
+* https://www.nature.com/articles/d42473-022-00319
+
+
 === Wet lab
 * https://www.nature.com/articles/s41467-019-10258-1[Terminator-free template-independent enzymatic DNA synthesis for digital information storage]
 * https://2021.igem.org/Team:Aachen
 * https://pubs.acs.org/doi/10.1021/acssynbio.3c00044[Spatially Selective Electrochemical Cleavage of a Polymerase-Nucleotide Conjugate]
+* https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8288405/
+
+* this approach is chemistry heavy, so based on the skills of our wet lab, we can also engineer yeast cells to produce DNA and store data in artifical chromosomes, as demonstrated by Yuanfootnote:[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8288405/]
 
 === Dry Lab
 * https://www.nature.com/articles/srep14138
 * https://arxiv.org/abs/2212.13447
+
