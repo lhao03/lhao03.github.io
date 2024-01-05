@@ -14,8 +14,6 @@ Notes for the workshop I'll be giving UBC iGEM.
 2. git and github (and codespaces)
 3. documentation handbook
 
-Hello, I'm Lucy, a 5th year combined major in Computer Science and Chemistry! I really like dark chocolate and stews.
-
 == Slide 3: about me
 
 == Slide 4 and 5: gluework (5 mins)
