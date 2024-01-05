@@ -75,10 +75,10 @@
 <p>glue</p>
 </li>
 <li>
-<p>git and github</p>
+<p>git and github (and codespaces)</p>
 </li>
 <li>
-<p>internal documentation</p>
+<p>documentation handbook</p>
 </li>
 </ol>
 </div>
@@ -88,13 +88,19 @@
 </div>
 </div>
 <div class="sect1">
-<h2 id="_slide_2_gluework_5_mins">Slide 2: gluework (5 mins)</h2>
+<h2 id="_slide_3_about_me">Slide 3: about me</h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="_slide_4_and_5_gluework_5_mins">Slide 4 and 5: gluework (5 mins)</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>So I’ve put up a picture of liquid glue. Glue holds things together, so that’s you can expect glue work to be. The type of work that holds a team together, ensures a team can work together, and more. Without glue work a team falls apart. You have all experienced this many times in school based group projects. One type of glue work is assigning tasks; if no one assigns tasks then one person may end up doing all the work or multiple people all work on the project without coordination, ending up with some work being duplicated.</p>
+<p>So I’ve put up a picture of liquid glue. Glue holds things together. And that’s what gluework is; the type of work that holds a team together, ensures a team can work together, and enables a team to be on the same page, and more. Without glue work a team falls apart. You have all experienced this many times in school based group projects where no one is taking the lead so work is scattered and it’s not clear who is doing what.</p>
 </div>
 <div class="paragraph">
-<p>Glue work is broadly defined as the work required to keep a team functional. Processes like agile, our master tracker and the internal documentation are ways to keep a team on track, transparent with each other. So who does glue work? Everyone in a team should be doing glue work. Those in managerial positions will end up doing more glue work, like assigning tasks or writing out a roadmap, but everyone will be expected to record their weekly tasks and contribute to the internal documentation. Glue work is not a single team or a single person’s burden to carry. It is everyone’s responsibility.</p>
+<p>Glue work is broadly defined as the work required to keep a team functional. Processes like agile, our master tracker and the documentation handbook are ways to keep a team on track and ensure that we are transparent with each other. So who does glue work? Everyone in a team should be doing glue work. Those in managerial positions will end up doing more glue work, like assigning tasks or writing out a roadmap, but everyone will be expected to record their weekly tasks and contribute to the internal documentation wiki. Glue work is not a single person’s burden to carry. It is everyone’s responsibility.</p>
 </div>
 <div class="paragraph">
 <p>Updating the internal wiki with what you have done or are planning to do is glue work. A team without documentation is just a bunch of headless chickens running around. The larger a team gets, the more of a necessity documentation becomes. A popular misconception is that the more people in a team, the more work you can get done. That can be true, but is not a given. According to Brooke’s law, which is an observation about software project management, we can say that:</p>
@@ -102,33 +108,29 @@
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>it takes time for new people to become productive. Many new members here are learning about synthetic biology for the first time. You will have to spend energy to learn about iGEM, whereas experienced members have already done that. Furthermore, experienced members will have to educate and guide new members, because new members are also more likely to make mistakes. Having experienced members document will help new members who will read this documentation.</p>
+<p>it takes time for new people to become productive. Many new members here are learning about synthetic biology for the first time. You will have to spend energy to learn about iGEM, whereas experienced members have already done that. Furthermore, experienced members will have to educate and guide new members, because new members are also more likely to make mistakes. Having experienced members document their work will help new members who will read this documentation.</p>
 </li>
 <li>
-<p>as more people join a team, communication overhead increases. In a team of 3 people, you can easily get on a Zoom call and have a conversation where everyone is on the same page. In our team of 20 people, it’s very for people of different subteams to get lost when listening to other subteams. Documentation serves as a way to keep everyone on the same page.</p>
+<p>as more people join a team, communication overhead increases. In a team of 3 people, you can easily get on a Zoom call and have a conversation where everyone is on the same page. In our team of 20 people, it’s very easy for people of different subteams to get lost when listening to other subteams. Documentation serves as a way to keep everyone on the same page.</p>
 </li>
 </ol>
 </div>
 <div class="paragraph">
-<p>That means everyone must put in the work to be an engaged and active member of our team, one of those tasks being contributing to our internal wiki. If at anytime you feel like something feels wrong or have a suggestion to better engage everyone please let your lead and co-directors know!</p>
+<p>That means everyone must put in the work to be an engaged and active member of our team, and one of those tasks is to contribute to our internal wiki. If at anytime you feel like something feels wrong or have a suggestion to better engage everyone please let your lead and co-directors know!</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_slide_3_git_vs_github_10_mins">Slide 3: git vs github (10 mins)</h2>
+<h2 id="_slide_6_10_git_14_mins">Slide 6-10: git (14 mins)</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Firstly, what is Git? Git is a version control system that tracks changes in a set of files. Another type of version control is Google Doc’s "Revisions". The major different with Git and other version control system’s like Google Doc’s is that you control when you want to track changes. Google Doc saves every time you make a change to your document, but Git only tracks changes when you explicitly say to. Additionally, Git makes working with many people very easy. When you’re working on Google Doc’s and don’t want someone to edit your work there’s no way to prevent that except to create a copy of the document; Git doesn’t have this issue. So let’s get into some git commands!</p>
+<p>Firstly, what is Git? Git is a distributed version control system. Unlke Google Docs, which is a central version control system, many people can have different copies of the same code when tracking changes with Git. Another difference between Git and other version control system’s like Google Docs is that you control when you want to track changes. Google Docs saves every time you make a change to your document, but Git only tracks changes when you explicitly say to. Additionally, Git makes working with many people very easy. When you’re working on a Google Doc and don’t want someone to edit your work there’s no way to prevent that except to create a hard copy of the document; Git doesn’t have this issue. So let’s get into some git commands!</p>
 </div>
 <div class="paragraph">
 <p>With our internal documentation here are the git commands you’ll need to use.</p>
 </div>
 <div class="paragraph">
-<p>To keep your work separate from others:</p>
-</div>
-<div class="paragraph">
-<p><code>git branch my-branch</code>
-<code>git checkout my-branch</code></p>
+<p>Firstly, to save your changes:</p>
 </div>
 <div class="paragraph">
 <p>To track your work:</p>
@@ -144,41 +146,78 @@
 </ol>
 </div>
 <div class="paragraph">
-<p>When you work with other people, sometimes you need to use a command called <code>git pull</code>.</p>
+<p>Secondly, to sync your changes:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><code>git push</code></p>
+</li>
+<li>
+<p><code>git pull</code></p>
+</li>
+</ol>
 </div>
 <div class="paragraph">
-<p>Now onto GitHub. What is GitHub? GitHub is a cloud hosting platform. You can use GitHub without using Git, but most people use Git to upload their code to GitHub. This is where you need <code>git push</code>. So before we try out these commands let’s walk through the internal wiki! We’ll be using something called Codespaces.</p>
+<p>Thirdly, to keep your work seperate from others:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><code>git branch &lt;my-branch&gt;</code></p>
+</li>
+<li>
+<p><code>git checkout &lt;my-branch&gt;</code></p>
+</li>
+</ol>
 </div>
 <div class="paragraph">
-<p>So let’s navigate to the GitHub repo for the internal wiki. Everyone start your Codespace, and while that is booting up I’ll give a walkthrough of the internal wiki.</p>
+<p>Some commands, like <code>git push</code> and <code>git pull</code> require a remote respository. And GitHub is where you host these remote repositories.</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_slide_4_internal_wiki_walk_through_4_mins">Slide 4: internal wiki walk through (4 mins)</h2>
+<h2 id="_slide_11_12_github_and_codespaces_5_mins">Slide 11-12: github and codespaces (5 mins)</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p><strong>walk thought all the pages</strong></p>
+<p>Now onto GitHub. What is GitHub? GitHub is a cloud hosting platform. People use Git to upload their code to GitHub and to manage projects across many people. GitHub also has a neat feature called Codespaces, which we will be checking out now!</p>
+</div>
+<div class="paragraph">
+<p>So let’s navigate to the GitHub repo for the internal wiki. Everyone start your Codespace, and while that is booting up let’s go to the Documentation Handbook.</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_slide_5_interactive_30_mins">Slide 5: interactive (30 mins)</h2>
+<h2 id="_slide_13_15_documentation_handbook_5_mins">Slide 13-15: documentation handbook (5 mins)</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>We are all going to add our names to the attributions table. First, make a branch and follow the commands on this slide. The markup language you will be using is Markdown. If you need any help with that just message the documentation channel. After you add your name, git add, commit and push. You may see something called a merge conflict. You can resolve the conflict with Git but it’s easier using the GitHub interface.</p>
+<p>Everyone should read this document when you want to communicate information with other people or have information to record. If there is ever any confusion message the #documentation-wiki channel. We are going to practice all contributing to the internal wiki and going through the workflow of adding code to a software project, which is what you will be doing when you contribute to the competition wiki!</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_slide_16_17_interactive_30_mins">Slide 16-17: interactive (30 mins)</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>As an exercise, we are all going to add our names to the attributions table. First, make a branch and follow the commands on this slide. The markup language you will be using is Markdown. If you need any help with that just message the documentation channel. After you add your name, git add, commit and push. You will be asked to make a pull request, or a PR. A pull request is a way to let your team members that you would like to add your work to the project. This makes it so that the internal wiki is transparent, and allows leads and other team members to read your writing and offer advice or fix spelling errors. Anytime you’re pushing work to GitHub, you have to make a pull request. After you make your pull request, tag the leads and then all you have to do it wait. However, you may see something called a merge conflict on your PR. You can resolve the conflict with Git but it’s easier using the GitHub interface.</p>
 </div>
 <div class="paragraph">
-<p>So what’s a conflict? When you’re working with multiple people, Git does something where it tries to merge two different files together. Usually it succeeds, but sometimes it needs the human’s help to resolve the merge conflict for it. When you can’t push your code due to a merge conflict, you need to make something called a pull request. In fact, anytime you’re committing anything you have to make a pull request. A pull request is a way to let your team members that you would like to add your work to the project. This makes it so that the internal wiki is transparent, and allows leads and other team members to read your writing and offer advice or fix spelling errors. It’s also common courtesy. So after you make your pull request, tag the leads and then all you have to do it wait. After your pull request has been approved it will be merged in by a lead and then you’re done. You’ve contributed to the internal wiki! By the time we write the iGEM wiki all of you will have enough experience with Git that the iGEM wiki will be a piece of cake.</p>
+<p>So what’s a conflict? When you’re working with multiple people, Git tries to merge two different files together. Usually it succeeds, but sometimes it needs the human’s help to resolve the merge conflict. After your pull request has been approved it will be merged in by a lead and then you’re done. You’ve contributed to the internal wiki! By the time we write the competition wiki all of you will have enough experience with Git that the iGEM wiki will be a piece of cake.</p>
 </div>
 <div class="paragraph">
-<p>Total: 50 mins</p>
+<p>Total: 60 mins</p>
 </div>
 <div class="paragraph">
 <p>Source:</p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
+<li>
+<p><a href="https://www.atlassian.com/git/tutorials" class="bare">https://www.atlassian.com/git/tutorials</a></p>
+</li>
+<li>
+<p><a href="https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet" class="bare">https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet</a></p>
+</li>
 <li>
 <p><a href="https://noidea.dog/glue" class="bare">https://noidea.dog/glue</a></p>
 </li>
