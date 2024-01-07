@@ -1,0 +1,8 @@
+---
+title: "Queen of Shadows"
+tags: fantasy
+img: 
+---
+
+image::/images/books/qos/wild.jpeg[]
+

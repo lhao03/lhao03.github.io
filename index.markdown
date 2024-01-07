@@ -5,20 +5,21 @@ description: Currently studying computer science and chemistry at the University
 
 Hello, welcome to my plethora of thoughts. I enjoy learning about how and why things work, especially pertaining to quantum chemistry, physical chemistry and a bit of programming language theory and synthetic biology. I'm interested in predicting the behavior of molecules and biological entities using theory and computation!
 
-List of things currently doing (in no particular order): 
+List of things currently doing (in no particular order):
 
 - playing [Legends of Runeterra](https://playruneterra.com/en-us/) and TFT
 - reading fantasy books
 - co-leading dry lab and leading the wiki team at UBC iGEM, where I'm creating an [internal documentation](https://github.com/UBC-iGEM/internal-wiki-2023-24) system
 - learning about quantum chemistry
 
-
 See my ramblings [here](/archive) and my paper log [here](/read). You can also see my [CV](/cv/cv.pdf) or [resume](/resume-lucy/resume-Lucy-Hao.pdf).
 
-## Books 
+## Books
+
 $partial("templates/books.html")$
 
 ## Coursework
+
 $partial("templates/courses.html")$
 
 <p>
