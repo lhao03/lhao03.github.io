@@ -132,8 +132,8 @@ hr:after {
       padding: 10px;
       height: 8vw;
 
-      @media (max-width: 320px) {
-        height: 25vw;
+      @media (max-width: 600px) {
+        height: 35vw;
       }
     }
   }
