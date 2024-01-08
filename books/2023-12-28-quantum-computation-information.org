@@ -1,6 +1,7 @@
 ---
 title: Quantum Computation and Quantum Information
 tags: quantum
+img: "qcqi.jpg"
 ---
 
 ** 1.1: global perspectives

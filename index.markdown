@@ -14,13 +14,13 @@ List of things currently doing (in no particular order):
 
 See my ramblings [here](/archive) and my paper log [here](/read). You can also see my [CV](/cv/cv.pdf) or [resume](/resume-lucy/resume-Lucy-Hao.pdf).
 
-## Books
-
-$partial("templates/books.html")$
-
 ## Coursework
 
 $partial("templates/courses.html")$
+
+## Books
+
+$partial("templates/books.html")$
 
 <p>
 To get in touch with me, send an email to <code>(string-append "hao" "." "lucyy" "@" "gmail" "." "com")</code>. I also like cats.

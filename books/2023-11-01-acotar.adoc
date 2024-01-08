@@ -1,4 +1,5 @@
 ---
-title: "Court of Thorns and Roses"
+title: "A Court of Thorns and Roses"
 tags: fantasy
+img: "acotar.jpg"
 ---

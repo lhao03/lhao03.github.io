@@ -1,6 +1,7 @@
 ---
 title: "Programmed Inequality"
 tags: feminism
+img: "pi.jpeg"
 ---
 
 _Updated: 2022-06-01_

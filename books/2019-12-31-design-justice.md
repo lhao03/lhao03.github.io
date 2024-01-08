@@ -1,6 +1,7 @@
 ---
 title: "Design Justice"
 tags: history
+img: "dj.jpg"
 ---
 
 # Introduction:

@@ -1,6 +1,7 @@
 .animal-img {
   height: 150px;
   width: auto;
+
   @media (max-width: 320px) {
     height: 75px;
   }
@@ -37,18 +38,23 @@
   .quantum {
     background-color: #8fbcbb;
   }
+
   .history {
     background-color: #b48ead;
   }
+
   .feminism {
     background-color: #b48ead;
   }
+
   .PL {
     background-color: #a3be8c;
   }
+
   .fantasy {
     background-color: #5e81ac;
   }
+
   div {
     background-color: #81a1c1;
     margin: 5px 5px 5px 0;
@@ -60,13 +66,15 @@
 }
 
 hr {
-  overflow: visible; /* For IE */
+  overflow: visible;
+  /* For IE */
   padding: 0;
   border: none;
   border-top: medium double $fontColor;
   color: $fontColor;
   text-align: center;
 }
+
 hr:after {
   content: "§";
   display: inline-block;
@@ -82,31 +90,51 @@ hr:after {
     border-top: hidden !important;
     border-bottom: hidden !important;
   }
+
   .content {
     border-right: hidden !important;
     padding-left: 15px;
   }
+
   .icon {
     border-left: hidden !important;
     padding-right: 15px;
   }
+
   padding: 0 15px;
   margin-bottom: 20px;
   border: 1px solid transparent;
   border-radius: 10px;
   border-color: $fontColor;
   text-align: left;
+
   .title {
     font-weight: bold;
   }
+
   &.note,
   &.tips {
     background-color: darken(#a3be8c, 15%);
   }
+
   &.warning {
     background-color: #e44675;
   }
+
   &.important {
     background-color: darken(#81a1c1, 15%);
+  }
+}
+
+.books {
+  .book {
+    img {
+      padding: 10px;
+      height: 8vw;
+
+      @media (max-width: 320px) {
+        height: 25vw;
+      }
+    }
   }
 }

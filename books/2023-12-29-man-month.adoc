@@ -1,6 +1,7 @@
 ---
 title: The Mythical Man Month
 tags: processes
+img: "mmm.jpg"
 ---
 
 After working in iGEM, I realized the club wasn't being run very well, so I started looking into how software teams work, my past experiences working in tech and books. This one, which I found out through https://jzhao.xyz/thoughts/The-Mythical-Man-Month[here] seems something I should read.

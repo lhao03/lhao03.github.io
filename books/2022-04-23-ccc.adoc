@@ -1,6 +1,7 @@
 ---
 title: "Critically Conscious Computing: Methods for Secondary Education"
 tags: education 
+noimg: "ccc.png"
 ---
 
 :toc:

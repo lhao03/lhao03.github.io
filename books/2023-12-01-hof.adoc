@@ -1,5 +1,5 @@
 ---
 title: "Heir of Fire"
 tags: fantasy
-img: 
+img: "hof.jpg"
 ---

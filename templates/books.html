@@ -1,8 +1,11 @@
-<div class="coursework flex-row-no-space link-no-style-books">
-    $for(books)$
-    <div class=$tags$>
-      <a href="$url$" style="font-weight:normal;padding: 0 0;">$title$</a>
-    </div>
-    $endfor$
+<div class="flex-row-no-space link-no-style-books books">
+  $for(books)$
+  <div class="book">
+    <a href="$url$" style="font-weight: normal; padding: 0 0">
+      $if(img)$
+      <img src="/images/books/covers/$img$" />
+      $endif$
+    </a>
   </div>
-  
+  $endfor$
+</div>

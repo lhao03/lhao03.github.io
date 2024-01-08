@@ -1,7 +1,7 @@
 ---
 title: "Crown of Midnight"
 tags: fantasy
-img: 
+img: "com.jpg"
 ---
 
 
