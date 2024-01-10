@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Lucy H | CHEM 312: Introduction to Quantum Mechanics and Spectroscopy</title>
+  <title>Lucy H | CHEM 412: Structure of Atoms and Molecules</title>
   <link rel="stylesheet" href="../../../../css/main.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/default.min.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
@@ -49,65 +49,83 @@
     </header>
 
     <main role="main">
-      <h1>CHEM 312: Introduction to Quantum Mechanics and Spectroscopy</h1>
+      <h1>CHEM 412: Structure of Atoms and Molecules</h1>
       <div>
   
   <div class="header">
-    Posted on September  6, 2023
+    Posted on January  9, 2024
     
   </div>
   <div class="tags">
     
   </div>
   <div class="content">
-    <h1 id="review">Review</h1>
-<h2 id="particle-in-a-box">particle in a box</h2>
-<h2 id="contributions-from-famous-quantum-scientists">contributions from famous quantum scientists</h2>
-<h2 id="reduced-mass">reduced mass</h2>
-<h2 id="bohr-atom">Bohr atom</h2>
-<h2 id="de-broglie-matter-wave">de Broglie matter wave</h2>
-<h2 id="photo-electron-effect">photo-electron effect</h2>
-<h2 id="hermitian-operator">Hermitian operator</h2>
-<h2 id="commutator">commutator</h2>
-<h2 id="hydrogen-atom">hydrogen atom</h2>
-<h2 id="harmonic-oscialltor">harmonic oscialltor</h2>
-<h2 id="ladder-operator">ladder operator</h2>
-<h2 id="angular-momentum-operator-lecture-18---onwards">angular momentum operator (lecture 18 - onwards)</h2>
-<h3 id="classical-understanding">classical understanding</h3>
+    <h1 id="course-schedule">Course Schedule</h1>
+<h2 id="webmo-and-python-tutorials">WebMO and Python tutorials</h2>
+<h2 id="review-of-quantum-mechanics">Review of Quantum Mechanics:</h2>
+<ol type="1">
+<li>Schrodinger Eq.</li>
+<li>Relativity, Fermion and boson, Pauli exclusion principle</li>
+<li>Hermitian operator</li>
+<li>Dirac notation, basis set expansion, superposition of states</li>
+<li>Matrix mechanics</li>
+</ol>
+<h2 id="molecular-orbital-theory">Molecular Orbital Theory:</h2>
+<ol type="1">
+<li>Born-Oppenheimer approximation, Nuclear and electronic Hamiltonians</li>
+<li>Atomic units, Potential energy surface (PES), Reaction coordinates, Transition states</li>
+<li>Basis sets</li>
+<li><span class="math display"><em>H</em><sub>2</sub><sup>+</sup></span> , Two-state model</li>
+<li>Electronic wavefunctions, Slater determinant</li>
+</ol>
+<h2 id="angular-momentum">Angular momentum:</h2>
+<ol type="1">
+<li>Electron spin, Orbital angular momentum</li>
+</ol>
+<h2 id="group-theory">Group Theory:</h2>
+<ol type="1">
+<li>Molecular symmetry, Point groups, Irreducible representations</li>
+<li>Construction of SALCs, Group theory, Character table</li>
+</ol>
+<h2 id="hartree-fock-molecular-orbital-theory">Hartree-Fock Molecular Orbital Theory:</h2>
+<ol type="1">
+<li>Variational theorem</li>
+<li>H<sub>2</sub>, Hartree-Fock method</li>
+<li>Self-consistent-field Koopmans theorem,</li>
+<li>Semi-empirical (H ̈uckel), Molecular mechanics</li>
+</ol>
+<h2 id="electron-correlation">Electron Correlation:</h2>
+<ol type="1">
+<li>H2 dissociation problem, Configuration interaction, Coupled-cluster methods</li>
+<li>Perturbation theory</li>
+<li>Møller-Plesset perturbation theory</li>
+<li>Method comparison, Accuracies, Convergence issues</li>
+</ol>
+<h2 id="density-functional-theory">Density Functional Theory:</h2>
+<ol type="1">
+<li>Hohenberg-Kohn theorems, Kohn-Sham method</li>
+</ol>
+<h1 id="lectures">Lectures</h1>
+<h2 id="section-1">1</h2>
 <ul>
-<li>components of angular momentum (3 in cartesian plane) as cross product:
-<span class="math display">$$L = r \times p =  \begin{bmatrix}
-                       x &amp; y &amp; z
-                       \end{bmatrix} \times \begin{bmatrix}
-                       p_x &amp; p_y &amp; p_z
-                       \end{bmatrix}
-                       = \begin{bmatrix}
-                       i &amp; j &amp; k\\
-                       x &amp; y &amp; z\\
-                       p_x &amp; p_y &amp; p_z
-                       \end{bmatrix}$$</span></li>
-</ul>
-<p><span class="math display">$$L = i(yp_z - p_yz) - j(xp_z - p_xz) + k(xp_y - p_xy) \\
-    = iL_x - jL_y + kL_z$$</span></p>
+<li>slater vs. gaussian
+<img src="../../../images/412/svg.png" />
 <ul>
-<li>right handed coordinate system</li>
-<li>cyclic</li>
-</ul>
-<h3 id="commutation-relationship">commutation relationship</h3>
+<li>gaussian decays too quickly and has longer tails
 <ul>
-<li>coupling of angular momentum vectors in molecules
-<ul>
-<li>when axes are mounted on molecule, sign of <span class="math inline"><em>i</em></span> flips in commutation</li>
+<li>ill behaving because decays too fast</li>
+<li>near nuclei (at origin), is flat, differential is 0</li>
 </ul></li>
-</ul>
-<h2 id="term-symbols">term symbols</h2>
-<h2 id="l---s-coupling">L - S coupling</h2>
-<h2 id="equivalent-and-non-equivalent-electrons">equivalent and non-equivalent electrons</h2>
-<h2 id="hunds-rules">Hund’s rules</h2>
-<h1 id="questions">Questions</h1>
-<h2 id="ch-9">ch 9</h2>
+<li>slater is proper function to use
 <ul>
-<li>42</li>
+<li>not differentiable because of cusp (at origin)</li>
+</ul></li>
+<li>predict different behaviour at nuclei (experimentally by EPR)
+<ul>
+<li>should anticipate some mistakes</li>
+</ul></li>
+</ul></li>
+<li>review 6 ways non-differentiability</li>
 </ul>
   </div>
   <div class="flex-row link-no-style">

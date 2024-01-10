@@ -1,0 +1,62 @@
+---
+description: "CHEM 245"
+title: "CHEM 245: Intermediate Synthetic Chemistry Laboratory"
+---
+
+* tutorials
+** elemental analysis and IHD review
+*** learning objectives:
+- empirical vs. molecular formula
+  - calculate and distinguish
+- identify components of elemental analysis equipment
+- define Index of Hydrogen $$\delta$$ or IHD
+- calculate IHD from:
+    - chemical structure
+    - molecular formulae
+    - amu
+- rule of 13
+- provide possible structures using provided and calculated IHD
+
+**** jan 8
+- historically: incinerated compound in presence of $O_2$
+  - canisters caught the oxidized versions of the compound
+- types of EA
+- empirical vs. molecular formula
+- problem types:
+  - find empirical formula based on $$C_xH_yO_z$$ sample submitted for analysis
+    1. write out balanced combustion equation
+    2. calculate mmol of atomic elements present in sample based on given $$H_2O$$ and $$CO_2$$ (combustion products)
+    3. find mass of atomic elements present in sample
+    4. calculate percent weight of atomic elements present in sample
+    5. check if precents sum to 100% (or if don't there is oxygen in sample)
+    6. assume 100g of sample, % is g of atomic elemental
+    7. divide through by lowest mole to find empirical formula
+  - find molecular formula given empirical formula: $$MF = X EF$$
+  - $$IHD  = \frac{\# \text{ H saturated compound} - \# \text{ H unsaturated compound}}{2}$$
+    - group V: add one H
+    - group VI: no change
+    - group VII: subtract one H
+    - problem types:
+      - calculate IHD:
+        - check for molecules from the mentioned groups. apply proper addition or subtraction of saturated hydrogens
+
+** nuclear magnetic resonance spectroscopy
+*** Fundamentals
+*** Chemical shift, $$^{13}C$$
+*** $$^1H$$, Integration, Spin-Spin Splitting
+*** $$^1H$$, J-coupling constants, multiplet skewing, exchangeable protons
+** infrared spectroscopy
+*** EM spectrum, FT-IR spectrometer, samples, molecular vibration modes
+*** Bond properties, Bond strengths, Alkanes, Alkenes, Alkynes
+*** Arenes, Alcohols, Amines, Carbonyl compounds, Chlorides
+** mass spectroscopy
+*** Rule of 13, spectrometer, ionization techniques
+*** spectra analysis, isotope identification
+*** Characterization Problem Solving
+
+* synthesis
+** Nickel Complex
+** [1,1’-biphenyl]-4-carboxylic acid
+** Acetylcinnamic acid
+** 4-Methoxybenzaldehyde
+** Tripheylmethanol

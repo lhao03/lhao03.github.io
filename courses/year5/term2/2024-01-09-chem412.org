@@ -1,0 +1,49 @@
+---
+description: "CHEM 412"
+title: "CHEM 412: Structure of Atoms and Molecules"
+---
+
+* Course Schedule
+** WebMO and Python tutorials
+** Review of Quantum Mechanics:
+1. Schrodinger Eq.
+2. Relativity, Fermion and boson, Pauli exclusion principle
+3. Hermitian operator
+4. Dirac notation, basis set expansion, superposition of states
+5. Matrix mechanics
+** Molecular Orbital Theory:
+6. Born-Oppenheimer approximation, Nuclear and electronic Hamiltonians
+7. Atomic units, Potential energy surface (PES), Reaction coordinates, Transition states
+8. Basis sets
+9. $$H^+_2$$ , Two-state model
+10. Electronic wavefunctions, Slater determinant
+** Angular momentum:
+11. Electron spin, Orbital angular momentum
+** Group Theory:
+12. Molecular symmetry, Point groups, Irreducible representations
+13. Construction of SALCs, Group theory, Character table
+** Hartree-Fock Molecular Orbital Theory:
+14. Variational theorem
+15. H_2, Hartree-Fock method
+16. Self-consistent-field Koopmans theorem,
+17. Semi-empirical (H ̈uckel), Molecular mechanics
+** Electron Correlation:
+18. H2 dissociation problem, Configuration interaction, Coupled-cluster methods
+19. Perturbation theory
+20. Møller-Plesset perturbation theory
+21. Method comparison, Accuracies, Convergence issues
+** Density Functional Theory:
+22. Hohenberg-Kohn theorems, Kohn-Sham method
+
+* Lectures
+** 1
+- slater vs. gaussian
+  [[../../../images/412/svg.png]]
+  - gaussian decays too quickly and has longer tails
+    - ill behaving because decays too fast
+    - near nuclei (at origin), is flat, differential is 0
+  - slater is proper function to use
+    - not differentiable because of cusp (at origin)
+  - predict different behaviour at nuclei (experimentally by EPR)
+    - should anticipate some mistakes
+- review 6 ways non-differentiability

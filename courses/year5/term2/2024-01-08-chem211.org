@@ -1,0 +1,63 @@
+---
+description: "CHEM 211"
+title: "CHEM 211: Introduction to Chemical Analysis"
+---
+
+* units
+*** Course Introduction
+- analytical chemistry: obtaining, processing, communicating information about composition/structure of matter
+  - what matter is present and how much
+- trends: personalized technology
+- making good measurements and know if those measurements are good
+** Analytical concepts
+*** An Introduction to Analytical Measurements
+- the scientific method:
+  1. formulate question
+  2. sampling (??)
+  3. sampling preparation
+  4. analysis
+  5. interpretation
+  6. draw conclusions
+- assay is process of determining the amount of analyte (substance being measured) in sample
+- qualitative (identification) vs. quantitative (quantity) of components
+- signal
+  - visual: simple, low-cost, subjectice, not sensitive, large sample volumes, low-throughput (??)
+  - electrical detection: objective, more sensitive, faster, automate, costly, maintenance, calibration
+    - voltage
+    - current
+    - transducer
+- measurement: can get signal and noise (unwanted, random fluctations in background)
+  - signal-to-noise ratio
+  - multiple scans acquired and averaged to increase S/N $$S \varpropto \sqrt{n}; \frac{S}{N} \varpropto \sqrt{n}$$ and $$N$$ adds randomly
+*** Analytical Measurements and Statistics - Gaussian Distribution, Standard Deviation
+*** Analytical Measurements and Statistics - Significance Testing
+
+** Equilibrium and volumetric analysis
+*** Chemical Equilibrium Applied to Analytical Measurements
+*** Solution Equilibrium and Systematic Treatment of Chemical Equilibrium
+*** Polyprotic Acid Equilibria, Polyprotic Acid-Base Titrations
+*** Complexation Equilibria - Quantitative EDTA Titrations
+*** More Volumetric Analysis
+
+** Electrochemistry and Potentiometry
+*** Fundamentals of Electrochemistry
+*** Analytical Measurements using Electrochemical Cells
+*** Electrodes
+*** Ion-selective Electrodes
+*** Potentiometry – Reference and Indicator Electrodes, Ion-Selective
+
+** UV-visible spectrophotometry
+*** Ion-selective Electrodes /Introduction to Spectrophotometry
+*** Fundamentals of Spectrophotometry
+*** Applications of Spectrophotometry – Quantitative
+*** Spectrophotometry, Beer-Lambert Law
+*** Applications of Spectrophotometry I
+*** Applications of Spectrophotometry II
+
+** Separations and liquid chromatography
+*** Analytical Separations Fundamentals I
+*** Analytical Separations Fundamentals II
+*** Gas Chromatography
+*** Liquid Chromatography I
+*** Liquid Chromatography II
+*** Catch-up/review

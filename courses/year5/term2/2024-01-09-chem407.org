@@ -1,0 +1,15 @@
+---
+description: "CHEM 407"
+title: "CHEM 407: Statistical Mechanics in Chemistry"
+---
+
+- Fundamentals of statistical mechanics: N V T , N V E, μV T , N P T Ensembles.
+- Application to systems of non-interacting particles including Fermi-Dirac and Bose-Einstein statistics, and the Bose condensation.
+- Classical statistical mechanics including the general (p, q) formulation, and the Maxwell-Boltzmann velocity distribution.
+- Statistical mechanics of interaction systems including virial expansions, thermodynamic perturbation theory, distribution function theory, and computer simulation methods
+
+* lecture 1
+- macroscropic ideas depend on average behaviour of particles in system
+- postulates:
+  1. all macroscopic observables obtained from average over different microstates (no dynamic information)
+  2.

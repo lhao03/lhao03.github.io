@@ -1,0 +1,52 @@
+---
+description: "CHEM 401"
+title: "CHEM 401: Principles of Spectroscopy"
+---
+
+* lectures
+** 1: introduction
+- basic spectroscopy: light source -> sample -> prism -> detector
+  - act of separating light
+- history of spectroscopy:
+  - 1666 Newton: continuous spectrum of sun
+  - 1814 Fraunhofer: found sharp dark lines in sunlight (discrete -> indicts QM)
+  - 1900: development of QM
+- interstellar molecules (unstable)
+- our universe:
+  - molecular clouds:
+    - very cold: 10 - 100 K
+    - not dense: $$\frac{10^{3}}{cm^3}$$
+      - this means not many collisions happening, so very unstable molecules can exist <- spectroscopic observation plays important role
+  - atmosphere:
+    - hot: 300 K
+    - dense: $$\frac{10^{20}}{cm^3}$$
+- spectroscopy hydrogen atom: chief experimental basis for theories and structure of matter
+  - first spectra before QM: Angstrom and Rydberg
+  - spectra with QM: Bohr
+    - de Broglie: duality of matter
+      $$\lambda = \frac{h}{p}$$
+      $$E = h\nu$$
+    - Schrodinger
+  - relativistic quantum theory:
+    - Dirac: combine Schrodinger and Einstein
+      - $$E = ih \frac{\partial}{\partial \tau}$$
+    - Einstein: relativity (things moving at speed of light)
+- splitting of hydrogen: bohr -> dirac -> qed
+  [[../../../images/401/spliitng.jpeg]]
+** 2: WebMO practice
+** 3: intro to QM
+** 4: intro to EMR
+** 5: light-matter interaction
+** 6: prep for final presentation
+** 7: intro to molecular rotation and vibration
+** 8: molecular symmetry and group theory 1
+** 9: molecular symmetry and group theory 2
+** 10: molecular rotation and spin statistics 1
+** 11: molecular rotation and spin statistics 2
+** 12: molecular vibration
+** 13: vibrational infrared and raman spectroscopy
+** 14: electronic spectroscopy
+** 15: electronic spectroscopy
+** 16: magnetic resonance
+** 17: spectroscopy
+** 18 - 25: final presentations

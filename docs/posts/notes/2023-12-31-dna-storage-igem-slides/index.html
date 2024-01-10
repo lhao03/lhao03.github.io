@@ -78,7 +78,7 @@
 <h2 id="_slide_3">Slide 3</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Cloud storage is ubiquitous. In addition to cloud storage data centers operated by technology companies and data-critical (healthcare, finance, and government) org anizations, these entities must deal with a growing reliance on storing a lot of information that is rarely changed but required to be stored for long periods of time. This is referred to as an information explosion. We are predicted to generate around 180 zettabytes of information, with 22 zettabytes of data being shipped around, 60% in the form of hard drives.</p>
+<p>Cloud storage is ubiquitous. In addition to cloud storage data centers operated by technology companies and data-critical (healthcare, finance, and government) organizations, these entities must deal with a growing reliance on storing a lot of information that is rarely changed but required to be stored for long periods of time. This is referred to as an information explosion. We are predicted to generate around 180 zettabytes of information, with 22 zettabytes of data being shipped around, 60% in the form of hard drives.</p>
 </div>
 </div>
 </div>
@@ -86,7 +86,7 @@
 <h2 id="_slide_4">Slide 4</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>What is long term storage? Long term storage is defined as storage that can persist information without the requirement for constant electricity. Silicon based long term storage includes: external hard drives, flash drives, CDs which last around 5-20 years. Silicon based storage works broadly like this: file is turned into a stream of bits of 0s or 1s, and these bits are stored as charges based on the binary encoding, then after these bits have been encoded, the storage media is stored in conditions that try to preserve this charge. Ubitquits storage in the form of "the cloud" is becoming an everyday norm because most people do not wanna lug around pieces of storage. But cloud storage isn’t really in the cloud. Cloud storage is stored in giant buildings full of hard drives, some buildings taking up "nearly 200 acres of land apiece". In addition, because Google and Microsoft promise that your data is perserved, multiple copies of your data is written to different data centers. Multiply that process a few times, and you can see that cloud data centers get hot, which requires lots of cooling, resulting in data centers using as much energy as an airline. It’s that the actual storage that requires so much cooling, but the computers that write all that data to disk which must be cooled. While these data centers account for around 2% of global energy usage, and because information is growing rapidly, these data centers will continue to eat up more land and energy. Generally speaking, data centers have reached their peak efficiency with the level of scalability require, which we can implictly observe from Moore’s Law.</p>
+<p>What is long term storage? Long term storage is defined as storage that can persist information without the requirement for constant electricity. Silicon based long term storage includes: external hard drives, flash drives, CDs which last around 5-20 years. Silicon based storage works broadly like this: file is turned into a stream of bits of 0s or 1s, and these bits are stored as charges based on the binary encoding, then after these bits have been encoded, the storage media is stored in conditions that try to preserve this charge. Ubiquitous storage in the form of "the cloud" is becoming an everyday norm because most people do not wanna lug around pieces of storage. But cloud storage isn’t really in the cloud. Cloud storage is stored in giant buildings full of hard drives, some buildings taking up "nearly 200 acres of land apiece". In addition, because Google and Microsoft promise that your data is preserved, multiple copies of your data is written to different data centers. Multiply that process a few times, and you can see that cloud data centers get hot, which requires lots of cooling, resulting in data centers using as much energy as an airline. It’s not that the actual storage that requires so much cooling, but the computers that write all that data to disk which must be cooled. While these data centers account for around 2% of global energy usage, and because information is growing rapidly, these data centers will continue to eat up more land and energy. Generally speaking, data centers have reached their peak efficiency with the level of scalability require, which we can implicitly observe from Moore’s Law.</p>
 </div>
 <div class="paragraph">
 <p>DNA storage is an emerging technology for long term storage. Generally the steps of storing information into DNA goes as follows: are encoding, synthesis, storage, retrieval, and decoding. Compared to traditional long term storage mediums, DNA is more:</p>
@@ -97,7 +97,7 @@
 <p>durable: if stored in optimal conditions and dehydrated, DNA can possibly endure for millions of years.</p>
 </li>
 <li>
-<p>dense: up to 10^{19} bits per cubic centermerter, which is eight times more dense than other storage media.</p>
+<p>dense: up to 10^{19} bits per cubic centimeter, which is eight times more dense than other storage media.</p>
 </li>
 <li>
 <p>energy efficient: due to the failure rate of current long term storage media, such as charges flipping, I predict less energy will be needed to store information in DNA molecules because we can store less copies of data given DNA’s density. In fact, there are estimates that "it could reduce the energy consumption by 1,000 times compared to today’s data centres"<sup class="footnote">[<a id="_footnoteref_1" class="footnote" href="#_footnotedef_1" title="View footnote.">1</a>]</sup>.</p>
@@ -110,7 +110,7 @@
 <h2 id="_slide_3_2">Slide 3</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Currently DNA storage the most durable and dense storage medium we have. However, it is not a easily scalable technology, which is what I believe synthetic biology can help with. Current industry standards of DNA synthesis is done through chemical means, phosphoramidite synthesis. Phosphoramidite synthesis is expensive and requires the use of toxic organic solvents. With sequencing, because DNA is so dense, with a naive storage model, it’s easy for too much data to be sequenced, and this results in the output from sequencing to be wasted. And lastly, because DNA is not great at updates, this is another roadblock in realizing DNA as a long term storage medium.</p>
+<p>Currently DNA storage the most durable and dense storage medium we have. However, it is not a easily scalable technology, which is what I believe synthetic biology can help with. Current industry standards of DNA synthesis is done through chemical means, phosphoramidite synthesis. Phosphoramidite synthesis is expensive and requires the use of toxic organic solvents. With sequencing, because DNA is so dense, if implemented with a naive storage model, it’s easy for too much data to be sequenced because we may have to sequence an entire DNa molecule to get at a few bases in the middle of the molecule. This results in the output from sequencing to be wasted. And lastly, because mutating DNA in the wet lab is prone to mistakes and slower than traditional long term storage, this is another roadblock in realizing DNA as a long term storage medium.</p>
 </div>
 </div>
 </div>
@@ -118,13 +118,13 @@
 <h2 id="_slide_4_solution">Slide 4: Solution</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Thus, because synthesis and sequencing remain as bottlenecks for using DNA as storage, our solution is to design a scalable DNA storage process with improved sequencing and storage.</p>
+<p>Thus, because synthesis and sequencing remain as bottlenecks for using DNA as storage, our solution is to design a scalable DNA storage process with improved synthesis and storage.</p>
 </div>
 <div class="paragraph">
-<p>An emerging method of DNA synthesis is enzymatic DNA synthesis with the use of TdT (template-independent polymerase). Aachen 2020 successfully demonstrated the use of TdT to synthesize DNA. We can go further to paralelize this process with an microelectrode array; this will be driven by wet lab.</p>
+<p>An emerging method of DNA synthesis is enzymatic DNA synthesis with the use of TdT (template-independent polymerase). Aachen 2020 successfully demonstrated the use of TdT to synthesize DNA. We can go further to parallelize this process with an microelectrode array; this will be driven by wet lab.</p>
 </div>
 <div class="paragraph">
-<p>To improve storage, our dry lab can implement block based sementics with elongated primers and an update system with "patches". Dry lab will also either write software or use open source code to enable the DNA storage process, based on time constraints.</p>
+<p>To improve storage, our dry lab will implement block based semantics with elongated primers and an update system with "patches". Dry lab will also either write software or use open source code to encode and decode information into bases and deal with error correction, based on time constraints.</p>
 </div>
 </div>
 </div>
@@ -184,7 +184,7 @@
 <p>reductions in sequencing cost and latency</p>
 </li>
 <li>
-<p>ability for sequential access by elongating a primer, simiarly done in array based storage</p>
+<p>ability for sequential access by elongating a primer, similarly done in array based storage (tradditional storage mediums)</p>
 </li>
 <li>
 <p>primers based on tree based structure</p>
@@ -215,14 +215,14 @@
 <p>based on Aachen’s work, we can first set up the enzymatic DNA synthesis process as described by Church’s paper.</p>
 </li>
 <li>
-<p>then to demonstrate improvement, we work on creating the novel, cleavable polymerase-nucleotide conjugate which allows for attachment to the microelectrode array, while maintaining the activity of the TdT.</p>
+<p>then to demonstrate improvement, we work on creating the novel, cleavable polymerase-nucleotide conjugate which allows for attachment to the microelectrode array, while maintaining the activity of the TdT enzyme.</p>
 <div class="ulist">
 <ul>
 <li>
 <p>this allows for electrochemical cleavage/deblocking.</p>
 </li>
 <li>
-<p>compared to parallized methods that rely on kinetic competitions, conjugate allows for single-base additions and the ability to further extend the oligonucleotide.</p>
+<p>compared to parallelized methods that rely on kinetic competitions, polymerase-nucleotide conjugate allows for single-base additions and the ability to further extend the oligonucleotide.</p>
 </li>
 <li>
 <p>electrochemical control vs. nitrous acid-mediated deblocking also means we don’t rely on environmentally hazardous chemicals</p>
@@ -243,7 +243,7 @@
 <div class="paragraph">
 <p>There needs to be a process for:
 1. Encoding
-* requires generating primers (via Hamming/Edit distance constraints and chemistry constraints like GC content) and splitting a file across several DNA molecules if necessary</p>
+* requires generating primers to implement the block based semantics (via Hamming/Edit distance constraints and chemistry constraints like GC content) and splitting a file across several DNA molecules if necessary</p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
@@ -278,7 +278,7 @@
 <p>the TdT enzyme using Michals-Menten kinetics</p>
 </li>
 <li>
-<p>how likely a primer is to "misprime" with protein modelling.</p>
+<p>how likely a primer is to "misprime" meaning the wrong primer is amplified, with protein modelling.</p>
 </li>
 <li>
 <p>optimal concentrations of DNA molecules are required to keep sequencing costs low and</p>
@@ -301,7 +301,7 @@
 <h2 id="_human_practices">Human Practices</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>This project is very much interdisplinary, so we must reach to many experts. Our wet lab portion is also chemistry heavy, so I have listed to chemistry professors who I beleive will be very helpful.</p>
+<p>This project is very much interdisciplinary, so we must reach to many experts. Our wet lab portion is also chemistry heavy, so I have listed to chemistry professors who I believe will be very helpful.</p>
 </div>
 <div class="ulist">
 <ul>
