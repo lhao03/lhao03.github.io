@@ -9,7 +9,24 @@ title: "CHEM 407: Statistical Mechanics in Chemistry"
 - Statistical mechanics of interaction systems including virial expansions, thermodynamic perturbation theory, distribution function theory, and computer simulation methods
 
 * lecture 1
-- macroscropic ideas depend on average behaviour of particles in system
+- general points:
+  - why different types of ensembles? not all problems can be easily solved in all ensembles, you can and should (?) reach the same conclusions
+  - non-interacting particles:
+    - classical: ideal gas law, boring
+      - need interactions for things to happen
+    - quantum: interesting, electrons and bosons
+  - statistical mechanics needs QM
+    - can approximate with CM
+- macroscopic ideas depend on average behaviour of particles in system
+  - mechanic vs thermodynamic properties (??: kind of confused on this?)
+    - mechanical properties depend on the mechanics of system
+- consider an NVT ensemble:
+  - macroscopic: determine an equilibrium state
+    - observe thermodynamic properties (if at thermodynamic limit)
+  - microscopic: many microscopic states (microstates) from QM with CM approximations
+    - with many different instantaneous values of E, P, etc (??: what are the restrictions on these values)
+    - to do a calculation: must specify # & type of matter, # of microstates and their energies, etc (?? what is etc)
+  - microscopic level (QM) $$\xrightarrow[\text{statistical}]{\text{mechanics}}$$ macroscopic level (thermodynamics)
 - postulates:
   1. all macroscopic observables obtained from average over different microstates (no dynamic information)
   2.
