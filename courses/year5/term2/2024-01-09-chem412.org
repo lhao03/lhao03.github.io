@@ -47,3 +47,33 @@ title: "CHEM 412: Structure of Atoms and Molecules"
   - predict different behaviour at nuclei (experimentally by EPR)
     - should anticipate some mistakes
 - review 6 ways non-differentiability
+*** notes on relativistic effects
+- special relativity: laws of motion for non-accelerating bodies travelling at speed of light
+  - as speed approach 0, special relativity tends towrds eq with newton's laws of motion
+- general relativity: laws of motion viewed from accelerating reference frames (geometric explanation for gravity)
+- special relativity:
+  - postulates
+    1. impossible to transmit information faster than speed of light
+    2. laws of physics are identical, without any variation, in every location in universe, no matter how fast travelling
+  - consequences: time dilation (observer in one reference frame observes clock in another frame to be ticking more slowly than in observer's own frame), length contradiction (same analogy but with length), and as a body moves with increasing velocity its mass increases: $$t = \gamma t_0, \mathcal{l} = \gamma \mathcal{l}_0, m = \gamma m_0$$
+    - this follows $$E = mc^2$$, $$E^2 = p^2c^2 + (m_0c^2)^2$$
+- combining relativity and quantum theory
+  - energy "uncertainty" (QM) mass-energy equivalence (special relativity) $$\rightarrow$$ particle/anti-particle pairs by quantum fluctuations
+  - klein-gordon equation (relativistic version of Schrodinger equation for spin-0 particle) (using time-dependent Schrodinger equation)
+    $$\begin{align*}
+    E &= \frac{p^2}{2m} \\
+    i\hbar \frac{\partial}{\partial t}\psi &= - \frac{h^2}{2m} \nabla \psi \\
+    (i\hbar \frac{\partial}{\partial t})^2 \psi &= - [(i\hbar \nabla)^2c^2 +m_0^2c^4] \psi \\
+    \frac{1}{c^2}\frac{\partial^2}{\partial t^2} \psi - \nabla^2 \psi + \frac{m^2_0c^2}{\hbar^2} \psi &= 0 \\
+    \end{align*}$$ this is the d'Alembert operator (???)
+- dirac equation:
+  - electron is spin 1/2 particle (fermion)
+    $$ih\frac{\partial \psi(X, t)}{\partial t} = (c\sum_{k=1}^{3} \alpha_k p_k + \beta mc^2) \psi(x,t)$$ factorized using d'Alembert operator
+    $$\psi(x,t) =  \begin{pmatrix}
+    \psi_1(x,t) \\
+    \psi_2(x,t) \\
+    \psi_3(x,t) \\
+    \psi_4(x,t) \\
+    \end{pmatrix} $$
+  - wavefunctions 1/2 are for particle and 3/4 are for antiparticle (each wavefunction is either spin-up or spin-down)
+    - we get gamma (dirac) matrices and pauli matrices

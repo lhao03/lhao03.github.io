@@ -3,12 +3,13 @@ description: "CHEM 407"
 title: "CHEM 407: Statistical Mechanics in Chemistry"
 ---
 
-- Fundamentals of statistical mechanics: N V T , N V E, μV T , N P T Ensembles.
+- Fundamentals of statistical mechanics: NVT, NVE, μVT, NPT Ensembles.
 - Application to systems of non-interacting particles including Fermi-Dirac and Bose-Einstein statistics, and the Bose condensation.
 - Classical statistical mechanics including the general (p, q) formulation, and the Maxwell-Boltzmann velocity distribution.
 - Statistical mechanics of interaction systems including virial expansions, thermodynamic perturbation theory, distribution function theory, and computer simulation methods
 
 * lecture 1
+*** basic ideas
 - general points:
   - why different types of ensembles? not all problems can be easily solved in all ensembles, you can and should (?) reach the same conclusions
   - non-interacting particles:
@@ -20,13 +21,22 @@ title: "CHEM 407: Statistical Mechanics in Chemistry"
 - macroscopic ideas depend on average behaviour of particles in system
   - mechanic vs thermodynamic properties (??: kind of confused on this?)
     - mechanical properties depend on the mechanics of system
+      - defined for each microstate
 - consider an NVT ensemble:
   - macroscopic: determine an equilibrium state
     - observe thermodynamic properties (if at thermodynamic limit)
   - microscopic: many microscopic states (microstates) from QM with CM approximations
     - with many different instantaneous values of E, P, etc (??: what are the restrictions on these values)
     - to do a calculation: must specify # & type of matter, # of microstates and their energies, etc (?? what is etc)
-  - microscopic level (QM) $$\xrightarrow[\text{statistical}]{\text{mechanics}}$$ macroscopic level (thermodynamics)
-- postulates:
-  1. all macroscopic observables obtained from average over different microstates (no dynamic information)
-  2.
+  - $$\text{microscopic level (QM)} \xrightarrow[\text{mechanics}]{\text{statistical}} \text{macroscopic level (thermodynamics)}$$
+- thermodynamics: basedon laws which are true
+- SM: based on postulates which may or may not be true
+- SM postulates:
+  1. all macroscopic observables obtained from average over different microstates (Schrodinger). we do not need any dynamic information
+     - ensemble: infinite number of systems which can be different microscopically but cannot be distinguished macroscopically
+       - take a snapshot of every system, we have all microstates $$\rightarrow$$ macroscopic properties
+    - what microstates are possible? QM
+    - how are these microstates distributed (aka probability of finding a microstate with energy E) for a given system in equilibrium? Boltzmann Distribution
+  2. if microstates of a system have the same energy, they are equally probable (the principle of equal a priori probabilities)
+- find P(E)
+*** deriving boltzmann distribution

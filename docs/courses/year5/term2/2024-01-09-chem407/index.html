@@ -61,12 +61,13 @@
   </div>
   <div class="content">
     <ul>
-<li>Fundamentals of statistical mechanics: N V T , N V E, μV T , N P T Ensembles.</li>
+<li>Fundamentals of statistical mechanics: NVT, NVE, μVT, NPT Ensembles.</li>
 <li>Application to systems of non-interacting particles including Fermi-Dirac and Bose-Einstein statistics, and the Bose condensation.</li>
 <li>Classical statistical mechanics including the general (p, q) formulation, and the Maxwell-Boltzmann velocity distribution.</li>
 <li>Statistical mechanics of interaction systems including virial expansions, thermodynamic perturbation theory, distribution function theory, and computer simulation methods</li>
 </ul>
 <h1 id="lecture-1">lecture 1</h1>
+<h3 id="basic-ideas">basic ideas</h3>
 <ul>
 <li>general points:
 <ul>
@@ -88,7 +89,10 @@
 <ul>
 <li>mechanic vs thermodynamic properties (??: kind of confused on this?)
 <ul>
-<li>mechanical properties depend on the mechanics of system</li>
+<li>mechanical properties depend on the mechanics of system
+<ul>
+<li>defined for each microstate</li>
+</ul></li>
 </ul></li>
 </ul></li>
 <li>consider an NVT ensemble:
@@ -102,14 +106,28 @@
 <li>with many different instantaneous values of E, P, etc (??: what are the restrictions on these values)</li>
 <li>to do a calculation: must specify # &amp; type of matter, # of microstates and their energies, etc (?? what is etc)</li>
 </ul></li>
-<li>microscopic level (QM) <span class="math display">$$\xrightarrow[\text{statistical}]{\text{mechanics}}$$</span> macroscopic level (thermodynamics)</li>
+<li><span class="math display">$$\text{microscopic level (QM)} \xrightarrow[\text{mechanics}]{\text{statistical}} \text{macroscopic level (thermodynamics)}$$</span></li>
 </ul></li>
-<li>postulates:
+<li>thermodynamics: basedon laws which are true</li>
+<li>SM: based on postulates which may or may not be true</li>
+<li>SM postulates:
 <ol type="1">
-<li>all macroscopic observables obtained from average over different microstates (no dynamic information)</li>
-<li></li>
-</ol></li>
+<li>all macroscopic observables obtained from average over different microstates (Schrodinger). we do not need any dynamic information
+<ul>
+<li>ensemble: infinite number of systems which can be different microscopically but cannot be distinguished macroscopically
+<ul>
+<li>take a snapshot of every system, we have all microstates <span class="math display">→</span> macroscopic properties</li>
+</ul></li>
 </ul>
+<ul>
+<li>what microstates are possible? QM</li>
+<li>how are these microstates distributed (aka probability of finding a microstate with energy E) for a given system in equilibrium? Boltzmann Distribution</li>
+</ul></li>
+<li>if microstates of a system have the same energy, they are equally probable (the principle of equal a priori probabilities)</li>
+</ol></li>
+<li>find P(E)</li>
+</ul>
+<h3 id="deriving-boltzmann-distribution">deriving boltzmann distribution</h3>
   </div>
   <div class="flex-row link-no-style">
     
