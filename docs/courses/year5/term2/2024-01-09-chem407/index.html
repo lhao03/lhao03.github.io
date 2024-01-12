@@ -146,22 +146,28 @@
 <li><span class="math display"><em>P</em><sub><em>A</em></sub>(<em>E</em><sub><em>A</em></sub>)</span>, <span class="math display"><em>P</em><sub><em>B</em></sub>(<em>E</em><sub><em>B</em></sub>)</span>, <span class="math display"><em>P</em><sub><em>A</em> + <em>B</em></sub>(<em>E</em><sub><em>A</em> + <em>B</em></sub>)</span></li>
 <li>because system A and B are independent, we can say <span class="math display"><em>P</em><sub><em>A</em> + <em>B</em></sub>(<em>E</em><sub><em>A</em> + <em>B</em></sub>) = <em>P</em><sub><em>A</em></sub>(<em>E</em><sub><em>A</em></sub>)<em>P</em><sub><em>B</em></sub>(<em>E</em><sub><em>B</em></sub>)</span></li>
 <li>apply the mathematical aside:
-<span class="math display">$$\frac{\partial P_{A+B}(E_A + E_B)}{\partial E_A} \\
- = \frac{\partial P_A(E_A)P_B(E_B)}{\partial E_A} \Big|_{E_B} \\
- = P_A^\prime(E_A)P_B(E_B)$$</span>
-<span class="math display">$$\frac{\partial P_A(E_A)P_B(E_B)}{\partial E_B} \Big|_{E_A} \\
- = P_B^\prime(E_B)P_A(E_A)$$</span>
+<span class="math display">$$\begin{align}
+ \frac{\partial P_{A+B}(E_A + E_B)}{\partial E_A} \\
+ &amp;= \frac{\partial P_A(E_A)P_B(E_B)}{\partial E_A} \Big|_{E_B} \\
+ &amp;= P_A^\prime(E_A)P_B(E_B)
+ \end{align}$$</span>
+<span class="math display">$$\begin{align}
+ \frac{\partial P_A(E_A)P_B(E_B)}{\partial E_B} \Big|_{E_A} \\
+ &amp;= P_B^\prime(E_B)P_A(E_A)
+ \end{align}$$</span>
 <span class="math display">$$ P_A^\prime(E_A)P_B(E_B) = P_B^\prime(E_B)P_A(E_A) \\
  \frac{P_A^\prime(E_A)}{P_A(E_A)} = \frac{P_B^\prime(E_B)}{P_B(E_B)} = - \beta$$</span>
 <ul>
 <li>this ratio must equal a constant because: LHS depends on <span class="math inline"><em>E</em><sub><em>A</em></sub></span> and RHS depends on <span class="math inline"><em>R</em><em>H</em><em>S</em></span> but they equal each other
 <ul>
 <li><span class="math inline"> − <em>β</em></span> does not depend on anything but temperature and Boltzmann constant
-<span class="math display">$$\frac{1}{P_A(E_A)}\frac{\partial P_A(E_A)}{\partial E_A} = - \beta \\
- \frac{1}{P_A(E_A)}\partial P_A(E_A) = - \beta \partial E_A \\
- \frac{P_A(E_A)}{P_A(E_A)} \partial (ln P_A(E_A)) = - \beta \partial E_A \\
- ln P_A(E_A) = - \beta E_A + c \\
- P_A(E_A) = Ce^{-\beta E_A}$$</span> (<a href="https://www.cs.uleth.ca/~holzmann/notes/diffrules.pdf">https://www.cs.uleth.ca/~holzmann/notes/diffrules.pdf</a>)</li>
+<span class="math display">$$\begin{align}
+ \frac{1}{P_A(E_A)}\frac{\partial P_A(E_A)}{\partial E_A} &amp;= - \beta \\
+ \frac{1}{P_A(E_A)}\partial P_A(E_A) &amp;= - \beta \partial E_A \\
+ \int \frac{P_A(E_A)}{P_A(E_A)} \partial (ln P_A(E_A)) &amp;= \int - \beta \partial E_A \\
+ ln P_A(E_A) &amp;= - \beta E_A + c \\
+ P_A(E_A) &amp;= ce^{-\beta E_A} \\
+ \end{align}$$</span> (<a href="https://www.cs.uleth.ca/~holzmann/notes/diffrules.pdf">https://www.cs.uleth.ca/~holzmann/notes/diffrules.pdf</a>)</li>
 </ul></li>
 </ul></li>
 <li>probability of finding Kth microstate: <span class="math display">$$P(E_K) = \frac{1}{Q}e^{-\beta E_K}$$</span></li>
