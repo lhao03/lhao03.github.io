@@ -61,3 +61,16 @@ title: "CHEM 211: Introduction to Chemical Analysis"
 *** Liquid Chromatography I
 *** Liquid Chromatography II
 *** Catch-up/review
+
+* lab notes
+** introduction to statistics
+- assumption: data randomly distributed in normal (gaussian) distribution
+- estimation of precision: standard deviation
+- outlier: Grubb's test
+- comparing two standard deviations: F test
+- comparing two means: Student's t-test
+- statistics of repeated measurements:
+  - absolute uncertainty: uncertainty described directly in the units of measurement
+    - absolute error: uncertainty from instrument or equipment
+    - reproducible and source of origin known
+  - relative uncertainty: percentage of magnitude of quantity measured

@@ -55,7 +55,7 @@ title: "CHEM 412: Structure of Atoms and Molecules"
   - postulates
     1. impossible to transmit information faster than speed of light
     2. laws of physics are identical, without any variation, in every location in universe, no matter how fast travelling
-  - consequences: time dilation (observer in one reference frame observes clock in another frame to be ticking more slowly than in observer's own frame), length contradiction (same analogy but with length), and as a body moves with increasing velocity its mass increases: $$t = \gamma t_0, \mathcal{l} = \gamma \mathcal{l}_0, m = \gamma m_0$$
+  - consequences: time dilation (observer in one reference frame observes clock in another frame to be ticking more slowly than in observer's own frame), length contradiction (same analogy but with length),  and as a body moves with increasing velocity its mass increases: $$t = \gamma t_0, \mathcal{l} = \gamma \mathcal{l}_0, m = \gamma m_0$$
     - this follows $$E = mc^2$$, $$E^2 = p^2c^2 + (m_0c^2)^2$$
 - combining relativity and quantum theory
   - energy "uncertainty" (QM) mass-energy equivalence (special relativity) $$\rightarrow$$ particle/anti-particle pairs by quantum fluctuations
@@ -77,3 +77,15 @@ title: "CHEM 412: Structure of Atoms and Molecules"
     \end{pmatrix} $$
   - wavefunctions 1/2 are for particle and 3/4 are for antiparticle (each wavefunction is either spin-up or spin-down)
     - we get gamma (dirac) matrices and pauli matrices
+** 2
+- Taylor expansion $$\rightarrow$$ power series $$a_0 + a_1x + a_2x^2 + etc$$
+  - different powers of x form basis set
+  - chem312: $$\psi (x) = \sum C_n \psi_n$$
+  - minimal basis set is least accurate
+- spin multiplicity: 2s+1 (review)
+  - 1 e, s = 1/2
+  - 0 single electrons, s = 0, 2s+1 = 1
+  - open shell singlet: 1/2, -1/2
+  - open shell triplet: 1/2, 1/2
+  - closed shell triplet is not possible (Pauli exclusion principle)
+- hybridization changes electronegativity

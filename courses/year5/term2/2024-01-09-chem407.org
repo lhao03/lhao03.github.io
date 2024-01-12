@@ -8,6 +8,11 @@ title: "CHEM 407: Statistical Mechanics in Chemistry"
 - Classical statistical mechanics including the general (p, q) formulation, and the Maxwell-Boltzmann velocity distribution.
 - Statistical mechanics of interaction systems including virial expansions, thermodynamic perturbation theory, distribution function theory, and computer simulation methods
 
+* questions
+- how to differentiate between mechanical property and thermodynamic property?
+- what are restrictions on what values microstates can have?
+  - depends on the ensemble
+
 * lecture 1
 *** basic ideas
 - general points:
@@ -19,14 +24,14 @@ title: "CHEM 407: Statistical Mechanics in Chemistry"
   - statistical mechanics needs QM
     - can approximate with CM
 - macroscopic ideas depend on average behaviour of particles in system
-  - mechanic vs thermodynamic properties (??: kind of confused on this?)
+  - mechanic vs thermodynamic properties
     - mechanical properties depend on the mechanics of system
       - defined for each microstate
 - consider an NVT ensemble:
   - macroscopic: determine an equilibrium state
     - observe thermodynamic properties (if at thermodynamic limit)
   - microscopic: many microscopic states (microstates) from QM with CM approximations
-    - with many different instantaneous values of E, P, etc (??: what are the restrictions on these values)
+    - with many different instantaneous values of E, P, etc
     - to do a calculation: must specify # & type of matter, # of microstates and their energies, etc (?? what is etc)
   - $$\text{microscopic level (QM)} \xrightarrow[\text{mechanics}]{\text{statistical}} \text{macroscopic level (thermodynamics)}$$
 - thermodynamics: basedon laws which are true
@@ -38,5 +43,28 @@ title: "CHEM 407: Statistical Mechanics in Chemistry"
     - what microstates are possible? QM
     - how are these microstates distributed (aka probability of finding a microstate with energy E) for a given system in equilibrium? Boltzmann Distribution
   2. if microstates of a system have the same energy, they are equally probable (the principle of equal a priori probabilities)
+     - systems with same energy are equally likely to occur in ensemble
 - find P(E)
 *** deriving boltzmann distribution
+* lecture 2
+- NVT ensemble: 2 systems with fixed temperature
+  - $$P_A(E_A)$$, $$P_B(E_B)$$, $$P_{A+B}(E_{A+B})$$
+  - because system A and B are independent, we can say $$P_{A+B}(E_{A+B}) = P_A(E_A)P_B(E_B)$$
+  - apply the mathematical aside:
+    $$\frac{\partial P_{A+B}(E_A + E_B)}{\partial E_A} \\
+    = \frac{\partial P_A(E_A)P_B(E_B)}{\partial E_A} \Big|_{E_B} \\
+    = P_A^\prime(E_A)P_B(E_B)$$
+    $$\frac{\partial P_A(E_A)P_B(E_B)}{\partial E_B} \Big|_{E_A} \\
+    = P_B^\prime(E_B)P_A(E_A)$$
+    $$ P_A^\prime(E_A)P_B(E_B) = P_B^\prime(E_B)P_A(E_A) \\
+    \frac{P_A^\prime(E_A)}{P_A(E_A)} = \frac{P_B^\prime(E_B)}{P_B(E_B)} = - \beta$$
+    - this ratio must equal a constant because: LHS depends on $E_A$ and RHS depends on $RHS$ but they equal each other
+      - $-\beta$ does not depend on anything but temperature and Boltzmann constant
+        $$\frac{1}{P_A(E_A)}\frac{\partial P_A(E_A)}{\partial E_A} = - \beta \\
+        \frac{1}{P_A(E_A)}\partial P_A(E_A) = - \beta \partial E_A \\
+        \frac{P_A(E_A)}{P_A(E_A)} \partial (ln P_A(E_A)) = - \beta \partial E_A \\
+        ln P_A(E_A) = - \beta E_A + c \\
+        P_A(E_A) = Ce^{-\beta E_A}$$ (https://www.cs.uleth.ca/~holzmann/notes/diffrules.pdf)
+  - probability of finding Kth microstate: $$P(E_K) = \frac{1}{Q}e^{-\beta E_K}$$
+  - more interested in finding a microstate of an energy level: introduce degeneracies (from quantization of energy, QM) $$\rightarrow P_l(E) = \Omega(E)P(E)$$
+    - degeneracies increase with increasing energy, $P(E)$ decreases with increasing energy

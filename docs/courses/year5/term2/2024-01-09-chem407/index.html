@@ -66,6 +66,14 @@
 <li>Classical statistical mechanics including the general (p, q) formulation, and the Maxwell-Boltzmann velocity distribution.</li>
 <li>Statistical mechanics of interaction systems including virial expansions, thermodynamic perturbation theory, distribution function theory, and computer simulation methods</li>
 </ul>
+<h1 id="questions">questions</h1>
+<ul>
+<li>how to differentiate between mechanical property and thermodynamic property?</li>
+<li>what are restrictions on what values microstates can have?
+<ul>
+<li>depends on the ensemble</li>
+</ul></li>
+</ul>
 <h1 id="lecture-1">lecture 1</h1>
 <h3 id="basic-ideas">basic ideas</h3>
 <ul>
@@ -87,7 +95,7 @@
 </ul></li>
 <li>macroscopic ideas depend on average behaviour of particles in system
 <ul>
-<li>mechanic vs thermodynamic properties (??: kind of confused on this?)
+<li>mechanic vs thermodynamic properties
 <ul>
 <li>mechanical properties depend on the mechanics of system
 <ul>
@@ -103,7 +111,7 @@
 </ul></li>
 <li>microscopic: many microscopic states (microstates) from QM with CM approximations
 <ul>
-<li>with many different instantaneous values of E, P, etc (??: what are the restrictions on these values)</li>
+<li>with many different instantaneous values of E, P, etc</li>
 <li>to do a calculation: must specify # &amp; type of matter, # of microstates and their energies, etc (?? what is etc)</li>
 </ul></li>
 <li><span class="math display">$$\text{microscopic level (QM)} \xrightarrow[\text{mechanics}]{\text{statistical}} \text{macroscopic level (thermodynamics)}$$</span></li>
@@ -123,11 +131,46 @@
 <li>what microstates are possible? QM</li>
 <li>how are these microstates distributed (aka probability of finding a microstate with energy E) for a given system in equilibrium? Boltzmann Distribution</li>
 </ul></li>
-<li>if microstates of a system have the same energy, they are equally probable (the principle of equal a priori probabilities)</li>
+<li>if microstates of a system have the same energy, they are equally probable (the principle of equal a priori probabilities)
+<ul>
+<li>systems with same energy are equally likely to occur in ensemble</li>
+</ul></li>
 </ol></li>
 <li>find P(E)</li>
 </ul>
 <h3 id="deriving-boltzmann-distribution">deriving boltzmann distribution</h3>
+<h1 id="lecture-2">lecture 2</h1>
+<ul>
+<li>NVT ensemble: 2 systems with fixed temperature
+<ul>
+<li><span class="math display"><em>P</em><sub><em>A</em></sub>(<em>E</em><sub><em>A</em></sub>)</span>, <span class="math display"><em>P</em><sub><em>B</em></sub>(<em>E</em><sub><em>B</em></sub>)</span>, <span class="math display"><em>P</em><sub><em>A</em> + <em>B</em></sub>(<em>E</em><sub><em>A</em> + <em>B</em></sub>)</span></li>
+<li>because system A and B are independent, we can say <span class="math display"><em>P</em><sub><em>A</em> + <em>B</em></sub>(<em>E</em><sub><em>A</em> + <em>B</em></sub>) = <em>P</em><sub><em>A</em></sub>(<em>E</em><sub><em>A</em></sub>)<em>P</em><sub><em>B</em></sub>(<em>E</em><sub><em>B</em></sub>)</span></li>
+<li>apply the mathematical aside:
+<span class="math display">$$\frac{\partial P_{A+B}(E_A + E_B)}{\partial E_A} \\
+ = \frac{\partial P_A(E_A)P_B(E_B)}{\partial E_A} \Big|_{E_B} \\
+ = P_A^\prime(E_A)P_B(E_B)$$</span>
+<span class="math display">$$\frac{\partial P_A(E_A)P_B(E_B)}{\partial E_B} \Big|_{E_A} \\
+ = P_B^\prime(E_B)P_A(E_A)$$</span>
+<span class="math display">$$ P_A^\prime(E_A)P_B(E_B) = P_B^\prime(E_B)P_A(E_A) \\
+ \frac{P_A^\prime(E_A)}{P_A(E_A)} = \frac{P_B^\prime(E_B)}{P_B(E_B)} = - \beta$$</span>
+<ul>
+<li>this ratio must equal a constant because: LHS depends on <span class="math inline"><em>E</em><sub><em>A</em></sub></span> and RHS depends on <span class="math inline"><em>R</em><em>H</em><em>S</em></span> but they equal each other
+<ul>
+<li><span class="math inline"> − <em>β</em></span> does not depend on anything but temperature and Boltzmann constant
+<span class="math display">$$\frac{1}{P_A(E_A)}\frac{\partial P_A(E_A)}{\partial E_A} = - \beta \\
+ \frac{1}{P_A(E_A)}\partial P_A(E_A) = - \beta \partial E_A \\
+ \frac{P_A(E_A)}{P_A(E_A)} \partial (ln P_A(E_A)) = - \beta \partial E_A \\
+ ln P_A(E_A) = - \beta E_A + c \\
+ P_A(E_A) = Ce^{-\beta E_A}$$</span> (<a href="https://www.cs.uleth.ca/~holzmann/notes/diffrules.pdf">https://www.cs.uleth.ca/~holzmann/notes/diffrules.pdf</a>)</li>
+</ul></li>
+</ul></li>
+<li>probability of finding Kth microstate: <span class="math display">$$P(E_K) = \frac{1}{Q}e^{-\beta E_K}$$</span></li>
+<li>more interested in finding a microstate of an energy level: introduce degeneracies (from quantization of energy, QM) <span class="math display"> → <em>P</em><sub><em>l</em></sub>(<em>E</em>) = <em>Ω</em>(<em>E</em>)<em>P</em>(<em>E</em>)</span>
+<ul>
+<li>degeneracies increase with increasing energy, <span class="math inline"><em>P</em>(<em>E</em>)</span> decreases with increasing energy</li>
+</ul></li>
+</ul></li>
+</ul>
   </div>
   <div class="flex-row link-no-style">
     

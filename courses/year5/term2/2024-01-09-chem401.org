@@ -34,6 +34,10 @@ title: "CHEM 401: Principles of Spectroscopy"
 - splitting of hydrogen: bohr -> dirac -> qed
   [[../../../images/401/spliitng.jpeg]]
 ** 2: WebMO practice
+- dihedral angle: rotate relative to a plane
+- linear molecule: 2 rotational constants
+- non-linear molecule: 3 rotational constants
+- first optimize then calculate vibrational frequency
 ** 3: intro to QM
 ** 4: intro to EMR
 ** 5: light-matter interaction
