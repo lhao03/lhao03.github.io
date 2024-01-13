@@ -60,7 +60,11 @@
     
   </div>
   <div class="content">
-    <h1 id="units">units</h1>
+    <h1 id="questions">questions</h1>
+<ul>
+<li>how does <span class="math display">$$N \varpropto \sqrt{n}$$</span> imply averaged noise, being random, tends to cancel out?</li>
+</ul>
+<h1 id="units">units</h1>
 <h3 id="course-introduction">Course Introduction</h3>
 <ul>
 <li>analytical chemistry: obtaining, processing, communicating information about composition/structure of matter
@@ -72,6 +76,7 @@
 </ul>
 <h2 id="analytical-concepts">Analytical concepts</h2>
 <h3 id="an-introduction-to-analytical-measurements">An Introduction to Analytical Measurements</h3>
+<h3 id="lecture-1">lecture 1</h3>
 <ul>
 <li>the scientific method:
 <ol type="1">
@@ -86,7 +91,7 @@
 <li>qualitative (identification) vs. quantitative (quantity) of components</li>
 <li>signal
 <ul>
-<li>visual: simple, low-cost, subjectice, not sensitive, large sample volumes, low-throughput (??)</li>
+<li>visual: simple, low-cost, subjective, not sensitive, large sample volumes, low-throughput (??)</li>
 <li>electrical detection: objective, more sensitive, faster, automate, costly, maintenance, calibration
 <ul>
 <li>voltage</li>
@@ -94,10 +99,63 @@
 <li>transducer</li>
 </ul></li>
 </ul></li>
-<li>measurement: can get signal and noise (unwanted, random fluctations in background)
+<li>measurement: can get signal and noise (unwanted, random fluctuations in background)
 <ul>
 <li>signal-to-noise ratio</li>
-<li>multiple scans acquired and averaged to increase S/N <span class="math display">$$S \varpropto \sqrt{n}; \frac{S}{N} \varpropto \sqrt{n}$$</span> and <span class="math display"><em>N</em></span> adds randomly</li>
+<li>multiple scans acquired and averaged to increase S/N <span class="math display">$$\frac{S}{N} \varpropto \sqrt{n}$$</span> and <span class="math display"><em>N</em></span> adds randomly</li>
+</ul></li>
+</ul>
+<h3 id="lecture-2">lecture 2</h3>
+<ul>
+<li>additions to scientific method: analyze, interpret and report data</li>
+<li>terminology:
+<ul>
+<li>assay: set of procedures or methods, latin word for try</li>
+<li>analyte: chemical we are looking for</li>
+<li>qualitative analysis</li>
+<li>quantitative analysis</li>
+<li>signal:
+<ul>
+<li>visual: subjective, low throughput</li>
+<li>electrical detection: objective, costly, calibration
+<ul>
+<li>transducer: converts output from experiment into electrical output</li>
+</ul></li>
+</ul></li>
+<li>measurement:
+<ul>
+<li>signal: can be height or area of line/graph (thing we want) (mean of several measurements)</li>
+<li>noise: unwanted, random fluctuations (sd)</li>
+<li>want big s/n noise ratio</li>
+</ul></li>
+<li>signal/noise ratio:
+<ul>
+<li>multiple measurements/averaging increases S/N
+<ul>
+<li><span class="math display">$$S \varpropto n, N \varpropto \sqrt{n}$$</span> where <span class="math inline"><em>n</em></span> is number of measurements</li>
+</ul></li>
+<li>depends on having relatively quick scans (increase S)</li>
+<li>system signal has to be stable</li>
+</ul></li>
+<li>sample matrix: everything but the analyte.
+<ul>
+<li>matrix: complex and often unknown</li>
+</ul></li>
+<li>blank: chemist made sample that lacks analyte
+<ul>
+<li>types:
+<ul>
+<li>solvent: same solvent as sample solutions</li>
+<li>method: same solvents and reagents</li>
+<li>sample: tries to approximate the sample matrix, everything but analyte</li>
+</ul></li>
+</ul></li>
+<li>detection limit:
+<ul>
+<li>noise:</li>
+<li>blank:</li>
+<li>limit of detection (LOD):</li>
+</ul></li>
 </ul></li>
 </ul>
 <h3 id="analytical-measurements-and-statistics---gaussian-distribution-standard-deviation">Analytical Measurements and Statistics - Gaussian Distribution, Standard Deviation</h3>

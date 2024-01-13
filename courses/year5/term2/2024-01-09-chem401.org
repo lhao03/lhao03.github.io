@@ -3,6 +3,9 @@ description: "CHEM 401"
 title: "CHEM 401: Principles of Spectroscopy"
 ---
 
+* good resources
+- https://socratic.org/questions/what-are-the-differences-between-stretching-vibration-and-bending-vibrations
+
 * lectures
 ** 1: introduction
 - basic spectroscopy: light source -> sample -> prism -> detector

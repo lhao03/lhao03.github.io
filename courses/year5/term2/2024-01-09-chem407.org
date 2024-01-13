@@ -12,6 +12,13 @@ title: "CHEM 407: Statistical Mechanics in Chemistry"
 - how to differentiate between mechanical property and thermodynamic property?
 - what are restrictions on what values microstates can have?
   - depends on the ensemble
+- does derivation of boltzmann distribution state with two macroscopic systems (and does that matter)?
+- is derivation of boltzmann distribution independent of physics (besides the constraint on temperature which plays a role in the constant)
+- how was degeneracy explained before QM?
+  - density of states
+- what distributions do the other ensembles follow?
+- why is entropy undefined for a microstate?
+- grand canonical ensemble: how to prove thermodynamic limit?
 
 * lecture 1
 *** basic ideas

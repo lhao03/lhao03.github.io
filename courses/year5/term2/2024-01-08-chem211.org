@@ -3,6 +3,8 @@ description: "CHEM 211"
 title: "CHEM 211: Introduction to Chemical Analysis"
 ---
 
+* questions
+- how does $$N \varpropto \sqrt{n}$$ imply averaged noise, being random, tends to cancel out?
 * units
 *** Course Introduction
 - analytical chemistry: obtaining, processing, communicating information about composition/structure of matter
@@ -11,6 +13,7 @@ title: "CHEM 211: Introduction to Chemical Analysis"
 - making good measurements and know if those measurements are good
 ** Analytical concepts
 *** An Introduction to Analytical Measurements
+*** lecture 1
 - the scientific method:
   1. formulate question
   2. sampling (??)
@@ -21,14 +24,45 @@ title: "CHEM 211: Introduction to Chemical Analysis"
 - assay is process of determining the amount of analyte (substance being measured) in sample
 - qualitative (identification) vs. quantitative (quantity) of components
 - signal
-  - visual: simple, low-cost, subjectice, not sensitive, large sample volumes, low-throughput (??)
+  - visual: simple, low-cost, subjective, not sensitive, large sample volumes, low-throughput (??)
   - electrical detection: objective, more sensitive, faster, automate, costly, maintenance, calibration
     - voltage
     - current
     - transducer
-- measurement: can get signal and noise (unwanted, random fluctations in background)
+- measurement: can get signal and noise (unwanted, random fluctuations in background)
   - signal-to-noise ratio
-  - multiple scans acquired and averaged to increase S/N $$S \varpropto \sqrt{n}; \frac{S}{N} \varpropto \sqrt{n}$$ and $$N$$ adds randomly
+  - multiple scans acquired and averaged to increase S/N $$\frac{S}{N} \varpropto \sqrt{n}$$ and $$N$$ adds randomly
+*** lecture 2
+- additions to scientific method: analyze, interpret and report data
+- terminology:
+  - assay: set of procedures or methods, latin word for try
+  - analyte: chemical we are looking for
+  - qualitative analysis
+  - quantitative analysis
+  - signal:
+    - visual: subjective, low throughput
+    - electrical detection: objective, costly, calibration
+      - transducer: converts output from experiment into electrical output
+  - measurement:
+    - signal: can be height or area of line/graph (thing we want) (mean of several measurements)
+    - noise: unwanted, random fluctuations (sd)
+    - want big s/n noise ratio
+  - signal/noise ratio:
+    - multiple measurements/averaging increases S/N
+      - $$S \varpropto n, N \varpropto \sqrt{n}$$ where $n$ is number of measurements
+    - depends on having relatively quick scans (increase S)
+    - system signal has to be stable
+  - sample matrix: everything but the analyte.
+    - matrix: complex and often unknown
+  - blank: chemist made sample that lacks analyte
+    - types:
+      - solvent: same solvent as sample solutions
+      - method: same solvents and reagents
+      - sample: tries to approximate the sample matrix, everything but analyte
+  - detection limit:
+    - noise:
+    - blank:
+    - limit of detection (LOD):
 *** Analytical Measurements and Statistics - Gaussian Distribution, Standard Deviation
 *** Analytical Measurements and Statistics - Significance Testing
 
