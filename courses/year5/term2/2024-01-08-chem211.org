@@ -79,11 +79,20 @@ title: "CHEM 211: Introduction to Chemical Analysis"
   - ability to report the concentration
     - $$C_{LOQ} = \frac{10\sigma_{mb}}{m}$$
 *** lecture 3
-[[/images/211/LOD_211_Week2_Tuesday.jpeg]]
+[[../../../../images/211/LOD_211_Week2_Tuesday.jpeg]]
 - controls:
   - positive: standard sample with known quantity of analyte
-    - prevents situation when there should be a signal but there is no signal
-  - negative:
+    - prevents situation when there should be a signal but there is no signal (false negative)
+  - negative: standard sample with no analyete
+    - prevents situation when there should be no signal and there is a signal (false positive)
+- figures of merit
+  - LOD, LOQ
+  - accuracy
+  - precision
+  - sensitivity
+  - selectivity
+  - dynamic range
+  - robustness
 *** Analytical Measurements and Statistics - Gaussian Distribution, Standard Deviation
 *** Analytical Measurements and Statistics - Significance Testing
 

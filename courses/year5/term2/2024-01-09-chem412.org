@@ -38,7 +38,7 @@ title: "CHEM 412: Structure of Atoms and Molecules"
 * Lectures
 ** 1
 - slater vs. gaussian
-  [[/../../../images/412/svg.png]]
+  [[../../../../images/412/svg.png]]
   - gaussian decays too quickly and has longer tails
     - ill behaving because decays too fast
     - near nuclei (at origin), is flat, differential is 0
@@ -92,7 +92,7 @@ title: "CHEM 412: Structure of Atoms and Molecules"
   - https://web.ics.purdue.edu/~loudonm/pdf/Supplement_04.01.pdf
   - $sp$ more electronegative than $sp^2$ more electronegative than $sp^3$
   - this causes dipole moments: arrow goes + to -
-  - $sp^2$ has electron in the $2p$ orbital, which the electron density of $2p$ is not evenly distributed around nucleus in all directions [[/../../../images/412/hy.jpeg]]
+  - $sp^2$ has electron in the $2p$ orbital, which the electron density of $2p$ is not evenly distributed around nucleus in all directions [[../../../../images/412/hy.jpeg]]
   - $sp^3$ by contrast, the electron density is evenly distributed in the hybrid orbitals
 - geometry sequence energies: tries to find a derivative of 0 to minimize nuclear repulsion energy
   - derivative is indication of force
