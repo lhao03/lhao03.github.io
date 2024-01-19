@@ -74,15 +74,15 @@ title: "CHEM 211: Introduction to Chemical Analysis"
       - $$(S_A)_{DL} = S_{mb} + z\sigma_{mb}, z = 3$$
         - 99.7 confidence, $$S/N = 3$$ if $$S_mb = 0$$
     - sample LOD: amount/concentration (user)
-      - take signal LOD and convert to eq concentration via caligration $$ $$
+      - take signal LOD and convert to eq concentration via calibration
 - limit of quantitation $$\frac{S}{N} = 10$$
   - ability to report the concentration
     - $$C_{LOQ} = \frac{10\sigma_{mb}}{m}$$
 *** lecture 3
-[[../../../../LOD_211_Week2_Tuesday.jpeg]]
+[[/images/211/LOD_211_Week2_Tuesday.jpeg]]
 - controls:
   - positive: standard sample with known quantity of analyte
-    -
+    - prevents situation when there should be a signal but there is no signal
   - negative:
 *** Analytical Measurements and Statistics - Gaussian Distribution, Standard Deviation
 *** Analytical Measurements and Statistics - Significance Testing
