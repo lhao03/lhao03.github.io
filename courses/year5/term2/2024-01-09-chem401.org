@@ -35,7 +35,7 @@ title: "CHEM 401: Principles of Spectroscopy"
       - $$E = ih \frac{\partial}{\partial \tau}$$
     - Einstein: relativity (things moving at speed of light)
 - splitting of hydrogen: bohr -> dirac -> qed
-  [[../../../images/401/spliitng.jpeg]]
+  [[/../../images/401/spliitng.jpeg]]
 ** 2: WebMO practice
 - dihedral angle: rotate relative to a plane
 - linear molecule: 2 rotational constants

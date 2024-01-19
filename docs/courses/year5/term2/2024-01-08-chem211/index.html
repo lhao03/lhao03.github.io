@@ -64,6 +64,10 @@
 <ul>
 <li>how does <span class="math display">$$N \varpropto \sqrt{n}$$</span> imply averaged noise, being random, tends to cancel out?</li>
 <li>can we generalize the error propagation for <span class="math inline"><em>y</em><sup><em>x</em></sup></span>?</li>
+<li>what does sd of noise mean?
+<ul>
+<li>why is this <span class="math display"><em>S</em>/<em>N</em> = 3</span> if <span class="math display"><em>S</em><sub><em>m</em></sub><em>b</em> = 0</span> important</li>
+</ul></li>
 </ul>
 <h1 id="units">units</h1>
 <h3 id="course-introduction">Course Introduction</h3>
@@ -153,12 +157,37 @@
 </ul></li>
 <li>detection limit:
 <ul>
-<li>noise:</li>
-<li>blank:</li>
-<li>limit of detection (LOD):</li>
+<li>ability to detect analyte</li>
+<li><span class="math display">$$C_{LOD} = \frac{3\sigma_{mb}}{m}$$</span></li>
+<li>noise: random fluctuations in measured signal</li>
+<li>blank: a constant (like control) signal measured in absence of analyte</li>
+<li>limit of detection (LOD): smallest concentration of absolute amount of analyte with signal much larger than blank
+<ul>
+<li>signal that is greater than mean of blank + three sds of the noise</li>
+</ul></li>
+<li>signal LOD: units as signal (instrument maker)
+<ul>
+<li><span class="math display">(<em>S</em><sub><em>A</em></sub>)<sub><em>D</em><em>L</em></sub> = <em>S</em><sub><em>m</em><em>b</em></sub> + <em>z</em><em>σ</em><sub><em>m</em><em>b</em></sub>, <em>z</em> = 3</span>
+<ul>
+<li>99.7 confidence, <span class="math display"><em>S</em>/<em>N</em> = 3</span> if <span class="math display"><em>S</em><sub><em>m</em></sub><em>b</em> = 0</span></li>
+</ul></li>
+</ul></li>
+<li>sample LOD: amount/concentration (user)
+<ul>
+<li>take signal LOD and convert to eq concentration via caligration <span class="math display"></span></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>limit of quantitation <span class="math display">$$\frac{S}{N} = 10$$</span>
+<ul>
+<li>ability to report the concentration
+<ul>
+<li><span class="math display">$$C_{LOQ} = \frac{10\sigma_{mb}}{m}$$</span></li>
 </ul></li>
 </ul></li>
 </ul>
+<h3 id="lecture-3">lecture 3</h3>
+<p><img src="file:///.../../LOD_211_Week2_Tuesday.jpeg" /></p>
 <h3 id="analytical-measurements-and-statistics---gaussian-distribution-standard-deviation">Analytical Measurements and Statistics - Gaussian Distribution, Standard Deviation</h3>
 <h3 id="analytical-measurements-and-statistics---significance-testing">Analytical Measurements and Statistics - Significance Testing</h3>
 <h2 id="equilibrium-and-volumetric-analysis">Equilibrium and volumetric analysis</h2>

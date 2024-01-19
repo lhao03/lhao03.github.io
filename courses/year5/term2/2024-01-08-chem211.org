@@ -6,6 +6,9 @@ title: "CHEM 211: Introduction to Chemical Analysis"
 * questions
 - how does $$N \varpropto \sqrt{n}$$ imply averaged noise, being random, tends to cancel out?
 - can we generalize the error propagation for $y^x$?
+- what does sd of noise mean?
+  - why is this $$S/N = 3$$ if $$S_mb = 0$$ important
+
 * units
 *** Course Introduction
 - analytical chemistry: obtaining, processing, communicating information about composition/structure of matter
@@ -61,9 +64,22 @@ title: "CHEM 211: Introduction to Chemical Analysis"
       - method: same solvents and reagents
       - sample: tries to approximate the sample matrix, everything but analyte
   - detection limit:
-    - noise:
-    - blank:
-    - limit of detection (LOD):
+    - ability to detect analyte
+    - $$C_{LOD} = \frac{3\sigma_{mb}}{m}$$
+    - noise: random fluctuations in measured signal
+    - blank: a constant (like control) signal measured in absence of analyte
+    - limit of detection (LOD): smallest concentration of absolute amount of analyte with signal much larger than blank
+      - signal that is greater than mean of blank + three sds of the noise
+    - signal LOD: units as signal (instrument maker)
+      - $$(S_A)_{DL} = S_{mb} + z\sigma_{mb}, z = 3$$
+        - 99.7 confidence, $$S/N = 3$$ if $$S_mb = 0$$
+    - sample LOD: amount/concentration (user)
+      - take signal LOD and convert to eq concentration via caligration $$ $$
+- limit of quantitation $$\frac{S}{N} = 10$$
+  - ability to report the concentration
+    - $$C_{LOQ} = \frac{10\sigma_{mb}}{m}$$
+*** lecture 3
+[[/.../../LOD_211_Week2_Tuesday.jpeg]]
 *** Analytical Measurements and Statistics - Gaussian Distribution, Standard Deviation
 *** Analytical Measurements and Statistics - Significance Testing
 
