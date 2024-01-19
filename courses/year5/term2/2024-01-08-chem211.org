@@ -79,7 +79,10 @@ title: "CHEM 211: Introduction to Chemical Analysis"
   - ability to report the concentration
     - $$C_{LOQ} = \frac{10\sigma_{mb}}{m}$$
 *** lecture 3
-[[/.../../LOD_211_Week2_Tuesday.jpeg]]
+[[/../../../LOD_211_Week2_Tuesday.jpeg]]
+- controls:
+  - positive:
+  - negative:
 *** Analytical Measurements and Statistics - Gaussian Distribution, Standard Deviation
 *** Analytical Measurements and Statistics - Significance Testing
 
