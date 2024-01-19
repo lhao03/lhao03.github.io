@@ -14,10 +14,44 @@ Notes for the workshop I'll be giving UBC iGEM.
 2. git and github (and codespaces)
 3. documentation handbook
 
-== Slide 3: about me
+== Slide 3 - 5: habits
+- ask everyone: what's a habit?
+- a habit is a process that moves you from one state to another
+- ask everyone: what type of habits would we need for igem?
+- define this type of work as gluework
 
-== Slide 4 and 5: gluework (5 mins)
+== Slide 6: gluework (5 mins)
+- glue holds things together
+- it holds a team together be ensuring the team can work together and be on the same page
+- without gluework, the team falls apart
 
+- glue work is defined as the work required to keep a team functional
+- in industry, something like agile tries to do this
+- our internal wiki and documentation handbook tries to do this too
+- who does glue work? everyone
+- leads do more "overview" work but all members must contribute to keeping the team togehter
+- this is especially important with large teams.
+- the larger a team, the harder it is to hold that team together
+- a team with no gluework is a bunch of headless chickens running around.
+- if we don't have a cohesive project at the end of the year, we might as well not compete.
+  - it's not fair to members who do their gluework to keep together members that don't even bother with gluework
+
+- if we take a look at Brooke's law, which is an observation about software project management, we can say that:
+
+1. it takes time for new people to become productive.
+* Many new members here are learning about synthetic biology for the first time.
+* new members will have to spend energy to learn about iGEM, whereas experienced members have already done that.
+* experienced members will have to educate and guide new members, because new members are also more likely to make mistakes.
+* Having experienced members document their work will help new members who are expected to read this documentation.
+
+2. as more people join a team, communication overhead increases.
+* In a team of 3 people, you can easily get on a Zoom call and have a conversation where everyone is on the same page.
+* In our team of 20 people, it's very easy for people of different subteams to get lost when listening to other subteams.
+* Documentation serves as a way to keep everyone on the same page.
+
+- everyone must put in the work to be an engaged and active member of our team, and one of those tasks is to contribute to our internal wiki.
+
+==== written notes
 So I've put up a picture of liquid glue. Glue holds things together. And that's what gluework is; the type of work that holds a team together, ensures a team can work together, and enables a team to be on the same page, and more. Without glue work a team falls apart. You have all experienced this many times in school based group projects where no one is taking the lead so work is scattered and it's not clear who is doing what.
 
 Glue work is broadly defined as the work required to keep a team functional. Processes like agile, our master tracker and the documentation handbook are ways to keep a team on track and ensure that we are transparent with each other. So who does glue work? Everyone in a team should be doing glue work. Those in managerial positions will end up doing more glue work, like assigning tasks or writing out a roadmap, but everyone will be expected to record their weekly tasks and contribute to the internal documentation wiki. Glue work is not a single person's burden to carry. It is everyone's responsibility.
@@ -30,7 +64,7 @@ Updating the internal wiki with what you have done or are planning to do is glue
 
 That means everyone must put in the work to be an engaged and active member of our team, and one of those tasks is to contribute to our internal wiki. If at anytime you feel like something feels wrong or have a suggestion to better engage everyone please let your lead and co-directors know!
 
-== Slide 6-10: git (14 mins)
+== Slide 7-11: git (14 mins)
 
 Firstly, what is Git? Git is a distributed version control system. Unlke Google Docs, which is a central version control system, many people can have different copies of the same code when tracking changes with Git. Another difference between Git and other version control system's like Google Docs is that you control when you want to track changes. Google Docs saves every time you make a change to your document, but Git only tracks changes when you explicitly say to. Additionally, Git makes working with many people very easy. When you're working on a Google Doc and don't want someone to edit your work there's no way to prevent that except to create a hard copy of the document; Git doesn't have this issue. So let's get into some git commands!
 
@@ -55,17 +89,17 @@ Thirdly, to keep your work seperate from others:
  
 Some commands, like `git push` and `git pull` require a remote respository. And GitHub is where you host these remote repositories.
 
-== Slide 11-12: github and codespaces (5 mins)
+== Slide 12-13: github and codespaces (5 mins)
 
 Now onto GitHub. What is GitHub? GitHub is a cloud hosting platform. People use Git to upload their code to GitHub and to manage projects across many people. GitHub also has a neat feature called Codespaces, which we will be checking out now!
 
 So let's navigate to the GitHub repo for the internal wiki. Everyone start your Codespace, and while that is booting up let's go to the Documentation Handbook.
 
-== Slide 13-15: documentation handbook (5 mins)
+== Slide 14-16: documentation handbook and internal wiki (5 mins)
 
 Everyone should read this document when you want to communicate information with other people or have information to record. If there is ever any confusion message the #documentation-wiki channel. We are going to practice all contributing to the internal wiki and going through the workflow of adding code to a software project, which is what you will be doing when you contribute to the competition wiki!
 
-== Slide 16-17: interactive (30 mins)
+== Slide 17-: interactive (30 mins)
 
 As an exercise, we are all going to add our names to the attributions table. First, make a branch and follow the commands on this slide. The markup language you will be using is Markdown. If you need any help with that just message the documentation channel. After you add your name, git add, commit and push. You will be asked to make a pull request, or a PR. A pull request is a way to let your team members that you would like to add your work to the project. This makes it so that the internal wiki is transparent, and allows leads and other team members to read your writing and offer advice or fix spelling errors. Anytime you're pushing work to GitHub, you have to make a pull request. After you make your pull request, tag the leads and then all you have to do it wait. However, you may see something called a merge conflict on your PR. You can resolve the conflict with Git but it's easier using the GitHub interface.
 

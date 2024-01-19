@@ -2,7 +2,10 @@
 description: "CHEM 245"
 title: "CHEM 245: Intermediate Synthetic Chemistry Laboratory"
 ---
-
+* questions
+- empirical vs. molecular
+- index of hydrogens
+- rule of thirteen
 * tutorials
 ** elemental analysis and IHD review
 *** learning objectives:
@@ -16,6 +19,15 @@ title: "CHEM 245: Intermediate Synthetic Chemistry Laboratory"
     - amu
 - rule of 13
 - provide possible structures using provided and calculated IHD
+** nmr:
+- Identify regions of the electromagnetic spectrum and identify which characterization methods exploit each specific region (in the context of CHEM 245)
+- Explain nuclear spin in the context of NMR
+- Distinguish between alpha (α) and beta (β) spin states
+- Predict which spin state (α or β) is the more populated
+- Describe how irradiation produces an NMR signal (simply)
+- Define chemical shift in terms of electronic and magnetic environments
+- Identify and use the terms “upfield” and “downfield”
+- Identify and use the terms “shielded” and “deshielded”
 
 **** jan 8
 - historically: incinerated compound in presence of $O_2$
@@ -39,9 +51,35 @@ title: "CHEM 245: Intermediate Synthetic Chemistry Laboratory"
     - problem types:
       - calculate IHD:
         - check for molecules from the mentioned groups. apply proper addition or subtraction of saturated hydrogens
+    - rule of 13: high resolution mass spectroscopy (HRMS) gives us mass in amu
+      - $$\frac{M}{13} = n + \frac{r}{13}$$
+        - $$C_nH_{n+r}$$ and $$IHD = U = \frac{n-r+2}{2}$$
+        - steps to solve problem:
+          1. use rule of 13 calculate base molecular formula and IHD by dividing the given amu by 13 and setting the fraction part as $$r$$
+          2. adjust base molecular and IHD for addition of other molecules if required.
+             - subtract from the base molecular formula
+             - add to IHD/U
 
 ** nuclear magnetic resonance spectroscopy
-*** Fundamentals
+*** Fundamentals (jan 15)
+- spectroscopy: study of interaction between matter and EMR
+- NMR: interaction of EMR and nucleus of atom
+  - $^13$C and $^1$H
+- NMR active nuclei: odd mass or odd atomic number
+  - quantized spin angular momentum $m_s$ and magnetic momentum
+  - nuclear spin quantum number I:  $^13$C: $1/2$ and $^1$H: $1/2$
+  - allowed spin states: $2I + 1$
+  - in absence of magnetic field, all spin states are degenerate
+- nuclear spin in an applied field
+  - when charged particle spins, creates magnetic field
+  - spin states no longer degenerate in applied magnetic field
+    - aligned: lower energy
+    - oppsing: higher energy
+- alpha/beta spin states
+  - alpha: aligned with field (lower energy)
+  - beta: opposing the field (higher energy)
+  - when external magnetic field applied, degenerate spin states split into two states, lower energy state is aligned with magnetic field and higher energy state
+    - energy gap increases with increasing magnetic field strength
 *** Chemical shift, $$^{13}C$$
 *** $$^1H$$, Integration, Spin-Spin Splitting
 *** $$^1H$$, J-coupling constants, multiplet skewing, exchangeable protons

@@ -5,6 +5,7 @@ title: "CHEM 211: Introduction to Chemical Analysis"
 
 * questions
 - how does $$N \varpropto \sqrt{n}$$ imply averaged noise, being random, tends to cancel out?
+- can we generalize the error propagation for $y^x$?
 * units
 *** Course Introduction
 - analytical chemistry: obtaining, processing, communicating information about composition/structure of matter
@@ -108,3 +109,63 @@ title: "CHEM 211: Introduction to Chemical Analysis"
     - absolute error: uncertainty from instrument or equipment
     - reproducible and source of origin known
   - relative uncertainty: percentage of magnitude of quantity measured
+    - no units, expressed as percentage
+- mean, sd, confidence limits
+  - sd: random scatter (s)
+  - relative sd: $$\frac{s}{\bar{x}} \times 100\%$$
+  - confidence limits: range that you are confident that true value falls
+    - number of sds that must be used for different confidence levels is student's t value $$\bar{x}\pm\frac{ts}{\sqrt{N}}$$
+    - table t value: requires confidence level (95%) and degrees of freedom (N - 1) where N is number of measurements
+- propagation of uncertainty (where $y$ is the answer after doing these operations)
+  - addition/subtraction: $$e_y = \sqrt{\sum_{n=1}^N e^2_{x_n}}$$
+  - multiplication/division: $$e_y = y\sqrt{\sum_{n=1}^N (\frac{e_{x_n}}{x_n})^2}$$
+  - $$y = log(x)$$: $$e_y =  \frac{1}{ln(10)}\frac{e_x}{x}$$
+  - $$y = ln(x)$$: $$e_y = \frac{e_x}{x}$$
+  - powers of 10 raised to $x$: $$e_y = y ln(10) e_x$$
+  - powers of e raised to $x$:  $$e_y = y e_x$$
+- sig figs and presenting results:
+  1. uncertainty of measurement is larger than instrument's uncertainty
+     - sd determines uncertainty of measurement
+     - if uncertainty is larger than instrument's uncertainty, the first non zero digit of sd is last sig dig in mean
+     - report as $$0.xyz_l \pm 0.00s_d$$
+     - sd is reported as one digit, the decimal places of mean and sd must match, record the value after the last sig dig as subscript
+  2. uncertainty is smaller than instrument's uncertainty
+     - can't use first rule, otherwise reported uncertainty (sd) is lower than instrument uncertainty which cannot be true
+     - report answer to same number of digits as instrument's readout
+- statistics of linear regression analysis
+  1. calibration curve analysis (pure compound dissolved in pure water):
+     - prepare series of standard solutions containing known concentration of analyte -> measure property of substance -> plot calibration curve
+       - goodness of fit: correlation coefficient $$R^2$$
+       - once CC established, unknown solutions can be measured and concentration calculated from: $$C = \frac{(A-b)}{m}$$ where C is concentration, A is measured property, b is y-intercept, m is slope
+     - measure of precision is sd: sd of result must be calculated taking into account precision of the calibration curve $$s_x$$
+       - depends on sd of slope, regression
+       - number of values measured for CC
+       - number of times the sample was measured
+       - square of distance of unknown measurement from center of calibration curve $$(\bar{y_k}-\bar{y})^2$$
+         - closer the measurement is made to the ends of calibration curve, the larger the deviation
+     - confidence limits for values $$CL = x \pm t \dot s_x$$
+       - $t$ value taken at desired confidence level and $(N-2)$ degrees of freedom (because need two points to specify a line)
+     - beer's law
+       - spectrophotometric analysis: theory -> light of wavelength $$\lambda$$ and power $$P_o$$/intensity $$I_o$$ enters a sample that absorbs that wavelength, sample molecules raised to excited state and exiting $$P$$ of light will be less. $$T = \frac{I}{I_o} = \frac{P}{P_o)}$$
+       - measure of $$I_o$$ with no sample present, then measure $$I$$ with sample present: $$A = mC + b$$
+       - transmittance vs. concentration is a exponentially decreasing, so $$A = -log T$$
+         - absorbance is directly proportional to concentration of light-absorbing substance: $$A = abC = \epsilon bC$$, b is path length, A is absorbance, C is concentration, a is proportionality constant called absorptivity
+           - linear calibration plot
+       - plot absorbance vs. concentration to get ab or $$\epsilon b$$ (will be linear)
+  2. standard addition analysis
+     - complex samples
+       - matrix effect can be minimized in two ways:
+         1. add standard solution so same substances as unknown sample (same matrix in all solutions)
+         2. prepare standard solutions from sample rather than pure analyte and pure solvent
+            1. measure property of unknown solution
+            2. add known amount of analyte to sample and measure again
+               - if $$vol_{sample} >> vol_{analyte}$$, will have around same matrix
+       - or pipetting equal volumes of unknown solution into vol. flask and adding known amount of analyte to one, diluting both
+         - spiking, and matrix stays the same for both (standard addition method)
+         - absorbance vs. concentration of spike:
+** glassware
+pipette
+- TD: pipette is accurately calibrated to deliver specified volume of liquid
+  - delivers a specific volume, but holds more
+- TC: pipette contains specified volume of liquid with no remainders
+  - contain a specific volume

@@ -63,6 +63,7 @@
     <h1 id="questions">questions</h1>
 <ul>
 <li>how does <span class="math display">$$N \varpropto \sqrt{n}$$</span> imply averaged noise, being random, tends to cancel out?</li>
+<li>can we generalize the error propagation for <span class="math inline"><em>y</em><sup><em>x</em></sup></span>?</li>
 </ul>
 <h1 id="units">units</h1>
 <h3 id="course-introduction">Course Introduction</h3>
@@ -201,7 +202,117 @@
 <li>absolute error: uncertainty from instrument or equipment</li>
 <li>reproducible and source of origin known</li>
 </ul></li>
-<li>relative uncertainty: percentage of magnitude of quantity measured</li>
+<li>relative uncertainty: percentage of magnitude of quantity measured
+<ul>
+<li>no units, expressed as percentage</li>
+</ul></li>
+</ul></li>
+<li>mean, sd, confidence limits
+<ul>
+<li>sd: random scatter (s)</li>
+<li>relative sd: <span class="math display">$$\frac{s}{\bar{x}} \times 100\%$$</span></li>
+<li>confidence limits: range that you are confident that true value falls
+<ul>
+<li>number of sds that must be used for different confidence levels is student’s t value <span class="math display">$$\bar{x}\pm\frac{ts}{\sqrt{N}}$$</span></li>
+<li>table t value: requires confidence level (95%) and degrees of freedom (N - 1) where N is number of measurements</li>
+</ul></li>
+</ul></li>
+<li>propagation of uncertainty (where <span class="math inline"><em>y</em></span> is the answer after doing these operations)
+<ul>
+<li>addition/subtraction: <span class="math display">$$e_y = \sqrt{\sum_{n=1}^N e^2_{x_n}}$$</span></li>
+<li>multiplication/division: <span class="math display">$$e_y = y\sqrt{\sum_{n=1}^N (\frac{e_{x_n}}{x_n})^2}$$</span></li>
+<li><span class="math display"><em>y</em> = <em>l</em><em>o</em><em>g</em>(<em>x</em>)</span>: <span class="math display">$$e_y =  \frac{1}{ln(10)}\frac{e_x}{x}$$</span></li>
+<li><span class="math display"><em>y</em> = <em>l</em><em>n</em>(<em>x</em>)</span>: <span class="math display">$$e_y = \frac{e_x}{x}$$</span></li>
+<li>powers of 10 raised to <span class="math inline"><em>x</em></span>: <span class="math display"><em>e</em><sub><em>y</em></sub> = <em>y</em><em>l</em><em>n</em>(10)<em>e</em><sub><em>x</em></sub></span></li>
+<li>powers of e raised to <span class="math inline"><em>x</em></span>: <span class="math display"><em>e</em><sub><em>y</em></sub> = <em>y</em><em>e</em><sub><em>x</em></sub></span></li>
+</ul></li>
+<li>sig figs and presenting results:
+<ol type="1">
+<li>uncertainty of measurement is larger than instrument’s uncertainty
+<ul>
+<li>sd determines uncertainty of measurement</li>
+<li>if uncertainty is larger than instrument’s uncertainty, the first non zero digit of sd is last sig dig in mean</li>
+<li>report as <span class="math display">0.<em>x</em><em>y</em><em>z</em><sub><em>l</em></sub> ± 0.00<em>s</em><sub><em>d</em></sub></span></li>
+<li>sd is reported as one digit, the decimal places of mean and sd must match, record the value after the last sig dig as subscript</li>
+</ul></li>
+<li>uncertainty is smaller than instrument’s uncertainty
+<ul>
+<li>can’t use first rule, otherwise reported uncertainty (sd) is lower than instrument uncertainty which cannot be true</li>
+<li>report answer to same number of digits as instrument’s readout</li>
+</ul></li>
+</ol></li>
+<li>statistics of linear regression analysis
+<ol type="1">
+<li>calibration curve analysis (pure compound dissolved in pure water):
+<ul>
+<li>prepare series of standard solutions containing known concentration of analyte -&gt; measure property of substance -&gt; plot calibration curve
+<ul>
+<li>goodness of fit: correlation coefficient <span class="math display"><em>R</em><sup>2</sup></span></li>
+<li>once CC established, unknown solutions can be measured and concentration calculated from: <span class="math display">$$C = \frac{(A-b)}{m}$$</span> where C is concentration, A is measured property, b is y-intercept, m is slope</li>
+</ul></li>
+<li>measure of precision is sd: sd of result must be calculated taking into account precision of the calibration curve <span class="math display"><em>s</em><sub><em>x</em></sub></span>
+<ul>
+<li>depends on sd of slope, regression</li>
+<li>number of values measured for CC</li>
+<li>number of times the sample was measured</li>
+<li>square of distance of unknown measurement from center of calibration curve <span class="math display">$$(\bar{y_k}-\bar{y})^2$$</span>
+<ul>
+<li>closer the measurement is made to the ends of calibration curve, the larger the deviation</li>
+</ul></li>
+</ul></li>
+<li>confidence limits for values <span class="math display"><em>C</em><em>L</em> = <em>x</em> ± <em>t</em><em>ṡ</em><sub><em>x</em></sub></span>
+<ul>
+<li><span class="math inline"><em>t</em></span> value taken at desired confidence level and <span class="math inline">(<em>N</em>−2)</span> degrees of freedom (because need two points to specify a line)</li>
+</ul></li>
+<li>beer’s law
+<ul>
+<li>spectrophotometric analysis: theory -&gt; light of wavelength <span class="math display"><em>λ</em></span> and power <span class="math display"><em>P</em><sub><em>o</em></sub></span>/intensity <span class="math display"><em>I</em><sub><em>o</em></sub></span> enters a sample that absorbs that wavelength, sample molecules raised to excited state and exiting <span class="math display"><em>P</em></span> of light will be less. <span class="math display">$$T = \frac{I}{I_o} = \frac{P}{P_o)}$$</span></li>
+<li>measure of <span class="math display"><em>I</em><sub><em>o</em></sub></span> with no sample present, then measure <span class="math display"><em>I</em></span> with sample present: <span class="math display"><em>A</em> = <em>m</em><em>C</em> + <em>b</em></span></li>
+<li>transmittance vs. concentration is a exponentially decreasing, so <span class="math display"><em>A</em> =  − <em>l</em><em>o</em><em>g</em><em>T</em></span>
+<ul>
+<li>absorbance is directly proportional to concentration of light-absorbing substance: <span class="math display"><em>A</em> = <em>a</em><em>b</em><em>C</em> = <em>ϵ</em><em>b</em><em>C</em></span>, b is path length, A is absorbance, C is concentration, a is proportionality constant called absorptivity
+<ul>
+<li>linear calibration plot</li>
+</ul></li>
+</ul></li>
+<li>plot absorbance vs. concentration to get ab or <span class="math display"><em>ϵ</em><em>b</em></span> (will be linear)</li>
+</ul></li>
+</ul></li>
+<li>standard addition analysis
+<ul>
+<li>complex samples
+<ul>
+<li>matrix effect can be minimized in two ways:
+<ol type="1">
+<li>add standard solution so same substances as unknown sample (same matrix in all solutions)</li>
+<li>prepare standard solutions from sample rather than pure analyte and pure solvent
+<ol type="1">
+<li>measure property of unknown solution</li>
+<li>add known amount of analyte to sample and measure again
+<ul>
+<li>if <span class="math display"><em>v</em><em>o</em><em>l</em><sub><em>s</em><em>a</em><em>m</em><em>p</em><em>l</em><em>e</em></sub> &gt;  &gt; <em>v</em><em>o</em><em>l</em><sub><em>a</em><em>n</em><em>a</em><em>l</em><em>y</em><em>t</em><em>e</em></sub></span>, will have around same matrix</li>
+</ul></li>
+</ol></li>
+</ol></li>
+<li>or pipetting equal volumes of unknown solution into vol. flask and adding known amount of analyte to one, diluting both
+<ul>
+<li>spiking, and matrix stays the same for both (standard addition method)</li>
+<li>absorbance vs. concentration of spike:</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ol></li>
+</ul>
+<h2 id="glassware">glassware</h2>
+<p>pipette</p>
+<ul>
+<li>TD: pipette is accurately calibrated to deliver specified volume of liquid
+<ul>
+<li>delivers a specific volume, but holds more</li>
+</ul></li>
+<li>TC: pipette contains specified volume of liquid with no remainders
+<ul>
+<li>contain a specific volume</li>
 </ul></li>
 </ul>
   </div>

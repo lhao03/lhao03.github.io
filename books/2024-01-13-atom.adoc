@@ -1,0 +1,9 @@
+---
+title: Atomic Habits
+tags: "life"
+img: "atom.jpg"
+---
+
+Goals are bait. They imply that your current state isn't ideal, which leads to feelings of "being behind" and "lack of progress", and ultimately comparison with others. Goals also imply that "setbacks", like lifting less weight than last week or spending twice amount the time to study than you usually do is something you should avoid. Then after you avoid these "setbacks" you face greater barriers like getting injured because you decided to arbitraryly lift more weight to "get closer to your goal weight". Goals make you feel in a state of constant "if I'm not doing something for my goal then I'm doing something wrong".
+
+For example, when I was 18, I was able to deadlift twice my weight.

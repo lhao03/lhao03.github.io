@@ -10,11 +10,23 @@ Here you can see how I rank my papers (when I don't forget to rank them) and the
 
 [cols="4,1,1"]
 |===
-|Number |Interest |Understanding 
+|Number |Interest |Understanding
 
-|Efficiently Enabling Block Semantics and Data Updates in DNA Storage
+|https://www.mdpi.com/2073-4425/11/1/102[Enhancing Terminal Deoxynucleotidyl Transferase Activity on Substrates with 3′ Terminal Structures for Enzymatic De Novo DNA Synthesis]
+|
+|
+
+|https://www.biorxiv.org/content/10.1101/355719v1.full.pdf[Free-running enzymatic oligonucleotide synthesis for data storage applications]
+|
+|
+
+|https://pubs.acs.org/doi/10.1021/acssynbio.3c00044[Spatially Selective Electrochemical Cleavage of a Polymerase-Nucleotide Conjugate]
+|8
+|6
+
+|https://dl.acm.org/doi/10.1145/3613424.3614308[Efficiently Enabling Block Semantics and Data Updates in DNA Storage]
 | 8
-| 6
+| 7
 
 |First-principles computational studies of the torsional potential energy surface of the sec-butyl radical
 |

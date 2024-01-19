@@ -686,19 +686,19 @@ independent and less trusting of their governments.
 Also claims such as: 
 
 [quote, '(Ferretti et al., 2020)']
----
+____
 The intention is not to impose the technology as
 a permanent change to society, but we believe that under these pandemic
 circumstances it is necessary and justified to protect public health.
----
 
-[quote, '(Ferretti et al., 2020)']
-____
+...
+
 It is noteworthy that the algorithmic approach we propose avoids the
 need for coercive surveillance, because the system can have very large
 impacts and achieve sustained epidemic suppression even with partial
 uptake.
 ____
+
 
 are discussed in Ali Alkhatib’sfootnote:ali-digital-contact-tracing[] blog post.
 All in all, I see a low chance for the app gaining a large enough
@@ -707,7 +707,8 @@ decreasing infections.
 
 == Conclusion
 
-For a digital contact tracing app to have some impact on reducing infections we need: 
+For a digital contact tracing app to have some impact on reducing infections we need:
+
 * access to lots of quick and accurate tests 
 * a preventative mindset towards being exposed, as outlined in the paper:
 "If testing capacity is limited, individuals who are identified by
@@ -745,7 +746,7 @@ exposure.
 We *know* what works. Such as good quality masks, air filtration and UV learning
 (in the air, not surfaces) to limit viral load or inactivate the virus. We also
 have have the ability to measure metrics that can help us predict areas of
-increasing infection (waste water tracking) and possible exposure risk (CO2
+increasing infection (waste water tracking) and possible exposure risk (carbon dioxide
 monitoring). *In a Western society, the digital contact tracing app will not get
 us out of the pandemic.*
 
