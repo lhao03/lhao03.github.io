@@ -68,6 +68,7 @@
 <ul>
 <li>why is this <span class="math display"><em>S</em>/<em>N</em> = 3</span> if <span class="math display"><em>S</em><sub><em>m</em></sub><em>b</em> = 0</span> important</li>
 </ul></li>
+<li>what does concentration detection limit mean</li>
 </ul>
 <h1 id="units">units</h1>
 <h3 id="course-introduction">Course Introduction</h3>
@@ -203,16 +204,201 @@
 <li>figures of merit
 <ul>
 <li>LOD, LOQ</li>
-<li>accuracy</li>
-<li>precision</li>
-<li>sensitivity</li>
-<li>selectivity</li>
-<li>dynamic range</li>
-<li>robustness</li>
+<li>accuracy &amp; precision
+<ul>
+<li>closeness of experimental value to true value</li>
+<li>agreement among a set of measurements (reproducible?) (sd)
+<ul>
+<li>error and replicates:
+<ul>
+<li>absolute: <span class="math display"><em>x̄</em> − <em>μ</em></span></li>
+<li>relative: <span class="math display">$$\frac{\bar{x} - \mu}{\mu} \times 100 \%$$</span></li>
+</ul></li>
+<li>replicate: samples from same source</li>
+</ul></li>
+</ul></li>
+<li>selectivity
+<ul>
+<li>extent that other substances interfere with determination of analyte
+<ul>
+<li>interferences: chemical that causes systematic error in measured quantity
+<ul>
+<li>act on analyte</li>
+<li>act on reagent being used in detection</li>
+<li>be source of large background signal</li>
+<li>cause negative/positive bias</li>
+<li>cause absolute/proportional errors</li>
+</ul></li>
+<li>masking agent: prevents components in sample matrix from interfering with analysis</li>
+</ul></li>
+</ul></li>
+<li>sensitivity
+<ul>
+<li>ability of method to measure small changes in concentration of analyte
+<ul>
+<li>slope of calibration curve</li>
+</ul></li>
+</ul></li>
+<li>range: acceptable linearity, accuracy, precision
+<ul>
+<li>dynamic range: range an instrument can read (measurable response but maybe not linear)</li>
+<li>linear range: analyte concentration over which response is proportional to concentration</li>
+</ul></li>
+<li>robustness
+<ul>
+<li>ability of method to withstand small, uncontrolled changes in operation parameters</li>
+</ul></li>
+</ul></li>
+<li>why FOM: demonstrate validity of method by reporting these parameters</li>
+<li>uncertainty and bias:
+<ul>
+<li>random uncertainty: can’t replicate, contributes to imprecision, quantify with stats</li>
+<li>systematic uncertainty: contribute to inaccuracy, repeatable, can correct for it in principle
+<ul>
+<li>instrument: can usually be corrected</li>
+<li>method: difficult to identify and correct</li>
+<li>personal: sloppy</li>
+<li>types:
+<ul>
+<li>proportional: %, issue for large signals</li>
+<li>constant: always some absolute value, issue for small signals</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>calibration curves:
+<ul>
+<li>external calibration: in the lab: series of solutions of known concentration of analyte</li>
+<li>graph of signal vs. concentration: calibration</li>
+<li>linear or non-linear, use interpolation to find concentration (based on signal)</li>
+<li>linear regression: minimize the sum of squares of residuals
+<ul>
+<li>least squares method: minimize residuals between data points and line
+<ul>
+<li>residual (at the same x): experimental y - line of best fit y</li>
+</ul></li>
+</ul></li>
+<li>if original sample was diluted, apply dilution factor</li>
+</ul></li>
+<li>concentration detection limit: lowest concentration of analyte in sample that can be detected
+<ul>
+<li>you can find concentration LOD: <span class="math display">$$[C]_{DL} = \frac{3\sigma_{mb}}{m}$$</span></li>
+</ul></li>
+<li>matrix effects: combined effect of non-analyte components in sample on measurement of analyte
+<ul>
+<li>calibration standards should approximate analytical samples in analyte and in composition of non-analyte species</li>
+<li>matrix too complex, so use standard addition</li>
+</ul></li>
+<li>standard addition:
+<ul>
+<li>wet lab: prepare standard solutions but with sample and add analyte to “sample”</li>
+<li>find x-intercept: when y = 0, this is the “original” value of x (without the shift in y axis)</li>
+<li>the linear line has been “shifted” on the y axis
+<img src="../../../../images/211/standard_addition.jpeg" /></li>
+</ul></li>
+</ul>
+<h3 id="lecture-4">lecture 4</h3>
+<ul>
+<li>internal standard: intentionally add substance that is not expected to be found in sample (not the analyte) but behaves similarly
+<ul>
+<li>constant amount of internal standard, constant IS signal</li>
+<li>changing concentrations of analyte</li>
+<li>plot ratio between analyte and internal standard vs. ratio of their concentrations <span class="math display">$$\frac{S_{A}}{S_{IS}}$$</span> vs. <span class="math display">$$\frac{[A]}{[IS]}$$</span></li>
+</ul></li>
+<li>calibration curve:
+<ol type="1">
+<li>single point calibration (one standard) and the origin</li>
+<li>multi-point calibration (4-6)
+<ul>
+<li>effect of systematic error in any one standard solution minimized by existence of other standards</li>
+</ul></li>
+</ol></li>
+</ul>
+<table>
+<tbody>
+<tr class="odd">
+<td>external standards</td>
+<td>standard addition</td>
+<td>internal standards</td>
+</tr>
+<tr class="even">
+<td>create standard solutions with varying/known conc. of analyte</td>
+<td>add known quantities of analyte to unknown solution</td>
+<td>add known amount of different (but similar) compound to unknown and standards</td>
+</tr>
+<tr class="odd">
+<td>interpolate unknown from CC</td>
+<td>extrapolate unknown from CC</td>
+<td>ration of signal from analyte to signal from internal standard</td>
+</tr>
+<tr class="even">
+<td>simple, easy</td>
+<td>accounts for matrix</td>
+<td>accounts for losses throughout analysis</td>
+</tr>
+<tr class="odd">
+<td>can’t account for matrix or inconsistencies in instrument</td>
+<td>lots of samples</td>
+<td>cost, prep</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>sig figs:
+<ul>
+<li>pH: pH of 2.45, digits after decimal are how many sig figs the conc. has</li>
+<li>exact number has infinite number of sig figs</li>
 </ul></li>
 </ul>
 <h3 id="analytical-measurements-and-statistics---gaussian-distribution-standard-deviation">Analytical Measurements and Statistics - Gaussian Distribution, Standard Deviation</h3>
+<ul>
+<li>gaussian distribution: bell curve
+<ul>
+<li>1sd: 68%</li>
+<li>2sd: 95%</li>
+<li>3sd; 99%</li>
+</ul></li>
+<li>population vs. sample:
+<ul>
+<li>sample sd approaches population sd as N &gt; 20</li>
+<li>as N increases, sd decreases</li>
+</ul></li>
+<li>propagation of uncertainty:
+<ul>
+<li>addition/sub: <span class="math display">$$\sqrt{\sigma^2_a + \sigma^2_b}$$</span></li>
+<li>mult/div: RSD used</li>
+</ul></li>
+</ul>
 <h3 id="analytical-measurements-and-statistics---significance-testing">Analytical Measurements and Statistics - Significance Testing</h3>
+<ul>
+<li>significance testing: is difference between two values too large to be explained by random uncertainty</li>
+</ul>
+<table>
+<tbody>
+<tr class="odd">
+<td>case 1 t-test</td>
+<td>case 2 t test</td>
+<td>case 3 t-test</td>
+<td>grubb’s test</td>
+</tr>
+<tr class="even">
+<td>compare experi. to true</td>
+<td>compare two experi. results</td>
+<td>compare two methods</td>
+<td>outlier?</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>null hypothesis: no effect</li>
+<li>choose CI before you do experiments
+<ul>
+<li>CI: probability a difference exists when it doesn’t</li>
+</ul></li>
+<li>student’s t value: permits use of sample data to test hypothesis without knowing population sd
+<ul>
+<li>as N decreases, t increases</li>
+</ul></li>
+</ul>
 <h2 id="equilibrium-and-volumetric-analysis">Equilibrium and volumetric analysis</h2>
 <h3 id="chemical-equilibrium-applied-to-analytical-measurements">Chemical Equilibrium Applied to Analytical Measurements</h3>
 <h3 id="solution-equilibrium-and-systematic-treatment-of-chemical-equilibrium">Solution Equilibrium and Systematic Treatment of Chemical Equilibrium</h3>

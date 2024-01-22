@@ -8,6 +8,7 @@ title: "CHEM 211: Introduction to Chemical Analysis"
 - can we generalize the error propagation for $y^x$?
 - what does sd of noise mean?
   - why is this $$S/N = 3$$ if $$S_mb = 0$$ important
+- what does concentration detection limit mean
 
 * units
 *** Course Introduction
@@ -87,14 +88,97 @@ title: "CHEM 211: Introduction to Chemical Analysis"
     - prevents situation when there should be no signal and there is a signal (false positive)
 - figures of merit
   - LOD, LOQ
-  - accuracy
-  - precision
-  - sensitivity
+  - accuracy & precision
+    - closeness of experimental value to true value
+    - agreement among a set of measurements (reproducible?) (sd)
+      - error and replicates:
+        - absolute: $$\bar{x} - \mu$$
+        - relative: $$\frac{\bar{x} - \mu}{\mu} \times 100 \%$$
+      - replicate: samples from same source
   - selectivity
-  - dynamic range
+    - extent that other substances interfere with determination of analyte
+      - interferences: chemical that causes systematic error in measured quantity
+        - act on analyte
+        - act on reagent being used in detection
+        - be source of large background signal
+        - cause negative/positive bias
+        - cause absolute/proportional errors
+      - masking agent: prevents components in sample matrix from interfering with analysis
+  - sensitivity
+    - ability of method to measure small changes in concentration of analyte
+      - slope of calibration curve
+  - range: acceptable linearity, accuracy, precision
+    - dynamic range: range an instrument can read (measurable response but maybe not linear)
+    - linear range: analyte concentration over which response is proportional to concentration
   - robustness
+    - ability of method to withstand small, uncontrolled changes in operation parameters
+- why FOM: demonstrate validity of method by reporting these parameters
+- uncertainty and bias:
+  - random uncertainty: can't replicate, contributes to imprecision, quantify with stats
+  - systematic uncertainty: contribute to inaccuracy, repeatable, can correct for it in principle
+    - instrument: can usually be corrected
+    - method: difficult to identify and correct
+    - personal: sloppy
+    - types:
+      - proportional: %, issue for large signals
+      - constant: always some absolute value, issue for small signals
+- calibration curves:
+  - external calibration: in the lab: series of solutions of known concentration of analyte
+  - graph of signal vs. concentration: calibration
+  - linear or non-linear, use interpolation to find concentration (based on signal)
+  - linear regression: minimize the sum of squares of residuals
+    - least squares method: minimize residuals between data points and line
+      - residual (at the same x): experimental y - line of best fit y
+  - if original sample was diluted, apply dilution factor
+- concentration detection limit: lowest concentration of analyte in sample that can be detected
+  - you can find concentration LOD: $$[C]_{DL} = \frac{3\sigma_{mb}}{m}$$
+- matrix effects: combined effect of non-analyte components in sample on measurement of analyte
+  - calibration standards should approximate analytical samples in analyte and in composition of non-analyte species
+  - matrix too complex, so use standard addition
+- standard addition:
+  - wet lab: prepare standard solutions but with sample and add analyte to "sample"
+  - find x-intercept: when y = 0, this is the "original" value of x (without the shift in y axis)
+  - the linear line has been "shifted" on the y axis
+    [[../../../../images/211/standard_addition.jpeg]]
+*** lecture 4
+- internal standard: intentionally add substance that is not expected to be found in sample (not the analyte) but behaves similarly
+  - constant amount of internal standard, constant IS signal
+  - changing concentrations of analyte
+  - plot ratio between analyte and internal standard vs. ratio of their concentrations $$\frac{S_{A}}{S_{IS}}$$ vs. $$\frac{[A]}{[IS]}$$
+- calibration curve:
+  1. single point calibration (one standard) and the origin
+  2. multi-point calibration (4-6)
+     - effect of systematic error in any one standard solution minimized by existence of other standards
+| external standards                                            | standard addition                                   | internal standards                                                            |
+| create standard solutions with varying/known conc. of analyte | add known quantities of analyte to unknown solution | add known amount of different (but similar) compound to unknown and standards |
+| interpolate unknown from CC                                   | extrapolate unknown from CC                         | ration of signal from analyte to signal from internal standard                |
+| simple, easy                                                  | accounts for matrix                                 | accounts for losses throughout analysis                                   |
+| can't account for matrix or inconsistencies in instrument     | lots of samples                                     |  cost, prep                                                                   |
+
+- sig figs:
+  - pH: pH of 2.45, digits after decimal are how many sig figs the conc. has
+  - exact number has infinite number of sig figs
 *** Analytical Measurements and Statistics - Gaussian Distribution, Standard Deviation
+- gaussian distribution: bell curve
+  - 1sd: 68%
+  - 2sd: 95%
+  - 3sd; 99%
+- population vs. sample:
+  - sample sd approaches population sd as N > 20
+  - as N increases, sd decreases
+- propagation of uncertainty:
+  - addition/sub: $$\sqrt{\sigma^2_a + \sigma^2_b}$$
+  - mult/div: RSD used
 *** Analytical Measurements and Statistics - Significance Testing
+- significance testing: is difference between two values too large to be explained by random uncertainty
+| case 1 t-test           | case 2 t test               | case 3 t-test       | grubb's test |
+| compare experi. to true | compare two experi. results | compare two methods | outlier?     |
+- null hypothesis: no effect
+- choose CI before you do experiments
+  - CI: probability a difference exists when it doesn't
+- student's t value: permits use of sample data to test hypothesis without knowing population sd
+  - as N decreases, t increases
+
 
 ** Equilibrium and volumetric analysis
 *** Chemical Equilibrium Applied to Analytical Measurements

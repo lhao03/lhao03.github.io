@@ -2,6 +2,8 @@
 description: "CHEM 412"
 title: "CHEM 412: Structure of Atoms and Molecules"
 ---
+* questions:
+- still don't understand how the radius doesn't shrink
 
 * Course Schedule
 ** WebMO and Python tutorials
@@ -98,3 +100,44 @@ title: "CHEM 412: Structure of Atoms and Molecules"
   - derivative is indication of force
 - basis functions: relate to the orbitals, stay the same for each bond distance the program tries
 - molecular energy vs. geometry optimization: ME is more optimized because geometry optimization doesn't take derivative to 0, only closely
+
+** 3
+$$\hat{H} \Psi = E \Psi$$, where the Hamiltonian $$\hat{H} = \hat{T} + \hat{V}$$
+- by substituting classical momentum with its quantum form: $$\hat{T} = -\frac{\hbar ^2}{2m}\nabla^2$$
+- potential operator $$\hat{V}$$ if function of position $r$ and time $t$.
+  - don't care about gravity because it is too small
+  - Coulombic interaction: $$\hat{V} = - \frac{1}{4\pi\epsilon} \frac{e^2}{r}$$
+- $$| \Psi |^2$$: charge density, gives information about dipole moment and chemical reactivity
+- PES: energy, E, an eigenvalue. potential energy surface
+  - give you information about stable molecular structures/chemical reactivity
+
+** 4
+[[../../../../images/412/cvsc.jpeg]]
+- special relativity: length contraction, mass increase, time dilation
+  - relevant for:
+    - spin:
+    - pauli exclusion principle
+    - spin-orbit coupling
+- noone can travel faster than the speed of light: $|v| \leq c$$
+  - $$0 \leq \frac{|v|}{c} \leq 1$$
+  - lorentz factor: $$\gamma = \frac{1}{\sqrt{1 - (\frac{v}{c})^2}}$$
+- length contraction:
+  - only happens in dimension of velocity
+  - the faster the object moves, the shorter the object becomes
+  - subjective: depends on how fast the observer is moving
+- mass increase:
+  - mass in motion becomes more massive
+  - at speed of light can't move anymore (so massive)
+- time dilation:
+  - things that have short half life: live forever when moving at speed of light
+- core electrons: more stable
+  - s,p orbitals contract in size
+    - screen the nuclear charge
+    - smaller, lower energy, denser electron cloud
+    - move faster??
+      - heavier so more kinetic energy?
+  - p, d orbitals larger because feel less nuclear charge
+- http://alchemy.cchem.berkeley.edu/inorganic/RelativisticEffects.pdf
+- fermion: half integer spin
+  - even number of fermion is boson, odd number of fermion is fermion
+- boson: integer spin
