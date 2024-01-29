@@ -3,6 +3,10 @@ description: "CHEM 401"
 title: "CHEM 401: Principles of Spectroscopy"
 ---
 
+* questions
+- what do the different polarizations mean
+- what do s and p waves represent
+
 * good resources
 - https://socratic.org/questions/what-are-the-differences-between-stretching-vibration-and-bending-vibrations
 
@@ -42,6 +46,29 @@ title: "CHEM 401: Principles of Spectroscopy"
 - non-linear molecule: 3 rotational constants
 - first optimize then calculate vibrational frequency
 ** 3: intro to QM
+*** electromagnetic radiation
+*** molecular processes
+*** polarization of light
+*** polarization of light
+*** linear and circular electric field
+*** speed of light
+*** reflection and refraction
+- law of reflection
+- Snell's law
+*** polarization and reflection
+- s-wave
+- p-wave
+- reflectivity
+  - reflectance (no absorbtion)
+  - transmittance
+  - Fresnel equation
+- brewster angle: angle for 100% energy (to do what??)
+- dispersion
+  - sellmeier equation
+- absorption and refractive index
+  - kramers-kronig relations
+  - relation with refractive index and light
+- birefrigence
 ** 4: intro to EMR
 ** 5: light-matter interaction
 ** 6: prep for final presentation

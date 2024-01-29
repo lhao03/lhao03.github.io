@@ -84,64 +84,35 @@
 <h3 id="an-introduction-to-analytical-measurements">An Introduction to Analytical Measurements</h3>
 <h3 id="lecture-1">lecture 1</h3>
 <ul>
-<li>the scientific method:
-<ol type="1">
-<li>formulate question</li>
-<li>sampling (??)</li>
-<li>sampling preparation</li>
-<li>analysis</li>
-<li>interpretation</li>
-<li>draw conclusions</li>
-</ol></li>
-<li>assay is process of determining the amount of analyte (substance being measured) in sample</li>
-<li>qualitative (identification) vs. quantitative (quantity) of components</li>
+<li>assay: is process of determining the amount of analyte (substance being measured) in sample</li>
+<li>analyte:</li>
+<li>qualitative analysis: (identification)
+quantitative analysis: (quantity)</li>
 <li>signal
 <ul>
-<li>visual: simple, low-cost, subjective, not sensitive, large sample volumes, low-throughput (??)</li>
+<li>visual detection: simple, low-cost, subjective, not sensitive, large sample volumes, low-throughput (??)</li>
 <li>electrical detection: objective, more sensitive, faster, automate, costly, maintenance, calibration
 <ul>
 <li>voltage</li>
 <li>current</li>
-<li>transducer</li>
+<li>transducer: converts input stimulus into electrical output</li>
 </ul></li>
 </ul></li>
-<li>measurement: can get signal and noise (unwanted, random fluctuations in background)
+<li>measurement:
 <ul>
 <li>signal-to-noise ratio</li>
-<li>multiple scans acquired and averaged to increase S/N <span class="math display">$$\frac{S}{N} \varpropto \sqrt{n}$$</span> and <span class="math display"><em>N</em></span> adds randomly</li>
 </ul></li>
 </ul>
 <h3 id="lecture-2">lecture 2</h3>
-<ul>
-<li>additions to scientific method: analyze, interpret and report data</li>
-<li>terminology:
 <ul>
 <li>assay: set of procedures or methods, latin word for try</li>
 <li>analyte: chemical we are looking for</li>
 <li>qualitative analysis</li>
 <li>quantitative analysis</li>
-<li>signal:
-<ul>
-<li>visual: subjective, low throughput</li>
-<li>electrical detection: objective, costly, calibration
-<ul>
-<li>transducer: converts output from experiment into electrical output</li>
-</ul></li>
-</ul></li>
 <li>measurement:
 <ul>
 <li>signal: can be height or area of line/graph (thing we want) (mean of several measurements)</li>
 <li>noise: unwanted, random fluctuations (sd)</li>
-<li>want big s/n noise ratio</li>
-</ul></li>
-<li>signal/noise ratio:
-<ul>
-<li>multiple measurements/averaging increases S/N
-<ul>
-<li><span class="math display">$$S \varpropto n, N \varpropto \sqrt{n}$$</span> where <span class="math inline"><em>n</em></span> is number of measurements</li>
-</ul></li>
-<li>depends on having relatively quick scans (increase S)</li>
-<li>system signal has to be stable</li>
 </ul></li>
 <li>sample matrix: everything but the analyte.
 <ul>
@@ -158,34 +129,16 @@
 </ul></li>
 <li>detection limit:
 <ul>
-<li>ability to detect analyte</li>
-<li><span class="math display">$$C_{LOD} = \frac{3\sigma_{mb}}{m}$$</span></li>
 <li>noise: random fluctuations in measured signal</li>
 <li>blank: a constant (like control) signal measured in absence of analyte</li>
 <li>limit of detection (LOD): smallest concentration of absolute amount of analyte with signal much larger than blank
 <ul>
 <li>signal that is greater than mean of blank + three sds of the noise</li>
 </ul></li>
-<li>signal LOD: units as signal (instrument maker)
-<ul>
-<li><span class="math display">(<em>S</em><sub><em>A</em></sub>)<sub><em>D</em><em>L</em></sub> = <em>S</em><sub><em>m</em><em>b</em></sub> + <em>z</em><em>σ</em><sub><em>m</em><em>b</em></sub>, <em>z</em> = 3</span>
-<ul>
-<li>99.7 confidence, <span class="math display"><em>S</em>/<em>N</em> = 3</span> if <span class="math display"><em>S</em><sub><em>m</em></sub><em>b</em> = 0</span></li>
+<li>signal LOD: units as signal (instrument maker)</li>
+<li>sample LOD: amount/concentration (user)</li>
 </ul></li>
-</ul></li>
-<li>sample LOD: amount/concentration (user)
-<ul>
-<li>take signal LOD and convert to eq concentration via calibration</li>
-</ul></li>
-</ul></li>
-</ul></li>
-<li>limit of quantitation <span class="math display">$$\frac{S}{N} = 10$$</span>
-<ul>
-<li>ability to report the concentration
-<ul>
-<li><span class="math display">$$C_{LOQ} = \frac{10\sigma_{mb}}{m}$$</span></li>
-</ul></li>
-</ul></li>
+<li>limit of quantitation <span class="math display">$$\frac{S}{N} = 10$$</span>: ability to report the concentration</li>
 </ul>
 <h3 id="lecture-3">lecture 3</h3>
 <p><img src="../../../../images/211/LOD_211_Week2_Tuesday.jpeg" /></p>
@@ -206,9 +159,6 @@
 <li>LOD, LOQ</li>
 <li>accuracy &amp; precision
 <ul>
-<li>closeness of experimental value to true value</li>
-<li>agreement among a set of measurements (reproducible?) (sd)
-<ul>
 <li>error and replicates:
 <ul>
 <li>absolute: <span class="math display"><em>x̄</em> − <em>μ</em></span></li>
@@ -216,28 +166,17 @@
 </ul></li>
 <li>replicate: samples from same source</li>
 </ul></li>
-</ul></li>
 <li>selectivity
 <ul>
 <li>extent that other substances interfere with determination of analyte
 <ul>
-<li>interferences: chemical that causes systematic error in measured quantity
-<ul>
-<li>act on analyte</li>
-<li>act on reagent being used in detection</li>
-<li>be source of large background signal</li>
-<li>cause negative/positive bias</li>
-<li>cause absolute/proportional errors</li>
-</ul></li>
+<li>interference: chemical that causes systematic error in measured quantity</li>
 <li>masking agent: prevents components in sample matrix from interfering with analysis</li>
 </ul></li>
 </ul></li>
 <li>sensitivity
 <ul>
-<li>ability of method to measure small changes in concentration of analyte
-<ul>
-<li>slope of calibration curve</li>
-</ul></li>
+<li>ability of method to measure small changes in concentration of analyte</li>
 </ul></li>
 <li>range: acceptable linearity, accuracy, precision
 <ul>
@@ -253,31 +192,16 @@
 <li>uncertainty and bias:
 <ul>
 <li>random uncertainty: can’t replicate, contributes to imprecision, quantify with stats</li>
-<li>systematic uncertainty: contribute to inaccuracy, repeatable, can correct for it in principle
-<ul>
-<li>instrument: can usually be corrected</li>
-<li>method: difficult to identify and correct</li>
-<li>personal: sloppy</li>
+<li>systematic uncertainty: contribute to inaccuracy, repeatable, can correct for it in principle</li>
 <li>types:
 <ul>
 <li>proportional: %, issue for large signals</li>
 <li>constant: always some absolute value, issue for small signals</li>
 </ul></li>
 </ul></li>
-</ul></li>
 <li>calibration curves:
 <ul>
-<li>external calibration: in the lab: series of solutions of known concentration of analyte</li>
-<li>graph of signal vs. concentration: calibration</li>
-<li>linear or non-linear, use interpolation to find concentration (based on signal)</li>
-<li>linear regression: minimize the sum of squares of residuals
-<ul>
-<li>least squares method: minimize residuals between data points and line
-<ul>
-<li>residual (at the same x): experimental y - line of best fit y</li>
-</ul></li>
-</ul></li>
-<li>if original sample was diluted, apply dilution factor</li>
+<li>external calibration in the lab: series of solutions of known concentration of analyte</li>
 </ul></li>
 <li>concentration detection limit: lowest concentration of analyte in sample that can be detected
 <ul>
@@ -355,7 +279,7 @@
 <ul>
 <li>1sd: 68%</li>
 <li>2sd: 95%</li>
-<li>3sd; 99%</li>
+<li>3sd: 99%</li>
 </ul></li>
 <li>population vs. sample:
 <ul>
@@ -394,13 +318,28 @@
 <ul>
 <li>CI: probability a difference exists when it doesn’t</li>
 </ul></li>
-<li>student’s t value: permits use of sample data to test hypothesis without knowing population sd
+<li>student’s t value: permits use of sample data to test hypothesis without knowing population sd</li>
+</ul>
+<h3 id="lecture-5">lecture 5</h3>
 <ul>
-<li>as N decreases, t increases</li>
+<li>t-statistic (case 1): validation, where there is a known or true value</li>
+<li>t-statistic (case 2, same sd): comparing 2 means, is there enough statistical overlap</li>
+<li>t-statistic (case 2, different sd): use F-test</li>
+<li>t-statistic (case 3): paired/matched data
+<ul>
+<li>comparing single measurements made with two methods on several different samples</li>
+<li>before and after (drug trials, same people)</li>
 </ul></li>
+<li>grubb’s test: determine outlier, make sure to remove if it is an outlier</li>
+<li>equilibrium constant</li>
+<li>activity</li>
+<li>weak acid and weak base</li>
+<li>polyprotic acid</li>
+<li>amphiprotic substance</li>
 </ul>
 <h2 id="equilibrium-and-volumetric-analysis">Equilibrium and volumetric analysis</h2>
 <h3 id="chemical-equilibrium-applied-to-analytical-measurements">Chemical Equilibrium Applied to Analytical Measurements</h3>
+<h3 id="lecture-6">lecture 6</h3>
 <h3 id="solution-equilibrium-and-systematic-treatment-of-chemical-equilibrium">Solution Equilibrium and Systematic Treatment of Chemical Equilibrium</h3>
 <h3 id="polyprotic-acid-equilibria-polyprotic-acid-base-titrations">Polyprotic Acid Equilibria, Polyprotic Acid-Base Titrations</h3>
 <h3 id="complexation-equilibria---quantitative-edta-titrations">Complexation Equilibria - Quantitative EDTA Titrations</h3>

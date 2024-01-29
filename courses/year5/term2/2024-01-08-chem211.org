@@ -19,44 +19,26 @@ title: "CHEM 211: Introduction to Chemical Analysis"
 ** Analytical concepts
 *** An Introduction to Analytical Measurements
 *** lecture 1
-- the scientific method:
-  1. formulate question
-  2. sampling (??)
-  3. sampling preparation
-  4. analysis
-  5. interpretation
-  6. draw conclusions
-- assay is process of determining the amount of analyte (substance being measured) in sample
-- qualitative (identification) vs. quantitative (quantity) of components
+- assay: is process of determining the amount of analyte (substance being measured) in sample
+- analyte:
+- qualitative analysis: (identification)
+  quantitative analysis: (quantity)
 - signal
-  - visual: simple, low-cost, subjective, not sensitive, large sample volumes, low-throughput (??)
+  - visual detection: simple, low-cost, subjective, not sensitive, large sample volumes, low-throughput (??)
   - electrical detection: objective, more sensitive, faster, automate, costly, maintenance, calibration
     - voltage
     - current
-    - transducer
-- measurement: can get signal and noise (unwanted, random fluctuations in background)
+    - transducer: converts input stimulus into electrical output
+- measurement:
   - signal-to-noise ratio
-  - multiple scans acquired and averaged to increase S/N $$\frac{S}{N} \varpropto \sqrt{n}$$ and $$N$$ adds randomly
 *** lecture 2
-- additions to scientific method: analyze, interpret and report data
-- terminology:
   - assay: set of procedures or methods, latin word for try
   - analyte: chemical we are looking for
   - qualitative analysis
   - quantitative analysis
-  - signal:
-    - visual: subjective, low throughput
-    - electrical detection: objective, costly, calibration
-      - transducer: converts output from experiment into electrical output
   - measurement:
     - signal: can be height or area of line/graph (thing we want) (mean of several measurements)
     - noise: unwanted, random fluctuations (sd)
-    - want big s/n noise ratio
-  - signal/noise ratio:
-    - multiple measurements/averaging increases S/N
-      - $$S \varpropto n, N \varpropto \sqrt{n}$$ where $n$ is number of measurements
-    - depends on having relatively quick scans (increase S)
-    - system signal has to be stable
   - sample matrix: everything but the analyte.
     - matrix: complex and often unknown
   - blank: chemist made sample that lacks analyte
@@ -65,20 +47,13 @@ title: "CHEM 211: Introduction to Chemical Analysis"
       - method: same solvents and reagents
       - sample: tries to approximate the sample matrix, everything but analyte
   - detection limit:
-    - ability to detect analyte
-    - $$C_{LOD} = \frac{3\sigma_{mb}}{m}$$
     - noise: random fluctuations in measured signal
     - blank: a constant (like control) signal measured in absence of analyte
     - limit of detection (LOD): smallest concentration of absolute amount of analyte with signal much larger than blank
       - signal that is greater than mean of blank + three sds of the noise
     - signal LOD: units as signal (instrument maker)
-      - $$(S_A)_{DL} = S_{mb} + z\sigma_{mb}, z = 3$$
-        - 99.7 confidence, $$S/N = 3$$ if $$S_mb = 0$$
     - sample LOD: amount/concentration (user)
-      - take signal LOD and convert to eq concentration via calibration
-- limit of quantitation $$\frac{S}{N} = 10$$
-  - ability to report the concentration
-    - $$C_{LOQ} = \frac{10\sigma_{mb}}{m}$$
+  - limit of quantitation $$\frac{S}{N} = 10$$: ability to report the concentration
 *** lecture 3
 [[../../../../images/211/LOD_211_Week2_Tuesday.jpeg]]
 - controls:
@@ -89,24 +64,16 @@ title: "CHEM 211: Introduction to Chemical Analysis"
 - figures of merit
   - LOD, LOQ
   - accuracy & precision
-    - closeness of experimental value to true value
-    - agreement among a set of measurements (reproducible?) (sd)
-      - error and replicates:
-        - absolute: $$\bar{x} - \mu$$
-        - relative: $$\frac{\bar{x} - \mu}{\mu} \times 100 \%$$
-      - replicate: samples from same source
+    - error and replicates:
+      - absolute: $$\bar{x} - \mu$$
+      - relative: $$\frac{\bar{x} - \mu}{\mu} \times 100 \%$$
+    - replicate: samples from same source
   - selectivity
     - extent that other substances interfere with determination of analyte
-      - interferences: chemical that causes systematic error in measured quantity
-        - act on analyte
-        - act on reagent being used in detection
-        - be source of large background signal
-        - cause negative/positive bias
-        - cause absolute/proportional errors
+      - interference: chemical that causes systematic error in measured quantity
       - masking agent: prevents components in sample matrix from interfering with analysis
   - sensitivity
     - ability of method to measure small changes in concentration of analyte
-      - slope of calibration curve
   - range: acceptable linearity, accuracy, precision
     - dynamic range: range an instrument can read (measurable response but maybe not linear)
     - linear range: analyte concentration over which response is proportional to concentration
@@ -116,20 +83,11 @@ title: "CHEM 211: Introduction to Chemical Analysis"
 - uncertainty and bias:
   - random uncertainty: can't replicate, contributes to imprecision, quantify with stats
   - systematic uncertainty: contribute to inaccuracy, repeatable, can correct for it in principle
-    - instrument: can usually be corrected
-    - method: difficult to identify and correct
-    - personal: sloppy
-    - types:
-      - proportional: %, issue for large signals
-      - constant: always some absolute value, issue for small signals
+  - types:
+    - proportional: %, issue for large signals
+    - constant: always some absolute value, issue for small signals
 - calibration curves:
-  - external calibration: in the lab: series of solutions of known concentration of analyte
-  - graph of signal vs. concentration: calibration
-  - linear or non-linear, use interpolation to find concentration (based on signal)
-  - linear regression: minimize the sum of squares of residuals
-    - least squares method: minimize residuals between data points and line
-      - residual (at the same x): experimental y - line of best fit y
-  - if original sample was diluted, apply dilution factor
+  - external calibration in the lab: series of solutions of known concentration of analyte
 - concentration detection limit: lowest concentration of analyte in sample that can be detected
   - you can find concentration LOD: $$[C]_{DL} = \frac{3\sigma_{mb}}{m}$$
 - matrix effects: combined effect of non-analyte components in sample on measurement of analyte
@@ -162,7 +120,7 @@ title: "CHEM 211: Introduction to Chemical Analysis"
 - gaussian distribution: bell curve
   - 1sd: 68%
   - 2sd: 95%
-  - 3sd; 99%
+  - 3sd: 99%
 - population vs. sample:
   - sample sd approaches population sd as N > 20
   - as N increases, sd decreases
@@ -177,11 +135,24 @@ title: "CHEM 211: Introduction to Chemical Analysis"
 - choose CI before you do experiments
   - CI: probability a difference exists when it doesn't
 - student's t value: permits use of sample data to test hypothesis without knowing population sd
-  - as N decreases, t increases
 
+*** lecture 5
+- t-statistic (case 1): validation, where there is a known or true value
+- t-statistic (case 2, same sd): comparing 2 means, is there enough statistical overlap
+- t-statistic (case 2, different sd): use F-test
+- t-statistic (case 3): paired/matched data
+  - comparing single measurements made with two methods on several different samples
+  - before and after (drug trials, same people)
+- grubb's test: determine outlier, make sure to remove if it is an outlier
+- equilibrium constant
+- activity
+- weak acid and weak base
+- polyprotic acid
+- amphiprotic substance
 
 ** Equilibrium and volumetric analysis
 *** Chemical Equilibrium Applied to Analytical Measurements
+*** lecture 6
 *** Solution Equilibrium and Systematic Treatment of Chemical Equilibrium
 *** Polyprotic Acid Equilibria, Polyprotic Acid-Base Titrations
 *** Complexation Equilibria - Quantitative EDTA Titrations
