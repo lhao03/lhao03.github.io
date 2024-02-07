@@ -3,6 +3,29 @@ description: "CHEM 211"
 title: "CHEM 211: Introduction to Chemical Analysis"
 ---
 
+* terms
+- internal standard: addition of constant amount of substance similar to analyte
+- matrix effect: effect of non-analyte on sample
+- random error:  worse precision
+- systematic error: reduces accuracy
+- selectivity: measure without interference from other things
+- sensitivity: rate of change in signal with changes in analyte
+- limit of detection: miminum amount of detection
+- precision: how close values are (replicates)
+- accuracy: how close to real value
+- standard addition: use sample matrix in calibration
+- replicate: sample from same source analyzed with same methods
+- positive control: known to contain analyte
+- negative control: known to contain no analyte
+- standard reference material: well characterized
+- interferent: cause systematic error in analysis
+- t-statistic: assign confidence limits to average results
+- t-test: compare precision of two methods
+- F-test: compare if two results are same or different statistically
+- least squares regression: best fit of line
+- G-test: outlier
+
+
 * questions
 - how does $$N \varpropto \sqrt{n}$$ imply averaged noise, being random, tends to cancel out?
 - can we generalize the error propagation for $y^x$?

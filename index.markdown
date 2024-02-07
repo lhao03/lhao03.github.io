@@ -7,14 +7,14 @@ Hello, welcome to my plethora of thoughts. I enjoy learning about how and why th
 
 Right now I'm:
 
-- reading fantasy books
 - co-leading dry lab and wiki at UBC iGEM, where I'm creating an [internal documentation](https://github.com/UBC-iGEM/internal-wiki-2023-24) system
 - getting back into writing
+- starting calisthenics?? 
 
 You can see my paper log [here](/read), my [CV](/cv/cv.pdf) or [resume](/resume-lucy/resume-Lucy-Hao.pdf). 
 
-<h2 style="padding:0;margin:0;">Selected Writing</h2>
-$partial("templates/post-list.html")$
+<!-- <h2 style="padding:0;margin:0;">Selected Writing</h2> -->
+<!-- $partial("templates/post-list.html")$ -->
 [See more ▶](/archive)
 
 ## Coursework
