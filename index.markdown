@@ -5,16 +5,11 @@ description: Currently studying computer science and chemistry at the University
 
 Hello, welcome to my plethora of thoughts. I enjoy learning about how and why things work, especially pertaining to theoretical chemistry, physical chemistry and a bit of programming language theory and synthetic biology. I'm interested in predicting the behavior of molecules and biological entities using theory and computation!
 
-Right now I'm:
-
-- co-leading dry lab and wiki at UBC iGEM, where I'm creating an [internal documentation](https://github.com/UBC-iGEM/internal-wiki-2023-24) system
-- getting back into writing
-- starting calisthenics?? 
-
-You can see my paper log [here](/read), my [CV](/cv/cv.pdf) or [resume](/resume-lucy/resume-Lucy-Hao.pdf). 
+You can see my paper log [here](/read), my [CV](/cv/cv.pdf) or [resume](/resume-lucy/resume-Lucy-Hao.pdf).
 
 <!-- <h2 style="padding:0;margin:0;">Selected Writing</h2> -->
 <!-- $partial("templates/post-list.html")$ -->
+
 [See more ▶](/archive)
 
 ## Coursework
