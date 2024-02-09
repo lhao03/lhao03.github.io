@@ -4,13 +4,13 @@ title: "CHEM 211: Introduction to Chemical Analysis"
 ---
 
 * terms
-- internal standard: addition of constant amount of substance similar to analyte
-- matrix effect: effect of non-analyte on sample
+- internal standard: addition of constant amount of substance similar to analyte to a sample as reference point for determination of the analyte
+- matrix effect: effect of non-analyte components on sample
 - random error:  worse precision
 - systematic error: reduces accuracy
 - selectivity: measure without interference from other things
 - sensitivity: rate of change in signal with changes in analyte
-- limit of detection: miminum amount of detection
+- limit of detection: minimum amount of analyte that be detected with confidence
 - precision: how close values are (replicates)
 - accuracy: how close to real value
 - standard addition: use sample matrix in calibration
@@ -19,12 +19,11 @@ title: "CHEM 211: Introduction to Chemical Analysis"
 - negative control: known to contain no analyte
 - standard reference material: well characterized
 - interferent: cause systematic error in analysis
-- t-statistic: assign confidence limits to average results
-- t-test: compare precision of two methods
-- F-test: compare if two results are same or different statistically
+- t-statistic: assign confidence limits to average results from small sample sizes
+- F-test*: compare precision of two methods
+- t-test*: compare if two results are same or different statistically
 - least squares regression: best fit of line
 - G-test: outlier
-
 
 * questions
 - how does $$N \varpropto \sqrt{n}$$ imply averaged noise, being random, tends to cancel out?
@@ -53,7 +52,8 @@ title: "CHEM 211: Introduction to Chemical Analysis"
     - current
     - transducer: converts input stimulus into electrical output
 - measurement:
-  - signal-to-noise ratio
+  - signal-to-noise ratio: $$\frac{S}{N}$$ is proportional to $$\sqrt{n}$$
+    - averaged signal $$S$$, averaged noise $$N$$
 *** lecture 2
   - assay: set of procedures or methods, latin word for try
   - analyte: chemical we are looking for
@@ -73,10 +73,13 @@ title: "CHEM 211: Introduction to Chemical Analysis"
     - noise: random fluctuations in measured signal
     - blank: a constant (like control) signal measured in absence of analyte
     - limit of detection (LOD): smallest concentration of absolute amount of analyte with signal much larger than blank
-      - signal that is greater than mean of blank + three sds of the noise
-    - signal LOD: units as signal (instrument maker)
+    - signal LOD: units as signal (instrument maker) $$S_{mb} + z\sigma_{mb}$$
+      - means average blank signal plus 3 standard deviations of blank signal
     - sample LOD: amount/concentration (user)
   - limit of quantitation $$\frac{S}{N} = 10$$: ability to report the concentration
+  - calibration curve: $$\sigma_{DL} = 3 \sigma_{mb} /m$$
+    - three standard deviations divided by the slope
+      - same approach applied to LOQ
 *** lecture 3
 [[../../../../images/211/LOD_211_Week2_Tuesday.jpeg]]
 - controls:
@@ -177,8 +180,79 @@ title: "CHEM 211: Introduction to Chemical Analysis"
 *** Chemical Equilibrium Applied to Analytical Measurements
 *** lecture 6
 *** Solution Equilibrium and Systematic Treatment of Chemical Equilibrium
+*** lecture 7
+- complexing agent: increases solubility of precipiate
+- complex formation: adding excess of B doesn't always precipiate max amount of A (you can have multiple species of complex)
+- titrant: solution of known composition and concentration
+- titrand: unknown solution
+- titrations:
+  - acid-base
+  - complexometric titrations (metal-ligand)
+  - precipiatation (want ppt)
+  - redox (titrant is an oxidizing or reducing agent)
+- acid-base titrations
+  - strong acid: eq point always at 7
+  - weak acid: half eq point = $$pK_{a}$$
+  - Henderson-Hasselbalch Equation: $$pH = pK_a + log \frac{[A^-]}{[HA]}$$
+  - diprotic acid with strong base (how to calculate pH throughout the titration process):
+    - buffer region: H-H equation
+    - compare $K_a$s
 *** Polyprotic Acid Equilibria, Polyprotic Acid-Base Titrations
+*** lecture 8
+- indicators: are actually acids and bases
+  - range $P_{ka}$ plus or minus 1, in practice 0.5
+- how to ensure we see the change of color in indicator?
+  - $P_{ka}$ of indicator much larger than $P_{ka}$ of weak acid, or indicator changes color too early
+- gravimetric methods
+  - obtain analyte by precipitating it
+- precipitation titration
+  - titrant: $$AgNO_{3}$$
+  - for titrating: anything that is insoluble when reacted with  silver
+    - endpoint: can be measuring removed or excess
+      fluorescein:
+      - titration of halides
+      - before: colloidal AgX is neg
+      - after: colloidal AgX is pos
+      - it depends on the ratio between Ag and X which determines its charge
+      - titration graph: after eq point, all indicators converge to the same behaviour
+      - "colloid is a mixture in which one substance consisting of microscopically dispersed insoluble particles is suspended throughout another substance"
+- EDTA titration
+  - complexing agent: EDTA at basic pH
+  - for titrating: metal
+  - auxiliarly complexing agent: ammonia to complex cations and maintain solubility at basic pH
+    - ACA needs larger binding constant than EDTA but smaller formation constant
+    - why need basic pH? because many metals precipitate as hydroxoides if pH is too high
+    - concentration of $$Y^{-4}$$ is the most at basic pH (it is pH dependent)
+      - to use a lower pH: need $$\alpha_6$$, defines mole fraction of $$Y^{-4}$$ at given pH
+        - rewrite MY formation to use $$\alpha_6 c_{EDTA} = [Y^{-4}]$$
+          - this gives a conditional formation constant: $$K^'_f (pH) = \alpha_6 K_f$$
 *** Complexation Equilibria - Quantitative EDTA Titrations
+*** lecture 9
+- indicators for EDTA:
+  - Eriochrome Black T: only works on some metals, can use backtitration to use with other metals
+    - orange to red/violet
+- complex titrations
+  - add masking agents to hide certain metals, needs to have stronger $$K_f$$ than EDTA
+  - demasking agent: another metal that binds with masking agent
+  - auxillary complexing agent: keep metal in solution
+- indirect titration
+  - if titration is slow
+  - no suitible indicator
+  - no useful direct titration reaction
+    - you can add A + B, with B in known excess
+      - measure leftover B with C
+  - applications: volhard titration
+    - titrant: $SCN^-$
+    - determine: $Ag^+$
+    - indicator: $Fe^{+3}$
+    - need to ensure $K_f_{AgSCN} > K_f_{FeSCN}$
+    - back titration for halide determination
+      - titrate with halide solution with excess Ag
+      - SCN^- turns red at first instance of excess SCN^- by reacting with iron
+    - displacement titrations
+      - want to analyse a metal with EDTA, but if the matrix is unknown, other metals may bind to EDTA that is not the metal of interest
+      - instead, react $$Ca^{2+}$$ with $$MgY^+$$; $$Ca^{2+}$$ has higher $K_f$ will displace $$Mg^{2+}$$
+        - titrate the freed $$Mg^{2+} in solution ? we titrate the excess Mg with EDTA?
 *** More Volumetric Analysis
 
 ** Electrochemistry and Potentiometry

@@ -62,13 +62,13 @@
   <div class="content">
     <h1 id="terms">terms</h1>
 <ul>
-<li>internal standard: addition of constant amount of substance similar to analyte</li>
-<li>matrix effect: effect of non-analyte on sample</li>
+<li>internal standard: addition of constant amount of substance similar to analyte to a sample as reference point for determination of the analyte</li>
+<li>matrix effect: effect of non-analyte components on sample</li>
 <li>random error: worse precision</li>
 <li>systematic error: reduces accuracy</li>
 <li>selectivity: measure without interference from other things</li>
 <li>sensitivity: rate of change in signal with changes in analyte</li>
-<li>limit of detection: miminum amount of detection</li>
+<li>limit of detection: minimum amount of analyte that be detected with confidence</li>
 <li>precision: how close values are (replicates)</li>
 <li>accuracy: how close to real value</li>
 <li>standard addition: use sample matrix in calibration</li>
@@ -77,9 +77,9 @@
 <li>negative control: known to contain no analyte</li>
 <li>standard reference material: well characterized</li>
 <li>interferent: cause systematic error in analysis</li>
-<li>t-statistic: assign confidence limits to average results</li>
-<li>t-test: compare precision of two methods</li>
-<li>F-test: compare if two results are same or different statistically</li>
+<li>t-statistic: assign confidence limits to average results from small sample sizes</li>
+<li>F-test*: compare precision of two methods</li>
+<li>t-test*: compare if two results are same or different statistically</li>
 <li>least squares regression: best fit of line</li>
 <li>G-test: outlier</li>
 </ul>
@@ -123,7 +123,10 @@ quantitative analysis: (quantity)</li>
 </ul></li>
 <li>measurement:
 <ul>
-<li>signal-to-noise ratio</li>
+<li>signal-to-noise ratio: <span class="math display">$$\frac{S}{N}$$</span> is proportional to <span class="math display">$$\sqrt{n}$$</span>
+<ul>
+<li>averaged signal <span class="math display"><em>S</em></span>, averaged noise <span class="math display"><em>N</em></span></li>
+</ul></li>
 </ul></li>
 </ul>
 <h3 id="lecture-2">lecture 2</h3>
@@ -154,14 +157,21 @@ quantitative analysis: (quantity)</li>
 <ul>
 <li>noise: random fluctuations in measured signal</li>
 <li>blank: a constant (like control) signal measured in absence of analyte</li>
-<li>limit of detection (LOD): smallest concentration of absolute amount of analyte with signal much larger than blank
+<li>limit of detection (LOD): smallest concentration of absolute amount of analyte with signal much larger than blank</li>
+<li>signal LOD: units as signal (instrument maker) <span class="math display"><em>S</em><sub><em>m</em><em>b</em></sub> + <em>z</em><em>σ</em><sub><em>m</em><em>b</em></sub></span>
 <ul>
-<li>signal that is greater than mean of blank + three sds of the noise</li>
+<li>means average blank signal plus 3 standard deviations of blank signal</li>
 </ul></li>
-<li>signal LOD: units as signal (instrument maker)</li>
 <li>sample LOD: amount/concentration (user)</li>
 </ul></li>
 <li>limit of quantitation <span class="math display">$$\frac{S}{N} = 10$$</span>: ability to report the concentration</li>
+<li>calibration curve: <span class="math display"><em>σ</em><sub><em>D</em><em>L</em></sub> = 3<em>σ</em><sub><em>m</em><em>b</em></sub>/<em>m</em></span>
+<ul>
+<li>three standard deviations divided by the slope
+<ul>
+<li>same approach applied to LOQ</li>
+</ul></li>
+</ul></li>
 </ul>
 <h3 id="lecture-3">lecture 3</h3>
 <p><img src="../../../../images/211/LOD_211_Week2_Tuesday.jpeg" /></p>
@@ -364,8 +374,133 @@ quantitative analysis: (quantity)</li>
 <h3 id="chemical-equilibrium-applied-to-analytical-measurements">Chemical Equilibrium Applied to Analytical Measurements</h3>
 <h3 id="lecture-6">lecture 6</h3>
 <h3 id="solution-equilibrium-and-systematic-treatment-of-chemical-equilibrium">Solution Equilibrium and Systematic Treatment of Chemical Equilibrium</h3>
+<h3 id="lecture-7">lecture 7</h3>
+<ul>
+<li>complexing agent: increases solubility of precipiate</li>
+<li>complex formation: adding excess of B doesn’t always precipiate max amount of A (you can have multiple species of complex)</li>
+<li>titrant: solution of known composition and concentration</li>
+<li>titrand: unknown solution</li>
+<li>titrations:
+<ul>
+<li>acid-base</li>
+<li>complexometric titrations (metal-ligand)</li>
+<li>precipiatation (want ppt)</li>
+<li>redox (titrant is an oxidizing or reducing agent)</li>
+</ul></li>
+<li>acid-base titrations
+<ul>
+<li>strong acid: eq point always at 7</li>
+<li>weak acid: half eq point = <span class="math display"><em>p</em><em>K</em><sub><em>a</em></sub></span></li>
+<li>Henderson-Hasselbalch Equation: <span class="math display">$$pH = pK_a + log \frac{[A^-]}{[HA]}$$</span></li>
+<li>diprotic acid with strong base (how to calculate pH throughout the titration process):
+<ul>
+<li>buffer region: H-H equation</li>
+<li>compare $K<sub>a</sub>$s</li>
+</ul></li>
+</ul></li>
+</ul>
 <h3 id="polyprotic-acid-equilibria-polyprotic-acid-base-titrations">Polyprotic Acid Equilibria, Polyprotic Acid-Base Titrations</h3>
+<h3 id="lecture-8">lecture 8</h3>
+<ul>
+<li>indicators: are actually acids and bases
+<ul>
+<li>range <span class="math inline"><em>P</em><sub><em>k</em><em>a</em></sub></span> plus or minus 1, in practice 0.5</li>
+</ul></li>
+<li>how to ensure we see the change of color in indicator?
+<ul>
+<li><span class="math inline"><em>P</em><sub><em>k</em><em>a</em></sub></span> of indicator much larger than <span class="math inline"><em>P</em><sub><em>k</em><em>a</em></sub></span> of weak acid, or indicator changes color too early</li>
+</ul></li>
+<li>gravimetric methods
+<ul>
+<li>obtain analyte by precipitating it</li>
+</ul></li>
+<li>precipitation titration
+<ul>
+<li>titrant: <span class="math display"><em>A</em><em>g</em><em>N</em><em>O</em><sub>3</sub></span></li>
+<li>for titrating: anything that is insoluble when reacted with silver
+<ul>
+<li>endpoint: can be measuring removed or excess
+fluorescein:
+<ul>
+<li>titration of halides</li>
+<li>before: colloidal AgX is neg</li>
+<li>after: colloidal AgX is pos</li>
+<li>it depends on the ratio between Ag and X which determines its charge</li>
+<li>titration graph: after eq point, all indicators converge to the same behaviour</li>
+<li>“colloid is a mixture in which one substance consisting of microscopically dispersed insoluble particles is suspended throughout another substance”</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>EDTA titration
+<ul>
+<li>complexing agent: EDTA at basic pH</li>
+<li>for titrating: metal</li>
+<li>auxiliarly complexing agent: ammonia to complex cations and maintain solubility at basic pH
+<ul>
+<li>ACA needs larger binding constant than EDTA but smaller formation constant</li>
+<li>why need basic pH? because many metals precipitate as hydroxoides if pH is too high</li>
+<li>concentration of <span class="math display"><em>Y</em><sup>−4</sup></span> is the most at basic pH (it is pH dependent)
+<ul>
+<li>to use a lower pH: need <span class="math display"><em>α</em><sub>6</sub></span>, defines mole fraction of <span class="math display"><em>Y</em><sup>−4</sup></span> at given pH
+<ul>
+<li>rewrite MY formation to use <span class="math display"><em>α</em><sub>6</sub><em>c</em><sub><em>E</em><em>D</em><em>T</em><em>A</em></sub> = [<em>Y</em><sup>−4</sup>]</span>
+<ul>
+<li>this gives a conditional formation constant: <span class="math display"><em>K</em><sub><em>f</em></sub><sup>′</sup>(<em>p</em><em>H</em>) = <em>α</em><sub>6</sub><em>K</em><sub><em>f</em></sub></span></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
 <h3 id="complexation-equilibria---quantitative-edta-titrations">Complexation Equilibria - Quantitative EDTA Titrations</h3>
+<h3 id="lecture-9">lecture 9</h3>
+<ul>
+<li>indicators for EDTA:
+<ul>
+<li>Eriochrome Black T: only works on some metals, can use backtitration to use with other metals
+<ul>
+<li>orange to red/violet</li>
+</ul></li>
+</ul></li>
+<li>complex titrations
+<ul>
+<li>add masking agents to hide certain metals, needs to have stronger <span class="math display"><em>K</em><sub><em>f</em></sub></span> than EDTA</li>
+<li>demasking agent: another metal that binds with masking agent</li>
+<li>auxillary complexing agent: keep metal in solution</li>
+</ul></li>
+<li>indirect titration
+<ul>
+<li>if titration is slow</li>
+<li>no suitible indicator</li>
+<li>no useful direct titration reaction
+<ul>
+<li>you can add A + B, with B in known excess
+<ul>
+<li>measure leftover B with C</li>
+</ul></li>
+</ul></li>
+<li>applications: volhard titration
+<ul>
+<li>titrant: <span class="math inline"><em>S</em><em>C</em><em>N</em><sup>−</sup></span></li>
+<li>determine: <span class="math inline"><em>A</em><em>g</em><sup>+</sup></span></li>
+<li>indicator: <span class="math inline"><em>F</em><em>e</em><sup>+3</sup></span></li>
+<li>need to ensure <span class="math inline"><em>K</em><sub><em>f</em><sub><em>A</em><em>g</em><em>S</em><em>C</em><em>N</em></sub></sub> &gt; <em>K</em><sub><em>f</em><sub><em>F</em><em>e</em><em>S</em><em>C</em><em>N</em></sub></sub></span></li>
+<li>back titration for halide determination
+<ul>
+<li>titrate with halide solution with excess Ag</li>
+<li>SCN^- turns red at first instance of excess SCN^- by reacting with iron</li>
+</ul></li>
+<li>displacement titrations
+<ul>
+<li>want to analyse a metal with EDTA, but if the matrix is unknown, other metals may bind to EDTA that is not the metal of interest</li>
+<li>instead, react <span class="math display"><em>C</em><em>a</em><sup>2+</sup></span> with <span class="math display"><em>M</em><em>g</em><em>Y</em><sup>+</sup></span>; <span class="math display"><em>C</em><em>a</em><sup>2+</sup></span> has higher <span class="math inline"><em>K</em><sub><em>f</em></sub></span> will displace <span class="math display"><em>M</em><em>g</em><sup>2+</sup></span>
+<ul>
+<li>titrate the freed $$Mg<sup>2+</sup> in solution ? we titrate the excess Mg with EDTA?</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
 <h3 id="more-volumetric-analysis">More Volumetric Analysis</h3>
 <h2 id="electrochemistry-and-potentiometry">Electrochemistry and Potentiometry</h2>
 <h3 id="fundamentals-of-electrochemistry">Fundamentals of Electrochemistry</h3>
