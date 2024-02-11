@@ -24,6 +24,7 @@ title: "CHEM 211: Introduction to Chemical Analysis"
 - t-test*: compare if two results are same or different statistically
 - least squares regression: best fit of line
 - G-test: outlier
+- For an external standard quantitation, known data from a calibration standard and unknown data from the sample are combined to generate a quantitative report.
 
 * questions
 - how does $$N \varpropto \sqrt{n}$$ imply averaged noise, being random, tends to cancel out?
@@ -174,6 +175,10 @@ title: "CHEM 211: Introduction to Chemical Analysis"
 - activity
 - weak acid and weak base
 - polyprotic acid
+  - formulas:
+    - $$[H^+] = \sqrt{\frac{K_{a2}[HA^-] + K_w}{1 + \frac{[HA^-]}{K_{a1}}}}$$
+    - $$[H^+] = \sqrt{K_{a2}K_{a1}}$$
+    - $$pH = 1/2(pK_{a1} + pK_{a2})$$ this is also how you get isoelectric point
 - amphiprotic substance
 
 ** Equilibrium and volumetric analysis
@@ -194,9 +199,16 @@ title: "CHEM 211: Introduction to Chemical Analysis"
   - strong acid: eq point always at 7
   - weak acid: half eq point = $$pK_{a}$$
   - Henderson-Hasselbalch Equation: $$pH = pK_a + log \frac{[A^-]}{[HA]}$$
-  - diprotic acid with strong base (how to calculate pH throughout the titration process):
+  - diprotic acid with strong base (how to calculate pH throughout the titration process): (REVIEW)
     - buffer region: H-H equation
     - compare $K_a$s
+  - endpoints for polyprotic species:
+    - if $$\frac{K_{a,1}}{K_{a,2}}$$ larger than or equal $$10^{4}$$, 1st endpoint will be clear (endpoint can disappear into the other)
+    - if $$pK_{a,2}$$ less than or equal 8, 2nd endpoint will be clear ($$K_{a2}$$ too weak)
+- buffers
+  - effective range: $$pK_a +- 1$$
+- acid-base indicator effective within the same range, but in practice is 0.5
+  - color transition
 *** Polyprotic Acid Equilibria, Polyprotic Acid-Base Titrations
 *** lecture 8
 - indicators: are actually acids and bases
@@ -252,7 +264,7 @@ title: "CHEM 211: Introduction to Chemical Analysis"
     - displacement titrations
       - want to analyse a metal with EDTA, but if the matrix is unknown, other metals may bind to EDTA that is not the metal of interest
       - instead, react $$Ca^{2+}$$ with $$MgY^+$$; $$Ca^{2+}$$ has higher $K_f$ will displace $$Mg^{2+}$$
-        - titrate the freed $$Mg^{2+} in solution ? we titrate the excess Mg with EDTA?
+        - titrate the freed $$Mg^{2+}$$ in solution ? we titrate the excess Mg with EDTA?
 *** More Volumetric Analysis
 
 ** Electrochemistry and Potentiometry
