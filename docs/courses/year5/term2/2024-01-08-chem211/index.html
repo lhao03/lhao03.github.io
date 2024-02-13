@@ -83,6 +83,8 @@
 <li>least squares regression: best fit of line</li>
 <li>G-test: outlier</li>
 <li>For an external standard quantitation, known data from a calibration standard and unknown data from the sample are combined to generate a quantitative report.</li>
+<li><span class="math display">$$K_f = \frac{[MY^{2-}]}{[M^{2+}][Y^{4-}]}$$</span> usually large</li>
+<li><span class="math display"><em>K</em><sub><em>s</em></sub><em>p</em> = [<em>M</em><sup>+</sup>][<em>C</em><em>l</em><sup>−</sup>]</span> usually small</li>
 </ul>
 <h1 id="questions">questions</h1>
 <ul>
@@ -93,6 +95,108 @@
 <li>why is this <span class="math display"><em>S</em>/<em>N</em> = 3</span> if <span class="math display"><em>S</em><sub><em>m</em></sub><em>b</em> = 0</span> important</li>
 </ul></li>
 <li>what does concentration detection limit mean</li>
+</ul>
+<h1 id="types-of-problems">types of problems</h1>
+<h2 id="mt1-problems">mt1 problems</h2>
+<h3 id="unit-1">unit 1</h3>
+<ul>
+<li>detecting signals that are statistically significant: <span class="math display"><em>S</em> ≥ <em>μ</em><sub><em>b</em><em>a</em><em>c</em><em>k</em><em>g</em><em>r</em><em>o</em><em>u</em><em>n</em><em>d</em></sub> + 3<em>σ</em><sub><em>b</em><em>a</em><em>c</em><em>k</em><em>g</em><em>r</em><em>o</em><em>u</em><em>n</em><em>d</em></sub></span></li>
+<li>which t-test to use:
+<ul>
+<li>case 1: compare sample mean with population mean (the true value) (needs replicates)</li>
+<li>case 2: use the f-test to compare SD of two sample sets, then compare two sample means (needs replicates)</li>
+<li>case 3: compare methods of single measurements of several different samples</li>
+</ul></li>
+<li><span class="math display">$$\frac{S}{N}$$</span> proportionate to <span class="math display">$$\sqrt{n}$$</span></li>
+<li>concentration detection limit: <span class="math display"><em>S</em><sub><em>A</em></sub> = <em>S</em><sub><em>b</em><em>a</em><em>c</em><em>k</em><em>g</em><em>r</em><em>o</em><em>u</em><em>n</em><em>d</em></sub> + 3<em>σ</em><sub><em>b</em><em>a</em><em>c</em><em>k</em><em>g</em><em>r</em><em>o</em><em>u</em><em>n</em><em>d</em></sub></span></li>
+<li>what does each standard allow you do to:
+<ul>
+<li>external standard: interpolate unknown from CC</li>
+<li>standard addition: extrapolate unknown from CC (matrix effect)</li>
+<li>internal standard: ratio, add substance similar to analyte, but different and not expected to be found in sample</li>
+</ul></li>
+</ul>
+<h3 id="unit-2">unit 2</h3>
+<ul>
+<li>solubility equilibria: will precipiate form? check if <span class="math display"><em>Q</em> &gt; <em>K</em><sub><em>s</em><em>p</em></sub></span> using the equation <span class="math display">[<em>M</em><sup>+</sup>][<em>X</em><sup>−</sup>]</span></li>
+<li>solubility equilibria: with x mL 0.y M of <span class="math display"><em>M</em><em>Y</em></span> added to x mL of 0.j M <span class="math display"><em>N</em><em>a</em><em>I</em></span>, how much ppt forms and what is the final concentration
+<ol type="1">
+<li>set up reaction equations:
+<span class="math display"><em>M</em><em>I</em> ⇔ <em>M</em><sup>+</sup> + <em>I</em><sup>−</sup></span>
+<span class="math display"><em>M</em><em>Y</em> + <em>N</em><em>a</em><em>I</em> ← <em>M</em><em>I</em> + <em>N</em><em>a</em><em>Y</em></span></li>
+<li>set up <span class="math display"><em>K</em><sub><em>s</em><em>p</em></sub> = [<em>M</em><sup>+</sup>][<em>I</em><sup>−</sup>]</span>, find <span class="math inline">[<em>I</em><sup>−</sup>]</span>
+<ul>
+<li>assume <span class="math display">[<em>M</em><sup>+</sup>] = 0</span> at eq, so to find <span class="math inline">[<em>I</em><sup>−</sup>]</span>, you subtract concentration of M from total concentration of I, then solve for M</li>
+</ul></li>
+</ol></li>
+<li>complexation equilibria: what is the concentration of <span class="math display"><em>M</em><sup>2+</sup></span> when x.0 mL of 0.00y M <span class="math display"><em>M</em><em>C</em><em>l</em><sub>2</sub></span> is added to z.0 mL of 0.00j M of EDTA at pH 13.0
+<ol type="1">
+<li>set up ice table with starting concentrations, and <span class="math display"><em>K</em><sub><em>f</em></sub></span> expression</li>
+<li>mass balance with known concentrations</li>
+<li>assume because of large <span class="math display"><em>K</em><sub><em>f</em></sub></span> <span class="math display">[<em>M</em><sup>2+</sup>] = 0</span></li>
+</ol></li>
+<li>solubility equilibria: solubility of <span class="math display"><em>C</em><em>o</em><em>C</em><em>O</em><sub>3</sub></span> in buffered solution of pH 4.0
+<ol type="1">
+<li>set up equations for <span class="math display"><em>K</em><sub><em>s</em><em>p</em></sub></span>, <span class="math display"><em>K</em><sub><em>a</em>1</sub></span>, <span class="math display"><em>K</em><sub><em>a</em>2</sub></span></li>
+<li>set up mass balance, one for the <span class="math display">[<em>C</em><em>o</em><sup>2+</sup>] = ...</span> and <span class="math display">[<em>C</em><em>O</em><sub>3</sub><sup>2−</sup>] = ...</span> and one for the acids</li>
+<li>using known values, substitute and solve for <span class="math display">[<em>C</em><em>o</em><sup>2+</sup>]<sup>2</sup></span></li>
+</ol></li>
+<li>solubility equilibria: solubility of <span class="math display"><em>M</em><em>C</em><em>l</em></span> in 0.0x M of <span class="math display"><em>N</em><em>a</em><em>C</em><em>N</em></span>
+<ol type="1">
+<li>given <span class="math display"><em>K</em><sub><em>s</em><em>p</em></sub></span> and <span class="math display"><em>K</em><sub><em>f</em></sub></span>, write two equations for each one</li>
+<li>set up mass balance for <span class="math inline">[<em>M</em><sup>+</sup>]</span> and <span class="math inline">[<em>C</em><em>N</em><sup>−</sup>]</span></li>
+<li>list assumptions:
+<ul>
+<li>since <span class="math display"><em>K</em><sub><em>f</em></sub></span> is large, there is not much free <span class="math inline"><em>M</em>+</span></li>
+<li>MCl will dissolve until all <span class="math inline"><em>C</em><em>N</em><sup>−</sup></span> used up: <span class="math display">[<em>M</em>(<em>C</em><em>N</em>)<sub>2</sub><sup>−</sup>] &gt;  &gt; [<em>C</em><em>N</em><sup>−</sup>]</span>
+<ul>
+<li><span class="math display">[<em>C</em><em>N</em><sup>−</sup>]<sub><em>i</em></sub> = 2[<em>M</em>(<em>C</em><em>N</em>)<sub>2</sub><sup>−</sup>] = 0.0<em>x</em></span> M</li>
+<li><span class="math display">[<em>A</em><em>g</em><sup>+</sup>]<sub><em>i</em></sub> = [<em>C</em><em>l</em><sup>−</sup>]<sub><em>i</em></sub> = [<em>M</em>(<em>C</em><em>N</em>)<sub>2</sub><sup>−</sup>]</span></li>
+</ul></li>
+</ul></li>
+</ol></li>
+<li><span class="math display"><em>X</em><em>C</em><em>l</em></span> is dissolved in a solution of 0.x M <span class="math display"><em>A</em><em>C</em><em>l</em></span>, where <span class="math display"><em>A</em><em>C</em><em>l</em></span> is soluble and <span class="math display"><em>X</em><em>C</em><em>l</em></span> is not very soluble. Given <span class="math display"><em>K</em><sub><em>s</em><em>p</em></sub> = [<em>X</em><sup>+</sup>][<em>C</em><em>l</em><sup>−</sup>]</span>
+<ol type="1">
+<li>find equations: <span class="math display"><em>A</em><em>C</em><em>l</em> ⇔ <em>A</em><sup>+</sup> + <em>C</em><em>l</em><sup>−</sup></span></li>
+<li>set up mass balance: 0.x M = <span class="math display">[<em>A</em><sup>+</sup>] = [<em>C</em><em>l</em><sup>−</sup>]<sub><em>t</em><em>o</em><em>t</em><em>a</em><em>l</em></sub> − [<em>C</em><em>l</em><sup>−</sup>]<sub><em>X</em><em>C</em><em>l</em></sub> = [<em>C</em><em>l</em><sup>−</sup>]<sub><em>t</em><em>o</em><em>t</em><em>a</em><em>l</em></sub> − [<em>X</em><sup>+</sup>]</span>
+<ul>
+<li>because <span class="math display">[<em>C</em><em>l</em><sup>−</sup>]<sub><em>X</em><em>C</em><em>l</em></sub> = [<em>X</em><sup>−</sup>]</span></li>
+</ul></li>
+<li>set up charge balance (include all ions): <span class="math display">1[<em>N</em><em>a</em><sup>+</sup>] + 1[<em>X</em><sup>+</sup>] = 1[<em>C</em><em>l</em><sup>−</sup>]</span></li>
+<li>check number of unknowns is equal to number of equations</li>
+<li>replace unknowns with known and solve for <span class="math display">[<em>X</em><sup>−</sup>]</span></li>
+</ol></li>
+<li>finding the isoelectric point of an amino acid: <span class="math display">$$\frac{1}{2} (pK_{a1} + pK_{a2})$$</span></li>
+<li>titration of <span class="math display"><em>M</em><sup>+</sup></span> with EDTA at a pH of y, in presence of complexing agent
+<ul>
+<li>solubility of <span class="math display"><em>M</em><em>X</em><sub><em>s</em></sub></span> in presence of a complexing agent such as <span class="math display"><em>N</em><em>H</em><sub>4</sub><em>C</em><em>l</em></span></li>
+</ul></li>
+<li>indirect titration of A with excess and known B and X: BX binds, then with addition of A, released B is amount of A
+<ul>
+<li>A has higher <span class="math display"><em>K</em><sub><em>f</em></sub></span> then B</li>
+</ul></li>
+<li>EDTA titration at pH lower than 10: what is the concentration of <span class="math display"><em>M</em><sup>2+</sup></span> when x.0 mL of 0.00y0 <span class="math display"><em>M</em><em>C</em><em>l</em><sub>2</sub></span> is added to z.0 mL of 0.0j M EDTA solution buffered at pH k?
+<ol type="1">
+<li>set up <span class="math display"><em>K</em><sub><em>f</em></sub></span> expression: <span class="math display">$$K_f = \frac{[CaY^{2-}]}{[M^{+2}][Y^{4-}]}$$</span></li>
+<li>set up mass balance:
+<span class="math display">$$[EDTA] = \frac{z \times 0.0j \text{ M}}{x + z}$$</span>
+<span class="math display">$$[MY^{2-}] = \frac{x \times 0.0y \text{ M}}{x + z}$$</span> assuming all the EDTA forms complex with the metal.</li>
+<li>sub in alpha: <span class="math display">[<em>Y</em><sup>4−</sup>] = <em>α</em><sub>6</sub>[<em>E</em><em>D</em><em>T</em><em>A</em>]<sub><em>f</em><em>r</em><em>e</em><em>e</em></sub></span>
+<span class="math display">[<em>E</em><em>D</em><em>T</em><em>A</em>]<sub><em>f</em><em>r</em><em>e</em><em>e</em></sub> = [<em>E</em><em>D</em><em>T</em><em>A</em>] − [<em>M</em><em>Y</em><sup>2−</sup>]</span></li>
+<li>sub in known values into the <span class="math display"><em>K</em><sub><em>f</em></sub></span> expression to find the concentration of <span class="math display"><em>M</em><sup>2+</sup></span>
+<span class="math display">$$[M^{2+}] = \frac{K_f \alpha_6 [EDTA]_{free}}{[MY^{2-}]}$$</span></li>
+</ol></li>
+<li>argentometric titration before eq point: x mL of 0.0y M XCl was titrated with 0.z M of <span class="math display"><em>A</em><em>g</em><em>N</em><em>O</em><sub>3</sub></span>
+<ul>
+<li>find pCl at 10 mL of <span class="math display"><em>A</em><em>g</em><em>N</em><em>O</em><sub>3</sub></span>:
+<ol type="1">
+<li>calculate how much <span class="math display"><em>A</em><em>g</em><sup>+</sup></span> has been added; this is how much <span class="math inline"><em>C</em><em>l</em><sup>−</sup></span> has formed ppt with silver</li>
+<li>subtract <span class="math inline"><em>C</em><em>l</em><sup>−</sup></span> that has formed complex with <span class="math inline"><em>A</em><em>g</em><sup>+</sup></span> from initial amount of chlorine</li>
+<li><span class="math display"><em>p</em><em>C</em><em>l</em> = <em>l</em><em>o</em><em>g</em>[<em>C</em><em>l</em><sup>−</sup>]</span></li>
+</ol></li>
+</ul></li>
+<li>argentometric titration at eq: use <span class="math display"><em>K</em><sub><em>s</em><em>p</em></sub></span></li>
+<li>argentometric titration after eq: calculate excess <span class="math display"><em>A</em><em>g</em><sup>+</sup></span>, then sub into <span class="math display"><em>K</em><sub><em>s</em><em>p</em></sub></span> expression and solve for <span class="math display">[<em>C</em><em>l</em><sup>−</sup>]</span></li>
 </ul>
 <h1 id="units">units</h1>
 <h3 id="course-introduction">Course Introduction</h3>
@@ -382,6 +486,19 @@ quantitative analysis: (quantity)</li>
 <h2 id="equilibrium-and-volumetric-analysis">Equilibrium and volumetric analysis</h2>
 <h3 id="chemical-equilibrium-applied-to-analytical-measurements">Chemical Equilibrium Applied to Analytical Measurements</h3>
 <h3 id="lecture-6">lecture 6</h3>
+<ul>
+<li>systematic treatment of equilibria
+<ul>
+<li>as many equations as unknowns
+<ul>
+<li>chemical equilibrium constant expressions</li>
+<li>charge balance charge on cation<sub>1</sub>[cation<sub>1</sub>] + charge on cation<sub>2</sub>[cation<sub>2</sub>] = charge on anion<sub>1</sub>[anion<sub>1</sub>] + charge on anion<sub>2</sub>[anion<sub>2</sub>]</li>
+<li>mass balance (many)</li>
+<li>formal: moles of original chemical formula in solution, without regard for species that already exist</li>
+</ul></li>
+</ul></li>
+<li>alpha diagrams: can plot alpha as a function of pH</li>
+</ul>
 <h3 id="solution-equilibrium-and-systematic-treatment-of-chemical-equilibrium">Solution Equilibrium and Systematic Treatment of Chemical Equilibrium</h3>
 <h3 id="lecture-7">lecture 7</h3>
 <ul>
@@ -409,7 +526,8 @@ quantitative analysis: (quantity)</li>
 <li>endpoints for polyprotic species:
 <ul>
 <li>if <span class="math display">$$\frac{K_{a,1}}{K_{a,2}}$$</span> larger than or equal <span class="math display">10<sup>4</sup></span>, 1st endpoint will be clear (endpoint can disappear into the other)</li>
-<li>if <span class="math display"><em>p</em><em>K</em><sub><em>a</em>, 2</sub></span> less than or equal 8, 2nd endpoint will be clear (<span class="math display"><em>K</em><sub><em>a</em>2</sub></span> too weak)</li>
+<li>if <span class="math display"><em>p</em><em>K</em><sub><em>a</em>, 2</sub></span> less than or equal 8, 2nd endpoint will be clear (if larger than 8, then <span class="math display"><em>K</em><sub><em>a</em>2</sub></span> too weak)</li>
+<li>triprotic: third endpoint around 12.7, too small, can’t see</li>
 </ul></li>
 </ul></li>
 <li>buffers
@@ -430,7 +548,9 @@ quantitative analysis: (quantity)</li>
 </ul></li>
 <li>how to ensure we see the change of color in indicator?
 <ul>
-<li><span class="math inline"><em>P</em><sub><em>k</em><em>a</em></sub></span> of indicator much larger than <span class="math inline"><em>P</em><sub><em>k</em><em>a</em></sub></span> of weak acid, or indicator changes color too early</li>
+<li>strong acid: eq point occurs at 7, very steep, the steep portion is almost vertical</li>
+<li>weak acid: <span class="math inline"><em>P</em><sub><em>k</em><em>a</em></sub></span> of indicator much larger than <span class="math inline"><em>P</em><sub><em>k</em><em>a</em></sub></span> of weak acid, or indicator changes color too early because not as steep (?), since eq point occurs after pH 7</li>
+<li>weak base: eq point occurs before 7</li>
 </ul></li>
 <li>gravimetric methods
 <ul>
@@ -439,6 +559,12 @@ quantitative analysis: (quantity)</li>
 <li>precipitation titration
 <ul>
 <li>titrant: <span class="math display"><em>A</em><em>g</em><em>N</em><em>O</em><sub>3</sub></span></li>
+<li>argentometric titrations:
+<ul>
+<li>free <span class="math inline">[<em>A</em><em>g</em><sup>+</sup>]</span> decreases with small value of <span class="math inline"><em>K</em><sub><em>s</em><em>p</em></sub></span>
+<ul>
+<li>small <span class="math inline"><em>K</em><sub><em>s</em><em>p</em></sub></span> means bigger number in demoninator (more ppt), pAg is larger</li>
+</ul></li>
 <li>for titrating: anything that is insoluble when reacted with silver
 <ul>
 <li>endpoint: can be measuring removed or excess
@@ -447,17 +573,25 @@ fluorescein:
 <li>titration of halides</li>
 <li>before: colloidal AgX is neg</li>
 <li>after: colloidal AgX is pos</li>
-<li>it depends on the ratio between Ag and X which determines its charge</li>
+<li>it depends on the ratio between <span class="math inline"><em>A</em><em>g</em><sup>+</sup></span> and <span class="math inline"><em>X</em><sup>−</sup></span> which determines its charge</li>
 <li>titration graph: after eq point, all indicators converge to the same behaviour</li>
 <li>“colloid is a mixture in which one substance consisting of microscopically dispersed insoluble particles is suspended throughout another substance”</li>
 </ul></li>
 </ul></li>
 </ul></li>
+</ul></li>
 <li>EDTA titration
 <ul>
+<li>how to deal with EDTA titrations at other pH:
+<ul>
+<li><span class="math display">$$\alpha_6 = \frac{[Y^{4-}]}{C_{EDTA}}$$</span></li>
+<li>from <span class="math display"><em>M</em><sup><em>n</em>+</sup> + <em>Y</em><sup>4−</sup> ⇔ <em>M</em><em>Y</em><sup>(<em>n</em>−4)+</sup></span>, we get <span class="math display">$$K_f = \frac{[MY^{(n-4)+}]}{[M^{n+}] \alpha_6 c_{EDTA}}$$</span></li>
+</ul></li>
 <li>complexing agent: EDTA at basic pH</li>
 <li>for titrating: metal</li>
-<li>auxiliarly complexing agent: ammonia to complex cations and maintain solubility at basic pH
+<li>pH dependence: as pH increases, amount of unbound metal decreases
+<ul>
+<li>auxiliary complexing agent: ammonia to complex cations and maintain solubility at basic pH
 <ul>
 <li>ACA needs larger binding constant than EDTA but smaller formation constant</li>
 <li>why need basic pH? because many metals precipitate as hydroxoides if pH is too high</li>
@@ -469,6 +603,10 @@ fluorescein:
 <ul>
 <li>this gives a conditional formation constant: <span class="math display"><em>K</em><sub><em>f</em></sub><sup>′</sup>(<em>p</em><em>H</em>) = <em>α</em><sub>6</sub><em>K</em><sub><em>f</em></sub></span></li>
 </ul></li>
+</ul></li>
+<li>too much ACA decreases sharpness of endpoint
+<span class="math display"><em>M</em><sup>2+</sup> + 4<em>N</em><em>H</em><sub>3</sub> ⇔ <em>Z</em><em>n</em>(<em>N</em><em>H</em><sub>3</sub>)<sub>4</sub><sup>2+</sup></span>
+<span class="math display"><em>Z</em><em>n</em>(<em>N</em><em>H</em><sub>3</sub>)<sub>4</sub><sup>2+</sup> + <em>Y</em><sup>4−</sup> ⇔ <em>Z</em><em>n</em><em>Y</em><sup>2−</sup> + 4<em>N</em><em>H</em><sub>3</sub></span></li>
 </ul></li>
 </ul></li>
 </ul></li>
@@ -505,11 +643,16 @@ fluorescein:
 <ul>
 <li>titrant: <span class="math inline"><em>S</em><em>C</em><em>N</em><sup>−</sup></span></li>
 <li>determine: <span class="math inline"><em>A</em><em>g</em><sup>+</sup></span></li>
+<li>find out how much halide</li>
 <li>indicator: <span class="math inline"><em>F</em><em>e</em><sup>+3</sup></span></li>
 <li>need to ensure <span class="math inline"><em>K</em><sub><em>f</em><sub><em>A</em><em>g</em><em>S</em><em>C</em><em>N</em></sub></sub> &gt; <em>K</em><sub><em>f</em><sub><em>F</em><em>e</em><em>S</em><em>C</em><em>N</em></sub></sub></span></li>
 <li>back titration for halide determination
 <ul>
-<li>titrate with halide solution with excess Ag</li>
+<li>titrate with halide solution with excess Ag
+<ul>
+<li>when all the Cl has been bound, you have Ag in excess</li>
+<li>start titrating the excess Ag with Fe. You add SCN until the solution turns red -&gt; endpoint</li>
+</ul></li>
 <li>SCN^- turns red at first instance of excess SCN^- by reacting with iron</li>
 </ul></li>
 <li>displacement titrations

@@ -173,3 +173,45 @@ $$\hat{H} \Psi = E \Psi$$, where the Hamiltonian $$\hat{H} = \hat{T} + \hat{V}$$
   - operator with basis set $$\langle \psi_i | \hat{A} \psi_j | \rangle$$
   - adjoint $$\hat{A}^\dag$$ with basis set
   - euclidean 3D vector space vs. Hilbert nD metric space
+** 7
+** 8
+** 9
+** 10
+- potential energy surfaces (PES)
+  - a molecule needs 3N coordinates to describe it
+    - position (spatial): 3
+    - rotations: 3 (2 for linear)
+    - (internal degrees of freedom) vibrational: 3N - (3 + 2 or 3)
+      - PES is described using these coordinates
+- classifications
+  - ab initio: from first principles
+    - only need electronics $$\hat{H}_e$$: number of electrons and type of nuclei
+  - empirical: functions constructed from values by fitting calculated properties to experimental data
+    - Lennard-Jones PES: $$V_{LJ}(R) = V_0 [(\frac{R_0}{R})^12-2(\frac{R_0}{R})^6]$$
+      - $$V_0$$ and $$R_0$$ are well depth and minimum of potential well respectively; determined from IR
+        - functional form: chemical intuition
+        - parameters: experimental
+    - semi-empirical: mixture
+- 412: concerned with ab initio
+- larger molecules use empirical potentials
+- anatomy of PES
+  - attractive state: has a well representing a bond
+  - repulsive state: no stable bond, not really a well, like a ball rolling down until reaching dissociation limit
+  - $$R \rightarrow 0$$: PESs climb to higher energies because of electron cloud repulsion and then more steeply from nuclear repulsive term
+- Gaussian finds $$R_0$$, at the minimum of PES
+  - matches experimental structure at low vibrational states
+- vibrational analysis
+  - approximations based on harmonic oscillator
+    - approximated in Taylor series, which we can simplify to parabola
+      - matches behaviour at the well, but elsewhere does not
+    - approximation has 5-10% difference from experimental values; even with exact PES using the harmonic approximation will lead to errors
+- how is this done for a PES of $p$ dimensions:
+  1. find stationary point where all first derivatives are 0 (makes taylor series expansion simpler?)
+  2. expand PES in multidimensional Taylor series about stationary point keeping only quadratic term (linear terms 0 because of step 1.)
+  3. form Hessian matrix, where diagonals are pure second derivative and everything else is mixed second derivative.
+  4. diagonalize the Hessian to find new set of coordinates, which are normal modes, $$q_i$$.
+     - $$q_i$$ is a linear combination of original $$\{R_i\}$$ coordinates.
+5. in normal mode basis, only pure second derivatives remain. mixed second derivative terms are zero; no coupling between different normal modes. each normal mode is independent of others, so the pure second derivative can be used to define a harmonic oscillator
+   - $$p$$ normal modes, $$p$$ harmonic oscillators
+6. ZPE is sum of harmonic frequencies multiplied by $$\frac{\hbar}{2}$$
+** 11

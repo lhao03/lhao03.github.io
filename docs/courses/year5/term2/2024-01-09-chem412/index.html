@@ -329,6 +329,84 @@
 <li>euclidean 3D vector space vs. Hilbert nD metric space</li>
 </ul></li>
 </ul>
+<h2 id="section-8">7</h2>
+<h2 id="section-9">8</h2>
+<h2 id="section-10">9</h2>
+<h2 id="section-11">10</h2>
+<ul>
+<li>potential energy surfaces (PES)
+<ul>
+<li>a molecule needs 3N coordinates to describe it
+<ul>
+<li>position (spatial): 3</li>
+<li>rotations: 3 (2 for linear)</li>
+<li>(internal degrees of freedom) vibrational: 3N - (3 + 2 or 3)
+<ul>
+<li>PES is described using these coordinates</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>classifications
+<ul>
+<li>ab initio: from first principles
+<ul>
+<li>only need electronics <span class="math display"><em>Ĥ</em><sub><em>e</em></sub></span>: number of electrons and type of nuclei</li>
+</ul></li>
+<li>empirical: functions constructed from values by fitting calculated properties to experimental data
+<ul>
+<li>Lennard-Jones PES: <span class="math display">$$V_{LJ}(R) = V_0 [(\frac{R_0}{R})^12-2(\frac{R_0}{R})^6]$$</span>
+<ul>
+<li><span class="math display"><em>V</em><sub>0</sub></span> and <span class="math display"><em>R</em><sub>0</sub></span> are well depth and minimum of potential well respectively; determined from IR
+<ul>
+<li>functional form: chemical intuition</li>
+<li>parameters: experimental</li>
+</ul></li>
+</ul></li>
+<li>semi-empirical: mixture</li>
+</ul></li>
+</ul></li>
+<li>412: concerned with ab initio</li>
+<li>larger molecules use empirical potentials</li>
+<li>anatomy of PES
+<ul>
+<li>attractive state: has a well representing a bond</li>
+<li>repulsive state: no stable bond, not really a well, like a ball rolling down until reaching dissociation limit</li>
+<li><span class="math display"><em>R</em> → 0</span>: PESs climb to higher energies because of electron cloud repulsion and then more steeply from nuclear repulsive term</li>
+</ul></li>
+<li>Gaussian finds <span class="math display"><em>R</em><sub>0</sub></span>, at the minimum of PES
+<ul>
+<li>matches experimental structure at low vibrational states</li>
+</ul></li>
+<li>vibrational analysis
+<ul>
+<li>approximations based on harmonic oscillator
+<ul>
+<li>approximated in Taylor series, which we can simplify to parabola
+<ul>
+<li>matches behaviour at the well, but elsewhere does not</li>
+</ul></li>
+<li>approximation has 5-10% difference from experimental values; even with exact PES using the harmonic approximation will lead to errors</li>
+</ul></li>
+</ul></li>
+<li>how is this done for a PES of <span class="math inline"><em>p</em></span> dimensions:
+<ol type="1">
+<li>find stationary point where all first derivatives are 0 (makes taylor series expansion simpler?)</li>
+<li>expand PES in multidimensional Taylor series about stationary point keeping only quadratic term (linear terms 0 because of step 1.)</li>
+<li>form Hessian matrix, where diagonals are pure second derivative and everything else is mixed second derivative.</li>
+<li>diagonalize the Hessian to find new set of coordinates, which are normal modes, <span class="math display"><em>q</em><sub><em>i</em></sub></span>.
+<ul>
+<li><span class="math display"><em>q</em><sub><em>i</em></sub></span> is a linear combination of original <span class="math display">{<em>R</em><sub><em>i</em></sub>}</span> coordinates.</li>
+</ul></li>
+</ol></li>
+</ul>
+<ol type="1">
+<li>in normal mode basis, only pure second derivatives remain. mixed second derivative terms are zero; no coupling between different normal modes. each normal mode is independent of others, so the pure second derivative can be used to define a harmonic oscillator
+<ul>
+<li><span class="math display"><em>p</em></span> normal modes, <span class="math display"><em>p</em></span> harmonic oscillators</li>
+</ul></li>
+<li>ZPE is sum of harmonic frequencies multiplied by <span class="math display">$$\frac{\hbar}{2}$$</span></li>
+</ol>
+<h2 id="section-12">11</h2>
   </div>
   <div class="flex-row link-no-style">
     
