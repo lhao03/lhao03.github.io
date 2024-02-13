@@ -333,8 +333,7 @@
 <h2 id="section-9">8</h2>
 <h2 id="section-10">9</h2>
 <h2 id="section-11">10</h2>
-<ul>
-<li>potential energy surfaces (PES)
+<h3 id="potential-energy-surfaces-pes">potential energy surfaces (PES)</h3>
 <ul>
 <li>a molecule needs 3N coordinates to describe it
 <ul>
@@ -345,7 +344,8 @@
 <li>PES is described using these coordinates</li>
 </ul></li>
 </ul></li>
-</ul></li>
+</ul>
+<ul>
 <li>classifications
 <ul>
 <li>ab initio: from first principles
@@ -406,6 +406,46 @@
 </ul></li>
 <li>ZPE is sum of harmonic frequencies multiplied by <span class="math display">$$\frac{\hbar}{2}$$</span></li>
 </ol>
+<p>side notes:</p>
+<ul>
+<li>normal modes are uncoupled, unlike bond coordinates; exciting one normal mode doesn’t affect other normal modes</li>
+<li>can use symmetry to simplify calculations regarding normal modes</li>
+<li>must use same method and same basis set to perform vibrational analysis as was used for geo opt; different methods approximate different stationary points</li>
+<li>normal modes used to characterize stationary points (?).</li>
+</ul>
+<h3 id="crossing-and-non-crossing-pes">crossing and non-crossing PES</h3>
+<ul>
+<li>NaCl: at limit of R goes to infinity; covalent bond does not have minimum, while ionic bond has minimum
+<ul>
+<li>these two graphs cross: PESs obtained with Born-Oppenheimer approximation
+<ul>
+<li>total wavefunction is product of nuclear and electron</li>
+</ul></li>
+<li>in real system, there are interactions with the two PESs and there is no crossing: avoided crossing point: non-Born-Oppenheimer effect
+<ul>
+<li>total wavefunction is linear combination of <span class="math display"><em>ψ</em><sub><em>e</em><em>l</em><em>e</em><em>c</em><em>t</em><em>r</em><em>o</em><em>n</em></sub><sup><em>i</em><em>o</em><em>n</em></sup></span> and <span class="math display"><em>ψ</em><sub><em>e</em><em>l</em><em>e</em><em>c</em><em>t</em><em>r</em><em>o</em><em>n</em></sub><sup><em>c</em><em>o</em><em>v</em><em>a</em><em>l</em><em>e</em><em>n</em><em>t</em></sup></span>, with some expansion coefficients</li>
+</ul></li>
+</ul></li>
+</ul>
+<h3 id="reaction-paths-transition-states-and-intermediates">reaction paths, transition states and intermediates</h3>
+<ul>
+<li>1D path, single normal mode</li>
+<li>PES for 2D case: TS is saddle point</li>
+<li>perpendicular modes: not along reaction path, bound vibrations
+<ul>
+<li>normal mode frequencies are positive numbers</li>
+</ul></li>
+<li>important to include ZPE into calculations of energy because of exponential dependence upon <span class="math display"><em>Δ</em><em>E</em><sup><em>t</em></sup></span>
+<ul>
+<li>ZPE only uses positive normal mode frequencies</li>
+</ul></li>
+</ul>
+<h3 id="diabatic-and-adiabatic-processes">diabatic and adiabatic processes</h3>
+<ul>
+<li>adiabatic theorem: QM system subject to gradually changing systems can adapt it’s functional form</li>
+<li>diabatic: rapidly changing conditions prevent system from adapting its configuration, so probability density remains unchanged? no eigenstate of final Hamiltonian with same functional form; system ends in linear combination of stats that sum to reproduce initial probability density</li>
+<li>adiabatic: gradually changing allow system to adapt configuration, probability density is modified. starts in eigenstate of initial Hamiltonian and ends in eigenstate of final Hamiltonian.</li>
+</ul>
 <h2 id="section-12">11</h2>
   </div>
   <div class="flex-row link-no-style">

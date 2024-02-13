@@ -177,7 +177,7 @@ $$\hat{H} \Psi = E \Psi$$, where the Hamiltonian $$\hat{H} = \hat{T} + \hat{V}$$
 ** 8
 ** 9
 ** 10
-- potential energy surfaces (PES)
+*** potential energy surfaces (PES)
   - a molecule needs 3N coordinates to describe it
     - position (spatial): 3
     - rotations: 3 (2 for linear)
@@ -214,4 +214,29 @@ $$\hat{H} \Psi = E \Psi$$, where the Hamiltonian $$\hat{H} = \hat{T} + \hat{V}$$
 5. in normal mode basis, only pure second derivatives remain. mixed second derivative terms are zero; no coupling between different normal modes. each normal mode is independent of others, so the pure second derivative can be used to define a harmonic oscillator
    - $$p$$ normal modes, $$p$$ harmonic oscillators
 6. ZPE is sum of harmonic frequencies multiplied by $$\frac{\hbar}{2}$$
+
+side notes:
+- normal modes are uncoupled, unlike bond coordinates; exciting one normal mode doesn't affect other normal modes
+- can use symmetry to simplify calculations regarding normal modes
+- must use same method and same basis set to perform vibrational analysis as was used for geo opt; different methods approximate different stationary points
+- normal modes used to characterize stationary points (?).
+
+*** crossing and non-crossing PES
+- NaCl: at limit of R goes to infinity; covalent bond does not have minimum, while ionic bond has minimum
+  - these two graphs cross: PESs obtained with Born-Oppenheimer approximation
+    - total wavefunction is product of nuclear and electron
+  - in real system, there are interactions with the two PESs and there is no crossing: avoided crossing point: non-Born-Oppenheimer effect
+    - total wavefunction is linear combination of $$\psi_{electron}^{ion}$$ and $$\psi_{electron}^{covalent}$$, with some expansion coefficients
+*** reaction paths, transition states and intermediates
+- 1D path, single normal mode
+- PES for 2D case: TS is saddle point
+- perpendicular modes: not along reaction path, bound vibrations
+  - normal mode frequencies are positive numbers
+- important to include ZPE into calculations of energy because of exponential dependence upon $$\Delta E^t$$
+  - ZPE only uses positive normal mode frequencies
+*** diabatic and adiabatic processes
+- adiabatic theorem: QM system subject to gradually changing systems can adapt it's functional form
+- diabatic: rapidly changing conditions prevent system from adapting its configuration, so probability density remains unchanged? no eigenstate of final Hamiltonian with same functional form; system ends in linear combination of stats that sum to reproduce initial probability density
+- adiabatic: gradually changing allow system to adapt configuration, probability density is modified. starts in eigenstate of initial Hamiltonian and ends in eigenstate of final Hamiltonian.
+
 ** 11

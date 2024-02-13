@@ -75,7 +75,24 @@ title: "CHEM 401: Principles of Spectroscopy"
 ** 6: prep for final presentation
 ** 7: intro to molecular rotation and vibration
 ** 8: molecular symmetry and group theory 1
+- operators:
+  - $$\hat{E}$$ is identity operator
 ** 9: molecular symmetry and group theory 2
+- group theory and quantum mechanics
+  - point symmetry operator R
+    - representation of R based on point in 3D space: real orthogonal $$3 \times 3$$ rep M = $$\Gamma(R)$$
+    - symmetry operations as operators on space of wavefunctions
+      - generalization of symmetry on arbitrary point:
+        $$r = M r = \begin{bmatrix}
+           x^, \\
+           y^, \\
+           z^,
+         \end{bmatrix}$$
+      - we can define the operator $$\hat{P}_R$$ by
+        - $$\hat{P}_R|\psi \rangle = \hat{P}_R|\psi(x, y, z) \rangle = |\psi(M^{-1} r) \rangle = |\psi(x^,, y^,, z^,,) \rangle$$
+      - interested in finite dimensional subspace of Hilbert space (5D space spanned by $3d$ orbitals): basis set is set of solutions of Schrodinger equation, eigenfunctions of $$\hat{H}$$
+- symmetrization
+  - projection operator $$\hat{P^{\mu}}$$: annihilates all functions that does not belong to $$\mu$$-th irreducible representation
 ** 10: molecular rotation and spin statistics 1
 ** 11: molecular rotation and spin statistics 2
 ** 12: molecular vibration
