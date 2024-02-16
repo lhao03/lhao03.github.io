@@ -93,6 +93,9 @@ title: "CHEM 401: Principles of Spectroscopy"
       - interested in finite dimensional subspace of Hilbert space (5D space spanned by $3d$ orbitals): basis set is set of solutions of Schrodinger equation, eigenfunctions of $$\hat{H}$$
 - symmetrization
   - projection operator $$\hat{P^{\mu}}$$: annihilates all functions that does not belong to $$\mu$$-th irreducible representation
+
+*** $$H_2O$$
+
 ** 10: molecular rotation and spin statistics 1
 ** 11: molecular rotation and spin statistics 2
 ** 12: molecular vibration

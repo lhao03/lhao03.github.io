@@ -446,6 +446,62 @@
 <li>diabatic: rapidly changing conditions prevent system from adapting its configuration, so probability density remains unchanged? no eigenstate of final Hamiltonian with same functional form; system ends in linear combination of stats that sum to reproduce initial probability density</li>
 <li>adiabatic: gradually changing allow system to adapt configuration, probability density is modified. starts in eigenstate of initial Hamiltonian and ends in eigenstate of final Hamiltonian.</li>
 </ul>
+<h3 id="basis-sets">basis sets</h3>
+<ul>
+<li>spatial part of spin orbital expressed as linear combination of atomic orbitals</li>
+<li>natural expand MOs in terms of AOs
+<ul>
+<li>hydrogen-like atomic orbitals (time consuming)</li>
+<li>ab initio MO theory: Slater-type orbitals (STOs) or Gaussian-type (GTOs) are used as basis sets</li>
+</ul></li>
+</ul>
+<h3 id="hydrogen-like-atomic-orbitals">hydrogen-like atomic orbitals</h3>
+<ul>
+<li>solution of following equation: <span class="math display">$$(-\frac{1}{2}\nabla^2 - \frac{Z}{r}) \psi(r) = E \psi (r)$$</span>
+<ul>
+<li>in spherical coordinates: <span class="math display"><em>ψ</em><sub><em>n</em><em>l</em><em>m</em></sub>(<em>r</em>,<em>θ</em>,<em>ρ</em>) = <em>R</em><sub><em>n</em><em>l</em></sub>(<em>r</em>)<em>Y</em><sub><em>l</em><em>m</em></sub>(<em>θ</em>,<em>ρ</em>)</span></li>
+</ul></li>
+<li>slater-type orbitals: expressed in spherical coordinate system - <span class="math display"><em>χ</em><sub><em>n</em><em>l</em><em>m</em></sub><sup><em>S</em><em>T</em><em>O</em></sup> = <em>N</em><em>Y</em><sub><em>l</em><em>m</em></sub>(<em>θ</em>,<em>ρ</em>)<em>r</em><sup><em>n</em> − 1</sup><em>e</em><sup>−<em>ζ</em><em>r</em></sup></span>
+<ul>
+<li>exponential decay at long range, Kato’s cusp condition at short range, no radial nodes
+<ul>
+<li>not convenient numerically: integral evaluation over STOs done numerically (why does this introduce error)</li>
+<li>Kato’s cusp condition: electron density has cusp at position of nuclei</li>
+</ul></li>
+</ul></li>
+<li>gaussian-type orbital (also in spherical coordinate system):
+<ul>
+<li><span class="math display"><em>χ</em><sub><em>n</em><em>l</em><em>m</em></sub><sup><em>S</em><em>T</em><em>O</em></sup> = <em>N</em><em>Y</em><sub><em>l</em><em>m</em></sub>(<em>θ</em>,<em>ρ</em>)<em>r</em><sup>2<em>n</em> − 2 − <em>l</em></sup><em>e</em><sup>−<em>ζ</em><em>r</em><sup>2</sup></sup></span></li>
+<li>can be evaluated with analytical formulae (Gaussian Product Theorem): product of two GTOs centered on different atoms is finite sum of Gaussian functions centered on point along axis connecting them: saves time and elimiates error in determining matrix elements
+<ul>
+<li>incorrect physical behaviour of GTOs: decays much faster for large r.</li>
+<li>do not satisfy Kato’s kusp condition</li>
+</ul></li>
+<li>instead use contracted sets (CGTOs) of primitive GTOs (PGTOs) normally used: <span class="math display">$$\chi^{CGTO} = \sum^k_i a_i \chi^{PGTO}_i$$</span>
+<ul>
+<li>for STO-3G: three PGTOs form each CGTO to mimic one STO</li>
+</ul></li>
+</ul></li>
+</ul>
+<h3 id="comments">comments:</h3>
+<ul>
+<li>core orbitals contribute most of overall energy but least to chemical bonding, valance orbitals most important chemically but contribute little to overall energy
+<ul>
+<li>basis functions constructed in a way to describe valence orbitals energies better than core orbitals</li>
+<li>absolute energies quite off, but relative energies are accurate
+<ul>
+<li>need to use same method and basis set for all calculations</li>
+</ul></li>
+</ul></li>
+<li>basis set superposition error: accessible basis sets different in two calculations
+<ul>
+<li>when two calculations have different basis function space, the calculation with larger basis function space will
+<ul>
+<li>add ghost molecules to account for BSSE (CP method)</li>
+<li>present in almost all calculations</li>
+</ul></li>
+</ul></li>
+</ul>
 <h2 id="section-12">11</h2>
   </div>
   <div class="flex-row link-no-style">
