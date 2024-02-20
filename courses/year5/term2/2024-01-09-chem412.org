@@ -176,7 +176,85 @@ $$\hat{H} \Psi = E \Psi$$, where the Hamiltonian $$\hat{H} = \hat{T} + \hat{V}$$
 ** 7
 ** 8
 ** 9
+- notes from paper and ipad notes summary
+*** bonding between 2 different atomic orbitals on 2 different atoms
+$$\Psi_{bonding} =
+  \begin{pmatrix}
+  1 \\
+  \alpha_1
+\end{pmatrix}$$
+$$\Psi_{antibonding} =
+  \begin{pmatrix}
+  -\alpha_2 \\
+  1
+\end{pmatrix}$$
+- $$\alpha_1 \neq \alpha_2$$: this means the interaction creates to MOs of two different energy differences
+  $$\alpha_2 > \alpha_1 > 0$$
+  - there is more destabilization vs. stabilization
+  - the lower energy atomic orbital is the one that is more electronegative, why? because holds electrons more close to the nucleus, less separation between negative and positive charges
+- with $$\epsilon_n = \text{AO energy}$$, when far apart, $$E_1 \rightarrow \epsilon_1$$ and $$\Psi \rightarrow \psi$$
+- as the difference between two atomic orbital energies increase, bonding interactions decrease, why? mathematically:
+  $$E_1 = \epsilon_1 - \frac{\epsilon_2 - \epsilon_1}{2(1 - S^2_{12})}(\sqrt{1 + 4\alpha_1\alpha_2} - 1 - 2\alpha_1S_{12})$$, so when the difference between $$\epsilon_2 - \epsilon_1$$ is very large, then there is no bonding.
+- the chemical result we can get from this is that: AOs close to each other feel bonding interaction and are affected, AOs with different energy levels remain non-interacting
+- this is why we only get certain types of mixing/hybridization: the AO energies must be close enough
+- atomic orbitals contribute unevenly to MOs: antibonding is destabilized slightly more than stabilized
+*** molecular hamiltonian
+- hamiltonian is total energy operator
+- for a molecule:
+  - $N$ nuclei: $$(\alpha = 1,2,3, ..., N)$$ with (mass $$M_\alpha$$, charge $$Z_\alpha_e$$, position $$R_\alpha$$)
+  - $n$ electrons: $$(i = 1,2, ..)$$ with (mass $m_e$, charge $$-e$$, position $$r_i$$)
+- Hamiltonian $$\hat{H} = \hat{T}_N + \hat{T}_e + \hat{V}_{NN} + \hat{V}_{ee} + \hat{V}_{Ne}$$
+  - after applying the (hartree) atomic units, simplified down to:
+    - nuclear kinetic: $$\hat{T}_N = -\frac{1}{2} \Sigma_\alpha \frac{1}{M_\alpha} \nabla^2_\alpha$$
+    - electronic kinetic:  $$\hat{T}_e = -\frac{1}{2} \Sigma_i \nabla^2_i$$
+    - nuclear repulsion: $$\hat{V}_{NN} = \Sigma_{\alpha < \beta} \frac{Z_\alpha Z_\beta}{R_{\alpha\beta}}$$
+    - electronic repulsion: $$\hat{V}_{ee} = \Sigma_{i < j} \frac{1}{r_{ij}}$$
+    - electron-nuclear attraction: $$\hat{V}_{Ne} = \Sigma_{\alpha, i} \frac{-Z_\alpha}{r_{\alpha i}}$$
+*** born-oopenheimer approximation
+- the nucleus is much much more massive than the electron
+- can separate motions of electrons and nucleus
+  - electrons move with frozen geometry with nuclei fixed in space (what does it mean to move with fixed geometry)
+    - when nuclei move, take calculations again
+- total molecule: $$\hat{H}_{total} = \hat{T}_N + \hat{\textbf{T}}_e + \hat{V}_{NN} + \hat{\textbf{V}}_{ee} + \hat{\textbf{V}}_{Ne}$$
+- we get the electronic hamiltonian with fixed nuclear parameters (framework): $$\hat{H}_e = \hat{T}_{e} + \hat{V}_{ee} + \hat{V}_{Ne}$$
+  - $$\hat{H}_e \psi_k = E_k \psi_k$$, $$\psi_k(\{r_i\};\{R_\alpha \})$$
+  - then we get $$\Psi_{total}$$ from expanding the basis set of electronic wavefunctions
+    $$| \Psi_{total} (\{r_i\}, \{R_\alpha \}) \rangle = \Sigma_{k} \phi_{k} (\{R_\alpha \}) \dot | \psi_k(\{r_i\};\{R_\alpha \})$$
+    - $$\phi$$ is nuclear, $$\Psi$$ is electronic
+    $$(\hat{T}_N + \hat{V}_NN + \hat{H}_e) \Psi_{total} = E_{total} \Psi_{total} \rangle$$
+
+*** adiabatic and BOA
+- resulting BOA is still hard to solve: basis function (i think) $$(\hat{T}_N + E_l + \hat{V}_{NN})\phi_l + \Sigma_k \{ \phi_k \langle |\hat{T}_N |\rangle  + \Sigma_{\alpha = 1} \frac{\langle|\hat{P}_\alpha |\rangle \hat{P}_\alpha \phi_k}{M_\alpha}\} $$
+- adiabatic: hopping between different electronic states is eliminated: only $$\phi_l$$ stays
+  - to change quantum state, requires heat $$(\hat{T}_N + E_l + \hat{V}_{NN})_\phi_l + \phi_l \langle \psi_l | \hat{T}_N | \psi_l \rangle = E_{total} \phi_l$$
+    - if nuclear framework doesn't move around, then second term is 0
+- that is the BOA: nuclear framework does not move:
+  $$(\hat{T}_N + E_l + \hat{V}_NN)\phi_l = E_{total} \phi_l$$
+  - this is RHF energy: restricted hartree fock energy
+  - electrons move and nucleus does not
+- potential energy surface folows from BOA: $$\hat{T}_{NN} + V(\{R_\alpha \}) \phi(\{R_\alpha \}) = E_{total}  \phi(\{R_\alpha \})$$
+  - there is no kinetic contributioN?
+  - we need $$V(\{R_\alpha \}) = E_l + \hat{V}_NN$$ or the curve looks weird, there will be no minimum
+    - contains all electgronic motions
+    - nueclei move on PES, because we are shortening the distance between nuclei
+      - PES gives net forces felt by nuclei due to complex motions/coulomb interactions of electrons
+- electrons move so fast, not point to talk about electron motion
+  - but shrodinger equation coupoles motion between electrons and nueclei
+- BOA provides theoretical basis for existance of chemical structures
+- BOA drawbacks:
+  - independent of nuclear masses, PES for isotopes is the same
+    - this implies electronic statse should be independent of particular isotopes of nuclei
+      - but different isotopes change electronic structure as non-adibatic coupling terms depend on nuclear mass
 ** 10
+*** lecture notes:
+- polyatomic DOF: 3N
+- the potential energy surface incorporates all types of energy (translational, rotational, vibrational)
+- upper PES: repulsive, minimum is attractive representing a bond
+  [[../../../../images/412/pes.png]]
+- ZPE (zero point energy): for translational and rotational is 0 energy at 0K. But vibrational:
+  - $$ZPE = \frac{1}{2} \hbar w$$
+  - true ground state energy is $$D_0 = D - ZPE$$
+    - why minus ZPE? and why is $D_0$ the true GSE?
 *** potential energy surfaces (PES)
   - a molecule needs 3N coordinates to describe it
     - position (spatial): 3
@@ -271,3 +349,37 @@ side notes:
     - present in almost all calculations
 
 ** 11
+- ZPE (zero point energy): for translational and rotational is 0 energy at 0K. But vibrational:
+  - $$ZPE = \frac{1}{2} \hbar w$$
+  - true ground state energy is $$D_0 = D - ZPE$$
+    - why minus ZPE? and why is $D_0$ the true GSE?
+      - ZPE is always bigger than 0
+    - $D_0$ represents energy to break a bond, enthaply required to break a bond:
+      - $$AB \rightarrow A + B$$
+      - $$\Delta H = (H(A) + H(B) - H(A-B)) = (E_{diss} + E_{diss ZPE}) - (E_{bond} + E_{bond ZPE}) = - (E_{bond} - E_{bond ZPE})$$
+- frequencies: positive represents stationary state (minimum), negative represent transition state (maximum)
+  - for a true transition state, you can either go back or to the final product, so there will be only one negative (or imaginary) frequency
+    - negative frequencies not included in ZPE
+- Morse vs. Harmonic: at higher quantum states, the differences are too large, harmonic is less accurate
+*** PES interactions
+- BOA: predicts crossing (why?) because the equatio is single product?
+  - single product may break down and not correctly describe total wavefunction
+  - what does it mean to be fixed by ZPE?
+  - contradicts the existance of sodium ions and elemental sodium
+- non BOA: avoided crossing $$\Psi_{total} = c_ion \Psi^{ion}_{total} c_cov \Psi^{cov}_{total}$$
+[[../../../../images/412/noncross.png]]
+- from the hamiltonian matrix, if $$$H_{12} = 0$, then PES crossing happens with no problem
+  - this happens when $$\Psi_1$$ and $$\Psi_2$$ are different spins or point groups
+*** adiabatic and nondiabetic processes
+[[../../../../images/412/dia.png]]
+- fast: mixed states on upper and lower PESs
+  - $$\Psi_d = c_+ \Psi_+ + c_- \Psi_-$$
+  - $$E_d = |c_+|^2E_+ + |c_-|^2E_-$$
+- slow: process ends up in pure state in lower PES
+  - $$\Psi_a = \Psi_-$$
+  - $$E_a = E_-$$
+*** quiz questions
+- breaking bonds fast or slow means changing the motion of the nuclei fast or slow
+- fast bond breaking by shooting strong, intense laser
+- vibrational frequencies: at TS only one vib freq is imaginary (or negative)
+- PES crossing: depends on the interaction energy, represented by $$H_{12}$$

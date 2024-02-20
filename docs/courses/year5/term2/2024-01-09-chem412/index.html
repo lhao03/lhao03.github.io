@@ -332,7 +332,136 @@
 <h2 id="section-8">7</h2>
 <h2 id="section-9">8</h2>
 <h2 id="section-10">9</h2>
+<ul>
+<li>notes from paper and ipad notes summary</li>
+</ul>
+<h3 id="bonding-between-2-different-atomic-orbitals-on-2-different-atoms">bonding between 2 different atomic orbitals on 2 different atoms</h3>
+<p><span class="math display">$$\Psi_{bonding} =
+  \begin{pmatrix}
+  1 \\
+  \alpha_1
+\end{pmatrix}$$</span>
+<span class="math display">$$\Psi_{antibonding} =
+  \begin{pmatrix}
+  -\alpha_2 \\
+  1
+\end{pmatrix}$$</span></p>
+<ul>
+<li><span class="math display"><em>α</em><sub>1</sub> ≠ <em>α</em><sub>2</sub></span>: this means the interaction creates to MOs of two different energy differences
+<span class="math display"><em>α</em><sub>2</sub> &gt; <em>α</em><sub>1</sub> &gt; 0</span>
+<ul>
+<li>there is more destabilization vs. stabilization</li>
+<li>the lower energy atomic orbital is the one that is more electronegative, why? because holds electrons more close to the nucleus, less separation between negative and positive charges</li>
+</ul></li>
+<li>with <span class="math display"><em>ϵ</em><sub><em>n</em></sub> = AO energy</span>, when far apart, <span class="math display"><em>E</em><sub>1</sub> → <em>ϵ</em><sub>1</sub></span> and <span class="math display"><em>Ψ</em> → <em>ψ</em></span></li>
+<li>as the difference between two atomic orbital energies increase, bonding interactions decrease, why? mathematically:
+<span class="math display">$$E_1 = \epsilon_1 - \frac{\epsilon_2 - \epsilon_1}{2(1 - S^2_{12})}(\sqrt{1 + 4\alpha_1\alpha_2} - 1 - 2\alpha_1S_{12})$$</span>, so when the difference between <span class="math display"><em>ϵ</em><sub>2</sub> − <em>ϵ</em><sub>1</sub></span> is very large, then there is no bonding.</li>
+<li>the chemical result we can get from this is that: AOs close to each other feel bonding interaction and are affected, AOs with different energy levels remain non-interacting</li>
+<li>this is why we only get certain types of mixing/hybridization: the AO energies must be close enough</li>
+<li>atomic orbitals contribute unevenly to MOs: antibonding is destabilized slightly more than stabilized</li>
+</ul>
+<h3 id="molecular-hamiltonian">molecular hamiltonian</h3>
+<ul>
+<li>hamiltonian is total energy operator</li>
+<li>for a molecule:
+<ul>
+<li><span class="math inline"><em>N</em></span> nuclei: <span class="math display">(<em>α</em>=1,2,3,...,<em>N</em>)</span> with (mass <span class="math display"><em>M</em><sub><em>α</em></sub></span>, charge <span class="math display"><em>Z</em><sub><em>α</em><sub><em>e</em></sub></sub></span>, position <span class="math display"><em>R</em><sub><em>α</em></sub></span>)</li>
+<li><span class="math inline"><em>n</em></span> electrons: <span class="math display">(<em>i</em>=1,2,..)</span> with (mass <span class="math inline"><em>m</em><sub><em>e</em></sub></span>, charge <span class="math display"> − <em>e</em></span>, position <span class="math display"><em>r</em><sub><em>i</em></sub></span>)</li>
+</ul></li>
+<li>Hamiltonian <span class="math display"><em>Ĥ</em> = <em>T̂</em><sub><em>N</em></sub> + <em>T̂</em><sub><em>e</em></sub> + <em>V̂</em><sub><em>N</em><em>N</em></sub> + <em>V̂</em><sub><em>e</em><em>e</em></sub> + <em>V̂</em><sub><em>N</em><em>e</em></sub></span>
+<ul>
+<li>after applying the (hartree) atomic units, simplified down to:
+<ul>
+<li>nuclear kinetic: <span class="math display">$$\hat{T}_N = -\frac{1}{2} \Sigma_\alpha \frac{1}{M_\alpha} \nabla^2_\alpha$$</span></li>
+<li>electronic kinetic: <span class="math display">$$\hat{T}_e = -\frac{1}{2} \Sigma_i \nabla^2_i$$</span></li>
+<li>nuclear repulsion: <span class="math display">$$\hat{V}_{NN} = \Sigma_{\alpha &lt; \beta} \frac{Z_\alpha Z_\beta}{R_{\alpha\beta}}$$</span></li>
+<li>electronic repulsion: <span class="math display">$$\hat{V}_{ee} = \Sigma_{i &lt; j} \frac{1}{r_{ij}}$$</span></li>
+<li>electron-nuclear attraction: <span class="math display">$$\hat{V}_{Ne} = \Sigma_{\alpha, i} \frac{-Z_\alpha}{r_{\alpha i}}$$</span></li>
+</ul></li>
+</ul></li>
+</ul>
+<h3 id="born-oopenheimer-approximation">born-oopenheimer approximation</h3>
+<ul>
+<li>the nucleus is much much more massive than the electron</li>
+<li>can separate motions of electrons and nucleus
+<ul>
+<li>electrons move with frozen geometry with nuclei fixed in space (what does it mean to move with fixed geometry)
+<ul>
+<li>when nuclei move, take calculations again</li>
+</ul></li>
+</ul></li>
+<li>total molecule: <span class="math display">$$\hat{H}_{total} = \hat{T}_N + \hat{\textbf{T}}_e + \hat{V}_{NN} + \hat{\textbf{V}}_{ee} + \hat{\textbf{V}}_{Ne}$$</span></li>
+<li>we get the electronic hamiltonian with fixed nuclear parameters (framework): <span class="math display"><em>Ĥ</em><sub><em>e</em></sub> = <em>T̂</em><sub><em>e</em></sub> + <em>V̂</em><sub><em>e</em><em>e</em></sub> + <em>V̂</em><sub><em>N</em><em>e</em></sub></span>
+<ul>
+<li><span class="math display"><em>Ĥ</em><sub><em>e</em></sub><em>ψ</em><sub><em>k</em></sub> = <em>E</em><sub><em>k</em></sub><em>ψ</em><sub><em>k</em></sub></span>, <span class="math display"><em>ψ</em><sub><em>k</em></sub>({<em>r</em><sub><em>i</em></sub>};{<em>R</em><sub><em>α</em></sub>})</span></li>
+<li>then we get <span class="math display"><em>Ψ</em><sub><em>t</em><em>o</em><em>t</em><em>a</em><em>l</em></sub></span> from expanding the basis set of electronic wavefunctions
+<span class="math display">|<em>Ψ</em><sub><em>t</em><em>o</em><em>t</em><em>a</em><em>l</em></sub>({<em>r</em><sub><em>i</em></sub>},{<em>R</em><sub><em>α</em></sub>})⟩ = <em>Σ</em><sub><em>k</em></sub><em>ϕ</em><sub><em>k</em></sub>({<em>R</em><sub><em>α</em></sub>})<em>|̇</em><em>ψ</em><sub><em>k</em></sub>({<em>r</em><sub><em>i</em></sub>};{<em>R</em><sub><em>α</em></sub>})</span>
+<ul>
+<li><span class="math display"><em>ϕ</em></span> is nuclear, <span class="math display"><em>Ψ</em></span> is electronic</li>
+</ul>
+<span class="math display">(<em>T̂</em><sub><em>N</em></sub>+<em>V̂</em><sub><em>N</em></sub><em>N</em>+<em>Ĥ</em><sub><em>e</em></sub>)<em>Ψ</em><sub><em>t</em><em>o</em><em>t</em><em>a</em><em>l</em></sub> = <em>E</em><sub><em>t</em><em>o</em><em>t</em><em>a</em><em>l</em></sub><em>Ψ</em><sub><em>t</em><em>o</em><em>t</em><em>a</em><em>l</em></sub>⟩</span></li>
+</ul></li>
+</ul>
+<h3 id="adiabatic-and-boa">adiabatic and BOA</h3>
+<ul>
+<li>resulting BOA is still hard to solve: basis function (i think) <span class="math display">$$(\hat{T}_N + E_l + \hat{V}_{NN})\phi_l + \Sigma_k \{ \phi_k \langle |\hat{T}_N |\rangle  + \Sigma_{\alpha = 1} \frac{\langle|\hat{P}_\alpha |\rangle \hat{P}_\alpha \phi_k}{M_\alpha}\} $$</span></li>
+<li>adiabatic: hopping between different electronic states is eliminated: only <span class="math display"><em>ϕ</em><sub><em>l</em></sub></span> stays
+<ul>
+<li>to change quantum state, requires heat <span class="math display">(<em>T̂</em><sub><em>N</em></sub>+<em>E</em><sub><em>l</em></sub>+<em>V̂</em><sub><em>N</em><em>N</em></sub>)<sub><em>ϕ</em><sub><em>l</em></sub></sub> + <em>ϕ</em><sub><em>l</em></sub>⟨<em>ψ</em><sub><em>l</em></sub>|<em>T̂</em><sub><em>N</em></sub>|<em>ψ</em><sub><em>l</em></sub>⟩ = <em>E</em><sub><em>t</em><em>o</em><em>t</em><em>a</em><em>l</em></sub><em>ϕ</em><sub><em>l</em></sub></span>
+<ul>
+<li>if nuclear framework doesn’t move around, then second term is 0</li>
+</ul></li>
+</ul></li>
+<li>that is the BOA: nuclear framework does not move:
+<span class="math display">(<em>T̂</em><sub><em>N</em></sub>+<em>E</em><sub><em>l</em></sub>+<em>V̂</em><sub><em>N</em></sub><em>N</em>)<em>ϕ</em><sub><em>l</em></sub> = <em>E</em><sub><em>t</em><em>o</em><em>t</em><em>a</em><em>l</em></sub><em>ϕ</em><sub><em>l</em></sub></span>
+<ul>
+<li>this is RHF energy: restricted hartree fock energy</li>
+<li>electrons move and nucleus does not</li>
+</ul></li>
+<li>potential energy surface folows from BOA: <span class="math display"><em>T̂</em><sub><em>N</em><em>N</em></sub> + <em>V</em>({<em>R</em><sub><em>α</em></sub>})<em>ϕ</em>({<em>R</em><sub><em>α</em></sub>}) = <em>E</em><sub><em>t</em><em>o</em><em>t</em><em>a</em><em>l</em></sub><em>ϕ</em>({<em>R</em><sub><em>α</em></sub>})</span>
+<ul>
+<li>there is no kinetic contributioN?</li>
+<li>we need <span class="math display"><em>V</em>({<em>R</em><sub><em>α</em></sub>}) = <em>E</em><sub><em>l</em></sub> + <em>V̂</em><sub><em>N</em></sub><em>N</em></span> or the curve looks weird, there will be no minimum
+<ul>
+<li>contains all electgronic motions</li>
+<li>nueclei move on PES, because we are shortening the distance between nuclei
+<ul>
+<li>PES gives net forces felt by nuclei due to complex motions/coulomb interactions of electrons</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>electrons move so fast, not point to talk about electron motion
+<ul>
+<li>but shrodinger equation coupoles motion between electrons and nueclei</li>
+</ul></li>
+<li>BOA provides theoretical basis for existance of chemical structures</li>
+<li>BOA drawbacks:
+<ul>
+<li>independent of nuclear masses, PES for isotopes is the same
+<ul>
+<li>this implies electronic statse should be independent of particular isotopes of nuclei
+<ul>
+<li>but different isotopes change electronic structure as non-adibatic coupling terms depend on nuclear mass</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
 <h2 id="section-11">10</h2>
+<h3 id="lecture-notes">lecture notes:</h3>
+<ul>
+<li>polyatomic DOF: 3N</li>
+<li>the potential energy surface incorporates all types of energy (translational, rotational, vibrational)</li>
+<li>upper PES: repulsive, minimum is attractive representing a bond
+<img src="../../../../images/412/pes.png" /></li>
+<li>ZPE (zero point energy): for translational and rotational is 0 energy at 0K. But vibrational:
+<ul>
+<li><span class="math display">$$ZPE = \frac{1}{2} \hbar w$$</span></li>
+<li>true ground state energy is <span class="math display"><em>D</em><sub>0</sub> = <em>D</em> − <em>Z</em><em>P</em><em>E</em></span>
+<ul>
+<li>why minus ZPE? and why is <span class="math inline"><em>D</em><sub>0</sub></span> the true GSE?</li>
+</ul></li>
+</ul></li>
+</ul>
 <h3 id="potential-energy-surfaces-pes">potential energy surfaces (PES)</h3>
 <ul>
 <li>a molecule needs 3N coordinates to describe it
@@ -503,6 +632,68 @@
 </ul></li>
 </ul>
 <h2 id="section-12">11</h2>
+<ul>
+<li>ZPE (zero point energy): for translational and rotational is 0 energy at 0K. But vibrational:
+<ul>
+<li><span class="math display">$$ZPE = \frac{1}{2} \hbar w$$</span></li>
+<li>true ground state energy is <span class="math display"><em>D</em><sub>0</sub> = <em>D</em> − <em>Z</em><em>P</em><em>E</em></span>
+<ul>
+<li>why minus ZPE? and why is <span class="math inline"><em>D</em><sub>0</sub></span> the true GSE?
+<ul>
+<li>ZPE is always bigger than 0</li>
+</ul></li>
+<li><span class="math inline"><em>D</em><sub>0</sub></span> represents energy to break a bond, enthaply required to break a bond:
+<ul>
+<li><span class="math display"><em>A</em><em>B</em> → <em>A</em> + <em>B</em></span></li>
+<li><span class="math display"><em>Δ</em><em>H</em> = (<em>H</em>(<em>A</em>)+<em>H</em>(<em>B</em>)−<em>H</em>(<em>A</em>−<em>B</em>)) = (<em>E</em><sub><em>d</em><em>i</em><em>s</em><em>s</em></sub>+<em>E</em><sub><em>d</em><em>i</em><em>s</em><em>s</em><em>Z</em><em>P</em><em>E</em></sub>) − (<em>E</em><sub><em>b</em><em>o</em><em>n</em><em>d</em></sub>+<em>E</em><sub><em>b</em><em>o</em><em>n</em><em>d</em><em>Z</em><em>P</em><em>E</em></sub>) =  − (<em>E</em><sub><em>b</em><em>o</em><em>n</em><em>d</em></sub>−<em>E</em><sub><em>b</em><em>o</em><em>n</em><em>d</em><em>Z</em><em>P</em><em>E</em></sub>)</span></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>frequencies: positive represents stationary state (minimum), negative represent transition state (maximum)
+<ul>
+<li>for a true transition state, you can either go back or to the final product, so there will be only one negative (or imaginary) frequency
+<ul>
+<li>negative frequencies not included in ZPE</li>
+</ul></li>
+</ul></li>
+<li>Morse vs. Harmonic: at higher quantum states, the differences are too large, harmonic is less accurate</li>
+</ul>
+<h3 id="pes-interactions">PES interactions</h3>
+<ul>
+<li>BOA: predicts crossing (why?) because the equatio is single product?
+<ul>
+<li>single product may break down and not correctly describe total wavefunction</li>
+<li>what does it mean to be fixed by ZPE?</li>
+<li>contradicts the existance of sodium ions and elemental sodium</li>
+</ul></li>
+<li>non BOA: avoided crossing <span class="math display"><em>Ψ</em><sub><em>t</em><em>o</em><em>t</em><em>a</em><em>l</em></sub> = <em>c</em><sub><em>i</em></sub><em>o</em><em>n</em><em>Ψ</em><sub><em>t</em><em>o</em><em>t</em><em>a</em><em>l</em></sub><sup><em>i</em><em>o</em><em>n</em></sup><em>c</em><sub><em>c</em></sub><em>o</em><em>v</em><em>Ψ</em><sub><em>t</em><em>o</em><em>t</em><em>a</em><em>l</em></sub><sup><em>c</em><em>o</em><em>v</em></sup></span></li>
+</ul>
+<p><img src="../../../../images/412/noncross.png" /></p>
+<ul>
+<li>from the hamiltonian matrix, if <span class="math display">$$$H_{12} = 0$, then PES crossing happens with no problem
+ - this happens when $$</span>Ψ<sub>1</sub><span class="math display"><em>a</em><em>n</em><em>d</em></span>Ψ<sub>2</sub>$$ are different spins or point groups</li>
+</ul>
+<h3 id="adiabatic-and-nondiabetic-processes">adiabatic and nondiabetic processes</h3>
+<p><img src="../../../../images/412/dia.png" /></p>
+<ul>
+<li>fast: mixed states on upper and lower PESs
+<ul>
+<li><span class="math display"><em>Ψ</em><sub><em>d</em></sub> = <em>c</em><sub>+</sub><em>Ψ</em><sub>+</sub> + <em>c</em><sub>−</sub><em>Ψ</em><sub>−</sub></span></li>
+<li><span class="math display"><em>E</em><sub><em>d</em></sub> = |<em>c</em><sub>+</sub>|<sup>2</sup><em>E</em><sub>+</sub> + |<em>c</em><sub>−</sub>|<sup>2</sup><em>E</em><sub>−</sub></span></li>
+</ul></li>
+<li>slow: process ends up in pure state in lower PES
+<ul>
+<li><span class="math display"><em>Ψ</em><sub><em>a</em></sub> = <em>Ψ</em><sub>−</sub></span></li>
+<li><span class="math display"><em>E</em><sub><em>a</em></sub> = <em>E</em><sub>−</sub></span></li>
+</ul></li>
+</ul>
+<h3 id="quiz-questions">quiz questions</h3>
+<ul>
+<li>breaking bonds fast or slow means changing the motion of the nuclei fast or slow</li>
+<li>fast bond breaking by shooting strong, intense laser</li>
+<li>vibrational frequencies: at TS only one vib freq is imaginary (or negative)</li>
+<li>PES crossing: depends on the interaction energy, represented by <span class="math display"><em>H</em><sub>12</sub></span></li>
+</ul>
   </div>
   <div class="flex-row link-no-style">
     
