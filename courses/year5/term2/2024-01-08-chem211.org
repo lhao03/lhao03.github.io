@@ -101,6 +101,16 @@ title: "CHEM 211: Introduction to Chemical Analysis"
     3. $$pCl = log[Cl^-]$$
 - argentometric titration at eq: use $$K_{sp}$$
 - argentometric titration after eq: calculate excess $$Ag^+$$, then sub into $$K_{sp}$$ expression and solve for $$[Cl^-]$$
+** mt 2 problems
+*** unit 3
+- balancing electrochemistry equations:
+  1. write unbalanced half-reactions
+  2. add coefficients
+  3. add H$_2$O to balance oxygen
+  4. add acid or base to balance hydrogens
+  5. balance charge by adding electrons
+- find the ionic strength
+- calculating potentials
 
 
 * units
@@ -362,6 +372,75 @@ title: "CHEM 211: Introduction to Chemical Analysis"
 
 ** Electrochemistry and Potentiometry
 *** Fundamentals of Electrochemistry
+*** lecture 10/11
+- what is electrochemistry: electrical measurements of chemical systems
+  - inexpensive equipment, can measure complex samples with little sample prep
+- reducing/oxidizing:
+  - reducing agent: is oxidized, so ON increases, and electrons are lost
+  - oxidizing agent: is reduced, so ON decreases, and electrons are gained
+- cell types
+  - galvanic cell
+    - the opposite of electrolytic cell
+      - electrons spontaneously go towards positive charge
+      - anode (-): electrons leave, so oxidation occurs
+      - cathode (+): electrons arrive, reduction occurs
+  - electrolytic cell
+    - requires electricity
+    - electrical energy into chemical energy
+    - cell potential is negative
+- salt bridge
+  - ensures the solution stays neutral
+  - completes circuit
+  - need ions with the same hydrated size so that they move at the same rate
+  - don't want direct mixing of reduction/oxidation
+- potential
+  - galvanic: initally positive (electrons want to move from anode to cathode)
+    - at eq: potential is 0 [Cu$^{2+}$] << 1.00 M << [Zn$^{2+}$]
+    - reflects driving force of redex reaction towards eq
+  - half-cell and standard potentials:
+    - combo of standard half-cells determine overall cell potential
+      - $V_1 < V_2$
+        - $V_1$: weak oxidizing agent, less easily reduced
+        - $V_2$: stronger oxidizing agent, more easily reduced
+      - standard reduction potential: E$_{cell}$ = E$_{anode}$ - E$_{cathode}$
+        - $E^\degree$ is tabulated for reduction reactions, positive if spontaneous relative to SHE
+          - SHE is not easy to work with, use other standards like SCE
+- ions in solution: concentration vs activity
+  - ions interact electrostatically
+  - can interact with other things in solution that have charge
+  - other ions can partially shield the ions of interest (like Ca$^2+$ and SO$_4^{2-}$)
+    - this means $K_{sp}$ gets larger with more salt added (NaCl also partially sheild), takes more CaSO4 to dissolve in water as you add more NaCl -> activity
+**** activity
+- value of concentration equilibrium constants increase at high electrolyte concentration
+  - what does this mean chemically: there is more of the ion product in solution
+  - concentration equilibrium constants don't consider other dissolved ions and their electrostatic interations and ion-ion interactions
+    - solubility increases???
+- activity coefficients: $$a_i = \gamma_i c$$
+  - decrease as ionic strength increases
+  - thermodynamic eq constant is written in terms of activities
+- can ignore for very dilute solutions
+**** ionic strength
+- the net effect of dissolved electrolytes: $$\mu = \frac{1}{2} \Sigma_i c_i z^2_i$$
+  - $$\mu \propto c_i, z_i$$
+    - monovalent < divalent < trivalent
+      - thus for monovalent salts, ionic strength equals molarity
+      - for other salts, ionic strength > molarity
+**** activity in dilute solutions
+- for neutral molecules, activity coefficient is 1
+- for ions: use the debye-huckel limiting law (useful for when ionic strength is less than 0.005 M at 25 C):
+  $$log \gamma_i = -0.51 z^2_i \sqrt{\mu}$$
+- extended: requires temperature dependent coefficients and effective diameter of hydrated ion
+**** free energy and potential
+- $$\Delta G = -nFE$$, where E is potential difference, F is Faraday constant, n is unit charges per molecule
+  - maxiumum work extracted assuming no heat loss
+- we get the Nerst equation by combining the above equation with gibbs equation:
+  $$-nFE = -nFE^{\circ} + RT \ln Q \\
+  E = E^\circ - \frac{RT}{nF} \ln Q$$
+  - when $$K = Q$$, cell potential is 0 and there is no driving force
+    - use Nerst equation to find potential at non-standard conditions, replace Q to get:
+      $$E = E^\circ - \frac{RT}{nF} \ln \frac{\gamma_C^c [C]^c\gamma_D^d[D]^d}{\gamma_A^a[A]^a \gamma_B^b[B]^b}$$
+- can us Nerst on half and full reactions (for half, if there is solid reactant or product, just least as 1)
+
 *** Analytical Measurements using Electrochemical Cells
 *** Electrodes
 *** Ion-selective Electrodes

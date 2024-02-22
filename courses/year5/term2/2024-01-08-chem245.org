@@ -80,7 +80,41 @@ title: "CHEM 245: Intermediate Synthetic Chemistry Laboratory"
   - beta: opposing the field (higher energy)
   - when external magnetic field applied, degenerate spin states split into two states, lower energy state is aligned with magnetic field and higher energy state
     - energy gap increases with increasing magnetic field strength
-*** Chemical shift, $$^{13}C$$
+*** Chemical shift, $$^{13}C$$ (Tutorial 3)
+- how many $\alpha$ and $\beta$ will there be?
+  - boltzmann distribution
+  - need nuclei (alpha or beta) to be in excess to see any signal
+    - excess nuclei depends on how much sample and how strong the external magnetic field is
+- larmor frequency: the frequency that a nuclei begins to precess it's own axis
+  - nuclei wobble in presence of applied magnetic field
+  - larmor frequency is unique to every nuclei
+- how does NMR occur?
+  - nuclei aligned with an applied magnetic field absorb energy, flip and relax back down
+  - we only see nuclei in excess
+- what does NMR tell us
+  - chemical shift: chemical environment
+  - multiplicity: neighbouring NMR active nuclei
+  - integration: # eq protons
+  - coupling constants: type of interactions with other nuclei of same type
+- what does sheilding/deshielded mean?
+  - valence electrons circulate in applied magnetic field
+  - the induced magnetic field from electrons opposes applied field
+  - more electron density -> more sheilded (right)
+  - less electron density -> more deshielded (left)
+- $^{13}$C NMR Table
+  - 0 - 50 ppm: saturated carbon (no EWG)
+  - 25 - 80 ppm: saturated carbon (EWG)
+  - 60 - 80 ppm: alkyne
+  - 100 - 180 ppm: unsaturated carbon sp$^2$, aromatic ring
+  - 150 - up ppm: carbonyl ring, aldehyde, ketone
+- tips for $^{13}$C NMR
+  - methyl groups sheild neighbouring Cs
+  - the more substituted a carbon is, the more deshielded it becomes
+  - ppm increases from electronegativity, increasing number EWG, decreasing distance between carbon and EWG
+- why is alkyne more sheilded than alkene? anisotropy
+  - EWG remove electron density
+  - in presence of applied magnetic field, electrons in pi bonds circulate, creating induced magnetic field
+  - areas are more shielded or more deshielded than expected
 *** $$^1H$$, Integration, Spin-Spin Splitting
 *** $$^1H$$, J-coupling constants, multiplet skewing, exchangeable protons
 ** infrared spectroscopy

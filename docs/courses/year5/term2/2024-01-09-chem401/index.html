@@ -129,40 +129,112 @@
 <li>first optimize then calculate vibrational frequency</li>
 </ul>
 <h2 id="intro-to-qm">3: intro to QM</h2>
+<h2 id="intro-to-emr">4: intro to EMR</h2>
 <h3 id="electromagnetic-radiation">electromagnetic radiation</h3>
-<h3 id="molecular-processes">molecular processes</h3>
-<h3 id="polarization-of-light">polarization of light</h3>
-<h3 id="polarization-of-light-1">polarization of light</h3>
-<h3 id="linear-and-circular-electric-field">linear and circular electric field</h3>
-<h3 id="speed-of-light">speed of light</h3>
-<h3 id="reflection-and-refraction">reflection and refraction</h3>
 <ul>
-<li>law of reflection</li>
-<li>Snell’s law</li>
-</ul>
-<h3 id="polarization-and-reflection">polarization and reflection</h3>
+<li>electric () and magentic () fields pervade all space; they are vectors with three components (x, y, z)</li>
+<li>in vacuum, speed of light is <span class="math display">2.998 × 10<sup>8</sup></span> m/s</li>
+<li>general form: <span class="math display"><em>E</em>(<em>r</em>,<em>t</em>) = <em>E</em><sub>0</sub><em>c</em><em>p</em><em>s</em>(<em>w</em><em>t</em>−<em>k</em> <em>d</em><em>o</em><em>t</em><em>r</em>)</span>
 <ul>
-<li>s-wave</li>
-<li>p-wave</li>
-<li>reflectivity
-<ul>
-<li>reflectance (no absorbtion)</li>
-<li>transmittance</li>
-<li>Fresnel equation</li>
+<li>where <span class="math inline"><em>E</em><sub>0</sub></span> is the amplitude vector, k is propagation vector, with r being vector containing x, y, z</li>
 </ul></li>
-<li>brewster angle: angle for 100% energy (to do what??)</li>
+<li>planck relation: <span class="math display">$$E = hv = \hbarw = \frac{hc}{\lambda}$$</span></li>
+<li>1 eV <span class="math display"> = 1.602 × 10<sup>−19</sup></span> J <span class="math display"> = 8065.54</span> cm <span class="math inline"><sup>−1</sup></span></li>
+</ul>
+<ol>
+<li><p>fields (EMR fields)</p>
+<ul>
+<li>6 fields that are related by these two equations:
+<span class="math display">$$ \vv{D} = \epsilon \vv{E} = \epsilon_0 \vv{E} + \vv{P}$$</span>
+<span class="math display">$$ \vv{B} = \epsilon \vv{E} = \mu_0 \vv{H} + \vv{M}$$</span></li>
+<li><span class="math display">$$\vv{E}$$</span> and <span class="math display">$$\vv{H}$$</span> (electric and magnetic field) are perpendicular to each other and the propagation vector <span class="math display">$$\vv{k}$$</span>
+<ul>
+<li><span class="math display">$$H_0 = \sqrt{\frac{\epsilon}{\mu}}E_0$$</span></li>
+</ul></li>
+</ul></li>
+<li><p>polarization of light</p>
+<ul>
+<li>light is transverse wave: osciallations of <span class="math display">$$\vv{E}$$</span> and <span class="math display">$$\vv{H}$$</span> are perpendicular to propagation direction
+<ul>
+<li><span class="math display">$$ k = |\vv{k}| = \frac{2 \pi}{\lambda} = \frac{w}{c}$$</span></li>
+<li>still have DOF in plane perpendicular to <span class="math display">$$\vv{k}$$</span>, which relates to the polarization of light
+<ol type="1">
+<li>unpolarized light: no perferred direction for <span class="math display">$$\vv{E}$$</span>, can be any direction perpendicular, is a statistically mixed state</li>
+<li>polarized light: the polarization of <span class="math display">$$\vv{E}$$</span> can rotate during oscillation, the angle
+<ul>
+<li>for light in the z direction: <span class="math display">(<em>E</em><sub><em>x</em>0</sub><em>c</em><em>o</em><em>s</em>(<em>k</em><em>z</em>−<em>w</em><em>t</em>),<em>E</em><sub><em>y</em>0</sub><em>c</em><em>o</em><em>s</em>(<em>k</em><em>z</em>−<em>w</em><em>t</em>+<em>θ</em>),0)</span>
+<ol type="1">
+<li>plane/linearly polarised: <span class="math display"><em>θ</em> = 0</span></li>
+<li>elliptically polarized light: <span class="math display">$$\theta = +/- \frac{\pi}{2}$$</span>, and <span class="math display"><em>E</em><sub><em>x</em>0</sub> ≠ <em>E</em><sub><em>y</em>0</sub></span> left/right hand</li>
+<li>circularly polarized light: <span class="math display"><em>E</em><sub><em>x</em>0</sub> = <em>E</em><sub><em>y</em>0</sub></span>, L/R</li>
+</ol></li>
+</ul></li>
+</ol></li>
+</ul></li>
+</ul></li>
+<li><p>angular momentum and light</p>
+<p>L/R circularly polarized photons have angular momentum <span class="math display"> + / − ℏ</span></p>
+<ul>
+<li>no <span class="math display"><em>S</em><sub><em>z</em></sub> = 0</span> photons as light must remain transverse (what does this mean)
+<ul>
+<li>photon is a massless particle, don’t actually haves spin
+<ul>
+<li>have helicity: value of projection of spin operator onto the momentum operator</li>
+</ul></li>
+</ul></li>
+<li>unpolarized light: random statistical mixture of L/R</li>
+<li>polarised light: coherent superposition of L/R circularly polarized light</li>
+</ul></li>
+<li><p>propagation of light</p>
+<ul>
+<li>speed of light in vacuo: <span class="math display">$$c_0 = \frac{1}{\sqrt{\epsilon_0 \mu_0}}$$</span></li>
+<li>speed of light in medium: <span class="math display">$$c_0 = \frac{1}{\sqrt{\epsilon \mu}}$$</span> where <span class="math inline"><em>ϵ</em></span> and <span class="math inline"><em>μ</em></span> are characteristic to the medium</li>
+<li>refractive index: <span class="math display">$$n = \frac{c_0}{v} = \sqrt{\frac{\epsilon \mu}{\epsilon_0 \mu_0}} \geq 1$$</span>, where <span class="math inline"><em>μ</em></span> is magnetic permittivity</li>
+<li>for nonmagnetic media: <span class="math display">$$n = \sqrt{\frac{\epsilon}{\epsilon_0}} = \sqrt{\epsilon_r}$$</span>, where <span class="math display"><em>ϵ</em><sub><em>r</em></sub></span> is the relative electric permittivity
+<ul>
+<li>dielectric constant: measured by response to static/low frequency electric field</li>
+</ul></li>
+</ul></li>
+<li><p>reflection and refraction</p>
+<ul>
+<li>frequency (energy) is unchanged from vacuum value when passing through a medium, <span class="math inline"><em>v</em> = <em>v</em><sub>0</sub></span>, so since <span class="math inline"><em>c</em> = <em>c</em><sub>0</sub>/<em>n</em></span>: the wavelength is reduced: $ λ = λ<sub>0</sub> / n<span class="math display">−</span>E = hv = $$</li>
+<li>reflection (specular, meaning mirror like): <span class="math display"><em>θ</em><sub><em>i</em><em>n</em><em>c</em></sub> = <em>θ</em><sub><em>r</em><em>e</em><em>f</em><em>l</em></sub></span></li>
+<li>refraction (snells law): <span class="math display"><em>n</em><sub>1</sub><em>s</em><em>i</em><em>n</em><em>θ</em><sub><em>i</em><em>n</em><em>c</em></sub> = <em>n</em><sub>2</sub><em>s</em><em>i</em><em>n</em><em>θ</em><sub><em>r</em><em>e</em><em>f</em><em>r</em></sub></span></li>
+<li>polarization:
+<ul>
+<li>determines the reflectivity</li>
+<li><span class="math inline"><em>R</em></span> is reflectance, <span class="math inline"><em>T</em> = 1 − <em>R</em></span> is the transmittance</li>
+<li>for s and p waves: with <span class="math display"><em>T</em> = 1 − <em>R</em></span></li>
+<li>Fresnel equation
+<ul>
+<li><span class="math display">$$R_s = |\frac{n_1 cos \theta_i - n_2 cos \theta_t}{n_1 cos \theta_i + n_2 cos \theta_t}|^2$$</span></li>
+<li><span class="math display">$$R_t = |\frac{n_1 cos \theta_t - n_2 cos \theta_i}{n_1 cos \theta_t + n_2 cos \theta_i}|^2$$</span>
+<ul>
+<li>normal incidence: <span class="math display"><em>θ</em><sub><em>i</em></sub> = <em>θ</em><sub><em>t</em></sub> = 0</span>, then <span class="math display">$$R = R_s = R_t = (\frac{n_1 - n_2}{n_1 + n_2})^2$$</span></li>
+</ul></li>
+<li>total internal reflection: when <span class="math inline"><em>n</em><sub>1</sub> &gt; <em>n</em><sub>2</sub></span>, there is a critical angle, which <span class="math inline"><em>R</em><sub><em>s</em></sub>, <em>R</em><sub><em>t</em></sub> = 1</span>
+<img src="../../../../images/401/internalreflect.jpg" /></li>
+</ul></li>
+</ul></li>
+<li>brewster’s angle: when <span class="math display"><em>θ</em><sub><em>t</em></sub> + <em>θ</em><sub><em>i</em></sub> = 90<sup>deg</sup></span> $R<sub>p</sub>  → 0<span class="math display"><em>a</em><em>n</em><em>d</em></span>T<sub>p</sub>  → 1<span class="math display">$$, p polarized light will not be reflected, or if the incident light is unpolarized, only $s$ polarized light will reflect, this is how you can produce polarized light
+ - $$</span>θ<sub>B</sub> = arctan(n<sub>2</sub>/n<sub>1</sub>)$$</li>
 <li>dispersion
 <ul>
 <li>sellmeier equation</li>
 </ul></li>
-<li>absorption and refractive index
-<ul>
-<li>kramers-kronig relations</li>
-<li>relation with refractive index and light</li>
 </ul></li>
-<li>birefrigence</li>
-</ul>
-<h2 id="intro-to-emr">4: intro to EMR</h2>
+<li><p>radiation density and intensity of light</p>
+<ul>
+<li>let <span class="math display"><em>ρ</em></span> be volume densitty of energy in EM radiation J/m<span class="math inline"><sup>3</sup></span></li>
+<li>to find contributions at various frequencies <span class="math inline"><em>ρ</em>(<em>v</em>)</span> is energy density per unit frequency, and $$ ρ = ∫<sub>0</sub>^inf  p(v) dv$</li>
+<li>intensity of light: <span class="math display"><em>I</em> = ∫<sub>0</sub><sup>inf</sup><em>I</em>(<em>v</em>)<em>d</em><em>v</em></span></li>
+<li>photon flux: number of photons flowing through a unit area per unit time <span class="math display">$$F = \frac{I}{(hv)}$$</span>
+<ul>
+<li>relations: <span class="math display"><em>I</em>(<em>v</em>) = <em>p</em>(<em>v</em>)<em>c</em> = <em>p</em>(<em>v</em>)(<em>c</em><sub>0</sub>/<em>n</em>)</span></li>
+<li><span class="math display">$$I(v) = \frac{1}{2} \epsilon_0 E^2_0 c$$</span>, where <span class="math inline"><em>E</em><sub>0</sub></span> is the amplitude for electric field osciallations at frequency <span class="math inline"><em>v</em></span></li>
+</ul></li>
+</ul></li>
+</ol>
 <h2 id="light-matter-interaction">5: light-matter interaction</h2>
 <ul>
 <li>radiation density</li>

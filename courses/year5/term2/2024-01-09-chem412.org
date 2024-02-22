@@ -326,7 +326,8 @@ side notes:
 *** hydrogen-like atomic orbitals
 - solution of following equation: $$(-\frac{1}{2}\nabla^2 - \frac{Z}{r}) \psi(r) = E \psi (r)$$
   - in spherical coordinates: $$\psi_{nlm}(r, \theta, \rho) = R_{nl}(r) Y_{lm}(\theta, \rho)$$
-- slater-type orbitals: expressed in spherical coordinate system  - $$\chi^{STO}_{nlm} = NY_{lm}(\theta, \rho)r^{n-1}e^{-\zeta r}$$
+- slater-type orbitals: expressed in spherical coordinate system
+  - $$\chi^{STO}_{nlm} = NY_{lm}(\theta, \rho)r^{n-1}e^{-\zeta r}$$
   - exponential decay at long range, Kato's cusp condition at short range, no radial nodes
     - not convenient numerically: integral evaluation over STOs done numerically (why does this introduce error)
     - Kato's cusp condition: electron density has cusp at position of nuclei

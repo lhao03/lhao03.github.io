@@ -46,30 +46,70 @@ title: "CHEM 401: Principles of Spectroscopy"
 - non-linear molecule: 3 rotational constants
 - first optimize then calculate vibrational frequency
 ** 3: intro to QM
+** 4: intro to EMR
 *** electromagnetic radiation
-*** molecular processes
-*** polarization of light
-*** polarization of light
-*** linear and circular electric field
-*** speed of light
-*** reflection and refraction
-- law of reflection
-- Snell's law
-*** polarization and reflection
-- s-wave
-- p-wave
-- reflectivity
-  - reflectance (no absorbtion)
-  - transmittance
+- electric (\vv{E}) and magentic (\vv{B}) fields pervade all space; they are vectors with three components (x, y, z)
+- in vacuum, speed of light is $$2.998 \times 10^8$$ m/s
+- general form: $$E(r, t) = E_0 cps (wt - k \ dot r)$$
+  - where $E_0$ is the amplitude vector, k is propagation vector, with r being vector containing x, y, z
+- planck relation: $$E = hv = \hbarw = \frac{hc}{\lambda}$$
+- 1 eV $$= 1.602 \times 10^{-19}$$ J $$= 8065.54$$ cm $^{-1}$
+**** fields (EMR fields)
+- 6 fields that are related by these two equations:
+  $$ \vv{D} = \epsilon \vv{E} = \epsilon_0 \vv{E} + \vv{P}$$
+  $$ \vv{B} = \epsilon \vv{E} = \mu_0 \vv{H} + \vv{M}$$
+- $$\vv{E}$$ and $$\vv{H}$$ (electric and magnetic field) are perpendicular to each other and the propagation vector $$\vv{k}$$
+  - $$H_0 = \sqrt{\frac{\epsilon}{\mu}}E_0$$
+**** polarization of light
+- light is transverse wave: osciallations of $$\vv{E}$$ and $$\vv{H}$$ are perpendicular to propagation direction
+  - $$ k = |\vv{k}| = \frac{2 \pi}{\lambda} = \frac{w}{c}$$
+  - still have DOF in plane perpendicular to $$\vv{k}$$, which relates to the polarization of light
+    1. unpolarized light: no perferred direction for $$\vv{E}$$, can be any direction perpendicular, is a statistically mixed state
+    2. polarized light: the polarization of $$\vv{E}$$ can rotate during oscillation, the angle
+       - for light in the z direction: $$(E_{x0} cos(kz -wt), E_{y0}cos(kz-wt+\theta), 0)$$
+         1. plane/linearly polarised: $$\theta = 0$$
+         2. elliptically polarized light: $$\theta = +/- \frac{\pi}{2}$$, and $$E_{x0} \neq E_{y0}$$ left/right hand
+         3. circularly polarized light: $$E_{x0} = E_{y0}$$, L/R
+**** angular momentum and light
+L/R circularly polarized photons have angular momentum $$+/- \hbar$$
+- no $$S_z = 0$$ photons as light must remain transverse (what does this mean)
+  - photon is a massless particle, don't actually haves spin
+    - have helicity: value of projection of spin operator onto the momentum operator
+- unpolarized light: random statistical mixture of L/R
+- polarised light: coherent superposition of L/R circularly polarized light
+**** propagation of light
+- speed of light in vacuo: $$c_0 = \frac{1}{\sqrt{\epsilon_0 \mu_0}}$$
+- speed of light in medium: $$c_0 = \frac{1}{\sqrt{\epsilon \mu}}$$ where $\epsilon$ and $\mu$ are characteristic to the medium
+- refractive index: $$n = \frac{c_0}{v} = \sqrt{\frac{\epsilon \mu}{\epsilon_0 \mu_0}} \geq 1$$, where $\mu$ is magnetic permittivity
+- for nonmagnetic media: $$n = \sqrt{\frac{\epsilon}{\epsilon_0}} = \sqrt{\epsilon_r}$$, where $$\epsilon_r$$ is the relative electric permittivity
+  - dielectric constant: measured by response to static/low frequency electric field
+**** reflection and refraction
+- frequency (energy) is unchanged from vacuum value when passing through a medium, $v = v_0$, so since $c = c_0 / n$: the wavelength is reduced: $ \lambda = \lambda_0 / n$$
+  - $$E = hv = \frac{c_0 / n}{ \lambda_0 / n}$$
+- reflection (specular, meaning mirror like): $$\theta_{inc} = \theta_{refl}$$
+- refraction (snells law): $$n_1 sin \theta_{inc} = n_2 sin \theta_{refr}$$
+- polarization:
+  - determines the reflectivity
+  - $R$ is reflectance, $T = 1 - R$ is the transmittance
+  - for s and p waves: with $$T = 1 - R$$
   - Fresnel equation
-- brewster angle: angle for 100% energy (to do what??)
+    - $$R_s = |\frac{n_1 cos \theta_i - n_2 cos \theta_t}{n_1 cos \theta_i + n_2 cos \theta_t}|^2$$
+    - $$R_t = |\frac{n_1 cos \theta_t - n_2 cos \theta_i}{n_1 cos \theta_t + n_2 cos \theta_i}|^2$$
+      - normal incidence: $$\theta_i = \theta_t = 0$$, then $$R = R_s = R_t = (\frac{n_1 - n_2}{n_1 + n_2})^2$$
+    - total internal reflection: when $n_1 > n_2$, there is a critical angle, which $R_s, R_t = 1$
+      [[../../../../images/401/internalreflect.jpg]]
+- brewster's angle: when $$\theta_t + \theta_i = 90^\deg$$ $R_p \rightarrow 0$$ and $$T_p \rightarrow 1$$, p polarized light will not be reflected, or if the incident light is unpolarized, only $s$ polarized light will reflect, this is how you can produce polarized light
+  - $$\theta_B = arctan(n_2/n_1)$$
 - dispersion
   - sellmeier equation
-- absorption and refractive index
-  - kramers-kronig relations
-  - relation with refractive index and light
-- birefrigence
-** 4: intro to EMR
+**** radiation density and intensity of light
+- let $$\rho$$ be volume densitty of energy in EM radiation J/m$^3$
+- to find contributions at various frequencies $\rho(v)$ is energy density per unit frequency, and $$ \rho = \int_0^\inf p(v) dv$
+- intensity of light: $$I = \int_0^\inf I(v) dv$$
+- photon flux: number of photons flowing through a unit area per unit time $$F = \frac{I}{(hv)}$$
+  - relations: $$I(v) = p(v)c = p(v)(c_0/n)$$
+  - $$I(v) = \frac{1}{2} \epsilon_0 E^2_0 c$$, where $E_0$ is the amplitude for electric field osciallations at frequency $v$
+
 ** 5: light-matter interaction
 - radiation density
 ** 6: prep for final presentation
