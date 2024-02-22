@@ -110,7 +110,15 @@ title: "CHEM 211: Introduction to Chemical Analysis"
   4. add acid or base to balance hydrogens
   5. balance charge by adding electrons
 - find the ionic strength
-- calculating potentials
+  1. write out dissociation equation for species of interest
+  2. calculate concentrations of ions present
+  3. sub into formula, and calculate, make sure to square charge
+- calculating potentials of cell
+  1. identify anode and cathode, then use:  E$_{cell}$ = E$_{cathode}$ - E$_{anode}$
+- calculating potentials with nerst equation
+  1. identify anode and cathode half reactions
+  2. write out full reaction
+  3. calculate $$E^o$$, and use $$E = E^o - \frac{0.0592}{n} log [\frac{[M^{x+}]}{[M^{y+}]}]$$
 
 
 * units
@@ -402,8 +410,8 @@ title: "CHEM 211: Introduction to Chemical Analysis"
       - $V_1 < V_2$
         - $V_1$: weak oxidizing agent, less easily reduced
         - $V_2$: stronger oxidizing agent, more easily reduced
-      - standard reduction potential: E$_{cell}$ = E$_{anode}$ - E$_{cathode}$
-        - $E^\degree$ is tabulated for reduction reactions, positive if spontaneous relative to SHE
+      - standard reduction potential: E$_{cell}$ = E$_{cathode}$ - E$_{anode}$
+        - $$E^\deg$$ is tabulated for reduction reactions, positive if spontaneous relative to SHE
           - SHE is not easy to work with, use other standards like SCE
 - ions in solution: concentration vs activity
   - ions interact electrostatically

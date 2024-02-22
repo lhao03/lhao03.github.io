@@ -52,7 +52,7 @@ title: "CHEM 401: Principles of Spectroscopy"
 - in vacuum, speed of light is $$2.998 \times 10^8$$ m/s
 - general form: $$E(r, t) = E_0 cps (wt - k \ dot r)$$
   - where $E_0$ is the amplitude vector, k is propagation vector, with r being vector containing x, y, z
-- planck relation: $$E = hv = \hbarw = \frac{hc}{\lambda}$$
+- planck relation: $$E = hv = \hbar w = \frac{hc}{\lambda}$$
 - 1 eV $$= 1.602 \times 10^{-19}$$ J $$= 8065.54$$ cm $^{-1}$
 **** fields (EMR fields)
 - 6 fields that are related by these two equations:
@@ -98,10 +98,13 @@ L/R circularly polarized photons have angular momentum $$+/- \hbar$$
       - normal incidence: $$\theta_i = \theta_t = 0$$, then $$R = R_s = R_t = (\frac{n_1 - n_2}{n_1 + n_2})^2$$
     - total internal reflection: when $n_1 > n_2$, there is a critical angle, which $R_s, R_t = 1$
       [[../../../../images/401/internalreflect.jpg]]
-- brewster's angle: when $$\theta_t + \theta_i = 90^\deg$$ $R_p \rightarrow 0$$ and $$T_p \rightarrow 1$$, p polarized light will not be reflected, or if the incident light is unpolarized, only $s$ polarized light will reflect, this is how you can produce polarized light
+- brewster's angle: when $$\theta_t + \theta_i = 90^\deg$$ $$R_p \rightarrow 0$$ and $$T_p \rightarrow 1$$, p polarized light will not be reflected, or if the incident light is unpolarized, only $s$ polarized light will reflect, this is how you can produce polarized light
   - $$\theta_B = arctan(n_2/n_1)$$
 - dispersion
   - sellmeier equation
+    [[../../../../images/401/angles.png]]
+
+** 5: light-matter interaction
 **** radiation density and intensity of light
 - let $$\rho$$ be volume densitty of energy in EM radiation J/m$^3$
 - to find contributions at various frequencies $\rho(v)$ is energy density per unit frequency, and $$ \rho = \int_0^\inf p(v) dv$
@@ -109,9 +112,15 @@ L/R circularly polarized photons have angular momentum $$+/- \hbar$$
 - photon flux: number of photons flowing through a unit area per unit time $$F = \frac{I}{(hv)}$$
   - relations: $$I(v) = p(v)c = p(v)(c_0/n)$$
   - $$I(v) = \frac{1}{2} \epsilon_0 E^2_0 c$$, where $E_0$ is the amplitude for electric field osciallations at frequency $v$
-
-** 5: light-matter interaction
-- radiation density
+**** absorption and emission
+- consider a two level system: can have three processes:
+  1. absorption
+  2. spontaneous emission
+  3. stimulated emission
+[[../../../../images/401/qm.png]]
+- A and B are transition probabilities, $N_1$, $N_2$ are populations
+- Einstein's treatment: @ thermal equilibrium, population ratio given by Boltzmann factor, with degeneracies g: $$\frac{N_2}{N_1} = \frac{g_2}{g_1} e^{-hv / kT}$$, where $hv = E_2 - E_1$
+- spontaneous decay (no radiation):
 ** 6: prep for final presentation
 ** 7: intro to molecular rotation and vibration
 ** 8: molecular symmetry and group theory 1

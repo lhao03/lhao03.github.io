@@ -115,7 +115,10 @@ title: "CHEM 245: Intermediate Synthetic Chemistry Laboratory"
   - EWG remove electron density
   - in presence of applied magnetic field, electrons in pi bonds circulate, creating induced magnetic field
   - areas are more shielded or more deshielded than expected
-*** $$^1H$$, Integration, Spin-Spin Splitting
+  - (less sheilded) sp2 with EWG/sp2 < sp < sp3 (more sheilded)
+    [[../../../../images/245/image0.png]]
+*** $$^1H$$, Integration, Spin-Spin Splitting (Tutorial 4)
+
 *** $$^1H$$, J-coupling constants, multiplet skewing, exchangeable protons
 ** infrared spectroscopy
 *** EM spectrum, FT-IR spectrometer, samples, molecular vibration modes
