@@ -414,3 +414,34 @@ side notes:
   - most applications take GTOs to be centred at nuclei
     - for some calculations: centre of basis function may not be center of nucleus
 **** classification of basis sets
+- how many functions to be used?
+- minimum basis set: only enough functions to contain all electrons of neutral atom
+  - H to He: single s-function
+  - Li to Ne: 1s function, 2s function, 3 2p functions
+  - Na to Ar: 1s function, 2s function, 3 2p functions, 3s function, 3 3p function
+- double zeta: doubling of all basis functions
+  - demonstrate importance with HCN:
+    - C-H bond: hydrogen s orbital (H) and $p_z$ orbital (C)
+    - C-N pi bond: $p_x$ and $p_y$ orbitals of C and N
+      - pi bind will have more diffuse electron distribuion than C-H sigma bond
+        - minimum basis set: comprimize will be made
+        - DZ: tighter function can enter C-H bond with large coefficient, diffuse function (small exponent) can be used for C-N pi bond
+  - split valence basis: only doubles valence orbitals (VDZ)
+- triple zeta: tripling of all basis functions, also triple split valence basis set
+- higher angular momentum functions -> polarization functions, also important
+  - electron distribution along bond is different than perpendicular to bond
+  - for H-C bond, if only s functions are described, then electron density perpendicular cannot be described
+    - add set of p-orbital functions to H, then $p_z$ component can be used to describe perpendicular electron density
+      - p-orbital introduces polarization of s-orbitals
+- for single determinant wave function: first set of polarization functions is most important
+- electron correlation: energy lowering by electrons "avoiding" each other
+  - "in-out": radial correlation, one electron is close to and the other, far from nucleus
+    - wavefunctions with different exponents
+  - "angular correlation": two electrons on opposite side of nucleus
+    - same magnitude exponents but different angular momenta
+- adding single set of polarization functions (p-functions on hydrogen, d-functions on heavy atoms): double zeta plys polarization
+- basis set balance: having too many polarization functions vs. small basis set is not good
+  - mixing of basis sets: minimum basis on spectator ions and DZ on interesting parts
+  - or polarization functions on important hydrogens -> creats artefacts
+  - use of small basis sets for systems containing very different numbers of valence electrons may produce artefacts
+**** even and well tempered basis sets
