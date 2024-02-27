@@ -208,10 +208,13 @@
 <li>Fresnel equation
 <ul>
 <li><span class="math display">$$R_s = |\frac{n_1 cos \theta_i - n_2 cos \theta_t}{n_1 cos \theta_i + n_2 cos \theta_t}|^2$$</span></li>
-<li><span class="math display">$$R_t = |\frac{n_1 cos \theta_t - n_2 cos \theta_i}{n_1 cos \theta_t + n_2 cos \theta_i}|^2$$</span>
+<li><span class="math display">$$R_p = |\frac{n_1 cos \theta_t - n_2 cos \theta_i}{n_1 cos \theta_t + n_2 cos \theta_i}|^2$$</span></li>
+<li>another form:
 <ul>
-<li>normal incidence: <span class="math display"><em>θ</em><sub><em>i</em></sub> = <em>θ</em><sub><em>t</em></sub> = 0</span>, then <span class="math display">$$R = R_s = R_t = (\frac{n_1 - n_2}{n_1 + n_2})^2$$</span></li>
+<li><span class="math display">$$R_s = |\frac{sin(\theta_2 - \theta_1)}{sin(\theta_2 + \theta_1)}|^2$$</span></li>
+<li><span class="math display">$$R_p = |\frac{tan(\theta_2 - \theta_1)}{tan(\theta_2 + \theta_1)}|^2$$</span></li>
 </ul></li>
+<li>normal incidence: <span class="math display"><em>θ</em><sub><em>i</em></sub> = <em>θ</em><sub><em>t</em></sub> = 0</span>, then <span class="math display">$$R = R_s = R_t = (\frac{n_1 - n_2}{n_1 + n_2})^2$$</span></li>
 <li>total internal reflection: when <span class="math inline"><em>n</em><sub>1</sub> &gt; <em>n</em><sub>2</sub></span>, there is a critical angle, which <span class="math inline"><em>R</em><sub><em>s</em></sub>, <em>R</em><sub><em>t</em></sub> = 1</span>
 <img src="../../../../images/401/internalreflect.jpg" /></li>
 </ul></li>
@@ -219,18 +222,28 @@
 <li>brewster’s angle: when <span class="math display"><em>θ</em><sub><em>t</em></sub> + <em>θ</em><sub><em>i</em></sub> = 90<sup>deg</sup></span> <span class="math display"><em>R</em><sub><em>p</em></sub> → 0</span> and <span class="math display"><em>T</em><sub><em>p</em></sub> → 1</span>, p polarized light will not be reflected, or if the incident light is unpolarized, only <span class="math inline"><em>s</em></span> polarized light will reflect, this is how you can produce polarized light
 <ul>
 <li><span class="math display"><em>θ</em><sub><em>B</em></sub> = <em>a</em><em>r</em><em>c</em><em>t</em><em>a</em><em>n</em>(<em>n</em><sub>2</sub>/<em>n</em><sub>1</sub>)</span></li>
+<li>no reflection for p wave</li>
 </ul></li>
 <li>dispersion
 <ul>
-<li>sellmeier equation
+<li>sellmeier equation (empirical relation between <span class="math inline"><em>n</em></span> and <span class="math inline"><em>λ</em></span>)
 <img src="../../../../images/401/angles.png" /></li>
+</ul></li>
+<li>absoption and refractive index
+<ul>
+<li>normal regions of dispersion separated by regions of anomalous dispersion between different regions of NMR spectrum</li>
+<li>kramers-kronig index</li>
+</ul></li>
+<li>birefringence
+<ul>
+<li>refractive index: depends on angle between polariztion of light and crystal axis</li>
 </ul></li>
 </ul></li>
 </ol>
 <h2 id="light-matter-interaction">5: light-matter interaction</h2>
 <p>radiation density and intensity of light</p>
 <ul>
-<li>let <span class="math display"><em>ρ</em></span> be volume densitty of energy in EM radiation J/m<span class="math inline"><sup>3</sup></span></li>
+<li>let <span class="math display"><em>ρ</em></span> be volume density of energy in EM radiation J/m<span class="math inline"><sup>3</sup></span></li>
 <li>to find contributions at various frequencies <span class="math inline"><em>ρ</em>(<em>v</em>)</span> is energy density per unit frequency, and $$ ρ = ∫<sub>0</sub>^inf  p(v) dv$</li>
 <li>intensity of light: <span class="math display"><em>I</em> = ∫<sub>0</sub><sup>inf</sup><em>I</em>(<em>v</em>)<em>d</em><em>v</em></span></li>
 <li>photon flux: number of photons flowing through a unit area per unit time <span class="math display">$$F = \frac{I}{(hv)}$$</span>
@@ -252,7 +265,52 @@
 <ul>
 <li>A and B are transition probabilities, <span class="math inline"><em>N</em><sub>1</sub></span>, <span class="math inline"><em>N</em><sub>2</sub></span> are populations</li>
 <li>Einstein’s treatment: @ thermal equilibrium, population ratio given by Boltzmann factor, with degeneracies g: <span class="math display">$$\frac{N_2}{N_1} = \frac{g_2}{g_1} e^{-hv / kT}$$</span>, where <span class="math inline"><em>h</em><em>v</em> = <em>E</em><sub>2</sub> − <em>E</em><sub>1</sub></span></li>
-<li>spontaneous decay (no radiation):</li>
+<li>spontaneous decay (no radiation) kinetic rate law: <span class="math display">$$\frac{-d N_{2}}{dt} = A_{21}N_{2}$$</span>, <span class="math display"><em>N</em><sub>2</sub>(<em>t</em>) = <em>N</em><sub>2</sub>(0)<em>e</em><sup>−<em>A</em><sub>21</sub><em>t</em></sup></span>, so radiative lifetime of excited state is <span class="math display">$$\frac{1}{A_{21}}$$</span></li>
+<li>with radiation:
+<ul>
+<li>upward transition: <span class="math display"><em>W</em><sub>12</sub> = <em>N</em><sub>1</sub><em>B</em><sub>12</sub><em>ρ</em>(<em>v</em>)</span></li>
+<li>downward transition: <span class="math display"><em>W</em><sub>21</sub> = <em>N</em><sub>2</sub><em>B</em><sub>21</sub><em>ρ</em>(<em>v</em>) + <em>N</em><sub>2</sub><em>A</em><sub>21</sub></span></li>
+<li>at eq: these two rates must be equal, so we can solve for <span class="math display"><em>ρ</em>(<em>v</em>)</span> and insert the thermal eq Boltzmann factor and equate to thermal blackbody spectrum:
+<ul>
+<li><span class="math display">$$\frac{A_{21}}{(g_1/g_2) e^{\frac{hv}{kT}} B_{12} - B_{21}}$$</span></li>
+<li>we get <span class="math display"><em>g</em><sub>1</sub><em>B</em><sub>12</sub> = <em>g</em><sub>2</sub><em>B</em><sub>21</sub></span>: equal probability of 1 to 2 or 2 to 1</li>
+<li>and <span class="math display">$$\frac{A_{21}}{B_{21}} = \frac{8 \pi h v^3}{c^3} \propto v^3$$</span>
+<ul>
+<li>higher frequency: spontaneous emission</li>
+<li>lower frequency: stimulated emission</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+<p>transition dipole momentum</p>
+<ul>
+<li>transition rate determined by “transition dipole moment”</li>
+<li>transition dipole moment between two states <span class="math inline"><em>n</em></span> and <span class="math inline"><em>m</em></span> is a vector: <span class="math display">$$\mu_{mn} = \int \psi_m^* \hat{\mu} \psi_n dV = \langle m | \hat{mu} | n \rangle $$</span>
+<ul>
+<li><span class="math display">$$\hat{mu}$$</span> is the electric dipole moment operator: <span class="math display">$$\hat{mu} = \sigma_i q_i r_i$$</span></li>
+</ul></li>
+<li>transition rates determined by Einstein coefficients times a lineshape factor resonantly peaked at transition frequency (<span class="math display"><em>E</em><sub>2</sub> − <em>E</em><sub>1</sub></span>), enforces energy conservation</li>
+</ul>
+<p>beer’s law</p>
+<ul>
+<li>not covered much, study more later</li>
+</ul>
+<p>line profiles for spectral lines</p>
+<ul>
+<li>conservation of energy: <span class="math display"><em>v</em> = <em>v</em><sub>12</sub></span>: <span class="math display">$$v_{12}$ splittings between eigenvalues
+ - $$</span>δ(v - v<sub>12</sub>)$$</li>
+<li>reality: emission/absoption never perfectly monochromatic (single wavelength/color): each line has characteristic shape/profile, with certain width <span class="math inline"><em>δ</em><em>v</em></span>, quantified as FWHM</li>
+<li>lines spaced apart less than <span class="math inline"><em>δ</em><em>v</em></span> cannot be seperated/resolved</li>
+<li>common line shape:
+<ul>
+<li>lorentzian: broadening by the natural lifetime of the excited state</li>
+<li>guassian: inhomogeneous broadened lines (Doppler broadening)</li>
+<li>voigt: mixes guassian and lorentzian
+<ul>
+<li>convolution of two and appropriate when homogeneous and inhomogeneous mechanisms are important</li>
+</ul></li>
+</ul></li>
+<li>natural linewidth</li>
 </ul>
 <h2 id="prep-for-final-presentation">6: prep for final presentation</h2>
 <h2 id="intro-to-molecular-rotation-and-vibration">7: intro to molecular rotation and vibration</h2>

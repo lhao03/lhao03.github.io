@@ -697,6 +697,61 @@
 </ul></li>
 </ul>
 <h3 id="more-on-basis-sets-additional">more on basis sets (additional)</h3>
+<ul>
+<li>expanding MO in set of known functions is not an approximation if basis set is complete (infinite)
+<ul>
+<li>unknown MO is function in infinite coordinate system spanned by complete basis set</li>
+</ul></li>
+<li>finite basis: only components along coordinate axes corresponding to basis set is represented</li>
+<li>smaller the basis, the worse the accuracy, the better a single basis function is, the fewer basis functions are needed
+<ul>
+<li>computational scaling: <span class="math display"><em>M</em><sup>4</sup></span></li>
+</ul></li>
+</ul>
+<ol>
+<li><p>slater and gaussian type orbitals (type of AO)</p>
+<ul>
+<li>STOs (polar coordinates):
+<ul>
+<li>no radial nodes
+<ul>
+<li>introduced through linear combinations</li>
+</ul></li>
+<li>exponential dependence:
+<ul>
+<li>mirrors exact orbitals for hydrogen</li>
+<li>fairly rapid convergence</li>
+</ul></li>
+<li>used for atomic/diatomic systems where high accuracy desired</li>
+</ul></li>
+<li>GTOs (polar or cartesian):
+<ul>
+<li>sum of <span class="math inline"><em>l</em><sub><em>x</em></sub></span>, <span class="math inline"><em>l</em><sub><em>y</em></sub></span>, <span class="math inline"><em>l</em><sub><em>z</em></sub></span> determines type of orbital</li>
+<li>there are different number of components for spherical functions (6 for d) and 5 for d in cartesian coordinates
+<ul>
+<li>can transform cartesian components to spherical functions</li>
+</ul></li>
+</ul></li>
+<li>use of only spherical components reduces problems of linear dependence for large basis set</li>
+<li><span class="math inline"><em>r</em><sup>2</sup></span> makes GTO inferior to STO in two ways:
+<ol type="1">
+<li>at nucleus, GTO have zero slope, when STO has cusp, so GTOs have problems representing behaviour near nucleus</li>
+<li>GTO falls off too rapidly far from nucleus compared with STO, and tail of wave function is represented poorly</li>
+</ol></li>
+<li>because GTO is less accurate, when making basis sets, more GTOs must be used to achieve same level of accuracy that can be achieved with less STOs (3 GTOs per STO)
+<ul>
+<li>but computational of integral of GTOs is easier</li>
+</ul></li>
+<li>GTOs preferred for computationally efficiency
+<ul>
+<li>most applications take GTOs to be centred at nuclei
+<ul>
+<li>for some calculations: centre of basis function may not be center of nucleus</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><p>classification of basis sets</p></li>
+</ol>
   </div>
   <div class="flex-row link-no-style">
     

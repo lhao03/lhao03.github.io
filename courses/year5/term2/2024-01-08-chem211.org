@@ -119,6 +119,11 @@ title: "CHEM 211: Introduction to Chemical Analysis"
   1. identify anode and cathode half reactions
   2. write out full reaction
   3. calculate $$E^o$$, and use $$E = E^o - \frac{0.0592}{n} log [\frac{[M^{x+}]}{[M^{y+}]}]$$
+- cell notation: Ag (s) | AgCl (s) | 3.0 M KCL (aq) || 0.01 M Fe(CN)$_6^{3-}$ (aq), 0.01 M Fe(CN)$_6^{4-}$ (aq), 0.5 M KCl (aq) | Graphite
+  - anode:  Ag (s) | AgCl (s) | 3.0 M KCL (aq)
+  - cathode: 0.01 M Fe(CN)$_6^{3-}$ (aq), 0.01 M Fe(CN)$_6^{4-}$ (aq), 0.5 M KCl (aq) | Graphite
+  - ||: salt bridge
+  - |: phase boundry
 
 
 * units

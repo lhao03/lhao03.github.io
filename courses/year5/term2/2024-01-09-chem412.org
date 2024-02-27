@@ -387,3 +387,30 @@ side notes:
     - present in almost all calculations
 
 *** more on basis sets (additional)
+- expanding MO in set of known functions is not an approximation if basis set is complete (infinite)
+  - unknown MO is function in infinite coordinate system spanned by complete basis set
+- finite basis: only components along coordinate axes corresponding to basis set is represented
+- smaller the basis, the worse the accuracy, the better a single basis function is, the fewer basis functions are needed
+  - computational scaling: $$M^4$$
+**** slater and gaussian type orbitals (type of AO)
+- STOs (polar coordinates):
+  - no radial nodes
+    - introduced through linear combinations
+  - exponential dependence:
+    - mirrors exact orbitals for hydrogen
+    - fairly rapid convergence
+  - used for atomic/diatomic systems where high accuracy desired
+- GTOs (polar or cartesian):
+  - sum of $l_x$, $l_y$, $l_z$ determines type of orbital
+  - there are different number of components for spherical functions (6 for d) and 5 for d in cartesian coordinates
+    - can transform cartesian components to spherical functions
+- use of only spherical components reduces problems of linear dependence for large basis set
+- $r^2$ makes GTO inferior to STO in two ways:
+  1. at nucleus, GTO have zero slope, when STO has cusp, so GTOs have problems representing behaviour near nucleus
+  2. GTO falls off too rapidly far from nucleus compared with STO, and tail of wave function is represented poorly
+- because GTO is less accurate, when making basis sets, more GTOs must be used to achieve same level of accuracy that can be achieved with less STOs (3 GTOs per STO)
+  - but computational of integral of GTOs is easier
+- GTOs preferred for computationally efficiency
+  - most applications take GTOs to be centred at nuclei
+    - for some calculations: centre of basis function may not be center of nucleus
+**** classification of basis sets

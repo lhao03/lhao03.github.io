@@ -94,19 +94,27 @@ L/R circularly polarized photons have angular momentum $$+/- \hbar$$
   - for s and p waves: with $$T = 1 - R$$
   - Fresnel equation
     - $$R_s = |\frac{n_1 cos \theta_i - n_2 cos \theta_t}{n_1 cos \theta_i + n_2 cos \theta_t}|^2$$
-    - $$R_t = |\frac{n_1 cos \theta_t - n_2 cos \theta_i}{n_1 cos \theta_t + n_2 cos \theta_i}|^2$$
-      - normal incidence: $$\theta_i = \theta_t = 0$$, then $$R = R_s = R_t = (\frac{n_1 - n_2}{n_1 + n_2})^2$$
+    - $$R_p = |\frac{n_1 cos \theta_t - n_2 cos \theta_i}{n_1 cos \theta_t + n_2 cos \theta_i}|^2$$
+    - another form:
+      - $$R_s = |\frac{sin(\theta_2 - \theta_1)}{sin(\theta_2 + \theta_1)}|^2$$
+      - $$R_p = |\frac{tan(\theta_2 - \theta_1)}{tan(\theta_2 + \theta_1)}|^2$$
+    - normal incidence: $$\theta_i = \theta_t = 0$$, then $$R = R_s = R_t = (\frac{n_1 - n_2}{n_1 + n_2})^2$$
     - total internal reflection: when $n_1 > n_2$, there is a critical angle, which $R_s, R_t = 1$
       [[../../../../images/401/internalreflect.jpg]]
 - brewster's angle: when $$\theta_t + \theta_i = 90^\deg$$ $$R_p \rightarrow 0$$ and $$T_p \rightarrow 1$$, p polarized light will not be reflected, or if the incident light is unpolarized, only $s$ polarized light will reflect, this is how you can produce polarized light
   - $$\theta_B = arctan(n_2/n_1)$$
+  - no reflection for p wave
 - dispersion
-  - sellmeier equation
+  - sellmeier equation (empirical relation between $n$ and $\lambda$)
     [[../../../../images/401/angles.png]]
-
+- absoption and refractive index
+  - normal regions of dispersion separated by regions of anomalous dispersion between different regions of NMR spectrum
+  - kramers-kronig index
+- birefringence
+  - refractive index: depends on angle between polariztion of light and crystal axis
 ** 5: light-matter interaction
 **** radiation density and intensity of light
-- let $$\rho$$ be volume densitty of energy in EM radiation J/m$^3$
+- let $$\rho$$ be volume density of energy in EM radiation J/m$^3$
 - to find contributions at various frequencies $\rho(v)$ is energy density per unit frequency, and $$ \rho = \int_0^\inf p(v) dv$
 - intensity of light: $$I = \int_0^\inf I(v) dv$$
 - photon flux: number of photons flowing through a unit area per unit time $$F = \frac{I}{(hv)}$$
@@ -120,7 +128,35 @@ L/R circularly polarized photons have angular momentum $$+/- \hbar$$
 [[../../../../images/401/qm.png]]
 - A and B are transition probabilities, $N_1$, $N_2$ are populations
 - Einstein's treatment: @ thermal equilibrium, population ratio given by Boltzmann factor, with degeneracies g: $$\frac{N_2}{N_1} = \frac{g_2}{g_1} e^{-hv / kT}$$, where $hv = E_2 - E_1$
-- spontaneous decay (no radiation):
+- spontaneous decay (no radiation) kinetic rate law: $$\frac{-d N_{2}}{dt} = A_{21}N_{2}$$, $$N_2 (t) = N_2 (0) e^{-A_{21}t}$$, so radiative lifetime of excited state is $$\frac{1}{A_{21}}$$
+- with radiation:
+  - upward transition: $$W_{12} = N_{1}B_{12} \rho (v)$$
+  - downward transition: $$W_{21} = N_2 B_{21} \rho (v) + N_2 A_{21}$$
+  - at eq: these two rates must be equal, so we can solve for $$\rho (v)$$ and insert the thermal eq Boltzmann factor and equate to thermal blackbody spectrum:
+    - $$\frac{A_{21}}{(g_1/g_2) e^{\frac{hv}{kT}} B_{12} - B_{21}}$$
+    - we get $$g_1 B_{12} = g_2 B_{21}$$: equal probability of 1 to 2 or 2 to 1
+    - and $$\frac{A_{21}}{B_{21}} = \frac{8 \pi h v^3}{c^3} \propto v^3$$
+      - higher frequency: spontaneous emission
+      - lower frequency: stimulated emission
+**** transition dipole momentum
+- transition rate determined by "transition dipole moment"
+- transition dipole moment between two states $n$ and $m$ is a vector: $$\mu_{mn} = \int \psi_m^* \hat{\mu} \psi_n dV = \langle m | \hat{mu} | n \rangle $$
+  - $$\hat{mu}$$ is the electric dipole moment operator: $$\hat{mu} = \sigma_i q_i r_i$$
+- transition rates determined by Einstein coefficients times a lineshape factor resonantly peaked at transition frequency ($$E_2 - E_1$$), enforces energy conservation
+**** beer's law
+- not covered much, study more later
+**** line profiles for spectral lines
+- conservation of energy: $$v = v_{12}$$: $$v_{12}$ splittings between eigenvalues
+  - $$\delta(v - v_{12})$$
+- reality: emission/absoption never perfectly monochromatic (single wavelength/color): each line has characteristic shape/profile, with certain width $\delta v$, quantified as FWHM
+- lines spaced apart less than $\delta v$ cannot be seperated/resolved
+- common line shape:
+  - lorentzian: broadening by the natural lifetime of the excited state
+  - guassian: inhomogeneous broadened lines (Doppler broadening)
+  - voigt: mixes guassian and lorentzian
+    - convolution of two and appropriate when homogeneous and inhomogeneous mechanisms are important
+- natural linewidth
+
 ** 6: prep for final presentation
 ** 7: intro to molecular rotation and vibration
 ** 8: molecular symmetry and group theory 1
