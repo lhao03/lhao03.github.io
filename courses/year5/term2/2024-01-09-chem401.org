@@ -159,6 +159,18 @@ L/R circularly polarized photons have angular momentum $$+/- \hbar$$
 
 ** 6: prep for final presentation
 ** 7: intro to molecular rotation and vibration
+- born-oppenheimer approximation: fixed nucleus
+- separation of vibration and rotation
+  - separation of translational motion
+- rotation of diatomic molecules
+  - rigid rotater
+- spherical harmonics
+- polyatomic molecules: linear
+- polyatomic molecules: symmetric top
+- polyatomic molecules: spherical top
+- polyatomic molecules: asymmetric top
+- optical selection rule: diatomic and linear
+  - symmetric and asymmetric top molecules
 ** 8: molecular symmetry and group theory 1
 - operators:
   - $$\hat{E}$$ is identity operator
