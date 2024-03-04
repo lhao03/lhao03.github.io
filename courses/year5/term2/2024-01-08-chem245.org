@@ -3,6 +3,41 @@ description: "CHEM 245"
 title: "CHEM 245: Intermediate Synthetic Chemistry Laboratory"
 ---
 
+#+BEGIN_EXPORT html
+<div class="toc">
+  #+END_EXPORT
+
+* :TOC_3:
+- [[#questions][questions]]
+- [[#tutorials][tutorials]]
+  - [[#elemental-analysis-and-ihd-review-tutorial-1][Elemental Analysis and IHD (review) (Tutorial 1)]]
+    - [[#learning-objectives][Learning Objectives:]]
+  - [[#nmr][NMR:]]
+  - [[#rule-of-13-nuclear-magnetic-resonance-nmr-spectroscopy][Rule of 13, Nuclear Magnetic Resonance (NMR) Spectroscopy]]
+    - [[#fundamentals-tutorial-2][Fundamentals (Tutorial 2)]]
+    - [[#chemical-shift-13c-tutorial-3][Chemical shift, $$^{13}C$$ (Tutorial 3)]]
+    - [[#1h-integration-spin-spin-splitting-tutorial-4][$$^1H$$, Integration, Spin-Spin Splitting (Tutorial 4)]]
+    - [[#1h-j-coupling-constants-multiplet-skewing-exchangeable-protons-tutorial-45][$$^1H$$, J-coupling constants, multiplet skewing, exchangeable protons (Tutorial 4/5)]]
+  - [[#infrared-spectroscopy][infrared spectroscopy]]
+    - [[#em-spectrum-ft-ir-spectrometer-samples-molecular-vibration-modes][EM spectrum, FT-IR spectrometer, samples, molecular vibration modes]]
+    - [[#bond-properties-bond-strengths-alkanes-alkenes-alkynes][Bond properties, Bond strengths, Alkanes, Alkenes, Alkynes]]
+    - [[#arenes-alcohols-amines-carbonyl-compounds-chlorides][Arenes, Alcohols, Amines, Carbonyl compounds, Chlorides]]
+  - [[#mass-spectroscopy][mass spectroscopy]]
+    - [[#rule-of-13-spectrometer-ionization-techniques][Rule of 13, spectrometer, ionization techniques]]
+    - [[#spectra-analysis-isotope-identification][spectra analysis, isotope identification]]
+    - [[#characterization-problem-solving][Characterization Problem Solving]]
+- [[#synthesis][synthesis]]
+  - [[#nickel-complex][Nickel Complex]]
+  - [[#11-biphenyl-4-carboxylic-acid][[1,1’-biphenyl]-4-carboxylic acid]]
+  - [[#acetylcinnamic-acid][Acetylcinnamic acid]]
+  - [[#4-methoxybenzaldehyde][4-Methoxybenzaldehyde]]
+  - [[#tripheylmethanol][Tripheylmethanol]]
+
+*
+#+BEGIN_EXPORT html
+</div>
+  #+END_EXPORT
+
 * questions
 - empirical vs. molecular
 - index of hydrogens

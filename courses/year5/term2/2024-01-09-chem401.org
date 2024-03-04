@@ -2,6 +2,39 @@
 description: "CHEM 401"
 title: "CHEM 401: Principles of Spectroscopy"
 ---
+#+BEGIN_EXPORT html
+<div class="toc">
+  #+END_EXPORT
+
+* :TOC_3:
+- [[#questions][questions]]
+- [[#good-resources][good resources]]
+- [[#lectures][lectures]]
+  - [[#1-introduction][1: introduction]]
+  - [[#2-webmo-practice][2: WebMO practice]]
+  - [[#3-intro-to-qm][3: intro to QM]]
+  - [[#4-intro-to-emr][4: intro to EMR]]
+    - [[#electromagnetic-radiation][electromagnetic radiation]]
+  - [[#5-light-matter-interaction][5: light-matter interaction]]
+  - [[#6-prep-for-final-presentation][6: prep for final presentation]]
+  - [[#8-molecular-symmetry-and-group-theory-1][8: molecular symmetry and group theory 1]]
+  - [[#9-molecular-symmetry-and-group-theory-2][9: molecular symmetry and group theory 2]]
+    - [[#h_2o][$$H_2O$$]]
+  - [[#10-molecular-rotation-and-spin-statistics-1][10: molecular rotation and spin statistics 1]]
+  - [[#11-molecular-rotation-and-spin-statistics-2][11: molecular rotation and spin statistics 2]]
+  - [[#12-molecular-vibration][12: molecular vibration]]
+  - [[#13-vibrational-infrared-and-raman-spectroscopy][13: vibrational infrared and raman spectroscopy]]
+  - [[#14-electronic-spectroscopy][14: electronic spectroscopy]]
+  - [[#15-electronic-spectroscopy][15: electronic spectroscopy]]
+  - [[#16-magnetic-resonance][16: magnetic resonance]]
+  - [[#17-spectroscopy][17: spectroscopy]]
+  - [[#18---25-final-presentations][18 - 25: final presentations]]
+
+*
+#+BEGIN_EXPORT html
+</div>
+  #+END_EXPORT
+
 
 * questions
 - what do the different polarizations mean

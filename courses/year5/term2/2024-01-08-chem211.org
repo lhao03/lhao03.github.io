@@ -3,7 +3,69 @@ description: "CHEM 211"
 title: "CHEM 211: Introduction to Chemical Analysis"
 ---
 
-* terms
+#+BEGIN_EXPORT html
+<div class="toc">
+  #+END_EXPORT
+
+* :TOC_3:
+  - [[#terms][terms]]
+  - [[#mt1-problems][mt1 problems]]
+    - [[#unit-1][unit 1]]
+    - [[#unit-2][unit 2]]
+  - [[#mt-2-problems][mt 2 problems]]
+    - [[#unit-3][unit 3]]
+- [[#units][units]]
+    - [[#course-introduction][Course Introduction]]
+  - [[#analytical-concepts][Analytical concepts]]
+    - [[#an-introduction-to-analytical-measurements][An Introduction to Analytical Measurements]]
+    - [[#lecture-1][lecture 1]]
+    - [[#lecture-2][lecture 2]]
+    - [[#lecture-3][lecture 3]]
+    - [[#lecture-4][lecture 4]]
+    - [[#analytical-measurements-and-statistics---gaussian-distribution-standard-deviation][Analytical Measurements and Statistics - Gaussian Distribution, Standard Deviation]]
+    - [[#analytical-measurements-and-statistics---significance-testing][Analytical Measurements and Statistics - Significance Testing]]
+    - [[#lecture-5][lecture 5]]
+  - [[#equilibrium-and-volumetric-analysis][Equilibrium and volumetric analysis]]
+    - [[#chemical-equilibrium-applied-to-analytical-measurements][Chemical Equilibrium Applied to Analytical Measurements]]
+    - [[#lecture-6][lecture 6]]
+    - [[#solution-equilibrium-and-systematic-treatment-of-chemical-equilibrium][Solution Equilibrium and Systematic Treatment of Chemical Equilibrium]]
+    - [[#lecture-7][lecture 7]]
+    - [[#polyprotic-acid-equilibria-polyprotic-acid-base-titrations][Polyprotic Acid Equilibria, Polyprotic Acid-Base Titrations]]
+    - [[#lecture-8][lecture 8]]
+    - [[#complexation-equilibria---quantitative-edta-titrations][Complexation Equilibria - Quantitative EDTA Titrations]]
+    - [[#lecture-9][lecture 9]]
+    - [[#more-volumetric-analysis][More Volumetric Analysis]]
+  - [[#electrochemistry-and-potentiometry][Electrochemistry and Potentiometry]]
+    - [[#fundamentals-of-electrochemistry][Fundamentals of Electrochemistry]]
+    - [[#lecture-1011][lecture 10/11]]
+    - [[#analytical-measurements-using-electrochemical-cells][Analytical Measurements using Electrochemical Cells]]
+    - [[#electrodes][Electrodes]]
+    - [[#ion-selective-electrodes][Ion-selective Electrodes]]
+    - [[#potentiometry--reference-and-indicator-electrodes-ion-selective][Potentiometry – Reference and Indicator Electrodes, Ion-Selective]]
+  - [[#uv-visible-spectrophotometry][UV-visible spectrophotometry]]
+    - [[#ion-selective-electrodes-introduction-to-spectrophotometry][Ion-selective Electrodes /Introduction to Spectrophotometry]]
+    - [[#fundamentals-of-spectrophotometry][Fundamentals of Spectrophotometry]]
+    - [[#applications-of-spectrophotometry--quantitative][Applications of Spectrophotometry – Quantitative]]
+    - [[#spectrophotometry-beer-lambert-law][Spectrophotometry, Beer-Lambert Law]]
+    - [[#applications-of-spectrophotometry-i][Applications of Spectrophotometry I]]
+    - [[#applications-of-spectrophotometry-ii][Applications of Spectrophotometry II]]
+  - [[#separations-and-liquid-chromatography][Separations and liquid chromatography]]
+    - [[#analytical-separations-fundamentals-i][Analytical Separations Fundamentals I]]
+    - [[#analytical-separations-fundamentals-ii][Analytical Separations Fundamentals II]]
+    - [[#gas-chromatography][Gas Chromatography]]
+    - [[#liquid-chromatography-i][Liquid Chromatography I]]
+    - [[#liquid-chromatography-ii][Liquid Chromatography II]]
+    - [[#catch-upreview][Catch-up/review]]
+- [[#lab-notes][lab notes]]
+  - [[#introduction-to-statistics][introduction to statistics]]
+  - [[#glassware][glassware]]
+
+*
+#+BEGIN_EXPORT html
+</div>
+  #+END_EXPORT
+
+** terms
 - internal standard: addition of constant amount of substance similar to analyte to a sample as reference point for determination of the analyte
 - matrix effect: effect of non-analyte components on sample
 - random error:  worse precision
@@ -28,14 +90,6 @@ title: "CHEM 211: Introduction to Chemical Analysis"
 - $$K_f = \frac{[MY^{2-}]}{[M^{2+}][Y^{4-}]}$$ usually large
 - $$K_sp = [M^+][Cl^-]$$ usually small
 
-* questions
-- how does $$N \varpropto \sqrt{n}$$ imply averaged noise, being random, tends to cancel out?
-- can we generalize the error propagation for $y^x$?
-- what does sd of noise mean?
-  - why is this $$S/N = 3$$ if $$S_mb = 0$$ important
-- what does concentration detection limit mean
-
-* types of problems
 ** mt1 problems
 *** unit 1
 - detecting signals that are statistically significant: $$S \geq \mu_{background} + 3 \sigma_{background}$$
@@ -621,6 +675,39 @@ salt bridges are built into reference cell
 
 *** Ion-selective Electrodes
 *** Potentiometry – Reference and Indicator Electrodes, Ion-Selective
+- separation of charge: associated electric potential
+  - gauss law: electric potential proportional to charge density
+  - liquid junction potentials
+  - membrane potential
+- liquid junction potential: potential that develops across ion permable boundry between different electrolyte solutions
+  - diffusion of cation and anion at different rates
+    - ions are different sizes, so they diffuse at different rates
+      [[../../../../images/211/ljp.png]]
+- pick ions with similar size hydrated radius size
+- membrane potential: effect of surface groups
+  [[../../../../images/211/membranepotential.png]]
+  - charge on surface varies with pH
+  - negative charge on surface attract positive charge -> double layer
+    - [[../../../../images/211/double.png]]
+    - separation of charge at double-layer creates membrane potential, $E_m$
+      - magnitude depends on charge on membrane
+- if membrane is thin and conductive, difference between two membrane potentials can be measured as boundry potential $E_b$
+  - boundary potential: $E_b = E_1 - E_2$
+    - determined by pH (different pH of solutions will charge glass differently)
+- glass as a membrane
+  - amorphous SiO_2
+  - no long range structure (glass is a state)
+  - cooled to rigidity without crystallization
+    - soda used as flux to lower melting temperature in manufacture
+    - lime used to prevent glass from dissolving
+  - have some mobility, slightly conductive
+  - irregular arrangement of SiO4 tetrahedra
+  - incomplete bonding: Si-O groups associated with cations
+    - can hydrate surface layer; exchange monovalent ions for protons
+      - binding of hydrogen ions more strongly favored than alkali metal cations
+- Na and H ions conduct in hydrated outer layers (10nm) of glass membrane
+  - Na conducts electricity in dry interior (0.1nm)
+    [[../../../../images/211/membranee.png]], which is more negative charged side? higher pH side
 
 ** UV-visible spectrophotometry
 *** Ion-selective Electrodes /Introduction to Spectrophotometry
