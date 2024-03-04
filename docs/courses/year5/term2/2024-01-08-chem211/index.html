@@ -835,7 +835,299 @@ fluorescein:
 </ul></li>
 </ol>
 <h3 id="analytical-measurements-using-electrochemical-cells">Analytical Measurements using Electrochemical Cells</h3>
+<ol>
+<li><p>lecture 12/13</p>
+<ul>
+<li>harvey:: 11A, 11B.1-.3, 9D</li>
+<li>key points:
+<ul>
+<li>tied equilibria -&gt; make electrode whose potential is fixed
+<ul>
+<li>how Nerst equation shows us that</li>
+</ul></li>
+<li>common reference electrodes</li>
+<li>indicator electrodes</li>
+<li>indicator + reference electrodes -&gt; setup for redox titration</li>
+<li>pre-treatment of analyte</li>
+<li>common reagents for pre-treatment and/or redox titrants</li>
+</ul></li>
+</ul></li>
+</ol>
 <h3 id="electrodes">Electrodes</h3>
+<p>salt bridges are built into reference cell</p>
+<ul>
+<li>SCE: paste of mercury and calomel (Hg$<sub>2</sub><span class="math inline"><em>C</em><em>l</em><sub>2</sub></span>)
+<ul>
+<li>KCl filling solution</li>
+<li>Hg$<sub>2</sub><span class="math inline"><em>C</em><em>l</em><sub>2</sub></span> (s) + 2e<span class="math inline"><sup>−</sup></span> -&gt; 2Hg (l) + 2Cl<span class="math inline"><sup>−</sup></span>
+<ul>
+<li>when Cl concentration increases, you crash out KCl?</li>
+<li>[Cl^${-}$] essentially constant</li>
+<li>at 25C, E<span class="math inline"><sup><em>o</em></sup></span> = 0.244 V for saturated KCl</li>
+</ul></li>
+</ul></li>
+<li>Silver/SilverChloride
+<ul>
+<li>silver wire with layer of AgCl</li>
+<li>KCl filling solution:
+<ul>
+<li>AgCl (s) -&gt; Ag (s) + Cl<span class="math inline"><sup>−</sup></span>
+<ul>
+<li>at 25C, E<span class="math inline"><sup><em>o</em></sup></span> = 0.197 V for saturated KCl</li>
+<li>at 25C, E<span class="math inline"><sup><em>o</em></sup></span> = 0.205 V for 3.5 M KCl</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>half-cell potentials (different reference electrode):
+<img src="../../../../images/211/number-line.png" /></li>
+<li>free energy and potential
+<ul>
+<li>delta G: for electrochemical rxn: maximum work that can be extracted
+<span class="math display"><em>Δ</em><em>G</em> =  − <em>n</em><em>F</em><em>E</em></span>
+<ul>
+<li>galvanic: positive potential</li>
+<li>electric: negative potential</li>
+<li>0 potential: no driving force</li>
+</ul></li>
+</ul></li>
+<li>Nerst: <span class="math display">$$E = E^{o} - \frac{RT}{nF} \ln Q$$</span>, <span class="math display">$$E = E^{o} - \frac{0.0592}{n} \log Q$$</span>
+<ul>
+<li>for half cell or full reactions</li>
+</ul></li>
+<li>formal electrode potentials:
+<ul>
+<li>most redox analyses done at high ionic strength ($μ  ≥ 0.1$M), so activity coefficients cannot be readily calculated (D-H doesn’t work well here, can’t calculate range that chemists work in)
+<ul>
+<li>need to worry about concentration and activity</li>
+<li>use formal electrode potentials
+<ul>
+<li>say what the conditions are (empirical potential for half-cell under specific set of conditions)</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><span class="math display">$$E = E^{0'} - \frac{RT}{nF} ln \frac{[C]^c[D]^d}{[A]^a[B]^b}$$</span>, where <span class="math display"><em>E</em><sup>0′</sup></span> is the formal potential
+<ul>
+<li>specifying unit concentrations vs. unit activities</li>
+<li>or nature of supporting electrolyte, pH, ionic strength, temperature</li>
+<li>differ from standard potential by up to hundreds of millivolts</li>
+</ul></li>
+<li>potentiometric measurements
+<ul>
+<li>intrumentation:
+<ul>
+<li>analyte solution (with supporting electrolyte)
+<ul>
+<li>low resistance of solution
+<ul>
+<li>add more ions to raise the conductivity</li>
+</ul></li>
+</ul></li>
+<li>indicator electode/reference electrode</li>
+<li>salt bridge</li>
+<li>voltmeter (large resistance to minimize loading error)
+<ul>
+<li>voltage is occurring at bottom, want to show potential happening at bottom</li>
+<li><span class="math inline"><em>V</em> = <em>I</em><em>R</em></span> if you have voltage drop at voltmeter, the measured voltage is lower than in solution
+<ul>
+<li>if R is large, current is very small, so voltage drop is very small -&gt; loading error
+<ul>
+<li>happens if current is nontrivial</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>voltage between two electrodes, some resistance in overall circuit -&gt; determines ions</li>
+<li>in voltmeter, there is a resistance, not the same as the one in the whole circuit
+<ul>
+<li>voltage drop = current * resistance of voltmeter</li>
+<li>only one current that is very very small</li>
+</ul></li>
+</ul></li>
+<li>indicator electrodes
+<ul>
+<li>inert electodes: respond to redox couples without participating director in reaction
+<ul>
+<li>stick in solution inert metal picks up potential in solution determined b [Ox] and [Red]
+<ul>
+<li>Pt, Ag, C</li>
+</ul></li>
+<li>better with high surface area</li>
+<li>work in most circumstances</li>
+</ul></li>
+<li>metal electode in direct eq with its metal cation (first kind) <span class="math display"><em>M</em><sup><em>n</em>+</sup>(<em>a</em><em>q</em>) + <em>n</em><em>e</em><sup>−</sup> &lt;  −  &gt; <em>M</em>(<em>s</em>)</span>
+<ul>
+<li>use in precipiatation/complex formation titrations, measure free <span class="math inline"><em>M</em><sup><em>n</em>+</sup></span>
+<ul>
+<li><span class="math display">$$E = E^{0}_M + \frac{0.0592}{n} log a_M = E^{0}_M - \frac{0.0592}{n} pM$$</span>
+<ul>
+<li>slow kinetics</li>
+<li>poor selectivity (bad in natural solutions)</li>
+<li>oxides may form on solid metal</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>add in another eq, Ksp: responds to ion that form insoluble salt with the metal
+<ul>
+<li><span class="math display">$$E = E^{0}_{AgCl} + \frac{0.0592}{1} log a_{Cl} = E^{0}_{AgCl} - \frac{0.0592}{n} pCl^-$$</span>
+<ul>
+<li>measured voltage responds to [Cl-]</li>
+<li>indirectly measure free <span class="math inline"><em>M</em><sup><em>n</em>+</sup></span></li>
+</ul></li>
+<li>electrode of first kind coupled to <span class="math inline"><em>K</em><sub><em>s</em><em>p</em></sub></span> equilibrium
+<ol type="1">
+<li>write nerst equation as if is the first electrode</li>
+<li>add Ksp, which can be expressed as activity or concentration: substitute activity of metal with Ksp and chloide ion
+<span class="math display">$$E = E^{0}_{AgCl} - \frac{0.0592}{1} log \frac{1}{\frac{K_{sp}}{[Cl^{-1}]}}$$</span>
+<ul>
+<li>potential varies with concentration of chloride
+<ul>
+<li>if [Cl-] is fixed, potential is fixed</li>
+</ul></li>
+</ul></li>
+</ol></li>
+<li>what happens if push alot of current through electrode, keep giving electrons -&gt; make Cl<span class="math inline"><sup>−</sup></span>
+<ul>
+<li>Cl<span class="math inline"><sup>−</sup></span> will precipiate -&gt; run of AgCl, run of K (for KCl precipitating the Cl), then you lose the eq -&gt; the potential of reference electrode starts changing and no longer reference electrode
+<ul>
+<li>can’t push alot of current through them</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>redox titrations
+<ul>
+<li>titrated with strong ox. or red. agent to determine analyte</li>
+<li>strong, standardized ox/red agent</li>
+<li>assume redox reactions go to completion
+<ul>
+<li>eq point: amount oxi/red added is equal to amount of analyte</li>
+<li>endpoint: observable change that signals eq point</li>
+</ul></li>
+<li>endpoint determined through
+<ul>
+<li>tracking changes in potential</li>
+<li>redox indicator dye (indirect)</li>
+<li>change in solution color (direct)</li>
+</ul></li>
+<li>pretreatment:
+<ul>
+<li>analytes can exist in different oxidation states -&gt; analytes need to be single oxidation state</li>
+<li>auxiliary/reducing agents: preoxi or prered of samples
+<ul>
+<li>agent must be easy to remove</li>
+</ul></li>
+<li>auxiliary reducing agent: solid metal, flow solution through burrete</li>
+<li>auxiliary oxidizing agent: bismuthates (insoluble, filter to remove), hydrogen peroxide or peroxydisulfate (heat up to decompose)</li>
+</ul></li>
+<li>typical reducign agent
+<ul>
+<li>ferrous ion:
+<ul>
+<li>add excess Fe2+ to analyte solution</li>
+<li>back titrate</li>
+</ul></li>
+<li>iodine/sodium thiosulfate
+<ul>
+<li>treat analyte with excess iodide</li>
+<li>back titrate with thiosulfate</li>
+</ul></li>
+</ul></li>
+<li>typical oxidizing agent
+<ul>
+<li>permanganate ion:
+<ul>
+<li>reduced ti various species with non-voilet color</li>
+<li>ceric ion</li>
+<li>dichomate ion</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>what’s at EQ and what not?
+<ul>
+<li>beaker at EQ: will come into EQ</li>
+<li>reference electrode is not at EQ, only electrically in contact with beaker, not chemically, it is there as a reference
+<ul>
+<li>need something to not be at eq or we get zero potential!</li>
+<li>need one redox reaction not at eq</li>
+</ul></li>
+</ul></li>
+<li>titration curve:
+<ul>
+<li>looks like acid/base curve</li>
+<li>measure voltage between ref and insert electrode to moniter titration</li>
+<li>initial potential close to that of titrand half cell
+<ul>
+<li>lower</li>
+<li>because only have some species in solution</li>
+</ul></li>
+</ul></li>
+<li>final potential close to that of titrant half cell</li>
+</ul>
+<ol>
+<li><p>(lecture 13 or something)</p>
+<ul>
+<li>understand reason for shape of redox titration curve</li>
+<li>calculate potential at any point in the titration</li>
+<li>relate shape of titration curve to half-cell potential involved</li>
+<li>potentiometry (no redox reactions)
+<ul>
+<li>potential changes but no e- transfer</li>
+<li>charge separation: potential is present</li>
+</ul></li>
+<li>glass-solution interface is charged
+<ul>
+<li>what’s a double layer</li>
+<li>how pH electrodes work</li>
+</ul></li>
+<li>harvey: 9D, 11B</li>
+</ul>
+<ol>
+<li><p>clicker</p>
+<ul>
+<li>remember in redox couples, there needs to be one reaction (at least) not at equilibrium for there to be a measureable potential
+<ul>
+<li>also reference electrode can’t completely mix with solution</li>
+</ul></li>
+</ul></li>
+<li><p>redox titration curve</p>
+<p><img src="../../../../images/211/redox_titration.png" /></p>
+<ul>
+<li>at the start: not at standard conditions because the concentrations are different</li>
+<li>figure out approximate starting region</li>
+<li>potential of half-equiv point, after equiv point, at equiv point</li>
+<li>all vs. SHE or another reference electrode
+<ul>
+<li>you find out all of this with the Nerst equation</li>
+</ul></li>
+<li>example problem: consider <span class="math display"><em>F</em><em>e</em><sup>2+</sup> + <em>C</em><em>e</em><sup>4+</sup> &lt;  −  &gt; <em>F</em><em>e</em><sup>3+</sup> + <em>C</em><em>e</em><sup>3+</sup></span>
+<ul>
+<li>cell: SHE || Fe<sup>2+</sup> Ce<sup>4+</sup> Fe<sup>3+</sup> Ce<sup>3+</sup> | Pt</li>
+<li>potential: <span class="math display"><em>E</em><sub><em>s</em><em>y</em><em>s</em><em>t</em><em>e</em><em>m</em></sub> = <em>E</em><sub><em>F</em><em>e</em></sub> = <em>E</em><sub><em>C</em><em>e</em></sub></span></li>
+<li>reference electrode separated by salt bridge, Pt in solution</li>
+<li>write Nerst equations: one for Fe, one for Ce both as reduction
+<ul>
+<li>can use either, will get same answer
+<ul>
+<li>one is easier to use before eq point, one is easier to use after eq point</li>
+</ul></li>
+<li>before eq point: still contains <span class="math display"><em>F</em><em>e</em><sup>2+</sup></span>, so use the analyte reduction half-reaction</li>
+<li>at eq point: equal concentrations, we know [Fe$<sup>3+</sup>$] = [Ce$<sup>3+</sup>$] and [Fe$<sup>2+</sup>$] = [Ce$<sup>2+</sup>$],
+<ul>
+<li>so equate them to get: <span class="math display"><em>E</em> = 1/2(<em>E</em><sub><em>F</em><em>e</em></sub><sup>,</sup>+<em>E</em><sub><em>C</em><em>e</em></sub><sup>,</sup>)</span>, only if both reactions involve same n, and activities have to cancel</li>
+<li>can use both Nerst equations</li>
+</ul></li>
+<li>after eq point: all iron is Fe3+, and moles Ce3+ equal moles Fe3+
+<ul>
+<li>contains known excess of unreacted titration Ce4+ =&gt; use titrant reduction half-reaction, find concentrations of Ce4+/Ce3+</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>sharper/clearer endpoint when: larger difference in reduction potential of titrant and titrand (larger E means more spontaneous, larger neg delta G) -&gt; goes further towards completion</li>
+<li>1:1 sstoich: symmetric about equiv point</li>
+<li>otherwise: assynmetric when not 1:1</li>
+</ul></li>
+</ol></li>
+</ol>
 <h3 id="ion-selective-electrodes">Ion-selective Electrodes</h3>
 <h3 id="potentiometry-reference-and-indicator-electrodes-ion-selective">Potentiometry – Reference and Indicator Electrodes, Ion-Selective</h3>
 <h2 id="uv-visible-spectrophotometry">UV-visible spectrophotometry</h2>
