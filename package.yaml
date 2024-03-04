@@ -26,6 +26,7 @@ dependencies:
 - hashable
 - time
 - unordered-containers
+- pandoc
 
 executables:
   site:

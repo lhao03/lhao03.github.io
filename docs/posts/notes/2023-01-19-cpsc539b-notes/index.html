@@ -62,7 +62,50 @@
     
   </div>
   <div class="content">
-    <h1 id="sec:orge60f8d7">TAPL 9 (Simply Typed Lambda-Calculus)</h1>
+    
+<div id="toc" class="toc">Contents:
+<ul>
+<li><a href="#sec:orge60f8d7">TAPL 9 (Simply Typed Lambda-Calculus)</a></li>
+<li><a href="#sec:orga660a4c"><span class="math inline"><em>λ</em><em>x</em>.<em>t</em> : →</span></a>
+<ul>
+<li><a href="#sec:org94ca3aa">The Typing Relation</a></li>
+<li><a href="#sec:org149403c">properties of typing</a>
+<ul>
+<li><a href="#sec:org3cb47f3">lemma [inversion of the typing relation]</a></li>
+<li><a href="#sec:orgba10307">lemma [canonical forms]</a></li>
+<li><a href="#sec:orgb7f303f">structural lemmas:</a></li>
+</ul></li>
+<li><a href="#sec:orgc6c7588">the curry-howard correspondence</a></li>
+<li><a href="#sec:org32708e1">erasure and typability</a></li>
+<li><a href="#sec:orgbe0c883">curry-style vs church-style</a></li>
+</ul></li>
+<li><a href="#sec:orgb027f56">TAPL 11 (Simple Extensions)</a>
+<ul>
+<li><a href="#sec:org19fd38b">base types</a></li>
+<li><a href="#sec:org57ce461">the unit type</a></li>
+<li><a href="#sec:org7ebd13a">derived forms: sequencing and wildcards</a></li>
+<li><a href="#sec:orge39d8bc">ascription</a></li>
+<li><a href="#sec:org0c812c4">let bindings</a></li>
+<li><a href="#sec:orge165765">pairs</a></li>
+<li><a href="#sec:org3530369">tuples</a></li>
+<li><a href="#sec:org3a56e3e">records</a></li>
+<li><a href="#sec:orgedda38a">sums</a>
+<ul>
+<li><a href="#sec:org4a3c66d">sum and uniqueness of types</a></li>
+</ul></li>
+<li><a href="#sec:orgc5665cc">variants</a></li>
+<li><a href="#sec:org1cbd71e">options</a></li>
+<li><a href="#sec:orga383d90">enums</a></li>
+<li><a href="#sec:org58c09fc">single field varients</a></li>
+<li><a href="#sec:org738588c">varients vs. datatypes</a></li>
+<li><a href="#sec:org9e1be6f">variants as disjoint unions</a></li>
+<li><a href="#sec:org9629e5c">type dynamic</a></li>
+<li><a href="#sec:orgc949956">general recursion</a></li>
+<li><a href="#sec:org19e7d0a">lists</a></li>
+</ul></li>
+<li><a href="#sec:org3f9d011">jan 23 notes</a></li>
+</ul></div>
+<div id="body"><h1 id="sec:orge60f8d7">TAPL 9 (Simply Typed Lambda-Calculus)</h1>
 <ul>
 <li><p>want to introduce typing rules for variables, abstractions, applications that maintain type safety and are not too conservative</p></li>
 <li><p>since pure lambda-calculus is Turing complete, no hope of giving an exact type analysis for these primitives</p></li>
@@ -409,7 +452,7 @@ and so rule <span class="math inline">(<em>λ</em><em>x</em>:<em>T</em><sub>11</
 <li><p>curry: can have errors, can define errors</p></li>
 <li><p>church: no errors, everything well defined</p></li>
 <li><p>unit type: bottom type</p></li>
-</ul>
+</ul></div>
   </div>
   <div class="flex-row link-no-style">
     

@@ -60,9 +60,8 @@
     
   </div>
   <div class="content">
-    <div class="toc">
-
-<h1 id="section-1"> <span class="tag" data-tag-name="TOC_3"><span class="smallcaps">TOC_3</span></span></h1>
+    
+<div id="toc" class="toc">Contents:
 <ul>
 <li><a href="#questions">questions:</a></li>
 <li><a href="#course-schedule">Course Schedule</a>
@@ -78,26 +77,26 @@
 </ul></li>
 <li><a href="#lectures">Lectures</a>
 <ul>
-<li><a href="#0">0</a>
+<li><a href="#section-1">0</a>
 <ul>
 <li><a href="#notes-on-relativistic-effects">notes on relativistic effects</a></li>
 </ul></li>
-<li><a href="#1">1</a></li>
-<li><a href="#2">2</a></li>
-<li><a href="#3">3</a></li>
-<li><a href="#4">4</a></li>
-<li><a href="#5">5</a></li>
-<li><a href="#6">6</a></li>
-<li><a href="#7">7</a></li>
-<li><a href="#8">8</a></li>
-<li><a href="#9">9</a>
+<li><a href="#section-2">1</a></li>
+<li><a href="#section-3">2</a></li>
+<li><a href="#section-4">3</a></li>
+<li><a href="#section-5">4</a></li>
+<li><a href="#section-6">5</a></li>
+<li><a href="#section-7">6</a></li>
+<li><a href="#section-8">7</a></li>
+<li><a href="#section-9">8</a></li>
+<li><a href="#section-10">9</a>
 <ul>
 <li><a href="#bonding-between-2-different-atomic-orbitals-on-2-different-atoms">bonding between 2 different atomic orbitals on 2 different atoms</a></li>
 <li><a href="#molecular-hamiltonian">molecular hamiltonian</a></li>
 <li><a href="#born-oopenheimer-approximation">born-oopenheimer approximation</a></li>
 <li><a href="#adiabatic-and-boa">adiabatic and BOA</a></li>
 </ul></li>
-<li><a href="#10">10</a>
+<li><a href="#section-11">10</a>
 <ul>
 <li><a href="#lecture-notes">lecture notes:</a></li>
 <li><a href="#potential-energy-surfaces-pes">potential energy surfaces (PES)</a></li>
@@ -105,13 +104,13 @@
 <li><a href="#reaction-paths-transition-states-and-intermediates">reaction paths, transition states and intermediates</a></li>
 <li><a href="#diabatic-and-adiabatic-processes">diabatic and adiabatic processes</a></li>
 </ul></li>
-<li><a href="#11">11</a>
+<li><a href="#section-12">11</a>
 <ul>
 <li><a href="#pes-interactions">PES interactions</a></li>
 <li><a href="#adiabatic-and-nondiabetic-processes">adiabatic and nondiabetic processes</a></li>
 <li><a href="#quiz-questions">quiz questions</a></li>
 </ul></li>
-<li><a href="#12">12</a>
+<li><a href="#section-13">12</a>
 <ul>
 <li><a href="#basis-sets">basis sets</a></li>
 <li><a href="#hydrogen-like-atomic-orbitals">hydrogen-like atomic orbitals</a></li>
@@ -119,11 +118,8 @@
 <li><a href="#more-on-basis-sets-additional">more on basis sets (additional)</a></li>
 </ul></li>
 </ul></li>
-</ul>
-<p>*</p>
-</div>
-
-<h1 id="questions">questions:</h1>
+</ul></div>
+<div id="body"><h1 id="questions">questions:</h1>
 <ul>
 <li>still don’t understand how the radius doesn’t shrink</li>
 </ul>
@@ -173,7 +169,7 @@
 <li>Hohenberg-Kohn theorems, Kohn-Sham method</li>
 </ol>
 <h1 id="lectures">Lectures</h1>
-<h2 id="section-2">0</h2>
+<h2 id="section-1">0</h2>
 <ul>
 <li>slater vs. gaussian
 <img src="../../../../images/412/svg.png" />
@@ -218,29 +214,29 @@
 <li>energy “uncertainty” (QM) mass-energy equivalence (special relativity) <span class="math display">→</span> particle/anti-particle pairs by quantum fluctuations</li>
 <li>klein-gordon equation (relativistic version of Schrodinger equation for spin-0 particle) (using time-dependent Schrodinger equation)
 <span class="math display">$$\begin{align*}
- E &amp;= \frac{p^2}{2m} \\
- i\hbar \frac{\partial}{\partial t}\psi &amp;= - \frac{h^2}{2m} \nabla \psi \\
- (i\hbar \frac{\partial}{\partial t})^2 \psi &amp;= - [(i\hbar \nabla)^2c^2 +m_0^2c^4] \psi \\
- \frac{1}{c^2}\frac{\partial^2}{\partial t^2} \psi - \nabla^2 \psi + \frac{m^2_0c^2}{\hbar^2} \psi &amp;= 0 \\
- \end{align*}$$</span> this is the d’Alembert operator (???)</li>
+E &amp;= \frac{p^2}{2m} \\
+i\hbar \frac{\partial}{\partial t}\psi &amp;= - \frac{h^2}{2m} \nabla \psi \\
+(i\hbar \frac{\partial}{\partial t})^2 \psi &amp;= - [(i\hbar \nabla)^2c^2 +m_0^2c^4] \psi \\
+\frac{1}{c^2}\frac{\partial^2}{\partial t^2} \psi - \nabla^2 \psi + \frac{m^2_0c^2}{\hbar^2} \psi &amp;= 0 \\
+\end{align*}$$</span> this is the d’Alembert operator (???)</li>
 </ul></li>
 <li>dirac equation:
 <ul>
 <li>electron is spin 1/2 particle (fermion)
 <span class="math display">$$ih\frac{\partial \psi(X, t)}{\partial t} = (c\sum_{k=1}^{3} \alpha_k p_k + \beta mc^2) \psi(x,t)$$</span> factorized using d’Alembert operator
 <span class="math display">$$\psi(x,t) =  \begin{pmatrix}
- \psi_1(x,t) \\
- \psi_2(x,t) \\
- \psi_3(x,t) \\
- \psi_4(x,t) \\
- \end{pmatrix} $$</span></li>
+\psi_1(x,t) \\
+\psi_2(x,t) \\
+\psi_3(x,t) \\
+\psi_4(x,t) \\
+\end{pmatrix} $$</span></li>
 <li>wavefunctions 1/2 are for particle and 3/4 are for antiparticle (each wavefunction is either spin-up or spin-down)
 <ul>
 <li>we get gamma (dirac) matrices and pauli matrices</li>
 </ul></li>
 </ul></li>
 </ul>
-<h2 id="section-3">1</h2>
+<h2 id="section-2">1</h2>
 <ul>
 <li>Taylor expansion <span class="math display">→</span> power series <span class="math display"><em>a</em><sub>0</sub> + <em>a</em><sub>1</sub><em>x</em> + <em>a</em><sub>2</sub><em>x</em><sup>2</sup> + <em>e</em><em>t</em><em>c</em></span>
 <ul>
@@ -271,7 +267,7 @@
 <li>basis functions: relate to the orbitals, stay the same for each bond distance the program tries</li>
 <li>molecular energy vs. geometry optimization: ME is more optimized because geometry optimization doesn’t take derivative to 0, only closely</li>
 </ul>
-<h2 id="section-4">2</h2>
+<h2 id="section-3">2</h2>
 <p><span class="math display"><em>Ĥ</em><em>Ψ</em> = <em>E</em><em>Ψ</em></span>, where the Hamiltonian <span class="math display"><em>Ĥ</em> = <em>T̂</em> + <em>V̂</em></span></p>
 <ul>
 <li>by substituting classical momentum with its quantum form: <span class="math display">$$\hat{T} = -\frac{\hbar ^2}{2m}\nabla^2$$</span></li>
@@ -286,7 +282,7 @@
 <li>give you information about stable molecular structures/chemical reactivity</li>
 </ul></li>
 </ul>
-<h2 id="section-5">3</h2>
+<h2 id="section-4">3</h2>
 <p><img src="../../../../images/412/cvsv.jpeg" /></p>
 <ul>
 <li>special relativity: length contraction, mass increase, time dilation
@@ -298,7 +294,7 @@
 <li>spin-orbit coupling</li>
 </ul></li>
 </ul></li>
-<li>noone can travel faster than the speed of light: $|v| ≤ c<span class="math display">−</span>0 ≤   ≤ 1<span class="math display"> − <em>l</em><em>o</em><em>r</em><em>e</em><em>n</em><em>t</em><em>z</em><em>f</em><em>a</em><em>c</em><em>t</em><em>o</em><em>r</em>:</span>γ = $$</li>
+<li>noone can travel faster than the speed of light: $|v| ≤ c<span class="math display">−</span>0 ≤  ≤ 1<span class="math display"> − <em>l</em><em>o</em><em>r</em><em>e</em><em>n</em><em>t</em><em>z</em><em>f</em><em>a</em><em>c</em><em>t</em><em>o</em><em>r</em>:</span>γ = $$</li>
 <li>length contraction:
 <ul>
 <li>only happens in dimension of velocity</li>
@@ -334,7 +330,7 @@
 </ul></li>
 <li>boson: integer spin</li>
 </ul>
-<h2 id="section-6">4</h2>
+<h2 id="section-5">4</h2>
 <ul>
 <li>Pauli Exclusion Principle</li>
 <li>Postulates in QM
@@ -350,7 +346,7 @@
 </ul></li>
 </ul></li>
 </ul>
-<h2 id="section-7">5</h2>
+<h2 id="section-6">5</h2>
 <ul>
 <li>dirac notation</li>
 <li>side note: transpose of <span class="math display">$$\frac{\partial}{\partial x}$$</span> is not naively simple!</li>
@@ -367,7 +363,7 @@
 </ul></li>
 </ul></li>
 </ul>
-<h2 id="section-8">6</h2>
+<h2 id="section-7">6</h2>
 <ul>
 <li>determinants and matrices</li>
 <li>matrix mechanics:
@@ -392,9 +388,9 @@
 <li>euclidean 3D vector space vs. Hilbert nD metric space</li>
 </ul></li>
 </ul>
-<h2 id="section-9">7</h2>
-<h2 id="section-10">8</h2>
-<h2 id="section-11">9</h2>
+<h2 id="section-8">7</h2>
+<h2 id="section-9">8</h2>
+<h2 id="section-10">9</h2>
 <ul>
 <li>notes from paper and ipad notes summary</li>
 </ul>
@@ -509,7 +505,7 @@
 </ul></li>
 </ul></li>
 </ul>
-<h2 id="section-12">10</h2>
+<h2 id="section-11">10</h2>
 <h3 id="lecture-notes">lecture notes:</h3>
 <ul>
 <li>polyatomic DOF: 3N</li>
@@ -638,7 +634,7 @@
 <li>diabatic: rapidly changing conditions prevent system from adapting its configuration, so probability density remains unchanged? no eigenstate of final Hamiltonian with same functional form; system ends in linear combination of stats that sum to reproduce initial probability density</li>
 <li>adiabatic: gradually changing allow system to adapt configuration, probability density is modified. starts in eigenstate of initial Hamiltonian and ends in eigenstate of final Hamiltonian.</li>
 </ul>
-<h2 id="section-13">11</h2>
+<h2 id="section-12">11</h2>
 <ul>
 <li>ZPE (zero point energy): for translational and rotational is 0 energy at 0K. But vibrational:
 <ul>
@@ -678,7 +674,7 @@
 <p><img src="../../../../images/412/noncross.png" /></p>
 <ul>
 <li>from the hamiltonian matrix, if <span class="math display">$$$H_{12} = 0$, then PES crossing happens with no problem
- - this happens when $$</span>Ψ<sub>1</sub><span class="math display"><em>a</em><em>n</em><em>d</em></span>Ψ<sub>2</sub>$$ are different spins or point groups</li>
+- this happens when $$</span>Ψ<sub>1</sub><span class="math display"><em>a</em><em>n</em><em>d</em></span>Ψ<sub>2</sub>$$ are different spins or point groups</li>
 </ul>
 <h3 id="adiabatic-and-nondiabetic-processes">adiabatic and nondiabetic processes</h3>
 <p><img src="../../../../images/412/dia.png" /></p>
@@ -701,7 +697,7 @@
 <li>vibrational frequencies: at TS only one vib freq is imaginary (or negative)</li>
 <li>PES crossing: depends on the interaction energy, represented by <span class="math display"><em>H</em><sub>12</sub></span></li>
 </ul>
-<h2 id="section-14">12</h2>
+<h2 id="section-13">12</h2>
 <ul>
 <li>STO orbitals: mimic nodeless radial components of H-like orbitals
 <ul>
@@ -961,7 +957,7 @@
 </ul></li>
 </ul></li>
 <li><p>even and well tempered basis sets</p></li>
-</ol>
+</ol></div>
   </div>
   <div class="flex-row link-no-style">
     

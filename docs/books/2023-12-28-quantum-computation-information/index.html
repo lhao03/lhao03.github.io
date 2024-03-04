@@ -62,7 +62,31 @@
     
   </div>
   <div class="content">
-    <h2 id="global-perspectives">1.1: global perspectives</h2>
+    
+<div id="toc" class="toc">Contents:
+<ul>
+<li><a href="#global-perspectives">1.1: global perspectives</a>
+<ul>
+<li><a href="#section-1">1.1.1:</a></li>
+<li><a href="#future">1.1.2: future</a></li>
+</ul></li>
+<li><a href="#quantum-bits">1.2: quantum bits</a>
+<ul>
+<li><a href="#multiple-qubits">1.2.1: multiple qubits</a></li>
+</ul></li>
+<li><a href="#quantum-computation">1.3 quantum computation</a>
+<ul>
+<li><a href="#single-qubit-gates">single qubit gates</a></li>
+<li><a href="#multiple-qubit-gates">1.3.2 multiple qubit gates</a></li>
+<li><a href="#measurement-in-bases-other-than-computational-basis">1.3.3 measurement in bases other than computational basis</a></li>
+<li><a href="#quantum-circuits">1.3.4 quantum circuits</a></li>
+<li><a href="#qubit-copying-circuit">1.3.5 qubit copying circuit</a></li>
+<li><a href="#example-bell-states">1.3.6 example: bell states</a></li>
+<li><a href="#example-quantum-teleportation">1.3.7 example: quantum teleportation</a></li>
+</ul></li>
+<li><a href="#quantum-algorithms">1.4 quantum algorithms</a></li>
+</ul></div>
+<div id="body"><h2 id="global-perspectives">1.1: global perspectives</h2>
 <ul>
 <li>QC and QI: study of information processing tasks accomplished using QM systems</li>
 </ul>
@@ -242,16 +266,16 @@
 <li><p>any quantum gate must follow this unitarity constraint</p></li>
 <li><p><span class="math inline"><em>Z</em></span> gate: leaves <span class="math display">|0⟩</span> unchanged and flips sign of <span class="math display">|1⟩</span> to <span class="math display"> − |1⟩</span></p>
 <p><span class="math display">$$ Z \equiv \begin{bmatrix}
- 1 &amp; 0 \\
- 0 &amp; -1
- \end{bmatrix}$$</span></p></li>
+1 &amp; 0 \\
+0 &amp; -1
+\end{bmatrix}$$</span></p></li>
 <li><p>Hadamard gate, square root of NOT gate, but <span class="math display"><em>H</em><sup>2</sup>≠</span> NOT:
 <span class="math display">$$|0\rangle \rightarrow \tfrac{|0\rangle + |1\rangle}{\sqrt{2}}$$</span>
 <span class="math display">$$|1\rangle \rightarrow \tfrac{|0\rangle - |1\rangle}{\sqrt{2}}$$</span></p>
 <p><span class="math display">$$ H \equiv \frac{1}{\sqrt{2}} \begin{bmatrix}
- 1 &amp; 1 \\
- 1 &amp; -1
- \end{bmatrix}$$</span></p></li>
+1 &amp; 1 \\
+1 &amp; -1
+\end{bmatrix}$$</span></p></li>
 <li><p>we can also decompose a single qubit gate into a product of rotations</p>
 <ul>
 <li>can build up arbitrary single qubit gate using finite set of quantum gates</li>
@@ -267,11 +291,11 @@
 <li>generalized: <span class="math display">|<em>A</em>,<em>B</em>⟩→|<em>A</em>, <em>B</em>⨁<em>A</em>⟩</span> the control qubit and targit qubit are XORED and stored in target</li>
 </ul>
 <p><span class="math display">$$ U_{CN} = \begin{bmatrix}
- 1 &amp; 0 &amp; 0 &amp; 0 \\
- 0 &amp; 1 &amp; 0 &amp; 0 \\
- 0 &amp; 0 &amp; 0 &amp; 1 \\
- 0 &amp; 0 &amp; 1 &amp; 0
- \end{bmatrix}$$</span></p>
+1 &amp; 0 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 &amp; 1 \\
+0 &amp; 0 &amp; 1 &amp; 0
+\end{bmatrix}$$</span></p>
 <ul>
 <li>classical gates like NAND or XOR can’t be understood as a unitary gate; these gates are irreversible or non-invertible
 <ul>
@@ -348,7 +372,7 @@
 <li>appears to create copy of quantum state being transported: only target qubit in state <span class="math display">|<em>ψ</em>⟩</span> and original data qubit is a computational basis</li>
 <li>one shared EPR pair and two classical bits equal to one qubit</li>
 </ul>
-<h2 id="quantum-algorithms">1.4 quantum algorithms</h2>
+<h2 id="quantum-algorithms">1.4 quantum algorithms</h2></div>
   </div>
   <div class="flex-row link-no-style">
     

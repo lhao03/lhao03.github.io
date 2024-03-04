@@ -36,6 +36,7 @@ executable site
     , hakyll
     , hakyll-sass
     , hashable
+    , pandoc
     , time
     , unordered-containers
   default-language: Haskell2010

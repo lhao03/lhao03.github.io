@@ -62,7 +62,25 @@
     
   </div>
   <div class="content">
-    <p>Mary Baker, Satoshi Asami, Etienne Deprit, John Ouseterhout, and Margo Seltzer. 1992. Non-volatile memory for fast, reliable file systems. In Proceedings of the fifth international conference on Architectural support for programming languages and operating systems (ASPLOS V). Association for Computing Machinery, New York, NY, USA, 10–22. <a href="https://doi.org/10.1145/143365.143380">https://doi.org/10.1145/143365.143380</a></p>
+    
+<div id="toc" class="toc">Contents:
+<ul>
+<li><a href="#introduction">1. introduction</a>
+<ul>
+<li><a href="#ways-to-implement-nvram">ways to implement NVRAM</a></li>
+</ul></li>
+<li><a href="#non-volatile-client-file-caches">2. non-volatile client file caches</a></li>
+<li><a href="#caching-models">2.1. caching models</a></li>
+<li><a href="#simulations">2.2 simulations</a></li>
+<li><a href="#byte-lifetimes">2.3 byte lifetimes</a></li>
+<li><a href="#small-nvram-reduces-traffic">2.4. small NVRAM reduces traffic</a></li>
+<li><a href="#replacement-policies">2.5. replacement policies</a></li>
+<li><a href="#comparison-of-cache-models">2.6. comparison of cache models</a></li>
+<li><a href="#non-volatile-vs-volatile-caches">2.7. non-volatile vs volatile caches</a></li>
+<li><a href="#using-nvram-as-file-system-write-buffer">3. using NVRAM as file system write buffer</a></li>
+<li><a href="#impact-on-system-design">4. impact on system design</a></li>
+</ul></div>
+<div id="body"><p>Mary Baker, Satoshi Asami, Etienne Deprit, John Ouseterhout, and Margo Seltzer. 1992. Non-volatile memory for fast, reliable file systems. In Proceedings of the fifth international conference on Architectural support for programming languages and operating systems (ASPLOS V). Association for Computing Machinery, New York, NY, USA, 10–22. <a href="https://doi.org/10.1145/143365.143380">https://doi.org/10.1145/143365.143380</a></p>
 <p>Mary Baker, Satoshi Asami, Etienne Deprit, John Ouseterhout, and Margo Seltzer. 1992. Non-volatile memory for fast, reliable file systems. SIGPLAN Not. 27, 9 (Sept. 1992), 10–22. <a href="https://doi.org/10.1145/143365.143380">https://doi.org/10.1145/143371.143380</a></p>
 <ul>
 <li>non-volatile RAM (NVRAM)</li>
@@ -289,7 +307,7 @@ compared to volatile:
 <ul>
 <li>NVRAM must be able to be moved from dead machine to live machine</li>
 <li>make NVRAM blocks self-identifying =&gt; moved from machine to machine</li>
-</ul>
+</ul></div>
   </div>
   <div class="flex-row link-no-style">
     

@@ -32,6 +32,11 @@ import System.FilePath.Posix
   )
 import qualified Text.Blaze.Html5 as H
 import qualified Text.Blaze.Html5.Attributes as A
+import Hakyll.Web.Pandoc
+import Control.Applicative
+import Control.Monad
+import Data.Monoid ((<>), mappend, mconcat)
+import Text.Pandoc
 
 --------------------------------------------------------------------------------
 config :: Configuration
@@ -110,7 +115,7 @@ main = hakyllWith config $ do
             field "nextPost" (lookupPostUrl nextPostHM)
               `mappend` field "prevPost" (lookupPostUrl prevPostHM)
               `mappend` postCtxWithTags tags
-	      `mappend` constField "isPost" "yes"
+              `mappend` constField "isPost" "yes"
 
       pandocCompilerWithAsciidoctor
         >>= loadAndApplyTemplate "templates/post.html" postContext
@@ -199,7 +204,13 @@ pandocCompilerWithAsciidoctor = do
   extension <- getUnderlyingExtension
   if extension == ".adoc"
     then getResourceString >>= withItemBody (unixFilter "asciidoctor" ["-e", "-a", "skip-front-matter", "-"])
-    else pandocCompiler
+    else pandocCompilerWith defaultHakyllReaderOptions (defaultHakyllWriterOptions {writerTableOfContents = True, writerTemplate = Just tocTemplate})
+
+-- Compile template in-line. Why is this so complicated?
+tocTemplate =
+  either error id $ either (error . show) id $
+  runPure $ runWithDefaultPartials $
+  compileTemplate "" "\n<div id=\"toc\" class=\"toc\">Contents:\n$toc$</div>\n<div id=\"body\">$body$</div>"
 
 appendIndex :: Routes
 appendIndex = customRoute createIndexRoute
