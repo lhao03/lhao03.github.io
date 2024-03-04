@@ -197,7 +197,10 @@
 </ul></li>
 <li><p>reflection and refraction</p>
 <ul>
-<li>frequency (energy) is unchanged from vacuum value when passing through a medium, <span class="math inline"><em>v</em> = <em>v</em><sub>0</sub></span>, so since <span class="math inline"><em>c</em> = <em>c</em><sub>0</sub>/<em>n</em></span>: the wavelength is reduced: $ λ = λ<sub>0</sub> / n<span class="math display">−</span>E = hv = $$</li>
+<li>frequency (energy) is unchanged from vacuum value when passing through a medium, <span class="math inline"><em>v</em> = <em>v</em><sub>0</sub></span>, so since <span class="math inline"><em>c</em> = <em>c</em><sub>0</sub>/<em>n</em></span>: the wavelength is reduced: <span class="math display"><em>λ</em> = <em>λ</em><sub>0</sub>/<em>n</em></span>
+<ul>
+<li><span class="math display">$$E = hv = \frac{c_0 / n}{ \lambda_0 / n}$$</span></li>
+</ul></li>
 <li>reflection (specular, meaning mirror like): <span class="math display"><em>θ</em><sub><em>i</em><em>n</em><em>c</em></sub> = <em>θ</em><sub><em>r</em><em>e</em><em>f</em><em>l</em></sub></span></li>
 <li>refraction (snells law): <span class="math display"><em>n</em><sub>1</sub><em>s</em><em>i</em><em>n</em><em>θ</em><sub><em>i</em><em>n</em><em>c</em></sub> = <em>n</em><sub>2</sub><em>s</em><em>i</em><em>n</em><em>θ</em><sub><em>r</em><em>e</em><em>f</em><em>r</em></sub></span></li>
 <li>polarization:
@@ -313,27 +316,6 @@
 <li>natural linewidth</li>
 </ul>
 <h2 id="prep-for-final-presentation">6: prep for final presentation</h2>
-<h2 id="intro-to-molecular-rotation-and-vibration">7: intro to molecular rotation and vibration</h2>
-<ul>
-<li>born-oppenheimer approximation: fixed nucleus</li>
-<li>separation of vibration and rotation
-<ul>
-<li>separation of translational motion</li>
-</ul></li>
-<li>rotation of diatomic molecules
-<ul>
-<li>rigid rotater</li>
-</ul></li>
-<li>spherical harmonics</li>
-<li>polyatomic molecules: linear</li>
-<li>polyatomic molecules: symmetric top</li>
-<li>polyatomic molecules: spherical top</li>
-<li>polyatomic molecules: asymmetric top</li>
-<li>optical selection rule: diatomic and linear
-<ul>
-<li>symmetric and asymmetric top molecules</li>
-</ul></li>
-</ul>
 <h2 id="molecular-symmetry-and-group-theory-1">8: molecular symmetry and group theory 1</h2>
 <ul>
 <li>operators:
@@ -371,6 +353,63 @@
 </ul>
 <h3 id="h_2o"><span class="math display"><em>H</em><sub>2</sub><em>O</em></span></h3>
 <h2 id="molecular-rotation-and-spin-statistics-1">10: molecular rotation and spin statistics 1</h2>
+<ul>
+<li>born-oppenheimer approximation: fixed nucleus
+<ul>
+<li>total hamiltonian consists of kinetic energy of nucleus, electrons, and coloumb potential energy between nuclei, nuclei-electrons, and electrons</li>
+<li>(and BO adiabatic approximation): wavefunction is product of electron and nuclei <span class="math display"><em>Ψ</em><sub><em>n</em>, <em>i</em></sub> = <em>χ</em><sub><em>i</em></sub><sup>(<em>n</em>)</sup>(<em>R</em>)<em>ψ</em><sub><em>n</em></sub><sup><em>e</em><em>l</em></sup>(<em>r</em>;<em>R</em>)</span>
+<ul>
+<li>for a fixed R we get the electronic schrodinger equation: <span class="math display"><em>Ĥ</em> = <em>Ĥ</em><sub><em>n</em><em>u</em><em>c</em></sub> + <em>Ĥ</em><sub><em>e</em><em>l</em><em>e</em><em>c</em></sub></span>, where <span class="math display"><em>Ĥ</em><sub><em>e</em></sub><em>l</em><em>e</em><em>c</em> = <em>ψ</em><sub><em>n</em></sub><sup><em>e</em><em>l</em></sup>(<em>r</em>;<em>R</em>) = <em>E</em><sub><em>n</em></sub><sup><em>e</em><em>l</em></sup>(<em>R</em>)<em>ψ</em><sub><em>n</em></sub><sup><em>e</em><em>l</em></sup>(<em>r</em>;<em>R</em>)</span></li>
+</ul></li>
+<li>nuclear schrodinger equation: <span class="math display">[<em>Ĥ</em><sub><em>n</em><em>u</em><em>c</em></sub>+<em>E</em><sub><em>n</em></sub><sup><em>e</em><em>l</em></sup>(<em>R</em>)]<em>χ</em><sub><em>i</em></sub><sup><em>n</em></sup>(<em>R</em>) = <em>E</em><sub><em>n</em>, <em>i</em><em>χ</em><sub><em>i</em></sub><sup>(<em>n</em>)</sup></sub>(<em>R</em>)</span>
+<ul>
+<li>then by changing the value of R, we get the potential energy surface <span class="math display"><em>E</em><sub><em>n</em></sub><sup><em>e</em><em>l</em></sup></span></li>
+</ul></li>
+</ul></li>
+<li>separation of vibration and rotation
+<ul>
+<li>separation of translational motion
+<ul>
+<li>we can seperate translational motion and internal motion (rotation and vibration) by using <span class="math display"><em>R</em><sub><em>C</em><em>M</em></sub></span>, center of mass
+<img src="../../../../images/401/rcm.png" /></li>
+</ul></li>
+<li><span class="math display">$$\hat{T}_{nuc} = - \frac{\hbar^2}{2M} \nabla^2_{CM} - \frac{\hbar^2}{2 \mu} \nabla^2_{int}$$</span></li>
+</ul></li>
+<li>can further seperate vibrational and rotational motion
+<ul>
+<li>using polar coordinates
+<ul>
+<li><span class="math display">$$\hat{H}_{nuc} + E^{el}_n (R) = \hat{T}_{vib} + E^{el}_n (R) + \frac{1}{2 \mu R^2} \hat{L}^2 (\theta \psi)$$</span> (last term is <span class="math display"><em>Ĥ</em><sub><em>r</em><em>o</em><em>t</em></sub>)</span></li>
+</ul></li>
+<li>we get vibration-rotation wavefunction: <span class="math display"><em>χ</em><sub><em>n</em>, <em>v</em>, <em>J</em>, <em>M</em></sub>(<em>R</em>) = <em>S</em><sub><em>v</em></sub><sup>(<em>n</em>)</sup>(<em>R</em>)<em>Y</em><sub><em>J</em><em>M</em></sub>(<em>θ</em><em>ψ</em>)</span> where vibration only depends on bond length and rotation depends on two angles</li>
+</ul></li>
+<li>rotation of diatomic molecules
+<ul>
+<li>rigid rotater: if you set <span class="math inline"><em>R</em> = <em>R</em><sub><em>e</em></sub></span> where <span class="math inline"><em>R</em><sub><em>e</em></sub></span> is equlibirum bond length, <span class="math display"><em>T̂</em><sub><em>v</em><em>i</em><em>b</em></sub> = 0</span></li>
+<li>spherical harmonics (eigensolution)
+<ul>
+<li>for <span class="math display"><em>L̂</em><sup>2</sup>|<em>Y</em><sub><em>J</em><em>m</em></sub></span>, <span class="math display">ℏ<sup>2</sup><em>J</em>(<em>J</em>+1)</span> is the eigenvalue</li>
+<li>for <span class="math display"><em>L̂</em><sub><em>z</em></sub></span>, <span class="math display">ℏ<em>m</em></span> is the eigenvalue</li>
+</ul></li>
+<li>moment of interia is simple <span class="math display"><em>I</em><sub><em>e</em></sub> = <em>μ</em><em>R</em><sub><em>e</em></sub><sup>2</sup></span></li>
+<li>rotational constant: <span class="math display">$$B_e = \frac{\hbar^2}{2 I_e}$$</span> (J)
+<ul>
+<li><span class="math display">$$ = \frac{\hbar^2}{8 \pi^2 I_e}$$</span> (Hz)</li>
+<li><span class="math display">$$ = \frac{\hbar^2}{8 \pi^2 I_e c}$$</span> (cm<sup>-1</sup>)</li>
+</ul></li>
+</ul></li>
+<li>polyatomic molecules: linear
+<ul>
+<li>moment of interia is more complicated:</li>
+</ul></li>
+<li>polyatomic molecules: symmetric top</li>
+<li>polyatomic molecules: spherical top</li>
+<li>polyatomic molecules: asymmetric top</li>
+<li>optical selection rule: diatomic and linear
+<ul>
+<li>symmetric and asymmetric top molecules</li>
+</ul></li>
+</ul>
 <h2 id="molecular-rotation-and-spin-statistics-2">11: molecular rotation and spin statistics 2</h2>
 <h2 id="molecular-vibration">12: molecular vibration</h2>
 <h2 id="vibrational-infrared-and-raman-spectroscopy">13: vibrational infrared and raman spectroscopy</h2>

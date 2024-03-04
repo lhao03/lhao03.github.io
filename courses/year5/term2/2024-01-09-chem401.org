@@ -84,7 +84,7 @@ L/R circularly polarized photons have angular momentum $$+/- \hbar$$
 - for nonmagnetic media: $$n = \sqrt{\frac{\epsilon}{\epsilon_0}} = \sqrt{\epsilon_r}$$, where $$\epsilon_r$$ is the relative electric permittivity
   - dielectric constant: measured by response to static/low frequency electric field
 **** reflection and refraction
-- frequency (energy) is unchanged from vacuum value when passing through a medium, $v = v_0$, so since $c = c_0 / n$: the wavelength is reduced: $ \lambda = \lambda_0 / n$$
+- frequency (energy) is unchanged from vacuum value when passing through a medium, $v = v_0$, so since $c = c_0 / n$: the wavelength is reduced: $$ \lambda = \lambda_0 / n$$
   - $$E = hv = \frac{c_0 / n}{ \lambda_0 / n}$$
 - reflection (specular, meaning mirror like): $$\theta_{inc} = \theta_{refl}$$
 - refraction (snells law): $$n_1 sin \theta_{inc} = n_2 sin \theta_{refr}$$
@@ -158,19 +158,6 @@ L/R circularly polarized photons have angular momentum $$+/- \hbar$$
 - natural linewidth
 
 ** 6: prep for final presentation
-** 7: intro to molecular rotation and vibration
-- born-oppenheimer approximation: fixed nucleus
-- separation of vibration and rotation
-  - separation of translational motion
-- rotation of diatomic molecules
-  - rigid rotater
-- spherical harmonics
-- polyatomic molecules: linear
-- polyatomic molecules: symmetric top
-- polyatomic molecules: spherical top
-- polyatomic molecules: asymmetric top
-- optical selection rule: diatomic and linear
-  - symmetric and asymmetric top molecules
 ** 8: molecular symmetry and group theory 1
 - operators:
   - $$\hat{E}$$ is identity operator
@@ -194,6 +181,38 @@ L/R circularly polarized photons have angular momentum $$+/- \hbar$$
 *** $$H_2O$$
 
 ** 10: molecular rotation and spin statistics 1
+- born-oppenheimer approximation: fixed nucleus
+  - total hamiltonian consists of kinetic energy of nucleus, electrons, and coloumb potential energy between nuclei, nuclei-electrons, and electrons
+  - (and BO adiabatic approximation): wavefunction is product of electron and nuclei $$\Psi_{n,i} = \chi^{(n)}_i (R) \psi^{el}_n(r;R)$$
+    - for a fixed R  we get the electronic schrodinger equation: $$\hat{H} = \hat{H}_{nuc} + \hat{H}_{elec}$$, where $$\hat{H}_elec = \psi^{el}_n(r;R) = E^{el}_n (R) \psi^{el}_n(r;R)$$
+  - nuclear schrodinger equation: $$[\hat{H}_{nuc} + E^{el}_n(R)]\chi^{n}_i (R) = E_{n, i \chi^{(n)}_i}(R)$$
+    - then by changing the value of R, we get the potential energy surface $$E^{el}_n$$
+- separation of vibration and rotation
+  - separation of translational motion
+    - we can seperate translational motion and internal motion (rotation and vibration) by using $$R_{CM}$$, center of mass
+      [[../../../../images/401/rcm.png]]
+  - $$\hat{T}_{nuc} = - \frac{\hbar^2}{2M} \nabla^2_{CM} - \frac{\hbar^2}{2 \mu} \nabla^2_{int}$$
+- can further seperate vibrational and rotational motion
+  - using polar coordinates
+    - $$\hat{H}_{nuc} + E^{el}_n (R) = \hat{T}_{vib} + E^{el}_n (R) + \frac{1}{2 \mu R^2} \hat{L}^2 (\theta \psi)$$ (last term is $$\hat{H}_{rot})$$
+  - we get vibration-rotation wavefunction: $$\chi_{n, v, J, M} (R) = S_v^(n) (R) Y_{JM} (\theta \psi)$$ where vibration only depends on bond length and rotation depends on two angles
+- rotation of diatomic molecules
+  - rigid rotater: if you set $R = R_e$ where $R_e$ is equlibirum bond length, $$\hat{T}_{vib} = 0$$
+  - spherical harmonics (eigensolution)
+    - for $$\hat{L}^2 | Y_{Jm}$$, $$\hbar^2 J (J+1)$$ is the eigenvalue
+    - for $$\hat{L}_z$$, $$\hbar m$$ is the eigenvalue
+  - moment of interia is simple $$I_e = \mu R^2_e$$
+  - rotational constant: $$B_e = \frac{\hbar^2}{2 I_e}$$ (J)
+    - $$ = \frac{\hbar^2}{8 \pi^2 I_e}$$ (Hz)
+    - $$ = \frac{\hbar^2}{8 \pi^2 I_e c}$$ (cm^{-1})
+- polyatomic molecules: linear
+  - moment of interia is more complicated:
+- polyatomic molecules: symmetric top
+- polyatomic molecules: spherical top
+- polyatomic molecules: asymmetric top
+- optical selection rule: diatomic and linear
+  - symmetric and asymmetric top molecules
+
 ** 11: molecular rotation and spin statistics 2
 ** 12: molecular vibration
 ** 13: vibrational infrared and raman spectroscopy

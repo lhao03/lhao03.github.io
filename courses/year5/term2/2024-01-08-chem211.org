@@ -455,7 +455,170 @@ title: "CHEM 211: Introduction to Chemical Analysis"
 - can us Nerst on half and full reactions (for half, if there is solid reactant or product, just least as 1)
 
 *** Analytical Measurements using Electrochemical Cells
+**** lecture 12/13
+- harvey:: 11A, 11B.1-.3, 9D
+- key points:
+  - tied equilibria -> make electrode whose potential is fixed
+    - how Nerst equation shows us that
+  - common reference electrodes
+  - indicator electrodes
+  - indicator + reference electrodes -> setup for redox titration
+  - pre-treatment of analyte
+  - common reagents for pre-treatment and/or redox titrants
 *** Electrodes
+salt bridges are built into reference cell
+- SCE: paste of mercury and calomel (Hg$_{2}$Cl_{2}$)
+  - KCl filling solution
+  - Hg$_{2}$Cl_{2}$ (s) + 2e$^-$ -> 2Hg (l) + 2Cl$^{-}$
+    - when Cl concentration increases, you crash out KCl?
+    - [Cl^${-}$] essentially constant
+    - at 25C, E$^{o}$ = 0.244 V for saturated KCl
+- Silver/SilverChloride
+  - silver wire with layer of AgCl
+  - KCl filling solution:
+    - AgCl (s) -> Ag (s) + Cl$^{-}$
+      - at 25C, E$^{o}$ = 0.197 V for saturated KCl
+      - at 25C, E$^{o}$ = 0.205 V for 3.5 M KCl
+- half-cell potentials (different reference electrode):
+  [[../../../../images/211/number-line.png]]
+- free energy and potential
+  - delta G: for electrochemical rxn: maximum work that can be extracted
+    $$\Delta G = -nFE$$
+    - galvanic: positive potential
+    - electric: negative potential
+    - 0 potential: no driving force
+- Nerst: $$E = E^{o} - \frac{RT}{nF} \ln Q$$,  $$E = E^{o} - \frac{0.0592}{n} \log Q$$
+  - for half cell or full reactions
+- formal electrode potentials:
+  - most redox analyses done at high ionic strength ($\mu \geq 0.1$M), so activity coefficients cannot be readily calculated (D-H doesn't work well here, can't calculate range that chemists work in)
+    - need to worry about concentration and activity
+    - use formal electrode potentials
+      - say what the conditions are (empirical potential for half-cell under specific set of conditions)
+- $$E = E^{0'} - \frac{RT}{nF} ln \frac{[C]^c[D]^d}{[A]^a[B]^b}$$, where $$E^{0'}$$ is the formal potential
+  - specifying unit concentrations vs. unit activities
+  - or nature of supporting electrolyte, pH, ionic strength, temperature
+  - differ from standard potential by up to hundreds of millivolts
+- potentiometric measurements
+  - intrumentation:
+    - analyte solution (with supporting electrolyte)
+      - low resistance of solution
+        - add more ions to raise the conductivity
+    - indicator electode/reference electrode
+    - salt bridge
+    - voltmeter (large resistance to minimize loading error)
+      - voltage is occurring at bottom, want to show potential happening at bottom
+      - $V = IR$ if you have voltage drop at voltmeter, the measured voltage is lower than in solution
+        - if R is large, current is very small, so voltage drop is very small -> loading error
+          - happens if current is nontrivial
+  - voltage between two electrodes, some resistance in overall circuit -> determines ions
+  - in voltmeter, there is a resistance, not the same as the one in the whole circuit
+    - voltage drop = current * resistance of voltmeter
+    - only one current that is very very small
+
+- indicator electrodes
+  - inert electodes: respond to redox couples without participating director in reaction
+    - stick in solution inert metal picks up potential in solution determined b [Ox] and [Red]
+      - Pt, Ag, C
+    - better with high surface area
+    - work in most circumstances
+  - metal electode in direct eq with its metal cation (first kind) $$M^{n+} (aq) + ne^- <-> M (s)$$
+    - use in precipiatation/complex formation titrations, measure free $M^{n+}$
+      - $$E = E^{0}_M + \frac{0.0592}{n} log a_M = E^{0}_M - \frac{0.0592}{n} pM$$
+        - slow kinetics
+        - poor selectivity (bad in natural solutions)
+        - oxides may form on solid metal
+  - add in another eq, Ksp: responds to ion that form insoluble salt with the metal
+    - $$E = E^{0}_{AgCl} + \frac{0.0592}{1} log a_{Cl} = E^{0}_{AgCl} - \frac{0.0592}{n} pCl^-$$
+      - measured voltage responds to [Cl-]
+      - indirectly measure free $M^{n+}$
+    - electrode of first kind coupled to $K_{sp}$ equilibrium
+      1. write nerst equation as if is the first electrode
+      2. add Ksp, which can be expressed as activity or concentration: substitute activity of metal with Ksp and chloide ion
+         $$E = E^{0}_{AgCl} - \frac{0.0592}{1} log \frac{1}{\frac{K_{sp}}{[Cl^{-1}]}}$$
+         - potential varies with concentration of chloride
+           - if [Cl-] is fixed, potential is fixed
+    - what happens if push alot of current through electrode, keep giving electrons -> make Cl$^-$
+      - Cl$^-$ will precipiate -> run of AgCl, run of K (for KCl precipitating the Cl), then you lose the eq -> the potential of reference electrode starts changing and no longer reference electrode
+        - can't push alot of current through them
+- redox titrations
+  - titrated with strong ox. or red. agent to determine analyte
+  - strong, standardized ox/red agent
+  - assume redox reactions go to completion
+    - eq point: amount oxi/red added is equal to amount of analyte
+    - endpoint: observable change that signals eq point
+  - endpoint determined through
+    - tracking changes in potential
+    - redox indicator dye (indirect)
+    - change in solution color (direct)
+  - pretreatment:
+    - analytes can exist in different oxidation states -> analytes need to be single oxidation state
+    - auxiliary/reducing agents: preoxi or prered of samples
+      - agent must be easy to remove
+    - auxiliary reducing agent: solid metal, flow solution through burrete
+    - auxiliary oxidizing agent: bismuthates (insoluble, filter to remove), hydrogen peroxide or peroxydisulfate (heat up to decompose)
+  - typical reducign agent
+    - ferrous ion:
+      - add excess Fe2+ to analyte solution
+      - back titrate
+    - iodine/sodium thiosulfate
+      - treat analyte with excess iodide
+      - back titrate with thiosulfate
+  - typical oxidizing agent
+    - permanganate ion:
+      - reduced ti various species with non-voilet color
+      - ceric ion
+      - dichomate ion
+- what's at EQ and what not?
+  - beaker at EQ: will come into EQ
+  - reference electrode is not at EQ, only electrically in contact with beaker, not chemically, it is there as a reference
+    - need something to not be at eq or we get zero potential!
+    - need one redox reaction not at eq
+- titration curve:
+  - looks like acid/base curve
+  - measure voltage between ref and insert electrode to moniter titration
+  - initial potential close to that of titrand half cell
+    - lower
+    - because only have some species in solution
+- final potential close to that of titrant half cell
+
+**** (lecture 13 or something)
+- understand reason for shape of redox titration curve
+- calculate potential at any point in the titration
+- relate shape of titration curve to half-cell potential involved
+- potentiometry (no redox reactions)
+  - potential changes but no e- transfer
+  - charge separation: potential is present
+- glass-solution interface is charged
+  - what's a double layer
+  - how pH electrodes work
+- harvey: 9D, 11B
+***** clicker
+- remember in redox couples, there needs to be one reaction (at least) not at equilibrium for there to be a measureable potential
+  - also reference electrode can't completely mix with solution
+***** redox titration curve
+[[../../../../images/211/redox_titration.png]]
+- at the start: not at standard conditions because the concentrations are different
+- figure out approximate starting region
+- potential of half-equiv point, after equiv point, at equiv point
+- all vs. SHE or another reference electrode
+  - you find out all of this with the Nerst equation
+- example problem: consider $$Fe^{2+} + Ce^{4+} <-> Fe^{3+} + Ce^{3+}$$
+  - cell: SHE || Fe^{2+}  Ce^{4+} Fe^{3+} Ce^{3+} | Pt
+  - potential: $$E_{system} = E_{Fe} = E_{Ce}$$
+  - reference electrode separated by salt bridge, Pt in solution
+  - write Nerst equations: one for Fe, one for Ce both as reduction
+    - can use either, will get same answer
+      - one is easier to use before eq point, one is easier to use after eq point
+    - before eq point: still contains $$Fe^{2+}$$, so use the analyte reduction half-reaction
+    - at eq point: equal concentrations, we know [Fe$^{3+}$] = [Ce$^{3+}$] and [Fe$^{2+}$] = [Ce$^{2+}$],
+      - so equate them to get: $$E = 1/2 (E_{Fe}^, +E_{Ce}^,)$$, only if both reactions involve same n, and activities have to cancel
+      - can use both Nerst equations
+    - after eq point: all iron is Fe3+, and moles Ce3+ equal moles Fe3+
+      - contains known excess of unreacted titration Ce4+ => use titrant reduction half-reaction, find concentrations of Ce4+/Ce3+
+- sharper/clearer endpoint when: larger difference in reduction potential of titrant and titrand (larger E means more spontaneous, larger neg delta G) -> goes further towards completion
+- 1:1 sstoich: symmetric about equiv point
+- otherwise: assynmetric when not 1:1
+
 *** Ion-selective Electrodes
 *** Potentiometry – Reference and Indicator Electrodes, Ion-Selective
 

@@ -354,6 +354,46 @@ side notes:
 - PES crossing: depends on the interaction energy, represented by $$H_{12}$$
 
 ** 12
+- STO orbitals: mimic nodeless radial components of H-like orbitals
+  - $$\chi_{lm}^{STO} = N r^l e^{-lr} Y_{lm}(\theta, \psi)$$
+- GTO orbitals: approximate nodeless radial components of H-like orbitals
+  - $$\chi_{lm}^{GTO} = N r^l e^{-lr^2} Y_{lm}(\theta, \psi)$$
+  - can convert $$Y_{lm}$$ in GTO to cartesian coordinate, no more complex numbers (i think)
+  - for matrix calculations, GTO is more stable, and easier to calculate
+- how to approximate different types of bonding:
+  - non polar covalent: can use neutral H-like orbitals
+  - polar covalent: cation-like behaviour, electron cloud is thinner, neutral H-like orbitals decay too slowly
+  - ionic: cation-like behaviour, electron cloud is thinner, neutral H-like orbitals decay too slowly
+  - hydrogen bonding: extended range intermolecular forces, neutral H-like orbitals decay too quickly
+- polarization
+  - $H_{2}$ bonding is not just two s-orbitals overlapping, more like a peanut shape
+  - usually use orbital with $+1$ angular momentum
+[[../../../../images/412/peanut.jpeg]]
+- CGTOs: linear expansion of PGTOs
+  - $$\chi_k^{CGTO} = \Sigma_{a=1}^{n_c} c^k_a \chi^{PGTO}_a$$
+- types of basis sets:
+  - minimal: one GTO/CGTO per AO
+  - double-zeta: 2 basis function per AO
+  - triple-zeta: 3 basis function per AO
+  - split-valence: minimal basis for core atomic orbitals, larger basis for valence atomic orbitals
+- common GTO basis sets
+  - representation: {core minimal} - {valence} {++} G {nd,p}
+    - {core minimal}: if this is a number, represents the number of PGTOs used to represent the core electrons (is this n PGTOs for all AOs that are core?)
+    - {valence}: the zeta of PGTOs that make up the CGTOs for valence electron AOs
+    - {++}: one plus means diffuse function for heavy atom, two plus mean diffuse function for heavy atom and hydrogen
+    - {nd, p}: polarization functions, nd for heavy atoms, p for hydrogen
+- basis set size vs. computation time: $$O(n^4)$$$
+- BSSE: for relative energies, same method/basis set must be used for all calculations, or BSSE can arise with accessible basis sets differ in 2 calculations.
+- diffuse: long-range, polarization: bonding
+
+**** different basis set
+| GTO           | Quality  | Row-1                           | Row-2                                    | Row 3                                     | Interpretation                      |
+|---------------+----------+---------------------------------+------------------------------------------+-------------------------------------------+-------------------------------------|
+| STO-3G        | minimal  | (3s) $\rightarrow$ [1s]         | (6s,3p) $\rightarrow$ [2s,1p]            | (9s, 6p) $\rightarrow$ [3s, 2p]           | 3 PGTOs for 1 CGTO, 1 CGTO per 1 AO |
+| 3-21G         | basic    | (3s) $\rightarrow$ [2s]         | (6s, 3p) $\rightarrow$ [3s,2p]           | (9s, 6p) $\rightarrow$ [4s, 3p]           |                                     |
+| 6-311+G(2d,p) | accurate | (5s, 1p) $\rightarrow$ [3s, 1p] | (12s, 6p, 2d) $\rightarrow$ [5s, 4p, 2d] | (14s, 11p, 2d) $\rightarrow$ [7s, 6p, 2d] |                                     |
+
+
 *** basis sets
 - spatial part of spin orbital expressed as linear combination of atomic orbitals
 - natural expand MOs in terms of AOs
@@ -442,6 +482,6 @@ side notes:
 - adding single set of polarization functions (p-functions on hydrogen, d-functions on heavy atoms): double zeta plys polarization
 - basis set balance: having too many polarization functions vs. small basis set is not good
   - mixing of basis sets: minimum basis on spectator ions and DZ on interesting parts
-  - or polarization functions on important hydrogens -> creats artefacts
+  - or polarization functions on important hydrogens -> creates artefacts
   - use of small basis sets for systems containing very different numbers of valence electrons may produce artefacts
 **** even and well tempered basis sets

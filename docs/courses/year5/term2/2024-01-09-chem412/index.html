@@ -639,6 +639,96 @@
 <li>PES crossing: depends on the interaction energy, represented by <span class="math display"><em>H</em><sub>12</sub></span></li>
 </ul>
 <h2 id="section-13">12</h2>
+<ul>
+<li>STO orbitals: mimic nodeless radial components of H-like orbitals
+<ul>
+<li><span class="math display"><em>χ</em><sub><em>l</em><em>m</em></sub><sup><em>S</em><em>T</em><em>O</em></sup> = <em>N</em><em>r</em><sup><em>l</em></sup><em>e</em><sup>−<em>l</em><em>r</em></sup><em>Y</em><sub><em>l</em><em>m</em></sub>(<em>θ</em>,<em>ψ</em>)</span></li>
+</ul></li>
+<li>GTO orbitals: approximate nodeless radial components of H-like orbitals
+<ul>
+<li><span class="math display"><em>χ</em><sub><em>l</em><em>m</em></sub><sup><em>G</em><em>T</em><em>O</em></sup> = <em>N</em><em>r</em><sup><em>l</em></sup><em>e</em><sup>−<em>l</em><em>r</em><sup>2</sup></sup><em>Y</em><sub><em>l</em><em>m</em></sub>(<em>θ</em>,<em>ψ</em>)</span></li>
+<li>can convert <span class="math display"><em>Y</em><sub><em>l</em><em>m</em></sub></span> in GTO to cartesian coordinate, no more complex numbers (i think)</li>
+<li>for matrix calculations, GTO is more stable, and easier to calculate</li>
+</ul></li>
+<li>how to approximate different types of bonding:
+<ul>
+<li>non polar covalent: can use neutral H-like orbitals</li>
+<li>polar covalent: cation-like behaviour, electron cloud is thinner, neutral H-like orbitals decay too slowly</li>
+<li>ionic: cation-like behaviour, electron cloud is thinner, neutral H-like orbitals decay too slowly</li>
+<li>hydrogen bonding: extended range intermolecular forces, neutral H-like orbitals decay too quickly</li>
+</ul></li>
+<li>polarization
+<ul>
+<li><span class="math inline"><em>H</em><sub>2</sub></span> bonding is not just two s-orbitals overlapping, more like a peanut shape</li>
+<li>usually use orbital with <span class="math inline"> + 1</span> angular momentum</li>
+</ul></li>
+</ul>
+<p><img src="../../../../images/412/peanut.jpeg" /></p>
+<ul>
+<li>CGTOs: linear expansion of PGTOs
+<ul>
+<li><span class="math display"><em>χ</em><sub><em>k</em></sub><sup><em>C</em><em>G</em><em>T</em><em>O</em></sup> = <em>Σ</em><sub><em>a</em> = 1</sub><sup><em>n</em><sub><em>c</em></sub></sup><em>c</em><sub><em>a</em></sub><sup><em>k</em></sup><em>χ</em><sub><em>a</em></sub><sup><em>P</em><em>G</em><em>T</em><em>O</em></sup></span></li>
+</ul></li>
+<li>types of basis sets:
+<ul>
+<li>minimal: one GTO/CGTO per AO</li>
+<li>double-zeta: 2 basis function per AO</li>
+<li>triple-zeta: 3 basis function per AO</li>
+<li>split-valence: minimal basis for core atomic orbitals, larger basis for valence atomic orbitals</li>
+</ul></li>
+<li>common GTO basis sets
+<ul>
+<li>representation: {core minimal} - {valence} {++} G {nd,p}
+<ul>
+<li>{core minimal}: if this is a number, represents the number of PGTOs used to represent the core electrons (is this n PGTOs for all AOs that are core?)</li>
+<li>{valence}: the zeta of PGTOs that make up the CGTOs for valence electron AOs</li>
+<li>{++}: one plus means diffuse function for heavy atom, two plus mean diffuse function for heavy atom and hydrogen</li>
+<li>{nd, p}: polarization functions, nd for heavy atoms, p for hydrogen</li>
+</ul></li>
+</ul></li>
+<li>basis set size vs. computation time: <span class="math display"><em>O</em>(<em>n</em><sup>4</sup>)</span>$</li>
+<li>BSSE: for relative energies, same method/basis set must be used for all calculations, or BSSE can arise with accessible basis sets differ in 2 calculations.</li>
+<li>diffuse: long-range, polarization: bonding</li>
+</ul>
+<p>different basis set</p>
+<table>
+<thead>
+<tr class="header">
+<th>GTO</th>
+<th>Quality</th>
+<th>Row-1</th>
+<th>Row-2</th>
+<th>Row 3</th>
+<th>Interpretation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>STO-3G</td>
+<td>minimal</td>
+<td>(3s) <span class="math inline">→</span> [1s]</td>
+<td>(6s,3p) <span class="math inline">→</span> [2s,1p]</td>
+<td>(9s, 6p) <span class="math inline">→</span> [3s, 2p]</td>
+<td>3 PGTOs for 1 CGTO, 1 CGTO per 1 AO</td>
+</tr>
+<tr class="even">
+<td>3-21G</td>
+<td>basic</td>
+<td>(3s) <span class="math inline">→</span> [2s]</td>
+<td>(6s, 3p) <span class="math inline">→</span> [3s,2p]</td>
+<td>(9s, 6p) <span class="math inline">→</span> [4s, 3p]</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>6-311+G(2d,p)</td>
+<td>accurate</td>
+<td>(5s, 1p) <span class="math inline">→</span> [3s, 1p]</td>
+<td>(12s, 6p, 2d) <span class="math inline">→</span> [5s, 4p, 2d]</td>
+<td>(14s, 11p, 2d) <span class="math inline">→</span> [7s, 6p, 2d]</td>
+<td></td>
+</tr>
+</tbody>
+</table>
 <h3 id="basis-sets">basis sets</h3>
 <ul>
 <li>spatial part of spin orbital expressed as linear combination of atomic orbitals</li>
@@ -803,7 +893,7 @@
 <li>basis set balance: having too many polarization functions vs. small basis set is not good
 <ul>
 <li>mixing of basis sets: minimum basis on spectator ions and DZ on interesting parts</li>
-<li>or polarization functions on important hydrogens -&gt; creats artefacts</li>
+<li>or polarization functions on important hydrogens -&gt; creates artefacts</li>
 <li>use of small basis sets for systems containing very different numbers of valence electrons may produce artefacts</li>
 </ul></li>
 </ul></li>

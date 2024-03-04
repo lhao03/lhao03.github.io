@@ -1,0 +1,56 @@
+---
+title: "Kinetics Notes"
+date: 2024-02-17
+tags: kinetics, paper
+---
+
+== Notes for paper 1: https://pubs.acs.org/doi/epdf/10.1021/acscatal.2c05045
+* use orthogonal reaction monitoring techniques to draw more robust conclusions
+** in situ and ex situ (is gel ex-situ)?
+
+* Different methodologies:
+** Initial rates: need concentration/time
+** RPKA: need rate/concentration
+** VTNA: need concentration/normalized time
+
+* pitfalls:
+** analytical stability:
+*** will enzyme remain stable throughout testing?
+*** enzyme concentrations: if low, is hard to moniter, how to keep constant throughout reaction
+**** moniter/quantify with ESI-MS
+** order of addition:
+*** sequential addition of combining reagents with desired reaction occuring when a final component is introduced
+*** careful not to confuse increase in temperture with increase in reaction rate (from catalyst)
+*** conduct under isothermal conditions
+*** "Our typical procedure for reaction monitoring is to combine all reagents except the initiating species in a reaction vessel, heat or cool the vessel to the reaction temperature, gather several data points to ensure reproducible sampling, and then initiate the reaction."
+** complete mass balance:
+*** can we use mass balance to detect ssDNA length?
+*** decreassing mass balance also due to if concentration exceeds Ksp for solvent/temperature
+*** quick detection: mass balance vs. time trends
+** compatilbilty of analytics with reaction conditions/concentrations
+*** manual sampling prone to reproducibility issues
+*** introduced mixer to get reliable results
+** general guide:
+1. find initial reaction conditions -> identify through small-scale batch end point screening
+2. initial time course survey -> fast/quick rather than reportable data
+* indentify if there is induction period -> reaction is not under steady state
+3. reoptimization
+4. control experiments:
+* order of addition
+* change in sample composition over time
+5. reproducibility
+* show reproducible workflow with final reaction conditions
+6. validate method of quantification
+7. kinetic experiments
+8. validate conclusions
+- have hypothisias: reaction modelling -> Dynochem, COPASI, Zenth
+
+== notes for paper 2: Conformational characterization of duplex DNA with solution-state NMR spectroscopy
+- https://www.sciencedirect.com/science/article/pii/S266644102200005X#:~:text=Solution%2Dstate%20NMR%20spectroscopy%20is,study%20both%20structure%20and%20dynamics.&text=NMR%20is%20capable%20of%20capturing,variations%20in%20the%20DNA%20structure.&text=Dynamics%20measurements%20picks%20invisible%20subtle%20variations%20in%20DNA%20structure.
+- DNA preparation for NMR: “Enzymatic in vitro synthesis is a preferred route to isotopically label oligonucleotides and involves the use of appropriately labeled (13C/15N) deoxyribose triphosphates (dNTP)“ -> important for conformational dynamics of DNA, i don’t think we care
+- “To prepare a duplex, equimolar solutions of complementary strands in water are pooled together (implicitly satisfied for a palindromic sequence). The solution is then heated to 95 °C for 5–10 min in a water bath to unfold the duplex to minimize any undesired local interactions that may arise due to degeneracy of primary sequence(s). Annealing at high single strand concentrations (100–200 µM) is desired, especially for palindromic sequences to avoid hairpin formation. The solution is then let to equilibrate to room temperature over a period of 2–4 h. The cooled solution is then exchanged against the chosen NMR buffer to obtain the sample at the desired concentration/volume. Typically, 1–3 mM concentration at natural isotopic abundance samples are prepared for 1H and 13C/15N based studies in appropriate buffers (containing 5–10% D2O for field-frequency locking, 50 µM trimethylsilylpropanoic acid for chemical shift referencing).”
+
+== notes for paper 3: https://pubs.rsc.org/en/Content/ArticleLanding/2022/RE/D2RE00048B
+- "Solution state NMR spectroscopy is non-destructive, quantitative, and arguably the strongest structure elucidation tool at a chemist's disposal"
+- qNMR: internal standard, but requires adding to reaction mixture, could affect readout/reaction
+- flow system to remove requirement of transferring to NMR vessel

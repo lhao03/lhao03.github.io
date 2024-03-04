@@ -2,13 +2,14 @@
 description: "CHEM 245"
 title: "CHEM 245: Intermediate Synthetic Chemistry Laboratory"
 ---
+
 * questions
 - empirical vs. molecular
 - index of hydrogens
 - rule of thirteen
 * tutorials
-** elemental analysis and IHD review
-*** learning objectives:
+** Elemental Analysis and IHD (review) (Tutorial 1)
+*** Learning Objectives:
 - empirical vs. molecular formula
   - calculate and distinguish
 - identify components of elemental analysis equipment
@@ -19,7 +20,7 @@ title: "CHEM 245: Intermediate Synthetic Chemistry Laboratory"
     - amu
 - rule of 13
 - provide possible structures using provided and calculated IHD
-** nmr:
+** NMR:
 - Identify regions of the electromagnetic spectrum and identify which characterization methods exploit each specific region (in the context of CHEM 245)
 - Explain nuclear spin in the context of NMR
 - Distinguish between alpha (α) and beta (β) spin states
@@ -29,7 +30,8 @@ title: "CHEM 245: Intermediate Synthetic Chemistry Laboratory"
 - Identify and use the terms “upfield” and “downfield”
 - Identify and use the terms “shielded” and “deshielded”
 
-**** jan 8
+---
+
 - historically: incinerated compound in presence of $O_2$
   - canisters caught the oxidized versions of the compound
 - types of EA
@@ -60,8 +62,8 @@ title: "CHEM 245: Intermediate Synthetic Chemistry Laboratory"
              - subtract from the base molecular formula
              - add to IHD/U
 
-** nuclear magnetic resonance spectroscopy
-*** Fundamentals (jan 15)
+** Rule of 13, Nuclear Magnetic Resonance (NMR) Spectroscopy
+*** Fundamentals (Tutorial 2)
 - spectroscopy: study of interaction between matter and EMR
 - NMR: interaction of EMR and nucleus of atom
   - $^13$C and $^1$H
@@ -116,10 +118,79 @@ title: "CHEM 245: Intermediate Synthetic Chemistry Laboratory"
   - in presence of applied magnetic field, electrons in pi bonds circulate, creating induced magnetic field
   - areas are more shielded or more deshielded than expected
   - (less sheilded) sp2 with EWG/sp2 < sp < sp3 (more sheilded)
-    [[../../../../images/245/image0.png]]
-*** $$^1H$$, Integration, Spin-Spin Splitting (Tutorial 4)
+    [[../../../../images/245/image0.jpg]]
 
-*** $$^1H$$, J-coupling constants, multiplet skewing, exchangeable protons
+*** $$^1H$$, Integration, Spin-Spin Splitting (Tutorial 4)
+**** Learning Objectives:
+- Identify the chemical shift (ppm) for various functional groups in 13C NMR
+- Identify a potential structure based on the number of signals
+- Identify a possible structure using a combination of spectroscopic
+techniques, including 13C NMR spectroscopy
+- Identify the sub-spectra of DEPT NMR spectroscopy and what
+connectivity information is present
+- Identify possible structure(s) using a combination of spectroscopic
+techniques, including DEPT NMR spectroscopy
+
+---
+
+- downfield == deshielded == low electron density
+- upfield == sheilded == high electron density
+- alkyne is more upsheild than alkene and benzene
+- most downfield is carbonyl, aldehyde, ketone
+- $^{12}C$ is most adundant isotype of carbon, but is not NMR active
+  - $^{13}C$: has 1.1% natural abundance
+- what is TMS: (CH$_{3})_{4}$Si, reference to 0
+- what is proton-decoupled: element coupling
+- DEPT NMR: signals display different phases depending on number of hydrogens attached to carbon
+  - DEPT-135: positive (CH3, CH), negative: (CH2)
+  - DEPT-90: positive (CH)
+  - DEPT-45: position (CH3, CH2, CH)
+  - $^{13}$C{$^{1}$H} NMR: all signals
+*** $$^1H$$, J-coupling constants, multiplet skewing, exchangeable protons (Tutorial 4/5)
+**** Learning Objectives
+- Identify a potential structure based on the number of signals, splitting
+patterns and/or J-coupling constants
+- Construct a target compound from 1H NMR spectrum
+- Calculate J values from 1H NMR spectrum
+- Correctly use short forms of NMR in presenting data in laboratory reports
+- Identify exchangeable protons
+- Explain why deuterated solvents are used in NMR spectroscopy
+- Identify deuterated solvents used in NMR spectroscopy
+
+---
+
+- what does $^{1}H$ NMR spectroscopy tell us: chemical shift, number of signals, integrals/integration, spin-spin splitting, J-coupling constants
+- integrals and integration: relative number of equivalent protons
+  - area under each peak proportional to number of Hs generating that peak
+- j coupling constant: how much are you interesting with other protons?
+- spin-spin coupling: are you seeing other protons?
+
+**** (Tutorial 5 start)
+- signals split via $2nl + 1$, $l=1/2$ for H
+- equivalent protons do not split each other
+- protons need to be 2-3 bonds away from each other to split each other (sigma)
+- H NMR signals split according to pascal's triangle
+- report centre of signal for chemical shift
+  - multiplet: report range of chemical shift
+    - how does spin-spin splitting work?
+      - protons have spin; neighbouring protons can sense the spin of other protons
+      - in an external magnetic field $B_0$, spin of protons $H_a$ and $H_b$ will either:
+        - both align with field: $H_a$ will shift downfield from "uneffected" position because $H_b$ deshields our signal
+        - one align with field, other is against field: $H_a$ will shift upfield from "uneffected" position because $H_b$ shields our signal
+          - probability based: half of $H_A$ shifts left, other half shifts right, so we get doublet
+- for ethyl group (ethyl iodide): 3 Hs on ethyl can arrange as: 3 (1/2), 3 (-1/2), 1 (1/2) 2 (-1/2), 1 (-1/2) 2 (1/2)
+  - this is why there is a splitting of 4, with height of signals corresponding to degeneracy
+[[../../../../images/245/ethyliodide.png]]
+- pascal triangle tells us relative height
+- CDCl$_{3}$: 1:1:1 triplet
+  - don't read D
+  - only want H from sample and H from solvent
+  - solubility
+  - also other deuterated solvents
+- J-coupling constant: show how strongly nuelci affected by neighbours
+  - J-constants of groups that split each other must be identical: (difference between splitted signals) between groups
+    - J depends on MHz of instrument: ppm * MHz
+  - useful for identifying sterochemistry, such as alkenes (trans or cis)
 ** infrared spectroscopy
 *** EM spectrum, FT-IR spectrometer, samples, molecular vibration modes
 *** Bond properties, Bond strengths, Alkanes, Alkenes, Alkynes
