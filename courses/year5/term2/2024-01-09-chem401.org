@@ -181,39 +181,96 @@ L/R circularly polarized photons have angular momentum $$+/- \hbar$$
 *** $$H_2O$$
 
 ** 10: molecular rotation and spin statistics 1
-- born-oppenheimer approximation: fixed nucleus
-  - total hamiltonian consists of kinetic energy of nucleus, electrons, and coloumb potential energy between nuclei, nuclei-electrons, and electrons
-  - (and BO adiabatic approximation): wavefunction is product of electron and nuclei $$\Psi_{n,i} = \chi^{(n)}_i (R) \psi^{el}_n(r;R)$$
-    - for a fixed R  we get the electronic schrodinger equation: $$\hat{H} = \hat{H}_{nuc} + \hat{H}_{elec}$$, where $$\hat{H}_elec = \psi^{el}_n(r;R) = E^{el}_n (R) \psi^{el}_n(r;R)$$
-  - nuclear schrodinger equation: $$[\hat{H}_{nuc} + E^{el}_n(R)]\chi^{n}_i (R) = E_{n, i \chi^{(n)}_i}(R)$$
-    - then by changing the value of R, we get the potential energy surface $$E^{el}_n$$
-- separation of vibration and rotation
-  - separation of translational motion
-    - we can seperate translational motion and internal motion (rotation and vibration) by using $$R_{CM}$$, center of mass
-      [[../../../../images/401/rcm.png]]
-  - $$\hat{T}_{nuc} = - \frac{\hbar^2}{2M} \nabla^2_{CM} - \frac{\hbar^2}{2 \mu} \nabla^2_{int}$$
-- can further seperate vibrational and rotational motion
-  - using polar coordinates
-    - $$\hat{H}_{nuc} + E^{el}_n (R) = \hat{T}_{vib} + E^{el}_n (R) + \frac{1}{2 \mu R^2} \hat{L}^2 (\theta \psi)$$ (last term is $$\hat{H}_{rot})$$
-  - we get vibration-rotation wavefunction: $$\chi_{n, v, J, M} (R) = S_v^(n) (R) Y_{JM} (\theta \psi)$$ where vibration only depends on bond length and rotation depends on two angles
-- rotation of diatomic molecules
-  - rigid rotater: if you set $R = R_e$ where $R_e$ is equlibirum bond length, $$\hat{T}_{vib} = 0$$
-  - spherical harmonics (eigensolution)
-    - for $$\hat{L}^2 | Y_{Jm}$$, $$\hbar^2 J (J+1)$$ is the eigenvalue
-    - for $$\hat{L}_z$$, $$\hbar m$$ is the eigenvalue
-  - moment of interia is simple $$I_e = \mu R^2_e$$
-  - rotational constant: $$B_e = \frac{\hbar^2}{2 I_e}$$ (J)
-    - $$ = \frac{\hbar^2}{8 \pi^2 I_e}$$ (Hz)
-    - $$ = \frac{\hbar^2}{8 \pi^2 I_e c}$$ (cm^{-1})
-- polyatomic molecules: linear
-  - moment of interia is more complicated:
-- polyatomic molecules: symmetric top
-- polyatomic molecules: spherical top
-- polyatomic molecules: asymmetric top
-- optical selection rule: diatomic and linear
-  - symmetric and asymmetric top molecules
-
+*** born-oppenheimer approximation
+- fixed nucleus
+- total hamiltonian consists of kinetic energy of nucleus, electrons, and coloumb potential energy between nuclei, nuclei-electrons, and electrons
+*** (and BO adiabatic approximation)
+- wavefunction is product of electron and nuclei $$\Psi_{n,i} = \chi^{(n)}_i (R) \psi^{el}_n(r;R)$$
+- for a fixed R  we get the electronic schrodinger equation: $$\hat{H} = \hat{H}_{nuc} + \hat{H}_{elec}$$, where $$\hat{H}_elec = \psi^{el}_n(r;R) = E^{el}_n (R) \psi^{el}_n(r;R)$$
+- nuclear schrodinger equation: $$[\hat{H}_{nuc} + E^{el}_n(R)]\chi^{n}_i (R) = E_{n, i \chi^{(n)}_i}(R)$$
+     - then by changing the value of R, we get the potential energy surface $$E^{el}_n$$
+*** separation of vibration and rotation
+- separation of translational motion
+  - we can seperate translational motion and internal motion (rotation and vibration) by using $$R_{CM}$$, center of mass
+         [[../../../../images/401/rcm.png]]
+- $$\hat{T}_{nuc} = - \frac{\hbar^2}{2M} \nabla^2_{CM} - \frac{\hbar^2}{2 \mu} \nabla^2_{int}$$
+*** can further seperate vibrational and rotational motion
+- using polar coordinates
+  - $$\hat{H}_{nuc} + E^{el}_n (R) = \hat{T}_{vib} + E^{el}_n (R) + \frac{1}{2 \mu R^2} \hat{L}^2 (\theta \psi)$$ (last term is $$\hat{H}_{rot})$$
+- we get vibration-rotation wavefunction: $$\chi_{n, v, J, M} (R) = S_v^(n) (R) Y_{JM} (\theta \psi)$$ where vibration only depends on bond length and rotation depends on two angles
+*** rotation of diatomic molecules
+- rigid rotater: if you set $R = R_e$ where $R_e$ is equilibrium bond length, $$\hat{T}_{vib} = 0$$
+- spherical harmonics (eigensolution)
+- for $$\hat{L}^2 | Y_{Jm}$$, $$\hbar^2 J (J+1)$$ is the eigenvalue
+- for $$\hat{L}_z$$, $$\hbar m$$ is the eigenvalue
+- moment of interia is simple $$I_e = \mu R^2_e$$
+- rotational constant:
+  - $$B_e = \frac{\hbar^2}{2 I_e} \text{ (J)}$$
+  - $$ = \frac{\hbar^2}{8 \pi^2 I_e} \text{ (Hz)}$$
+  - $$ = \frac{\hbar^2}{8 \pi^2 I_e c} \text{ (cm}^{-1})$$
+*** polyatomic molecules: linear
+- start with moment of inertia tensor:
+     $$\begin{bmatrix}
+        I_{xx} & I_{xy} & I_{xz} \\
+        I_{yx} & I_{yy} & I_{yz} \\
+        I_{zx} & I_{zy} & I_{zz} \\
+        \end{bmatrix}$$
+- diagonalize to get moment of intertia:
+     $$\begin{bmatrix}
+        I_{aa} & & \\
+        & I_{bb} & \\
+        & & I_{cc} \\
+        \end{bmatrix}$$
+- x y z axis don't always correspond to a b c axis
+- to calculate:
+  - $$I_{xx} = \Sigma m_\alpha (y^2_\alpha + z^2_\alpha)$$
+  - $$I_{xy} = - \Sigma m_\alpha x_\alpha y_\alpha$$
+- example: [[../../../../images/401/hoh.png]]
+  -
+  - $$I_{xx} = \Sigma m_\alpha (y^2_\alpha + z^2_\alpha) = M_H(f^2 + g^2) + M_H(f^2 + g^2) + M_O h^2$$
+  - $$I_{xy} = - \Sigma m_\alpha x_\alpha y_\alpha = -(M_H fg + M_H f (-g))$$ why no $M_O$
+  - $$\begin{bmatrix}
+        M_H h^2 + 2M_H (f^2 + g^2) & 0 & 0 \\
+        0 & M_O h^2 + 2 M_H g^2 & 0 \\
+        0 & 0 & 2M_H f^2 \\
+        \end{bmatrix}$$
+  - 3 moment of inertia values, 3 rotational constants
+    - units of inertia: $\text{amu} \AA^2$
+      - $$I_A \leq I_B \leq I_C$$, $$A \geq B \geq C$$
+    - rotational constant $=505379.07/I \text{amu} \AA^2$$
+- important quantum notes:
+  - $I_a = 0$, $I_b = I_c$
+  - degeneracies: g = 2J + 1
+  - $E_J = BJ(J+1)$
+*** polyatomic molecules: symmetric top
+- prolate: $I_a < I_b = I_c$, $A > B = C$
+- another quantum number: J = 0, 1 2, and K, M = -J, -J+1, ..., J-1, J
+  - if K = 0: g = 2J+1
+  - if K != 0: g = 2(2J+1)
+- $E_{JK} = BJ(J+1) + (A-B)K^2$
+[[../../../../images/401/prolate.png]]
+- oblate: $I_a = I_b < I_c$, $A = B < C$
+- $E_{JK} = BJ(J+1) + (C-B)K^2$
+[[../../../../images/401/oblate.png]]
+*** polyatomic molecules: spherical top
+- $I_a = I_b = I_c$
+[[../../../../images/401/sphericaltop.png]]
+- $E_J = BJ(J+1)$
+- there is still K, $g = (2J + 1)^2$
+*** polyatomic molecules: asymmetric top
+- $I_a \neq I_b \neq I_c$
+[[../../../../images/401/asym.png]]
+*** optical selection rule: diatomic and linear
+- $\mu_0 \neq 0$ $\Delta J = +/- 1$, $\Delta M = 0, +/-1$
+  - can only transition between J and J+1, seperations are 2B.
+  - transition frequency: $2B(J+1)$
+    - idk waht is mu
+*** symmetric and asymmetric top molecules
+- symmetric top: $\mu_0 \neq 0$ $\Delta J = +/- 1$, $\Delta M = 0, +/-1$, $\Delta K = 0$
+- asymmetric top: $\Delta J = 0, +/- 1$, $\Delta M = 0, +/-1$
+  - then more details based on if it is a-type, b-type, c-type transition
 ** 11: molecular rotation and spin statistics 2
+we can get the vibrational schrodinger equation by representing in polar coordinates:
 ** 12: molecular vibration
 ** 13: vibrational infrared and raman spectroscopy
 ** 14: electronic spectroscopy
@@ -221,3 +278,5 @@ L/R circularly polarized photons have angular momentum $$+/- \hbar$$
 ** 16: magnetic resonance
 ** 17: spectroscopy
 ** 18 - 25: final presentations
+
+* Footnotes
