@@ -77,11 +77,9 @@
 <li><a href="#light-matter-interaction">5: light-matter interaction</a></li>
 <li><a href="#prep-for-final-presentation">6: prep for final presentation</a></li>
 <li><a href="#molecular-symmetry-and-group-theory-1">8: molecular symmetry and group theory 1</a></li>
-<li><a href="#molecular-symmetry-and-group-theory-2">9: molecular symmetry and group theory 2</a>
-<ul>
-<li><a href="#h_2o"><span class="math display"><em>H</em><sub>2</sub><em>O</em></span></a></li>
-</ul></li>
-<li><a href="#molecular-rotation-and-spin-statistics-1">10: molecular rotation and spin statistics 1</a>
+<li><a href="#molecular-symmetry-and-group-theory-2">9: molecular symmetry and group theory 2</a></li>
+<li><a href="#molecular-rotation-and-spin-statistics-1">10: molecular rotation and spin statistics 1</a></li>
+<li><a href="#molecular-rotation-and-spin-statistics-2">11: molecular rotation and spin statistics 2</a>
 <ul>
 <li><a href="#born-oppenheimer-approximation">born-oppenheimer approximation</a></li>
 <li><a href="#and-bo-adiabatic-approximation">(and BO adiabatic approximation)</a></li>
@@ -94,17 +92,31 @@
 <li><a href="#polyatomic-molecules-asymmetric-top">polyatomic molecules: asymmetric top</a></li>
 <li><a href="#optical-selection-rule-diatomic-and-linear">optical selection rule: diatomic and linear</a></li>
 <li><a href="#symmetric-and-asymmetric-top-molecules">symmetric and asymmetric top molecules</a></li>
+<li><a href="#general-notes">general notes</a></li>
 </ul></li>
-<li><a href="#molecular-rotation-and-spin-statistics-2">11: molecular rotation and spin statistics 2</a></li>
-<li><a href="#molecular-vibration">12: molecular vibration</a></li>
-<li><a href="#vibrational-infrared-and-raman-spectroscopy">13: vibrational infrared and raman spectroscopy</a></li>
+<li><a href="#molecular-vibration">12: molecular vibration</a>
+<ul>
+<li><a href="#harmonic-oscillator-model">harmonic oscillator model</a></li>
+<li><a href="#selection-rule">selection rule</a></li>
+<li><a href="#rotation-vibration-transition-diatomic-molecules">rotation-vibration transition (diatomic molecules)</a></li>
+<li><a href="#vibration-of-polyatomic-molecules">vibration of polyatomic molecules</a></li>
+<li><a href="#vibrational-levels">vibrational levels</a></li>
+<li><a href="#other-info">other info</a></li>
+<li><a href="#normal-modes">normal modes</a></li>
+<li><a href="#symmetry-of-vibrational-wavefunction">symmetry of vibrational wavefunction</a></li>
+</ul></li>
+<li><a href="#vibrational-infrared-and-raman-spectroscopy">13: vibrational infrared and raman spectroscopy</a>
+<ul>
+<li><a href="#scattering">scattering:</a></li>
+<li><a href="#raman">raman</a></li>
+<li><a href="#resonant-raman-scattering">resonant raman scattering:</a></li>
+</ul></li>
 <li><a href="#electronic-spectroscopy">14: electronic spectroscopy</a></li>
 <li><a href="#electronic-spectroscopy-1">15: electronic spectroscopy</a></li>
 <li><a href="#magnetic-resonance">16: magnetic resonance</a></li>
 <li><a href="#spectroscopy">17: spectroscopy</a></li>
 <li><a href="#final-presentations">18 - 25: final presentations</a></li>
 </ul></li>
-<li><a href="#footnotes">Footnotes</a></li>
 </ul></div>
 <div id="body"><h1 id="questions">questions</h1>
 <ul>
@@ -397,8 +409,8 @@
 <li>projection operator <span class="math display">$$\hat{P^{\mu}}$$</span>: annihilates all functions that does not belong to <span class="math display"><em>μ</em></span>-th irreducible representation</li>
 </ul></li>
 </ul>
-<h3 id="h_2o"><span class="math display"><em>H</em><sub>2</sub><em>O</em></span></h3>
 <h2 id="molecular-rotation-and-spin-statistics-1">10: molecular rotation and spin statistics 1</h2>
+<h2 id="molecular-rotation-and-spin-statistics-2">11: molecular rotation and spin statistics 2</h2>
 <h3 id="born-oppenheimer-approximation">born-oppenheimer approximation</h3>
 <ul>
 <li>fixed nucleus</li>
@@ -524,11 +536,8 @@
 <ul>
 <li><span class="math inline"><em>μ</em><sub>0</sub> ≠ 0</span> <span class="math inline"><em>Δ</em><em>J</em> =  + / − 1</span>, <span class="math inline"><em>Δ</em><em>M</em> = 0,  + / − 1</span>
 <ul>
-<li>can only transition between J and J+1, seperations are 2B.</li>
-<li>transition frequency: <span class="math inline">2<em>B</em>(<em>J</em>+1)</span>
-<ul>
-<li>idk waht is mu</li>
-</ul></li>
+<li>can only transition between J and J+1, separations are 2B.</li>
+<li>transition frequency: <span class="math inline">2<em>B</em>(<em>J</em>+1)</span></li>
 </ul></li>
 </ul>
 <h3 id="symmetric-and-asymmetric-top-molecules">symmetric and asymmetric top molecules</h3>
@@ -539,16 +548,134 @@
 <li>then more details based on if it is a-type, b-type, c-type transition</li>
 </ul></li>
 </ul>
-<h2 id="molecular-rotation-and-spin-statistics-2">11: molecular rotation and spin statistics 2</h2>
-<p>we can get the vibrational schrodinger equation by representing in polar coordinates:</p>
+<h3 id="general-notes">general notes</h3>
+<ul>
+<li>no dipole moment, no transition (mu cant be 0, mu is dipole moment)</li>
+</ul>
 <h2 id="molecular-vibration">12: molecular vibration</h2>
+<ul>
+<li>we can get the vibrational schrodinger equation by representing in polar coordinates: <span class="math display">$$[-\frac{\hbar^2}{2 \mu} \frac{\partial^2}{\partial q^2}]\phi_v^{(n)} = E^{(n)}_{vib, v} \phi^{(n)}_v$$</span></li>
+<li><span class="math inline"><em>D</em><sub><em>e</em></sub></span> is equilibrium dissociation energy (bond dissociation energy)
+<ul>
+<li>associated with equilibrium bond distance</li>
+<li><span class="math inline"><em>D</em><sub><em>e</em></sub> − <em>Z</em><em>P</em><em>E</em> = <em>D</em><sub>0</sub></span></li>
+</ul></li>
+<li><span class="math inline"><em>D</em><sub>0</sub></span> is dissociation energy (chemical-dissociation energy), true ground state energy</li>
+</ul>
+<h3 id="harmonic-oscillator-model">harmonic oscillator model</h3>
+<ul>
+<li>taylor series around <span class="math inline"><em>R</em><sub><em>e</em></sub></span>
+<ul>
+<li>0 potential at <span class="math inline"><em>R</em><sub><em>e</em></sub></span></li>
+<li>first derivative is 0 (this is set, to find eq point)</li>
+<li>harmonic potential: <span class="math display">$$V(q) = \frac{1}{2} (\frac{d^2 V}{dq^2})_0 q^2 = \frac{1}{2} kq^2$$</span>
+<ul>
+<li>classical: <span class="math display">$$T + V = E = \frac{1}{2} k x_0^2$$</span></li>
+<li>quantum: <span class="math display">$$E_v = (v + \frac{1}{2}) hv_0$$</span>, and the Hamiltonian: <span class="math display"><em>Ĥ</em> = <em>T̂</em> + <em>V̂</em></span></li>
+</ul></li>
+</ul></li>
+</ul>
+<h3 id="selection-rule">selection rule</h3>
+<ul>
+<li>within the same electronic state (which means? same quantum numbers): <span class="math display"><em>Δ</em><em>v</em> + / − 1</span>, and <span class="math display">$$\frac{df \mu_0}{dq} \neq 0$$</span>, there must be dipole moment/must be polar
+<ul>
+<li>fundamental: <span class="math display">1 ← 0</span></li>
+<li>hot bands: <span class="math display">2 ← 1</span> observed when its really hot</li>
+<li>overtone: <span class="math display">2 ← 0</span> (2 times the fundamental frequency)</li>
+</ul></li>
+</ul>
+<h3 id="rotation-vibration-transition-diatomic-molecules">rotation-vibration transition (diatomic molecules)</h3>
+<ul>
+<li>energy: <span class="math display">$$E_{vJ} = (v + \frac{1}{2}) h_{v_e} + B_e J (J+1)$$</span> first term (vibration) + second term (rotation)</li>
+<li>rotational: <span class="math display"><em>Δ</em><em>J</em> =  + / − 1</span> <span class="math display"><em>Δ</em><em>M</em> = 0,  + / − 1</span>, <span class="math display"><em>Δ</em><em>J</em> = 0,  + / − 1</span> if <span class="math display"><em>L</em>, <em>S</em> ≠ 0</span></li>
+<li>vibrational: <span class="math display"><em>δ</em><em>v</em> =  + / − 1</span> and dipole moment cant be 0
+<ul>
+<li>types of branches:
+<ul>
+<li>P branch: <span class="math display"><em>v</em><sub><em>J</em> − 1 ← <em>J</em></sub></span>,</li>
+<li>Q branch: <span class="math display"><em>v</em><sub><em>J</em> ← <em>J</em></sub></span>, <span class="math display"><em>Δ</em><em>J</em> = 0</span></li>
+<li>R branch: <span class="math display"><em>v</em><sub><em>J</em> + 1 ← <em>J</em></sub></span>, <span class="math display"><em>Δ</em><em>J</em> =  + 1</span></li>
+</ul></li>
+</ul></li>
+</ul>
+<h3 id="vibration-of-polyatomic-molecules">vibration of polyatomic molecules</h3>
+<ul>
+<li>for each atom, you get one coordinate, then you get <span class="math display">$$\hat{T}_vib = \frac{1}{2} \Sigma q^2_i$$</span>
+<ul>
+<li>do taylor expansion, then you get hessian matrix, <span class="math display"><em>b</em><sub><em>i</em><em>k</em></sub></span>
+<ul>
+<li>normal modes: coordinate system that make <span class="math display"><em>b</em><sub><em>i</em><em>k</em></sub></span> diagonal</li>
+</ul></li>
+</ul></li>
+</ul>
+<h3 id="vibrational-levels">vibrational levels</h3>
+<ul>
+<li>fundamental: one quanta change</li>
+<li>overtone: two quanta change</li>
+<li>combination: different modes all transition</li>
+<li>energy of all vibrational modes: <span class="math display">$$\Sigma_i (n_i + \frac{d_i}{2}) v_i$$</span>
+<ul>
+<li>total zero point: <span class="math display">$$\frac{1}{2} (v_1 + ... v_n)$$</span></li>
+</ul></li>
+</ul>
+<h3 id="other-info">other info</h3>
+<ul>
+<li>C-H stretch: 2700-3100 1/cm</li>
+<li>O-H stretch: 3580 - 3650 1/cm</li>
+</ul>
+<h3 id="normal-modes">normal modes</h3>
+<ul>
+<li>to determine how many of each normal mode you have
+<ul>
+<li>translational: always 3 (x,y,z)</li>
+<li>rotational: (R<sub>x</sub>, R<sub>y</sub>, R<sub>z</sub>):</li>
+<li>left over is vibrational</li>
+</ul></li>
+</ul>
+<h3 id="symmetry-of-vibrational-wavefunction">symmetry of vibrational wavefunction</h3>
+<ul>
+<li>ground state is always (0,0,0,…)</li>
+<li>two quanta of B<sub>2</sub> gives A<sub>1</sub></li>
+</ul>
 <h2 id="vibrational-infrared-and-raman-spectroscopy">13: vibrational infrared and raman spectroscopy</h2>
+<h3 id="scattering">scattering:</h3>
+<ul>
+<li>incident beam gets scattered by a medium, producing wavelengths of ??? frequency in all directions ??? is the frequency the same or different
+<ul>
+<li>stokes: lower frequency</li>
+<li>anti-stokes: higher frequency</li>
+</ul></li>
+</ul>
+<p><img src="../../../../images/401/scattering.png" /></p>
+<ul>
+<li>rayleigh scattering: object much smaller than wavelength</li>
+<li>mie scattering: object larger than wavelength</li>
+<li>brillouin scattering: condensed phase, less dense phase is same size as wavelength</li>
+</ul>
+<h3 id="raman">raman</h3>
+<ul>
+<li>two photon scattering</li>
+<li>scattered photon loses energy, and there is intermediate state
+<ul>
+<li>final energy is higher than initial: stokes</li>
+<li>final energy is lower than initial: anti-stokes</li>
+</ul></li>
+<li><span class="math display">$$\frac{\partial \alpha}{\partial R} \neq 0$$</span>, must be nonpolar
+<ul>
+<li><span class="math display">⟨<em>i</em>|<em>α</em>|<em>f</em>⟩</span></li>
+</ul></li>
+<li>excitation wavelength doesnt matter, always produces same output</li>
+</ul>
+<h3 id="resonant-raman-scattering">resonant raman scattering:</h3>
+<ul>
+<li>wavelength is same as excitation wavelength
+<img src="../../../../images/401/two.png" /></li>
+</ul>
 <h2 id="electronic-spectroscopy">14: electronic spectroscopy</h2>
 <h2 id="electronic-spectroscopy-1">15: electronic spectroscopy</h2>
 <h2 id="magnetic-resonance">16: magnetic resonance</h2>
 <h2 id="spectroscopy">17: spectroscopy</h2>
-<h2 id="final-presentations">18 - 25: final presentations</h2>
-<h1 id="footnotes">Footnotes</h1></div>
+<h2 id="final-presentations">18 - 25: final presentations</h2></div>
   </div>
   <div class="flex-row link-no-style">
     

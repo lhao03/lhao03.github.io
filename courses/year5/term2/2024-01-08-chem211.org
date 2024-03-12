@@ -119,14 +119,25 @@ title: "CHEM 211: Introduction to Chemical Analysis"
 
 
 * units
-*** Course Introduction
-- analytical chemistry: obtaining, processing, communicating information about composition/structure of matter
-  - what matter is present and how much
-- trends: personalized technology
-- making good measurements and know if those measurements are good
-** Analytical concepts
-*** An Introduction to Analytical Measurements
+** 1: Analytical Concepts & Statistics
+1. Define analytical terminology (e.g., blank, matrix, analyte, assay, quantitative, qualitative)
+2. Describe figures of merit and use them to characterize and compare methods.
+3. Identify potential challenges related to sample collection and preparation.
+4. Calculate the detection limit.
+5. Differentiate between random and systematic sources of uncertainty (error) and explain how repeated measurements can help reduce uncertainty.
+6. Describe how the sample matrix can affect measurements.
+7. Explain the 3 methods of calibration: external standards, standard addition and internal standards
+8. Explain the standard addition and internal standard methods of calibration and how they can compensate for certain types of interferences.
+9. Interpret or create calibration curves based on external standards, standard additions, or internal standards to determine unknown quantities (e.g., analyte concentration in a sample).
+10. Describe the method of least squares in linear regression
+11. Apply error propagation and appropriate significant figures in reporting calculated values.
+12. Explain how a Gaussian distribution represents randomly distributed data and forms the basis for confidence limits and statistical tests.
+13. Calculate an average, standard deviation, and confidence limits.
+14. Select and apply appropriate statistics to test a hypothesis (e.g., comparison of means, comparison of precision, rejection of outliers).
+
+
 *** lecture 1
+**** An Introduction to Analytical Measurements
 - assay: is process of determining the amount of analyte (substance being measured) in sample
 - analyte:
 - qualitative analysis: (identification)
@@ -228,7 +239,7 @@ title: "CHEM 211: Introduction to Chemical Analysis"
 - sig figs:
   - pH: pH of 2.45, digits after decimal are how many sig figs the conc. has
   - exact number has infinite number of sig figs
-*** Analytical Measurements and Statistics - Gaussian Distribution, Standard Deviation
+**** Analytical Measurements and Statistics - Gaussian Distribution, Standard Deviation
 - gaussian distribution: bell curve
   - 1sd: 68%
   - 2sd: 95%
@@ -239,7 +250,7 @@ title: "CHEM 211: Introduction to Chemical Analysis"
 - propagation of uncertainty:
   - addition/sub: $$\sqrt{\sigma^2_a + \sigma^2_b}$$
   - mult/div: RSD used
-*** Analytical Measurements and Statistics - Significance Testing
+**** Analytical Measurements and Statistics - Significance Testing
 - significance testing: is difference between two values too large to be explained by random uncertainty
 | case 1 t-test           | case 2 t test               | case 3 t-test       | grubb's test |
 | compare experi. to true | compare two experi. results | compare two methods | outlier?     |
@@ -266,8 +277,17 @@ title: "CHEM 211: Introduction to Chemical Analysis"
     - $$pH = 1/2(pK_{a1} + pK_{a2})$$ this is also how you get isoelectric point
 - amphiprotic substance
 
-** Equilibrium and volumetric analysis
-*** Chemical Equilibrium Applied to Analytical Measurements
+** 2: Equilibrium and Volumetric Analysis
+1. Recognize compounds that participate in equilibrium reactions or otherwise have an effect on those reactions (e.g., acids, bases, ions that form insoluble or sparingly salts, ligands).
+2. Define the following terms mathematically and in your own words: Ka, Kb, Kw, Ksp, Kf, Kd.
+3. Write mass balance, charge balance and solubility expressions for an equilibrium problem.
+4. Relate physical constants (Ka, Kb, Ksp, Kf) to trends in the shape of titration curves and distribution diagrams.
+5. Select an appropriate method of endpoint detection and/or indicator (from a limited group of options) for a given analysis and justify your choice.
+6. Write the equilibrium expression(s) for a complexation titration
+7. Qualitatively predict the consequences of disturbing a system at equilibrium (e.g., adjustment of pH, changes in concentration, or the addition of new species).
+8. Identify relevant equations and make appropriate assumptions to quantitatively analyze an equilibrium system.
+
+**** Chemical Equilibrium Applied to Analytical Measurements
 *** lecture 6
 - systematic treatment of equilibria
   - as many equations as unknowns
@@ -276,7 +296,8 @@ title: "CHEM 211: Introduction to Chemical Analysis"
     - mass balance (many)
     - formal: moles of original chemical formula in solution, without regard for species that already exist
 - alpha diagrams: can plot alpha as a function of pH
-*** Solution Equilibrium and Systematic Treatment of Chemical Equilibrium
+
+**** Solution Equilibrium and Systematic Treatment of Chemical Equilibrium
 *** lecture 7
 - complexing agent: increases solubility of precipiate
 - complex formation: adding excess of B doesn't always precipiate max amount of A (you can have multiple species of complex)
@@ -302,7 +323,8 @@ title: "CHEM 211: Introduction to Chemical Analysis"
   - effective range: $$pK_a +- 1$$
 - acid-base indicator effective within the same range, but in practice is 0.5
   - color transition
-*** Polyprotic Acid Equilibria, Polyprotic Acid-Base Titrations
+
+**** Polyprotic Acid Equilibria, Polyprotic Acid-Base Titrations
 *** lecture 8
 - indicators: are actually acids and bases
   - range $P_{ka}$ plus or minus 1, in practice 0.5
@@ -343,7 +365,8 @@ title: "CHEM 211: Introduction to Chemical Analysis"
         - too much ACA decreases sharpness of endpoint
           $$M^{2+} + 4NH_3 \Leftrightarrow Zn(NH_3)_4^{2+}$$
           $$Zn(NH_3)_4^{2+} + Y^{4-} \Leftrightarrow ZnY^{2-} + 4NH_3$$
-*** Complexation Equilibria - Quantitative EDTA Titrations
+
+**** Complexation Equilibria - Quantitative EDTA Titrations
 *** lecture 9
 - indicators for EDTA:
   - Eriochrome Black T: only works on some metals, can use backtitration to use with other metals
@@ -373,10 +396,21 @@ title: "CHEM 211: Introduction to Chemical Analysis"
       - want to analyse a metal with EDTA, but if the matrix is unknown, other metals may bind to EDTA that is not the metal of interest
       - instead, react $$Ca^{2+}$$ with $$MgY^+$$; $$Ca^{2+}$$ has higher $K_f$ will displace $$Mg^{2+}$$
         - titrate the freed $$Mg^{2+}$$ in solution ? we titrate the excess Mg with EDTA?
-*** More Volumetric Analysis
+**** More Volumetric Analysis
 
-** Electrochemistry and Potentiometry
-*** Fundamentals of Electrochemistry
+** 3: Electrochemistry and Potentiometry
+- Define electric potential.
+- Draw and label a diagram of a galvanic cell, write the shorthand cell notation for a galvanic cell, and explain the role of each component in galvanic cell.
+- Write the Nernst equation and use it and standard potentials to calculate galvanic cell potentials.
+- Explain how potentiometry can be used to determine analyte concentrations.
+- Describe how a redox titration can be used to determine the concentration of an analyte, calculate the concentration of the unknown from redox titration data, and calculate the cell potential at different points during a redox titration.
+- Describe the design and use of reference electrodes, including drawing simple diagrams of common reference electrodes.
+- Describe the origin of membrane potentials and their analytical utility in different types of ion selective electrodes.
+- Draw and label a diagram of a glass/pH electrode. Explain the principles of its operation and its sensitivity to pH.
+- Write and apply the Nikolsky equation.
+- Draw diagrams and explain the principles of operation of liquid membrane and solid-state ISEs.
+
+**** Fundamentals of Electrochemistry
 *** lecture 10/11
 - what is electrochemistry: electrical measurements of chemical systems
   - inexpensive equipment, can measure complex samples with little sample prep
@@ -446,8 +480,8 @@ title: "CHEM 211: Introduction to Chemical Analysis"
       $$E = E^\circ - \frac{RT}{nF} \ln \frac{\gamma_C^c [C]^c\gamma_D^d[D]^d}{\gamma_A^a[A]^a \gamma_B^b[B]^b}$$
 - can us Nerst on half and full reactions (for half, if there is solid reactant or product, just least as 1)
 
-*** Analytical Measurements using Electrochemical Cells
-**** lecture 12/13
+**** Analytical Measurements using Electrochemical Cells
+*** lecture 12/13
 - harvey:: 11A, 11B.1-.3, 9D
 - key points:
   - tied equilibria -> make electrode whose potential is fixed
@@ -457,7 +491,7 @@ title: "CHEM 211: Introduction to Chemical Analysis"
   - indicator + reference electrodes -> setup for redox titration
   - pre-treatment of analyte
   - common reagents for pre-treatment and/or redox titrants
-*** Electrodes
+**** Electrodes
 salt bridges are built into reference cell
 - SCE: paste of mercury and calomel (Hg$_{2}$Cl_{2}$)
   - KCl filling solution
@@ -611,8 +645,8 @@ salt bridges are built into reference cell
 - 1:1 sstoich: symmetric about equiv point
 - otherwise: assynmetric when not 1:1
 
-*** Ion-selective Electrodes
-*** Potentiometry – Reference and Indicator Electrodes, Ion-Selective
+**** Ion-selective Electrodes
+**** Potentiometry – Reference and Indicator Electrodes, Ion-Selective
 - separation of charge: associated electric potential
   - gauss law: electric potential proportional to charge density
   - liquid junction potentials
@@ -647,88 +681,77 @@ salt bridges are built into reference cell
   - Na conducts electricity in dry interior (0.1nm)
     [[../../../../images/211/membranee.png]], which is more negative charged side? higher pH side
 
-** UV-visible spectrophotometry
-*** Ion-selective Electrodes /Introduction to Spectrophotometry
-*** Fundamentals of Spectrophotometry
-*** Applications of Spectrophotometry – Quantitative
-*** Spectrophotometry, Beer-Lambert Law
-*** Applications of Spectrophotometry I
-*** Applications of Spectrophotometry II
+** 4: UV-visible spectrophotometry
+textbook notes:
+- if energy ($$\hbar v$$) of photon is more than excited state - ground state, excitation occurs
+- atom/molecule in excited state can emit photon of energy $$\hbar v$$
+- you don't see the colors a substance absorbs
+*** wavelength selection using monochromator:
+- filters have a fixed wavelength
+- if we want to make measurements at different wavelengths -> need more than one filter
+- monochromator: select narrow band of radiation, allow for continuous adjustment of band's nominal wavelength
+  - nominal wavelength: the wavelength you want?
+    - want high throughput of radiation and narrow effective bandwidth
+[[../../../../images/211/nominal.jpg]]
+[[../../../../images/211/monochomator.png]]
+- collimating mirror: collects radiation
+  - reflects parallel beam of radiation to diffraction grating
+- differaction grating: optically reflecting surface with large number of parallel grooves
+  - disperses radiation -> focused onto planar surface that contains exit slit
+  - or prism
+- converts polychromatic source of radiation to monochromatic source of finite bandwidth
+- exit slit:
+  - narrow: smaller effective bandwidth and better resolution, but smaller throughput of radiation
+- can be fixed-wavelength or scanning
+  - fixed: manually select wavelength by rotating grating
+*** spectroscopy based on absorption
+- absorbed wavelength intensities are attenuated
+- for an analyte to absorb EMR:
+  - there must be mechanism which EMR interacts with analyte -> UV/Vis changes energy of electrons, IR -> bond vibrational energy
+  - photon energy must equal different in energy between two allowed energy states
+**** IR spectra for molecules for polyatomic molecules:
+- energy for allowed vibration mode: $$E_v = v + \frac{1}{2} h v_o$$
+  - fundamental: +/- 1
+  - overtone: +/- 2,3
+**** UV/Vis spectra for molecules/ions
+- difference in energy between HOMO and LUMO -> UV/Vis, absorption of photon is possible
+- types of transitions, n is non bonding:
+  - $$\sigma \rightarrow \sigma^*$$, 200 nm
+  - $$n \rightarrow \sigma^*$$, 160-260 nm
+  - $$\pi \rightarrow \pi^*$$, 200-500 nm
+  - $$n \rightarrow \pi^*$$, 250-600 nm
+- charge transfer: inorganic metal-ligand complexes, electron from metal transferred to ligand -> produce very large absorbance
+- UV/Vis more broad than IR
+  - UV/Vis absorption results in change to electronic energy levels and maybe vibrational -> number of closely spaced absorption bands that merge together to form single broad absorption band
+ - IR absorption only results in change to vibrational energy levels
+**** UV/Vis spectra for atoms
+- enough energy to cause change in atom's valence electrons
+- only allowed between $l +-1$$
+- excited state lifetime is short
+- narrow width in absorption lines, due to fixed difference in energy and lack of rotational/vibrational energy levels (width is $$10^{-5} - 10^{-3}$$ nm)
+**** transmittance and absorbance
+- transmittance: $$$T = \frac{P_T}{P_0}$
+[[../../../../images/211/p.png]]
+- redefine $P_0$ from blank so we don't need to care about loss of light from the source
+- absorbance is linear function of analyte concentration: $$A = -log T = - log \frac{P_T}{P_0}$$
+  - require line source instead of continuum source because effective bandwidth is too large
 
-** Separations and liquid chromatography
-*** Analytical Separations Fundamentals I
-*** Analytical Separations Fundamentals II
-*** Gas Chromatography
-*** Liquid Chromatography I
-*** Liquid Chromatography II
-*** Catch-up/review
+**** Ion-selective Electrodes /Introduction to Spectrophotometry
+**** Fundamentals of Spectrophotometry
+**** Applications of Spectrophotometry – Quantitative
+**** Spectrophotometry, Beer-Lambert Law
+**** Applications of Spectrophotometry I
+**** Applications of Spectrophotometry II
 
-* lab notes
-** introduction to statistics
-- assumption: data randomly distributed in normal (gaussian) distribution
-- estimation of precision: standard deviation
-- outlier: Grubb's test
-- comparing two standard deviations: F test
-- comparing two means: Student's t-test
-- statistics of repeated measurements:
-  - absolute uncertainty: uncertainty described directly in the units of measurement
-    - absolute error: uncertainty from instrument or equipment
-    - reproducible and source of origin known
-  - relative uncertainty: percentage of magnitude of quantity measured
-    - no units, expressed as percentage
-- mean, sd, confidence limits
-  - sd: random scatter (s)
-  - relative sd: $$\frac{s}{\bar{x}} \times 100\%$$
-  - confidence limits: range that you are confident that true value falls
-    - number of sds that must be used for different confidence levels is student's t value $$\bar{x}\pm\frac{ts}{\sqrt{N}}$$
-    - table t value: requires confidence level (95%) and degrees of freedom (N - 1) where N is number of measurements
-- propagation of uncertainty (where $y$ is the answer after doing these operations)
-  - addition/subtraction: $$e_y = \sqrt{\sum_{n=1}^N e^2_{x_n}}$$
-  - multiplication/division: $$e_y = y\sqrt{\sum_{n=1}^N (\frac{e_{x_n}}{x_n})^2}$$
-  - $$y = log(x)$$: $$e_y =  \frac{1}{ln(10)}\frac{e_x}{x}$$
-  - $$y = ln(x)$$: $$e_y = \frac{e_x}{x}$$
-  - powers of 10 raised to $x$: $$e_y = y ln(10) e_x$$
-  - powers of e raised to $x$:  $$e_y = y e_x$$
-- sig figs and presenting results:
-  1. uncertainty of measurement is larger than instrument's uncertainty
-     - sd determines uncertainty of measurement
-     - if uncertainty is larger than instrument's uncertainty, the first non zero digit of sd is last sig dig in mean
-     - report as $$0.xyz_l \pm 0.00s_d$$
-     - sd is reported as one digit, the decimal places of mean and sd must match, record the value after the last sig dig as subscript
-  2. uncertainty is smaller than instrument's uncertainty
-     - can't use first rule, otherwise reported uncertainty (sd) is lower than instrument uncertainty which cannot be true
-     - report answer to same number of digits as instrument's readout
-- statistics of linear regression analysis
-  1. calibration curve analysis (pure compound dissolved in pure water):
-     - prepare series of standard solutions containing known concentration of analyte -> measure property of substance -> plot calibration curve
-       - goodness of fit: correlation coefficient $$R^2$$
-       - once CC established, unknown solutions can be measured and concentration calculated from: $$C = \frac{(A-b)}{m}$$ where C is concentration, A is measured property, b is y-intercept, m is slope
-     - measure of precision is sd: sd of result must be calculated taking into account precision of the calibration curve $$s_x$$
-       - depends on sd of slope, regression
-       - number of values measured for CC
-       - number of times the sample was measured
-       - square of distance of unknown measurement from center of calibration curve $$(\bar{y_k}-\bar{y})^2$$
-         - closer the measurement is made to the ends of calibration curve, the larger the deviation
-     - confidence limits for values $$CL = x \pm t \dot s_x$$
-       - $t$ value taken at desired confidence level and $(N-2)$ degrees of freedom (because need two points to specify a line)
-     - beer's law
-       - spectrophotometric analysis: theory -> light of wavelength $$\lambda$$ and power $$P_o$$/intensity $$I_o$$ enters a sample that absorbs that wavelength, sample molecules raised to excited state and exiting $$P$$ of light will be less. $$T = \frac{I}{I_o} = \frac{P}{P_o)}$$
-       - measure of $$I_o$$ with no sample present, then measure $$I$$ with sample present: $$A = mC + b$$
-       - transmittance vs. concentration is a exponentially decreasing, so $$A = -log T$$
-         - absorbance is directly proportional to concentration of light-absorbing substance: $$A = abC = \epsilon bC$$, b is path length, A is absorbance, C is concentration, a is proportionality constant called absorptivity
-           - linear calibration plot
-       - plot absorbance vs. concentration to get ab or $$\epsilon b$$ (will be linear)
-  2. standard addition analysis
-     - complex samples
-       - matrix effect can be minimized in two ways:
-         1. add standard solution so same substances as unknown sample (same matrix in all solutions)
-         2. prepare standard solutions from sample rather than pure analyte and pure solvent
-            1. measure property of unknown solution
-            2. add known amount of analyte to sample and measure again
-               - if $$vol_{sample} >> vol_{analyte}$$, will have around same matrix
-       - or pipetting equal volumes of unknown solution into vol. flask and adding known amount of analyte to one, diluting both
-         - spiking, and matrix stays the same for both (standard addition method)
-         - absorbance vs. concentration of spike:
+** 5: Separations and liquid chromatography
+*** lecture 14
+**** Analytical Separations Fundamentals I
+**** Analytical Separations Fundamentals II
+**** Gas Chromatography
+**** Liquid Chromatography I
+**** Liquid Chromatography II
+**** Catch-up/review
+
 ** glassware
 pipette
 - TD: pipette is accurately calibrated to deliver specified volume of liquid

@@ -63,7 +63,6 @@
     
 <div id="toc" class="toc">Contents:
 <ul>
-<li><a href="#questions">questions:</a></li>
 <li><a href="#course-schedule">Course Schedule</a>
 <ul>
 <li><a href="#webmo-and-python-tutorials">WebMO and Python tutorials</a></li>
@@ -77,26 +76,39 @@
 </ul></li>
 <li><a href="#lectures">Lectures</a>
 <ul>
-<li><a href="#section-1">0</a>
+<li><a href="#python-and-qm-intro">2 Python and QM Intro</a>
 <ul>
 <li><a href="#notes-on-relativistic-effects">notes on relativistic effects</a></li>
 </ul></li>
-<li><a href="#section-2">1</a></li>
-<li><a href="#section-3">2</a></li>
-<li><a href="#section-4">3</a></li>
-<li><a href="#section-5">4</a></li>
-<li><a href="#section-6">5</a></li>
-<li><a href="#section-7">6</a></li>
-<li><a href="#section-8">7</a></li>
-<li><a href="#section-9">8</a></li>
-<li><a href="#section-10">9</a>
+<li><a href="#relativity-boson-fermion">3 Relativity, Boson, Fermion</a>
+<ul>
+<li><a href="#relativity-causes">relativity causes</a></li>
+<li><a href="#noone-can-travel-faster-than-the-speed-of-light-v-leq-c">noone can travel faster than the speed of light: <span class="math display">|<em>v</em>| ≤ <em>c</em></span></a></li>
+<li><a href="#length-contraction">length contraction:</a></li>
+<li><a href="#mass-increase">mass increase:</a></li>
+<li><a href="#time-dilation">time dilation:</a></li>
+<li><a href="#core-electrons-more-stable">core electrons: more stable</a></li>
+<li><a href="#fermion-half-integer-spin">fermion: half integer spin</a></li>
+<li><a href="#boson-integer-spin">boson: integer spin</a></li>
+<li><a href="#pauli-exclusion-principle">Pauli Exclusion Principle</a></li>
+</ul></li>
+<li><a href="#postulates-in-qm">4 Postulates in QM</a></li>
+<li><a href="#dirac-notation-basis-set-expansion-superposition-of-states">5 Dirac notation, basis set expansion, superposition of states</a>
+<ul>
+<li><a href="#dirac-notation">dirac notation</a></li>
+<li><a href="#closure">closure</a></li>
+<li><a href="#lcao-how-does-it-differ-from">LCAO: how does it differ from</a></li>
+</ul></li>
+<li><a href="#matrix-mechanics">6 Matrix mechanics</a></li>
+<li><a href="#finished-reviewing-here">finished reviewing here</a></li>
+<li><a href="#section-1">9</a>
 <ul>
 <li><a href="#bonding-between-2-different-atomic-orbitals-on-2-different-atoms">bonding between 2 different atomic orbitals on 2 different atoms</a></li>
 <li><a href="#molecular-hamiltonian">molecular hamiltonian</a></li>
 <li><a href="#born-oopenheimer-approximation">born-oopenheimer approximation</a></li>
 <li><a href="#adiabatic-and-boa">adiabatic and BOA</a></li>
 </ul></li>
-<li><a href="#section-11">10</a>
+<li><a href="#section-2">10</a>
 <ul>
 <li><a href="#lecture-notes">lecture notes:</a></li>
 <li><a href="#potential-energy-surfaces-pes">potential energy surfaces (PES)</a></li>
@@ -104,46 +116,44 @@
 <li><a href="#reaction-paths-transition-states-and-intermediates">reaction paths, transition states and intermediates</a></li>
 <li><a href="#diabatic-and-adiabatic-processes">diabatic and adiabatic processes</a></li>
 </ul></li>
-<li><a href="#section-12">11</a>
+<li><a href="#section-3">11</a>
 <ul>
 <li><a href="#pes-interactions">PES interactions</a></li>
 <li><a href="#adiabatic-and-nondiabetic-processes">adiabatic and nondiabetic processes</a></li>
 <li><a href="#quiz-questions">quiz questions</a></li>
 </ul></li>
-<li><a href="#section-13">12</a>
+<li><a href="#section-4">12</a>
 <ul>
 <li><a href="#basis-sets">basis sets</a></li>
 <li><a href="#hydrogen-like-atomic-orbitals">hydrogen-like atomic orbitals</a></li>
 <li><a href="#comments">comments:</a></li>
 <li><a href="#more-on-basis-sets-additional">more on basis sets (additional)</a></li>
 </ul></li>
+<li><a href="#section-5">13</a></li>
+<li><a href="#mo-theory">14 MO Theory</a></li>
 </ul></li>
 </ul></div>
-<div id="body"><h1 id="questions">questions:</h1>
-<ul>
-<li>still don’t understand how the radius doesn’t shrink</li>
-</ul>
-<h1 id="course-schedule">Course Schedule</h1>
+<div id="body"><h1 id="course-schedule">Course Schedule</h1>
 <h2 id="webmo-and-python-tutorials">WebMO and Python tutorials</h2>
 <h2 id="review-of-quantum-mechanics">Review of Quantum Mechanics:</h2>
 <ol type="1">
-<li>Schrodinger Eq.</li>
-<li>Relativity, Fermion and boson, Pauli exclusion principle</li>
-<li>Hermitian operator</li>
-<li>Dirac notation, basis set expansion, superposition of states</li>
-<li>Matrix mechanics</li>
+<li>Schrodinger Eq. ✅</li>
+<li>Relativity, Fermion and boson, Pauli exclusion principle ✅</li>
+<li>Hermitian operator ✅</li>
+<li>Dirac notation, basis set expansion, superposition of states ✅</li>
+<li>Matrix mechanics ✅</li>
 </ol>
 <h2 id="molecular-orbital-theory">Molecular Orbital Theory:</h2>
 <ol type="1">
-<li>Born-Oppenheimer approximation, Nuclear and electronic Hamiltonians</li>
-<li>Atomic units, Potential energy surface (PES), Reaction coordinates, Transition states</li>
-<li>Basis sets</li>
-<li><span class="math display"><em>H</em><sub>2</sub><sup>+</sup></span> , Two-state model</li>
-<li>Electronic wavefunctions, Slater determinant</li>
+<li>Born-Oppenheimer approximation, Nuclear and electronic Hamiltonians ✅</li>
+<li>Atomic units, Potential energy surface (PES), Reaction coordinates, Transition states ✅</li>
+<li>Basis sets ✅</li>
+<li><span class="math display"><em>H</em><sub>2</sub><sup>+</sup></span> , Two-state model ✅</li>
+<li>Electronic wavefunctions, Slater determinant ✅</li>
 </ol>
 <h2 id="angular-momentum">Angular momentum:</h2>
 <ol type="1">
-<li>Electron spin, Orbital angular momentum</li>
+<li>Electron spin, Orbital angular momentum ✅</li>
 </ol>
 <h2 id="group-theory">Group Theory:</h2>
 <ol type="1">
@@ -169,7 +179,7 @@
 <li>Hohenberg-Kohn theorems, Kohn-Sham method</li>
 </ol>
 <h1 id="lectures">Lectures</h1>
-<h2 id="section-1">0</h2>
+<h2 id="python-and-qm-intro">2 Python and QM Intro</h2>
 <ul>
 <li>slater vs. gaussian
 <img src="../../../../images/412/svg.png" />
@@ -235,9 +245,6 @@ i\hbar \frac{\partial}{\partial t}\psi &amp;= - \frac{h^2}{2m} \nabla \psi \\
 <li>we get gamma (dirac) matrices and pauli matrices</li>
 </ul></li>
 </ul></li>
-</ul>
-<h2 id="section-2">1</h2>
-<ul>
 <li>Taylor expansion <span class="math display">→</span> power series <span class="math display"><em>a</em><sub>0</sub> + <em>a</em><sub>1</sub><em>x</em> + <em>a</em><sub>2</sub><em>x</em><sup>2</sup> + <em>e</em><em>t</em><em>c</em></span>
 <ul>
 <li>different powers of x form basis set</li>
@@ -267,7 +274,6 @@ i\hbar \frac{\partial}{\partial t}\psi &amp;= - \frac{h^2}{2m} \nabla \psi \\
 <li>basis functions: relate to the orbitals, stay the same for each bond distance the program tries</li>
 <li>molecular energy vs. geometry optimization: ME is more optimized because geometry optimization doesn’t take derivative to 0, only closely</li>
 </ul>
-<h2 id="section-3">2</h2>
 <p><span class="math display"><em>Ĥ</em><em>Ψ</em> = <em>E</em><em>Ψ</em></span>, where the Hamiltonian <span class="math display"><em>Ĥ</em> = <em>T̂</em> + <em>V̂</em></span></p>
 <ul>
 <li>by substituting classical momentum with its quantum form: <span class="math display">$$\hat{T} = -\frac{\hbar ^2}{2m}\nabla^2$$</span></li>
@@ -282,115 +288,147 @@ i\hbar \frac{\partial}{\partial t}\psi &amp;= - \frac{h^2}{2m} \nabla \psi \\
 <li>give you information about stable molecular structures/chemical reactivity</li>
 </ul></li>
 </ul>
-<h2 id="section-4">3</h2>
+<h2 id="relativity-boson-fermion">3 Relativity, Boson, Fermion</h2>
 <p><img src="../../../../images/412/cvsv.jpeg" /></p>
+<h3 id="relativity-causes">relativity causes</h3>
 <ul>
-<li>special relativity: length contraction, mass increase, time dilation
-<ul>
-<li>relevant for:
-<ul>
-<li>spin:</li>
-<li>pauli exclusion principle</li>
+<li>intrinsic spin</li>
+<li>pauli exclusion principle, linked with electronic spin</li>
 <li>spin-orbit coupling</li>
-</ul></li>
-</ul></li>
-<li>noone can travel faster than the speed of light: $|v| ≤ c<span class="math display">−</span>0 ≤  ≤ 1<span class="math display"> − <em>l</em><em>o</em><em>r</em><em>e</em><em>n</em><em>t</em><em>z</em><em>f</em><em>a</em><em>c</em><em>t</em><em>o</em><em>r</em>:</span>γ = $$</li>
-<li>length contraction:
+<li>orbital motions create magnetic fields -&gt; solved by perturbation theory</li>
+</ul>
+<h3 id="noone-can-travel-faster-than-the-speed-of-light-v-leq-c">noone can travel faster than the speed of light: <span class="math display">|<em>v</em>| ≤ <em>c</em></span></h3>
+<ul>
+<li><span class="math display">$$0 \leq \frac{|v|}{c} \leq 1$$</span></li>
+<li>lorentz factor: <span class="math display">$$\gamma = \frac{1}{\sqrt{1 - (\frac{v}{c})^2}}$$</span></li>
+</ul>
+<h3 id="length-contraction">length contraction:</h3>
 <ul>
 <li>only happens in dimension of velocity</li>
 <li>the faster the object moves, the shorter the object becomes</li>
 <li>subjective: depends on how fast the observer is moving</li>
-</ul></li>
-<li>mass increase:
+</ul>
+<h3 id="mass-increase">mass increase:</h3>
 <ul>
-<li>mass in motion becomes more massive</li>
+<li>mass in motion appears more massive</li>
 <li>at speed of light can’t move anymore (so massive)</li>
-</ul></li>
-<li>time dilation:
+<li>the faster it moves, the more massive it becomes</li>
+</ul>
+<h3 id="time-dilation">time dilation:</h3>
 <ul>
 <li>things that have short half life: live forever when moving at speed of light</li>
-</ul></li>
-<li>core electrons: more stable
+</ul>
+<h3 id="core-electrons-more-stable">core electrons: more stable</h3>
 <ul>
 <li>s,p orbitals contract in size
 <ul>
 <li>screen the nuclear charge</li>
-<li>smaller, lower energy, denser electron cloud</li>
+<li>smaller in size means lower energy, denser electron cloud</li>
 <li>move faster??
 <ul>
 <li>heavier so more kinetic energy?</li>
 </ul></li>
 </ul></li>
 <li>p, d orbitals larger because feel less nuclear charge</li>
-</ul></li>
 <li><a href="http://alchemy.cchem.berkeley.edu/inorganic/RelativisticEffects.pdf">http://alchemy.cchem.berkeley.edu/inorganic/RelativisticEffects.pdf</a></li>
-<li>fermion: half integer spin
-<ul>
-<li>even number of fermion is boson, odd number of fermion is fermion</li>
-</ul></li>
-<li>boson: integer spin</li>
 </ul>
-<h2 id="section-5">4</h2>
+<h3 id="fermion-half-integer-spin">fermion: half integer spin</h3>
 <ul>
-<li>Pauli Exclusion Principle</li>
-<li>Postulates in QM
+<li>electron, neutron, proton, quark</li>
+<li>even number of fermion is boson, odd number of fermion is fermion</li>
+<li>spin in half units of <span class="math display">ℏ</span></li>
+</ul>
+<h3 id="boson-integer-spin">boson: integer spin</h3>
+<ul>
+<li>spin in integral units of <span class="math display">ℏ</span></li>
+</ul>
+<h3 id="pauli-exclusion-principle">Pauli Exclusion Principle</h3>
+<ul>
+<li>electrons in an atom: no two electrons can have the same quantum numbers</li>
+<li>molecules: only two electrons can occupy a molecular orbital, with opposite spins</li>
+<li>for two identical fermions, total wavefunction is antisymmetric</li>
+</ul>
+<h2 id="postulates-in-qm">4 Postulates in QM</h2>
+<ol type="1">
+<li>well behaved wavefunction describes the state of the system
+<ul>
+<li>phase factor <span class="math display"><em>Ψ</em><em>e</em><sup><em>i</em>0</sup></span></li>
+</ul></li>
+</ol>
 <ul>
 <li>function must constrain to physical world</li>
-<li>any observable A, has Hermitian operator <span class="math display"><em>Â</em></span>
+</ul>
+<ol type="1">
+<li>any observable A, has Hermitian operator <span class="math display"><em>Â</em></span></li>
+</ol>
 <ul>
 <li>Hermitian operators are self-adjoint</li>
-</ul></li>
+</ul>
+<ol type="1">
 <li>time dependent Schrodinger equation
 <ul>
 <li>we use time independent equation (time is <span class="math display"><em>e</em><sup>−<em>i</em><em>E</em><em>t</em>/ℏ</sup></span>)</li>
 </ul></li>
-</ul></li>
-</ul>
-<h2 id="section-6">5</h2>
+</ol>
+<h2 id="dirac-notation-basis-set-expansion-superposition-of-states">5 Dirac notation, basis set expansion, superposition of states</h2>
+<h3 id="dirac-notation">dirac notation</h3>
 <ul>
-<li>dirac notation</li>
+<li>adjoint: <span class="math display">⟨<em>f</em>|<em>Â</em>=⟨<em>Â</em><sup>†</sup><em>f</em>|</span>
+<ul>
+<li>conjugate transpose</li>
+</ul></li>
+<li>Hermitian: <span class="math display"><em>Â</em> = <em>Â</em><sup>†</sup></span></li>
 <li>side note: transpose of <span class="math display">$$\frac{\partial}{\partial x}$$</span> is not naively simple!</li>
 <li>expansion of state
 <ul>
 <li>complete set, <span class="math inline"><em>k</em></span> goes to infinity</li>
-<li>how to use closure for orthonormal complete set</li>
-</ul></li>
-<li>LCAO: how does it differ from
-<ul>
-<li>basis set is non-orthogonal, finite, on different nuclei
-<ul>
-<li>how to form electronic wavelength?</li>
-</ul></li>
 </ul></li>
 </ul>
-<h2 id="section-7">6</h2>
+<h3 id="closure">closure</h3>
 <ul>
-<li>determinants and matrices</li>
+<li>how to use closure for orthonormal complete set</li>
+</ul>
+<p><span class="math display"><em>Ĉ</em> = <em>Σ</em><sub><em>k</em> = 1</sub><sup>inf</sup>|<em>k</em>⟩⟨<em>k</em>| = 1</span></p>
+<ul>
+<li>use like an operator</li>
+<li>eigenfunctions of any Hermitian operator form orthonormal complete set
+<ul>
+<li><span class="math display">{<em>ψ</em><sub><em>k</em></sub>(<em>k</em>=1,2,3,..,)}</span> with <span class="math display">⟨<em>ψ</em><sub><em>i</em></sub>|<em>ψ</em><sub><em>j</em></sub>⟩ = <em>δ</em><sub><em>i</em><em>j</em></sub></span></li>
+<li>since closure is equal to 1, any state <span class="math display">|<em>Ψ</em>⟩</span> can be expanded as linear combination using complete set</li>
+</ul></li>
+</ul>
+<h3 id="lcao-how-does-it-differ-from">LCAO: how does it differ from</h3>
+<ul>
+<li>basis set is non-orthogonal, finite, on different nuclei</li>
+<li>accuracy depends on basis set used</li>
+</ul>
+<h2 id="matrix-mechanics">6 Matrix mechanics</h2>
+<ul>
+<li>determinant:
+<span class="math display"><em>d</em><em>e</em><em>t</em>(<em>A</em><sup><em>T</em></sup>) = <em>d</em><em>e</em><em>t</em>(<em>A</em>)</span></li>
+<li>m rows, n columns</li>
 <li>matrix mechanics:
 <ul>
 <li>with a complete basis set (how would you represent with matrices)
 <ul>
-<li>bra</li>
-<li>ket</li>
-<li><span class="math display">⟨<em>Ψ</em>|<sup>†</sup></span></li>
-<li><span class="math display">|<em>Ψ</em>|<sup>⟩</sup></span></li>
+<li>bra: row vector</li>
+<li>ket: column vector</li>
+<li><span class="math display">⟨<em>Ψ</em>|<sup>†</sup>=(<em>c</em><sub>1</sub><sup>*</sup>,<em>c</em><sub>2</sub><sup>*</sup>,<em>c</em><sub>3</sub><sup>*</sup>,...)<sup>†</sup>=|<em>Ψ</em>⟩</span></li>
+<li><span class="math display">|<em>Ψ</em>⟩<sup>†</sup>=⟨<em>Ψ</em>|</span></li>
 </ul></li>
-<li>orthonormal basis set (<span class="math display"><em>δ</em><sub><em>i</em><em>j</em></sub></span>):
-<ul>
-<li>how to write <span class="math display">⟨<em>Ψ</em>|<em>Ψ</em>⟩</span> in matrix form</li>
-</ul></li>
+<li>orthonormal basis set (<span class="math display"><em>δ</em><sub><em>i</em><em>j</em></sub></span>):</li>
 <li>non orthogonal basis set (<span class="math display">⟨<em>ψ</em><sub><em>i</em></sub>|<em>ψ</em><sub><em>j</em></sub>⟩ = <em>S</em><sub><em>i</em><em>j</em></sub> ≠ <em>δ</em><sub><em>i</em><em>j</em></sub></span>)
 <ul>
-<li>overlap matrix</li>
+<li>overlap matrix = S</li>
+<li><span class="math display"><em>S</em> = <em>S</em><sup>†</sup></span></li>
+</ul></li>
 </ul></li>
 <li>operator with basis set <span class="math display">⟨<em>ψ</em><sub><em>i</em></sub>|<em>Â</em><em>ψ</em><sub><em>j</em></sub>|⟩</span></li>
 <li>adjoint <span class="math display"><em>Â</em><sup>†</sup></span> with basis set</li>
 <li>euclidean 3D vector space vs. Hilbert nD metric space</li>
-</ul></li>
 </ul>
-<h2 id="section-8">7</h2>
-<h2 id="section-9">8</h2>
-<h2 id="section-10">9</h2>
+<h2 id="finished-reviewing-here">finished reviewing here</h2>
+<h2 id="section-1">9</h2>
 <ul>
 <li>notes from paper and ipad notes summary</li>
 </ul>
@@ -505,7 +543,7 @@ i\hbar \frac{\partial}{\partial t}\psi &amp;= - \frac{h^2}{2m} \nabla \psi \\
 </ul></li>
 </ul></li>
 </ul>
-<h2 id="section-11">10</h2>
+<h2 id="section-2">10</h2>
 <h3 id="lecture-notes">lecture notes:</h3>
 <ul>
 <li>polyatomic DOF: 3N</li>
@@ -634,7 +672,7 @@ i\hbar \frac{\partial}{\partial t}\psi &amp;= - \frac{h^2}{2m} \nabla \psi \\
 <li>diabatic: rapidly changing conditions prevent system from adapting its configuration, so probability density remains unchanged? no eigenstate of final Hamiltonian with same functional form; system ends in linear combination of stats that sum to reproduce initial probability density</li>
 <li>adiabatic: gradually changing allow system to adapt configuration, probability density is modified. starts in eigenstate of initial Hamiltonian and ends in eigenstate of final Hamiltonian.</li>
 </ul>
-<h2 id="section-12">11</h2>
+<h2 id="section-3">11</h2>
 <ul>
 <li>ZPE (zero point energy): for translational and rotational is 0 energy at 0K. But vibrational:
 <ul>
@@ -697,7 +735,7 @@ i\hbar \frac{\partial}{\partial t}\psi &amp;= - \frac{h^2}{2m} \nabla \psi \\
 <li>vibrational frequencies: at TS only one vib freq is imaginary (or negative)</li>
 <li>PES crossing: depends on the interaction energy, represented by <span class="math display"><em>H</em><sub>12</sub></span></li>
 </ul>
-<h2 id="section-13">12</h2>
+<h2 id="section-4">12</h2>
 <ul>
 <li>STO orbitals: mimic nodeless radial components of H-like orbitals
 <ul>
@@ -957,7 +995,12 @@ i\hbar \frac{\partial}{\partial t}\psi &amp;= - \frac{h^2}{2m} \nabla \psi \\
 </ul></li>
 </ul></li>
 <li><p>even and well tempered basis sets</p></li>
-</ol></div>
+</ol>
+<h2 id="section-5">13</h2>
+<h2 id="mo-theory">14 MO Theory</h2>
+<ul>
+<li></li>
+</ul></div>
   </div>
   <div class="flex-row link-no-style">
     

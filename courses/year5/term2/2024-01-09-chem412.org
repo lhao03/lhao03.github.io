@@ -3,24 +3,22 @@ description: "CHEM 412"
 title: "CHEM 412: Structure of Atoms and Molecules"
 ---
 
-* questions:
-- still don't understand how the radius doesn't shrink
 * Course Schedule
 ** WebMO and Python tutorials
 ** Review of Quantum Mechanics:
-1. Schrodinger Eq.
-2. Relativity, Fermion and boson, Pauli exclusion principle
-3. Hermitian operator
-4. Dirac notation, basis set expansion, superposition of states
-5. Matrix mechanics
+1. Schrodinger Eq. ✅
+2. Relativity, Fermion and boson, Pauli exclusion principle ✅
+3. Hermitian operator ✅
+4. Dirac notation, basis set expansion, superposition of states ✅
+5. Matrix mechanics ✅
 ** Molecular Orbital Theory:
-6. Born-Oppenheimer approximation, Nuclear and electronic Hamiltonians
-7. Atomic units, Potential energy surface (PES), Reaction coordinates, Transition states
-8. Basis sets
-9. $$H^+_2$$ , Two-state model
-10. Electronic wavefunctions, Slater determinant
+6. Born-Oppenheimer approximation, Nuclear and electronic Hamiltonians ✅
+7. Atomic units, Potential energy surface (PES), Reaction coordinates, Transition states ✅
+8. Basis sets ✅
+9. $$H^+_2$$ , Two-state model ✅
+10. Electronic wavefunctions, Slater determinant ✅
 ** Angular momentum:
-11. Electron spin, Orbital angular momentum
+11. Electron spin, Orbital angular momentum ✅
 ** Group Theory:
 12. Molecular symmetry, Point groups, Irreducible representations
 13. Construction of SALCs, Group theory, Character table
@@ -38,7 +36,7 @@ title: "CHEM 412: Structure of Atoms and Molecules"
 22. Hohenberg-Kohn theorems, Kohn-Sham method
 
 * Lectures
-** 0
+** 2 Python and QM Intro
 - slater vs. gaussian
   [[../../../../images/412/svg.png]]
   - gaussian decays too quickly and has longer tails
@@ -79,7 +77,6 @@ title: "CHEM 412: Structure of Atoms and Molecules"
     \end{pmatrix} $$
   - wavefunctions 1/2 are for particle and 3/4 are for antiparticle (each wavefunction is either spin-up or spin-down)
     - we get gamma (dirac) matrices and pauli matrices
-** 1
 - Taylor expansion $$\rightarrow$$ power series $$a_0 + a_1x + a_2x^2 + etc$$
   - different powers of x form basis set
   - chem312: $$\psi (x) = \sum C_n \psi_n$$
@@ -101,7 +98,6 @@ title: "CHEM 412: Structure of Atoms and Molecules"
 - basis functions: relate to the orbitals, stay the same for each bond distance the program tries
 - molecular energy vs. geometry optimization: ME is more optimized because geometry optimization doesn't take derivative to 0, only closely
 
-** 2
 $$\hat{H} \Psi = E \Psi$$, where the Hamiltonian $$\hat{H} = \hat{T} + \hat{V}$$
 - by substituting classical momentum with its quantum form: $$\hat{T} = -\frac{\hbar ^2}{2m}\nabla^2$$
 - potential operator $$\hat{V}$$ if function of position $r$ and time $t$.
@@ -111,70 +107,93 @@ $$\hat{H} \Psi = E \Psi$$, where the Hamiltonian $$\hat{H} = \hat{T} + \hat{V}$$
 - PES: energy, E, an eigenvalue. potential energy surface
   - give you information about stable molecular structures/chemical reactivity
 
-** 3
+** 3 Relativity, Boson, Fermion
 [[../../../../images/412/cvsv.jpeg]]
-- special relativity: length contraction, mass increase, time dilation
-  - relevant for:
-    - spin:
-    - pauli exclusion principle
-    - spin-orbit coupling
-- noone can travel faster than the speed of light: $|v| \leq c$$
-  - $$0 \leq \frac{|v|}{c} \leq 1$$
-  - lorentz factor: $$\gamma = \frac{1}{\sqrt{1 - (\frac{v}{c})^2}}$$
-- length contraction:
-  - only happens in dimension of velocity
-  - the faster the object moves, the shorter the object becomes
-  - subjective: depends on how fast the observer is moving
-- mass increase:
-  - mass in motion becomes more massive
-  - at speed of light can't move anymore (so massive)
-- time dilation:
-  - things that have short half life: live forever when moving at speed of light
-- core electrons: more stable
-  - s,p orbitals contract in size
-    - screen the nuclear charge
-    - smaller, lower energy, denser electron cloud
-    - move faster??
-      - heavier so more kinetic energy?
-  - p, d orbitals larger because feel less nuclear charge
+*** relativity causes
+- intrinsic spin
+- pauli exclusion principle, linked with electronic spin
+- spin-orbit coupling
+- orbital motions create magnetic fields -> solved by perturbation theory
+*** noone can travel faster than the speed of light: $$|v| \leq c$$
+- $$0 \leq \frac{|v|}{c} \leq 1$$
+- lorentz factor: $$\gamma = \frac{1}{\sqrt{1 - (\frac{v}{c})^2}}$$
+*** length contraction:
+- only happens in dimension of velocity
+- the faster the object moves, the shorter the object becomes
+- subjective: depends on how fast the observer is moving
+*** mass increase:
+- mass in motion appears more massive
+- at speed of light can't move anymore (so massive)
+- the faster it moves, the more massive it becomes
+*** time dilation:
+ - things that have short half life: live forever when moving at speed of light
+*** core electrons: more stable
+- s,p orbitals contract in size
+  - screen the nuclear charge
+  - smaller in size means lower energy, denser electron cloud
+  - move faster??
+    - heavier so more kinetic energy?
+- p, d orbitals larger because feel less nuclear charge
 - http://alchemy.cchem.berkeley.edu/inorganic/RelativisticEffects.pdf
-- fermion: half integer spin
-  - even number of fermion is boson, odd number of fermion is fermion
-- boson: integer spin
-** 4
-- Pauli Exclusion Principle
-- Postulates in QM
-  - function must constrain to physical world
-  - any observable A, has Hermitian operator $$\hat{A}$$
-    - Hermitian operators are self-adjoint
-  - time dependent Schrodinger equation
-    - we use time independent equation (time is $$e^{-iEt/\hbar}$$)
-** 5
-- dirac notation
+*** fermion: half integer spin
+- electron, neutron, proton, quark
+- even number of fermion is boson, odd number of fermion is fermion
+- spin in half units of $$\hbar$$
+*** boson: integer spin
+- spin in integral units of $$\hbar$$
+*** Pauli Exclusion Principle
+- electrons in an atom: no two electrons can have the same quantum numbers
+- molecules: only two electrons can occupy a molecular orbital, with opposite spins
+- for two identical fermions, total wavefunction is antisymmetric
+
+** 4 Postulates in QM
+1. well behaved wavefunction describes the state of the system
+   - phase factor $$\Psi e^{i0}$$
+- function must constrain to physical world
+2. any observable A, has Hermitian operator $$\hat{A}$$
+- Hermitian operators are self-adjoint
+3. time dependent Schrodinger equation
+  - we use time independent equation (time is $$e^{-iEt/\hbar}$$)
+
+** 5 Dirac notation, basis set expansion, superposition of states
+*** dirac notation
+- adjoint: $$\langle f | \hat{A} = \langle \hat{A}^{\dag} f| $$
+  - conjugate transpose
+- Hermitian: $$\hat{A} = \hat{A}^{\dag}$$
 - side note: transpose of $$\frac{\partial}{\partial x}$$ is not naively simple!
 - expansion of state
   - complete set, $k$ goes to infinity
-  - how to use closure for orthonormal complete set
-- LCAO: how does it differ from
-  - basis set is non-orthogonal, finite, on different nuclei
-    - how to form electronic wavelength?
-** 6
-- determinants and matrices
+*** closure
+- how to use closure for orthonormal complete set
+$$\hat{C} = \Sigma_{k=1}^{\inf} | k \rangle \langle k | = 1$$
+- use like an operator
+- eigenfunctions of any Hermitian operator form orthonormal complete set
+  - $$\{ \psi_k (k = 1, 2, 3, .., ) \}$$ with $$\langle \psi_i | \psi_j \rangle = \delta_{ij}$$
+  - since closure is equal to 1, any state $$| \Psi \rangle$$ can be expanded as linear combination using complete set
+*** LCAO: how does it differ from
+- basis set is non-orthogonal, finite, on different nuclei
+- accuracy depends on basis set used
+
+** 6 Matrix mechanics
+- determinant:
+  $$det(A^{T}) = det(A)$$
+- m rows, n columns
 - matrix mechanics:
   - with a complete basis set (how would you represent with matrices)
-    - bra
-    - ket
-    - $$\langle \Psi | ^\dag$$
-    - $$| \Psi | ^\rangle$$
+    - bra: row vector
+    - ket: column vector
+    - $$\langle \Psi | ^\dag = (c^*_1, c^*_2, c^*_3, ...)^\dag = | \Psi \rangle$$
+    - $$| \Psi \rangle ^ \dag = \langle \Psi | $$
   - orthonormal basis set ($$\delta_{ij}$$):
-    - how to write $$\langle \Psi | \Psi \rangle$$ in matrix form
   - non orthogonal basis set ($$\langle \psi_i | \psi_j \rangle = S_{ij} \neq \delta_{ij}$$)
-    - overlap matrix
-  - operator with basis set $$\langle \psi_i | \hat{A} \psi_j | \rangle$$
-  - adjoint $$\hat{A}^\dag$$ with basis set
-  - euclidean 3D vector space vs. Hilbert nD metric space
-** 7
-** 8
+    - overlap matrix = S
+    - $$S = S^{\dag}$$
+- operator with basis set $$\langle \psi_i | \hat{A} \psi_j | \rangle$$
+- adjoint $$\hat{A}^\dag$$ with basis set
+- euclidean 3D vector space vs. Hilbert nD metric space
+
+** finished reviewing here
+
 ** 9
 - notes from paper and ipad notes summary
 *** bonding between 2 different atomic orbitals on 2 different atoms
@@ -485,3 +504,6 @@ side notes:
   - or polarization functions on important hydrogens -> creates artefacts
   - use of small basis sets for systems containing very different numbers of valence electrons may produce artefacts
 **** even and well tempered basis sets
+** 13
+** 14 MO Theory
+-

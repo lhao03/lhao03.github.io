@@ -177,10 +177,8 @@ L/R circularly polarized photons have angular momentum $$+/- \hbar$$
       - interested in finite dimensional subspace of Hilbert space (5D space spanned by $3d$ orbitals): basis set is set of solutions of Schrodinger equation, eigenfunctions of $$\hat{H}$$
 - symmetrization
   - projection operator $$\hat{P^{\mu}}$$: annihilates all functions that does not belong to $$\mu$$-th irreducible representation
-
-*** $$H_2O$$
-
 ** 10: molecular rotation and spin statistics 1
+** 11: molecular rotation and spin statistics 2
 *** born-oppenheimer approximation
 - fixed nucleus
 - total hamiltonian consists of kinetic energy of nucleus, electrons, and coloumb potential energy between nuclei, nuclei-electrons, and electrons
@@ -262,21 +260,95 @@ L/R circularly polarized photons have angular momentum $$+/- \hbar$$
 [[../../../../images/401/asym.png]]
 *** optical selection rule: diatomic and linear
 - $\mu_0 \neq 0$ $\Delta J = +/- 1$, $\Delta M = 0, +/-1$
-  - can only transition between J and J+1, seperations are 2B.
+  - can only transition between J and J+1, separations are 2B.
   - transition frequency: $2B(J+1)$
-    - idk waht is mu
 *** symmetric and asymmetric top molecules
 - symmetric top: $\mu_0 \neq 0$ $\Delta J = +/- 1$, $\Delta M = 0, +/-1$, $\Delta K = 0$
 - asymmetric top: $\Delta J = 0, +/- 1$, $\Delta M = 0, +/-1$
   - then more details based on if it is a-type, b-type, c-type transition
-** 11: molecular rotation and spin statistics 2
-we can get the vibrational schrodinger equation by representing in polar coordinates:
+*** general notes
+- no dipole moment, no transition (mu cant be 0, mu is dipole moment)
 ** 12: molecular vibration
+- we can get the vibrational schrodinger equation by representing in polar coordinates: $$[-\frac{\hbar^2}{2 \mu} \frac{\partial^2}{\partial q^2}]\phi_v^{(n)} = E^{(n)}_{vib, v} \phi^{(n)}_v$$
+- $D_e$ is equilibrium dissociation energy (bond dissociation energy)
+  - associated with equilibrium bond distance
+  - $D_e - ZPE = D_0$
+- $D_0$ is dissociation energy (chemical-dissociation energy), true ground state energy
+*** harmonic oscillator model
+- taylor series around $R_e$
+  - 0 potential at $R_e$
+  - first derivative is 0 (this is set, to find eq point)
+  - harmonic potential: $$V(q) = \frac{1}{2} (\frac{d^2 V}{dq^2})_0 q^2 = \frac{1}{2} kq^2$$
+    - classical: $$T + V = E = \frac{1}{2} k x_0^2$$
+    - quantum: $$E_v = (v + \frac{1}{2}) hv_0$$, and the Hamiltonian: $$\hat{H} = \hat{T} + \hat{V}$$
+*** selection rule
+- within the same electronic state (which means? same quantum numbers): $$\Delta v +/- 1$$, and $$\frac{df \mu_0}{dq} \neq 0$$, there must be dipole moment/must be polar
+  - fundamental: $$1 \leftarrow 0$$
+  - hot bands: $$2 \leftarrow 1$$ observed when its really hot
+  - overtone: $$2 \leftarrow 0$$ (2 times the fundamental frequency)
+*** rotation-vibration transition (diatomic molecules)
+- energy: $$E_{vJ} = (v + \frac{1}{2}) h_{v_e} + B_e J (J+1)$$ first term (vibration) + second term (rotation)
+- rotational: $$\Delta J = +/- 1$$ $$\Delta M = 0, +/- 1$$, $$\Delta J = 0, +/- 1$$ if $$L,S \neq 0$$
+- vibrational: $$\delta v = +/- 1$$ and dipole moment cant be 0
+  - types of branches:
+    - P branch: $$v_{J - 1 \leftarrow J}$$,
+    - Q branch: $$v_{J \leftarrow J}$$, $$\Delta J = 0$$
+    - R branch: $$v_{J + 1 \leftarrow J}$$, $$\Delta J = +1$$
+*** vibration of polyatomic molecules
+- for each atom, you get one coordinate, then you get $$\hat{T}_vib = \frac{1}{2} \Sigma q^2_i$$
+  - do taylor expansion, then you get hessian matrix, $$b_{ik}$$
+    - normal modes: coordinate system that make $$b_{ik}$$ diagonal
+*** vibrational levels
+- fundamental: one quanta change
+- overtone: two quanta change
+- combination: different modes all transition
+- energy of all vibrational modes: $$\Sigma_i (n_i + \frac{d_i}{2}) v_i$$
+  - total zero point: $$\frac{1}{2} (v_1 + ... v_n)$$
+*** other info
+- C-H stretch: 2700-3100 1/cm
+- O-H stretch: 3580 - 3650 1/cm
+*** normal modes
+- to determine how many of each normal mode you have
+  - translational: always 3 (x,y,z)
+  - rotational: (R_x, R_y, R_z):
+  - left over is vibrational
+*** symmetry of vibrational wavefunction
+- ground state is always (0,0,0,...)
+- two quanta of B_2 gives A_1
 ** 13: vibrational infrared and raman spectroscopy
+*** scattering:
+- incident beam gets scattered by a medium, producing wavelengths of ??? frequency in all directions ??? is the frequency the same or different
+  - stokes: lower frequency
+  - anti-stokes: higher frequency
+[[../../../../images/401/scattering.png]]
+- rayleigh scattering: object much smaller than wavelength
+- mie scattering: object larger than wavelength
+- brillouin scattering: condensed phase, less dense phase is same size as wavelength
+*** raman
+- two photon scattering
+- scattered photon loses energy, and there is intermediate state
+  - final energy is higher than initial: stokes
+  - final energy is lower than initial: anti-stokes
+- $$\frac{\partial \alpha}{\partial R} \neq 0$$, must be nonpolar
+  - $$\langle i | \alpha | f \rangle$$
+- excitation wavelength doesnt matter, always produces same output
+*** resonant raman scattering:
+- wavelength is same as excitation wavelength
+  [[../../../../images/401/two.png]]
 ** 14: electronic spectroscopy
 ** 15: electronic spectroscopy
 ** 16: magnetic resonance
 ** 17: spectroscopy
-** 18 - 25: final presentations
-
-* Footnotes
+** 18 - 25: REMPI (Resonant Enhanced MultiPhoton Ionization)
+- two photons required
+- excite molecules into excited state followed by ionization
+  - stepwise ionization (minimum of 2 photons)
+  - ionization rate higher when photons in resonance with intermediate state
+  - TOF for mass spec
+- need tunable light source (dye laser), ion yeild vs. wavelength is plotted
+- shows same feature as absoption spectrum
+  - different set of selection rules -> transitions forbidden with one photon are not forbidden with two photons
+- multiple photons can be absorbed: ionization at less energetic wavelengths
+  - can excite different energy levels with same ionization
+- all photons emitted are same energy: is this always the case?
+  - total energy doesn't need to equal the ionization energy
