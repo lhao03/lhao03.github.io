@@ -192,8 +192,9 @@ $$\hat{C} = \Sigma_{k=1}^{\inf} | k \rangle \langle k | = 1$$
 - adjoint $$\hat{A}^\dag$$ with basis set
 - euclidean 3D vector space vs. Hilbert nD metric space
 
-** finished reviewing here
-
+** 6 matrix mechanics
+** 7
+** 8
 ** 9
 - notes from paper and ipad notes summary
 *** bonding between 2 different atomic orbitals on 2 different atoms
@@ -506,4 +507,60 @@ side notes:
 **** even and well tempered basis sets
 ** 13
 ** 14 MO Theory
--
+** 15 slater determinant for N-Electron wavefunction
+- made from orthonormal spin orbitals: $\{\psi^{SMO}_a\}$ with $\langle \psi_a | \psi_b \rangle$
+- we get $N \times N$ matrix, where $N$ is number of electrons,
+
+$$\Psi(1,2,..,N) =
+\frac{1}{\sqrt{N!}}
+\begin{vmatrix}
+\psi_a(1) & .. & \psi_a(N) \\
+\psi_c(1) & .. & \psi_c(N)
+\end{vmatrix}$$
+
+- where rows are orbitals and columns are electrons.
+  - applying permutation operator (change position of electrons) makes the resulting wavefunction antisymmetric
+- properties of determinants:
+  - interchanging two rows or two columns: rows(move electron to another spin orbital, flipping spin?), columns (moving electron positions) reverses the sign
+  - equating two rows or columns: putting two electrons as same spin (row) or putting another electron into same orbital as another electron, 0 because not valid
+- shorthand
+  - $\Psi (1, 2, N) = | \psi_a(1), \psi_b(2), ... \psi_c(N) \rangle$
+  - pauli principle: pauli antisymmetric principle and pauli exclusion principle
+  - properties:
+    - slater determininant
+    - normalized
+    - permutation operator results in asymmetry
+    - when $\psi_b = \psi_b$ meaning same spin:
+      $$\Psi(1,2) = \frac{1}{\sqrt{2}}
+                \begin{vmatrix}
+        \psi_a(1)  & \psi_a(2) \\
+        \psi_a(1)  & \psi_a(2)
+        \end{vmatrix} = 0$$
+*** result showing pauli exclusion
+
+** 16
+** 17 symmetry operations
+*** properties of character tables
+- order:
+  - using unexpanded symmetry elements using the column: $$h = \Sigma_{j} \chi_{j}^{2} (E)$$ where j represents the irreducible representations
+  - using expended symmetry elements (row): $$h = \Sigma_{R} \chi_{j}^{2} (R)$$ where $i$ is a irreducible representation and R is the expanded row of symmetry elements
+- dimension of $j$th irreducible representation: $$l_{j} = \chi_{j} (E)$$
+*** direct sum
+- a reducible representation (like MOs) is direct sum of irreducible representations $$\Gamma_{redu} = \Sigma_{j} a_j \Gamma_j = a_1 \Gamma_1 ⊕ a_2 \Gamma_2 ⊕ ...$$
+- where $a_j$ is $$\frac{1}{h} \Sigma_{R} \chi_{redu}(R)\chi_j$$ meaning, sum of product of reducible representation with the representation of the symmetry elemental
+- where $$\chi_{redu}(R) = \Sigma_{j}^a_j\chi_j (R)$$ is a reducible representation can be further reduced
+- to find the direct sum of irreducible representations for a reducible representation, find $a_j$ for all irreducible representations and see which ones are not 0
+- $$\chi_j(R)$$ is like a wavefunction that returns the eigenvalue
+** 18
+*** direct product
+- a direct product can be reduced to terms of the irreducible representation:
+  $$\Gamma_{redu} = \prod_{i} \Gamma_{i} = \Gamma_{i} ⊗ \Gamma_{j} ⊗ ... = \Sigma_j a_j \Gamma_j$$
+- $$\chi_{redu}(R) = \prod_{i} \chi_i(R)$$
+- how do we go from direct sum to direct product?
+*** what does direct sum and direct product mean chemically?
+- we want to know when two wavefunctions will be orthogonal
+  - like frank condon states, we want $$\langle \Psi_i | \hat{A} | \Psi_j \rangle$$
+  - symmetry gives us selection rules
+*** after finding irreducible representation -> SALCs
+- we apply the projection operator for SALCs: $$\hat{P}_j = \Sigma_{j} (R) \hat{R}$$
+- for multi-degenerate states, we must orthogonalize to find the right number of wavefunctions

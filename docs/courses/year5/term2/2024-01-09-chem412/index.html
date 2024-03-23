@@ -100,15 +100,17 @@
 <li><a href="#lcao-how-does-it-differ-from">LCAO: how does it differ from</a></li>
 </ul></li>
 <li><a href="#matrix-mechanics">6 Matrix mechanics</a></li>
-<li><a href="#finished-reviewing-here">finished reviewing here</a></li>
-<li><a href="#section-1">9</a>
+<li><a href="#matrix-mechanics-1">6 matrix mechanics</a></li>
+<li><a href="#section-1">7</a></li>
+<li><a href="#section-2">8</a></li>
+<li><a href="#section-3">9</a>
 <ul>
 <li><a href="#bonding-between-2-different-atomic-orbitals-on-2-different-atoms">bonding between 2 different atomic orbitals on 2 different atoms</a></li>
 <li><a href="#molecular-hamiltonian">molecular hamiltonian</a></li>
 <li><a href="#born-oopenheimer-approximation">born-oopenheimer approximation</a></li>
 <li><a href="#adiabatic-and-boa">adiabatic and BOA</a></li>
 </ul></li>
-<li><a href="#section-2">10</a>
+<li><a href="#section-4">10</a>
 <ul>
 <li><a href="#lecture-notes">lecture notes:</a></li>
 <li><a href="#potential-energy-surfaces-pes">potential energy surfaces (PES)</a></li>
@@ -116,21 +118,37 @@
 <li><a href="#reaction-paths-transition-states-and-intermediates">reaction paths, transition states and intermediates</a></li>
 <li><a href="#diabatic-and-adiabatic-processes">diabatic and adiabatic processes</a></li>
 </ul></li>
-<li><a href="#section-3">11</a>
+<li><a href="#section-5">11</a>
 <ul>
 <li><a href="#pes-interactions">PES interactions</a></li>
 <li><a href="#adiabatic-and-nondiabetic-processes">adiabatic and nondiabetic processes</a></li>
 <li><a href="#quiz-questions">quiz questions</a></li>
 </ul></li>
-<li><a href="#section-4">12</a>
+<li><a href="#section-6">12</a>
 <ul>
 <li><a href="#basis-sets">basis sets</a></li>
 <li><a href="#hydrogen-like-atomic-orbitals">hydrogen-like atomic orbitals</a></li>
 <li><a href="#comments">comments:</a></li>
 <li><a href="#more-on-basis-sets-additional">more on basis sets (additional)</a></li>
 </ul></li>
-<li><a href="#section-5">13</a></li>
+<li><a href="#section-7">13</a></li>
 <li><a href="#mo-theory">14 MO Theory</a></li>
+<li><a href="#slater-determinant-for-n-electron-wavefunction">15 slater determinant for N-Electron wavefunction</a>
+<ul>
+<li><a href="#result-showing-pauli-exclusion">result showing pauli exclusion</a></li>
+</ul></li>
+<li><a href="#section-8">16</a></li>
+<li><a href="#symmetry-operations">17 symmetry operations</a>
+<ul>
+<li><a href="#properties-of-character-tables">properties of character tables</a></li>
+<li><a href="#direct-sum">direct sum</a></li>
+</ul></li>
+<li><a href="#section-9">18</a>
+<ul>
+<li><a href="#direct-product">direct product</a></li>
+<li><a href="#what-does-direct-sum-and-direct-product-mean-chemically">what does direct sum and direct product mean chemically?</a></li>
+<li><a href="#after-finding-irreducible-representation---salcs">after finding irreducible representation -&gt; SALCs</a></li>
+</ul></li>
 </ul></li>
 </ul></div>
 <div id="body"><h1 id="course-schedule">Course Schedule</h1>
@@ -427,8 +445,10 @@ i\hbar \frac{\partial}{\partial t}\psi &amp;= - \frac{h^2}{2m} \nabla \psi \\
 <li>adjoint <span class="math display"><em>Â</em><sup>†</sup></span> with basis set</li>
 <li>euclidean 3D vector space vs. Hilbert nD metric space</li>
 </ul>
-<h2 id="finished-reviewing-here">finished reviewing here</h2>
-<h2 id="section-1">9</h2>
+<h2 id="matrix-mechanics-1">6 matrix mechanics</h2>
+<h2 id="section-1">7</h2>
+<h2 id="section-2">8</h2>
+<h2 id="section-3">9</h2>
 <ul>
 <li>notes from paper and ipad notes summary</li>
 </ul>
@@ -543,7 +563,7 @@ i\hbar \frac{\partial}{\partial t}\psi &amp;= - \frac{h^2}{2m} \nabla \psi \\
 </ul></li>
 </ul></li>
 </ul>
-<h2 id="section-2">10</h2>
+<h2 id="section-4">10</h2>
 <h3 id="lecture-notes">lecture notes:</h3>
 <ul>
 <li>polyatomic DOF: 3N</li>
@@ -672,7 +692,7 @@ i\hbar \frac{\partial}{\partial t}\psi &amp;= - \frac{h^2}{2m} \nabla \psi \\
 <li>diabatic: rapidly changing conditions prevent system from adapting its configuration, so probability density remains unchanged? no eigenstate of final Hamiltonian with same functional form; system ends in linear combination of stats that sum to reproduce initial probability density</li>
 <li>adiabatic: gradually changing allow system to adapt configuration, probability density is modified. starts in eigenstate of initial Hamiltonian and ends in eigenstate of final Hamiltonian.</li>
 </ul>
-<h2 id="section-3">11</h2>
+<h2 id="section-5">11</h2>
 <ul>
 <li>ZPE (zero point energy): for translational and rotational is 0 energy at 0K. But vibrational:
 <ul>
@@ -735,7 +755,7 @@ i\hbar \frac{\partial}{\partial t}\psi &amp;= - \frac{h^2}{2m} \nabla \psi \\
 <li>vibrational frequencies: at TS only one vib freq is imaginary (or negative)</li>
 <li>PES crossing: depends on the interaction energy, represented by <span class="math display"><em>H</em><sub>12</sub></span></li>
 </ul>
-<h2 id="section-4">12</h2>
+<h2 id="section-6">12</h2>
 <ul>
 <li>STO orbitals: mimic nodeless radial components of H-like orbitals
 <ul>
@@ -996,10 +1016,87 @@ i\hbar \frac{\partial}{\partial t}\psi &amp;= - \frac{h^2}{2m} \nabla \psi \\
 </ul></li>
 <li><p>even and well tempered basis sets</p></li>
 </ol>
-<h2 id="section-5">13</h2>
+<h2 id="section-7">13</h2>
 <h2 id="mo-theory">14 MO Theory</h2>
+<h2 id="slater-determinant-for-n-electron-wavefunction">15 slater determinant for N-Electron wavefunction</h2>
 <ul>
-<li></li>
+<li>made from orthonormal spin orbitals: <span class="math inline">{<em>ψ</em><sub><em>a</em></sub><sup><em>S</em><em>M</em><em>O</em></sup>}</span> with <span class="math inline">⟨<em>ψ</em><sub><em>a</em></sub>|<em>ψ</em><sub><em>b</em></sub>⟩</span></li>
+<li>we get <span class="math inline"><em>N</em> × <em>N</em></span> matrix, where <span class="math inline"><em>N</em></span> is number of electrons,</li>
+</ul>
+<p><span class="math display">$$\Psi(1,2,..,N) =
+\frac{1}{\sqrt{N!}}
+\begin{vmatrix}
+\psi_a(1) &amp; .. &amp; \psi_a(N) \\
+\psi_c(1) &amp; .. &amp; \psi_c(N)
+\end{vmatrix}$$</span></p>
+<ul>
+<li>where rows are orbitals and columns are electrons.
+<ul>
+<li>applying permutation operator (change position of electrons) makes the resulting wavefunction antisymmetric</li>
+</ul></li>
+<li>properties of determinants:
+<ul>
+<li>interchanging two rows or two columns: rows(move electron to another spin orbital, flipping spin?), columns (moving electron positions) reverses the sign</li>
+<li>equating two rows or columns: putting two electrons as same spin (row) or putting another electron into same orbital as another electron, 0 because not valid</li>
+</ul></li>
+<li>shorthand
+<ul>
+<li><span class="math inline"><em>Ψ</em>(1,2,<em>N</em>) = |<em>ψ</em><sub><em>a</em></sub>(1), <em>ψ</em><sub><em>b</em></sub>(2), ...<em>ψ</em><sub><em>c</em></sub>(<em>N</em>)⟩</span></li>
+<li>pauli principle: pauli antisymmetric principle and pauli exclusion principle</li>
+<li>properties:
+<ul>
+<li>slater determininant</li>
+<li>normalized</li>
+<li>permutation operator results in asymmetry</li>
+<li>when <span class="math inline"><em>ψ</em><sub><em>b</em></sub> = <em>ψ</em><sub><em>b</em></sub></span> meaning same spin:
+<span class="math display">$$\Psi(1,2) = \frac{1}{\sqrt{2}}
+           \begin{vmatrix}
+   \psi_a(1)  &amp; \psi_a(2) \\
+   \psi_a(1)  &amp; \psi_a(2)
+   \end{vmatrix} = 0$$</span></li>
+</ul></li>
+</ul></li>
+</ul>
+<h3 id="result-showing-pauli-exclusion">result showing pauli exclusion</h3>
+<h2 id="section-8">16</h2>
+<h2 id="symmetry-operations">17 symmetry operations</h2>
+<h3 id="properties-of-character-tables">properties of character tables</h3>
+<ul>
+<li>order:
+<ul>
+<li>using unexpanded symmetry elements using the column: <span class="math display"><em>h</em> = <em>Σ</em><sub><em>j</em></sub><em>χ</em><sub><em>j</em></sub><sup>2</sup>(<em>E</em>)</span> where j represents the irreducible representations</li>
+<li>using expended symmetry elements (row): <span class="math display"><em>h</em> = <em>Σ</em><sub><em>R</em></sub><em>χ</em><sub><em>j</em></sub><sup>2</sup>(<em>R</em>)</span> where <span class="math inline"><em>i</em></span> is a irreducible representation and R is the expanded row of symmetry elements</li>
+</ul></li>
+<li>dimension of $j$th irreducible representation: <span class="math display"><em>l</em><sub><em>j</em></sub> = <em>χ</em><sub><em>j</em></sub>(<em>E</em>)</span></li>
+</ul>
+<h3 id="direct-sum">direct sum</h3>
+<ul>
+<li>a reducible representation (like MOs) is direct sum of irreducible representations <span class="math display"><em>Γ</em><sub><em>r</em><em>e</em><em>d</em><em>u</em></sub> = <em>Σ</em><sub><em>j</em></sub><em>a</em><sub><em>j</em></sub><em>Γ</em><sub><em>j</em></sub> = <em>a</em><sub>1</sub><em>Γ</em><sub>1</sub> ⊕ <em>a</em><sub>2</sub><em>Γ</em><sub>2</sub> ⊕ ...</span></li>
+<li>where <span class="math inline"><em>a</em><sub><em>j</em></sub></span> is <span class="math display">$$\frac{1}{h} \Sigma_{R} \chi_{redu}(R)\chi_j$$</span> meaning, sum of product of reducible representation with the representation of the symmetry elemental</li>
+<li>where <span class="math display"><em>χ</em><sub><em>r</em><em>e</em><em>d</em><em>u</em></sub>(<em>R</em>) = <em>Σ</em><sub><em>j</em></sub><sup><em>a</em></sup><sub><em>j</em></sub><em>χ</em><sub><em>j</em></sub>(<em>R</em>)</span> is a reducible representation can be further reduced</li>
+<li>to find the direct sum of irreducible representations for a reducible representation, find <span class="math inline"><em>a</em><sub><em>j</em></sub></span> for all irreducible representations and see which ones are not 0</li>
+<li><span class="math display"><em>χ</em><sub><em>j</em></sub>(<em>R</em>)</span> is like a wavefunction that returns the eigenvalue</li>
+</ul>
+<h2 id="section-9">18</h2>
+<h3 id="direct-product">direct product</h3>
+<ul>
+<li>a direct product can be reduced to terms of the irreducible representation:
+<span class="math display"><em>Γ</em><sub><em>r</em><em>e</em><em>d</em><em>u</em></sub> = ∏<sub><em>i</em></sub><em>Γ</em><sub><em>i</em></sub> = <em>Γ</em><sub><em>i</em></sub> ⊗ <em>Γ</em><sub><em>j</em></sub> ⊗ ... = <em>Σ</em><sub><em>j</em></sub><em>a</em><sub><em>j</em></sub><em>Γ</em><sub><em>j</em></sub></span></li>
+<li><span class="math display"><em>χ</em><sub><em>r</em><em>e</em><em>d</em><em>u</em></sub>(<em>R</em>) = ∏<sub><em>i</em></sub><em>χ</em><sub><em>i</em></sub>(<em>R</em>)</span></li>
+<li>how do we go from direct sum to direct product?</li>
+</ul>
+<h3 id="what-does-direct-sum-and-direct-product-mean-chemically">what does direct sum and direct product mean chemically?</h3>
+<ul>
+<li>we want to know when two wavefunctions will be orthogonal
+<ul>
+<li>like frank condon states, we want <span class="math display">⟨<em>Ψ</em><sub><em>i</em></sub>|<em>Â</em>|<em>Ψ</em><sub><em>j</em></sub>⟩</span></li>
+<li>symmetry gives us selection rules</li>
+</ul></li>
+</ul>
+<h3 id="after-finding-irreducible-representation---salcs">after finding irreducible representation -&gt; SALCs</h3>
+<ul>
+<li>we apply the projection operator for SALCs: <span class="math display"><em>P̂</em><sub><em>j</em></sub> = <em>Σ</em><sub><em>j</em></sub>(<em>R</em>)<em>R̂</em></span></li>
+<li>for multi-degenerate states, we must orthogonalize to find the right number of wavefunctions</li>
 </ul></div>
   </div>
   <div class="flex-row link-no-style">

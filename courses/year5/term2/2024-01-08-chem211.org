@@ -567,6 +567,7 @@ salt bridges are built into reference cell
       - Cl$^-$ will precipiate -> run of AgCl, run of K (for KCl precipitating the Cl), then you lose the eq -> the potential of reference electrode starts changing and no longer reference electrode
         - can't push alot of current through them
 - redox titrations
+  - you should be able to find approx start and end potential, potential at half eq point, potential after equiv point, potential at equiv point, all vs SHE or other ref electrode
   - titrated with strong ox. or red. agent to determine analyte
   - strong, standardized ox/red agent
   - assume redox reactions go to completion
@@ -736,15 +737,76 @@ textbook notes:
 - absorbance is linear function of analyte concentration: $$A = -log T = - log \frac{P_T}{P_0}$$
   - require line source instead of continuum source because effective bandwidth is too large
 
+*** lecture 14
+**** glass as membrane
+- arrangement of $SiO_4$ tetrahedra, bonding is incomplete $Si-O^-$ groups associated with cations
+  - $Na^+ Gl^- (s) + H_3O^+ (aq) <> H^+ Gl^-1 (s) + H_2O + Na^+ (aq)$
+- Charge on glass surface depends on two EQ: with $H^+$ and with $Na^+$ (or other alkali metals)
+  - binding of hydrogen ions is more favored than alkali metal ions
+  - pH sensitivity:
+    - exterior solution: $Na^+$ conducts in dry interior
+    - interior solution: $Na^+$ and $H^+$ conducts in hydrated outer layers of glass
+    - This complicates relating potential to [$H^+$]
+- potentiometric measurement:
+  - analyte solution, indicator electrode, reference electrode, salt bridge, voltmeter
 **** Ion-selective Electrodes /Introduction to Spectrophotometry
+- PM with ISE require:
+- Combination pH electrodes combine 2 reference electrodes plus glass membrane
+  - Measured potential is the membrane potential, and varies with analyte [$H^+$]
+- There is no Nernst Eqn for potentiometry (since no charge transferred, ie no redox rxn)
+  - But we can write a ‘Nernst‐like’ equation
+- You can’t use a pH electrode without first calibrating it
+- Measurements go wonky at very high pH (very basic solns)
+  - Interference from Na^+
+  - Nikolsky eqn quantifies interference
+- What Liquid membrane ISEs and Solid State ISEs are and how they work
+
 **** Fundamentals of Spectrophotometry
 **** Applications of Spectrophotometry – Quantitative
 **** Spectrophotometry, Beer-Lambert Law
 **** Applications of Spectrophotometry I
 **** Applications of Spectrophotometry II
 
+
+*** lecture 15
+
+*** lecture 16
+- Jablonski diagrams help indicate what’s happening
+- Bandwidths also depend on local environment (including effect of vib. & rotational levels)
+  - we get absorption bands from electronic transitions, vibrational levels, rotational levels, other collections/interaction
+  - all appear as a broad peak
+  - we can get sharper peaks by limiting the types of transitions that occur
+- Relaxation pathways: fluorescence, internal conversion, intersystem crossing, phosphorescence
+  - vibrational relaxation: energy lost to heat, electron stays in same electronic state
+  - internal conversion: energy lost to heat, electron moves to lower electronic state, requires overlap between vibration levels and lower electronic state (horizontal energy transfer)
+  - fluorescence: only occurs in singlet to singlet state
+  - intersystem crossing: excited singlet move to excited triplet (or other way)
+  - phosphorescence: only occurs in triplet to singlet state
+  - light emitted from fluorescence or phosphorescence is always same or less than excitation wavelength
+  - relative time frame:
+    - absorption < vibration relaxation and internal conversion < fluorescence < phosphorescence (slow)
+- Definition of chromophore and auxochrome
+  - chromophore: light absorbing groups (part of molecule)
+    - 200 - 800 nm: pi-electron and hetero atoms with non-bonding valence shell electron pairs
+    - non bonding electrons in water, alcohols, either don't absorb above 160nm, they are suitable solvents for spectroscopy
+      - increasing/extending conjugation of unsaturated bonds decreases transition energies -> energy gap between HOMO and LUMO decreases
+| Nature of Shift    | Term         | How                                          |
+|--------------------+--------------+----------------------------------------------|
+| longer wavelength  | red shift    | adding double bonds                          |
+| shorter wavelength | blue shift   |                                              |
+| greater absorption | hyperchromic | doubles with each new conjugated double bond |
+| lower absorption   | hypochromic  |                                              |
+   - auxochrome: chemical group attached to chromophore that modifies its light absorption (alter energy of MOs)
+     - acid-base indicators: isobestic point -> total absorbance stays the same (?)
+- Effect of conjugation on C=C chromophore
+- Measuring light absorption Beer‐Lambert law (aka Beer’s law)
+- Iron with phenanthroline as an example application
+
+*** lecture 17
+*** lecture 18
+-
+
 ** 5: Separations and liquid chromatography
-*** lecture 14
 **** Analytical Separations Fundamentals I
 **** Analytical Separations Fundamentals II
 **** Gas Chromatography

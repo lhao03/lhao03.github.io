@@ -336,6 +336,23 @@ L/R circularly polarized photons have angular momentum $$+/- \hbar$$
 - wavelength is same as excitation wavelength
   [[../../../../images/401/two.png]]
 ** 14: electronic spectroscopy
+*** atoms
+- sharp spectra
+- with many electron atoms, coupling occurs
+  - J-J coupling: heavy atoms
+  - L-S coupling: light atoms
+- total angular momentum: $\hat{J} = \hat{L} + \hat{S}$
+- why loss of degeneracy caused by coulomb interaction
+- Hund's rule
+  - state with largest S most stable
+  - for same S, state with largest L is most stable
+- $^{2S + 1}L_J$
+  - $\hat{H}_{so} = \zeta \hat{L} \dot \hat{S}$: represented by J
+  - $\hat{H}_0 + \hat{H}_{ee} + \hat{H}_{so}$
+*** SO splittings:
+- energy difference: $E_{J+1} - E_J = \frac{1}{2} \zeta [(J+1)(J+2) - J(J+1)] = \zeta (J+1)$
+*** selection rule
+- dipole transition: $\hat{mu} = - e r$, $\Delta m_s = 0$, $\Delta l = +- 1$ dipole moment, $\Delta m_l = 0, +-1$, $\Delta n$ any positive integer
 ** 15: electronic spectroscopy
 ** 16: magnetic resonance
 ** 17: spectroscopy
@@ -345,7 +362,7 @@ L/R circularly polarized photons have angular momentum $$+/- \hbar$$
   - stepwise ionization (minimum of 2 photons)
   - ionization rate higher when photons in resonance with intermediate state
   - TOF for mass spec
-- need tunable light source (dye laser), ion yeild vs. wavelength is plotted
+- need tunable light source (dye laser), ion yield vs. wavelength is plotted
 - shows same feature as absoption spectrum
   - different set of selection rules -> transitions forbidden with one photon are not forbidden with two photons
 - multiple photons can be absorbed: ionization at less energetic wavelengths
