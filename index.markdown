@@ -3,14 +3,9 @@ title: Hi, I'm Lucy
 description: Currently studying computer science and chemistry at the University of British Columbia.
 ---
 
-Hello, welcome to my plethora of thoughts. I enjoy learning about how and why things work, especially pertaining to theoretical chemistry, physical chemistry and a bit of programming language theory and synthetic biology. I'm interested in predicting the behavior of molecules and biological entities using theory and computation!
+Hello, welcome to my plethora of thoughts. I enjoy learning about how and why things work, especially through the lens of theoretical chemistry and physical chemistry. I also have opinions about programming language theory and try to do synthetic biology. 
 
-You can see my paper log [here](/read), my [CV](/cv/cv.pdf) or [resume](/resume-lucy/resume-Lucy-Hao.pdf).
-
-<!-- <h2 style="padding:0;margin:0;">Selected Writing</h2> -->
-<!-- $partial("templates/post-list.html")$ -->
-
-[See more ▶](/archive)
+[[outdated paper log]](/read), [[CV]](/cv/cv.pdf), [[resume]](/resume-lucy/resume-Lucy-Hao.pdf), [[posts]](/archive)
 
 ## Coursework
 

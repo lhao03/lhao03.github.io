@@ -1,0 +1,9 @@
+---
+title: "Physics Resources"
+date: 2024-03-26
+tags: physics
+---
+
+- https://www.mathphysicsbook.com/
+- http://vallance.chem.ox.ac.uk/pdfs/SymmetryLectureNotes.pdf
+- https://www.mpsd.mpg.de/Radaelli2017-Lecture_Notes
