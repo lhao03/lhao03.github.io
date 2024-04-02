@@ -1,0 +1,20 @@
+---
+title: "Workout Tracking"
+date: 2024-03-31
+tags: life
+---
+
+[cols="1,1,1,1,1,1,1"]
+|===
+|Monday | Tuesday |Wednesday | Thursday| Friday| Saturday| Sunday
+
+|Cell in column 1, row 2
+|Cell in column 2, row 2
+|Cell in column 3, row 2
+|Cell in column 4 row 2
+|Cell in column 5, row 2
+|
+* CDL 135, 4 * 6
+* HT 185 225 295 (2 * 12, 10, 8)
+|Cell in column 7, row 2
+|===

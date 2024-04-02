@@ -2,6 +2,57 @@
 description: "CHEM 245"
 title: "CHEM 245: Intermediate Synthetic Chemistry Laboratory"
 ---
+* how to solve problems
+** mass spec
+- this tells us the mass of the compound, number of carbons, number of hydrogens and other atoms
+- find the base peak and the molecular ion peak
+  - take special notice to these peaks:
+    - Br:
+    - Cl:
+- use the rule of 13 to try and solve for initial ratio
+- solve for units of saturation
+
+** IR
+1. look for a carbonyl group (1880-1640)
+   - amide (the C-N bond causes resonance, lowering the frequency)
+     - 1700-1640
+     - NH2: 3350-3180
+     - NH: 3330
+     - NH bend: 1640 - 1550
+   - carboxylic acid
+     - 1710
+     - OH: 3400-2400
+     - CO stretch: 1320 - 1110
+   - ketone
+     - 1715
+     - C-CO-C: 1300-1100
+   - aldehyde
+     - 1725
+     - aliphatic CH: 2850, 2760
+   - ester
+     - 1735
+     - C-O stretch, two bands, 1300-1100
+   - acyl chloride
+     - C-Cl: 730-550
+   - anhydride
+     - band 1: 1810
+     - band 2: 1760
+2. look for alcohol, amine, nitrile
+   - alcohol: 3400-3300 (broad), 3650-3600 (sharp)
+     - CO stretch: 1260 - 1000
+   - amine 3500-3300, CN stretch (1350-1000):
+     - primary (NH2): 2 bands (1640-1510), NH bend (800)
+     - secondary (NH): 1 band 1500, NH bend (800)
+     - tertiary (N): no band, just CN stretch (1350-1000)
+3. triple bonds
+   - CN: 2250
+   - CC: weak/sharp near 2150 and acetyle CH near 3300
+4. double bonds: 1650
+5. nitro group
+6. review CH groups
+   - 3000ish sp3
+** H NMR
+** C NMR
 
 * questions
 - empirical vs. molecular

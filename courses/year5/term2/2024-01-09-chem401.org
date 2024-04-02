@@ -356,7 +356,9 @@ L/R circularly polarized photons have angular momentum $$+/- \hbar$$
 ** 15: electronic spectroscopy
 ** 16: magnetic resonance
 ** 17: spectroscopy
-** 18 - 25: REMPI (Resonant Enhanced MultiPhoton Ionization)
+** 18 - 25:
+*** Two-photon doppler free spectroscopy
+*** REMPI (Resonant Enhanced MultiPhoton Ionization)
 - two photons required
 - excite molecules into excited state followed by ionization
   - stepwise ionization (minimum of 2 photons)
@@ -369,3 +371,20 @@ L/R circularly polarized photons have angular momentum $$+/- \hbar$$
   - can excite different energy levels with same ionization
 - all photons emitted are same energy: is this always the case?
   - total energy doesn't need to equal the ionization energy
+*** Saturation absorption spectroscopy
+*** Fluorescence correlation spectroscopy
+*** Cavity ring down spectroscopy
+*** Frequency comb spectroscopy
+*** Coherant Anti-Stokes Raman spectroscopy
+*** Fluorescence resonance energy transfer spectroscopy
+*** Photoelectron velocity map imaging spectroscopy
+*** Two-dimensional infrared spectroscopy
+*** Multi-dimensional NMR spectroscopy
+*** Scanning near field optical spectroscopy
+*** Optical coherence tomography
+*** Positron emission tomography
+*** THz spectroscopy and Imaging
+*** Atto-second time resolved spectroscopy
+*** Operando spectroscopy
+*** Circular dichroism spectroscopy, optical rotatory dispersion
+*** Raman optical activity
