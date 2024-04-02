@@ -382,6 +382,16 @@ L/R circularly polarized photons have angular momentum $$+/- \hbar$$
 *** Multi-dimensional NMR spectroscopy
 *** Scanning near field optical spectroscopy
 *** Optical coherence tomography
+- high resolution, non-invasive of biological tissue
+- interferometry:
+  - split beam of light
+- low coherence: control interference
+  - long coherence: lots of interference
+  - short: interference only at specific z
+- image generation: A, B, C scan
+- resolution: axial and transverse (independent)
+- comparison: confocal (limited depth), ultrasound (low resolution/lots of depth), optical coherence (in the middle)
+  - question: combine confocal + ultrasound?
 *** Positron emission tomography
 *** THz spectroscopy and Imaging
 *** Atto-second time resolved spectroscopy

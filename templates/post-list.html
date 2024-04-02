@@ -1,9 +1,8 @@
-<div>
-  <ul>
-    $for(posts)$
-        <li>
-            <a href="$url$">$title$</a> - $date$
-        </li>
-    $endfor$
-  </ul>
+<div class="flex-row-col-wrap">
+  $for(posts)$
+  <div class="small">
+    <p><a href="$url$">$title$</a></p>
+    <p>$date$</p>
+  </div>
+  $endfor$
 </div>

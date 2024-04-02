@@ -5,6 +5,16 @@
   justify-content: space-between;
 }
 
+.flex-row-col-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  @media (min-width: $middleDimension) {
+    flex-direction: row;
+  }
+}
+
 .flex-row-no-space {
   display: flex;
   flex-wrap: wrap;
@@ -20,9 +30,17 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  @media (max-width: $smallDimension) {
+  @media (max-width: $middleDimension) {
     flex-direction: column;
   }
 }
 
-
+.small {
+  margin: 10px;
+  padding: 0 15px;
+  border: solid #81a1c1;
+  border-radius: 15px;
+  @media (min-width: $middleDimension) {
+    max-width: 15vw;
+  }
+}
