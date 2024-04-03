@@ -1,0 +1,32 @@
+---
+title: "Tools"
+date: 2024-04-03
+tags: software
+---
+
+What do you think of when you say tool? Probably something like a hammer or spatula, or some type of physical tool. Physical tools have been created to make a task easier or safer to accomplish. For instance, you could put a nail into a tree with a rock, but that’s dangerous, slow and tiring.  While physical tools make tasks easier, they are static, having no ability to become autonomous or react to the environment. Additionally, physical tools always require some kind of constant input and different levels of tool competency can determine the effectiveness of the tool in use. Physical tools are also very hands on and require someone to have good vision, sometimes rendering the use of such a tool impossible, and essentially inaccessible to some, which is a concern if such a tool is the standard. 
+
+The evolution of humans has evolved around physical tools for centuries, the most powerful being the steam engine and the computer. With the birth of the computer, another realm of tools have emerged, those being software based tools, which are arguably more powerful than physical tools. When software is coupled to a preexisting physical tool, the most canonical example being a robot, the possibilities are endless. People understand the utility of a robot very well, since robots are still a physically based tool that are often employed in dangerous environments or suboptimal environments like the surface of Mars. But when you ask someone to consider using Markdown instead of Google Docs, or to compute calculations with Python instead of Excel, you face an upward struggle. Inspired by teaching life science students Git, my frustrations in CHEM 211, and the podcast https://podcasts.apple.com/ca/podcast/corecursive-coding-stories/id1330329512?i=1000643923572  I wanted to discuss the era of software tools and their lack of acceptance by the general public. 
+
+What can a software tool offer which a physical tool usually can’t ?
+- automaiton
+- standardization
+- remove mental load
+
+Successful software tool adoption by general public
+- ms office
+- google drive
+- notion
+
+Why don’t people adopt better software tools?
+- abstraction
+- learning curve
+- Software tools made by devs, usually for devs
+
+Case study: Codespaces vs Replit
+
+What are some arguments against tools like Canva, ChatGPT, etc?
+- lack of creativity
+- discrediting talent
+
+is software like canva/chatgpt a tool? 
