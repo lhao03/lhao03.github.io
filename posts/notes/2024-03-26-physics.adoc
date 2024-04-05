@@ -7,3 +7,5 @@ tags: physics
 - https://www.mathphysicsbook.com/
 - http://vallance.chem.ox.ac.uk/pdfs/SymmetryLectureNotes.pdf
 - https://www.mpsd.mpg.de/Radaelli2017-Lecture_Notes
+- https://www.cs.ubc.ca/~jbosch/courses/2017-18/CPSC303/schedule/index.html
+- https://www.cs.ubc.ca/~jf/courses/303.S2020/index.html

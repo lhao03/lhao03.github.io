@@ -2,6 +2,14 @@
 description: "CHEM 412"
 title: "CHEM 412: Structure of Atoms and Molecules"
 ---
+* addressing problem set mistakes
+** PS1
+** PS2
+** PS3
+** PS4
+** MT
+** PS5
+** PS6
 
 * Course Schedule
 ** WebMO and Python tutorials
