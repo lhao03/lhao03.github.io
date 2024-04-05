@@ -11,6 +11,8 @@ It's easy to see that physical tools were created to make a task easier or safer
 
 The most powerful being the steam engine and the computer. With the birth of the computer, another realm of tools have emerged, those being software based tools, which are arguably more powerful than physical tools. When software is coupled to a preexisting physical tool, the most canonical example being a robot, the possibilities are endless. People understand the utility of a robot very well, since robots are still a physically based tool that are often employed in dangerous environments or suboptimal environments like the surface of Mars. But when you ask someone to consider using Markdown instead of Google Docs, or to compute calculations with Python instead of Excel, you face an upward struggle. Inspired by teaching life science students Git, my frustrations in CHEM 211, and the podcast https://podcasts.apple.com/ca/podcast/corecursive-coding-stories/id1330329512?i=1000643923572  I wanted to discuss the era of software tools and their lack of acceptance by the general public. 
 
+calculators
+
 What can a software tool offer which a physical tool usually can’t ?
 - automaiton
 - standardization
