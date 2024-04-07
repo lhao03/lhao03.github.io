@@ -3,6 +3,7 @@ title: "Daily Log"
 date: 2024-04-02
 tags: life
 ---
+:toc:
 
 i am tracking my days again. here are the things left to do.
 
@@ -29,7 +30,7 @@ i am tracking my days again. here are the things left to do.
 === chem 412
 * ps6 (april 6)
 ** ques 1 done
-** ques 2
+** ques 2 done
 ** ques 3
 * reviewing lectures
 * final (april 16)
@@ -42,14 +43,25 @@ i am tracking my days again. here are the things left to do.
 * just final review
 * and the final (april 8)
 
+== april 7
+seems like courses have no adjusted for the midterm break. need to make sure i am properly allocating my time, and i need to fix my sleep schedule.
+
+=== eaten
+* coffee
+
 == april 6
 tired, need to fix sleep.
 
-eaten:
+==== eaten
 * 4 dark chocolate, protein pancake
 * 1 cup coffee
+* bok choy
+* tofu
+* rice
+* pork belly (korean resturant)
+* beef (korean resturant)
 
-workout: 
+==== workout
 * sumo dl 135 (2*8) 185 (3*6)
 * Hp 185 5*15-20
 * Cable Lat raise 3*10
@@ -58,6 +70,7 @@ workout:
 
 == april 4/5
 weight: 120.2
+
 == april 3
 i feel kind of resistant to working because i'm kind of stressed and i did not sleep well yesterday. have to wake up and face the sun or something, my eyes are deceased.
 
