@@ -6,11 +6,18 @@ tags: life
 
 i am tracking my days again. here are the things left to do.
 
+=== life 
+* start tracking stats
+
 === iGEM
 * email dr. hein
 * email jordan?
+* email math prof guy
 * email dr. condon
 * prepare codebase for work
+* prepare figma for wiki
+* pick wiki framework
+* send out drylab feedback form
 
 === chem 211
 * guided inquiry (apr 9)
@@ -32,6 +39,21 @@ i am tracking my days again. here are the things left to do.
 === chem 245
 * just final review
 * and the final (april 8)
+
+== april 6
+eaten: 
+* 4 dark chocolate, protein pancake
+* 1 cup coffee
+
+workout: 
+* sumo dl 135 (2*8) 185 (3*6)
+* Hp 185 5*15-20
+* Cable Lat raise 3*10
+* Bicep curl 4*10
+* Sl dl to sp 20 4*5
+
+== april 4/5
+weight: 120.2
 
 == april 3
 i feel kind of resistant to working because i'm kind of stressed and i did not sleep well yesterday. have to wake up and face the sun or something, my eyes are deceased.
