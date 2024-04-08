@@ -7,11 +7,18 @@ tags: life
 
 i am tracking my days again. here are the things left to do.
 
+=== research
+* read over papers/u of t implementation
+* read over some hein lab papers
+* review math 200
+* check out cpsc 303/302 online
+
 === life 
 * start tracking stats
 
 === iGEM
-* email dr. hein
+* lts course (?)
+* email dr. hein (draft done)
 * email jordan?
 * email math prof guy
 * email dr. condon
@@ -19,35 +26,69 @@ i am tracking my days again. here are the things left to do.
 * prepare figma for wiki
 * pick wiki framework
 * send out drylab feedback form
+* set up drylab one on one
+* finish primer library
 
 === chem 211
 * guided inquiry (apr 9)
-* apr 4 lecture
-* feedback mt2 quiz (apr 8)
+** find s_y, s_b, s_x
+** fill in example calculations
 * ps5 (apr 15)
 * reading quiz (apr 11)
+* review unit 1
+* review unit 2
+* review unit 5
+* review unit 4
+* review unit 3
 
 === chem 412
-* ps6 (april 6)
-** ques 1 done
-** ques 2 done
-** ques 3
 * reviewing lectures
+** lectures 1 - 10
+** lectures 10 - 14
+** lectures 14 - 18
+** lectures 18 - 20
+** lectures 20 - 24
+* review pset 1-3
+* review mt, pset 4-6
+* pset 7 (finish ASAP)
 * final (april 16)
 
 === chem 401
-* asking questions about presentations
+* review lectures
 * final report (april 17)
 
-=== chem 245
-* just final review
-* and the final (april 8)
+== april 8
+i need to remember to turn the heat down or i can't fall asleep. i should start tracking calories and workouts more. i didn't realise most of my finals were in the first 2 days. i think i need to eat more protein.
+
+=== workout
+* squat
+* back extension
+* ham extension
+* quad extension
+* shoulder press
+* chest press
+
+=== eaten
+* bagel
+* coffee
+* jam
 
 == april 7
 seems like courses have no adjusted for the midterm break. need to make sure i am properly allocating my time, and i need to fix my sleep schedule.
 
+=== workout
+* 3 km run
+* random stuff
+
 === eaten
 * coffee
+* bagel
+* two egg
+* rice
+* bok choy
+* egg tart
+* pork belly
+* beef
 
 == april 6
 tired, need to fix sleep.

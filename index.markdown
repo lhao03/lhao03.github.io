@@ -7,13 +7,13 @@ Hello, welcome to my plethora of thoughts. I enjoy learning about how and why th
 
 [[outdated paper log]](/read), [[CV]](/cv/cv.pdf), [[resume]](/resume-lucy/resume-Lucy-Hao.pdf), [[posts]](/archive)
 
-## Coursework
-
-$partial("templates/courses.html")$
-
 ## Books
 
 $partial("templates/books.html")$
+
+## Coursework
+
+$partial("templates/courses.html")$
 
 <p>
 To get in touch with me, send an email to <code>(string-append "hao" "." "lucyy" "@" "gmail" "." "com")</code>. I also like cats.

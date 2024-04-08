@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lucy H | 2023-01-22-cpsc539b-reviews</title>
+  <link rel="stylesheet" href="../../../css/main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
+  <!-- and it's easy to individually load additional languages -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/languages/scheme.min.js"></script>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/base16/onedark.min.css" />
+  <script>
+    hljs.highlightAll();
+  </script>
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+  <link rel="preconnect" href="https://www.googletagmanager.com" />
+  <link rel="preconnect" href="https://www.google-analytics.com" />
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KDGPVMHC9Q"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-KDGPVMHC9Q");
+  </script>
+
+  <!-- basic favicon -->
+  <link rel="icon" href="../../../images/android-chrome-384x384.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../../images/android-chrome-384x384.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../../images/android-chrome-384x384.png" />
+  <link rel="apple-touch-icon-precomposed" href="../../../images/android-chrome-384x384.png" />
+</head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <a href="../../../">
+          <img src="../../../images/android-chrome-384x384.png" style="padding-right: 10px" />
+        </a>
+      </div>
+    </header>
+
+    <main role="main">
+      <h1>2023-01-22-cpsc539b-reviews</h1>
+      <div>
+  
+  <div class="header">
+    Posted on January 22, 2023
+    
+  </div>
+  <div class="tags">
+    
+    Tags: 
+    
+  </div>
+  <div class="content">
+    
+<div id="toc" class="toc">Contents:
+<ul>
+<li><a href="#week-1-tapl-9-and-11">week 1: tapl 9 and 11</a>
+<ul>
+<li><a href="#review">review</a></li>
+<li><a href="#critique">critique</a></li>
+</ul></li>
+</ul></div>
+<div id="body"><h1 id="week-1-tapl-9-and-11">week 1: tapl 9 and 11</h1>
+<h2 id="review">review</h2>
+<p>TAPL 9 introduced the simply typed lambda-calculus. This extends the type system to allow functions in booleans. The <span class="math inline"><em>T</em><sub>1</sub> → <em>T</em><sub>2</sub></span> type represents functions with input of type <span class="math inline"><em>T</em><sub>1</sub></span> and output of type <span class="math inline"><em>T</em><sub>2</sub></span>. Next, to understand what happens when an argument is applied to an abstraction, the typing rule for abstractions is introduced. Additionally, since we can have nested $λ-$abstractions, we must also now consider if there is a typing context, <span class="math inline"><em>Γ</em></span> that can influence or determine the type of a term. To prove type safety, we can use the inversion lemma (inversion of typing relation), uniqueness of types theorem (states there is one derivation of typing built from inference rules) and canonical forms lemma (tells us the types of values). The uniqueness of types theorem holds for the simply typed lambda-calculus, but this isn’t true for many other type systems. To prove that evaluation preserves types, there are some structural lemmas to consider. One is that permutations of a context are equivalent. Another is the weakening lemma, which states that all bound variables in a context must have distinct names and this is also true when we add a new binding. Finally, there is the preservation of types under substitution lemma. Using these lemmas, the type safety property can be proved.</p>
+<p>Most programs are converted to an untyped form before evaluation. This can be formalized with an erasure function. The theorem associated with erasure is that if a term <span class="math inline"><em>t</em></span> can be evaluated in the typed form to <span class="math inline"><em>t</em>′</span>, then when applying the erasure function to <span class="math inline"><em>t</em></span>, the evaluation of <span class="math inline"><em>e</em><em>r</em><em>a</em><em>s</em><em>e</em>(<em>t</em>)</span> results in <span class="math inline"><em>e</em><em>r</em><em>a</em><em>s</em><em>e</em>(<em>t</em>′)</span>. The application of erasure is seen in type reconstruction in languages like Haskell. Finally, this allows us to think about Curry-Style vs. Church-Style. Curry-Style is usually associated with implicitly typed systems while Church-Style is associated with explicitly typed systems.</p>
+<p>TAPL 11 introduces features that are commonly found in programming languages. Throughout the chapter, it is a common theme that many of these features are generalizations of each other. Additionally, most features are of a derived form, meaning no changes need to occur to the internal language, the simply typed lambda calculus. This is seen in programming languages as “syntactic sugar”. First, there are base types, which are similar to atomic types in Racket. These is no internal structure to base types and we theoretically think of them as a set of <em>uninterpreted</em> types. An interesting base type, the <code>Unit</code> type is interpreted in the most simple way; a single term <code>u</code> which is an element of <code>Unit</code>. In languages like C, <code>Unit</code> is actually the <code>void</code> type. A widely used derived form is sequencing (evaluate the first term, ignore its result and evaluate the second term). Sequencing is seen in Rust where you don’t add a semicolon at the end of an expression, but you do at the end of a statement. Languages like Java just add semicolons to the end of all lines of code. Next there are ascriptions, which means to assign a type to a term. Next, another somewhat derived form is the let binding; we use abstraction and application to achieve <code>let</code>-binding. While let can be a somewhat derived, we may not want it to be because languages with Hindley-Milner polymorphism have type checkers which use the <code>let</code> construct to generalize polymorphic definitions which cannot be emulated using ordinary <span class="math inline"><em>λ</em>−</span> abstraction and application. There are also pairs, tuples, and records and sums, variants and options. Special applications of variant types are enumerations and single-field variants. Finally, general recursion and lists are also defined.</p>
+<h2 id="critique">critique</h2>
+<p>The pros of the simply typed lambda-calculus is that it’s pretty intuitive and small. Adding new features usually relies on typing rules and evaluation rules previously defined, so the type system is also recursive. This results in many proofs on the type system to be proofs of induction. However, due to the small size of this type system, adding new features that are complex may produce a large derivation tree, which could be slow to type check or evaluate with an typechecker/evaluator. Also, there doesn’t seem to be a way to deal with scenarios when we are provided with the wrong input type and adverse behaviour occurs (though I may be wrong about this). Racket and Haskell seem to follow the simply typed lambda-calculus very closely, even in semantics.</p>
+<p>Some things that I’m still unclear about include the lemma on inversion of the typing relation. To me it seems like the typing rules are bidirectional. For instance, one typing rule is <span class="math display">$$\tfrac{x:R \in \Gamma}{\Gamma \vdash x : R}$$</span>, and the lemma is if <span class="math inline"><em>Γ</em> ⊢ <em>x</em> : <em>R</em></span> then <span class="math inline"><em>x</em> : <em>R</em> ∈ <em>Γ</em></span>. Another thing that was mentioned is the uniqueness of types and how that results in one derivation from the inference rules. After learning about CFG, which are sometimes ambiguous, I wonder if this “one derivation” of the simply typed lambda-calculus system will prevent some features that other type systems have. Another point about general recursion was that “no expression that can lead to non-terminating computations can be typed using only simple types”, I’m not sure why this is the case. This resulted in adding <code>fix</code> as a primitive; I’m a bit confused on the requirement of using <code>fix</code>.</p>
+<p>In comparison to Turing machines, lambda-calculus does not involve keeping track of state and has notation which is more intuitive and mathematical in nature. However, Turing Machines allow us to define algorithmic complexity, which I don’t clearly see from lambda-calculus.</p></div>
+  </div>
+  <div class="flex-row link-no-style">
+    
+    <a href="../../../posts/notes/2023-12-10-git-github-glue/index.html">⇐ Newer post</a>
+    
+    
+    <a href="../../../posts/notes/2023-01-21-lambda-calculus/index.html">Older post ⇒</a>
+    
+  </div>
+</div>
+
+
+    </main>
+
+    <footer>
+      <center>
+        <p>
+          <a href="../../../archive">archive</a>
+          <a href="https://github.com/lhao03" target="_blank">github</a>
+          <a href="https://www.linkedin.com/in/lucy-hao/" target="_blank">linkedin</a>
+        </p>
+      </center>
+      Site powered by cats, 🍫 and
+      <a href="http://jaspervdj.be/hakyll">Hakyll</a>
+    </footer>
+  </body>
+</html>
