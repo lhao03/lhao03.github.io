@@ -8,14 +8,20 @@ a {
 a {
   background: linear-gradient(to right, $highlightColor, $highlightColor),
     linear-gradient(to right, $highlightLeft, $highlightMiddle, $highlightRight);
-  background-size: 100% 3px, 0 3px;
-  background-position: 100% 100%, 0 100%;
+  background-size:
+    100% 3px,
+    0 3px;
+  background-position:
+    100% 100%,
+    0 100%;
   background-repeat: no-repeat;
   transition: background-size 400ms;
 }
 
 a:hover {
-  background-size: 0 3px, 100% 3px;
+  background-size:
+    0 3px,
+    100% 3px;
 }
 
 h1 {
@@ -91,5 +97,11 @@ article .header {
     margin: auto;
     font-weight: bold;
     border-radius: 8px;
+  }
+}
+
+.no-a-style {
+  a {
+    background: unset;
   }
 }

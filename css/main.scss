@@ -8,6 +8,7 @@
 @import "table";
 @import "toc";
 @import "syntax";
+@import "posts";
 
 html {
   font-size: 62.5%;
@@ -81,3 +82,7 @@ footer {
   user-select: none;
 }
 
+.center {
+  display: flex;
+  justify-content: center;
+}

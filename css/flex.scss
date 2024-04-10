@@ -34,13 +34,3 @@
     flex-direction: column;
   }
 }
-
-.small {
-  margin: 10px;
-  padding: 0 15px;
-  border: solid #81a1c1;
-  border-radius: 15px;
-  @media (min-width: $middleDimension) {
-    max-width: 15vw;
-  }
-}

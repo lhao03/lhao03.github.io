@@ -10,6 +10,10 @@ title: "CHEM 412: Structure of Atoms and Molecules"
 ** MT
 ** PS5
 ** PS6
+- how does the MO diagram show that the LUMO of the molecule is destabilized?
+- bonding energy: final - initial?
+- why don't MOs contain the coulomb and exchange integrals? is it just based on point groups?
+- how did we get the point groups for CO and BH$_3$
 
 * Course Schedule
 ** WebMO and Python tutorials
@@ -28,13 +32,13 @@ title: "CHEM 412: Structure of Atoms and Molecules"
 ** Angular momentum:
 11. Electron spin, Orbital angular momentum ✅
 ** Group Theory:
-12. Molecular symmetry, Point groups, Irreducible representations
-13. Construction of SALCs, Group theory, Character table
+12. Molecular symmetry, Point groups, Irreducible representations ✅
+13. Construction of SALCs, Group theory, Character table ✅
 ** Hartree-Fock Molecular Orbital Theory:
-14. Variational theorem
-15. H_2, Hartree-Fock method
-16. Self-consistent-field Koopmans theorem,
-17. Semi-empirical (H ̈uckel), Molecular mechanics
+14. Variational theorem ✅
+15. H_2, Hartree-Fock method ✅
+16. Self-consistent-field Koopmans theorem ✅
+17. Semi-empirical (H ̈uckel), Molecular mechanics ✅
 ** Electron Correlation:
 18. H2 dissociation problem, Configuration interaction, Coupled-cluster methods
 19. Perturbation theory

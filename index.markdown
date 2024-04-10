@@ -1,6 +1,6 @@
 ---
 title: Hi, I'm Lucy
-description: Currently studying computer science and chemistry at the University of British Columbia.
+description: Lucy's thoughts
 ---
 
 Hello, welcome to my plethora of thoughts. I enjoy learning about how and why things work, especially through the lens of theoretical chemistry and physical chemistry. I also have opinions about programming language theory and try to do synthetic biology. 

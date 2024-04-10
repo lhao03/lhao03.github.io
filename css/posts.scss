@@ -1,0 +1,35 @@
+.no-img {
+    background: hsla(213, 77%, 14%, 1);
+
+    background: linear-gradient(
+        90deg,
+        hsla(213, 77%, 14%, 1) 0%,
+        hsla(202, 27%, 45%, 1) 100%
+    );
+
+    background: -moz-linear-gradient(
+        90deg,
+        hsla(213, 77%, 14%, 1) 0%,
+        hsla(202, 27%, 45%, 1) 100%
+    );
+
+    background: -webkit-linear-gradient(
+        90deg,
+        hsla(213, 77%, 14%, 1) 0%,
+        hsla(202, 27%, 45%, 1) 100%
+    );
+}
+
+.hover-blue {
+    margin: 10px;
+    padding: 10px;
+    max-width: 10vw;
+    @media (max-width: $middleDimension) {
+        min-width: 90vw;
+    }
+    &:hover {
+        transition: background 0.2s ease-in;
+        background: hsla(213, 77%, 14%, 1);
+        border-radius: 6px;
+    }
+}
