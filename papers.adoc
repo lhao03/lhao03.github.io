@@ -6,8 +6,6 @@ date: 2023-12-24
 
 Here you can see how I rank my papers (when I don't forget to rank them) and the papers I've read. You can see the papers I've written about link:/tags/paper/[here].
 
-== Paper Log
-
 [cols="4,1,1"]
 |===
 |Number |Interest |Understanding

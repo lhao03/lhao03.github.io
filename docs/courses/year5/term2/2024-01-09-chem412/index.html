@@ -41,8 +41,10 @@
 
   <body>
     <main role="main">
-      <h1>CHEM 412: Structure of Atoms and Molecules</h1>
-      <div>
+      <div class="flex-row-col">
+        <div>
+          <h2>CHEM 412: Structure of Atoms and Molecules</h2>
+          <div>
   
   <div class="header">
     Posted on January  9, 2024
@@ -55,27 +57,7 @@
     
 <div id="toc" class="toc">Contents:
 <ul>
-<li><a href="#addressing-problem-set-mistakes">addressing problem set mistakes</a>
-<ul>
-<li><a href="#ps1">PS1</a></li>
-<li><a href="#ps2">PS2</a></li>
-<li><a href="#ps3">PS3</a></li>
-<li><a href="#ps4">PS4</a></li>
-<li><a href="#mt">MT</a></li>
-<li><a href="#ps5">PS5</a></li>
-<li><a href="#ps6">PS6</a></li>
-</ul></li>
-<li><a href="#course-schedule">Course Schedule</a>
-<ul>
-<li><a href="#webmo-and-python-tutorials">WebMO and Python tutorials</a></li>
-<li><a href="#review-of-quantum-mechanics">Review of Quantum Mechanics:</a></li>
-<li><a href="#molecular-orbital-theory">Molecular Orbital Theory:</a></li>
-<li><a href="#angular-momentum">Angular momentum:</a></li>
-<li><a href="#group-theory">Group Theory:</a></li>
-<li><a href="#hartree-fock-molecular-orbital-theory">Hartree-Fock Molecular Orbital Theory:</a></li>
-<li><a href="#electron-correlation">Electron Correlation:</a></li>
-<li><a href="#density-functional-theory">Density Functional Theory:</a></li>
-</ul></li>
+<li><a href="#addressing-problem-set-mistakes">addressing problem set mistakes</a></li>
 <li><a href="#lectures">Lectures</a>
 <ul>
 <li><a href="#python-and-qm-intro">2 Python and QM Intro</a>
@@ -102,7 +84,6 @@
 <li><a href="#lcao-how-does-it-differ-from">LCAO: how does it differ from</a></li>
 </ul></li>
 <li><a href="#matrix-mechanics">6 Matrix mechanics</a></li>
-<li><a href="#matrix-mechanics-1">6 matrix mechanics</a></li>
 <li><a href="#section-1">7</a></li>
 <li><a href="#section-2">8</a></li>
 <li><a href="#section-3">9</a>
@@ -151,25 +132,47 @@
 <li><a href="#what-does-direct-sum-and-direct-product-mean-chemically">what does direct sum and direct product mean chemically?</a></li>
 <li><a href="#after-finding-irreducible-representation---salcs">after finding irreducible representation -&gt; SALCs</a></li>
 </ul></li>
+<li><a href="#section-10">19</a></li>
+<li><a href="#section-11">20</a></li>
+<li><a href="#section-12">21</a></li>
+<li><a href="#section-13">22</a></li>
+<li><a href="#section-14">23</a></li>
+<li><a href="#section-15">24</a></li>
+<li><a href="#section-16">25</a></li>
 </ul></li>
 </ul></div>
-<div id="body"><h1 id="addressing-problem-set-mistakes">addressing problem set mistakes</h1>
-<h2 id="ps1">PS1</h2>
-<h2 id="ps2">PS2</h2>
-<h2 id="ps3">PS3</h2>
-<h2 id="ps4">PS4</h2>
-<h2 id="mt">MT</h2>
-<h2 id="ps5">PS5</h2>
-<h2 id="ps6">PS6</h2>
+<div id="body"><h2 id="addressing-problem-set-mistakes">addressing problem set mistakes</h2>
+<p><strong>PS1</strong>
+<strong>PS2</strong>
+<strong>PS3</strong></p>
+<ul>
+<li>matrix mechanics</li>
+</ul>
+<p><strong>PS4</strong></p>
+<ul>
+<li>Morse potential vs. harmonic oscillator: the Morse potential does not have a minimum, so vib freq cannot be obtained for (certain molecules)
+<ul>
+<li>difference between Morse and HO?</li>
+</ul></li>
+</ul>
+<p><strong>MT</strong></p>
+<ul>
+<li>to obtain ZPE corrected energy, its energy from MO calculation + ZPE</li>
+<li>BO approximation: separation of electronic motion and nuclear motion =&gt; molecular wavefunction that is product of nuclear wave function and electronic wave function</li>
+<li>LCAO-MO: MOs made of linear combination of AOs</li>
+</ul>
+<p><strong>PS5</strong></p>
+<ul>
+<li>ratio of rates is <span class="math display"><em>e</em><sup><em>Δ</em><em>E</em><sub><em>a</em></sub><sup>∘</sup> − <em>Δ</em><em>E</em><sub><em>b</em></sub><sup>∘</sup></sup><em>R</em><em>T</em></span></li>
+</ul>
+<p><strong>PS6</strong></p>
 <ul>
 <li>how does the MO diagram show that the LUMO of the molecule is destabilized?</li>
-<li>bonding energy: final - initial?</li>
+<li>bonding energy: final - initial (non bonded)</li>
 <li>why don’t MOs contain the coulomb and exchange integrals? is it just based on point groups?</li>
-<li>how did we get the point groups for CO and BH<span class="math inline"><sub>3</sub></span></li>
+<li>how did we get the point groups for CO</li>
 </ul>
-<h1 id="course-schedule">Course Schedule</h1>
-<h2 id="webmo-and-python-tutorials">WebMO and Python tutorials</h2>
-<h2 id="review-of-quantum-mechanics">Review of Quantum Mechanics:</h2>
+<p><strong>Review of Quantum Mechanics:</strong></p>
 <ol type="1">
 <li>Schrodinger Eq. ✅</li>
 <li>Relativity, Fermion and boson, Pauli exclusion principle ✅</li>
@@ -177,7 +180,7 @@
 <li>Dirac notation, basis set expansion, superposition of states ✅</li>
 <li>Matrix mechanics ✅</li>
 </ol>
-<h2 id="molecular-orbital-theory">Molecular Orbital Theory:</h2>
+<p><strong>Molecular Orbital Theory:</strong></p>
 <ol type="1">
 <li>Born-Oppenheimer approximation, Nuclear and electronic Hamiltonians ✅</li>
 <li>Atomic units, Potential energy surface (PES), Reaction coordinates, Transition states ✅</li>
@@ -185,32 +188,32 @@
 <li><span class="math display"><em>H</em><sub>2</sub><sup>+</sup></span> , Two-state model ✅</li>
 <li>Electronic wavefunctions, Slater determinant ✅</li>
 </ol>
-<h2 id="angular-momentum">Angular momentum:</h2>
+<p><strong>Angular momentum:</strong></p>
 <ol type="1">
 <li>Electron spin, Orbital angular momentum ✅</li>
 </ol>
-<h2 id="group-theory">Group Theory:</h2>
+<p><strong>Group Theory:</strong></p>
 <ol type="1">
 <li>Molecular symmetry, Point groups, Irreducible representations ✅</li>
 <li>Construction of SALCs, Group theory, Character table ✅</li>
 </ol>
-<h2 id="hartree-fock-molecular-orbital-theory">Hartree-Fock Molecular Orbital Theory:</h2>
+<p><strong>Hartree-Fock Molecular Orbital Theory:</strong></p>
 <ol type="1">
 <li>Variational theorem ✅</li>
 <li>H<sub>2</sub>, Hartree-Fock method ✅</li>
 <li>Self-consistent-field Koopmans theorem ✅</li>
 <li>Semi-empirical (H ̈uckel), Molecular mechanics ✅</li>
 </ol>
-<h2 id="electron-correlation">Electron Correlation:</h2>
+<p><strong>Electron Correlation:</strong></p>
 <ol type="1">
-<li>H2 dissociation problem, Configuration interaction, Coupled-cluster methods</li>
-<li>Perturbation theory</li>
-<li>Møller-Plesset perturbation theory</li>
-<li>Method comparison, Accuracies, Convergence issues</li>
+<li>H2 dissociation problem, Configuration interaction, Coupled-cluster methods ✅</li>
+<li>Perturbation theory ✅</li>
+<li>Møller-Plesset perturbation theory ✅</li>
+<li>Method comparison, Accuracies, Convergence issues ✅</li>
 </ol>
-<h2 id="density-functional-theory">Density Functional Theory:</h2>
+<p><strong>Density Functional Theory:</strong></p>
 <ol type="1">
-<li>Hohenberg-Kohn theorems, Kohn-Sham method</li>
+<li>Hohenberg-Kohn theorems, Kohn-Sham method ✅</li>
 </ol>
 <h1 id="lectures">Lectures</h1>
 <h2 id="python-and-qm-intro">2 Python and QM Intro</h2>
@@ -461,7 +464,6 @@ i\hbar \frac{\partial}{\partial t}\psi &amp;= - \frac{h^2}{2m} \nabla \psi \\
 <li>adjoint <span class="math display"><em>Â</em><sup>†</sup></span> with basis set</li>
 <li>euclidean 3D vector space vs. Hilbert nD metric space</li>
 </ul>
-<h2 id="matrix-mechanics-1">6 matrix mechanics</h2>
 <h2 id="section-1">7</h2>
 <h2 id="section-2">8</h2>
 <h2 id="section-3">9</h2>
@@ -1113,7 +1115,14 @@ i\hbar \frac{\partial}{\partial t}\psi &amp;= - \frac{h^2}{2m} \nabla \psi \\
 <ul>
 <li>we apply the projection operator for SALCs: <span class="math display"><em>P̂</em><sub><em>j</em></sub> = <em>Σ</em><sub><em>j</em></sub>(<em>R</em>)<em>R̂</em></span></li>
 <li>for multi-degenerate states, we must orthogonalize to find the right number of wavefunctions</li>
-</ul></div>
+</ul>
+<h2 id="section-10">19</h2>
+<h2 id="section-11">20</h2>
+<h2 id="section-12">21</h2>
+<h2 id="section-13">22</h2>
+<h2 id="section-14">23</h2>
+<h2 id="section-15">24</h2>
+<h2 id="section-16">25</h2></div>
   </div>
   <div class="flex-row link-no-style">
     
@@ -1122,6 +1131,16 @@ i\hbar \frac{\partial}{\partial t}\psi &amp;= - \frac{h^2}{2m} \nabla \psi \\
 </div>
 
 
+        </div>
+        <div class="sidebar">
+  <a href="../../../../"><h2>Lucy Hao</h2></a>
+  <a href="../../../../archive"><h3>Thoughts</h3></a>
+  <a href="../../../../papers"><h3>Paper Log</h3></a>
+  <a href="../../../../books"><h3>Books</h3></a>
+  <a href="../../../../cv/cv.pdf"><h3>CV/Resume</h3></a>
+</div>
+
+      </div>
     </main>
 
     <footer>

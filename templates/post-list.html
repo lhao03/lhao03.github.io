@@ -1,12 +1,10 @@
-<div class="flex-row-col-wrap no-a-style">
+<div class="flex-row-col-wrap">
   $for(posts)$
-  <a href="$url$"
-    ><div class="hover-blue">
-      <div>
-        <h2>$title$</h2>
-        <p>$date$</p>
-      </div>
-    </div></a
-  >
+  <div>
+    <a href="$url$">
+      <h2>$title$</h2>
+    </a>
+    <p>$date$</p>
+  </div>
   $endfor$
 </div>

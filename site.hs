@@ -71,11 +71,18 @@ main = hakyllWith config $ do
         route $ setExtension "css"
         compile (fmap compressCss <$> sassCompiler)
 
-  match (fromList ["read.adoc", "log.adoc"]) $ do
+  match (fromList ["log.adoc", "papers.adoc", "books.adoc"]) $ do
     route appendIndex
-    compile $
+    compile $ do
+      let indexCtx =
+            listField "posts" postCtx (recentFirst =<< loadAll "posts/*")
+              `mappend` listField "courses" postCtx (recentFirst =<< loadAll "courses/**")
+              `mappend` listField "books" postCtx (recentFirst =<< loadAll "books/**")
+              `mappend` defaultContext
+
       pandocCompilerWithAsciidoctor
-        >>= loadAndApplyTemplate "templates/default.html" defaultContext
+        >>= applyAsTemplate indexCtx
+        >>= loadAndApplyTemplate "templates/default.html" indexCtx
         >>= relativizeUrls
 
   match "404.html" $ do
@@ -154,7 +161,7 @@ main = hakyllWith config $ do
         >>= relativizeUrls
         >>= cleanIndexUrls
 
-  match "index.markdown" $ do
+  match "index.markdown"$ do
     route $ setExtension "html"
     compile $ do
       let indexCtx =

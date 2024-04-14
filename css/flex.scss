@@ -31,6 +31,6 @@
   flex-direction: row;
   justify-content: space-between;
   @media (max-width: $middleDimension) {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 }

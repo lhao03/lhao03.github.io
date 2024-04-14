@@ -17,8 +17,6 @@ i am tracking my days again. here are the things left to do.
 * start tracking stats
 
 === iGEM
-* lts course (?)
-* email dr. hein (draft done)
 * email jordan?
 * email math prof guy
 * email dr. condon
@@ -30,11 +28,6 @@ i am tracking my days again. here are the things left to do.
 * finish primer library
 
 === chem 211
-* guided inquiry (apr 9)
-** find s_y, s_b, s_x
-** fill in example calculations
-* ps5 (apr 15)
-* reading quiz (apr 11)
 * review unit 1
 * review unit 2
 * review unit 5
@@ -44,18 +37,41 @@ i am tracking my days again. here are the things left to do.
 === chem 412
 * reviewing lectures
 ** lectures 1 - 10
+*** reviewing eigenvalue matrix
 ** lectures 10 - 14
 ** lectures 14 - 18
 ** lectures 18 - 20
 ** lectures 20 - 24
-* review pset 1-3
-* review mt, pset 4-6
 * pset 7 (finish ASAP)
 * final (april 16)
 
-=== chem 401
-* review lectures
-* final report (april 17)
+== april 14
+* [ ] practice point group stuff
+
+== april 13
+* [*] filed taxes??
+* [*] sent return
+* [ ] email about return
+* [*] finish ps7
+* [ ] finish take home final (412)
+* [*] lectures 1 - 10
+* [*] lectures 10 - 14
+* [*] lectures 14 - 18
+* [*] lectures 18 - 20
+
+== april 12
+* [ ] finish ps7
+* [ ] finish take home final (412)
+* [*] finish take home final (401)
+* [*] do half of ps5 (211) [done]
+* [*] gym
+* [*] plan gym workouts
+
+== april 11
+* return earring package
+* finish ps7
+
+now have everything i need to finish all existing assignments. finished reading divine rivials. not doing a great job being consistent in the gym unfortunately.
 
 == april 8
 i need to remember to turn the heat down or i can't fall asleep. i should start tracking calories and workouts more. i didn't realise most of my finals were in the first 2 days. i think i need to eat more protein.

@@ -1,0 +1,6 @@
+---
+title: "Books"
+date: 2023-12-24
+---
+
+$partial("templates/books.html")$

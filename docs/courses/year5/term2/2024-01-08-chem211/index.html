@@ -41,8 +41,10 @@
 
   <body>
     <main role="main">
-      <h1>CHEM 211: Introduction to Chemical Analysis</h1>
-      <div>
+      <div class="flex-row-col">
+        <div>
+          <h2>CHEM 211: Introduction to Chemical Analysis</h2>
+          <div>
   
   <div class="header">
     Posted on January  8, 2024
@@ -97,7 +99,11 @@
 <li><a href="#lecture-17">lecture 17</a></li>
 <li><a href="#lecture-18">lecture 18</a></li>
 </ul></li>
-<li><a href="#separations-and-liquid-chromatography">5: Separations and liquid chromatography</a></li>
+<li><a href="#separations-and-liquid-chromatography">5: Separations and liquid chromatography</a>
+<ul>
+<li><a href="#textbook-reading">textbook reading</a></li>
+<li><a href="#key-words">key words</a></li>
+</ul></li>
 <li><a href="#glassware">glassware</a></li>
 </ul></li>
 </ul></div>
@@ -1486,9 +1492,6 @@ E = E^\circ - \frac{RT}{nF} \ln Q$$</span>
 </ul>
 <h3 id="lecture-17">lecture 17</h3>
 <h3 id="lecture-18">lecture 18</h3>
-<ul>
-<li></li>
-</ul>
 <h2 id="separations-and-liquid-chromatography">5: Separations and liquid chromatography</h2>
 <p>Analytical Separations Fundamentals I</p>
 <p>Analytical Separations Fundamentals II</p>
@@ -1496,6 +1499,211 @@ E = E^\circ - \frac{RT}{nF} \ln Q$$</span>
 <p>Liquid Chromatography I</p>
 <p>Liquid Chromatography II</p>
 <p>Catch-up/review</p>
+<h3 id="textbook-reading">textbook reading</h3>
+<ol>
+<li><p>12B</p>
+<ul>
+<li>characterize chromatographic peak: retention time, baseline width</li>
+<li>nonretained solutes: move through column at same rate as mobile phase =&gt; gives us void time (time to elute the nonretained solutes)</li>
+<li>resolution: measure of their separation: <span class="math display">$$R_{AB} = \frac{t_{r, B} - t_{r, A}}{0.5 (w_B + w_A)} = 2 \frac{\Delta t_t}{w_B + w_A}$$</span>, where B takes longer to elute
+<ul>
+<li>improve by either increasing <span class="math inline"><em>Δ</em><em>t</em><sub><em>t</em></sub></span> or decreasing <span class="math inline"><em>w</em><sub><em>B</em></sub> + <em>w</em><sub><em>A</em></sub></span>
+<ul>
+<li>both solutes spend less time in mobile phase =&gt; retention factor</li>
+<li>increase selectivity =&gt; only one solute experience significant change in retention time</li>
+<li>baseline width: solutes movement within and between mobile phase/stationary phase =&gt; column efficiency</li>
+</ul></li>
+</ul></li>
+</ul>
+<ol>
+<li><p>solute retention factor</p>
+<ul>
+<li>the larger the retention factor, the more the distribution favors solute in stationary phase, and longer retention time</li>
+</ul>
+<p><span class="math display">$$k = \frac{t_t - t_m}{t_m}$$</span></p></li>
+<li><p>selectivity</p>
+<ul>
+<li>relative measure of retention of two solutes, <span class="math inline">$\alpha = \frac{k_B}{k_A}$</span>, where A has smaller retention time</li>
+</ul></li>
+<li><p>column efficiency</p>
+<ul>
+<li>quantitative measure of extent of band broadening: number of theoretical plates <span class="math inline">$N = \frac{L}{H}$</span>, where L is column length and H is height of theoretical plate =&gt; more theoretical plates =&gt; chromatographic peaks become narrower</li>
+<li>theoretical model of chromatography =&gt; theoretical plates
+<ul>
+<li>within each theoretical plate: eq between solute present in stationary phase and solute present in mobile phase</li>
+</ul></li>
+<li>given a Gaussian profile: <span class="math display">$$H = \frac{\sigma^2}{L}$$</span></li>
+<li>width is 4 times the standard deviation</li>
+<li>gives us <span class="math display">$$H = \frac{Lw^2}{16 t^2_r}$$</span></li>
+</ul></li>
+<li><p>peak capacity</p>
+<ul>
+<li>estimate of number of solutes we can seperate</li>
+</ul></li>
+</ol></li>
+<li><p>12C: optimizing chromatographic separations</p>
+<ul>
+<li><span class="math display">$$$R_{AB} = \frac{t_{t, B} - t_{t, A}}{0.5 (w_B + w_A)}$ or approximately equal $$</span> = <span class="math display">, <em>w</em><em>h</em><em>e</em><em>r</em><em>e</em><em>B</em><em>i</em><em>s</em><em>t</em><em>h</em><em>e</em><em>l</em><em>a</em><em>t</em><em>e</em><em>r</em><em>e</em><em>l</em><em>u</em><em>t</em><em>i</em><em>n</em><em>g</em><em>o</em><em>f</em><em>t</em><em>w</em><em>o</em><em>s</em><em>o</em><em>l</em><em>u</em><em>t</em><em>e</em><em>s</em> − <em>w</em><em>h</em><em>i</em><em>c</em><em>h</em><em>w</em><em>e</em><em>g</em><em>e</em><em>t</em></span><span class="math inline">$R_{AB} = \frac{\sqrt{N_B}}{4} \times \frac{t_{t, B} - t_{t, A}}{t_{t, B}} = \frac{\sqrt{N_B}}{4} \times \frac{\alpha - 1}{\alpha} \times \frac{k_B - k_A}{1 + k_B}$</span></li>
+</ul>
+<ol>
+<li><p>using retention factor</p>
+<ul>
+<li>adjust B’s retention factor, <span class="math inline"><em>k</em><sub><em>B</em></sub></span>, increasing will improve resolution, best if <span class="math inline"><em>k</em><sub><em>B</em></sub></span> starts out being less than 10 =&gt; cost of longer analysis time</li>
+<li>to increase <span class="math inline"><em>k</em><sub><em>B</em></sub></span> without changing <span class="math inline"><em>α</em></span> =&gt; nonselective increase to both retention factors
+<ul>
+<li>GC: temperature (decrease)</li>
+<li>LC: weaker mobile phase solvent</li>
+</ul></li>
+<li>adjusting retention factors =&gt; too long of a retention time =&gt; general elution problem
+<ul>
+<li>make adjustments to retention factor throughout separation</li>
+</ul></li>
+</ul></li>
+<li><p>using selectivity</p>
+<ul>
+<li>if alpha is 1, not possible to improve resolution by adjusting solute retention factor or column efficiency
+<ul>
+<li>to change, selectivity adjust solute retention factors</li>
+</ul></li>
+</ul></li>
+<li><p>using column efficiency</p>
+<ul>
+<li>increase number of theoretical plates, N
+<ul>
+<li>double N by doubling L, or cut the height</li>
+</ul></li>
+<li>contributions to band broadening:
+<ul>
+<li>variations in path length (multiple paths)
+<ul>
+<li>contribution to height of theoretical plate: <span class="math inline"><em>H</em><sub><em>p</em></sub> = 2<em>λ</em><em>d</em><sub><em>p</em></sub></span>
+<ul>
+<li>for column without packing material, <span class="math inline"><em>H</em><sub><em>p</em></sub></span> is zero and no contribution to band broadening from multiple paths
+<ul>
+<li>more uniform packing material reduces this problem</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>longitudinal diffusion in mobile phase
+<ul>
+<li>solute diffuses from high solute concentration to low solute concentration</li>
+</ul></li>
+<li>mass transfer in SP</li>
+<li>mass transfer in MP</li>
+</ul></li>
+</ul></li>
+</ol></li>
+</ol>
+<h3 id="key-words">key words</h3>
+<ul>
+<li>adjusted retention time: <span class="math inline"><em>t</em><sup>,</sup> = <em>t</em><sub><em>t</em></sub> − <em>t</em><sub><em>m</em></sub></span>, where t<sub>m</sub> is the time column’s void time, and <span class="math inline"><em>t</em><sub><em>t</em></sub></span> is time between injection time and solute peak</li>
+<li>adsorption chromatography: flow solute over some surface, desired solute attaches onto the medium, not in the medium</li>
+<li>band broadening: when sample is injected =&gt; narrow band, and as sample passes through column, band broadens =&gt; band broadening
+<ul>
+<li>column efficiency = extend of band broadening</li>
+</ul></li>
+<li>baseline width: extending tangent lines from inflection points on either side of peak through the baseline</li>
+</ul>
+<p><img src="../../../../images/211/chromatogram.png" /></p>
+<ul>
+<li>bleed: problem with liquid stationary phases, as temperature increases, is likely or possible to elute</li>
+<li>bonded stationary phase: type of SP in capillary column, superior stability
+<ul>
+<li>is attached chemically attached to the capillary’s silica surface</li>
+<li>reacting the silica particles with organochlorosilane, where the R group determines if polar or not polar</li>
+</ul></li>
+</ul>
+<p><img src="../../../../images/211/bonded.png" /></p>
+<ul>
+<li>capillary column: open tubular, very small diameter, contain no packing material
+<ul>
+<li>interior coated with thin film of stationary phase</li>
+<li>plate height is reduced</li>
+</ul></li>
+<li>capillary electrochromatography</li>
+<li>capillary electrophoresis</li>
+<li>capillary gel electrophoresis</li>
+<li>capillary zone electrophoresis</li>
+<li>chromatogram chromatography</li>
+<li>column chromatography</li>
+<li>counter-current extraction</li>
+<li>cryogenic focusing</li>
+<li>electrokinetic injection</li>
+<li>electroosmotic flow</li>
+<li>electroosmotic flow velocity</li>
+<li>electron capture detector</li>
+<li>electropherogram</li>
+<li>electrophoresis</li>
+<li>electrophoretic mobility</li>
+<li>electrophoretic velocity</li>
+<li>exclusion limit</li>
+<li>flame ionization detector</li>
+<li>fronting</li>
+<li>gas chromatography</li>
+<li>gas–liquid chromatography</li>
+<li>gas–solid chromatography</li>
+<li>general elution problem</li>
+<li>guard column</li>
+<li>gradient elution: change mobile phase over time</li>
+<li>headspace sampling</li>
+<li>high-performance liquid chromatography</li>
+<li>hydrodynamic injection</li>
+<li>inclusion limition-exchange chromatography</li>
+<li>ion suppressor column</li>
+<li>ion exchange chromatography: separate analyte based on charge</li>
+<li>isocratic elution</li>
+<li>isothermal</li>
+<li>Joule heating</li>
+<li>Kovat’s retention index</li>
+<li>liquid–solid adsorption chromatography</li>
+<li>longitudinal diffusion</li>
+<li>loop injector</li>
+<li>mass spectrometer</li>
+<li>mass spectrum</li>
+<li>mass transfer</li>
+<li>micellemicellar electrokinetic capillary chromatography</li>
+<li>mobile phase</li>
+<li>monolithic column</li>
+<li>multiple paths</li>
+<li>nonretained solutes</li>
+<li>normal-phase chromatography</li>
+<li>on-column injection</li>
+<li>open tubular column</li>
+<li>packed columns</li>
+<li>partition chromatography</li>
+<li>peak capacity</li>
+<li>planar chromatography</li>
+<li>polarity index</li>
+<li>porous-layer open tubular column</li>
+<li>purge-and-trapresolution</li>
+<li>retention factor</li>
+<li>retention time</li>
+<li>reversed-phase chromatography</li>
+<li>selectivity factor</li>
+<li>single-column ion chromatography</li>
+<li>solid-phase microextraction</li>
+<li>split injection</li>
+<li>size exclusion chromatography: seperate analyte based on size</li>
+<li>splitless injection</li>
+<li>stacking</li>
+<li>stationary phase</li>
+<li>supercritical fluid chromatography</li>
+<li>support-coated open tubular column</li>
+<li>tailing</li>
+<li>temperature programming</li>
+<li>theoretical plate: column divided into sections, called plates, which with their own eq of solute in stationary phase and solute in mobile phase
+<ul>
+<li>column efficiency = N = L/H</li>
+<li>H is height of a theoretical plate</li>
+<li>column efficiency improves, peaks become narrower, when there are more theoretical plates</li>
+<li>H = variance/length of column</li>
+</ul></li>
+<li>thermal conductivity detector</li>
+<li>van Deemter equation</li>
+<li>void time</li>
+<li>wall-coated open-tubular column</li>
+<li>zeta potential</li>
+</ul>
 <h2 id="glassware">glassware</h2>
 <p>pipette</p>
 <ul>
@@ -1516,6 +1724,16 @@ E = E^\circ - \frac{RT}{nF} \ln Q$$</span>
 </div>
 
 
+        </div>
+        <div class="sidebar">
+  <a href="../../../../"><h2>Lucy Hao</h2></a>
+  <a href="../../../../archive"><h3>Thoughts</h3></a>
+  <a href="../../../../papers"><h3>Paper Log</h3></a>
+  <a href="../../../../books"><h3>Books</h3></a>
+  <a href="../../../../cv/cv.pdf"><h3>CV/Resume</h3></a>
+</div>
+
+      </div>
     </main>
 
     <footer>
