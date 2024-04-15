@@ -1,0 +1,534 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lucy H | Paper: Fairness and Abstraction in Sociotechnical Systems</title>
+  <link rel="stylesheet" href="../../css/main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
+  <!-- and it's easy to individually load additional languages -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/languages/scheme.min.js"></script>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/base16/onedark.min.css" />
+  <script>
+    hljs.highlightAll();
+  </script>
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+  <link rel="preconnect" href="https://www.googletagmanager.com" />
+  <link rel="preconnect" href="https://www.google-analytics.com" />
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KDGPVMHC9Q"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-KDGPVMHC9Q");
+  </script>
+
+  <!-- basic favicon -->
+  <link rel="icon" href="../../images/android-chrome-384x384.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../images/android-chrome-384x384.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../images/android-chrome-384x384.png" />
+  <link rel="apple-touch-icon-precomposed" href="../../images/android-chrome-384x384.png" />
+</head>
+
+  <body>
+    <main role="main">
+      <div class="flex-row-col">
+        <div>
+          <h2>Paper: Fairness and Abstraction in Sociotechnical Systems</h2>
+          <div>
+  
+  <div class="header">
+    Posted on May  9, 2022
+    
+  </div>
+  <div class="tags">
+    
+    Tags: fairness, paper
+    
+  </div>
+  <div class="content">
+    <div class="paragraph">
+<p>Andrew D. Selbst, danah boyd, Sorelle A. Friedler, Suresh
+Venkatasubramanian, and Janet Vertesi. 2019. Fairness and Abstraction in
+Sociotechnical Systems. In FAT* ’19: Conference on Fairness,
+Accountability, and Transparency (FAT* ’19), January 29–31, 2019,
+Atlanta, GA, USA. ACM, New York, NY, USA, 10 pages.
+<a href="https://doi.org/10.1145/3287560.3287598" class="bare">https://doi.org/10.1145/3287560.3287598</a></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>computer science concepts like abstraction and modular design ⇒ used
+to define notions of fairness</p>
+<div class="ulist">
+<ul>
+<li>
+<p>these concepts render technical interventions ineffective, inaccurate
+and sometimes misguide when they enter the societal context</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="_intro">intro</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>fairness aware ML: engineer more fairer and more just ML algorithms
+and models by using fairness itself as property of the black box</p>
+</li>
+<li>
+<p>by attracting away social context that these systems are to be
+deployed, fair-ML researchers miss the broader context including
+information to create fairer outcomes or to even understand fairness</p>
+<div class="ulist">
+<ul>
+<li>
+<p>technical systems are subsystems</p>
+</li>
+<li>
+<p>fairness and justice are properties of social and legal systems, not
+properties of technical systems</p>
+</li>
+<li>
+<p>to treat fairness and justice as terms that have meaningful
+application to technology separate from social context is to make
+category error, or abstraction error</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Science and Technology Studies:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>systems that consist of combination of technical and social
+components ⇒ sociotechnical systems</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>shift away from solutions-oriented approach to a process-oriented
+approach</p>
+</li>
+<li>
+<p>1990s: culture of and modes of knowledge production in computer
+science thwarted the social goals the field was trying to achieve</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_abstraction_traps">abstraction traps</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_the_framing_trap">the framing trap</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>algorithmic frame: choosing representations of data and labeling of
+outcomes ⇒ efficacy of algorithm is evaluated as properties of the
+output as related to the input</p>
+<div class="ulist">
+<ul>
+<li>
+<p>this abstraction is taken as given and is rarely, if ever
+interrogated for validity</p>
+</li>
+<li>
+<p>abstraction choices occur implicitly, as accidents of opportunities
+and access to data</p>
+</li>
+<li>
+<p>fairness cannot be defined in this frame</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>data frame: algorithm, and inputs and outputs</p>
+<div class="ulist">
+<ul>
+<li>
+<p>input and output (was part of interface) can now be interrogated
+directly ⇒ can start thinking about fairness</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>sociotechnical frame: ML model is part of sociotechnical system and
+that other parts of the system need to be modeled</p>
+<div class="ulist">
+<ul>
+<li>
+<p>the person using the outcome of the ML model can also determine the
+model’s fairness ⇒ does that person ignore the outcome, or always
+follow it, or only sometimes follow it</p>
+</li>
+<li>
+<p>failure to incorporate the person’s reaction into the ML model cannot
+provide end-to-end guarantee this frame requires</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_portability_trap">portability trap</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>repurposing algorithmic solutions designed for one social context to
+another</p>
+</li>
+<li>
+<p>computer science concept: portability</p>
+<div class="ulist">
+<ul>
+<li>
+<p>suggests design will first aim to create tools independent of social
+context</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>fair ML:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>fix a definition of fairness as portable module and seek a to
+optimize a cost function</p>
+</li>
+<li>
+<p>building a "fair wrapper" around the classifier to make resulting
+outcomes fair</p>
+</li>
+<li>
+<p>both suggestions make certain assumptions</p>
+</li>
+<li>
+<p>if social context is modeled well enough and other traps are avoided:
+designer has created system not portable between social context</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_formalism_trap">formalism trap</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>no way to arbitrate between conflicting definitions using purely
+mathematical means</p>
+<div class="ulist">
+<ul>
+<li>
+<p>social context must dictate the choice</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>maybe no definition is valid to describe fairness</p>
+</li>
+<li>
+<p>procedural: law is procedural and fair-ML is outcome-based</p>
+</li>
+<li>
+<p>contextuality: we make distinctions all the time, but only cultural
+context can determine when basis for discrimination is morally wrong</p>
+</li>
+<li>
+<p>contestability: values change &gt; To set them in stone—or in code
+[52]—is to pick sides, and to do so without transparent process violates
+democratic ideals.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_ripple_effect_trap">ripple effect trap</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>failure to understand how insertion of technology into existing social
+system changes behaviours and embedded values of pre-existing system</p>
+</li>
+<li>
+<p>new tools offer possibility of unconsciously privileging quantifiable
+metrics</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_solutionism_trap">solutionism trap</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>law of the instrument: if you have a hammer, everything looks like a
+nail</p>
+</li>
+<li>
+<p>two broad situations in which starting with technology is wrong
+approach or where modeling the situation will not work no matter how
+many approximations one makes</p>
+<div class="ulist">
+<ul>
+<li>
+<p>definitions are politically contested or shifting</p>
+<div class="ulist">
+<ul>
+<li>
+<p>modeling requires pinning down definitions and "code calcifies"</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>modeling required would so be so complex as to be computationally
+intractable</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>When there is not enough information to understand everything that is
+important to a context, approximations are as likely to make things
+worse as better.</p>
+</div>
+</blockquote>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_a_sociotechnical_perspective">a sociotechnical perspective</h2>
+<div class="sectionbody">
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Chief among these insights is that the social must be considered
+alongside the technical in any design enterprise In reality, technology
+always involves social actors.</p>
+</div>
+</blockquote>
+</div>
+<div class="sect2">
+<h3 id="_sts_lens_on_framing_trap">STS lens on framing trap</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>framing trap is result of only choosing certain technical parts of the
+system to model and manage ⇒ consider both human activities and machine
+one at same time ⇒ heterogeneous engineering</p>
+</li>
+</ul>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>think simultaneously about what different technical parts of the
+apparatus will do, and what the humans that operate, live alongside, and
+otherwise contribute to them will do as well.</p>
+</div>
+</blockquote>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>does not mean we can engineer human decisions, but to draw boundaries
+of abstraction to include people and social systems as well</p>
+</li>
+</ul>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Because such systems are inherently fragile and complex, ignoring
+certain elements of the network or assuming that they are too unruly or
+unpredictable to incorporate undermines the ability of the system to
+operate as intended</p>
+</div>
+</blockquote>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>As Law puts it, "we must be ready to handle heterogeneity in all its
+complexity, rather than adding the social as an explanatory
+afterthought."</p>
+</div>
+</blockquote>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_sts_lens_on_portability_problem">STS lens on portability problem</h3>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Akrich realized that the user "scripts" that dictate how technologies
+are supposed to be used only work if all the social and technical
+elements of a network are assembled properly. A technology may be
+designed with many use cases in mind, but in each case, a designer or
+computer scientist hopes to embed certain "scripts" for action into
+their product. But the theory of scripts shows that such outcomes will
+always be disrupted as soon as the code, device, or software moves to a
+different context. At the very least, the code will be taken up in a new
+context that shifts the outcome of the system altogether to one that may
+or may not be fair.</p>
+</div>
+</blockquote>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_sts_lens_on_formalism_trap">STS lens on formalism trap</h3>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>The key elements of the SCOT framework are a period of interpretive
+flexibility experienced by relevant social groups, followed by
+stabilization, and eventually closure.</p>
+</div>
+</blockquote>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Our choices prioritize certain views over others, exerting power in ways
+that must be accounted for. We may privilege the needs of people in our
+community—technical practitioners aiming to have precise modules of
+portable code or technical academics who need to publish innovative
+algorithms over those impacted by the use of fair-ML algorithms.</p>
+</div>
+</blockquote>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>In each case, the technologies that "won" did so not because they were
+technically superior to their competition, or solved actual users’
+problems, or even because their uptake was subject to the free
+market—but because of powerful companies or actors with vested interests
+in their development. Closure is not always achieved when the best
+solution is found; it is typically a byproduct of other social
+mechanisms.</p>
+</div>
+</blockquote>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>More common is rhetorical closure, which occurs when the relevant social
+groups describe the problem as solved, and move on. In some cases, one
+design is deemed to achieve this goal, while other functional measures
+are said to not matter if this goal is achieved</p>
+</div>
+</blockquote>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>In other cases, individuals redefine the problem such that the solution
+they already have at hand, or can easily create, becomes the solution to
+a problem (i.e. if the algorithm runs the fastest, does it matter if it
+is only passably fair?). Pinch and Bijker call this closure by
+redefinition of the problem.</p>
+</div>
+</blockquote>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_sts_lens_on_ripple_effect_trap">STS lens on ripple effect trap</h3>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>existing groups use the occasion of this new technology to reinforce or
+argue for power and position. Computer scientist Rob Kling calls this
+process reinforcement politics [44]. In other cases, new technologies
+become opportunities to argue for more power in an organizational
+context. Finally, the heterogeneous engineer must be aware that once a
+technology is part of the social context, new relevant social groups can
+arise and radically reinterpret it, return it to a state of interpretive
+flexibility, and suggest new mechanisms for closure. In this way,
+technologies that were first developed to produce fairness can be
+torqued to achieve other aims, even nefarious ones</p>
+</div>
+</blockquote>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_sts_lens_on_solutionism_trap">STS lens on solutionism trap</h3>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Computer science programs do not typically incentivize the social
+science research necessary to ensure robust system use in the world—or
+even to fulfill the Hippocratic oath’s equivalent in engineering to
+"first, do no harm."</p>
+</div>
+</blockquote>
+</div>
+</div>
+</div>
+</div>
+
+  </div>
+  <div class="flex-row link-no-style">
+    
+    
+  </div>
+</div>
+
+
+        </div>
+        <div class="sidebar">
+  <a href="../../"><h2>Lucy Hao</h2></a>
+  <a href="../../archive"><h3>Thoughts</h3></a>
+  <a href="../../papers"><h3>Paper Log</h3></a>
+  <a href="../../books"><h3>Books</h3></a>
+  <a href="../../cv/cv.pdf"><h3>CV/Resume</h3></a>
+</div>
+
+      </div>
+    </main>
+
+    <footer>
+      <center>
+        <p>
+          <a href="../../archive">archive</a>
+          <a href="https://github.com/lhao03" target="_blank">github</a>
+          <a href="https://www.linkedin.com/in/lucy-hao/" target="_blank">linkedin</a>
+        </p>
+      </center>
+      Site powered by cats, 🍫 and
+      <a href="http://jaspervdj.be/hakyll">Hakyll</a>
+    </footer>
+  </body>
+</html>

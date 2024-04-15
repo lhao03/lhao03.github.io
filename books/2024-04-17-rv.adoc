@@ -1,0 +1,5 @@
+---
+title: "Ruthless Vows"
+tags: fantasy
+img: "rv.jpg"
+---

@@ -1,0 +1,1979 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lucy H | DNA Storage Notes</title>
+  <link rel="stylesheet" href="../../css/main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
+  <!-- and it's easy to individually load additional languages -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/languages/scheme.min.js"></script>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/base16/onedark.min.css" />
+  <script>
+    hljs.highlightAll();
+  </script>
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+  <link rel="preconnect" href="https://www.googletagmanager.com" />
+  <link rel="preconnect" href="https://www.google-analytics.com" />
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KDGPVMHC9Q"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-KDGPVMHC9Q");
+  </script>
+
+  <!-- basic favicon -->
+  <link rel="icon" href="../../images/android-chrome-384x384.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../images/android-chrome-384x384.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../images/android-chrome-384x384.png" />
+  <link rel="apple-touch-icon-precomposed" href="../../images/android-chrome-384x384.png" />
+</head>
+
+  <body>
+    <main role="main">
+      <div class="flex-row-col">
+        <div>
+          <h2>DNA Storage Notes</h2>
+          <div>
+  
+  <div class="header">
+    Posted on February 17, 2024
+    
+  </div>
+  <div class="tags">
+    
+    Tags: synbio, paper
+    
+  </div>
+  <div class="content">
+    <div id="toc" class="toc">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_robust_chemical_preservation_of_digital_information_on_dna_in_silica_with_error_correcting_codes">Robust Chemical Preservation of Digital Information on DNA in Silica with Error-Correcting Codes</a></li>
+<li><a href="#_hedges_error_correcting_code_for_dna_storage_corrects_indels_and_allows_sequence_constraints">HEDGES error-correcting code for DNA storage corrects indels and allows sequence constraints</a>
+<ul class="sectlevel2">
+<li><a href="#_significance">Significance</a></li>
+<li><a href="#_results">results</a></li>
+</ul>
+</li>
+<li><a href="#_dna_fountain_enables_a_robust_and_efficient_storage_architecture">DNA Fountain enables a robust and efficient storage architecture</a>
+<ul class="sectlevel2">
+<li><a href="#_dna_fountain">DNA fountain</a></li>
+</ul>
+</li>
+<li><a href="#_paper_the_dna_data_storage_model">Paper: The DNA Data Storage Model</a></li>
+<li><a href="#_points_about_dna">points about dna</a></li>
+<li><a href="#_overview">overview</a></li>
+<li><a href="#_application_presentation_session">application, presentation, session</a></li>
+<li><a href="#_dna_channel">DNA channel</a></li>
+<li><a href="#_dna_physical_layer">DNA physical layer</a></li>
+<li><a href="#_problem_for_our_team_to_investigate">problem for our team to investigate</a></li>
+<li><a href="#_sources">sources</a></li>
+<li><a href="#_paper_efficiently_enabling_block_semantics_and_data_updates_in_dna_storage">Paper: Efficiently Enabling Block Semantics and Data Updates in DNA Storage</a></li>
+<li><a href="#_abstract">abstract</a></li>
+<li><a href="#_introduction">introduction</a></li>
+<li><a href="#_background">background</a>
+<ul class="sectlevel2">
+<li><a href="#_2_1_dna_storage_basics">2.1 dna storage basics</a></li>
+<li><a href="#_existing_data_update_mechanisms">existing data update mechanisms</a></li>
+</ul>
+</li>
+<li><a href="#_3_managing_internal_address_space">3 managing internal address space</a></li>
+<li><a href="#_3_1_parition_architecture">3.1 parition architecture</a></li>
+<li><a href="#_3_2_concentration_constraints">3.2 concentration constraints</a></li>
+<li><a href="#_4_random_block_access">4 random block access</a></li>
+<li><a href="#_4_1_general_approach">4.1 general approach</a></li>
+<li><a href="#_4_2_requirements_for_elongated_primers">4.2 requirements for elongated primers</a></li>
+<li><a href="#_4_3_pcr_navigable_index_tree">4.3 PCR-Navigable Index Tree</a></li>
+<li><a href="#_4_4_index_tree_management">4.4 Index Tree Management</a></li>
+<li><a href="#_5_data_updates_in_dna_storage">5 Data Updates in DNA Storage</a></li>
+<li><a href="#_5_1_naive">5.1 naive</a></li>
+<li><a href="#_5_2_versioning">5.2 versioning</a></li>
+<li><a href="#_5_3_placement_of_updates_in_address_space">5.3 placement of updates in address space</a></li>
+<li><a href="#_5_4_structure_and_semantics_of_updates">5.4 structure and semantics of updates</a></li>
+<li><a href="#_5_5_physically_mixing_data_and_updates">5.5 physically mixing data and updates</a></li>
+<li><a href="#_6_methodology_skipped_for_now">6 methodology (skipped for now)</a></li>
+<li><a href="#_7_results">7 results</a></li>
+<li><a href="#_7_1_baseline_random_access">7.1 baseline random access</a></li>
+<li><a href="#_7_2_random_block_access">7.2 random block access</a></li>
+<li><a href="#_7_3_sequencing_cost_reduction">7.3 sequencing cost reduction</a></li>
+<li><a href="#_7_4_sequencing_latency_reduction">7.4 sequencing latency reduction</a></li>
+<li><a href="#_7_5_cost_of_creating_and_retrieving_updates">7.5 cost of creating and retrieving updates</a></li>
+<li><a href="#_7_6_mixing_data_and_updates">7.6 mixing data and updates</a></li>
+<li><a href="#_7_7_scalabilty_and_limitations">7.7 scalabilty and limitations !!</a>
+<ul class="sectlevel2">
+<li><a href="#_7_7_1_block_count">7.7.1 block count</a></li>
+<li><a href="#_7_7_2_block_size">7.7.2 block size</a></li>
+<li><a href="#_7_73_partition_count">7.73 partition count</a></li>
+</ul>
+</li>
+<li><a href="#_8_decoding_procedure">8 decoding procedure</a></li>
+<li><a href="#_8_1_handing_of_mispriming_during_pcr">8.1 handing of mispriming during pcr</a></li>
+<li><a href="#_9_related_work">9 related work</a></li>
+<li><a href="#_conclusion">conclusion</a></li>
+<li><a href="#_paper_spatially_selective_electrochemical_cleavage_of_a_polymerase_nucleotide_conjugate">Paper: Spatially Selective Electrochemical Cleavage of a Polymerase-Nucleotide Conjugate</a></li>
+<li><a href="#_notes_for_pitches">notes for pitches</a>
+<ul class="sectlevel2">
+<li><a href="#_current_long_term_storage">Current Long Term Storage</a></li>
+<li><a href="#_dna_storage">DNA storage</a></li>
+<li><a href="#_wet_lab">Wet lab</a></li>
+<li><a href="#_dry_lab">Dry Lab</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="_robust_chemical_preservation_of_digital_information_on_dna_in_silica_with_error_correcting_codes">Robust Chemical Preservation of Digital Information on DNA in Silica with Error-Correcting Codes</h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="_hedges_error_correcting_code_for_dna_storage_corrects_indels_and_allows_sequence_constraints">HEDGES error-correcting code for DNA storage corrects indels and allows sequence constraints</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_significance">Significance</h3>
+<div class="paragraph">
+<p>This paper constructs an error-correcting code for the {A, C,
+G, T} alphabet of DNA. By contrast with previous work, the
+code corrects insertions and deletions directly, in a single
+strand of DNA, without the need for multiple alignment of
+strands. This code, when coupled to a standard outer code, can
+achieve error-free storage of petabyte-scale data even when
+∼10% of all nucleotides are erroneous.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>most errors are indels, over 50%: insertions/deletions</p>
+</li>
+<li>
+<p>most ECCs only correct substitutions, more common in tradditional information theory</p>
+</li>
+<li>
+<p>tradditional dna storage: sequencing to high depth, followed by multiple alignment and consensus base calling</p>
+<div class="ulist">
+<ul>
+<li>
+<p>only deal with errors associated with DNA sequencing?</p>
+</li>
+<li>
+<p>small code rates because of high rate of repetition</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>inner code: translates between ATGC and 01</p>
+</li>
+<li>
+<p>outer code: corrects residual errors with high probability</p>
+<div class="ulist">
+<ul>
+<li>
+<p>RS code applied diagonally</p>
+<div class="ulist">
+<ul>
+<li>
+<p>RS(255, 223)</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_results">results</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>autokey cipher:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>pseuorandom characters "depends deterministically, via a hash function, on a fixed number of previous message bits {b_j}, on the current bit position index i of the current message bit b_i and the strand ID"</p>
+</li>
+<li>
+<p>then emit character C_i = K_i + b_i</p>
+<div class="ulist">
+<ul>
+<li>
+<p>redundancy: at each i, C_i can take on only two out of four values, because b = {0, 1}</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>the output DNA is pseudorandom.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>message bits
+* decode: sequentially gusses message bits
+<strong> if guess agrees, score increases, otherwise score is penalized as substitution, if the guess would agree at another position, insertion or deletion is assumed to occur
+</strong> keeps track via a heap, prevents exponential growth using variant of A^* algorithm</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>any single decoding error in nucleotides will poison downstream predictions → only one good-scoring chain of guesses</p>
+</li>
+<li>
+<p>unsuitable for very short DNA strands</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>code: "The computer code used for the generation and testing of the inner
+HEDGES code and outer RS code is available at <a href="https://github.com/whpress/" class="bare">https://github.com/whpress/</a>
+hedges. This paper utilized two commercial C++ source code libraries:
+Numerical Recipes (<a href="http://www.numerical.recipes" class="bare">http://www.numerical.recipes</a>) and the Schifra Reed-
+Solomon Error Correcting Code Library (<a href="http://www.schifra.com" class="bare">http://www.schifra.com</a>). The spe-
+cific routines used in this paper are freely available for noncommercial use and are included in the above GitHub repository."</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_dna_fountain_enables_a_robust_and_efficient_storage_architecture">DNA Fountain enables a robust and efficient storage architecture</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>upper bound in information storage: 2 bits/base</p>
+<div class="ulist">
+<ul>
+<li>
+<p>biochemical constraints reduce to 1.98 bits/base</p>
+</li>
+<li>
+<p>overall shannon information density: 1.83 bits/base</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>redundancy:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>dividing file into overlapping segments: poorly scalable and loss of information, still had small gaps in retrieved information</p>
+</li>
+<li>
+<p>RS codes on small blocks of input data → could perfectly retrieve information</p>
+<div class="ulist">
+<ul>
+<li>
+<p>blocked RS codes: large variations in dropout rate within protected block</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_dna_fountain">DNA fountain</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>fountain codes adapted to deal with oligo dropouts and biochemical constraints</p>
+</li>
+<li>
+<p>steps:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>binary file into series of nonoverlapping segments</p>
+</li>
+<li>
+<p>luby transform: package data into short messages (droplets) via special distribution and adding them bitwise under binary field</p>
+<div class="ulist">
+<ul>
+<li>
+<p>droplet: 38 bytes (2 bytes for RS, 4 for random number generator, 32 for data payload)</p>
+</li>
+<li>
+<p>seed: allows decoder to infer indentities of segments</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>screening: keep iterating over luby transform</p>
+<div class="ulist">
+<ul>
+<li>
+<p>dna sequence 152 nucleotides, 200 nt long with annealing sites for illumina adapters</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>despite copies of the original DNA sequence being worse (via PCR), could still fully recover the file</p>
+</li>
+<li>
+<p>code: <a href="https://github.com/TeamErlich/dna-fountain" class="bare">https://github.com/TeamErlich/dna-fountain</a></p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_paper_the_dna_data_storage_model">Paper: The DNA Data Storage Model</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="https://www.computer.org/csdl/magazine/co/2023/07/10154188/1O1wUGjK41O">Source</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_points_about_dna">points about dna</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>no preexisting media</p>
+</li>
+<li>
+<p>detached from array based structure (metadata encoded within each dna segment)</p>
+</li>
+<li>
+<p>error characteristics</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_overview">overview</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>encoding</p>
+<div class="ulist">
+<ul>
+<li>
+<p>turning binary into ternary into bases</p>
+</li>
+<li>
+<p>more error prone sequences should be avoided</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>synthesis</p>
+</li>
+<li>
+<p>storage</p>
+</li>
+<li>
+<p>retrieval</p>
+</li>
+<li>
+<p>sequencing</p>
+</li>
+<li>
+<p>decoding</p>
+</li>
+</ol>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../images/synbio/dnachannel.png" alt="dnachannel">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_application_presentation_session">application, presentation, session</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>done in binary</p>
+</li>
+<li>
+<p>application: how is this storage to be used?</p>
+<div class="ulist">
+<ul>
+<li>
+<p>most likely archival</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>presentation: preparation of bitstreams</p>
+</li>
+<li>
+<p>session: access to the DNA storage interface</p>
+<div class="ulist">
+<ul>
+<li>
+<p>object based</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_dna_channel">DNA channel</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>takes bitstream or digital object from session layer and processes those bits</p>
+</li>
+<li>
+<p>implemented as software codec</p>
+</li>
+<li>
+<p>when bitstream is presented:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>packetization: longest strand of DNA that can be currently made (300 bases), so the bitsreams must be broken down</p>
+<div class="ulist">
+<ul>
+<li>
+<p>add indices to each segment</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>error correction: add redundant information to reduce probability of random errors</p>
+<div class="ulist">
+<ul>
+<li>
+<p>augment segments (inner code) or add segments (outer code)</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>translation: binary to bases</p>
+</li>
+<li>
+<p>transformations: repeated bases (homopolymers), high proportion of G and C and some other patterns can cause errors</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_dna_physical_layer">DNA physical layer</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>synthesis (writing)</p>
+<div class="ulist">
+<ul>
+<li>
+<p>silcon technology based implementations that miniaturize synthesis device</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>storage</p>
+<div class="ulist">
+<ul>
+<li>
+<p>store in dry and chemically inert environment</p>
+</li>
+<li>
+<p>organized with physical tape system</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>reading (sequencing)</p>
+<div class="ulist">
+<ul>
+<li>
+<p>sequencing-by-synthesis: high accuracy, high latency</p>
+</li>
+<li>
+<p>nanopore sequencing: lower latency,  lower accuracy</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>retrieval (important for DNA storage!)</p>
+<div class="ulist">
+<ul>
+<li>
+<p>easy: read entire archive</p>
+</li>
+<li>
+<p>if multiple objects stored in archive, random access operations are required</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>PCR and DNA pull-out with magngetic nanoparticles</p>
+<div class="ulist">
+<ul>
+<li>
+<p>PCR:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>session layer assign a set of object IDs, and at encoding time channal layer appends a set of predefined DNA base sequences to both ends of a DNA sequence belonging to an object (target sites)</p>
+</li>
+<li>
+<p>probes (short DNA sequences): that complement target site attach to target molecule along with polymerases</p>
+</li>
+<li>
+<p>now the primers enable polymerase to copy target DNA molecules, creating more DNA molecules of the object of interest than other DNA molecukes</p>
+</li>
+<li>
+<p>result is pool of mostly DNA molecules belonging to object we want</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>DNA pull-out</p>
+<div class="ulist">
+<ul>
+<li>
+<p>channel layer only needs to append the object IDs as target sites at one end of every DNA sequence belonging to an object</p>
+</li>
+<li>
+<p>probes attached to magnetic nanoparticles</p>
+</li>
+<li>
+<p>probes bind to DNA molecules and can separate them</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_problem_for_our_team_to_investigate">problem for our team to investigate</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>make retrieval of information easier</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_sources">sources</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><a href="https://ieeexplore.ieee.org/document/10154188?denied=">The DNA Data Storage Model</a></p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_paper_efficiently_enabling_block_semantics_and_data_updates_in_dna_storage">Paper: Efficiently Enabling Block Semantics and Data Updates in DNA Storage</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="https://arxiv.org/abs/2212.13447">Source</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_abstract">abstract</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>storage space into fixed-sized units</p>
+</li>
+<li>
+<p>pair of random access PCR primers of length 20 define an independent storage partition, which is managed indepedently of other partitions</p>
+</li>
+<li>
+<p>transform internal addressing scheme of a partition into an equivalent PCR-compatible → run PCR with primers that can be variably elongated to include desired part of internal address</p>
+<div class="ulist">
+<ul>
+<li>
+<p>retrieve a specific block with high accuracy</p>
+</li>
+<li>
+<p>140x reduction in sequencing cost and latency</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_introduction">introduction</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>similarity search</p>
+</li>
+<li>
+<p>runtimes for automating wetlab protocols</p>
+</li>
+<li>
+<p>provide random access at nearly constant latency via PCR</p>
+</li>
+<li>
+<p>current state of the art: key-valye object stores</p>
+<div class="ulist">
+<ul>
+<li>
+<p>pair of primers define kay and arbitrarly sized value stored in molecules tagged with same primers</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>large objects stored across many molecules, all of which are retrieved with sufficient uniformity</p>
+<div class="ulist">
+<ul>
+<li>
+<p>internal address: part of molecule that uniquely identify and re-establish order</p>
+</li>
+<li>
+<p>object than spans N molecules requires log_4 N bases for indexing</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>primers:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>lots of unique combinations but all aren’t appropriate</p>
+</li>
+<li>
+<p>must be balanced: GC content (50%)</p>
+</li>
+<li>
+<p>all primers used in same DNA sample must be significantly different from each other in Hamming distance to avoid amplication of unwanted data</p>
+<div class="ulist">
+<ul>
+<li>
+<p>minimum pairwise distance (a problem) only around 1000-3000 primers can fit the constraints</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>can only chemically distinguish 1000 different objects</p>
+</li>
+<li>
+<p>with 1TB of data, the smallest unit of access is 1GB, so we always have to sequence this much DNA, no matter how small the unit we want is</p>
+</li>
+<li>
+<p>using longer primers doesn’t work: compatible primers scale linearly</p>
+</li>
+<li>
+<p>can’t build a functional data storage because of:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>allowing arbitrary size, can’t easily get small objects</p>
+<div class="ulist">
+<ul>
+<li>
+<p>high Hamming distance</p>
+</li>
+<li>
+<p>many cycles of PCR</p>
+</li>
+<li>
+<p>object-based design results in flat architechture</p>
+<div class="ulist">
+<ul>
+<li>
+<p>no logical order/distance metric between objects</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>limiting sequential access to a single object → random access</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>paper’s proposal: block storage semantics
+- each block independently read/written to
+- group of consecutive blocks can be efficieetnly retriveed
+- numer of mutually compatible primer pairs is limited, internal address space avalible to any pair of primers is virutally unlimited</p>
+</div>
+<div class="paragraph">
+<p>contributions
+- flexibility and constraints of internal address space for pair of primers → implement block storage sementics
+- PCR-compatible indexes to enable random access with primers than can be enlongated
+- organize partitions similar to version control
+- wetlab evaluation with state-of-the-art DNA storage architecture</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_background">background</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_2_1_dna_storage_basics">2.1 dna storage basics</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>dna molecule 300 bases long can store 75 bytes</p>
+</li>
+<li>
+<p>have to break down files into shorter molecules, and add an internal address or index</p>
+</li>
+</ul>
+</div>
+<div class="sect3">
+<h4 id="_2_1_1_encoding">2.1.1 encoding</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>using a coding scheme (constrained coding) that</p>
+<div class="ulist">
+<ul>
+<li>
+<p>prevent occurrence of homopolyers</p>
+</li>
+<li>
+<p>balance GC content</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>unconstrained coding: homopolymers occur with low probability</p>
+<div class="ulist">
+<ul>
+<li>
+<p>significantly increases coding density with practical ranges of error rates</p>
+</li>
+<li>
+<p>used in this paper</p>
+</li>
+<li>
+<p>handle error types with outer Reed-Solomon ECC codes</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>to encode internal address within every molecule</p>
+<div class="ulist">
+<ul>
+<li>
+<p>use more complex constrained coding scheme</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../images/block/fig1.png" alt="fig1">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>once file split into pieces and encoded into DNA, pair of primers added to end and beginning of each string</p>
+<div class="ulist">
+<ul>
+<li>
+<p>chemical tag that logically group related molecules together, allowing for random access</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_2_1_2_data_retrieval">2.1.2 data retrieval</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>PCR used to selectively amplify molecules containing file peices</p>
+<div class="ulist">
+<ul>
+<li>
+<p>molecules isolated using primers</p>
+</li>
+<li>
+<p>sequencing produces many DNA strings: reads</p>
+</li>
+<li>
+<p>errors are manifested in reads</p>
+</li>
+<li>
+<p>sequencing coverage/depth: the higher the coverage, the easier to reconstruct from these reads, but higher cost</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>obtained reads clustered based on similarity (should be from same molecule) via Levenshtein distance</p>
+</li>
+<li>
+<p>consensus finding algorithm to extract original DNA string</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_2_1_3_decoding_and_error_correction">2.1.3 decoding and error correction</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>using internal address, binary data used to recreate original file</p>
+</li>
+<li>
+<p>errors corrected using Reed-Solomon or LDPC codes</p>
+</li>
+<li>
+<p>state of the art architecture treats all DNA molecules as columns in matrix</p>
+<div class="ulist">
+<ul>
+<li>
+<p>seperate DNA molecules created as external ECC code, one codeword rerepsent a row → high information density it creates strong inter-molecular dependencies</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_2_1_4_pcr">2.1.4 PCR</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>doubles number of DNA molecules in every cycle</p>
+</li>
+<li>
+<p>three phases: denaturation, annealing, extension</p>
+</li>
+<li>
+<p>optimal primer length: 20</p>
+</li>
+<li>
+<p>can go to 40 and max length 100</p>
+</li>
+<li>
+<p>internal addresses can be very similar, not balanced GC content and repeated base</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_existing_data_update_mechanisms">existing data update mechanisms</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>direct edits of DNA molecules: limited to updates to single molecule, can only be applied when size of data does not change</p>
+</li>
+<li>
+<p>current state of the art orgzanizations have data split across many molecules, significant intermolecular data dependencies</p>
+</li>
+<li>
+<p>instead of storing data as nucleotides, store as nicks: rewritable</p>
+<div class="ulist">
+<ul>
+<li>
+<p>but cannot do PCR, sacrificing random access</p>
+</li>
+<li>
+<p>storage density is 50-fold lower</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_3_managing_internal_address_space">3 managing internal address space</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>pair of primers of length 20</p>
+</li>
+<li>
+<p>length of DNA strands: 150</p>
+</li>
+<li>
+<p>maximum storage capacity achieved when entire portion of NA used for indexing (no actual data stored)</p>
+</li>
+<li>
+<p>density highest when onle one molecule, no index needed (only for tiny objects)</p>
+</li>
+<li>
+<p>longer primers reduct information density significantly, loss diminishes linearly with longer strand length</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_3_1_parition_architecture">3.1 parition architecture</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>address space AAA…​AAA to TTT…​TTT with index length L represented as prefix tree</p>
+<div class="ulist">
+<ul>
+<li>
+<p>index of length L covers addresses from AAA…​AAA to TTT…​TTT: 1D array of 4^L fixed capacity storage units (payload of one molecule)</p>
+</li>
+<li>
+<p>any contigous byte-range can be statically mapped to contigous index-range and vice versa</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>contiguous index-range be can precisely described with few prefixes: AAA to AGT → AA, AC, AG and AT</p>
+</li>
+<li>
+<p>leaf is DNA strand</p>
+</li>
+<li>
+<p>maximum information density achieved with all DNA strands have same index length and all indexes present</p>
+</li>
+<li>
+<p>any contiguous range of bytes within parition could be retrived quite precisely with single PCR if primers were extended to include part of the index</p>
+</li>
+<li>
+<p>future work: to improve efficiency of sequential accesses: set of files could be mapped onto the partition in a manner that tries to optimally align the files to nodes in prefix tree</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_3_2_concentration_constraints">3.2 concentration constraints</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>to manage cost of sequencing: every strand in DNA storage should be represented in equal concentrations</p>
+<div class="ulist">
+<ul>
+<li>
+<p>highly concentrated strands will be sequenced at higher coverage while other strands need more sequencing to be represented, wasting resources</p>
+</li>
+<li>
+<p>for random black access to work: desired sequences need to be amplified much higher because indexes are similar</p>
+</li>
+<li>
+<p>PCR may overwrite their index to desired index, resulting in exponential amplification → mispriming</p>
+<div class="ulist">
+<ul>
+<li>
+<p>multiple dna strands, can’t use consensus to select which one</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>to ensure dominance of desired strands: ensure closet targets in pool are not present in higher concentration</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>all nodes at same level of index tree map to similar number of DNA strands and in similar concentrations</p>
+<div class="ulist">
+<ul>
+<li>
+<p>make sure data updates do not compromise this balance</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_4_random_block_access">4 random block access</h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="_4_1_general_approach">4.1 general approach</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>indexes AAA…​AAA to TTT…​TTT are not PCR-compatible</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../../images/block/primer.png" alt="primer">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>prior work: follow maximum information density design → no control over their structure</p>
+</li>
+<li>
+<p>use less dense encoding of indexes, minor loss in information density</p>
+</li>
+<li>
+<p>added sparsity provide protection against errors in index</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_4_2_requirements_for_elongated_primers">4.2 requirements for elongated primers</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>every pair of main primer: high mutual distance so can extract target partition regardless of its size and concentration relative to other paritions</p>
+<div class="ulist">
+<ul>
+<li>
+<p>two similar primers: P_a and P_b</p>
+<div class="ulist">
+<ul>
+<li>
+<p>target data is dominant because of uniform concentration of data within same level of index hierarchy</p>
+</li>
+<li>
+<p>ensuring high distance between indexes, is not as important as it is for main primers</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>GC content: primers have slightly more restrictions</p>
+<div class="ulist">
+<ul>
+<li>
+<p>primers are not fixed length: add sparsity to indexes so GC content is uniform with every elongation</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_4_3_pcr_navigable_index_tree">4.3 PCR-Navigable Index Tree</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>prefix tree is randomized (the order of edges): to prevent incomplete, unbalanced, degenerate trees</p>
+</li>
+<li>
+<p>sparse out addresses: add extra letter between every two adjacent edges</p>
+<div class="ulist">
+<ul>
+<li>
+<p>perfectly balance the GC content (maximize Hamming distance between sibling nodes)</p>
+<div class="ulist">
+<ul>
+<li>
+<p>guatantees near perfect GC content and disable indexes of more than 2</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>10-based long internal address: 3% information density loss</p>
+<div class="ulist">
+<ul>
+<li>
+<p>added flexibility reduces sequencing costs</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_4_4_index_tree_management">4.4 Index Tree Management</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>different seeds for different partitions to ensure vastly different trees to avoid unwanted molecular interactions</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_5_data_updates_in_dna_storage">5 Data Updates in DNA Storage</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>low-latency enzymatic synthesis</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_5_1_naive">5.1 naive</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>throw away old data, update software to just use new primers</p>
+</li>
+<li>
+<p>problems:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>recreate parition (expensive, arbitrary amount of information)</p>
+</li>
+<li>
+<p>wasting primres</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_5_2_versioning">5.2 versioning</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>updates logged as ordered series of incremental patches</p>
+</li>
+<li>
+<p>minimal set of DNA molecules at same concentration</p>
+</li>
+<li>
+<p>application of updates done in software, not in-situ chemically</p>
+</li>
+<li>
+<p>how should updates be tagged and their primers?</p>
+</li>
+<li>
+<p>how to retrieve updated DNA and how to mix original DNA with updated DNA</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_5_3_placement_of_updates_in_address_space">5.3 placement of updates in address space</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>updates in their own partition with dedicated set of primers</p>
+</li>
+<li>
+<p>have to potentially read all updates, none of which apply to data (becaues data might have been updated)</p>
+</li>
+<li>
+<p>updates embedded into address space of each primer pair → reading updated data requires single PCR</p>
+<div class="ulist">
+<ul>
+<li>
+<p>but have to read all data under same primer pair → lots of data</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>final: data and updates interwoven</p>
+<div class="ulist">
+<ul>
+<li>
+<p>allocate blocks for updates, some unused, overflow data is given a pointer</p>
+<div class="ulist">
+<ul>
+<li>
+<p>object with prefix ACGT: original object at ACGTA, first update: ACGTC, second update ACGTG</p>
+<div class="ulist">
+<ul>
+<li>
+<p>link between data and updates, no bookkeeping</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>PCR uses primers with ACGT, software understands how to patch everything together</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_5_4_structure_and_semantics_of_updates">5.4 structure and semantics of updates</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>ensure concentrations of original DNA and updates are similar as possible</p>
+</li>
+<li>
+<p>application of updates delegated to end-user or upper-application</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_5_5_physically_mixing_data_and_updates">5.5 physically mixing data and updates</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>directly impacts cost of sequencing</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_6_methodology_skipped_for_now">6 methodology (skipped for now)</h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="_7_results">7 results</h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="_7_1_baseline_random_access">7.1 baseline random access</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>sequencing of 99.66% unwanted data</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_7_2_random_block_access">7.2 random block access</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>mispriming is an issue with similar primers</p>
+</li>
+<li>
+<p>most errors caused by blocks amplified through mispriming</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_7_3_sequencing_cost_reduction">7.3 sequencing cost reduction</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>ability to retrieve individual data blocks</p>
+</li>
+<li>
+<p>sequencing cost is proportional to size of sequencing cost</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_7_4_sequencing_latency_reduction">7.4 sequencing latency reduction</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>ability to select given block, but latency depends on partition size and sequencing technology</p>
+<div class="ulist">
+<ul>
+<li>
+<p>block based: retrivign single block reduces number of runs needed</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>NGS: sequencing output only avalible at end of run</p>
+</li>
+<li>
+<p>nanopore: output size dependent, continuosly produced and analyzed in real time</p>
+</li>
+<li>
+<p>post-sequencing/data movement and software decoding time also reduced (not a bottleneck so doesn’t really matter)</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_7_5_cost_of_creating_and_retrieving_updates">7.5 cost of creating and retrieving updates</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>naive system: new updated copy of entire partition and assigns new primer</p>
+</li>
+<li>
+<p>our system: precise access retrieves data and updates for specific block</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_7_6_mixing_data_and_updates">7.6 mixing data and updates</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>possible to keep concentrations of data and updates similar</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_7_7_scalabilty_and_limitations">7.7 scalabilty and limitations !!</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_7_7_1_block_count">7.7.1 block count</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>extend both primers instead of one</p>
+<div class="ulist">
+<ul>
+<li>
+<p>two-sided extension by 10 characters → 1024^2 addressable blocks, same order of magnitude as modern SSDs</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_7_7_2_block_size">7.7.2 block size</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>mispriming depends on number of blocks and structure and sparsity of their indexes</p>
+</li>
+<li>
+<p>no limits on block size</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_7_73_partition_count">7.73 partition count</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>prevent mispriming: two PCR cycles</p>
+<div class="ulist">
+<ul>
+<li>
+<p>first main primers</p>
+</li>
+<li>
+<p>second elongated primers</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>zipfan distrbution: many blocks never accessed, few accessed very frequently</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_8_decoding_procedure">8 decoding procedure</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>extract substring between elongated forward primer and reverse primer (payload)</p>
+</li>
+<li>
+<p>cluster payloads as per Rashtchian</p>
+</li>
+<li>
+<p>in descending order of cluster size: trace reconstruction using double sided BMA algorithm</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_8_1_handing_of_mispriming_during_pcr">8.1 handing of mispriming during pcr</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>incorrectly amplified strands: indexes that were very close to indexes of target block in edit distance (2-3), rather than hamming</p>
+</li>
+<li>
+<p>to an extent, can be corrected through error correction codes</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_9_related_work">9 related work</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>nested PCRs</p>
+<div class="ulist">
+<ul>
+<li>
+<p>don’t support multiplex-PCR (this does)</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>nested PCR is only two levels deep, this is 6 levels deep</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_conclusion">conclusion</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>slow storage media (DNA) so should do update applications in software</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_paper_spatially_selective_electrochemical_cleavage_of_a_polymerase_nucleotide_conjugate">Paper: Spatially Selective Electrochemical Cleavage of a Polymerase-Nucleotide Conjugate</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>abstract</p>
+<div class="ulist">
+<ul>
+<li>
+<p>enzymatic methods: functional, enzymatic, environmental advantages over phosphoramidite synthesis</p>
+</li>
+<li>
+<p>must be parallelized → polymerase-nucleotide conjugate cleaved using electrochemical oxidation on microelectrode array</p>
+</li>
+<li>
+<p>developed conjugate maintains polymerase activity toward surface bound substrates with single base control</p>
+</li>
+<li>
+<p>at scale</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>intro</p>
+<div class="ulist">
+<ul>
+<li>
+<p>phosphoramidite synthesis: high-throughput</p>
+</li>
+<li>
+<p>expensive, environmentally hazardous organic solvents</p>
+</li>
+<li>
+<p>TdT: template-independent polymerase used for extension of growing ssDNA with dNTP</p>
+</li>
+<li>
+<p>deblocking: via chemical or photochemical means</p>
+</li>
+<li>
+<p>this paper: electrochemical</p>
+</li>
+<li>
+<p>Jung: spatially selective deblocking of 3’aminoxy-protested oligonucleotide with nitrous acid produced along electrochemically generated pH gradient → lay out pathway to paralization</p>
+</li>
+<li>
+<p>extension step: single step dNTP incorporation yeilds with TdT mutants are below those for phosphoramidite synthesis</p>
+</li>
+<li>
+<p>electrochemical deblocking step: regulate local nitrosamine concentrations and exposure times to avoid base-substitution in synthesized oligonucleotides</p>
+</li>
+<li>
+<p>need additional engineering of mutant TdT polymerase and develoment of deprotection system</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_notes_for_pitches">notes for pitches</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Cloud storage is ubiquitous. In addition to cloud storage data centers operated by technology companies and data-critical (healthcare, finance, and government) organizations, these entities must deal with a growing reliance on storing a lot of information that is rarely changed but required to be stored for long periods of time. This is referred to as an information explosion. We are predicted to generate around 180 zettabytes of information, with 22 zettabytes of data being shipped around, 60% in the form of hard drives.</p>
+</div>
+<div class="paragraph">
+<p>What is long term storage? Long term storage is defined as storage that can persist information without the requirement for constant electricity. Silicon based long term storage includes: external hard drives, flash drives, CDs which last around 5-20 years. Silicon based storage works broadly like this: file is turned into a stream of bits of 0s or 1s, and these bits are stored as charges based on the binary encoding, then after these bits have been encoded, the storage media is stored in conditions that try to preserve this charge. Ubiquitous storage in the form of "the cloud" is becoming an everyday norm because most people do not wanna lug around pieces of storage. But cloud storage isn’t really in the cloud. Cloud storage is stored in giant buildings full of hard drives, some buildings taking up "nearly 200 acres of land apiece". In addition, because Google and Microsoft promise that your data is preserved, multiple copies of your data is written to different data centers. Multiply that process a few times, and you can see that cloud data centers get hot, which requires lots of cooling, resulting in data centers using as much energy as an airline. It’s not that the actual storage that requires so much cooling, but the computers that write all that data to disk which must be cooled. While these data centers account for around 2% of global energy usage, and because information is growing rapidly, these data centers will continue to eat up more land and energy. Generally speaking, data centers have reached their peak efficiency with the level of scalability require, which we can implicitly observe from Moore’s Law.</p>
+</div>
+<div class="paragraph">
+<p>DNA storage is an emerging technology for long term storage. Generally the steps of storing information into DNA goes as follows: are encoding, synthesis, storage, retrieval, and decoding. Compared to traditional long term storage mediums, DNA is more:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>durable: if stored in optimal conditions and dehydrated, DNA can possibly endure for millions of years.</p>
+</li>
+<li>
+<p>dense: up to 10^{19} bits per cubic centimeter, which is eight times more dense than other storage media.</p>
+</li>
+<li>
+<p>energy efficient: due to the failure rate of current long term storage media, such as charges flipping, I predict less energy will be needed to store information in DNA molecules because we can store less copies of data given DNA’s density. In fact, there are estimates that "it could reduce the energy consumption by 1,000 times compared to today’s data centres"<sup class="footnote">[<a id="_footnoteref_1" class="footnote" href="#_footnotedef_1" title="View footnote.">1</a>]</sup>.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Currently DNA storage the most durable and dense storage medium we have. However, it is not a easily scalable technology, which is what I believe synthetic biology can help with. Current industry standards of DNA synthesis is done through chemical means, phosphoramidite synthesis. Phosphoramidite synthesis is expensive and requires the use of toxic organic solvents. With sequencing, because DNA is so dense, if implemented with a naive storage model, it’s easy for too much data to be sequenced because we may have to sequence an entire DNa molecule to get at a few bases in the middle of the molecule. This results in the output from sequencing to be wasted. And lastly, because mutating DNA in the wet lab is prone to mistakes and slower than traditional long term storage, this is another roadblock in realizing DNA as a long term storage medium.</p>
+</div>
+<div class="paragraph">
+<p>Thus, because synthesis and sequencing remain as bottlenecks for using DNA as storage, our solution is to design a scalable DNA storage process with improved synthesis and storage.</p>
+</div>
+<div class="paragraph">
+<p>An emerging method of DNA synthesis is enzymatic DNA synthesis with the use of TdT (template-independent polymerase). Aachen 2020 successfully demonstrated the use of TdT to synthesize DNA. We can go further to parallelize this process with an microelectrode array; this will be driven by wet lab.</p>
+</div>
+<div class="paragraph">
+<p>To improve storage, our dry lab will implement block based semantics with elongated primers and an update system with "patches". Dry lab will also either write software or use open source code to encode and decode information into bases and deal with error correction, based on time constraints.</p>
+</div>
+<div class="paragraph">
+<p>Why enzymatic DNA synthesis?
+* terminal deoxynucleotidyl transferase (TdT) is the enzyme behind enzymatic DNA synthesis:
+  . does not require preexisting strand of DNA
+  . Uses soft chemicals
+  . Provides kinetic control with enzymes
+  . produce longer strands than with chemical synthesis<sup class="footnote">[<a id="_footnoteref_2" class="footnote" href="#_footnotedef_2" title="View footnote.">2</a>]</sup></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>of course some downsides include that different bases add differently, which is an issue Aachen tackled.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Why block based semantics and updates via patches?</p>
+</div>
+<div class="paragraph">
+<p>A flat key-value object based architecture forces the user to sequence an entire unit of random access, whether they want all that information or not. This results in a lot of waste because DNA is very dense.</p>
+</div>
+<div class="paragraph">
+<p>With block based semantics:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>we design primers designed with main prefix and extended bases representing blocks:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>retrieve a block in a partition with higher accuracy</p>
+</li>
+<li>
+<p>blocks can be smaller than the unit of random access: sequencing smaller blocks of data</p>
+</li>
+<li>
+<p>reductions in sequencing cost and latency</p>
+</li>
+<li>
+<p>ability for sequential access by elongating a primer, similarly done in array based storage (tradditional storage mediums)</p>
+</li>
+<li>
+<p>primers based on tree based structure</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>versioning: only write updates as new DNA molecule and tag with appropriate primer</p>
+<div class="ulist">
+<ul>
+<li>
+<p>updates applied in software is: faster, more reliable</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>based on Aachen’s work, we can first set up the enzymatic DNA synthesis process as described by Church’s paper.</p>
+</li>
+<li>
+<p>then to demonstrate improvement, we work on creating the novel, cleavable polymerase-nucleotide conjugate which allows for attachment to the microelectrode array, while maintaining the activity of the TdT enzyme.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>this allows for electrochemical cleavage/deblocking.</p>
+</li>
+<li>
+<p>compared to parallelized methods that rely on kinetic competitions, polymerase-nucleotide conjugate allows for single-base additions and the ability to further extend the oligonucleotide.</p>
+</li>
+<li>
+<p>electrochemical control vs. nitrous acid-mediated deblocking also means we don’t rely on environmentally hazardous chemicals</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>We can employ the engineering cycle with our software algorithms, which we can referred to as the software codec.</p>
+</div>
+<div class="paragraph">
+<p>There needs to be a process for:
+1. Encoding
+* requires generating primers to implement the block based semantics (via Hamming/Edit distance constraints and chemistry constraints like GC content) and splitting a file across several DNA molecules if necessary</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Decoding</p>
+<div class="ulist">
+<ul>
+<li>
+<p>error correction, reconstructing the file and applying update patches</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Updating data</p>
+<div class="ulist">
+<ul>
+<li>
+<p>because we aren’t applying updates chemically, instead reading a DNA molecule gives us the original information and updates, which with long term storage shouldn’t be alot. Using algorithms we can apply these updates to produce the final version of the data with updates applied.</p>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>For Modelling, we can model:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>the TdT enzyme using Michals-Menten kinetics</p>
+</li>
+<li>
+<p>how likely a primer is to "misprime" meaning the wrong primer is amplified, with protein modelling.</p>
+</li>
+<li>
+<p>optimal concentrations of DNA molecules are required to keep sequencing costs low and</p>
+<div class="ulist">
+<ul>
+<li>
+<p>this requires a feedback loop of wet lab giving us data from "Amplify-then-Measure" then dry lab using these numbers to estimate the costs of sequencing based on concentrations</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>optimal conditions of added different bases</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>This project is very much interdisciplinary, so we must reach to many experts. Our wet lab portion is also chemistry heavy, so I have listed to chemistry professors who I believe will be very helpful.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Specialists:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Electrochemistry: Dr. Eva Nichols (UBC)</p>
+</li>
+<li>
+<p>Synthetic DNA: Dr. David Perrin (UBC)</p>
+</li>
+<li>
+<p>Data management: Dr. Richard Arias-Hernández (UBC)</p>
+</li>
+<li>
+<p>Bioinformatics (Error correction): Dr. Jiarui Ding (UBC)</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Outreach</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Education:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Computation and Information</p>
+</li>
+<li>
+<p>DNA Storage</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>BC Government, Hospitals</p>
+</li>
+<li>
+<p>Cloud storage companies</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_current_long_term_storage">Current Long Term Storage</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://en.wikipedia.org/wiki/Zettabyte_Era" class="bare">https://en.wikipedia.org/wiki/Zettabyte_Era</a></p>
+</li>
+<li>
+<p><a href="https://mit-serc.pubpub.org/pub/the-cloud-is-material/release/1" class="bare">https://mit-serc.pubpub.org/pub/the-cloud-is-material/release/1</a></p>
+</li>
+<li>
+<p><a href="https://contenteratechspace.com/6-best-ways-for-long-term-data-storage/" class="bare">https://contenteratechspace.com/6-best-ways-for-long-term-data-storage/</a></p>
+</li>
+<li>
+<p><a href="https://medium.com/stanford-magazine/carbon-and-the-cloud-d6f481b79dfe" class="bare">https://medium.com/stanford-magazine/carbon-and-the-cloud-d6f481b79dfe</a></p>
+</li>
+<li>
+<p><a href="https://www.cbc.ca/radio/spark/digital-data-has-an-environmental-cost-calling-it-the-cloud-conceals-that-researcher-says-1.6641268" class="bare">https://www.cbc.ca/radio/spark/digital-data-has-an-environmental-cost-calling-it-the-cloud-conceals-that-researcher-says-1.6641268</a></p>
+</li>
+<li>
+<p><a href="https://thereader.mitpress.mit.edu/the-staggering-ecological-impacts-of-computation-and-the-cloud/" class="bare">https://thereader.mitpress.mit.edu/the-staggering-ecological-impacts-of-computation-and-the-cloud/</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_dna_storage">DNA storage</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10296570" class="bare">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10296570</a></p>
+</li>
+<li>
+<p><a href="https://www.computer.org/csdl/magazine/co/2023/07/10154188/1O1wUGjK41O" class="bare">https://www.computer.org/csdl/magazine/co/2023/07/10154188/1O1wUGjK41O</a></p>
+</li>
+<li>
+<p><a href="https://www.nature.com/articles/d42473-022-00319" class="bare">https://www.nature.com/articles/d42473-022-00319</a></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_wet_lab">Wet lab</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://www.nature.com/articles/s41467-019-10258-1">Terminator-free template-independent enzymatic DNA synthesis for digital information storage</a></p>
+</li>
+<li>
+<p><a href="https://2021.igem.org/Team:Aachen" class="bare">https://2021.igem.org/Team:Aachen</a></p>
+</li>
+<li>
+<p><a href="https://pubs.acs.org/doi/10.1021/acssynbio.3c00044">Spatially Selective Electrochemical Cleavage of a Polymerase-Nucleotide Conjugate</a></p>
+</li>
+<li>
+<p><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8288405/" class="bare">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8288405/</a></p>
+</li>
+<li>
+<p>this approach is chemistry heavy, so based on the skills of our wet lab, we can also engineer yeast cells to produce DNA and store data in artifical chromosomes, as demonstrated by Yuan<sup class="footnote">[<a id="_footnoteref_3" class="footnote" href="#_footnotedef_3" title="View footnote.">3</a>]</sup></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_dry_lab">Dry Lab</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://www.nature.com/articles/srep14138" class="bare">https://www.nature.com/articles/srep14138</a></p>
+</li>
+<li>
+<p><a href="https://arxiv.org/abs/2212.13447" class="bare">https://arxiv.org/abs/2212.13447</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="footnotes">
+<hr>
+<div class="footnote" id="_footnotedef_1">
+<a href="#_footnoteref_1">1</a>. <a href="https://www.nature.com/articles/d42473-022-00319-3" class="bare">https://www.nature.com/articles/d42473-022-00319-3</a>
+</div>
+<div class="footnote" id="_footnotedef_2">
+<a href="#_footnoteref_2">2</a>. <a href="https://www.forbes.com/sites/johncumbers/2022/03/25/dna-synthesis-goes-green/?sh=49f785fb532c" class="bare">https://www.forbes.com/sites/johncumbers/2022/03/25/dna-synthesis-goes-green/?sh=49f785fb532c</a>
+</div>
+<div class="footnote" id="_footnotedef_3">
+<a href="#_footnoteref_3">3</a>. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8288405/" class="bare">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8288405/</a>
+</div>
+</div>
+
+  </div>
+  <div class="flex-row link-no-style">
+    
+    
+  </div>
+</div>
+
+
+        </div>
+        <div class="sidebar">
+  <a href="../../"><h2>Lucy Hao</h2></a>
+  <a href="../../archive"><h3>Thoughts</h3></a>
+  <a href="../../papers"><h3>Paper Log</h3></a>
+  <a href="../../books"><h3>Books</h3></a>
+  <a href="../../cv/cv.pdf"><h3>CV/Resume</h3></a>
+</div>
+
+      </div>
+    </main>
+
+    <footer>
+      <center>
+        <p>
+          <a href="../../archive">archive</a>
+          <a href="https://github.com/lhao03" target="_blank">github</a>
+          <a href="https://www.linkedin.com/in/lucy-hao/" target="_blank">linkedin</a>
+        </p>
+      </center>
+      Site powered by cats, 🍫 and
+      <a href="http://jaspervdj.be/hakyll">Hakyll</a>
+    </footer>
+  </body>
+</html>

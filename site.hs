@@ -78,6 +78,7 @@ main = hakyllWith config $ do
             listField "posts" postCtx (recentFirst =<< loadAll "posts/*")
               `mappend` listField "courses" postCtx (recentFirst =<< loadAll "courses/**")
               `mappend` listField "books" postCtx (recentFirst =<< loadAll "books/**")
+              `mappend` listField "papers" postCtx (recentFirst =<< loadAll "papers/**")
               `mappend` defaultContext
 
       pandocCompilerWithAsciidoctor
@@ -138,6 +139,14 @@ main = hakyllWith config $ do
         >>= relativizeUrls
   
     match "books/**" $ do
+      route appendIndex
+      compile $ do
+        pandocCompilerWithAsciidoctor
+          >>= loadAndApplyTemplate "templates/post.html" postCtx
+          >>= loadAndApplyTemplate "templates/default.html" postCtx
+          >>= relativizeUrls
+
+    match "papers/**" $ do
       route appendIndex
       compile $ do
         pandocCompilerWithAsciidoctor

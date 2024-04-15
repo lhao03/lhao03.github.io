@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lucy H | Paper: Forward Build Systems, Formally</title>
+  <link rel="stylesheet" href="../../css/main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
+  <!-- and it's easy to individually load additional languages -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/languages/scheme.min.js"></script>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/base16/onedark.min.css" />
+  <script>
+    hljs.highlightAll();
+  </script>
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+  <link rel="preconnect" href="https://www.googletagmanager.com" />
+  <link rel="preconnect" href="https://www.google-analytics.com" />
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KDGPVMHC9Q"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-KDGPVMHC9Q");
+  </script>
+
+  <!-- basic favicon -->
+  <link rel="icon" href="../../images/android-chrome-384x384.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../images/android-chrome-384x384.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../images/android-chrome-384x384.png" />
+  <link rel="apple-touch-icon-precomposed" href="../../images/android-chrome-384x384.png" />
+</head>
+
+  <body>
+    <main role="main">
+      <div class="flex-row-col">
+        <div>
+          <h2>Paper: Forward Build Systems, Formally</h2>
+          <div>
+  
+  <div class="header">
+    Posted on May 28, 2022
+    
+  </div>
+  <div class="tags">
+    
+    Tags: systems, paper
+    
+  </div>
+  <div class="content">
+    <div class="paragraph">
+<p>Sarah Spall, Neil Mitchell, and Sam Tobin-Hochstadt. 2022. For-
+ward Build Systems, Formally. In Proceedings of the 11th ACM SIG-
+PLAN International Conference on Certified Programs and Proofs
+(CPP ’22), January 17–18, 2022, Philadelphia, PA, USA. ACM, New
+York, NY, USA, 13 pages. <a href="https://doi.org/10.1145/3497775.3503687" class="bare">https://doi.org/10.1145/3497775.3503687</a></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>build systems have recieved little focus on their correctness</p>
+</li>
+<li>
+<p>what does it mean for a forward build system to be correct ⇒ behave identically to simply executing the programmer-specified commands in order</p>
+<div class="ulist">
+<ul>
+<li>
+<p>real build systems also have optimizations</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="_1_introduction">1 Introduction</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>most important features: incrementality and parallelism ⇒ MAKE requires user to declare targets to build, what those targets depend on and how to build those targets</p>
+</li>
+<li>
+<p>getting correct dependecies on a project is hard ⇒ incorrect or omitted dependencies leads to missed opportunites for parallelism or outright incorrect results</p>
+</li>
+<li>
+<p>alternative to MAKE: forward build system ⇒ user writes a program taht say show to build their software project, without declaring targets or dependencies</p>
+<div class="ulist">
+<ul>
+<li>
+<p>using system tracing, runs each command and records the files the command read or wrote during its execution.</p>
+</li>
+<li>
+<p>during rebuild, uses this information to decide if it should run this command again</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>RATTLE</strong>: provides support for implicit parallelism via speculation and checks if commands in a forward build system are valid or in conflict with each other via hazards</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>hazards: stating correctness for Rattle in a way not possible for prior build systems: a build process that writes to some of the inputs to the build ⇒ can’t rely on remembering past commands because no way to know about past state</p>
+</li>
+</ul>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>A forward build system is correct if, for every build, it either produces the same result as running the commands in order, or reports an error.</p>
+</div>
+</blockquote>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_2_rattle">2 Rattle</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>uses tracing to record which files are written to and read from by the command and contents of those files</p>
+</li>
+<li>
+<p>if Rattle sees a command which ran before wtih current value of inputs and outputs ⇒ skips command</p>
+</li>
+<li>
+<p>if Rattle sees command with which ran with current inputs, if Rattle has access to copy of outputs, it puts outputs where command would put them</p>
+</li>
+<li>
+<p>else, will run afresh with tracing</p>
+</li>
+<li>
+<p>single-threaded ⇒ overcome with speculation ⇒ predicts commands that are likley to be needed in future and unlikely to conflict, and runs them before script requests them</p>
+<div class="ulist">
+<ul>
+<li>
+<p>based on what ran previously or hazards</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_2_1_hazards">2.1 Hazards</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>read-before-write hazard</strong>: one command reads a file that a later command writes to.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>on next rebuilds, first command needs to run again because second command wrote to its dependency</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>write-before-write hazard</strong>: a command writes to a file and a later command also writes to that file.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>on next rebuilds, first command will need to run again because second command changed it’s output, and the second command will likely be triggred to run again</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>speculative write-before-read hazard</strong>: if command runs speculatively and hasn’t been marked as required yet, it is speculated. if speculated command writes to a file later read by required command, RAttle has run commands in the wrong order</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_2_2_assumptions">2.2 Assumptions</h3>
+<div class="paragraph">
+<p>for a hazard-free build to reach a fixed point, Rattle makes certain assumptions that it does not check:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>determinism of commands</strong>: assumes all commands are deterministic; non-deterministic commands ⇒ different result each time it runs</p>
+</li>
+<li>
+<p><strong>disjoint reads and writes</strong>: commands do not write to their own inputs (all writes first truncate); otherwise Rattle cannot capture true value of inputs since the capture occurs only after the command has completed</p>
+</li>
+<li>
+<p><strong>tracing data is correct</strong></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_3_3_preconditions_and_simplifications">3.3 Preconditions and Simplifications</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>builds cannot contain duplicate commands; if a command appears more than once it will be skipped on more appearances</p>
+</li>
+<li>
+<p>builds are static lists: monadic builds are supported (previous commands influence future commands), but they complicate the proof</p>
+</li>
+<li>
+<p>commands are run sequentially</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+  </div>
+  <div class="flex-row link-no-style">
+    
+    
+  </div>
+</div>
+
+
+        </div>
+        <div class="sidebar">
+  <a href="../../"><h2>Lucy Hao</h2></a>
+  <a href="../../archive"><h3>Thoughts</h3></a>
+  <a href="../../papers"><h3>Paper Log</h3></a>
+  <a href="../../books"><h3>Books</h3></a>
+  <a href="../../cv/cv.pdf"><h3>CV/Resume</h3></a>
+</div>
+
+      </div>
+    </main>
+
+    <footer>
+      <center>
+        <p>
+          <a href="../../archive">archive</a>
+          <a href="https://github.com/lhao03" target="_blank">github</a>
+          <a href="https://www.linkedin.com/in/lucy-hao/" target="_blank">linkedin</a>
+        </p>
+      </center>
+      Site powered by cats, 🍫 and
+      <a href="http://jaspervdj.be/hakyll">Hakyll</a>
+    </footer>
+  </body>
+</html>

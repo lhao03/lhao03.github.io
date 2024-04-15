@@ -1,0 +1,5 @@
+---
+title: "Divine Rivals"
+tags: fantasy
+img: "dr.jpg"
+---

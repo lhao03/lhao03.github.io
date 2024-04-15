@@ -2,9 +2,12 @@
 title: "Paper Log"
 date: 2023-12-24
 ---
-:toc: 
 
-Here you can see how I rank my papers (when I don't forget to rank them) and the papers I've read. You can see the papers I've written about link:/tags/paper/[here].
+$partial("templates/papers.html")$
+
+---
+
+Here are some papers which I may not have written about.
 
 [cols="4,1,1"]
 |===
@@ -188,10 +191,10 @@ Here you can see how I rank my papers (when I don't forget to rank them) and the
 == Ranking System
 [cols="1,4,4"]
 |===
-|Number |Interest |Understanding 
+|Number |Interest |Understanding
 
 |1
-|I'm falling asleep. 
+|I'm falling asleep.
 |I don't understand a single sentence.
 
 |2
@@ -212,7 +215,7 @@ Here you can see how I rank my papers (when I don't forget to rank them) and the
 
 |6
 |Has some interesting points.
-|I can get a good idea about the topic of the paper, but can't really form any questions or my own thoughts on the paper and I have trouble talking about the paper to someone else and have to refer back. 
+|I can get a good idea about the topic of the paper, but can't really form any questions or my own thoughts on the paper and I have trouble talking about the paper to someone else and have to refer back.
 
 |7
 |
