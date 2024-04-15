@@ -859,8 +859,109 @@ $$k = \frac{t_t - t_m}{t_m}$$
         - more uniform packing material reduces this problem
   - longitudinal diffusion in mobile phase
     - solute diffuses from high solute concentration to low solute concentration
-  - mass transfer in SP
-  - mass transfer in MP
+  - mass transfer in SP and MP
+    - movement between phases (mobile and stationary phase)
+    - band broadening occurs if solute's movement within MP or SP is not fast enough to maintain an eq in its concentration between the two phases
+      - solute in MP moves down column before it passes into SP
+      - solute in SP moves takes longer than expected to move back into MP
+      - smaller velocity => more time for mass transfer
+***** putting it all together
+height of theoretical plate: $$H = H_p + H_d + H_s + H_m$$, where the contributions are path length, longitudinal diffusion, mass transfer in SP, mass transfer in MP
+- another form is van deemter equation: $$H = A + B/u + Cu$$, where $A$ is multiple paths, $B/u$ accoutns for longitudinal diffusion, $Cu$ accounts for mass transfer
+- to increase number of theoretical plates
+  - adjust velocity of mobile phase
+    - smaller mobile phase velocity: column efficiency limited by longitudinal diffusion
+    - higher mobile phase: two mass transfer terms
+  - column itself
+    - decrease particle size
+    - open-tubular or capillary columns
+      - small diameter
+      - no packing material
+      - interior is coated with SP
+    - $H_p$ disappears, $H_m$ decreases => $H$ decreases
+    - takes less pressure to move down column => length increases
+    - difficult to inject reproducible
+- use thin films of SP
+  - decrease $H_s$
+**** 12D gas chromatography
+gas MP
+- carry solute through packed/capillary column, that separates sample components based on ability to partition between MP and SP
+- components: compressed gas for MP, heated injector (volatilizes components in liquid sample), a column (in oven), detector
+- packed column: larger sample
+  - filled with packing material
+  - glass rinsed to prevent adsorption of solute
+- capillary column:
+  - better theoretical plate, longer
+  - smaller diameter, require smaller sample
+gas SP
+  - elution order: boiling points of solutes/interaction between solutes and SP
+    - nonpolar solutes => more easy to seperate with nonpolar SP
+    - polar solutes => more easy to seperate with polar SP
+  - liquid SP: bleed, or tendency to elute when column is heated
+sample introduction
+- volatile
+- appropriate concentration
+- don't degrade the separation (accidently injecting liquid sample or directly into moving stream of gas MP)
+  - packed: sample injected directly into column (mixes sample with least amount of carrier gas), heated above BP of least volatile solute
+  - capillary: need to use split/splitless
+    - split injection: injected into glass liner to mix with carrier gas
+      - only some gets injected, rest leaves
+    - splitless: allow all sample to enter column => significant precolumn band broadening is problem
+      - cool the column => solvent condences, traps solutes, then raise temperature back up
+temperature control
+- isothermal => set slightly below lowest boiling point solute
+  - causes high boiling point solute to have very long retention time => temperature programming
+- detectors:
+  - thermal conductivity detector: measure thermal conductivity as MP exits column (universal detector)
+    - poor detection limit for most analytes
+  - flame ionization detector: combustion of organic compound in hydrogen gas flame => electrons and organic cations => suuply potential creates current => when amplified => signal
+    - many organic cations generate signal
+    - inorganic compounds not detected
+    - better detection limit
+  - electron capture detector
+    - highly selective towards solute electronegative functional groups
+    - insensitive to amines, alcohol, hydrocarbons
+    - excellent detection limit, but linear range only extend over two orders of magnitude
+  - mass spectrometer
+    - GCMS
+    - mass to charge ratio
+**** 12E high performance liquid chromatography
+- liquid MP
+- components: reservoir for MP, pump for pushing MP through system, injector for introducing sample, column for separating the sample into component parts, detector for monitoring the eluent
+
+HPLC columns
+- analytical column: responsible for separation
+  - packed with silica
+  - capillary column use less solvent, can also be packed => back pressure that develops when pumping liquid
+  - monolithic column: solid support is single, porous rod
+- guard column: placed beore sepration to protect from contamination
+  - solute that bind to SP (and wont come off)
+  - particulate material that clog
+  - same packing material and SP and shorter
+- SP
+  - covalently bond to silica particles
+  - bonded stationary phases: reacting silica particles with organochlorosilane with R group (determines property of SP)
+    - normal phase: polar SP, nonpolar MP
+    - reverse phase: nonpolar SP, mobile MP
+- MP
+  - elution order governed by polarity
+    - normal phase: less polar solutes elutes first
+    - reverse phase: more polar solute elutes first
+  - isocratic and gradient elutions
+  - move MP => dissolve gases, remove particulate matter => inject sample => loop injector
+  - detector: spectroscopic
+    - diode array
+    - UV/Vis detector
+  - detector: electrochemical
+  - refractive index, mass spec
+- comparison:
+  - loop injector: makes LC have better precision
+  - volume: LC has more
+  - LC not limited to volatile, can analyze broader range
+  - GC: more plates, can seperate more complex mixtures
+
+**** 12 F other forms
+***** liquid-solid adsorption
 
 *** key words
 - adjusted retention time:  $t^, = t_t - t_m$, where t_m is the time column's void time, and $t_t$ is time between injection time and solute peak
