@@ -1,0 +1,6 @@
+---
+title: "Courses"
+date: 2024-15-04
+---
+
+$partial("templates/courses.html")$

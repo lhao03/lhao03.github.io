@@ -50,11 +50,18 @@ i am tracking my days again. here are the things left to do.
 * final (april 16)
 
 == april 15
-* [ ] practice point group stuff
+* [*] practice point group stuff
 * [ ] chem 211 finish ch 12 reading
 * [*] chem 211 ps5
 * [ ] plan summer workouts
 * [ ] chem 211 review unit 1
+
+stuff i want to read
+
+https://faculty.washington.edu/ajko/publications?diversity
+https://faculty.washington.edu/ajko/publications?tutorials
+https://faculty.washington.edu/ajko/publications?methods
+
 
 == april 14
 * [ ] practice point group stuff

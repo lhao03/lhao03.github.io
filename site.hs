@@ -71,7 +71,7 @@ main = hakyllWith config $ do
         route $ setExtension "css"
         compile (fmap compressCss <$> sassCompiler)
 
-  match (fromList ["log.adoc", "papers.adoc", "books.adoc"]) $ do
+  match (fromList ["log.adoc", "papers.adoc", "books.adoc", "courses.adoc"]) $ do
     route appendIndex
     compile $ do
       let indexCtx =
