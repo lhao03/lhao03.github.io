@@ -3,145 +3,104 @@ description: "CHEM 211"
 title: "CHEM 211: Introduction to Chemical Analysis"
 ---
 
-** terms
-- internal standard: addition of constant amount of substance similar to analyte to a sample as reference point for determination of the analyte
-- matrix effect: effect of non-analyte components on sample
-- random error:  worse precision
-- systematic error: reduces accuracy
-- selectivity: measure without interference from other things
-- sensitivity: rate of change in signal with changes in analyte
-- limit of detection: minimum amount of analyte that be detected with confidence
-- precision: how close values are (replicates)
-- accuracy: how close to real value
-- standard addition: use sample matrix in calibration
-- replicate: sample from same source analyzed with same methods
-- positive control: known to contain analyte
-- negative control: known to contain no analyte
-- standard reference material: well characterized
-- interferent: cause systematic error in analysis
-- t-statistic: assign confidence limits to average results from small sample sizes
-- F-test*: compare precision of two methods
-- t-test*: compare if two results are same or different statistically
-- least squares regression: best fit of line
-- G-test: outlier
-- For an external standard quantitation, known data from a calibration standard and unknown data from the sample are combined to generate a quantitative report.
-- $$K_f = \frac{[MY^{2-}]}{[M^{2+}][Y^{4-}]}$$ usually large
-- $$K_sp = [M^+][Cl^-]$$ usually small
-
-** mt1 problems
-*** unit 1
-- detecting signals that are statistically significant: $$S \geq \mu_{background} + 3 \sigma_{background}$$
-- which t-test to use:
-  - case 1: compare sample mean with population mean (the true value) (needs replicates)
-  - case 2: use the f-test to compare SD of two sample sets, then compare two sample means (needs replicates)
-  - case 3: compare methods of single measurements of several different samples
-- $$\frac{S}{N}$$ proportionate to $$\sqrt{n}$$
-- concentration detection limit: $$S_A = S_{background} + 3\sigma_{background}$$
-- what does each standard allow you do to:
-  - external standard: interpolate unknown from CC
-  - standard addition: extrapolate unknown from CC (matrix effect)
-  - internal standard: ratio, add substance similar to analyte, but different and not expected to be found in sample
-*** unit 2
-- solubility equilibria: will precipiate form? check if $$Q > K_{sp}$$ using the equation $$[M^+][X^-]$$
-- solubility equilibria: with x mL 0.y M of $$MY$$ added to x mL of 0.j M $$NaI$$, how much ppt forms and what is the final concentration
-  1. set up reaction equations:
-     $$MI \Leftrightarrow M^+ + I^-$$
-     $$MY + NaI \leftarrow MI + NaY$$
-  2. set up $$K_{sp} = [M^+][I^-]$$, find $[I^-]$
-     - assume $$[M^+] = 0$$ at eq, so to find $[I^-]$, you subtract concentration of M from total concentration of I, then solve for M
-- complexation equilibria: what is the concentration of $$M^{2+}$$ when x.0 mL of 0.00y M $$MCl_2$$ is added to z.0 mL of 0.00j M of EDTA at pH 13.0
-  1. set up ice table with starting concentrations, and $$K_f$$ expression
-  2. mass balance with known concentrations
-  3. assume because of large $$K_f$$ $$[M^{2+}] = 0$$
-- solubility equilibria: solubility of $$CoCO_3$$ in buffered solution of pH 4.0
-  1. set up equations for $$K_{sp}$$, $$K_{a1}$$, $$K_{a2}$$
-  2. set up mass balance, one for the $$[Co^{2+}] = ...$$ and $$[CO_3^{2-}] = ...$$ and one for the acids
-  3. using known values, substitute and solve for $$[Co^{2+}]^2$$
-- solubility equilibria: solubility of $$MCl$$ in 0.0x M of $$NaCN$$
-  1. given $$K_{sp}$$ and $$K_f$$, write two equations for each one
-  2. set up mass balance for $[M^+]$ and $[CN^-]$
-  3. list assumptions:
-     - since $$K_f$$ is large, there is not much free $M+$
-     - MCl will dissolve until all $CN^-$ used up: $$[M(CN)_2^-] >> [CN^-]$$
-       - $$[CN^-]_i = 2[M(CN)_2^-] = 0.0x$$ M
-       - $$[Ag^+]_i = [Cl^-]_i = [M(CN)_2^-]$$
-- $$XCl$$ is dissolved in a solution of 0.x M $$ACl$$, where $$ACl$$ is soluble and $$XCl$$ is not very soluble. Given $$K_{sp} = [X^+][Cl^-]$$
-  1. find equations: $$ACl \Leftrightarrow A^+ + Cl^-$$
-  2. set up mass balance: 0.x M = $$[A^+] = [Cl^-]_{total} - [Cl^-]_{XCl} = [Cl^-]_{total} - [X^+]$$
-     - because $$[Cl^-]_{XCl} = [X^-]$$
-  3. set up charge balance (include all ions): $$1[Na^+] + 1[X^+] = 1[Cl^-]$$
-  4. check number of unknowns is equal to number of equations
-  5. replace unknowns with known and solve for $$[X^-]$$
-- finding the isoelectric point of an amino acid: $$\frac{1}{2} (pK_{a1} + pK_{a2})$$
-- titration of $$M^+$$ with EDTA at a pH of y, in presence of complexing agent
-  - solubility of $$MX_{s}$$ in presence of a complexing agent such as $$NH_4Cl$$
-- indirect titration of A with excess and known B and X: BX binds, then with addition of A, released B is amount of A
-  - A has higher $$K_f$$ then B
-- EDTA titration at pH lower than 10: what is the concentration of $$M^{2+}$$ when x.0 mL of 0.00y0 $$MCl_2$$ is added to z.0 mL of 0.0j M EDTA solution buffered at pH k?
-  1. set up $$K_f$$ expression: $$K_f = \frac{[CaY^{2-}]}{[M^{+2}][Y^{4-}]}$$
-  2. set up mass balance:
-     $$[EDTA] = \frac{z \times 0.0j \text{ M}}{x + z}$$
-     $$[MY^{2-}] = \frac{x \times 0.0y \text{ M}}{x + z}$$ assuming all the EDTA forms complex with the metal.
-  3. sub in alpha: $$[Y^{4-}] = \alpha_6 [EDTA]_{free}$$
-     $$[EDTA]_{free} = [EDTA] - [MY^{2-}]$$
-  4. sub in known values into the $$K_f$$ expression to find the concentration of $$M^{2+}$$
-     $$[M^{2+}] = \frac{K_f \alpha_6 [EDTA]_{free}}{[MY^{2-}]}$$
-- argentometric titration before eq point: x mL of 0.0y M XCl was titrated with 0.z M of $$AgNO_3$$
-  - find pCl at 10 mL of $$AgNO_3$$:
-    1. calculate how much $$Ag^+$$ has been added; this is how much $Cl^-$ has formed ppt with silver
-    2. subtract $Cl^-$ that has formed complex with $Ag^+$ from initial amount of chlorine
-    3. $$pCl = log[Cl^-]$$
-- argentometric titration at eq: use $$K_{sp}$$
-- argentometric titration after eq: calculate excess $$Ag^+$$, then sub into $$K_{sp}$$ expression and solve for $$[Cl^-]$$
-** mt 2 problems
-*** unit 3
-- balancing electrochemistry equations:
-  1. write unbalanced half-reactions
-  2. add coefficients
-  3. add H$_2$O to balance oxygen
-  4. add acid or base to balance hydrogens
-  5. balance charge by adding electrons
-- find the ionic strength
-  1. write out dissociation equation for species of interest
-  2. calculate concentrations of ions present
-  3. sub into formula, and calculate, make sure to square charge
-- calculating potentials of cell
-  1. identify anode and cathode, then use:  E$_{cell}$ = E$_{cathode}$ - E$_{anode}$
-- calculating potentials with nerst equation
-  1. identify anode and cathode half reactions
-  2. write out full reaction
-  3. calculate $$E^o$$, and use $$E = E^o - \frac{0.0592}{n} log [\frac{[M^{x+}]}{[M^{y+}]}]$$
-- cell notation: Ag (s) | AgCl (s) | 3.0 M KCL (aq) || 0.01 M Fe(CN)$_6^{3-}$ (aq), 0.01 M Fe(CN)$_6^{4-}$ (aq), 0.5 M KCl (aq) | Graphite
-  - anode:  Ag (s) | AgCl (s) | 3.0 M KCL (aq)
-  - cathode: 0.01 M Fe(CN)$_6^{3-}$ (aq), 0.01 M Fe(CN)$_6^{4-}$ (aq), 0.5 M KCl (aq) | Graphite
-  - ||: salt bridge
-  - |: phase boundry
-
-
-* units
 ** 1: Analytical Concepts & Statistics
-1. Define analytical terminology (e.g., blank, matrix, analyte, assay, quantitative, qualitative)
-2. Describe figures of merit and use them to characterize and compare methods.
+1. *Define analytical terminology (e.g., blank, matrix, analyte, assay, quantitative, qualitative)*
+   - assay: is process of determining the amount of analyte (substance being measured) in sample
+   - analyte: the substance being measured
+   - qualitative analysis: (identification)
+   - quantitative analysis: (quantity)
+   - sample matrix: everything but the analyte
+   - blank: chemist made sample that lacks analyte
+     - solvent: same solvent as sample solutions
+     - method: same solvents and reagents
+     - sample: tries to approximate the sample matrix, everything but analyte
+2. *Describe figures of merit and use them to characterize and compare methods.*
+   - LOD, LOQ
+   - accuracy & precision
+   - selectivity
+     - interferent: chemical that causes systematic error in measured quantity
+     - masking agent: prevents components in sample matrix from interfering with analysis
+       - analytical method
+       - interference with analyte: analyte binds with matrix
+       - interference with reagent: matrix binds with reagent
+       - background interference
+     - sensitivity: determined by slope (how small of a change can be measured)
+     - range: concentration range where we have good linearity, accuracy, precision
+       - dynamic range: range instrument can measure
+     - robustness: ability of method to withstand small, uncontrolled changes in operation parameters
 3. Identify potential challenges related to sample collection and preparation.
-4. Calculate the detection limit.
-5. Differentiate between random and systematic sources of uncertainty (error) and explain how repeated measurements can help reduce uncertainty.
-6. Describe how the sample matrix can affect measurements.
-7. Explain the 3 methods of calibration: external standards, standard addition and internal standards
-8. Explain the standard addition and internal standard methods of calibration and how they can compensate for certain types of interferences.
+4. *Calculate the detection limit.*
+   - noise: random fluctuations in measured signal
+   - blank: a constant (like control) signal measured in absence of analyte
+   - limit of detection (LOD): smallest concentration of absolute amount of analyte with signal much larger than blank
+     - (signal) LOD: units as signal (instrument maker) $$S_{mb} + z\sigma_{mb}$$
+     - (sample) LOD: amount/concentration (user)
+       - calibration curve: $$\sigma_{DL} = 3 \sigma_{mb} /m$$
+5. *Differentiate between random and systematic sources of uncertainty (error) and explain how repeated measurements can help reduce uncertainty.*
+   - absolute error: $$\bar{x} - \mu$$
+   - relative error: $$\frac{\bar{x} - \mu}{\mu} \times 100 \%$$
+   - random uncertainty: can't replicate, contributes to imprecision => quantify with stats
+   - systematic uncertainty: contribute to inaccuracy, repeats, can correct for
+     - proportional error: %, issue for large signals
+     - constant error: always some absolute value, issue for small signals
+6. *Describe how the sample matrix can affect measurements.*
+   - matrix effects: combined effect of non-analyte components in sample on measurement of analyte
+7. *Explain the 3 methods of calibration: external standards, standard addition and internal standards*
+   - external standard: series of solutions of known concentration of analyte
+   - standard addition: matrix too complex, so use standard addition
+     - prepare standard solutions but with sample and add analyte to "sample"
+     - find x-intercept: when y = 0, this is the "original" value of x (without the shift in y axis)
+     - the linear line has been "shifted" on the y axis
+        [[../../../../images/211/standard_addition.jpeg]]
+   - internal standard: intentionally add substance that is not expected to be found in sample (not the analyte) but behaves similarly
+     - constant amount of internal standard => constant signal
+     - changing concentrations of analyte
+     - plot ratio between analyte and internal standard vs. ratio of their concentrations $$\frac{S_{A}}{S_{IS}}$$ vs. $$\frac{[A]}{[IS]}$$
+8. *Explain the standard addition and internal standard methods of calibration and how they can compensate for certain types of interferences.*
+   - external standard:
+     - create standard solutions with varying/known conc. of analyte
+     - interpolate unknown from CC
+     - can’t account for matrix or inconsistencies in instrument
+   - standard addition
+     - add known quantities of analyte to unknown solution
+     - extrapolate unknown from CC
+     - accounts for matrix
+   - internal standard:
+     - add known amount of different (but similar) compound to unknown and standards
+     - ratio of signal from analyte to signal from internal standard
 9. Interpret or create calibration curves based on external standards, standard additions, or internal standards to determine unknown quantities (e.g., analyte concentration in a sample).
 10. Describe the method of least squares in linear regression
 11. Apply error propagation and appropriate significant figures in reporting calculated values.
-12. Explain how a Gaussian distribution represents randomly distributed data and forms the basis for confidence limits and statistical tests.
-13. Calculate an average, standard deviation, and confidence limits.
-14. Select and apply appropriate statistics to test a hypothesis (e.g., comparison of means, comparison of precision, rejection of outliers).
+12. *Explain how a Gaussian distribution represents randomly distributed data and forms the basis for confidence limits and statistical tests.*
+    - gaussian distribution: bell curve
+      - 1sd: 68%
+      - 2sd: 95%
+      - 3sd: 99%
+    - population vs. sample:
+      - sample sd approaches population sd as N > 20
+      - as N increases, sd decreases
+13. *Calculate an average, standard deviation, and confidence limits.*
+    - RSD: $$\frac{\sigma}{\bar{x}} \times 100 \%$$
+    - CI: probability a difference exists when it doesn't
+      - 99% is a larger range than 95% (95% covers smaller area under the guassian distribution)
+14. *Select and apply appropriate statistics to test a hypothesis (e.g., comparison of means, comparison of precision, rejection of outliers).*
+    - student's t value: permits use of sample data to test hypothesis without knowing population sd
+    - significance testing: is difference between two values too large to be explained by random uncertainty
+        | case 1 t-test           | case 2 t test               | case 3 t-test       | grubb's test |
+        | compare experi. to true | compare two experi. results | compare two methods | outlier?     |
+      - case 1 t-test: $$t_{exp} = \frac{|\bar{x} - \mu|\sqrt{N}}{\sigma}$$, and then compare, $$t_{exp} > t_{table}$$ means significant difference
+      - case 2 t-test (do two experimental values agree with each other?):
+        - same sd: must pool the sds
+          - $$\bar{x_1} - \bar{x_2} = +/- t \sigma_{pool} \sqrt{\frac{N_1 + N_2}{N_1N N_2}}$$
+            - if LHS < RHS: the 2 means are not statistically different
+        - use f-test to determine if two SDs are statistically different: $$\frac{\sigma^2_1}{\sigma^2_2}$$, find F_{exp} and compare with table value => then do the work for different SDs
+    - case 3 t-test: paired/matched measurement data
+      - comparing single measurements made with two methods on several different samples
+      - before and after (drug trials, same people)
+    - grubb's test: determine outlier, make sure to remove if it is an outlier
 
-
-*** lecture 1
+*** other misc. lecture notes
 **** An Introduction to Analytical Measurements
-- assay: is process of determining the amount of analyte (substance being measured) in sample
-- analyte:
-- qualitative analysis: (identification)
-  quantitative analysis: (quantity)
 - signal
   - visual detection: simple, low-cost, subjective, not sensitive, large sample volumes, low-throughput (??)
   - electrical detection: objective, more sensitive, faster, automate, costly, maintenance, calibration
@@ -151,133 +110,27 @@ title: "CHEM 211: Introduction to Chemical Analysis"
 - measurement:
   - signal-to-noise ratio: $$\frac{S}{N}$$ is proportional to $$\sqrt{n}$$
     - averaged signal $$S$$, averaged noise $$N$$
-*** lecture 2
-  - assay: set of procedures or methods, latin word for try
-  - analyte: chemical we are looking for
-  - qualitative analysis
-  - quantitative analysis
-  - measurement:
-    - signal: can be height or area of line/graph (thing we want) (mean of several measurements)
-    - noise: unwanted, random fluctuations (sd)
-  - sample matrix: everything but the analyte.
-    - matrix: complex and often unknown
-  - blank: chemist made sample that lacks analyte
-    - types:
-      - solvent: same solvent as sample solutions
-      - method: same solvents and reagents
-      - sample: tries to approximate the sample matrix, everything but analyte
-  - detection limit:
-    - noise: random fluctuations in measured signal
-    - blank: a constant (like control) signal measured in absence of analyte
-    - limit of detection (LOD): smallest concentration of absolute amount of analyte with signal much larger than blank
-    - signal LOD: units as signal (instrument maker) $$S_{mb} + z\sigma_{mb}$$
-      - means average blank signal plus 3 standard deviations of blank signal
-    - sample LOD: amount/concentration (user)
-  - limit of quantitation $$\frac{S}{N} = 10$$: ability to report the concentration
-  - calibration curve: $$\sigma_{DL} = 3 \sigma_{mb} /m$$
-    - three standard deviations divided by the slope
-      - same approach applied to LOQ
-*** lecture 3
-[[../../../../images/211/LOD_211_Week2_Tuesday.jpeg]]
 - controls:
   - positive: standard sample with known quantity of analyte
     - prevents situation when there should be a signal but there is no signal (false negative)
-  - negative: standard sample with no analyete
+  - negative: standard sample with no analyte
     - prevents situation when there should be no signal and there is a signal (false positive)
-- figures of merit
-  - LOD, LOQ
-  - accuracy & precision
-    - error and replicates:
-      - absolute: $$\bar{x} - \mu$$
-      - relative: $$\frac{\bar{x} - \mu}{\mu} \times 100 \%$$
-    - replicate: samples from same source
-  - selectivity
-    - extent that other substances interfere with determination of analyte
-      - interference: chemical that causes systematic error in measured quantity
-      - masking agent: prevents components in sample matrix from interfering with analysis
-  - sensitivity
-    - ability of method to measure small changes in concentration of analyte
-  - range: acceptable linearity, accuracy, precision
-    - dynamic range: range an instrument can read (measurable response but maybe not linear)
-    - linear range: analyte concentration over which response is proportional to concentration
-  - robustness
-    - ability of method to withstand small, uncontrolled changes in operation parameters
-- why FOM: demonstrate validity of method by reporting these parameters
-- uncertainty and bias:
-  - random uncertainty: can't replicate, contributes to imprecision, quantify with stats
-  - systematic uncertainty: contribute to inaccuracy, repeatable, can correct for it in principle
-  - types:
-    - proportional: %, issue for large signals
-    - constant: always some absolute value, issue for small signals
-- calibration curves:
-  - external calibration in the lab: series of solutions of known concentration of analyte
-- concentration detection limit: lowest concentration of analyte in sample that can be detected
-  - you can find concentration LOD: $$[C]_{DL} = \frac{3\sigma_{mb}}{m}$$
-- matrix effects: combined effect of non-analyte components in sample on measurement of analyte
-  - calibration standards should approximate analytical samples in analyte and in composition of non-analyte species
-  - matrix too complex, so use standard addition
-- standard addition:
-  - wet lab: prepare standard solutions but with sample and add analyte to "sample"
-  - find x-intercept: when y = 0, this is the "original" value of x (without the shift in y axis)
-  - the linear line has been "shifted" on the y axis
-    [[../../../../images/211/standard_addition.jpeg]]
-*** lecture 4
-- internal standard: intentionally add substance that is not expected to be found in sample (not the analyte) but behaves similarly
-  - constant amount of internal standard, constant IS signal
-  - changing concentrations of analyte
-  - plot ratio between analyte and internal standard vs. ratio of their concentrations $$\frac{S_{A}}{S_{IS}}$$ vs. $$\frac{[A]}{[IS]}$$
-- calibration curve:
-  1. single point calibration (one standard) and the origin
-  2. multi-point calibration (4-6)
-     - effect of systematic error in any one standard solution minimized by existence of other standards
-| external standards                                            | standard addition                                   | internal standards                                                            |
-| create standard solutions with varying/known conc. of analyte | add known quantities of analyte to unknown solution | add known amount of different (but similar) compound to unknown and standards |
-| interpolate unknown from CC                                   | extrapolate unknown from CC                         | ration of signal from analyte to signal from internal standard                |
-| simple, easy                                                  | accounts for matrix                                 | accounts for losses throughout analysis                                   |
-| can't account for matrix or inconsistencies in instrument     | lots of samples                                     |  cost, prep                                                                   |
-
 - sig figs:
   - pH: pH of 2.45, digits after decimal are how many sig figs the conc. has
   - exact number has infinite number of sig figs
-**** Analytical Measurements and Statistics - Gaussian Distribution, Standard Deviation
-- gaussian distribution: bell curve
-  - 1sd: 68%
-  - 2sd: 95%
-  - 3sd: 99%
-- population vs. sample:
-  - sample sd approaches population sd as N > 20
-  - as N increases, sd decreases
-- propagation of uncertainty:
-  - addition/sub: $$\sqrt{\sigma^2_a + \sigma^2_b}$$
-  - mult/div: RSD used
-**** Analytical Measurements and Statistics - Significance Testing
-- significance testing: is difference between two values too large to be explained by random uncertainty
-| case 1 t-test           | case 2 t test               | case 3 t-test       | grubb's test |
-| compare experi. to true | compare two experi. results | compare two methods | outlier?     |
-- null hypothesis: no effect
-- choose CI before you do experiments
-  - CI: probability a difference exists when it doesn't
-- student's t value: permits use of sample data to test hypothesis without knowing population sd
-
-*** lecture 5
-- t-statistic (case 1): validation, where there is a known or true value
-- t-statistic (case 2, same sd): comparing 2 means, is there enough statistical overlap
-- t-statistic (case 2, different sd): use F-test
-- t-statistic (case 3): paired/matched data
-  - comparing single measurements made with two methods on several different samples
-  - before and after (drug trials, same people)
-- grubb's test: determine outlier, make sure to remove if it is an outlier
-- equilibrium constant
-- activity
-- weak acid and weak base
-- polyprotic acid
-  - formulas:
-    - $$[H^+] = \sqrt{\frac{K_{a2}[HA^-] + K_w}{1 + \frac{[HA^-]}{K_{a1}}}}$$
-    - $$[H^+] = \sqrt{K_{a2}K_{a1}}$$
-    - $$pH = 1/2(pK_{a1} + pK_{a2})$$ this is also how you get isoelectric point
-- amphiprotic substance
 
 ** 2: Equilibrium and Volumetric Analysis
+  - equilibrium constant
+  - activity
+  - weak acid and weak base
+  - polyprotic acid
+    - formulas:
+      - $$[H^+] = \sqrt{\frac{K_{a2}[HA^-] + K_w}{1 + \frac{[HA^-]}{K_{a1}}}}$$
+      - $$[H^+] = \sqrt{K_{a2}K_{a1}}$$
+      - $$pH = 1/2(pK_{a1} + pK_{a2})$$ this is also how you get isoelectric point
+  - amphiprotic substance
+
+
 1. Recognize compounds that participate in equilibrium reactions or otherwise have an effect on those reactions (e.g., acids, bases, ions that form insoluble or sparingly salts, ligands).
 2. Define the following terms mathematically and in your own words: Ka, Kb, Kw, Ksp, Kf, Kd.
 3. Write mass balance, charge balance and solubility expressions for an equilibrium problem.
@@ -962,6 +815,13 @@ HPLC columns
 
 **** 12 F other forms
 ***** liquid-solid adsorption
+- column packing is also SP
+- SP is polar, MP is nonpolar
+***** ion-exchange
+- SP is cross-linked polymer resin with covalently attached ionic functional groups
+***** size-exclusion
+- ability of solute to enter pores of SP
+*****
 
 *** key words
 - adjusted retention time:  $t^, = t_t - t_m$, where t_m is the time column's void time, and $t_t$ is time between injection time and solute peak
@@ -1070,3 +930,117 @@ pipette
   - delivers a specific volume, but holds more
 - TC: pipette contains specified volume of liquid with no remainders
   - contain a specific volume
+
+    * terms
+- internal standard: addition of constant amount of substance similar to analyte to a sample as reference point for determination of the analyte
+- matrix effect: effect of non-analyte components on sample
+- random error:  worse precision
+- systematic error: reduces accuracy
+- selectivity: measure without interference from other things
+- sensitivity: rate of change in signal with changes in analyte
+- limit of detection: minimum amount of analyte that be detected with confidence
+- precision: how close values are (replicates)
+- accuracy: how close to real value
+- standard addition: use sample matrix in calibration
+- replicate: sample from same source analyzed with same methods
+- positive control: known to contain analyte
+- negative control: known to contain no analyte
+- standard reference material: well characterized
+- interferent: cause systematic error in analysis
+- t-statistic: assign confidence limits to average results from small sample sizes
+- F-test*: compare precision of two methods
+- t-test*: compare if two results are same or different statistically
+- least squares regression: best fit of line
+- G-test: outlier
+- For an external standard quantitation, known data from a calibration standard and unknown data from the sample are combined to generate a quantitative report.
+- $$K_f = \frac{[MY^{2-}]}{[M^{2+}][Y^{4-}]}$$ usually large
+- $$K_sp = [M^+][Cl^-]$$ usually small
+
+** mt1 problems
+*** unit 1
+- detecting signals that are statistically significant: $$S \geq \mu_{background} + 3 \sigma_{background}$$
+- which t-test to use:
+  - case 1: compare sample mean with population mean (the true value) (needs replicates)
+  - case 2: use the f-test to compare SD of two sample sets, then compare two sample means (needs replicates)
+  - case 3: compare methods of single measurements of several different samples
+- $$\frac{S}{N}$$ proportionate to $$\sqrt{n}$$
+- concentration detection limit: $$S_A = S_{background} + 3\sigma_{background}$$
+- what does each standard allow you do to:
+  - external standard: interpolate unknown from CC
+  - standard addition: extrapolate unknown from CC (matrix effect)
+  - internal standard: ratio, add substance similar to analyte, but different and not expected to be found in sample
+*** unit 2
+- solubility equilibria: will precipiate form? check if $$Q > K_{sp}$$ using the equation $$[M^+][X^-]$$
+- solubility equilibria: with x mL 0.y M of $$MY$$ added to x mL of 0.j M $$NaI$$, how much ppt forms and what is the final concentration
+  1. set up reaction equations:
+     $$MI \Leftrightarrow M^+ + I^-$$
+     $$MY + NaI \leftarrow MI + NaY$$
+  2. set up $$K_{sp} = [M^+][I^-]$$, find $[I^-]$
+     - assume $$[M^+] = 0$$ at eq, so to find $[I^-]$, you subtract concentration of M from total concentration of I, then solve for M
+- complexation equilibria: what is the concentration of $$M^{2+}$$ when x.0 mL of 0.00y M $$MCl_2$$ is added to z.0 mL of 0.00j M of EDTA at pH 13.0
+  1. set up ice table with starting concentrations, and $$K_f$$ expression
+  2. mass balance with known concentrations
+  3. assume because of large $$K_f$$ $$[M^{2+}] = 0$$
+- solubility equilibria: solubility of $$CoCO_3$$ in buffered solution of pH 4.0
+  1. set up equations for $$K_{sp}$$, $$K_{a1}$$, $$K_{a2}$$
+  2. set up mass balance, one for the $$[Co^{2+}] = ...$$ and $$[CO_3^{2-}] = ...$$ and one for the acids
+  3. using known values, substitute and solve for $$[Co^{2+}]^2$$
+- solubility equilibria: solubility of $$MCl$$ in 0.0x M of $$NaCN$$
+  1. given $$K_{sp}$$ and $$K_f$$, write two equations for each one
+  2. set up mass balance for $[M^+]$ and $[CN^-]$
+  3. list assumptions:
+     - since $$K_f$$ is large, there is not much free $M+$
+     - MCl will dissolve until all $CN^-$ used up: $$[M(CN)_2^-] >> [CN^-]$$
+       - $$[CN^-]_i = 2[M(CN)_2^-] = 0.0x$$ M
+       - $$[Ag^+]_i = [Cl^-]_i = [M(CN)_2^-]$$
+- $$XCl$$ is dissolved in a solution of 0.x M $$ACl$$, where $$ACl$$ is soluble and $$XCl$$ is not very soluble. Given $$K_{sp} = [X^+][Cl^-]$$
+  1. find equations: $$ACl \Leftrightarrow A^+ + Cl^-$$
+  2. set up mass balance: 0.x M = $$[A^+] = [Cl^-]_{total} - [Cl^-]_{XCl} = [Cl^-]_{total} - [X^+]$$
+     - because $$[Cl^-]_{XCl} = [X^-]$$
+  3. set up charge balance (include all ions): $$1[Na^+] + 1[X^+] = 1[Cl^-]$$
+  4. check number of unknowns is equal to number of equations
+  5. replace unknowns with known and solve for $$[X^-]$$
+- finding the isoelectric point of an amino acid: $$\frac{1}{2} (pK_{a1} + pK_{a2})$$
+- titration of $$M^+$$ with EDTA at a pH of y, in presence of complexing agent
+  - solubility of $$MX_{s}$$ in presence of a complexing agent such as $$NH_4Cl$$
+- indirect titration of A with excess and known B and X: BX binds, then with addition of A, released B is amount of A
+  - A has higher $$K_f$$ then B
+- EDTA titration at pH lower than 10: what is the concentration of $$M^{2+}$$ when x.0 mL of 0.00y0 $$MCl_2$$ is added to z.0 mL of 0.0j M EDTA solution buffered at pH k?
+  1. set up $$K_f$$ expression: $$K_f = \frac{[CaY^{2-}]}{[M^{+2}][Y^{4-}]}$$
+  2. set up mass balance:
+     $$[EDTA] = \frac{z \times 0.0j \text{ M}}{x + z}$$
+     $$[MY^{2-}] = \frac{x \times 0.0y \text{ M}}{x + z}$$ assuming all the EDTA forms complex with the metal.
+  3. sub in alpha: $$[Y^{4-}] = \alpha_6 [EDTA]_{free}$$
+     $$[EDTA]_{free} = [EDTA] - [MY^{2-}]$$
+  4. sub in known values into the $$K_f$$ expression to find the concentration of $$M^{2+}$$
+     $$[M^{2+}] = \frac{K_f \alpha_6 [EDTA]_{free}}{[MY^{2-}]}$$
+- argentometric titration before eq point: x mL of 0.0y M XCl was titrated with 0.z M of $$AgNO_3$$
+  - find pCl at 10 mL of $$AgNO_3$$:
+    1. calculate how much $$Ag^+$$ has been added; this is how much $Cl^-$ has formed ppt with silver
+    2. subtract $Cl^-$ that has formed complex with $Ag^+$ from initial amount of chlorine
+    3. $$pCl = log[Cl^-]$$
+- argentometric titration at eq: use $$K_{sp}$$
+- argentometric titration after eq: calculate excess $$Ag^+$$, then sub into $$K_{sp}$$ expression and solve for $$[Cl^-]$$
+** mt 2 problems
+*** unit 3
+- balancing electrochemistry equations:
+  1. write unbalanced half-reactions
+  2. add coefficients
+  3. add H$_2$O to balance oxygen
+  4. add acid or base to balance hydrogens
+  5. balance charge by adding electrons
+- find the ionic strength
+  1. write out dissociation equation for species of interest
+  2. calculate concentrations of ions present
+  3. sub into formula, and calculate, make sure to square charge
+- calculating potentials of cell
+  1. identify anode and cathode, then use:  E$_{cell}$ = E$_{cathode}$ - E$_{anode}$
+- calculating potentials with nerst equation
+  1. identify anode and cathode half reactions
+  2. write out full reaction
+  3. calculate $$E^o$$, and use $$E = E^o - \frac{0.0592}{n} log [\frac{[M^{x+}]}{[M^{y+}]}]$$
+- cell notation: Ag (s) | AgCl (s) | 3.0 M KCL (aq) || 0.01 M Fe(CN)$_6^{3-}$ (aq), 0.01 M Fe(CN)$_6^{4-}$ (aq), 0.5 M KCl (aq) | Graphite
+  - anode:  Ag (s) | AgCl (s) | 3.0 M KCL (aq)
+  - cathode: 0.01 M Fe(CN)$_6^{3-}$ (aq), 0.01 M Fe(CN)$_6^{4-}$ (aq), 0.5 M KCl (aq) | Graphite
+  - ||: salt bridge
+  - |: phase boundry
