@@ -30,19 +30,24 @@ i am tracking my days again. here are the things left to do.
 * finish primer library
 
 === chem 211
-* review unit 1
 * review unit 2
 * review unit 5
 * review unit 4
 * review unit 3
 
+== april 18
+* [ ] take out trash
+* [ ] reschedule dentist appointment
+* [ ] wash dishes
+
 == april 17
 * [*] cleaning
 * [*] chem 211: unit 2
-* [ ] plan workouts
+* [*] plan workouts
 * [ ] take out trash
-* [ ] buy groceries
+* [*] buy groceries
 * [ ] reschedule dentist appointment
+* [*] chem 211 redo MT1
 
 == april 16
 * [*] chem 401 finish takehome final
