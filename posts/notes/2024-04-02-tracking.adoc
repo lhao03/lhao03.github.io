@@ -36,7 +36,7 @@ i am tracking my days again. here are the things left to do.
 * review unit 3
 
 == april 18
-* [ ] take out trash
+* [*] take out trash
 * [ ] reschedule dentist appointment
 * [ ] wash dishes
 
