@@ -15,7 +15,6 @@ i am tracking my days again. here are the things left to do.
 
 === life 
 * start tracking stats
-* take out trash
 * clean floor
 * do laundry
 
@@ -37,22 +36,18 @@ i am tracking my days again. here are the things left to do.
 * review unit 4
 * review unit 3
 
-=== chem 412
-* reviewing lectures
-** lectures 1 - 10
-*** reviewing eigenvalue matrix
-** lectures 10 - 14
-** lectures 14 - 18
-*** review point groups
-** lectures 18 - 20
-*** review point group
-** lectures 20 - 24
-* final (april 16)
+== april 17
+* [*] cleaning
+* [*] chem 211: unit 2
+* [ ] plan workouts
+* [ ] take out trash
+* [ ] buy groceries
+* [ ] reschedule dentist appointment
 
 == april 16
-* [ ] chem 401 finish takehome final
-* [ ] chem 211 review/do unit 1 questions
-* [ ] clean kitchen
+* [*] chem 401 finish takehome final
+* [*] chem 211 review/do unit 1 questions
+* [*] clean kitchen
 * [ ] clean bedroom
 
 https://web.math.princeton.edu/generals/

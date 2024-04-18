@@ -120,71 +120,64 @@ title: "CHEM 211: Introduction to Chemical Analysis"
   - exact number has infinite number of sig figs
 
 ** 2: Equilibrium and Volumetric Analysis
-  - equilibrium constant
-  - activity
-  - weak acid and weak base
-  - polyprotic acid
-    - formulas:
-      - $$[H^+] = \sqrt{\frac{K_{a2}[HA^-] + K_w}{1 + \frac{[HA^-]}{K_{a1}}}}$$
-      - $$[H^+] = \sqrt{K_{a2}K_{a1}}$$
-      - $$pH = 1/2(pK_{a1} + pK_{a2})$$ this is also how you get isoelectric point
-  - amphiprotic substance
-
-
 1. Recognize compounds that participate in equilibrium reactions or otherwise have an effect on those reactions (e.g., acids, bases, ions that form insoluble or sparingly salts, ligands).
-2. Define the following terms mathematically and in your own words: Ka, Kb, Kw, Ksp, Kf, Kd.
-3. Write mass balance, charge balance and solubility expressions for an equilibrium problem.
+2. *Define the following terms mathematically and in your own words: Ka, Kb, Kw, Ksp, Kf, Kd.*
+   - $$K_b = \frac{[BH^+][OH^-]}{[B]}$$
+   - $$K_a = \frac{[A^-][H_3O^+]}{[HA]}$$
+   - $$K_w = K_a K_b$$
+   - $$K_{sp} = [A^+]^a [B^-]^b$$, solid dissolving into ions
+   - $$K_f$$: formation, ions forming into another ion
+3. *Write mass balance, charge balance and solubility expressions for an equilibrium problem.*
+   - systematic treatment of equilibrium
+     - as many equations as unknowns
+     - chemical equilibrium constant expressions
+     - charge balance charge on cation_1[cation_1] + charge on cation_2[cation_2] = charge on anion_1[anion_1] + charge on anion_2[anion_2], include every single ion
+   - formal: moles of original chemical formula in solution, without regard for species that already exist
+   - how to use:
+     - mass balance: if you're looking for a species, check if you set up a mass balance for it, or if you need to sub an unknown
+     - charge balance: not sure
+     - chem eq: to sub in an unknown
 4. Relate physical constants (Ka, Kb, Ksp, Kf) to trends in the shape of titration curves and distribution diagrams.
 5. Select an appropriate method of endpoint detection and/or indicator (from a limited group of options) for a given analysis and justify your choice.
-6. Write the equilibrium expression(s) for a complexation titration
-7. Qualitatively predict the consequences of disturbing a system at equilibrium (e.g., adjustment of pH, changes in concentration, or the addition of new species).
+   - equiv points:
+     - strong acids: 7
+     - weak acids: pH = pK$_{a}$ at half-equiv point
+     - endpoints for polyprotic species:
+       - if $$\frac{K_{a,1}}{K_{a,2}}$$ larger than or equal $$10^{4}$$, 1st endpoint will be clear (endpoint can disappear into the other)
+       - if $$pK_{a,2}$$ less than or equal 8, 2nd endpoint will be clear (if larger than 8, then $$K_{a2}$$ too weak)
+       - triprotic: third endpoint around 12.7, too small, can't see
+   - selecting indicators: pK$_a$ of indicator that is close to expected pH at equivalance point
+     - for weak acid pK$_a$ is only half-equiv, so need an indicator that has much higher pK$_a$
+       [[../../../../images/211/indicators.jpg]]
+   - how to ensure we see the change of color in indicator?
+     - strong acid: eq point occurs at 7, very steep, the steep portion is almost vertical
+     - weak acid: $P_{ka}$ of indicator much larger than $P_{ka}$ of weak acid, or indicator changes color too early because not as steep (?), since eq point occurs after pH 7
+     - weak base: eq point occurs before 7
+6. *Write the equilibrium expression(s) for a complexation titration*
+   - $$M^{m+} + L^{n-} <-> ML^{m-n}$$
+     - $$K_f = \frac{ML^{m-n}}{[M^{m+}][L^{n-}]}$$
+7. *Qualitatively predict the consequences of disturbing a system at equilibrium (e.g., adjustment of pH, changes in concentration, or the addition of new species).*
+   - pH on solubility: using Le Chatelier
+     - pH increases: adding hydroxide to equation
+     - pH decreases: adding hydronium to equation
+   - complexing agent: increases solubility
 8. Identify relevant equations and make appropriate assumptions to quantitatively analyze an equilibrium system.
 
-**** Chemical Equilibrium Applied to Analytical Measurements
-*** lecture 6
-- systematic treatment of equilibria
-  - as many equations as unknowns
-    - chemical equilibrium constant expressions
-    - charge balance charge on cation_1[cation_1] + charge on cation_2[cation_2] = charge on anion_1[anion_1] + charge on anion_2[anion_2]
-    - mass balance (many)
-    - formal: moles of original chemical formula in solution, without regard for species that already exist
-- alpha diagrams: can plot alpha as a function of pH
-
-**** Solution Equilibrium and Systematic Treatment of Chemical Equilibrium
-*** lecture 7
-- complexing agent: increases solubility of precipiate
-- complex formation: adding excess of B doesn't always precipiate max amount of A (you can have multiple species of complex)
-- titrant: solution of known composition and concentration
-- titrand: unknown solution
-- titrations:
-  - acid-base
-  - complexometric titrations (metal-ligand)
-  - precipiatation (want ppt)
-  - redox (titrant is an oxidizing or reducing agent)
-- acid-base titrations
-  - strong acid: eq point always at 7
-  - weak acid: half eq point = $$pK_{a}$$
-  - Henderson-Hasselbalch Equation: $$pH = pK_a + log \frac{[A^-]}{[HA]}$$
-  - diprotic acid with strong base (how to calculate pH throughout the titration process): (REVIEW)
-    - buffer region: H-H equation
-    - compare $K_a$s
-  - endpoints for polyprotic species:
-    - if $$\frac{K_{a,1}}{K_{a,2}}$$ larger than or equal $$10^{4}$$, 1st endpoint will be clear (endpoint can disappear into the other)
-    - if $$pK_{a,2}$$ less than or equal 8, 2nd endpoint will be clear (if larger than 8, then $$K_{a2}$$ too weak)
-    - triprotic: third endpoint around 12.7, too small, can't see
+*** misc. info from lectures
+- activity
+  - weak acid and weak base
+- polyprotic acid
+  - formulas:
+    - $$[H^+] = \sqrt{\frac{K_{a2}[HA^-] + K_w}{1 + \frac{[HA^-]}{K_{a1}}}}$$
+    - $$[H^+] = \sqrt{K_{a2}K_{a1}}$$
+    - $$pH = 1/2(pK_{a1} + pK_{a2})$$ this is also how you get isoelectric point
+    - amphiprotic substance
+- Henderson-Hasselbalch Equation: $$pH = pK_a + log \frac{[A^-]}{[HA]}$$
+- diprotic acid with strong base (how to calculate pH throughout the titration process): (REVIEW)
+  - buffer region: H-H equation
+  - compare $K_a$s
 - buffers
   - effective range: $$pK_a +- 1$$
-- acid-base indicator effective within the same range, but in practice is 0.5
-  - color transition
-
-**** Polyprotic Acid Equilibria, Polyprotic Acid-Base Titrations
-*** lecture 8
-- indicators: are actually acids and bases
-  - range $P_{ka}$ plus or minus 1, in practice 0.5
-- how to ensure we see the change of color in indicator?
-  - strong acid: eq point occurs at 7, very steep, the steep portion is almost vertical
-  - weak acid: $P_{ka}$ of indicator much larger than $P_{ka}$ of weak acid, or indicator changes color too early because not as steep (?), since eq point occurs after pH 7
-  - weak base: eq point occurs before 7
 - gravimetric methods
   - obtain analyte by precipitating it
 - precipitation titration
@@ -196,8 +189,8 @@ title: "CHEM 211: Introduction to Chemical Analysis"
       - endpoint: can be measuring removed or excess
         fluorescein:
         - titration of halides
-        - before: colloidal AgX is neg
-        - after: colloidal AgX is pos
+        - before eq point: colloidal AgX is neg
+        - after eq point: colloidal AgX is pos
         - it depends on the ratio between $Ag^+$ and $X^-$ which determines its charge
         - titration graph: after eq point, all indicators converge to the same behaviour
         - "colloid is a mixture in which one substance consisting of microscopically dispersed insoluble particles is suspended throughout another substance"
@@ -218,9 +211,6 @@ title: "CHEM 211: Introduction to Chemical Analysis"
         - too much ACA decreases sharpness of endpoint
           $$M^{2+} + 4NH_3 \Leftrightarrow Zn(NH_3)_4^{2+}$$
           $$Zn(NH_3)_4^{2+} + Y^{4-} \Leftrightarrow ZnY^{2-} + 4NH_3$$
-
-**** Complexation Equilibria - Quantitative EDTA Titrations
-*** lecture 9
 - indicators for EDTA:
   - Eriochrome Black T: only works on some metals, can use backtitration to use with other metals
     - orange to red/violet
@@ -249,7 +239,6 @@ title: "CHEM 211: Introduction to Chemical Analysis"
       - want to analyse a metal with EDTA, but if the matrix is unknown, other metals may bind to EDTA that is not the metal of interest
       - instead, react $$Ca^{2+}$$ with $$MgY^+$$; $$Ca^{2+}$$ has higher $K_f$ will displace $$Mg^{2+}$$
         - titrate the freed $$Mg^{2+}$$ in solution ? we titrate the excess Mg with EDTA?
-**** More Volumetric Analysis
 
 ** 3: Electrochemistry and Potentiometry
 - Define electric potential.
@@ -980,7 +969,7 @@ pipette
 - complexation equilibria: what is the concentration of $$M^{2+}$$ when x.0 mL of 0.00y M $$MCl_2$$ is added to z.0 mL of 0.00j M of EDTA at pH 13.0
   1. set up ice table with starting concentrations, and $$K_f$$ expression
   2. mass balance with known concentrations
-  3. assume because of large $$K_f$$ $$[M^{2+}] = 0$$
+  3. assume because of large $$K_f$$, $$[M^{2+}] = 0$$
 - solubility equilibria: solubility of $$CoCO_3$$ in buffered solution of pH 4.0
   1. set up equations for $$K_{sp}$$, $$K_{a1}$$, $$K_{a2}$$
   2. set up mass balance, one for the $$[Co^{2+}] = ...$$ and $$[CO_3^{2-}] = ...$$ and one for the acids

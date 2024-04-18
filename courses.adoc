@@ -3,4 +3,6 @@ title: "Courses"
 date: 2024-15-04
 ---
 
+These are both course notes and course reviews.
+
 $partial("templates/courses.html")$
