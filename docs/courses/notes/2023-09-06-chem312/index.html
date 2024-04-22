@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lucy H | CHEM 312: Introduction to Quantum Mechanics and Spectroscopy</title>
+  <link rel="stylesheet" href="../../../css/main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
+  <!-- and it's easy to individually load additional languages -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/languages/scheme.min.js"></script>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/base16/onedark.min.css" />
+  <script>
+    hljs.highlightAll();
+  </script>
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+  <link rel="preconnect" href="https://www.googletagmanager.com" />
+  <link rel="preconnect" href="https://www.google-analytics.com" />
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KDGPVMHC9Q"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-KDGPVMHC9Q");
+  </script>
+
+  <!-- basic favicon -->
+  <link rel="icon" href="../../../images/android-chrome-384x384.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../../images/android-chrome-384x384.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../../images/android-chrome-384x384.png" />
+  <link rel="apple-touch-icon-precomposed" href="../../../images/android-chrome-384x384.png" />
+</head>
+
+  <body>
+    <main role="main">
+      <div class="flex-row-col">
+        <div>
+          <h1>CHEM 312: Introduction to Quantum Mechanics and Spectroscopy</h1>
+          <div>
+  
+  <div class="header">
+    Posted on September  6, 2023
+    
+  </div>
+  <div class="tags">
+    
+  </div>
+  <div class="content">
+    
+<div id="toc" class="toc">Contents:
+<ul>
+<li><a href="#review">Review</a>
+<ul>
+<li><a href="#particle-in-a-box">particle in a box</a></li>
+<li><a href="#contributions-from-famous-quantum-scientists">contributions from famous quantum scientists</a></li>
+<li><a href="#reduced-mass">reduced mass</a></li>
+<li><a href="#bohr-atom">Bohr atom</a></li>
+<li><a href="#de-broglie-matter-wave">de Broglie matter wave</a></li>
+<li><a href="#photo-electron-effect">photo-electron effect</a></li>
+<li><a href="#hermitian-operator">Hermitian operator</a></li>
+<li><a href="#commutator">commutator</a></li>
+<li><a href="#hydrogen-atom">hydrogen atom</a></li>
+<li><a href="#harmonic-oscialltor">harmonic oscialltor</a></li>
+<li><a href="#ladder-operator">ladder operator</a></li>
+<li><a href="#angular-momentum-operator-lecture-18---onwards">angular momentum operator (lecture 18 - onwards)</a>
+<ul>
+<li><a href="#classical-understanding">classical understanding</a></li>
+<li><a href="#commutation-relationship">commutation relationship</a></li>
+</ul></li>
+<li><a href="#term-symbols">term symbols</a></li>
+<li><a href="#l---s-coupling">L - S coupling</a></li>
+<li><a href="#equivalent-and-non-equivalent-electrons">equivalent and non-equivalent electrons</a></li>
+<li><a href="#hunds-rules">Hund’s rules</a></li>
+</ul></li>
+<li><a href="#questions">Questions</a>
+<ul>
+<li><a href="#ch-9">ch 9</a></li>
+</ul></li>
+</ul></div>
+<div id="body"><h1 id="review">Review</h1>
+<h2 id="particle-in-a-box">particle in a box</h2>
+<h2 id="contributions-from-famous-quantum-scientists">contributions from famous quantum scientists</h2>
+<h2 id="reduced-mass">reduced mass</h2>
+<h2 id="bohr-atom">Bohr atom</h2>
+<h2 id="de-broglie-matter-wave">de Broglie matter wave</h2>
+<h2 id="photo-electron-effect">photo-electron effect</h2>
+<h2 id="hermitian-operator">Hermitian operator</h2>
+<h2 id="commutator">commutator</h2>
+<h2 id="hydrogen-atom">hydrogen atom</h2>
+<h2 id="harmonic-oscialltor">harmonic oscialltor</h2>
+<h2 id="ladder-operator">ladder operator</h2>
+<h2 id="angular-momentum-operator-lecture-18---onwards">angular momentum operator (lecture 18 - onwards)</h2>
+<h3 id="classical-understanding">classical understanding</h3>
+<ul>
+<li>components of angular momentum (3 in cartesian plane) as cross product:
+<span class="math display">$$L = r \times p =  \begin{bmatrix}
+                       x &amp; y &amp; z
+                       \end{bmatrix} \times \begin{bmatrix}
+                       p_x &amp; p_y &amp; p_z
+                       \end{bmatrix}
+                       = \begin{bmatrix}
+                       i &amp; j &amp; k\\
+                       x &amp; y &amp; z\\
+                       p_x &amp; p_y &amp; p_z
+                       \end{bmatrix}$$</span></li>
+</ul>
+<p><span class="math display">$$L = i(yp_z - p_yz) - j(xp_z - p_xz) + k(xp_y - p_xy) \\
+    = iL_x - jL_y + kL_z$$</span></p>
+<ul>
+<li>right handed coordinate system</li>
+<li>cyclic</li>
+</ul>
+<h3 id="commutation-relationship">commutation relationship</h3>
+<ul>
+<li>coupling of angular momentum vectors in molecules
+<ul>
+<li>when axes are mounted on molecule, sign of <span class="math inline"><em>i</em></span> flips in commutation</li>
+</ul></li>
+</ul>
+<h2 id="term-symbols">term symbols</h2>
+<h2 id="l---s-coupling">L - S coupling</h2>
+<h2 id="equivalent-and-non-equivalent-electrons">equivalent and non-equivalent electrons</h2>
+<h2 id="hunds-rules">Hund’s rules</h2>
+<h1 id="questions">Questions</h1>
+<h2 id="ch-9">ch 9</h2>
+<ul>
+<li>42</li>
+</ul></div>
+  </div>
+  <div class="flex-row link-no-style">
+    
+    
+  </div>
+</div>
+
+
+        </div>
+        <div class="sidebar">
+  <a href="../../../"><h2>Lucy Hao</h2></a>
+  <a href="../../../archive"><h3>Thoughts</h3></a>
+  <a href="../../../papers"><h3>Paper Log</h3></a>
+  <a href="../../../books"><h3>Books</h3></a>
+  <a href="../../../courses"><h3>Courses</h3></a>
+  <a href="../../../cv/cv.pdf"><h3>CV/Resume</h3></a>
+</div>
+
+      </div>
+    </main>
+
+    <footer>
+      <center>
+        <p>
+          <a href="../../../archive">archive</a>
+          <a href="https://github.com/lhao03" target="_blank">github</a>
+          <a href="https://www.linkedin.com/in/lucy-hao/" target="_blank">linkedin</a>
+        </p>
+      </center>
+      Site powered by cats, 🍫 and
+      <a href="http://jaspervdj.be/hakyll">Hakyll</a>
+    </footer>
+  </body>
+</html>

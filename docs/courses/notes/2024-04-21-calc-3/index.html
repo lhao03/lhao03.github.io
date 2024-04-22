@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lucy H | Multivariable Calculus (MIT OCW)</title>
+  <link rel="stylesheet" href="../../../css/main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
+  <!-- and it's easy to individually load additional languages -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/languages/scheme.min.js"></script>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/base16/onedark.min.css" />
+  <script>
+    hljs.highlightAll();
+  </script>
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+  <link rel="preconnect" href="https://www.googletagmanager.com" />
+  <link rel="preconnect" href="https://www.google-analytics.com" />
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KDGPVMHC9Q"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-KDGPVMHC9Q");
+  </script>
+
+  <!-- basic favicon -->
+  <link rel="icon" href="../../../images/android-chrome-384x384.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../../images/android-chrome-384x384.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../../images/android-chrome-384x384.png" />
+  <link rel="apple-touch-icon-precomposed" href="../../../images/android-chrome-384x384.png" />
+</head>
+
+  <body>
+    <main role="main">
+      <div class="flex-row-col">
+        <div>
+          <h1>Multivariable Calculus (MIT OCW)</h1>
+          <div>
+  
+  <div class="header">
+    Posted on April 21, 2024
+    
+  </div>
+  <div class="tags">
+    
+  </div>
+  <div class="content">
+    
+<div id="toc" class="toc">Contents:
+<ul>
+<li><a href="#lecture-1-dot-product">lecture 1: dot product</a>
+<ul>
+<li><a href="#dot-product">dot product</a></li>
+</ul></li>
+</ul></div>
+<div id="body"><h2 id="lecture-1-dot-product">lecture 1: dot product</h2>
+<ul>
+<li>vector: has direction and magnitude/length
+<ul>
+<li>represented using coordinate system</li>
+</ul></li>
+</ul>
+<p><span class="math display"><em>a</em><sub>1</sub><em>î</em> + <em>a</em><sub>2</sub><em>ĵ</em> + <em>a</em><sub>3</sub><em>k̂</em> =  &lt; <em>a</em><sub>1</sub>, <em>a</em><sub>2</sub>, <em>a</em><sub>3</sub>&gt;</span>
+<span class="math display">$$|\vec{A}| = \sqrt{a_1 + a_2 + a_3}$$</span></p>
+<h3 id="dot-product">dot product</h3>
+<p><span class="math display"><em>A⃗</em> ⋅ <em>B⃗</em> = ∑<em>a</em><sub><em>i</em></sub><em>b</em><sub><em>i</em></sub> = <em>a</em><sub>1</sub><em>b</em><sub>1</sub> + <em>a</em><sub>2</sub><em>b</em><sub>2</sub> + <em>a</em><sub>3</sub><em>b</em><sub>3</sub></span></p>
+<ol>
+<li><p>geometrically</p>
+<p><span class="math display"><em>A⃗</em> ⋅ <em>B⃗</em> = |<em>A⃗</em>||<em>B⃗</em>|<em>c</em><em>o</em><em>s</em><em>θ</em></span></p>
+<ul>
+<li>law of cosines: if <span class="math display"><em>C⃗</em> = <em>A⃗</em> − <em>B⃗</em></span>, then define</li>
+</ul>
+<p><span class="math display">|<em>C⃗</em>| = |<em>A⃗</em>|<sup>2</sup> + |<em>B⃗</em>|<sup>2</sup> − 2|<em>A⃗</em>||<em>B⃗</em>|<em>c</em><em>o</em><em>s</em><em>θ</em></span></p>
+<p>we know <span class="math display">|<em>C⃗</em>|<sup>2</sup> = <em>C⃗</em> ⋅ <em>C⃗</em> = (<em>A⃗</em>−<em>B⃗</em>) ⋅ (<em>A⃗</em>−<em>B⃗</em>) = |<em>A⃗</em>|<sup>2</sup> + |<em>B⃗</em>|<sup>2</sup> − 2<em>A⃗</em> ⋅ <em>B⃗</em></span></p>
+<p>then we get: <span class="math display">2|<em>A⃗</em>||<em>B⃗</em>|<em>c</em><em>o</em><em>s</em><em>θ</em> = 2<em>A⃗</em> ⋅ <em>B⃗</em></span></p>
+<ul>
+<li>the dot product can be used for
+<ul>
+<li>computing lengths and angles</li>
+<li>detect orthogonality
+<ul>
+<li><span class="math display"><em>A⃗</em> ⋅ <em>B⃗</em> = 0</span> means they are perpendicular to each other, <span class="math display"><em>c</em><em>o</em><em>s</em><em>θ</em></span>, <span class="math display"><em>θ</em> = 0<sup>deg</sup>, 90<sup>deg</sup></span></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ol></div>
+  </div>
+  <div class="flex-row link-no-style">
+    
+    
+  </div>
+</div>
+
+
+        </div>
+        <div class="sidebar">
+  <a href="../../../"><h2>Lucy Hao</h2></a>
+  <a href="../../../archive"><h3>Thoughts</h3></a>
+  <a href="../../../papers"><h3>Paper Log</h3></a>
+  <a href="../../../books"><h3>Books</h3></a>
+  <a href="../../../courses"><h3>Courses</h3></a>
+  <a href="../../../cv/cv.pdf"><h3>CV/Resume</h3></a>
+</div>
+
+      </div>
+    </main>
+
+    <footer>
+      <center>
+        <p>
+          <a href="../../../archive">archive</a>
+          <a href="https://github.com/lhao03" target="_blank">github</a>
+          <a href="https://www.linkedin.com/in/lucy-hao/" target="_blank">linkedin</a>
+        </p>
+      </center>
+      Site powered by cats, 🍫 and
+      <a href="http://jaspervdj.be/hakyll">Hakyll</a>
+    </footer>
+  </body>
+</html>

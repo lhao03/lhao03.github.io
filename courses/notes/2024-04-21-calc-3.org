@@ -1,0 +1,30 @@
+---
+description: "Multivariable Calculus (MIT OCW)"
+title: "Multivariable Calculus (MIT OCW)"
+---
+
+** lecture 1: dot product
+-  vector: has direction and magnitude/length
+  - represented using coordinate system
+
+$$a_1 \hat{i} + a_2 \hat{j} + a_3 \hat{k} = < a_1, a_2, a_3>$$
+$$|\vec{A}| = \sqrt{a_1 + a_2 + a_3}$$
+
+*** dot product
+$$ \vec{A} \cdot \vec{B} = \sum a_i b_i = a_1 b_1 + a_2 b_2 + a_3 b_3 $$
+
+**** geometrically
+$$\vec{A} \cdot \vec{B} = |\vec{A}| |\vec{B}| cos \theta$$
+
+- law of cosines: if $$\vec{C} = \vec{A} - \vec{B}$$, then define
+
+$$|\vec{C}| = |\vec{A}|^2 + |\vec{B}|^2 - 2|\vec{A}||\vec{B}| cos \theta$$
+
+we know $$|\vec{C}|^2 = \vec{C} \cdot \vec{C} = (\vec{A} - \vec{B}) \cdot (\vec{A} - \vec{B}) = |\vec{A}|^2 + |\vec{B}|^2 - 2\vec{A} \cdot \vec{B}$$
+
+then we get: $$2|\vec{A}||\vec{B}| cos \theta = 2\vec{A} \cdot \vec{B}$$
+
+- the dot product can be used for
+  - computing lengths and angles
+  - detect orthogonality
+    - $$\vec{A} \cdot \vec{B} = 0$$ means they are perpendicular to each other, $$cos \theta$$, $$\theta = 0^\deg, 90^\deg$$

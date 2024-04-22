@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lucy H | CHEM 211: Introduction to Chemical Analysis</title>
+  <link rel="stylesheet" href="../../../../css/main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
+  <!-- and it's easy to individually load additional languages -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/languages/scheme.min.js"></script>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/base16/onedark.min.css" />
+  <script>
+    hljs.highlightAll();
+  </script>
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+  <link rel="preconnect" href="https://www.googletagmanager.com" />
+  <link rel="preconnect" href="https://www.google-analytics.com" />
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KDGPVMHC9Q"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-KDGPVMHC9Q");
+  </script>
+
+  <!-- basic favicon -->
+  <link rel="icon" href="../../../../images/android-chrome-384x384.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../../../images/android-chrome-384x384.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../../../images/android-chrome-384x384.png" />
+  <link rel="apple-touch-icon-precomposed" href="../../../../images/android-chrome-384x384.png" />
+</head>
+
+  <body>
+    <main role="main">
+      <div class="flex-row-col">
+        <div>
+          <h1>CHEM 211: Introduction to Chemical Analysis</h1>
+          <div>
+  
+  <div class="header">
+    Posted on January  8, 2024
+    
+  </div>
+  <div class="tags">
+    
+  </div>
+  <div class="content">
+    
+<div id="toc" class="toc">Contents:
+<ul>
+<li><a href="#analytical-concepts-statistics">1: Analytical Concepts &amp; Statistics</a>
+<ul>
+<li><a href="#other-misc.-lecture-notes">other misc. lecture notes</a></li>
+</ul></li>
+<li><a href="#mt1-problems">mt1 problems</a>
+<ul>
+<li><a href="#unit-1">unit 1</a></li>
+</ul></li>
+</ul></div>
+<div id="body"><h2 id="analytical-concepts-statistics">1: Analytical Concepts &amp; Statistics</h2>
+<ol type="1">
+<li><strong>Define analytical terminology (e.g., blank, matrix, analyte, assay, quantitative, qualitative)</strong>
+<ul>
+<li>assay: is process of determining the amount of analyte (substance being measured) in sample</li>
+<li>analyte: the substance being measured</li>
+<li>qualitative analysis: (identification)</li>
+<li>quantitative analysis: (quantity)</li>
+<li>sample matrix: everything but the analyte</li>
+<li>blank: chemist made sample that lacks analyte
+<ul>
+<li>solvent: same solvent as sample solutions</li>
+<li>method: same solvents and reagents</li>
+<li>sample: tries to approximate the sample matrix, everything but analyte</li>
+</ul></li>
+</ul></li>
+<li><strong>Describe figures of merit and use them to characterize and compare methods.</strong>
+<ul>
+<li>LOD, LOQ</li>
+<li>accuracy &amp; precision</li>
+<li>selectivity
+<ul>
+<li>interferent: chemical that causes systematic error in measured quantity</li>
+<li>masking agent: prevents components in sample matrix from interfering with analysis
+<ul>
+<li>analytical method</li>
+<li>interference with analyte: analyte binds with matrix</li>
+<li>interference with reagent: matrix binds with reagent</li>
+<li>background interference</li>
+</ul></li>
+<li>sensitivity: determined by slope (how small of a change can be measured)</li>
+<li>range: concentration range where we have good linearity, accuracy, precision
+<ul>
+<li>dynamic range: range instrument can measure</li>
+</ul></li>
+<li>robustness: ability of method to withstand small, uncontrolled changes in operation parameters</li>
+</ul></li>
+</ul></li>
+<li>Identify potential challenges related to sample collection and preparation.</li>
+<li><strong>Calculate the detection limit.</strong>
+<ul>
+<li>noise: random fluctuations in measured signal</li>
+<li>blank: a constant (like control) signal measured in absence of analyte</li>
+<li>limit of detection (LOD): smallest concentration of absolute amount of analyte with signal much larger than blank
+<ul>
+<li>(signal) LOD: units as signal (instrument maker) <span class="math display"><em>S</em><sub><em>m</em><em>b</em></sub> + <em>z</em><em>σ</em><sub><em>m</em><em>b</em></sub></span></li>
+<li>(sample) LOD: amount/concentration (user)
+<ul>
+<li>calibration curve: <span class="math display"><em>σ</em><sub><em>D</em><em>L</em></sub> = 3<em>σ</em><sub><em>m</em><em>b</em></sub>/<em>m</em></span></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><strong>Differentiate between random and systematic sources of uncertainty (error) and explain how repeated measurements can help reduce uncertainty.</strong>
+<ul>
+<li>absolute error: <span class="math display"><em>x̄</em> − <em>μ</em></span></li>
+<li>relative error: <span class="math display">$$\frac{\bar{x} - \mu}{\mu} \times 100 \%$$</span></li>
+<li>random uncertainty: can’t replicate, contributes to imprecision =&gt; quantify with stats</li>
+<li>systematic uncertainty: contribute to inaccuracy, repeats, can correct for
+<ul>
+<li>proportional error: %, issue for large signals</li>
+<li>constant error: always some absolute value, issue for small signals</li>
+</ul></li>
+</ul></li>
+<li><strong>Describe how the sample matrix can affect measurements.</strong>
+<ul>
+<li>matrix effects: combined effect of non-analyte components in sample on measurement of analyte</li>
+</ul></li>
+<li><strong>Explain the 3 methods of calibration: external standards, standard addition and internal standards</strong>
+<ul>
+<li>external standard: series of solutions of known concentration of analyte</li>
+<li>standard addition: matrix too complex, so use standard addition
+<ul>
+<li>prepare standard solutions but with sample and add analyte to “sample”</li>
+<li>find x-intercept: when y = 0, this is the “original” value of x (without the shift in y axis)</li>
+<li>the linear line has been “shifted” on the y axis
+<img src="../../../../../../images/211/standard_addition.jpeg" /></li>
+</ul></li>
+<li>internal standard: intentionally add substance that is not expected to be found in sample (not the analyte) but behaves similarly
+<ul>
+<li>constant amount of internal standard =&gt; constant signal</li>
+<li>changing concentrations of analyte</li>
+<li>plot ratio between analyte and internal standard vs. ratio of their concentrations <span class="math display">$$\frac{S_{A}}{S_{IS}}$$</span> vs. <span class="math display">$$\frac{[A]}{[IS]}$$</span></li>
+</ul></li>
+</ul></li>
+<li><strong>Explain the standard addition and internal standard methods of calibration and how they can compensate for certain types of interferences.</strong>
+<ul>
+<li>external standard:
+<ul>
+<li>create standard solutions with varying/known conc. of analyte</li>
+<li>interpolate unknown from CC</li>
+<li>can’t account for matrix or inconsistencies in instrument</li>
+</ul></li>
+<li>standard addition
+<ul>
+<li>add known quantities of analyte to unknown solution</li>
+<li>extrapolate unknown from CC</li>
+<li>accounts for matrix</li>
+</ul></li>
+<li>internal standard:
+<ul>
+<li>add known amount of different (but similar) compound to unknown and standards</li>
+<li>ratio of signal from analyte to signal from internal standard</li>
+</ul></li>
+</ul></li>
+<li>Interpret or create calibration curves based on external standards, standard additions, or internal standards to determine unknown quantities (e.g., analyte concentration in a sample).</li>
+<li>Describe the method of least squares in linear regression</li>
+<li>Apply error propagation and appropriate significant figures in reporting calculated values.</li>
+<li><strong>Explain how a Gaussian distribution represents randomly distributed data and forms the basis for confidence limits and statistical tests.</strong>
+<ul>
+<li>gaussian distribution: bell curve
+<ul>
+<li>1sd: 68%</li>
+<li>2sd: 95%</li>
+<li>3sd: 99%</li>
+</ul></li>
+<li>population vs. sample:
+<ul>
+<li>sample sd approaches population sd as N &gt; 20</li>
+<li>as N increases, sd decreases</li>
+</ul></li>
+</ul></li>
+<li><strong>Calculate an average, standard deviation, and confidence limits.</strong>
+<ul>
+<li>RSD: <span class="math display">$$\frac{\sigma}{\bar{x}} \times 100 \%$$</span></li>
+<li>CI: probability a difference exists when it doesn’t
+<ul>
+<li>99% is a larger range than 95% (95% covers smaller area under the guassian distribution)</li>
+</ul></li>
+</ul></li>
+<li><strong>Select and apply appropriate statistics to test a hypothesis (e.g., comparison of means, comparison of precision, rejection of outliers).</strong>
+<ul>
+<li><p>student’s t value: permits use of sample data to test hypothesis without knowing population sd</p></li>
+<li><p>significance testing: is difference between two values too large to be explained by random uncertainty</p>
+<table>
+<tbody>
+<tr class="odd">
+<td>case 1 t-test</td>
+<td>case 2 t test</td>
+<td>case 3 t-test</td>
+<td>grubb’s test</td>
+</tr>
+<tr class="even">
+<td>compare experi. to true</td>
+<td>compare two experi. results</td>
+<td>compare two methods</td>
+<td>outlier?</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>case 1 t-test: <span class="math display">$$t_{exp} = \frac{|\bar{x} - \mu|\sqrt{N}}{\sigma}$$</span>, and then compare, <span class="math display"><em>t</em><sub><em>e</em><em>x</em><em>p</em></sub> &gt; <em>t</em><sub><em>t</em><em>a</em><em>b</em><em>l</em><em>e</em></sub></span> means significant difference</li>
+<li>case 2 t-test (do two experimental values agree with each other?):
+<ul>
+<li>same sd: must pool the sds
+<ul>
+<li><span class="math display">$$\bar{x_1} - \bar{x_2} = +/- t \sigma_{pool} \sqrt{\frac{N_1 + N_2}{N_1N N_2}}$$</span>
+<ul>
+<li>if LHS &lt; RHS: the 2 means are not statistically different</li>
+</ul></li>
+</ul></li>
+<li>use f-test to determine if two SDs are statistically different: <span class="math display">$$\frac{\sigma^2_1}{\sigma^2_2}$$</span>, find F<sub>exp</sub> and compare with table value =&gt; then do the work for different SDs</li>
+</ul></li>
+</ul></li>
+<li><p>case 3 t-test: paired/matched measurement data</p>
+<ul>
+<li>comparing single measurements made with two methods on several different samples</li>
+<li>before and after (drug trials, same people)</li>
+</ul></li>
+<li><p>grubb’s test: determine outlier, make sure to remove if it is an outlier</p></li>
+</ul></li>
+</ol>
+<h3 id="other-misc.-lecture-notes">other misc. lecture notes</h3>
+<ol>
+<li><p>An Introduction to Analytical Measurements</p>
+<ul>
+<li>signal
+<ul>
+<li>visual detection: simple, low-cost, subjective, not sensitive, large sample volumes, low-throughput (??)</li>
+<li>electrical detection: objective, more sensitive, faster, automate, costly, maintenance, calibration
+<ul>
+<li>voltage</li>
+<li>current</li>
+<li>transducer: converts input stimulus into electrical output</li>
+</ul></li>
+</ul></li>
+<li>measurement:
+<ul>
+<li>signal-to-noise ratio: <span class="math display">$$\frac{S}{N}$$</span> is proportional to <span class="math display">$$\sqrt{n}$$</span>
+<ul>
+<li>averaged signal <span class="math display"><em>S</em></span>, averaged noise <span class="math display"><em>N</em></span></li>
+</ul></li>
+</ul></li>
+<li>controls:
+<ul>
+<li>positive: standard sample with known quantity of analyte
+<ul>
+<li>prevents situation when there should be a signal but there is no signal (false negative)</li>
+</ul></li>
+<li>negative: standard sample with no analyte
+<ul>
+<li>prevents situation when there should be no signal and there is a signal (false positive)</li>
+</ul></li>
+</ul></li>
+<li>sig figs:
+<ul>
+<li>pH: pH of 2.45, digits after decimal are how many sig figs the conc. has</li>
+<li>exact number has infinite number of sig figs</li>
+</ul></li>
+</ul></li>
+</ol>
+<h2 id="mt1-problems">mt1 problems</h2>
+<h3 id="unit-1">unit 1</h3>
+<ul>
+<li>detecting signals that are statistically significant: <span class="math display"><em>S</em> ≥ <em>μ</em><sub><em>b</em><em>a</em><em>c</em><em>k</em><em>g</em><em>r</em><em>o</em><em>u</em><em>n</em><em>d</em></sub> + 3<em>σ</em><sub><em>b</em><em>a</em><em>c</em><em>k</em><em>g</em><em>r</em><em>o</em><em>u</em><em>n</em><em>d</em></sub></span></li>
+<li>which t-test to use:
+<ul>
+<li>case 1: compare sample mean with population mean (the true value) (needs replicates)</li>
+<li>case 2: use the f-test to compare SD of two sample sets, then compare two sample means (needs replicates)</li>
+<li>case 3: compare methods of single measurements of several different samples</li>
+</ul></li>
+<li><span class="math display">$$\frac{S}{N}$$</span> proportionate to <span class="math display">$$\sqrt{n}$$</span></li>
+<li>concentration detection limit: <span class="math display"><em>S</em><sub><em>A</em></sub> = <em>S</em><sub><em>b</em><em>a</em><em>c</em><em>k</em><em>g</em><em>r</em><em>o</em><em>u</em><em>n</em><em>d</em></sub> + 3<em>σ</em><sub><em>b</em><em>a</em><em>c</em><em>k</em><em>g</em><em>r</em><em>o</em><em>u</em><em>n</em><em>d</em></sub></span></li>
+<li>what does each standard allow you do to:
+<ul>
+<li>external standard: interpolate unknown from CC</li>
+<li>standard addition: extrapolate unknown from CC (matrix effect)</li>
+<li>internal standard: ratio, add substance similar to analyte, but different and not expected to be found in sample</li>
+</ul></li>
+</ul></div>
+  </div>
+  <div class="flex-row link-no-style">
+    
+    
+  </div>
+</div>
+
+
+        </div>
+        <div class="sidebar">
+  <a href="../../../../"><h2>Lucy Hao</h2></a>
+  <a href="../../../../archive"><h3>Thoughts</h3></a>
+  <a href="../../../../papers"><h3>Paper Log</h3></a>
+  <a href="../../../../books"><h3>Books</h3></a>
+  <a href="../../../../courses"><h3>Courses</h3></a>
+  <a href="../../../../cv/cv.pdf"><h3>CV/Resume</h3></a>
+</div>
+
+      </div>
+    </main>
+
+    <footer>
+      <center>
+        <p>
+          <a href="../../../../archive">archive</a>
+          <a href="https://github.com/lhao03" target="_blank">github</a>
+          <a href="https://www.linkedin.com/in/lucy-hao/" target="_blank">linkedin</a>
+        </p>
+      </center>
+      Site powered by cats, 🍫 and
+      <a href="http://jaspervdj.be/hakyll">Hakyll</a>
+    </footer>
+  </body>
+</html>

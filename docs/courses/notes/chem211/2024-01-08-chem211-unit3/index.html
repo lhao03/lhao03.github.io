@@ -1,0 +1,664 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lucy H | Electrochemistry and Potentiometry</title>
+  <link rel="stylesheet" href="../../../../css/main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
+  <!-- and it's easy to individually load additional languages -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/languages/scheme.min.js"></script>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/base16/onedark.min.css" />
+  <script>
+    hljs.highlightAll();
+  </script>
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+  <link rel="preconnect" href="https://www.googletagmanager.com" />
+  <link rel="preconnect" href="https://www.google-analytics.com" />
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KDGPVMHC9Q"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-KDGPVMHC9Q");
+  </script>
+
+  <!-- basic favicon -->
+  <link rel="icon" href="../../../../images/android-chrome-384x384.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../../../images/android-chrome-384x384.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../../../images/android-chrome-384x384.png" />
+  <link rel="apple-touch-icon-precomposed" href="../../../../images/android-chrome-384x384.png" />
+</head>
+
+  <body>
+    <main role="main">
+      <div class="flex-row-col">
+        <div>
+          <h1>Electrochemistry and Potentiometry</h1>
+          <div>
+  
+  <div class="header">
+    Posted on January  8, 2024
+    
+  </div>
+  <div class="tags">
+    
+  </div>
+  <div class="content">
+    
+<div id="toc" class="toc">Contents:
+<ul>
+<li><a href="#define-electric-potential.">Define electric potential.</a></li>
+<li><a href="#draw-and-label-a-diagram-of-a-galvanic-cell-write-the-shorthand-cell-notation-for-a-galvanic-cell-and-explain-the-role-of-each-component-in-galvanic-cell.">Draw and label a diagram of a galvanic cell, write the shorthand cell notation for a galvanic cell, and explain the role of each component in galvanic cell.</a></li>
+<li><a href="#write-the-nernst-equation-and-use-it-and-standard-potentials-to-calculate-galvanic-cell-potentials.">Write the Nernst equation and use it and standard potentials to calculate galvanic cell potentials.</a></li>
+<li><a href="#explain-how-potentiometry-can-be-used-to-determine-analyte-concentrations.">Explain how potentiometry can be used to determine analyte concentrations.</a></li>
+<li><a href="#describe-how-a-redox-titration-can-be-used-to-determine-the-concentration-of-an-analyte">Describe how a redox titration can be used to determine the concentration of an analyte,</a></li>
+<li><a href="#calculate-the-concentration-of-the-unknown-from-redox-titration-data">calculate the concentration of the unknown from redox titration data,</a></li>
+<li><a href="#and-calculate-the-cell-potential-at-different-points-during-a-redox-titration.">and calculate the cell potential at different points during a redox titration.</a></li>
+<li><a href="#describe-the-design-and-use-of-reference-electrodes-including-drawing-simple-diagrams-of-common-reference-electrodes.">Describe the design and use of reference electrodes, including drawing simple diagrams of common reference electrodes.</a></li>
+<li><a href="#describe-the-origin-of-membrane-potentials-and-their-analytical-utility-in-different-types-of-ion-selective-electrodes.">Describe the origin of membrane potentials and their analytical utility in different types of ion selective electrodes.</a></li>
+<li><a href="#draw-and-label-a-diagram-of-a-glassph-electrode.-explain-the-principles-of-its-operation-and-its-sensitivity-to-ph.">Draw and label a diagram of a glass/pH electrode. Explain the principles of its operation and its sensitivity to pH.</a></li>
+<li><a href="#lecture-14">lecture 14</a></li>
+<li><a href="#write-and-apply-the-nikolsky-equation.">Write and apply the Nikolsky equation.</a></li>
+<li><a href="#draw-diagrams-and-explain-the-principles-of-operation-of-liquid-membrane-and-solid-state-ises.">Draw diagrams and explain the principles of operation of liquid membrane and solid-state ISEs.</a></li>
+<li><a href="#mt-2-problems">mt 2 problems</a>
+<ul>
+<li><a href="#unit-3">unit 3</a></li>
+</ul></li>
+</ul></div>
+<div id="body"><h3 id="define-electric-potential.">Define electric potential.</h3>
+<ul>
+<li>galvanic: initially positive (electrons want to move from anode to cathode)
+<ul>
+<li>at eq: potential is 0</li>
+<li>reflects driving force of redox reaction towards eq</li>
+</ul></li>
+<li>half-cell and standard potentials:
+<ul>
+<li>combo of standard half-cells determine overall cell potential
+<ul>
+<li><span class="math inline"><em>V</em><sub>1</sub> &lt; <em>V</em><sub>2</sub></span>
+<ul>
+<li><span class="math inline"><em>V</em><sub>1</sub></span>: weak oxidizing agent, less easily reduced</li>
+<li><span class="math inline"><em>V</em><sub>2</sub></span>: stronger oxidizing agent, more easily reduced</li>
+</ul></li>
+<li>standard reduction potential: E<span class="math inline"><sub><em>c</em><em>e</em><em>l</em><em>l</em></sub></span> = E<span class="math inline"><sub><em>c</em><em>a</em><em>t</em><em>h</em><em>o</em><em>d</em><em>e</em></sub></span> - E<span class="math inline"><sub><em>a</em><em>n</em><em>o</em><em>d</em><em>e</em></sub></span>
+<ul>
+<li><span class="math display"><em>E</em><sup>deg</sup></span> is tabulated for reduction reactions, positive if spontaneous relative to SHE
+<ul>
+<li>SHE is not easy to work with, use other standards like SCE</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+<h3 id="draw-and-label-a-diagram-of-a-galvanic-cell-write-the-shorthand-cell-notation-for-a-galvanic-cell-and-explain-the-role-of-each-component-in-galvanic-cell.">Draw and label a diagram of a galvanic cell, write the shorthand cell notation for a galvanic cell, and explain the role of each component in galvanic cell.</h3>
+<ul>
+<li>cell types
+<ul>
+<li>galvanic cell
+<ul>
+<li>the opposite of electrolytic cell
+<ul>
+<li>electrons spontaneously go towards positive charge</li>
+<li>anode (-): electrons leave, so oxidation occurs</li>
+<li>cathode (+): electrons arrive, reduction occurs</li>
+</ul></li>
+</ul></li>
+<li>electrolytic cell
+<ul>
+<li>requires electricity</li>
+<li>electrical energy into chemical energy</li>
+<li>cell potential is negative</li>
+</ul></li>
+</ul></li>
+<li>salt bridge
+<ul>
+<li>ensures the solution stays neutral</li>
+<li>completes circuit</li>
+<li>need ions with the same hydrated size so that they move at the same rate</li>
+<li>don’t want direct mixing of reduction/oxidation</li>
+</ul></li>
+</ul>
+<h3 id="write-the-nernst-equation-and-use-it-and-standard-potentials-to-calculate-galvanic-cell-potentials.">Write the Nernst equation and use it and standard potentials to calculate galvanic cell potentials.</h3>
+<ul>
+<li>Nerst: <span class="math display">$$E = E^{o} - \frac{RT}{nF} \ln Q$$</span>, <span class="math display">$$E = E^{o} - \frac{0.0592}{n} \log Q$$</span></li>
+<li>for half cell or full reactions</li>
+<li><span class="math display"><em>Δ</em><em>G</em> =  − <em>n</em><em>F</em><em>E</em></span>, where E is potential difference, F is Faraday constant, n is unit charges per molecule
+<ul>
+<li>maximum work extracted assuming no heat loss</li>
+</ul></li>
+<li>we get the Nerst equation by combining the above equation with gibbs equation:
+<span class="math display">$$-nFE = -nFE^{\circ} + RT \ln Q \\
+E = E^\circ - \frac{RT}{nF} \ln Q$$</span>
+<ul>
+<li>when <span class="math display"><em>K</em> = <em>Q</em></span>, cell potential is 0 and there is no driving force
+<ul>
+<li>use Nerst equation to find potential at non-standard conditions, replace Q to get:
+<span class="math display">$$E = E^\circ - \frac{RT}{nF} \ln \frac{\gamma_C^c [C]^c\gamma_D^d[D]^d}{\gamma_A^a[A]^a \gamma_B^b[B]^b}$$</span></li>
+</ul></li>
+</ul></li>
+<li>can use Nerst on half and full reactions (for half, if there is solid reactant or product, just least as 1)</li>
+</ul>
+<h3 id="explain-how-potentiometry-can-be-used-to-determine-analyte-concentrations.">Explain how potentiometry can be used to determine analyte concentrations.</h3>
+<ul>
+<li>instrumentation:
+<ul>
+<li>analyte solution (with supporting electrolyte)
+<ul>
+<li>low resistance of solution
+<ul>
+<li>add more ions to raise the conductivity</li>
+</ul></li>
+</ul></li>
+<li>indicator electrode/reference electrode
+<ul>
+<li>inert electrodes: respond to redox couples without participating director in reaction
+<ul>
+<li>stick in solution inert metal picks up potential in solution determined b [Ox] and [Red]
+<ul>
+<li>Pt, Ag, C</li>
+</ul></li>
+<li>better with high surface area</li>
+</ul></li>
+<li>work in most circumstances</li>
+</ul></li>
+</ul></li>
+</ul>
+<ol>
+<li><p>first kind: metal electrode in direct eq with its metal cation</p>
+<ul>
+<li><span class="math display"><em>M</em><sup><em>n</em>+</sup>(<em>a</em><em>q</em>) + <em>n</em><em>e</em><sup>−</sup> &lt;  −  &gt; <em>M</em>(<em>s</em>)</span></li>
+<li>use in precipitation/complex formation titrations, measure free <span class="math inline"><em>M</em><sup><em>n</em>+</sup></span>
+<ul>
+<li><span class="math display">$$E = E^{0}_M + \frac{0.0592}{n} log a_M = E^{0}_M - \frac{0.0592}{n} pM$$</span>
+<ul>
+<li>slow kinetics</li>
+<li>poor selectivity (bad in natural solutions)</li>
+<li>oxides may form on solid metal</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><p>second kind: add in another eq, Ksp: responds to ion that form insoluble salt with the metal</p>
+<ul>
+<li><span class="math display">$$E = E^{0}_{AgCl} + \frac{0.0592}{1} log a_{Cl} = E^{0}_{AgCl} - \frac{0.0592}{n} pCl^-$$</span>
+<ul>
+<li>measured voltage responds to [Cl-]</li>
+<li>indirectly measure free <span class="math inline"><em>M</em><sup><em>n</em>+</sup></span></li>
+</ul></li>
+<li>electrode of first kind coupled to <span class="math inline"><em>K</em><sub><em>s</em><em>p</em></sub></span> equilibrium
+<ol type="1">
+<li>write nerst equation as if is the first electrode</li>
+<li>add Ksp, which can be expressed as activity or concentration: substitute activity of metal with Ksp and chloide ion
+<span class="math display">$$E = E^{0}_{AgCl} - \frac{0.0592}{1} log \frac{1}{\frac{K_{sp}}{[Cl^{-1}]}}$$</span>
+<ul>
+<li>potential varies with concentration of chloride
+<ul>
+<li>if [Cl-] is fixed, potential is fixed</li>
+</ul></li>
+</ul></li>
+</ol></li>
+<li>what happens if push alot of current through electrode, keep giving electrons -&gt; make Cl<span class="math inline"><sup>−</sup></span>
+<ul>
+<li>Cl<span class="math inline"><sup>−</sup></span> will precipiate -&gt; run of AgCl, run of K (for KCl precipitating the Cl), then you lose the eq -&gt; the potential of reference electrode starts changing and no longer reference electrode
+<ul>
+<li>can’t push alot of current through them</li>
+</ul></li>
+</ul></li>
+<li>salt bridge</li>
+<li>voltmeter (large resistance to minimize loading error)
+<ul>
+<li>voltage is occurring at bottom, want to show potential happening at bottom</li>
+<li><span class="math inline"><em>V</em> = <em>I</em><em>R</em></span> if you have voltage drop at voltmeter, the measured voltage is lower than in solution
+<ul>
+<li>if R is large, current is very small, so voltage drop is very small -&gt; loading error
+<ul>
+<li>happens if current is nontrivial
+<ul>
+<li>voltage between two electrodes, some resistance in overall circuit -&gt; determines ions</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>in voltmeter, there is a resistance, not the same as the one in the whole circuit
+<ul>
+<li>voltage drop = current * resistance of voltmeter</li>
+<li>only one current that is very very small</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ol>
+<h3 id="describe-how-a-redox-titration-can-be-used-to-determine-the-concentration-of-an-analyte">Describe how a redox titration can be used to determine the concentration of an analyte,</h3>
+<ul>
+<li>titrated with strong ox. or red. agent to determine analyte</li>
+<li>strong, standardized ox/red agent</li>
+<li>assume redox reactions go to completion
+<ul>
+<li>eq point: amount oxi/red added is equal to amount of analyte</li>
+<li>endpoint: observable change that signals eq point</li>
+</ul></li>
+<li>endpoint determined through
+<ul>
+<li>tracking changes in potential</li>
+<li>redox indicator dye (indirect)</li>
+<li>change in solution color (direct)</li>
+</ul></li>
+<li>pretreatment:
+<ul>
+<li>analytes can exist in different oxidation states -&gt; analytes need to be single oxidation state</li>
+<li>auxiliary/reducing agents: preoxi or prered of samples
+<ul>
+<li>agent must be easy to remove</li>
+</ul></li>
+<li>auxiliary reducing agent: solid metal, flow solution through burrete</li>
+<li>auxiliary oxidizing agent: bismuthates (insoluble, filter to remove), hydrogen peroxide or peroxydisulfate (heat up to decompose)</li>
+</ul></li>
+<li>typical reducign agent
+<ul>
+<li>ferrous ion:
+<ul>
+<li>add excess Fe2+ to analyte solution</li>
+<li>back titrate</li>
+</ul></li>
+<li>iodine/sodium thiosulfate
+<ul>
+<li>treat analyte with excess iodide</li>
+<li>back titrate with thiosulfate</li>
+</ul></li>
+</ul></li>
+<li>typical oxidizing agent
+<ul>
+<li>permanganate ion:
+<ul>
+<li>reduced ti various species with non-voilet color</li>
+<li>ceric ion</li>
+<li>dichomate ion</li>
+</ul></li>
+</ul></li>
+<li>what’s at EQ and what not?
+<ul>
+<li>beaker at EQ: will come into EQ</li>
+<li>reference electrode is not at EQ, only electrically in contact with beaker, not chemically, it is there as a reference
+<ul>
+<li>need something to not be at eq or we get zero potential!</li>
+<li>need one redox reaction not at eq</li>
+</ul></li>
+</ul></li>
+</ul>
+<h3 id="calculate-the-concentration-of-the-unknown-from-redox-titration-data">calculate the concentration of the unknown from redox titration data,</h3>
+<ul>
+<li>titration curve:
+<ul>
+<li>looks like acid/base curve</li>
+<li>measure voltage between ref and insert electrode to moniter titration</li>
+<li>initial potential close to that of titrand half cell
+<ul>
+<li>lower</li>
+<li>because only have some species in solution</li>
+</ul></li>
+</ul></li>
+<li>final potential close to that of titrant half cell</li>
+<li>remember in redox couples, there needs to be one reaction (at least) not at equilibrium for there to be a measureable potential
+<ul>
+<li>also reference electrode can’t completely mix with solution</li>
+</ul></li>
+</ul>
+<p><img src="../../../../../../images/211/redox_titration.png" /></p>
+<ul>
+<li>at the start: not at standard conditions because the concentrations are different
+<ul>
+<li>figure out approximate starting region</li>
+</ul></li>
+<li>potential of half-equiv point, after equiv point, at equiv point</li>
+<li>all vs. SHE or another reference electrode
+<ul>
+<li>you find out all of this with the Nerst equation</li>
+</ul></li>
+</ul>
+<h3 id="and-calculate-the-cell-potential-at-different-points-during-a-redox-titration.">and calculate the cell potential at different points during a redox titration.</h3>
+<ul>
+<li>example problem: consider <span class="math display"><em>F</em><em>e</em><sup>2+</sup> + <em>C</em><em>e</em><sup>4+</sup> &lt;  −  &gt; <em>F</em><em>e</em><sup>3+</sup> + <em>C</em><em>e</em><sup>3+</sup></span>
+<ul>
+<li>cell: SHE || Fe<sup>2+</sup> Ce<sup>4+</sup> Fe<sup>3+</sup> Ce<sup>3+</sup> | Pt</li>
+<li>potential: <span class="math display"><em>E</em><sub><em>s</em><em>y</em><em>s</em><em>t</em><em>e</em><em>m</em></sub> = <em>E</em><sub><em>F</em><em>e</em></sub> = <em>E</em><sub><em>C</em><em>e</em></sub></span></li>
+<li>reference electrode separated by salt bridge, Pt in solution</li>
+<li>write Nerst equations: one for Fe, one for Ce both as reduction
+<ul>
+<li>can use either, will get same answer
+<ul>
+<li>one is easier to use before eq point, one is easier to use after eq point</li>
+</ul></li>
+<li>before eq point: still contains <span class="math display"><em>F</em><em>e</em><sup>2+</sup></span>, so use the analyte reduction half-reaction</li>
+<li>at eq point: equal concentrations, we know [Fe$<sup>3+</sup>$] = [Ce$<sup>3+</sup>$] and [Fe$<sup>2+</sup>$] = [Ce$<sup>2+</sup>$],
+<ul>
+<li>so equate them to get: <span class="math display"><em>E</em> = 1/2(<em>E</em><sub><em>F</em><em>e</em></sub><sup>,</sup>+<em>E</em><sub><em>C</em><em>e</em></sub><sup>,</sup>)</span>, only if both reactions involve same n, and activities have to cancel</li>
+<li>can use both Nerst equations</li>
+</ul></li>
+<li>after eq point: all iron is Fe3+, and moles Ce3+ equal moles Fe3+
+<ul>
+<li>contains known excess of unreacted titration Ce4+ =&gt; use titrant reduction half-reaction, find concentrations of Ce4+/Ce3+</li>
+</ul></li>
+</ul></li>
+<li>sharper/clearer endpoint when: larger difference in reduction potential of titrant and titrand (larger E means more spontaneous, larger neg delta G) -&gt; goes further towards completion
+<ul>
+<li>1:1 stoich: symmetric about equiv point
+<ul>
+<li>otherwise: assynmetric when not 1:1</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+<h3 id="describe-the-design-and-use-of-reference-electrodes-including-drawing-simple-diagrams-of-common-reference-electrodes.">Describe the design and use of reference electrodes, including drawing simple diagrams of common reference electrodes.</h3>
+<p>salt bridges are built into reference cell</p>
+<ul>
+<li>SCE: paste of mercury and calomel (Hg$<sub>2</sub><span class="math inline"><em>C</em><em>l</em><sub>2</sub></span>)
+<ul>
+<li>KCl filling solution</li>
+<li>Hg$<sub>2</sub><span class="math inline"><em>C</em><em>l</em><sub>2</sub></span> (s) + 2e<span class="math inline"><sup>−</sup></span> -&gt; 2Hg (l) + 2Cl<span class="math inline"><sup>−</sup></span>
+<ul>
+<li>when Cl concentration increases, you crash out KCl?</li>
+<li>[Cl^${-}$] essentially constant</li>
+<li>at 25C, E<span class="math inline"><sup><em>o</em></sup></span> = 0.244 V for saturated KCl</li>
+</ul></li>
+</ul></li>
+<li>Silver/SilverChloride
+<ul>
+<li>silver wire with layer of AgCl</li>
+<li>KCl filling solution:
+<ul>
+<li>AgCl (s) -&gt; Ag (s) + Cl<span class="math inline"><sup>−</sup></span>
+<ul>
+<li>at 25C, E<span class="math inline"><sup><em>o</em></sup></span> = 0.197 V for saturated KCl</li>
+<li>at 25C, E<span class="math inline"><sup><em>o</em></sup></span> = 0.205 V for 3.5 M KCl</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>half-cell potentials (different reference electrode):
+<img src="../../../../../../images/211/number-line.png" /></li>
+</ul>
+<h3 id="describe-the-origin-of-membrane-potentials-and-their-analytical-utility-in-different-types-of-ion-selective-electrodes.">Describe the origin of membrane potentials and their analytical utility in different types of ion selective electrodes.</h3>
+<ul>
+<li>separation of charge: associated electric potential
+<ul>
+<li>gauss law: electric potential proportional to charge density</li>
+<li>liquid junction potential: potential that develops across ion permable boundry between different electrolyte solutions</li>
+</ul></li>
+<li>membrane potential: effect of surface groups
+<img src="../../../../../../images/211/membranepotential.png" />
+<ul>
+<li>charge on surface varies with pH</li>
+<li>negative charge on surface attract positive charge -&gt; double layer
+<ul>
+<li><img src="../../../../images/211/double.png" /></li>
+<li>separation of charge at double-layer creates membrane potential, <span class="math inline"><em>E</em><sub><em>m</em></sub></span>
+<ul>
+<li>magnitude depends on charge on membrane</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>if membrane is thin and conductive, difference between two membrane potentials can be measured as boundry potential <span class="math inline"><em>E</em><sub><em>b</em></sub></span>
+<ul>
+<li>boundary potential: <span class="math inline"><em>E</em><sub><em>b</em></sub> = <em>E</em><sub>1</sub> − <em>E</em><sub>2</sub></span>
+<ul>
+<li>determined by pH (different pH of solutions will charge glass differently)</li>
+</ul></li>
+</ul></li>
+<li>glass as a membrane
+<ul>
+<li>amorphous SiO<sub>2</sub></li>
+<li>no long range structure (glass is a state)</li>
+<li>cooled to rigidity without crystallization
+<ul>
+<li>soda used as flux to lower melting temperature in manufacture</li>
+<li>lime used to prevent glass from dissolving</li>
+</ul></li>
+<li>have some mobility, slightly conductive</li>
+<li>irregular arrangement of SiO4 tetrahedra</li>
+<li>incomplete bonding: Si-O groups associated with cations
+<ul>
+<li>can hydrate surface layer; exchange monovalent ions for protons
+<ul>
+<li>binding of hydrogen ions more strongly favored than alkali metal cations</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>Na and H ions conduct in hydrated outer layers (10nm) of glass membrane
+<ul>
+<li>Na conducts electricity in dry interior (0.1nm)
+<img src="../../../../../../images/211/membranee.png" />, which is more negative charged side? higher pH side</li>
+</ul></li>
+</ul>
+<h3 id="draw-and-label-a-diagram-of-a-glassph-electrode.-explain-the-principles-of-its-operation-and-its-sensitivity-to-ph.">Draw and label a diagram of a glass/pH electrode. Explain the principles of its operation and its sensitivity to pH.</h3>
+<p><img src="../../../../../../images/211/glassph.png" /></p>
+<ul>
+<li>in low pH, hydrogen binds the silicon groups, displacing sodium ions
+<ul>
+<li>sodium ions carry charge across glass membrane</li>
+</ul></li>
+</ul>
+<h3 id="lecture-14">lecture 14</h3>
+<ol>
+<li><p>glass as membrane</p>
+<ul>
+<li>arrangement of <span class="math inline"><em>S</em><em>i</em><em>O</em><sub>4</sub></span> tetrahedra, bonding is incomplete <span class="math inline"><em>S</em><em>i</em> − <em>O</em><sup>−</sup></span> groups associated with cations
+<ul>
+<li><span class="math inline"><em>N</em><em>a</em><sup>+</sup><em>G</em><em>l</em><sup>−</sup>(<em>s</em>) + <em>H</em><sub>3</sub><em>O</em><sup>+</sup>(<em>a</em><em>q</em>) &lt;  &gt; <em>H</em><sup>+</sup><em>G</em><em>l</em><sup>−</sup>1(<em>s</em>) + <em>H</em><sub>2</sub><em>O</em> + <em>N</em><em>a</em><sup>+</sup>(<em>a</em><em>q</em>)</span></li>
+</ul></li>
+<li>Charge on glass surface depends on two EQ: with <span class="math inline"><em>H</em><sup>+</sup></span> and with <span class="math inline"><em>N</em><em>a</em><sup>+</sup></span> (or other alkali metals)
+<ul>
+<li>binding of hydrogen ions is more favored than alkali metal ions</li>
+<li>pH sensitivity:
+<ul>
+<li>exterior solution: <span class="math inline"><em>N</em><em>a</em><sup>+</sup></span> conducts in dry interior</li>
+<li>interior solution: <span class="math inline"><em>N</em><em>a</em><sup>+</sup></span> and <span class="math inline"><em>H</em><sup>+</sup></span> conducts in hydrated outer layers of glass</li>
+<li>This complicates relating potential to [$H^+$]</li>
+</ul></li>
+</ul></li>
+<li>potentiometric measurement:
+<ul>
+<li>analyte solution, indicator electrode, reference electrode, salt bridge, voltmeter</li>
+</ul></li>
+</ul></li>
+<li><p>Ion-selective Electrodes /Introduction to Spectrophotometry</p>
+<ul>
+<li>PM with ISE require:</li>
+<li>Combination pH electrodes combine 2 reference electrodes plus glass membrane
+<ul>
+<li>Measured potential is the membrane potential, and varies with analyte [$H^+$]</li>
+</ul></li>
+</ul></li>
+</ol>
+<h3 id="write-and-apply-the-nikolsky-equation.">Write and apply the Nikolsky equation.</h3>
+<ul>
+<li>There is no Nernst Eqn for potentiometry (since no charge transferred, ie no redox rxn)
+<ul>
+<li>But we can write a ‘Nernst‐like’ equation</li>
+</ul></li>
+<li>You can’t use a pH electrode without first calibrating it</li>
+<li>Measurements go wonky at very high pH (very basic solns)
+<ul>
+<li>Interference from Na^+</li>
+<li>Nikolsky eqn quantifies interference</li>
+</ul></li>
+<li>What Liquid membrane ISEs and Solid State ISEs are and how they work</li>
+</ul>
+<h3 id="draw-diagrams-and-explain-the-principles-of-operation-of-liquid-membrane-and-solid-state-ises.">Draw diagrams and explain the principles of operation of liquid membrane and solid-state ISEs.</h3>
+<p><img src="../../../../../../images/211/solidstate.png" /></p>
+<ul>
+<li>membrane consists of inorganic salt or single crystal of inorganic salt</li>
+</ul>
+<p><img src="../../../../../../images/211/liquid.png" /></p>
+<ul>
+<li>use of ionophore, hydrophobic membrane with liquid organic</li>
+</ul>
+<ol>
+<li><p>misc. things from lecture</p>
+<ul>
+<li>what is electrochemistry: electrical measurements of chemical systems
+<ul>
+<li>inexpensive equipment, can measure complex samples with little sample prep</li>
+</ul></li>
+<li>reducing/oxidizing:
+<ul>
+<li>reducing agent: is oxidized, so ON increases, and electrons are lost</li>
+<li>oxidizing agent: is reduced, so ON decreases, and electrons are gained</li>
+</ul></li>
+<li>ions in solution: concentration vs activity
+<ul>
+<li>ions interact electrostatically</li>
+<li>can interact with other things in solution that have charge</li>
+<li>other ions can partially shield the ions of interest (like Ca<span class="math inline"><sup>2</sup>+</span> and SO<span class="math inline"><sub>4</sub><sup>2−</sup></span>)
+<ul>
+<li>this means <span class="math inline"><em>K</em><sub><em>s</em><em>p</em></sub></span> gets larger with more salt added (NaCl also partially sheild), takes more CaSO4 to dissolve in water as you add more NaCl -&gt; activity</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><p>activity</p>
+<ul>
+<li>value of concentration equilibrium constants increase at high electrolyte concentration
+<ul>
+<li>what does this mean chemically: there is more of the ion product in solution</li>
+<li>concentration equilibrium constants don’t consider other dissolved ions and their electrostatic interations and ion-ion interactions
+<ul>
+<li>solubility increases???</li>
+</ul></li>
+</ul></li>
+<li>activity coefficients: <span class="math display"><em>a</em><sub><em>i</em></sub> = <em>γ</em><sub><em>i</em></sub><em>c</em></span>
+<ul>
+<li>decrease as ionic strength increases</li>
+<li>thermodynamic eq constant is written in terms of activities</li>
+</ul></li>
+<li>can ignore for very dilute solutions</li>
+</ul></li>
+<li><p>ionic strength</p>
+<ul>
+<li>the net effect of dissolved electrolytes: <span class="math display">$$\mu = \frac{1}{2} \Sigma_i c_i z^2_i$$</span>
+<ul>
+<li><span class="math display"><em>μ</em> ∝ <em>c</em><sub><em>i</em></sub>, <em>z</em><sub><em>i</em></sub></span>
+<ul>
+<li>monovalent &lt; divalent &lt; trivalent
+<ul>
+<li>thus for monovalent salts, ionic strength equals molarity</li>
+<li>for other salts, ionic strength &gt; molarity</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><p>activity in dilute solutions</p>
+<ul>
+<li>for neutral molecules, activity coefficient is 1</li>
+<li>for ions: use the debye-huckel limiting law (useful for when ionic strength is less than 0.005 M at 25 C):
+<span class="math display">$$log \gamma_i = -0.51 z^2_i \sqrt{\mu}$$</span></li>
+<li>extended: requires temperature dependent coefficients and effective diameter of hydrated ion</li>
+<li>free energy and potential
+<ul>
+<li>delta G: for electrochemical rxn: maximum work that can be extracted
+<span class="math display"><em>Δ</em><em>G</em> =  − <em>n</em><em>F</em><em>E</em></span>
+<ul>
+<li>galvanic: positive potential</li>
+<li>electric: negative potential</li>
+<li>0 potential: no driving force</li>
+</ul></li>
+</ul></li>
+<li>formal electrode potentials:
+<ul>
+<li>most redox analyses done at high ionic strength ($μ  ≥ 0.1$M), so activity coefficients cannot be readily calculated (D-H doesn’t work well here, can’t calculate range that chemists work in)
+<ul>
+<li>need to worry about concentration and activity</li>
+<li>use formal electrode potentials
+<ul>
+<li>say what the conditions are (empirical potential for half-cell under specific set of conditions)</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><span class="math display">$$E = E^{0'} - \frac{RT}{nF} ln \frac{[C]^c[D]^d}{[A]^a[B]^b}$$</span>, where <span class="math display"><em>E</em><sup>0′</sup></span> is the formal potential
+<ul>
+<li>specifying unit concentrations vs. unit activities</li>
+<li>or nature of supporting electrolyte, pH, ionic strength, temperature</li>
+<li>differ from standard potential by up to hundreds of millivolts</li>
+</ul></li>
+<li>diffusion of cation and anion at different rates
+<ul>
+<li>ions are different sizes, so they diffuse at different rates
+<img src="../../../../../../images/211/ljp.png" /></li>
+<li>pick ions with similar size hydrated radius size</li>
+</ul></li>
+</ul></li>
+</ol>
+<h2 id="mt-2-problems">mt 2 problems</h2>
+<h3 id="unit-3">unit 3</h3>
+<ul>
+<li>balancing electrochemistry equations:
+<ol type="1">
+<li>write unbalanced half-reactions</li>
+<li>add coefficients</li>
+<li>add H$<sub>2</sub>$O to balance oxygen</li>
+<li>add acid or base to balance hydrogens</li>
+<li>balance charge by adding electrons</li>
+</ol></li>
+<li>find the ionic strength
+<ol type="1">
+<li>write out dissociation equation for species of interest</li>
+<li>calculate concentrations of ions present</li>
+<li>sub into formula, and calculate, make sure to square charge</li>
+</ol></li>
+<li>calculating potentials of cell
+<ol type="1">
+<li>identify anode and cathode, then use: E<span class="math inline"><sub><em>c</em><em>e</em><em>l</em><em>l</em></sub></span> = E<span class="math inline"><sub><em>c</em><em>a</em><em>t</em><em>h</em><em>o</em><em>d</em><em>e</em></sub></span> - E<span class="math inline"><sub><em>a</em><em>n</em><em>o</em><em>d</em><em>e</em></sub></span></li>
+</ol></li>
+<li>calculating potentials with nerst equation
+<ol type="1">
+<li>identify anode and cathode half reactions</li>
+<li>write out full reaction</li>
+<li>calculate <span class="math display"><em>E</em><sup><em>o</em></sup></span>, and use <span class="math display">$$E = E^o - \frac{0.0592}{n} log [\frac{[M^{x+}]}{[M^{y+}]}]$$</span></li>
+</ol></li>
+<li>cell notation: Ag (s) | AgCl (s) | 3.0 M KCL (aq) || 0.01 M Fe(CN)<span class="math inline"><sub>6</sub><sup>3−</sup></span> (aq), 0.01 M Fe(CN)<span class="math inline"><sub>6</sub><sup>4−</sup></span> (aq), 0.5 M KCl (aq) | Graphite
+<ul>
+<li>anode: Ag (s) | AgCl (s) | 3.0 M KCL (aq)</li>
+<li>cathode: 0.01 M Fe(CN)<span class="math inline"><sub>6</sub><sup>3−</sup></span> (aq), 0.01 M Fe(CN)<span class="math inline"><sub>6</sub><sup>4−</sup></span> (aq), 0.5 M KCl (aq) | Graphite</li>
+<li>||: salt bridge</li>
+<li>|: phase boundry</li>
+</ul></li>
+</ul></div>
+  </div>
+  <div class="flex-row link-no-style">
+    
+    
+  </div>
+</div>
+
+
+        </div>
+        <div class="sidebar">
+  <a href="../../../../"><h2>Lucy Hao</h2></a>
+  <a href="../../../../archive"><h3>Thoughts</h3></a>
+  <a href="../../../../papers"><h3>Paper Log</h3></a>
+  <a href="../../../../books"><h3>Books</h3></a>
+  <a href="../../../../courses"><h3>Courses</h3></a>
+  <a href="../../../../cv/cv.pdf"><h3>CV/Resume</h3></a>
+</div>
+
+      </div>
+    </main>
+
+    <footer>
+      <center>
+        <p>
+          <a href="../../../../archive">archive</a>
+          <a href="https://github.com/lhao03" target="_blank">github</a>
+          <a href="https://www.linkedin.com/in/lucy-hao/" target="_blank">linkedin</a>
+        </p>
+      </center>
+      Site powered by cats, 🍫 and
+      <a href="http://jaspervdj.be/hakyll">Hakyll</a>
+    </footer>
+  </body>
+</html>

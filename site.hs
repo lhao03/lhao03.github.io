@@ -76,7 +76,12 @@ main = hakyllWith config $ do
     compile $ do
       let indexCtx =
             listField "posts" postCtx (recentFirst =<< loadAll "posts/*")
-              `mappend` listField "courses" postCtx (recentFirst =<< loadAll "courses/**")
+              `mappend` listField "notes" postCtx (recentFirst =<< loadAll "courses/notes/**")
+              `mappend` listField "year1" postCtx (recentFirst =<< loadAll "courses/reviews/year1/**")
+              `mappend` listField "year2" postCtx (recentFirst =<< loadAll "courses/reviews/year2/**")
+              `mappend` listField "year3" postCtx (recentFirst =<< loadAll "courses/reviews/year3/**")
+              `mappend` listField "year4" postCtx (recentFirst =<< loadAll "courses/reviews/year4/**")
+              `mappend` listField "year5" postCtx (recentFirst =<< loadAll "courses/reviews/year5/**")
               `mappend` listField "books" postCtx (recentFirst =<< loadAll "books/**")
               `mappend` listField "papers" postCtx (recentFirst =<< loadAll "papers/**")
               `mappend` defaultContext
@@ -175,7 +180,6 @@ main = hakyllWith config $ do
     compile $ do
       let indexCtx =
             listField "posts" postCtx (recentFirst =<< loadAll "posts/*")
-              `mappend` listField "courses" postCtx (recentFirst =<< loadAll "courses/**")
               `mappend` listField "books" postCtx (recentFirst =<< loadAll "books/**")
               `mappend` defaultContext
 

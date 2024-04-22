@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lucy H | CPSC 310: Introduction to Software Engineering</title>
+  <link rel="stylesheet" href="../../../css/main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
+  <!-- and it's easy to individually load additional languages -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/languages/scheme.min.js"></script>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/base16/onedark.min.css" />
+  <script>
+    hljs.highlightAll();
+  </script>
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+  <link rel="preconnect" href="https://www.googletagmanager.com" />
+  <link rel="preconnect" href="https://www.google-analytics.com" />
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KDGPVMHC9Q"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-KDGPVMHC9Q");
+  </script>
+
+  <!-- basic favicon -->
+  <link rel="icon" href="../../../images/android-chrome-384x384.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../../images/android-chrome-384x384.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../../images/android-chrome-384x384.png" />
+  <link rel="apple-touch-icon-precomposed" href="../../../images/android-chrome-384x384.png" />
+</head>
+
+  <body>
+    <main role="main">
+      <div class="flex-row-col">
+        <div>
+          <h1>CPSC 310: Introduction to Software Engineering</h1>
+          <div>
+  
+  <div class="header">
+    Posted on August 19, 2022
+    
+  </div>
+  <div class="tags">
+    
+  </div>
+  <div class="content">
+    <div class="sect1">
+<h2 id="_lecture_1_jan_10">Lecture 1 (Jan 10):</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>software engineering: barrier between computer science and impact on real world</p>
+</li>
+<li>
+<p>all deadlines on Friday at 6pm</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_lecture_jan_19">Lecture (Jan 19)</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_black_box_testing">Black Box Testing</h3>
+<div class="paragraph">
+<p><strong>Pros</strong>
+- find high severity bugs (from user POV)
+- easy to get started (more clear what to test, client-facing methods)
+- less overfitting to implementation: emphasis on specification
+- parallelize development and testing (no need to access implementation)</p>
+</div>
+<div class="paragraph">
+<p><strong>Cons</strong>
+- need well-defined specifications
+- intentional handicapa: can’t use the implementation
+- poor explanability</p>
+</div>
+<div class="paragraph">
+<p>how to read a specification to write tests:
+- input/output equicvalence classes
+  - avoid redundant tests
+- boundry classes</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_equivalence_classes">equivalence classes</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>patterns on types of inputs</p>
+</li>
+<li>
+<p>certain partitions of the input space/output space that has similar behaviour</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_inputoutput_partitioning">input/output partitioning</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>partitioning of all the possible inputs to CUT into equivalence classes which characterize sets of inputs with something in common</p>
+</li>
+<li>
+<p>choose representitive to test and if those tests pass all values from that representitive should work</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_automated_testing">Automated Testing</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>generate test inputs that expose bugs in a program</p>
+</li>
+<li>
+<p>generate test suites that expose bugs in a program</p>
+</li>
+<li>
+<p>concolic + symbolic execution</p>
+</li>
+<li>
+<p>finds violations that are very broad</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_fuzz_testing">Fuzz Testing</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>aims to solve the test-input generation problem</p>
+</li>
+<li>
+<p>fuzzing algorithms are test-input generation algorithms where: elements of randomness, use feedback execution or analyze P(i) to guide generation of next input</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Less random inputs
+- generator-based fuzzing
+- property-based fuzzing
+- grammar-based fuzzing
+- mutational fuzzing: start from existing inputs and alter them slightly</p>
+</div>
+</div>
+</div>
+
+  </div>
+  <div class="flex-row link-no-style">
+    
+    
+  </div>
+</div>
+
+
+        </div>
+        <div class="sidebar">
+  <a href="../../../"><h2>Lucy Hao</h2></a>
+  <a href="../../../archive"><h3>Thoughts</h3></a>
+  <a href="../../../papers"><h3>Paper Log</h3></a>
+  <a href="../../../books"><h3>Books</h3></a>
+  <a href="../../../courses"><h3>Courses</h3></a>
+  <a href="../../../cv/cv.pdf"><h3>CV/Resume</h3></a>
+</div>
+
+      </div>
+    </main>
+
+    <footer>
+      <center>
+        <p>
+          <a href="../../../archive">archive</a>
+          <a href="https://github.com/lhao03" target="_blank">github</a>
+          <a href="https://www.linkedin.com/in/lucy-hao/" target="_blank">linkedin</a>
+        </p>
+      </center>
+      Site powered by cats, 🍫 and
+      <a href="http://jaspervdj.be/hakyll">Hakyll</a>
+    </footer>
+  </body>
+</html>

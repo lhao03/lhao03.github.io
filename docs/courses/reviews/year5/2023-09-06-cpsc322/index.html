@@ -1,0 +1,895 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lucy H | CPSC 322: Introduction to Artificial Intelligence</title>
+  <link rel="stylesheet" href="../../../../css/main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
+  <!-- and it's easy to individually load additional languages -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/languages/scheme.min.js"></script>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/base16/onedark.min.css" />
+  <script>
+    hljs.highlightAll();
+  </script>
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+  <link rel="preconnect" href="https://www.googletagmanager.com" />
+  <link rel="preconnect" href="https://www.google-analytics.com" />
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KDGPVMHC9Q"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-KDGPVMHC9Q");
+  </script>
+
+  <!-- basic favicon -->
+  <link rel="icon" href="../../../../images/android-chrome-384x384.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../../../images/android-chrome-384x384.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../../../images/android-chrome-384x384.png" />
+  <link rel="apple-touch-icon-precomposed" href="../../../../images/android-chrome-384x384.png" />
+</head>
+
+  <body>
+    <main role="main">
+      <div class="flex-row-col">
+        <div>
+          <h1>CPSC 322: Introduction to Artificial Intelligence</h1>
+          <div>
+  
+  <div class="header">
+    Posted on September  6, 2023
+    
+  </div>
+  <div class="tags">
+    
+  </div>
+  <div class="content">
+    
+<div id="toc" class="toc">Contents:
+<ul>
+<li><a href="#day-1">Day 1</a></li>
+<li><a href="#day-2">Day 2</a></li>
+<li><a href="#midterm-1">Midterm 1</a>
+<ul>
+<li><a href="#lecture-1">Lecture 1</a></li>
+<li><a href="#lecture-3">Lecture 3</a></li>
+<li><a href="#lecture-4">Lecture 4</a></li>
+<li><a href="#lecture-5">Lecture 5</a></li>
+<li><a href="#algorithms">Algorithms</a></li>
+<li><a href="#lecture-6">Lecture 6</a></li>
+<li><a href="#lecture-7">Lecture 7</a></li>
+<li><a href="#lecture-8">Lecture 8</a></li>
+<li><a href="#lecture-9">Lecture 9</a></li>
+<li><a href="#lecture-10">Lecture 10</a></li>
+<li><a href="#lecture-11">Lecture 11</a></li>
+<li><a href="#lecture-12">Lecture 12</a></li>
+</ul></li>
+<li><a href="#midterm-2">Midterm 2</a>
+<ul>
+<li><a href="#lecture-13">Lecture 13</a></li>
+<li><a href="#lecture-14">Lecture 14</a></li>
+<li><a href="#lecture-15">Lecture 15</a></li>
+<li><a href="#lecture-16">Lecture 16</a></li>
+<li><a href="#lecture-17">Lecture 17</a></li>
+<li><a href="#lecture-18">Lecture 18</a></li>
+<li><a href="#lecture-19">Lecture 19</a></li>
+<li><a href="#lecture-20">Lecture 20</a></li>
+<li><a href="#lecture-21">Lecture 21</a></li>
+<li><a href="#lecture-22">Lecture 22</a></li>
+<li><a href="#lecture-23">Lecture 23</a></li>
+<li><a href="#lecture-24">Lecture 24</a></li>
+<li><a href="#lecture-25">Lecture 25</a></li>
+<li><a href="#lecture-27">Lecture 27</a></li>
+</ul></li>
+</ul></div>
+<div id="body"><h2 id="day-1">Day 1</h2>
+<ul>
+<li><p>What is AI:</p>
+<ul>
+<li>Machine think like human</li>
+<li>Machine think rationally</li>
+</ul></li>
+<li><p>Thinking and acting like humans</p></li>
+<li><p>Model cognitive functions of humans</p>
+<ul>
+<li>Humans only example of intelligence</li>
+</ul></li>
+<li><p>Turing test: use operational definition =&gt; consider intelligent when can’t tell between computer or human</p></li>
+<li><p>Downside:</p>
+<ul>
+<li>don’t have detailed model of people’s mind yet</li>
+<li>trickey/lying involved</li>
+</ul></li>
+<li><p>Thinking and acting rationally</p>
+<ul>
+<li>Rationally: abstract ideal of intelligence</li>
+<li>Syllogism: argument structures that always yield correct conclusions given correct premises =&gt; logic + probabilistic reasoning</li>
+<li>Correct reasoning is enough?</li>
+<li>AI as building agents: artifacts that are able to think and act rationally in their environments
+<ul>
+<li>Rationality more cleanly defined than humans</li>
+<li>Agents can: answer query, plan actions, solve complex problems</li>
+</ul></li>
+</ul></li>
+<li><p>What is an agent (does not need all)</p>
+<ul>
+<li>Situated in an environment</li>
+<li>Make observations</li>
+<li>Able to act</li>
+<li>Has goals or preferences</li>
+<li>Prior knowledge or beliefs, way to update beliefs based on new experiences</li>
+</ul></li>
+</ul>
+<h2 id="day-2">Day 2</h2>
+<p>What do we need to represent</p>
+<ul>
+<li>Environment/world
+<ul>
+<li>states/possible worlds</li>
+</ul></li>
+<li>how the world works =&gt; rules
+<ul>
+<li>Constraints</li>
+<li>Casual relationships</li>
+<li>Action preconditions and effects</li>
+</ul></li>
+</ul>
+<p>Corresponding reasoning tasks and problems</p>
+<ul>
+<li>Constraint satisfaction (static): find a state that satisfies some set of constraints</li>
+<li>Answering queries (static)
+<ul>
+<li>Is a given proposition true/likely given what is known</li>
+</ul></li>
+<li>Planning (sequential): choose actions to reach goal state or maximize utility</li>
+</ul>
+<p>Representation And reasoning system</p>
+<ul>
+<li>Sensing uncertainty =&gt; can agent fully observe current state of world or is there uncertainty in what we observe</li>
+<li>Effect uncertainty =&gt; does agent know for sure what the immediate effects of its action are on the environment (and/or on its status within the environment)</li>
+<li>Deterministic =&gt; no uncertainty , yes to both above points</li>
+<li>Otherwise stochastic</li>
+<li>Chess vs poker
+<ul>
+<li>Chess is deterministic, poker is stochastic</li>
+</ul></li>
+</ul>
+<p>Deterministic vs. stochastic domains</p>
+<ul>
+<li>AI used to be: logic vs probability</li>
+</ul>
+<p>Explicit states, features, propositions, relations</p>
+<ul>
+<li>Explicitly enumerate states of the world</li>
+<li>State can be described using its features
+<ul>
+<li>natural</li>
+</ul></li>
+<li>States can be described in terms of objects and relationships
+<ul>
+<li>feature/proposition for each relationship on each possible tuple of individuals</li>
+</ul></li>
+<li>One binary relation Like(x,y) and 9 individuals =&gt; 2^81
+<ul>
+<li>9 =&gt; x, 9 =&gt; y</li>
+</ul></li>
+</ul>
+<p>Flat vs. hierarchical</p>
+<ul>
+<li>One level of abstraction =&gt; flat</li>
+<li>Multiple levels of abstraction =&gt; hierarchical</li>
+</ul>
+<p>Knowledge given vs knowledge learned</p>
+<ul>
+<li>Agent is provided with model of the world once and for all</li>
+<li>Agent can learn about world</li>
+</ul>
+<p>Set of valid states vs set of possible states =&gt; header to get valid states</p>
+<p>Features =&gt; propositions we can generate</p>
+<p>Goals vs complex preferences</p>
+<ul>
+<li>State the agent wants to be in</li>
+<li>Proposition agent wants to make true</li>
+<li>Agent may have preferences
+<ul>
+<li>There is some preference/utility function that describes how happy the again is in each state of the world</li>
+</ul></li>
+<li>preferences can be complex</li>
+</ul>
+<p>Search =&gt; preliminary approach to deterministic problems</p>
+<p>Simple planning agent</p>
+<ul>
+<li>Deterministic, goal driven agent</li>
+<li>Initially in start state</li>
+<li>Given goal</li>
+<li>Agent perfectly nows
+<ul>
+<li>What actions can be applied in any given state</li>
+<li>The state it will end up in</li>
+<li>The sequence of actions is the solution</li>
+</ul></li>
+</ul>
+<h2 id="midterm-1">Midterm 1</h2>
+<h3 id="lecture-1">Lecture 1</h3>
+<ul>
+<li>Problem: static vs sequential
+<ul>
+<li>Static: Constraint satisfaction
+<ul>
+<li>Answering queries</li>
+</ul></li>
+<li>Sequential: planning</li>
+</ul></li>
+<li>Environment: deterministic vs stochastic</li>
+<li>Intelligence
+<ul>
+<li>Turing test: operational definition: people can’t tell computer apart from people</li>
+<li>Rationality: abstract ideal of intelligence
+<ul>
+<li>Syllogisms: logic/probabilistic reasoning</li>
+</ul></li>
+</ul></li>
+<li>Agent
+<ul>
+<li>Situated in an environment</li>
+<li>Make observations</li>
+<li>Able to act</li>
+<li>Goals or preferences</li>
+<li>May have prior knowledge, and way of updating beliefs</li>
+</ul></li>
+</ul>
+<h3 id="lecture-3">Lecture 3</h3>
+<ul>
+<li>Different representational dimensions of problems
+<ul>
+<li>Need to represent
+<ul>
+<li>environment/world</li>
+<li>How the world works
+<ul>
+<li>Constraints</li>
+<li>Casual relationships</li>
+<li>Actions preconditions/effects</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>Size of state space</li>
+<li>R&amp;R: representation (language) and (reasoning) procedures</li>
+<li>Deterministic (yes to both below) vs stochastic domains
+<ul>
+<li>Sensing uncertainty: fully observe current state</li>
+<li>Effect uncertainty: know direct effects of its actions</li>
+</ul></li>
+</ul>
+<h3 id="lecture-4">Lecture 4</h3>
+<ul>
+<li>Simple agent
+<ul>
+<li>Deterministic, goal-driven agent</li>
+<li>Given a goal</li>
+<li>Agent knows
+<ul>
+<li>What actions will be applied in any given state</li>
+<li>The state it will end up in when takes an action</li>
+</ul></li>
+</ul></li>
+<li>Search space graph</li>
+<li>Search procedure
+<ul>
+<li>Generic search algorithm
+<ul>
+<li>Frontier: collection of paths</li>
+<li>How to get different kinds of search
+<ul>
+<li>The way in which the frontier is expanded defines the search strategy</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+<h3 id="lecture-5">Lecture 5</h3>
+<ul>
+<li>Complete: when a solution exists the algorithm will find it</li>
+<li>Optimal: returns the best solution when there is no solution</li>
+</ul>
+<h3 id="algorithms">Algorithms</h3>
+<ul>
+<li>DFS:
+<ul>
+<li>frontier as a stack</li>
+<li>Not complete and not optimal (may get stuck in cycle)</li>
+<li>Time complexity: O(b^m)</li>
+<li>Space complexity: O(bm)</li>
+<li>Good when space is limited</li>
+<li>Bad for shallow solutions</li>
+</ul></li>
+<li>BFS:
+<ul>
+<li>Frontier as queue</li>
+<li>Complete, optimal if ignoring path costs</li>
+<li>Time complexity: O(b^m)</li>
+<li>Space complexity: O(b^m)</li>
+<li>Bad if space a problem</li>
+</ul></li>
+<li>IDS:
+<ul>
+<li>Complete, optimal if ignoring path costs</li>
+<li>Time complexity: O(b^m)</li>
+<li>Space complexity: O(bm)</li>
+<li>Recompute elements of frontier rather than saving them</li>
+<li>Use DFS and keep increasing the depth of searching</li>
+</ul></li>
+<li>LCFS:
+<ul>
+<li>Priority queue ordered by path cost</li>
+<li>Complete when path costs are positive</li>
+<li>Optimal when path costs positive</li>
+<li>Time complexity: O(b^m)</li>
+<li>Space complexity: O(b^m)</li>
+</ul></li>
+<li>BestFS:
+<ul>
+<li>Select path whose end is closest to a goal according to heuristic</li>
+<li>Priority queue ordered by h -&gt; greedy</li>
+<li>Not complete</li>
+<li>Not optimal</li>
+<li>Time complexity: O(b^m)</li>
+<li>Space complexity: O(b^m)</li>
+</ul></li>
+<li>A*:
+<ul>
+<li>f(p) = lowest(cost(p) + h(p))</li>
+<li>Priority queue ordered by f(p)</li>
+<li>Time complexity: O(b^m)</li>
+<li>Space complexity: O(b^m)</li>
+<li>Complete if arc costs positive, optimal
+<ul>
+<li>Optimal if: branching is finite, arc costs are positive, h(n) is underestimate</li>
+<li>Optimal efficiency: among all optimal algorithms that start from the same start node and use same heuristic h, A* expands the minimal number of paths</li>
+</ul></li>
+</ul></li>
+<li>B&amp;B:
+<ul>
+<li>Use DFS, but keep searching for shorter/lower cost solution if find solution</li>
+<li>If f(p) &gt;= UB, discard p without expanding</li>
+<li>Time complexity: O(b^m)</li>
+<li>Space complexity: O(bm)</li>
+<li>Not complete in general but optimal (not optimal efficient)</li>
+</ul></li>
+<li>IDA*
+<ul>
+<li>DFS but to fixed bound</li>
+<li>If dont find solution with given iteration of IDA*, update bound with lowest f-value that passed the prev bound and try again</li>
+<li>Complete, not optimal</li>
+<li>Time complexity: O(b^m)</li>
+<li>Space complexity: O(bm)</li>
+</ul></li>
+<li>MBA*
+<ul>
+<li>Updating the heuristic for an ancestor of multiple paths ^^^</li>
+<li>Time complexity: O(b^m)</li>
+<li>Space complexity: O(b^m)</li>
+<li>Optimal, complete</li>
+</ul></li>
+</ul>
+<h3 id="lecture-6">Lecture 6</h3>
+<h3 id="lecture-7">Lecture 7</h3>
+<ul>
+<li>Heuristic: estimate of minimum distance/cost from each node to goal node</li>
+<li>Construct admissible heuristics
+<ul>
+<li>Never an overestimate of the minimum cost from n to a goal</li>
+<li>Lower bound</li>
+<li>Make problem extremely easy to solve</li>
+</ul></li>
+<li>Verify heuristic dominance
+<ul>
+<li>h2 &gt; h1, h2 is better because its bigger and so closer to actual value</li>
+</ul></li>
+<li>Combine admissible heuristic
+<ul>
+<li>h = max(h_1,h_2) also admissible and dominates both h_1 and h_2</li>
+</ul></li>
+</ul>
+<h3 id="lecture-8">Lecture 8</h3>
+<h3 id="lecture-9">Lecture 9</h3>
+<ul>
+<li>Cycle checking: prune a path that ends on node already in path
+<ul>
+<li>Cannot remove optimal solution</li>
+</ul></li>
+<li>Dynamic programming:
+<ul>
+<li>Build of table of dist(n) - dist(n) is actual cost of lowest cost path from node n to goal g
+<img src="../../../../images/322/image1.png" /></li>
+</ul></li>
+</ul>
+<h3 id="lecture-10">Lecture 10</h3>
+<ul>
+<li>Variables
+<ul>
+<li>Number of possible worlds: product of cardinality of each domain</li>
+<li>Always exponential in number of variables</li>
+<li>domain^variables</li>
+</ul></li>
+<li>Constraints
+<ul>
+<li>Unary</li>
+<li>kary</li>
+</ul></li>
+<li>CSP
+<ul>
+<li>Consists of set of variables, domain for each variable, set of constraints</li>
+</ul></li>
+</ul>
+<h3 id="lecture-11">Lecture 11</h3>
+<ul>
+<li>Generate and test
+<ul>
+<li>Brute force, generate all possible worlds one at a time and test for violations</li>
+<li>Runtime: number of world</li>
+<li>Can solve any CSP</li>
+</ul></li>
+<li>Search
+<ul>
+<li>Every solution at depth n, heuristic not useful</li>
+<li>Search space: finite without cycles</li>
+<li>DFS with pruning</li>
+<li>Efficiency depends on order in which variables assigned values -&gt; degree heuristics</li>
+</ul></li>
+<li>Consistency
+<ul>
+<li>Prune domain as much as possible before searching</li>
+<li>Constraint network</li>
+</ul></li>
+<li>Arc consistency
+<ul>
+<li>An arc &lt;X, r(X,Y)&gt;: for each x in dom(X), there is a y in dom(Y) such that r(x,y) satisfied</li>
+<li>Remove value in domain if not satisfied</li>
+</ul></li>
+</ul>
+<h3 id="lecture-12">Lecture 12</h3>
+<ul>
+<li>Arc consistency algorithm
+<ul>
+<li>Order of considering arcs does not affect final output</li>
+<li>May need to prune variable domain to make arc consistent</li>
+</ul></li>
+<li>Max number of constraints for binary: (n*(n-1))/2 (n variables)</li>
+<li>How many times same arc inserted into todoarc list: d (number of elements)</li>
+<li>How many steps to check consistency of arc: d^2</li>
+<li>Constraints: O(n^2)</li>
+<li>Overall time complexity: O(n<sup>2d</sup>3)</li>
+</ul>
+<p><img src="../../../../images/322/image2.png" /></p>
+<ul>
+<li>Domain splitting
+<ul>
+<li>When domains have more than one value
+<ul>
+<li>Apply DFS with pruning</li>
+<li>Split the problem into two or disjoint cases
+<ul>
+<li>Set of solutions is union of solution sets</li>
+<li>Need to keep around many constraint networks</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+<h2 id="midterm-2">Midterm 2</h2>
+<h3 id="lecture-13">Lecture 13</h3>
+<ul>
+<li>Local search on CSP
+<ul>
+<li>Start from possible world</li>
+<li>Generate some neighbors</li>
+<li>Move to neighbor and repeat steps</li>
+<li>No frontier</li>
+</ul></li>
+<li>Constrained optimization
+<ul>
+<li>Interactive best improvement: select neighbor that optimizes some evaluation function -&gt; minimum number of constraint violations</li>
+</ul></li>
+<li>Scoring function to solve CSP by local search through greedy descent or hill climb
+<ul>
+<li>Hill climb: maximizes value based function</li>
+<li>Greedy descent: minimize cost based function</li>
+<li>Problems: local maxima, plateaus and shoulders</li>
+</ul></li>
+</ul>
+<h3 id="lecture-14">Lecture 14</h3>
+<ul>
+<li>Stochastic local search
+<ul>
+<li>Alternate between
+<ul>
+<li>Hill climbing</li>
+<li>Random steps</li>
+<li>Random restart</li>
+</ul></li>
+<li>Random steps:
+<ul>
+<li>One step: choose (variable, value) pair</li>
+<li>Two step: pick variable then value</li>
+</ul></li>
+<li>Good in local settings, repair with minimum number of changes</li>
+<li>No guarantee to find solution even if one exists can stagnate
+<ul>
+<li>Very hard to analyze</li>
+<li>Not able to show no solution exists</li>
+</ul></li>
+</ul></li>
+<li>Comparing SLS algorithms
+<ul>
+<li>SLS algorithms are randomized</li>
+<li>Taken time to solve problem is random variable</li>
+</ul></li>
+</ul>
+<h3 id="lecture-15">Lecture 15</h3>
+<ul>
+<li>Tabu list
+<ul>
+<li>Maintain a tabu list of the k last nodes visited</li>
+</ul></li>
+<li>Simulated annealing
+<ul>
+<li>Change degree of randomness over time
+<ul>
+<li>Start high then low</li>
+<li>If n’ better than n move, otherwise move maybe depending on temperature</li>
+<li>Higher the T, more likely to move to n’ if it is worse than n</li>
+</ul></li>
+<li>If T decreases slowly enough, then simulated annealing search will find a global optimum with probability approaching 1</li>
+</ul></li>
+<li>Beam search
+<ul>
+<li>Maintain popular of k individuals</li>
+<li>Parallel search:
+<ul>
+<li>Running k random restarts in parallel rather than in sequence</li>
+</ul></li>
+<li>Choose best k out of all the neighbors</li>
+<li>Non stochastic beam search: lack of diversity</li>
+<li>Stochastic: selects k individuals at random but probability of selection proportional to their value h(n)</li>
+</ul></li>
+<li>Genetic algorithm
+<ul>
+<li>Start with k randomly selected individuals</li>
+<li>Fitness function</li>
+<li>Successors generated by combining two individuals
+<ul>
+<li>Selection</li>
+<li>Crossover</li>
+<li>Mutation</li>
+</ul></li>
+<li>Slow</li>
+</ul></li>
+</ul>
+<h3 id="lecture-16">Lecture 16</h3>
+<ul>
+<li>State: full assignments</li>
+<li>Goal: agent wants to be in possible world where some variables are given specific values</li>
+<li>Successor function
+<ul>
+<li>Actions take agent from one state to another</li>
+</ul></li>
+<li>Solution
+<ul>
+<li>Sequence of actions that take agent from current state to goal state</li>
+</ul></li>
+<li>STRIPS
+<ul>
+<li>Action has</li>
+<li>Precondition:
+<ul>
+<li>Set of assignments to features that mush be satisfied in order for action to be legal</li>
+</ul></li>
+<li>Effects
+<ul>
+<li>Set of assignments to features that are caused by the action</li>
+</ul></li>
+<li>All features not explicitly set by action stay unchanged</li>
+</ul></li>
+<li>Forward planning
+<ul>
+<li>States are possible worlds</li>
+<li>Arcs represent actions that are legal in state <em>s</em>
+<ul>
+<li>Possible actions are those preconditions are satisfied in <em>s</em></li>
+</ul></li>
+<li>Plan is path from the state representing the initial state to a state that satisfies the goal</li>
+</ul></li>
+</ul>
+<h3 id="lecture-17">Lecture 17</h3>
+<ul>
+<li>Heuristic for forward planning
+<ul>
+<li>Estimate of distance (cost) from a state to the goal</li>
+<li>(number of actions)</li>
+</ul></li>
+<li>Features are binary</li>
+<li>goals/preconditions can only be assignments to T</li>
+<li>Most sense as admissible heuristic: number of unsatisfied goals -&gt; remove all negative effects
+<ul>
+<li>Removing preconditions (trivialize)</li>
+<li>Assuming no action can achieve more than one goal (inadmissible)</li>
+</ul></li>
+<li>Empty-delete list
+<ul>
+<li>Remove all effects that make variable false -&gt; emptying the delete list</li>
+<li>Solve simplified planning problem</li>
+</ul></li>
+<li>Planning as CSP
+<ul>
+<li>Unroll the plan for fixed number of steps -&gt; horizon</li>
+<li>With a horizon of k
+<ul>
+<li>Construct CSP variable for each STRIPS variable at each time step from 0 to k</li>
+<li>Construct boolean CSP variable for each STRIPS action at each time step from 0 to k-1</li>
+<li>Construct CSP constraints corresponding to start and goal values, as well as preconditions and effects of actions</li>
+<li>Initial constraints: constrain state variables at time 0</li>
+<li>Goal constraints: constrain state variables at time k</li>
+</ul></li>
+</ul></li>
+</ul>
+<p><img src="../../../../images/322/image3.png" /></p>
+<ul>
+<li>Actions cannot simultaneously (action constraint)
+<ul>
+<li>Mutual exclusion</li>
+</ul></li>
+<li>State constraint
+<ul>
+<li>Hold between variables at the same step</li>
+<li>Capture physical constraints</li>
+</ul></li>
+<li>CSP returns shortest solution</li>
+</ul>
+<h3 id="lecture-18">Lecture 18</h3>
+<ul>
+<li>Atom: symbol starting with lowercase letter</li>
+<li>Body is atom or is of form b^b</li>
+<li>Definite clause is atom or rule of the form h &lt;- b</li>
+<li>Knowledge base: set of definite clauses</li>
+</ul>
+<h3 id="lecture-19">Lecture 19</h3>
+<ul>
+<li>Interpretation assigns a truth value to each atom
+<ul>
+<li>A possible world</li>
+</ul></li>
+<li>b1 ^ b2 is only true of b1 is true in I and b2 is true in I</li>
+<li>Rule h &lt;- b is false in I only if b is true in I and h is false in I</li>
+<li>Knowledge base KB is true in I if and only if every clause in KB is true in I</li>
+<li>Model of a set of clauses (a KB) is an interpretation in which all the clauses are true</li>
+<li>If KB is a set of clauses and G is a conjunction of atoms, G is a logical consequence of KB, written KB |= G, if G is true in every model of KB
+<ul>
+<li>If KB true then G true</li>
+<li>G logically follows from KB</li>
+<li>KB entails G</li>
+<li>No interpretation in which KB is true and G is false</li>
+</ul></li>
+<li>To prove KB |= G
+<ul>
+<li>Collect of models of KB</li>
+<li>Verify that G is true in all those models</li>
+<li>O(2^n) time</li>
+</ul></li>
+<li>Soundness: if KB |- G implies KB |= G (G can be derived from my proof)</li>
+<li>Completeness: if KB |= G implies KB |- G</li>
+<li>Bottom up proof
+<ul>
+<li>If h &lt;- b1 ^ b2 ^ b3 is a clause in the knowledge base, and each bi has been derived, then h can be derived</li>
+</ul></li>
+</ul>
+<p><img src="../../../../images/322/image4.png" /></p>
+<h3 id="lecture-20">Lecture 20</h3>
+<ul>
+<li>Given domain with n propositions, you have 2^n interpretations</li>
+</ul>
+<p><img src="../../../../images/322/image5.png" /></p>
+<p><img src="../../../../images/322/image6.png" /></p>
+<p><img src="../../../../images/322/image7.png" /></p>
+<p><img src="../../../../images/322/image8.png" /></p>
+<p><img src="../../../../images/322/image9.png" /></p>
+<h3 id="lecture-21">Lecture 21</h3>
+<ul>
+<li>Sound: never wrong</li>
+<li>Complete: doesn’t miss anything</li>
+<li><h2 id="top-down-proof-example">Top down proof example</h2></li>
+</ul>
+<p><img src="../../../../images/322/image10.png" /></p>
+<ul>
+<li>BU looks at query G at the end</li>
+</ul>
+<p><img src="../../../../images/322/image11.png" /></p>
+<p><img src="../../../../images/322/image12.png" /></p>
+<p><img src="../../../../images/322/image13.png" /></p>
+<h3 id="lecture-22">Lecture 22</h3>
+<ul>
+<li>Heuristic for clause selection
+<ul>
+<li>Number of unique atoms in KB clause body</li>
+</ul></li>
+</ul>
+<p><img src="../../../../images/322/image14.png" /></p>
+<ul>
+<li>Variable: symbol starting with an uppercase letter</li>
+<li>Constant: symbol starting with a lower-case letter or a sequence of digits</li>
+<li>Term: either a variable of a constant</li>
+<li>Predicate symbol: symbol starting with a lower-case letter</li>
+<li>Atom: symbol of form p or p(t1…tn)</li>
+<li>Definite clause: h &lt;- b1<sup>…</sup>bm</li>
+<li>Knowledge base: set of definite clauses</li>
+</ul>
+<h3 id="lecture-23">Lecture 23</h3>
+<ul>
+<li>Domain of random variable X is set of values X can take
+<ul>
+<li>Values are mutually exclusive and exhaustive</li>
+</ul></li>
+<li>Possible worlds are mutually exclusive and exhaustive</li>
+<li>Joint probability distribution
+<ul>
+<li>Can compute probability distribution of any variable</li>
+<li>Can compute probability distribution for any combination of variables</li>
+<li>Can update these probabilities</li>
+</ul></li>
+</ul>
+<h3 id="lecture-24">Lecture 24</h3>
+<ul>
+<li>Probabilistic conditioning
+<ul>
+<li>update/revise beliefs based on new information</li>
+<li>Build probabilistic model using background information -&gt; prior information</li>
+<li>Posterior probability of h: P(h|e) -&gt; probability of h given e</li>
+</ul></li>
+<li>Computing conditional probability
+<ul>
+<li>When some worlds are ruled out, others become more likely
+<ul>
+<li>Must normalize new world’s probability</li>
+<li>Old probability / probability evidence</li>
+</ul></li>
+<li>P(h^e)/P(e) = P(h|e)</li>
+</ul></li>
+<li>Conditional probability table: each row sums to 1
+<ul>
+<li>Is a set of distributions</li>
+</ul></li>
+<li>Product rule
+<ul>
+<li>P(x1,x2) = P(x2)(Px1|x2) = P(x1)P(x2|x1)
+<ul>
+<li>Communitive</li>
+</ul></li>
+<li>P(x1, x2, …, xn) = P(x1…xt, xt+1,…xn) = P(x1…xt) P(xt+1…xn | x1…xt)</li>
+</ul></li>
+<li>Chain rule</li>
+</ul>
+<p><img src="../../../../images/322/322/image15.png" /></p>
+<ul>
+<li>Using conditional probability for inference
+<ul>
+<li>Often have casual knowledge -&gt; P(symptom | disease)</li>
+<li>Want evidential reasoning -&gt; P(disease | symptom)</li>
+</ul></li>
+<li>In general P(hypothesis | evidence)</li>
+<li>bayes rule</li>
+</ul>
+<p><img src="../../../../images/322/image16.png" /></p>
+<h3 id="lecture-25">Lecture 25</h3>
+<ul>
+<li>Marginal independence
+<ul>
+<li>A variable x is marginally independent of random variable Y if P(x|y) = p(x)</li>
+<li>P(X|Y) = P(X)</li>
+<li>P(Y|X) = P(Y)</li>
+<li>P(X,Y) = P(X)P(Y)</li>
+</ul></li>
+<li>Conditional independence
+<ul>
+<li>Each event caused by the same event, but neither event has a direct effect on the other</li>
+<li>Two variables might not be marginally independent, but can become independent when we observe some third variable</li>
+<li>P(X|Y,Z) = P(Y|Z)</li>
+<li>Knowledge of Y’s value does not affect your belief in the value of X, given a value of Z
+<ul>
+<li>If we don’t know Z, Y and X effect each other, otherwise they don’t/q</li>
+</ul></li>
+<li>P(X, Y,Z) = P(X|Z)</li>
+<li>P(Y, X,Z) = P(Y|Z)</li>
+<li>P(X,Y|Z) = P(X|Z)P(Y|Z)</li>
+</ul></li>
+<li>Joint probability distribution: O(d^n) values
+<ul>
+<li>But they have to sum to 1</li>
+<li>Need to store all but 1</li>
+</ul></li>
+<li>Conditional probability table O(d^n) values
+<ul>
+<li>But each row has to sum to 1 (set of distributions)</li>
+<li>Need to store all - (num rows)</li>
+<li>Ignore a column</li>
+</ul></li>
+<li>Conditional independence use
+<ul>
+<li>Write out full JD using chain rule</li>
+<li>Reduce JD from exponential in n to linear in n (n is # of variables)</li>
+<li>Most basic and robust form of knowledge about uncertain environments</li>
+</ul></li>
+<li>Big picture
+<ul>
+<li>JPD specified probability of every world
+<ul>
+<li>Reduce the size with independence (rare) and conditional independence (frequent)</li>
+</ul></li>
+</ul></li>
+</ul>
+<h3 id="lecture-27">Lecture 27</h3>
+<ul>
+<li>Belief networks
+<ul>
+<li>Order reflects causal knowledge (causes before effects)</li>
+<li>Apply chain rule</li>
+<li>Simplify according to marginal and conditional independence</li>
+<li>Express remaining dependencies as a network</li>
+<li>Each variable a node</li>
+<li>For each variable, conditioning variables are its parents</li>
+<li>Associate with each node the corresponding conditional probabilities</li>
+<li>Result is DAG</li>
+</ul></li>
+<li>Bnet inference types
+<ul>
+<li>Diagnostic: know the result</li>
+<li>Predictive: know cause</li>
+<li>Inter-causal: one possible cause and effect</li>
+<li>Mixed:</li>
+</ul></li>
+<li>Bnet compactness
+<ul>
+<li>O(n2^k) for n variables and each variable has no more than k parents</li>
+</ul></li>
+</ul></div>
+  </div>
+  <div class="flex-row link-no-style">
+    
+    
+  </div>
+</div>
+
+
+        </div>
+        <div class="sidebar">
+  <a href="../../../../"><h2>Lucy Hao</h2></a>
+  <a href="../../../../archive"><h3>Thoughts</h3></a>
+  <a href="../../../../papers"><h3>Paper Log</h3></a>
+  <a href="../../../../books"><h3>Books</h3></a>
+  <a href="../../../../courses"><h3>Courses</h3></a>
+  <a href="../../../../cv/cv.pdf"><h3>CV/Resume</h3></a>
+</div>
+
+      </div>
+    </main>
+
+    <footer>
+      <center>
+        <p>
+          <a href="../../../../archive">archive</a>
+          <a href="https://github.com/lhao03" target="_blank">github</a>
+          <a href="https://www.linkedin.com/in/lucy-hao/" target="_blank">linkedin</a>
+        </p>
+      </center>
+      Site powered by cats, 🍫 and
+      <a href="http://jaspervdj.be/hakyll">Hakyll</a>
+    </footer>
+  </body>
+</html>

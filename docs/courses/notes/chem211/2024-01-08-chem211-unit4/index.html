@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lucy H | UV-visible spectrophotometry</title>
+  <link rel="stylesheet" href="../../../../css/main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
+  <!-- and it's easy to individually load additional languages -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/languages/scheme.min.js"></script>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/base16/onedark.min.css" />
+  <script>
+    hljs.highlightAll();
+  </script>
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+  <link rel="preconnect" href="https://www.googletagmanager.com" />
+  <link rel="preconnect" href="https://www.google-analytics.com" />
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KDGPVMHC9Q"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-KDGPVMHC9Q");
+  </script>
+
+  <!-- basic favicon -->
+  <link rel="icon" href="../../../../images/android-chrome-384x384.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../../../images/android-chrome-384x384.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../../../images/android-chrome-384x384.png" />
+  <link rel="apple-touch-icon-precomposed" href="../../../../images/android-chrome-384x384.png" />
+</head>
+
+  <body>
+    <main role="main">
+      <div class="flex-row-col">
+        <div>
+          <h1>UV-visible spectrophotometry</h1>
+          <div>
+  
+  <div class="header">
+    Posted on January  8, 2024
+    
+  </div>
+  <div class="tags">
+    
+  </div>
+  <div class="content">
+    
+<div id="toc" class="toc">Contents:
+<ul>
+<li><a href="#explain-how-different-wavelengths-of-light-interact-with-matter-including-the-concept-of-resonance-different-types-of-transitions-chromophoresauxochromes-and-selection-rules.">Explain how different wavelengths of light interact with matter, including the concept of resonance, different types of transitions, chromophores/auxochromes, and selection rules.</a></li>
+<li><a href="#draw-and-label-a-jablonski-energy-level-diagram-and-relate-its-features-to-absorption-spectra.">Draw and label a Jablonski energy level diagram and relate its features to absorption spectra.</a></li>
+<li><a href="#describe-the-processes-that-occur-when-uv-visible-light-is-absorbed-by-a-molecule-including-excited-states-and-relaxation-processes.">Describe the processes that occur when UV-visible light is absorbed by a molecule, including excited states and relaxation processes.</a></li>
+<li><a href="#explain-the-differences-between-atomic-and-molecular-absorption-spectra.">Explain the differences between atomic and molecular absorption spectra.</a>
+<ul>
+<li><a href="#uvvis-spectra-for-moleculesions">UV/Vis spectra for molecules/ions</a></li>
+<li><a href="#uvvis-spectra-for-atoms">UV/Vis spectra for atoms</a></li>
+</ul></li>
+<li><a href="#explain-the-significance-of-the-terms-in-the-beer-lambert-law-and-how-they-relate-to-molecular-features-and-experimental-design.">Explain the significance of the terms in the Beer-Lambert Law, and how they relate to molecular features and experimental design.</a></li>
+<li><a href="#explain-the-limitations-of-beers-law.">Explain the limitations of Beer’s Law.</a></li>
+<li><a href="#utilize-beers-law-for-determining-the-concentration-of-one-or-more-analyte-species-from-one-or-more-absorbance-measurements.">Utilize Beer’s Law for determining the concentration of one or more analyte species from one or more absorbance measurements.</a></li>
+<li><a href="#relate-the-choice-and-arrangement-of-components-in-a-spectrophotomer-to-its-capabilities-performance-advantages-and-disadvantages.">Relate the choice and arrangement of components in a spectrophotomer to its capabilities, performance, advantages and disadvantages.</a></li>
+<li><a href="#draw-and-label-a-detailed-block-diagram-of-a-spectrophotometer-including-the-light-path-and-components-and-describe-the-function-of-each-of-those-components.">Draw and label a detailed block diagram of a spectrophotometer, including the light path and components, and describe the function of each of those components.</a></li>
+<li><a href="#describe-the-operation-of-key-components-for-measuring-absorbance">Describe the operation of key components for measuring absorbance:</a>
+<ul>
+<li><a href="#light-sources-tungsten-deuterium">Light sources (tungsten, deuterium)</a></li>
+<li><a href="#monochromators-gratings-and-slits">Monochromators (gratings and slits)</a></li>
+<li><a href="#sample-cells-design-and-materials">Sample cells (design and materials)</a></li>
+<li><a href="#photodetectors-pmt-photodiode-photodiode-arrays">Photodetectors (PMT, photodiode, photodiode arrays)</a></li>
+<li><a href="#misc-notes">misc notes</a></li>
+<li><a href="#spectroscopy-based-on-absorption">spectroscopy based on absorption</a></li>
+</ul></li>
+</ul></div>
+<div id="body"><h2 id="explain-how-different-wavelengths-of-light-interact-with-matter-including-the-concept-of-resonance-different-types-of-transitions-chromophoresauxochromes-and-selection-rules.">Explain how different wavelengths of light interact with matter, including the concept of resonance, different types of transitions, chromophores/auxochromes, and selection rules.</h2>
+<ul>
+<li>Definition of chromophore and auxochrome
+<ul>
+<li>chromophore: light absorbing groups (part of molecule)
+<ul>
+<li>200 - 800 nm: pi-electron and hetero atoms with non-bonding valence shell electron pairs</li>
+<li>non bonding electrons in water, alcohols, either don’t absorb above 160nm, they are suitable solvents for spectroscopy
+<ul>
+<li>increasing/extending conjugation of unsaturated bonds decreases transition energies -&gt; energy gap between HOMO and LUMO decreases</li>
+</ul></li>
+<li>auxochrome: chemical group attached to chromophore that modifies its light absorption (alter energy of MOs)
+<ul>
+<li>acid-base indicators: isobestic point -&gt; total absorbance stays the same (?)</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+<table>
+<thead>
+<tr class="header">
+<th>Nature of Shift</th>
+<th>Term</th>
+<th>How</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>longer wavelength</td>
+<td>red shift</td>
+<td>adding double bonds</td>
+</tr>
+<tr class="even">
+<td>shorter wavelength</td>
+<td>blue shift</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>greater absorption</td>
+<td>hyperchromic</td>
+<td>doubles with each new conjugated double bond</td>
+</tr>
+<tr class="even">
+<td>lower absorption</td>
+<td>hypochromic</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="draw-and-label-a-jablonski-energy-level-diagram-and-relate-its-features-to-absorption-spectra.">Draw and label a Jablonski energy level diagram and relate its features to absorption spectra.</h2>
+<ul>
+<li>Bandwidths also depend on local environment (including effect of vib. &amp; rotational levels)
+<ul>
+<li>we get absorption bands from electronic transitions, vibrational levels, rotational levels, other collections/interaction</li>
+</ul></li>
+</ul>
+<h2 id="describe-the-processes-that-occur-when-uv-visible-light-is-absorbed-by-a-molecule-including-excited-states-and-relaxation-processes.">Describe the processes that occur when UV-visible light is absorbed by a molecule, including excited states and relaxation processes.</h2>
+<ul>
+<li>Relaxation pathways: fluorescence, internal conversion, intersystem crossing, phosphorescence
+<ul>
+<li>vibrational relaxation: energy lost to heat, electron stays in same electronic state</li>
+<li>internal conversion: energy lost to heat, electron moves to lower electronic state, requires overlap between vibration levels and lower electronic state (horizontal energy transfer)</li>
+<li>fluorescence: only occurs in singlet to singlet state</li>
+<li>intersystem crossing: excited singlet move to excited triplet (or other way)</li>
+<li>phosphorescence: only occurs in triplet to singlet state</li>
+<li>light emitted from fluorescence or phosphorescence is always same or less than excitation wavelength</li>
+<li>relative time frame:
+<ul>
+<li>absorption &lt; vibration relaxation and internal conversion &lt; fluorescence &lt; phosphorescence (slow)</li>
+</ul></li>
+</ul></li>
+</ul>
+<h2 id="explain-the-differences-between-atomic-and-molecular-absorption-spectra.">Explain the differences between atomic and molecular absorption spectra.</h2>
+<h3 id="uvvis-spectra-for-moleculesions">UV/Vis spectra for molecules/ions</h3>
+<ul>
+<li>difference in energy between HOMO and LUMO -&gt; UV/Vis, absorption of photon is possible</li>
+<li>types of transitions, n is non bonding:
+<ul>
+<li><span class="math display"><em>σ</em> → <em>σ</em><sup>*</sup></span>, 200 nm</li>
+<li><span class="math display"><em>n</em> → <em>σ</em><sup>*</sup></span>, 160-260 nm</li>
+<li><span class="math display"><em>π</em> → <em>π</em><sup>*</sup></span>, 200-500 nm</li>
+<li><span class="math display"><em>n</em> → <em>π</em><sup>*</sup></span>, 250-600 nm</li>
+</ul></li>
+<li>charge transfer: inorganic metal-ligand complexes, electron from metal transferred to ligand -&gt; produce very large absorbance</li>
+<li>UV/Vis more broad than IR
+<ul>
+<li>UV/Vis absorption results in change to electronic energy levels and maybe vibrational -&gt; number of closely spaced absorption bands that merge together to form single broad absorption band</li>
+</ul>
+<ul>
+<li>IR absorption only results in change to vibrational energy levels</li>
+</ul></li>
+</ul>
+<h3 id="uvvis-spectra-for-atoms">UV/Vis spectra for atoms</h3>
+<ul>
+<li>enough energy to cause change in atom’s valence electrons</li>
+<li>only allowed between $l +-1$$</li>
+<li>excited state lifetime is short</li>
+<li>narrow width in absorption lines, due to fixed difference in energy and lack of rotational/vibrational energy levels (width is <span class="math display">10<sup>−5</sup> − 10<sup>−3</sup></span> nm)</li>
+</ul>
+<h2 id="explain-the-significance-of-the-terms-in-the-beer-lambert-law-and-how-they-relate-to-molecular-features-and-experimental-design.">Explain the significance of the terms in the Beer-Lambert Law, and how they relate to molecular features and experimental design.</h2>
+<h2 id="explain-the-limitations-of-beers-law.">Explain the limitations of Beer’s Law.</h2>
+<h2 id="utilize-beers-law-for-determining-the-concentration-of-one-or-more-analyte-species-from-one-or-more-absorbance-measurements.">Utilize Beer’s Law for determining the concentration of one or more analyte species from one or more absorbance measurements.</h2>
+<h2 id="relate-the-choice-and-arrangement-of-components-in-a-spectrophotomer-to-its-capabilities-performance-advantages-and-disadvantages.">Relate the choice and arrangement of components in a spectrophotomer to its capabilities, performance, advantages and disadvantages.</h2>
+<h2 id="draw-and-label-a-detailed-block-diagram-of-a-spectrophotometer-including-the-light-path-and-components-and-describe-the-function-of-each-of-those-components.">Draw and label a detailed block diagram of a spectrophotometer, including the light path and components, and describe the function of each of those components.</h2>
+<h2 id="describe-the-operation-of-key-components-for-measuring-absorbance">Describe the operation of key components for measuring absorbance:</h2>
+<h3 id="light-sources-tungsten-deuterium">Light sources (tungsten, deuterium)</h3>
+<h3 id="monochromators-gratings-and-slits">Monochromators (gratings and slits)</h3>
+<ul>
+<li>filters have a fixed wavelength</li>
+<li>if we want to make measurements at different wavelengths -&gt; need more than one filter</li>
+<li>monochromator: select narrow band of radiation, allow for continuous adjustment of band’s nominal wavelength
+<ul>
+<li>nominal wavelength: the wavelength you want?
+<ul>
+<li>want high throughput of radiation and narrow effective bandwidth</li>
+</ul></li>
+</ul></li>
+</ul>
+<p><img src="../../../../../../images/211/nominal.jpg" />
+<img src="../../../../../../images/211/monochomator.png" /></p>
+<ul>
+<li>collimating mirror: collects radiation
+<ul>
+<li>reflects parallel beam of radiation to diffraction grating</li>
+</ul></li>
+<li>differaction grating: optically reflecting surface with large number of parallel grooves
+<ul>
+<li>disperses radiation -&gt; focused onto planar surface that contains exit slit</li>
+<li>or prism</li>
+</ul></li>
+<li>converts polychromatic source of radiation to monochromatic source of finite bandwidth</li>
+<li>exit slit:
+<ul>
+<li>narrow: smaller effective bandwidth and better resolution, but smaller throughput of radiation</li>
+</ul></li>
+<li>can be fixed-wavelength or scanning
+<ul>
+<li>fixed: manually select wavelength by rotating grating</li>
+</ul></li>
+</ul>
+<h3 id="sample-cells-design-and-materials">Sample cells (design and materials)</h3>
+<h3 id="photodetectors-pmt-photodiode-photodiode-arrays">Photodetectors (PMT, photodiode, photodiode arrays)</h3>
+<h3 id="misc-notes">misc notes</h3>
+<p>textbook notes:</p>
+<ul>
+<li>if energy (<span class="math display">ℏ<em>v</em></span>) of photon is more than excited state - ground state, excitation occurs</li>
+<li>atom/molecule in excited state can emit photon of energy <span class="math display">ℏ<em>v</em></span></li>
+<li>you don’t see the colors a substance absorbs</li>
+</ul>
+<h3 id="spectroscopy-based-on-absorption">spectroscopy based on absorption</h3>
+<ul>
+<li>absorbed wavelength intensities are attenuated</li>
+<li>for an analyte to absorb EMR:
+<ul>
+<li>there must be mechanism which EMR interacts with analyte -&gt; UV/Vis changes energy of electrons, IR -&gt; bond vibrational energy</li>
+<li>photon energy must equal different in energy between two allowed energy states</li>
+</ul></li>
+</ul>
+<ol>
+<li><p>IR spectra for molecules for polyatomic molecules:</p>
+<ul>
+<li>energy for allowed vibration mode: <span class="math display">$$E_v = v + \frac{1}{2} h v_o$$</span>
+<ul>
+<li>fundamental: +/- 1</li>
+<li>overtone: +/- 2,3</li>
+</ul></li>
+</ul>
+<ol>
+<li><p>transmittance and absorbance</p>
+<ul>
+<li>transmittance: $$<span class="math inline">$T = \frac{P_T}{P_0}$</span></li>
+</ul>
+<p><img src="../../../../../../images/211/p.png" /></p>
+<ul>
+<li>redefine <span class="math inline"><em>P</em><sub>0</sub></span> from blank so we don’t need to care about loss of light from the source</li>
+<li>absorbance is linear function of analyte concentration: <span class="math display">$$A = -log T = - log \frac{P_T}{P_0}$$</span>
+<ul>
+<li>require line source instead of continuum source because effective bandwidth is too large</li>
+</ul></li>
+</ul></li>
+</ol></li>
+</ol></div>
+  </div>
+  <div class="flex-row link-no-style">
+    
+    
+  </div>
+</div>
+
+
+        </div>
+        <div class="sidebar">
+  <a href="../../../../"><h2>Lucy Hao</h2></a>
+  <a href="../../../../archive"><h3>Thoughts</h3></a>
+  <a href="../../../../papers"><h3>Paper Log</h3></a>
+  <a href="../../../../books"><h3>Books</h3></a>
+  <a href="../../../../courses"><h3>Courses</h3></a>
+  <a href="../../../../cv/cv.pdf"><h3>CV/Resume</h3></a>
+</div>
+
+      </div>
+    </main>
+
+    <footer>
+      <center>
+        <p>
+          <a href="../../../../archive">archive</a>
+          <a href="https://github.com/lhao03" target="_blank">github</a>
+          <a href="https://www.linkedin.com/in/lucy-hao/" target="_blank">linkedin</a>
+        </p>
+      </center>
+      Site powered by cats, 🍫 and
+      <a href="http://jaspervdj.be/hakyll">Hakyll</a>
+    </footer>
+  </body>
+</html>
