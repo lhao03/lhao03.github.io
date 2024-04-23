@@ -1,0 +1,26 @@
+---
+title: Applying quantum mechanics to deconvolute benchtop H NMR reaction data
+---
+
+* NMR: structural and quantitative information, non destructive
+* not much use of benchtop NMR (larmor frequency less than 125 MHz) due to reduced sensitivity + signal dispersion => QM spectral analysis
+** signal sensitivity: address partially with increasing analyte concentration / hyperpolarization
+** signal overlap: more of an issue with H NMR because of small range => success depends on if signals are well-resolved
+* strategies to deal with signal overlap
+** data driven approach: PLSR, constructing mathematical relationship between spectral featyres + component concentrations from training set => deconvolution
+
+** model driven approach: IHM, model underlying physics of observed spectra
+*** observed spectrum = weighted sume of individual peak functions
+*** "build individual component peak functions (model files) from observed pure component spectra"
+*** mixture model built and fit to observed spectra
+** model based approach using QM spectral analysis => use NMR spin parameters to simulte NMR spectra
+
+* HF vs. benchtop NMR:
+** signals not as distinguishable with benchtop, much more signal overlap
+** QMSA used HF data to make mixture model file
+
+* QMSA vs. IHM results for benchtop NMR
+** estimated rate constants faster (when monitored with benchtop) => due to higher temperature
+** IHM worklfow didn't fit proposed kinetic model as well as QMSA
+*** QMSA is descriptive to NMR, while IHM generic peak functions were used
+*** also peak functions were created empirically, so IHM could be over/under fit

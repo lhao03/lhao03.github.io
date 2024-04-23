@@ -2,14 +2,17 @@
 title: Summer Research Notes
 ---
 
-=== reading
+=== read
 - https://link.springer.com/article/10.1007/s10514-023-10136-2[Large language models for chemistry robotics]
+- https://pubs.rsc.org/en/Content/ArticleLanding/2023/RE/D3RE00583F[Applying quantum mechanics to deconvolute benchtop 1H NMR reaction data]
+
+=== reading
+- https://www.cell.com/trends/chemistry/fulltext/S2589-5974(19)30186-8[Universal Chemical Synthesis and Discovery with ‘The Chemputer’]
 
 === to read
 - https://www.nature.com/articles/s44160-023-00473-6[Universal chemical programming language for robotic synthesis repeatability]
 ** no access via UBC
 - https://www.sciencedirect.com/science/article/abs/pii/S2667109323002191?dgcid=author[Liquid/liquid heterogeneous reaction monitoring: Insights into biphasic Suzuki-Miyaura cross-coupling]
-- https://pubs.rsc.org/en/Content/ArticleLanding/2023/RE/D3RE00583F[Applying quantum mechanics to deconvolute benchtop 1H NMR reaction data]
 - https://croningroup.gitlab.io/chemputer/xdl/
 - https://www.science.org/doi/10.1126/science.abc2986[A universal system for digitization and automatic execution of the chemical synthesis literature]
 - https://ac-rad.github.io/clairify/
@@ -22,4 +25,3 @@ title: Summer Research Notes
 - https://www.hindawi.com/journals/jamc/1985/513591/[A fully automatic apparatus for chemical reactions on the laboratory scale]
 - https://www.science.org/doi/10.1126/sciadv.aaz8867[Self-driving laboratory for accelerated discovery of thin-film materials]
 - https://pubs.acs.org/doi/10.1021/jacsau.1c00303[Chemputation and the Standardization of Chemical Informatics]
-- https://www.cell.com/trends/chemistry/fulltext/S2589-5974(19)30186-8[Universal Chemical Synthesis and Discovery with ‘The Chemputer]

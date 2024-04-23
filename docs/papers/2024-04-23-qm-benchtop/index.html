@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Lucy H | Summer Research Notes</title>
+  <title>Lucy H | Applying quantum mechanics to deconvolute benchtop H NMR reaction data</title>
   <link rel="stylesheet" href="../../css/main.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/default.min.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
@@ -43,95 +43,101 @@
     <main role="main">
       <div class="flex-row-col">
         <div>
-          <h1>Summer Research Notes</h1>
+          <h1>Applying quantum mechanics to deconvolute benchtop H NMR reaction data</h1>
           <div>
   
   <div class="header">
-    Posted on April 16, 2024
+    Posted on April 23, 2024
     
   </div>
   <div class="tags">
     
   </div>
   <div class="content">
-    <div class="sect2">
-<h3 id="_read">read</h3>
-<div class="ulist">
+    <div class="ulist">
 <ul>
 <li>
-<p><a href="https://link.springer.com/article/10.1007/s10514-023-10136-2">Large language models for chemistry robotics</a></p>
+<p>NMR: structural and quantitative information, non destructive</p>
 </li>
 <li>
-<p><a href="https://pubs.rsc.org/en/Content/ArticleLanding/2023/RE/D3RE00583F">Applying quantum mechanics to deconvolute benchtop 1H NMR reaction data</a></p>
+<p>not much use of benchtop NMR (larmor frequency less than 125 MHz) due to reduced sensitivity + signal dispersion ⇒ QM spectral analysis</p>
+<div class="ulist">
+<ul>
+<li>
+<p>signal sensitivity: address partially with increasing analyte concentration / hyperpolarization</p>
 </li>
-</ul>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_reading">reading</h3>
-<div class="ulist">
-<ul>
 <li>
-<p><a href="https://www.cell.com/trends/chemistry/fulltext/S2589-5974(19)30186-8">Universal Chemical Synthesis and Discovery with ‘The Chemputer’</a></p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_to_read">to read</h3>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="https://www.nature.com/articles/s44160-023-00473-6">Universal chemical programming language for robotic synthesis repeatability</a></p>
-<div class="ulist">
-<ul>
-<li>
-<p>no access via UBC</p>
+<p>signal overlap: more of an issue with H NMR because of small range ⇒ success depends on if signals are well-resolved</p>
 </li>
 </ul>
 </div>
 </li>
 <li>
-<p><a href="https://www.sciencedirect.com/science/article/abs/pii/S2667109323002191?dgcid=author">Liquid/liquid heterogeneous reaction monitoring: Insights into biphasic Suzuki-Miyaura cross-coupling</a></p>
+<p>strategies to deal with signal overlap</p>
+<div class="ulist">
+<ul>
+<li>
+<p>data driven approach: PLSR, constructing mathematical relationship between spectral featyres + component concentrations from training set ⇒ deconvolution</p>
 </li>
 <li>
-<p><a href="https://croningroup.gitlab.io/chemputer/xdl/" class="bare">https://croningroup.gitlab.io/chemputer/xdl/</a></p>
+<p>model driven approach: IHM, model underlying physics of observed spectra</p>
+<div class="ulist">
+<ul>
+<li>
+<p>observed spectrum = weighted sume of individual peak functions</p>
 </li>
 <li>
-<p><a href="https://www.science.org/doi/10.1126/science.abc2986">A universal system for digitization and automatic execution of the chemical synthesis literature</a></p>
+<p>"build individual component peak functions (model files) from observed pure component spectra"</p>
 </li>
 <li>
-<p><a href="https://ac-rad.github.io/clairify/" class="bare">https://ac-rad.github.io/clairify/</a></p>
-</li>
-<li>
-<p><a href="https://www.nature.com/articles/s41467-024-45444-3">An integrated self-optimizing programmable chemical synthesis and reaction engine</a></p>
-</li>
-<li>
-<p><a href="https://www.nature.com/articles/s41557-020-00596-9">Convergence of multiple synthetic paradigms in a universally programmable chemical synthesis machine</a></p>
-</li>
-<li>
-<p><a href="https://link.springer.com/article/10.1007/s10514-023-10136-2">Large language models for chemistry robotics</a></p>
-</li>
-<li>
-<p><a href="https://www.nature.com/articles/s41557-020-00596-9">Convergence of multiple synthetic paradigms in a universally programmable chemical synthesis machine</a></p>
-</li>
-<li>
-<p><a href="https://pubs.acs.org/doi/abs/10.1021/c160043a004">Factors Affecting Dissemination of Chemical Information</a></p>
-</li>
-<li>
-<p><a href="https://www.nature.com/articles/s41586-020-2442-2">A mobile robotic chemist</a></p>
-</li>
-<li>
-<p><a href="https://www.hindawi.com/journals/jamc/1985/513591/">A fully automatic apparatus for chemical reactions on the laboratory scale</a></p>
-</li>
-<li>
-<p><a href="https://www.science.org/doi/10.1126/sciadv.aaz8867">Self-driving laboratory for accelerated discovery of thin-film materials</a></p>
-</li>
-<li>
-<p><a href="https://pubs.acs.org/doi/10.1021/jacsau.1c00303">Chemputation and the Standardization of Chemical Informatics</a></p>
+<p>mixture model built and fit to observed spectra</p>
 </li>
 </ul>
 </div>
+</li>
+<li>
+<p>model based approach using QM spectral analysis ⇒ use NMR spin parameters to simulte NMR spectra</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>HF vs. benchtop NMR:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>signals not as distinguishable with benchtop, much more signal overlap</p>
+</li>
+<li>
+<p>QMSA used HF data to make mixture model file</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>QMSA vs. IHM results for benchtop NMR</p>
+<div class="ulist">
+<ul>
+<li>
+<p>estimated rate constants faster (when monitored with benchtop) ⇒ due to higher temperature</p>
+</li>
+<li>
+<p>IHM worklfow didn’t fit proposed kinetic model as well as QMSA</p>
+<div class="ulist">
+<ul>
+<li>
+<p>QMSA is descriptive to NMR, while IHM generic peak functions were used</p>
+</li>
+<li>
+<p>also peak functions were created empirically, so IHM could be over/under fit</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
 </div>
 
   </div>
