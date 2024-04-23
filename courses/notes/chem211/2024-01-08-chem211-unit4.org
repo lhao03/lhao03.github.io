@@ -4,13 +4,15 @@ title: "UV-visible spectrophotometry"
 type: "notes"
 ---
 **  Explain how different wavelengths of light interact with matter, including the concept of resonance, different types of transitions, chromophores/auxochromes, and selection rules.
-- Definition of chromophore and auxochrome
-  - chromophore: light absorbing groups (part of molecule)
-    - 200 - 800 nm: pi-electron and hetero atoms with non-bonding valence shell electron pairs
-    - non bonding electrons in water, alcohols, either don't absorb above 160nm, they are suitable solvents for spectroscopy
-      - increasing/extending conjugation of unsaturated bonds decreases transition energies -> energy gap between HOMO and LUMO decreases
-    - auxochrome: chemical group attached to chromophore that modifies its light absorption (alter energy of MOs)
-      - acid-base indicators: isobestic point -> total absorbance stays the same (?)
+- resonance: energy matching
+- quantum yield: fraction of excited states that do emit photon
+- chromophore: light absorbing groups (part of molecule)
+  - 200 - 800 nm: pi-electron and hetero atoms with non-bonding valence shell electron pairs
+  - non bonding electrons in water, alcohols, either don't absorb above 160nm, they are suitable solvents for spectroscopy
+    - increasing/extending conjugation of unsaturated bonds decreases transition energies -> energy gap between HOMO and LUMO decreases
+- auxochrome: chemical group attached to chromophore that modifies its light absorption (alter energy of MOs)
+  - acid-base indicators: isobestic point -> total absorbance stays the same (?)
+- non-boding electrons in O of water, alcohol, ether are good solvents for UV/Vis (don't absorb above 160)
 
 | Nature of Shift    | Term         | How                                          |
 |--------------------+--------------+----------------------------------------------|
@@ -18,6 +20,12 @@ type: "notes"
 | shorter wavelength | blue shift   |                                              |
 | greater absorption | hyperchromic | doubles with each new conjugated double bond |
 | lower absorption   | hypochromic  |                                              |
+
+- HOMO LUMO transitions:
+  - in the UV/Vis range
+  - singlet state:
+    - ground: two electrons opposing spin, same orbital
+    - excited: two electrons opposing spin, different orbitals
 
 **  Draw and label a Jablonski energy level diagram and relate its features to absorption spectra.
 - Bandwidths also depend on local environment (including effect of vib. & rotational levels)
@@ -53,12 +61,65 @@ type: "notes"
 - narrow width in absorption lines, due to fixed difference in energy and lack of rotational/vibrational energy levels (width is $$10^{-5} - 10^{-3}$$ nm)
 
 **  Explain the significance of the terms in the Beer-Lambert Law, and how they relate to molecular features and experimental design.
+- light absorption: by chromophores, reflection, scattering loss
+- molar absorption coefficient + path length => slope => sensitivity
+
 **  Explain the limitations of Beer’s Law.
+- real deviations:
+  - high concentration: chromophores affect charge distribution of other chromophores
+  - epsilon dependson refractive index
+- apparent deviations:
+  - light is not perfectly monochromatic
+
 **  Utilize Beer’s Law for determining the concentration of one or more analyte species from one or more absorbance measurements.
-**  Relate the choice and arrangement of components in a spectrophotomer to its capabilities, performance, advantages and disadvantages.
-**  Draw and label a detailed block diagram of a spectrophotometer, including the light path and components, and describe the function of each of those components.
+- mixtures: $$A_{total} = A_1 + A_2 + ... = b (\epsilon_1 c_1 + \epsilon_2 c_2) + ... $$
+- $$A_{\lambda 1} = b (\epsilon_{1 \lambda 1} c_1 + \epsilon_{2 \lambda 1} c_2) + ...$$,  $$A_{\lambda 2} = b (\epsilon_{1 \lambda 2} c_1 + \epsilon_{2 \lambda 2} c_2) + ...$$
+  - etc for the other wavelengths
+**  Relate the choice and arrangement of components in a spectrophotomer to its capabilities, performance, advantages and disadvantages. Draw and label a detailed block diagram of a spectrophotometer, including the light path and components, and describe the function of each of those components.
+*** single beam instrument
+1. light source
+   - D (UV)
+   - T (Vis)
+   - glass absorbs wavelength less than 350 nm, quartz absorbs below 190 nm
+2. wavelength selector
+   - diffraction grating, prism, filter
+     - diffraction grating equation: $$a-b = m \lambda = d (sin (i) + sin (r))$$
+       - where:
+         - d: groove spacing (related to lines/mm)
+         - i: incident angle
+         - r: reflection angle
+         - m: order (use filters to block unwanted)
+   - monochromator: slit, diffraction grating, slit
+     - narrow slit => S/N decreases, but bandwidth more narrow
+     - double monochomator: reduce stray light + improve linearity => throughput decreased
+       - does not remove unwanted orders (need filter)
+       - slit => grating => slit => grating => slit
+   - groove density increases (lines/mm) => dispersion increases => resolution increases => working range decreases (PDA detector)
+3. Sample cell
+4. Photodetector
+   - PMT
+   - Photodiode array
+5. Computer
+
+---
+- UV/Vis diode array design
+  1. dual lamp
+  2. lens
+  3. shutter
+  4. sample
+  5. lens
+  6. slit
+  7. grating
+  8. PDA
+
+- double beam: improve precision + S/N
+  - sample and reference cell
+  - compensate for flicker in lamp intensity
+
 **  Describe the operation of key components for measuring absorbance:
 *** Light sources (tungsten, deuterium)
+- D (UV)
+- T (Vis)
 ***  Monochromators (gratings and slits)
 - filters have a fixed wavelength
 - if we want to make measurements at different wavelengths -> need more than one filter
@@ -79,9 +140,29 @@ type: "notes"
   - fixed: manually select wavelength by rotating grating
 
 ***  Sample cells (design and materials)
-***  Photodetectors (PMT, photodiode, photodiode arrays)
+- glass (silicate): 400 - 2000
+- glass (optical): 350 - 2000
+- quartz: UV 200 - 3000
+- plastic: vis only, 380 - 780
 
-*** misc notes
+***  Photodetectors (PMT, photodiode, photodiode arrays)
+- not equally sensitive to all wavelengths
+  - measuring reference can help
+- PMT
+  - photoelectric effect: signal amplification with electron cascade
+    - photocathode => focussing electrode => dynode(s) => anode
+    - more dynodes => more sensitive
+    - not equally sensitive to all wavelengths
+- silicon photodiode
+  - PN-junction in silicon
+  - voltage is created
+    - proportional to incident light intensity
+- PDA (made of photodiode)
+  - entire spectrum measured
+  - PDA replaces exit slit => each PN element is a slit
+  - don't have great S/N
+
+** misc notes
 textbook notes:
 - if energy ($$\hbar v$$) of photon is more than excited state - ground state, excitation occurs
 - atom/molecule in excited state can emit photon of energy $$\hbar v$$
