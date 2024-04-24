@@ -3,17 +3,26 @@ description: "Multivariable Calculus (MIT OCW)"
 title: "Multivariable Calculus (MIT OCW)"
 ---
 
-** lecture 1: dot product
--  vector: has direction and magnitude/length
+** schedule
+*** week 1
+*** week 2
+*** week 3
+*** week 4
+*** week 5
+*** week 6
+*** week 7
+
+** Vectors and Matrices
+*** Part A: Vectors, Determinants, Planes
+- vector: has direction and magnitude/length
   - represented using coordinate system
 
 $$a_1 \hat{i} + a_2 \hat{j} + a_3 \hat{k} = < a_1, a_2, a_3>$$
 $$|\vec{A}| = \sqrt{a_1 + a_2 + a_3}$$
 
-*** dot product
 $$ \vec{A} \cdot \vec{B} = \sum a_i b_i = a_1 b_1 + a_2 b_2 + a_3 b_3 $$
 
-**** geometrically
+geometrically
 $$\vec{A} \cdot \vec{B} = |\vec{A}| |\vec{B}| cos \theta$$
 
 - law of cosines: if $$\vec{C} = \vec{A} - \vec{B}$$, then define
@@ -28,3 +37,18 @@ then we get: $$2|\vec{A}||\vec{B}| cos \theta = 2\vec{A} \cdot \vec{B}$$
   - computing lengths and angles
   - detect orthogonality
     - $$\vec{A} \cdot \vec{B} = 0$$ means they are perpendicular to each other, $$cos \theta$$, $$\theta = 0^\deg, 90^\deg$$
+
+*** Part B: Matrices and Systems of Equations
+*** Part C: Parametric Equations for Curves
+** Partial Derivatives
+*** Part A: Functions of Two Variables, Tangent Approximation and Optimization
+*** Part B: Chain Rule, Gradient and Directional Derivatives
+*** Part C: Lagrange Multipliers and Constrained Differentials
+** Double Integrals and Line Integrals in the Plane
+*** Part A: Double Integrals
+*** Part B: Vector Fields and Line Integrals
+*** Part C: Green’s Theorem
+** Triple Integrals and Surface Integrals in 3-Space
+*** Part A: Triple Integrals
+*** Part B: Flux and the Divergence Theorem
+*** Part C: Line Integrals and Stokes’ Theorem

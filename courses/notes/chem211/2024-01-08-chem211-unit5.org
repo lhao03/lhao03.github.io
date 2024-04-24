@@ -26,7 +26,7 @@ type: "notes"
 - reverse phase: MP is polar, SP is non polar (phenyl, C)
   - analytes that are polar will elute faster (spend less time in SP)
 - normal phase: MP is non polar (hexane, diethyl ether, ethyl acetate), SP is polar (silica, amino)
-  - analytes that are polar will elute faster (spend less time in SP)
+  - analytes that are less polar will elute faster (spend less time in SP)
 *** LC vs. GC
 - LC:
   - more applicable to any soluble compounds
