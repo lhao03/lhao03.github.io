@@ -59,7 +59,7 @@ $$ u = \sqrt{\frac{B}{C}}$$
 - reverse phase: MP is polar, SP is non polar (phenyl, C)
   - analytes that are polar will elute faster (spend less time in SP)
 - normal phase: MP is non polar (hexane, diethyl ether, ethyl acetate), SP is polar (silica, amino)
-  - analytes that are polar will elute faster (spend less time in SP)
+  - analytes that are less polar will elute faster (spend less time in SP)
 ** Interpret a simple chromatogram to identify the dead time, retention time, and calculate the partition coefficient, retention factor, and/or resolution.
 - dead time: migration time, time for MP to travel the column
 - retention time, adjusted retention time: time for analyte to elute from column
