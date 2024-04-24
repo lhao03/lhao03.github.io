@@ -71,7 +71,7 @@ $$ u = \sqrt{\frac{B}{C}}$$
 - plate height: the more plates, the narrower the peak obtained
   - $$N = \frac{16 t^2_R}{w^2}$$. where $w$ is width, the longer time spent in column, the more plates, the wider the peak, the less plates
 - resolution:
- - $$\frac{\sqrt{N}}{4} \frac{\alpha - 1}{\alpha} \frac{k_B}{1 + k_B} = \sqrt{N}}{4} (1 - \frac{t_{RA}}{t_{RB}})$$, where $$\alpha = \frac{k_B}{k_A}$$ and B is retained longer
+ - $$\frac{\sqrt{N}}{4} \frac{\alpha - 1}{\alpha} \frac{k_B}{1 + k_B} = \frac{\sqrt{N}}{4} (1 - \frac{t_{RA}}{t_{RB}})$$, where $$\alpha = \frac{k_B}{k_A}$$ and B is retained longer
 ** Describe Van Deemter Equation and its applications in improving LC and GC separation performance
 - sources of band broadening:
   - (A) eddy diffusion (multiple paths):
