@@ -5,12 +5,21 @@ title: "Multivariable Calculus (MIT OCW)"
 
 ** schedule
 *** week 1
+- Part A: Vectors, Determinants, Planes
+- Part B: Matrices and Systems of Equations
+- Part C: Parametric Equations for Curves
 *** week 2
+- Part A: Functions of Two Variables, Tangent Approximation and Optimization
+- Part B: Chain Rule, Gradient and Directional Derivatives
+- Part C: Lagrange Multipliers and Constrained Differentials
 *** week 3
+- Part A: Double Integrals
+- Part B: Vector Fields and Line Integrals
+- Part C: Green’s Theorem
 *** week 4
-*** week 5
-*** week 6
-*** week 7
+- Part A: Triple Integrals
+- Part B: Flux and the Divergence Theorem
+- Part C: Line Integrals and Stokes' Theorem
 
 ** Vectors and Matrices
 *** Part A: Vectors, Determinants, Planes
@@ -37,6 +46,21 @@ then we get: $$2|\vec{A}||\vec{B}| cos \theta = 2\vec{A} \cdot \vec{B}$$
   - computing lengths and angles
   - detect orthogonality
     - $$\vec{A} \cdot \vec{B} = 0$$ means they are perpendicular to each other, $$cos \theta$$, $$\theta = 0^\deg, 90^\deg$$
+  - vector components
+
+**** vector components
+- find a component $$\vec{A}$$ along direction $$\vec{u}$$, where $$\vec{u}$$ is a unit vector: $$|\vec{A} cos \theta|$$
+  - orthogonal projection of A on $$\vec{u}$$, leg parallel to $$\vec{u}$$: $$|A| cos \theta$$ or $$\frac{\vec{A} \vec{u}}{|\vec{u}|}$$
+- component (length) of a vector is scalar
+
+**** area and determinants in 2D
+determinant of $$\vec{A}, \vec{B}$$ is +/- area of a parallelogram, $$|\vec{A}| |\vec{B}| sin \theta = det(\vec{A}, \vec{B})$$
+
+area of triangle: $$\frac{1}{2} det(\vec{A}, \vec{B})$$
+
+**** volumes and determinants in space
+$$det(\vec{A}, \vec{B}, \vec{C})$$
+
 
 *** Part B: Matrices and Systems of Equations
 *** Part C: Parametric Equations for Curves

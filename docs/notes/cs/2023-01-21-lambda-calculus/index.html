@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lucy H | Lambda Calculus Variables</title>
+  <link rel="stylesheet" href="../../../css/main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
+  <!-- and it's easy to individually load additional languages -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/languages/scheme.min.js"></script>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/base16/onedark.min.css" />
+  <script>
+    hljs.highlightAll();
+  </script>
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+  <link rel="preconnect" href="https://www.googletagmanager.com" />
+  <link rel="preconnect" href="https://www.google-analytics.com" />
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KDGPVMHC9Q"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-KDGPVMHC9Q");
+  </script>
+
+  <!-- basic favicon -->
+  <link rel="icon" href="../../../images/android-chrome-384x384.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../../images/android-chrome-384x384.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../../images/android-chrome-384x384.png" />
+  <link rel="apple-touch-icon-precomposed" href="../../../images/android-chrome-384x384.png" />
+</head>
+
+  <body>
+    <main role="main">
+      <div class="flex-row-col">
+        <div>
+          <h1>Lambda Calculus Variables</h1>
+          <div>
+  
+  <div class="header">
+    Posted on January 21, 2023
+    
+  </div>
+  <div class="tags">
+    
+    Tags: programming languages
+    
+  </div>
+  <div class="content">
+    
+<div id="toc" class="toc">Contents:
+</div>
+<div id="body"><p><a href="https://www3.cs.stonybrook.edu/~cram/cse526/Spring20/Lectures/untyped-lambda.pdf">https://www3.cs.stonybrook.edu/~cram/cse526/Spring20/Lectures/untyped-lambda.pdf</a></p>
+<pre><code>t ::=         Terms
+          x   Variable
+        | λx. t Abstraction
+        | t t Application
+</code></pre>
+<ul>
+<li><code>(λx. t)</code> is a function with formal parameter <code>x</code> that returns the term <code>t</code></li>
+<li><code>λx.λy x)</code> is a function that takes two arguments x and y and returns the first argument</li>
+<li><code>(t_1 t_2)</code> is a function call where <code>t_1</code> is a function and <code>t_2</code> is the supplied argument</li>
+<li><code>((λx. x) y)</code> supplies <code>y</code> as the argument to the identity function</li>
+</ul>
+<p>Parentheses can be dropped:</p>
+<ul>
+<li><p>application is left associative <code>((f f) x)</code> is the same as <code>f f x</code></p></li>
+<li><p>λ binds as much as possible to the right: <code>λf. λx. f (f x)</code> is the same as <code>(λf. (λx. f (f x)))</code></p></li>
+<li><p>multiple consecutive abstractions can be combined: <code>λf.λx.f (f x)</code> is same as <code>λf x. f (f x)</code></p></li>
+</ul>
+<p>Example of Application</p>
+<ol type="1">
+<li><code>((λwyx. y (w y x)) (λsz. z))</code></li>
+<li><code>((λyx. y ((λsz. z) y x)))</code></li>
+<li><code>(λyx. y ((λsz. z) y x))</code></li>
+<li><code>(λyx. y x)</code></li>
+</ol>
+<p>Another way:</p>
+<ol type="1">
+<li><code>((λwyx. y (w y x)) (λsz. z))</code></li>
+<li><code>(λyx. y ((λsz. z) y x))</code></li>
+<li><code>(λyx. y ((λz. z) x))</code></li>
+<li><code>(λyx. y x)</code></li>
+</ol>
+<ul>
+<li>an application: replace every occurrence of the formal parameter in the body of the function with the given argument</li>
+</ul>
+<p>Encoding Booleans in the λ-Calculus: The Church Encoding of Booleans</p>
+<ul>
+<li><code>true</code>: <code>λx. λy. x</code></li>
+<li><code>false</code>: <code>λx. λy. y</code></li>
+<li><code>&amp;&amp;</code>: <code>λx. λy. ((x y) false)</code></li>
+<li><code>||</code>: <code>λx. λy (( x true) y)</code></li>
+<li><code>!</code>: <code>λx. ((x false) true)</code></li>
+<li><code>if</code>: <code>λc. λt. λe. ((c t) e)</code></li>
+</ul>
+<p>Example:</p>
+<ol type="1">
+<li><code>(true &amp;&amp; false)</code></li>
+<li><code>(λx y. ((x y) false))</code></li>
+<li><code>(λy. (((λx. λy. x) y) false))</code> apply x as true</li>
+<li><code>(((λx. λy. x) (λx. λy. y)) false)</code> apply y as false</li>
+<li><code>(((λxy. x) (λxy. y)) false)</code></li>
+<li><code>((λy. (λxy. y)) false)</code> outer y is false but don’t apply it anywhere</li>
+<li><code>(λxy. y)</code></li>
+<li><code>false</code></li>
+</ol>
+<p>Church Encoding of Natural Numbers in the λ-Calculus</p>
+<ul>
+<li><code>0</code>: <code>λs. λz. z</code></li>
+<li><code>1</code>: <code>λs. λz. (s z)</code></li>
+<li><code>3</code>: <code>λs. λz. (s (s z))</code></li>
+</ul></div>
+  </div>
+  <div class="flex-row link-no-style">
+    
+    
+  </div>
+</div>
+
+
+        </div>
+        <div class="sidebar">
+  <a href="../../../"><h2>Lucy Hao</h2></a>
+  <a href="../../../archive"><h3>Thoughts</h3></a>
+  <a href="../../../notes"><h3>Notes</h3></a>
+  <a href="../../../books"><h3>Books</h3></a>
+  <a href="../../../courses"><h3>Courses</h3></a>
+  <a href="../../../cv/cv.pdf"><h3>CV/Resume</h3></a>
+</div>
+
+      </div>
+    </main>
+
+    <footer>
+      <center>
+        <p>
+          <a href="../../../archive">archive</a>
+          <a href="https://github.com/lhao03" target="_blank">github</a>
+          <a href="https://www.linkedin.com/in/lucy-hao/" target="_blank">linkedin</a>
+        </p>
+      </center>
+      Site powered by cats, 🍫 and
+      <a href="http://jaspervdj.be/hakyll">Hakyll</a>
+    </footer>
+  </body>
+</html>

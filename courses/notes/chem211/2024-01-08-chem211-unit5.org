@@ -163,8 +163,8 @@ $$k = \frac{t_t - t_m}{t_m}$$
 ***** peak capacity
 - estimate of number of solutes we can seperate
 **** 12C: optimizing chromatographic separations
-- $$$R_{AB} = \frac{t_{t, B} - t_{t, A}}{0.5 (w_B + w_A)}$ or approximately equal $$\frac{t_{t, B} - t_{t, A}}{0.5 (2 w_B)} = \frac{t_{t, B} - t_{t, A}}{w_B}$$, where B is the later eluting of two solutes
-  - which we get $$$R_{AB} = \frac{\sqrt{N_B}}{4} \times \frac{t_{t, B} - t_{t, A}}{t_{t, B}} = \frac{\sqrt{N_B}}{4} \times \frac{\alpha - 1}{\alpha} \times \frac{k_B - k_A}{1 + k_B}$
+- $$R_{AB} = \frac{t_{t, B} - t_{t, A}}{0.5 (w_B + w_A)}$$ or approximately equal $$\frac{t_{t, B} - t_{t, A}}{0.5 (2 w_B)} = \frac{t_{t, B} - t_{t, A}}{w_B}$$, where B is the later eluting of two solutes
+  - which we get $$R_{AB} = \frac{\sqrt{N_B}}{4} \times \frac{t_{t, B} - t_{t, A}}{t_{t, B}} = \frac{\sqrt{N_B}}{4} \times \frac{\alpha - 1}{\alpha} \times \frac{k_B - k_A}{1 + k_B}$$
 ***** using retention factor
 - adjust B's retention factor, $k_B$, increasing will improve resolution, best if $k_B$ starts out being less than 10 => cost of longer analysis time
 - to increase $k_B$ without changing $\alpha$ => nonselective increase to both retention factors

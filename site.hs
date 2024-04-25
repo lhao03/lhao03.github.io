@@ -71,19 +71,19 @@ main = hakyllWith config $ do
         route $ setExtension "css"
         compile (fmap compressCss <$> sassCompiler)
 
-  match (fromList ["log.adoc", "papers.adoc", "books.adoc", "courses.adoc"]) $ do
+  match (fromList ["log.adoc", "notes.adoc", "books.adoc", "courses.adoc"]) $ do
     route appendIndex
     compile $ do
       let indexCtx =
             listField "posts" postCtx (recentFirst =<< loadAll "posts/*")
-              `mappend` listField "notes" postCtx (recentFirst =<< loadAll "courses/notes/**")
+              `mappend` listField "coursenotes" postCtx (recentFirst =<< loadAll "courses/notes/**")
               `mappend` listField "year1" postCtx (recentFirst =<< loadAll "courses/reviews/year1/**")
               `mappend` listField "year2" postCtx (recentFirst =<< loadAll "courses/reviews/year2/**")
               `mappend` listField "year3" postCtx (recentFirst =<< loadAll "courses/reviews/year3/**")
               `mappend` listField "year4" postCtx (recentFirst =<< loadAll "courses/reviews/year4/**")
               `mappend` listField "year5" postCtx (recentFirst =<< loadAll "courses/reviews/year5/**")
               `mappend` listField "books" postCtx (recentFirst =<< loadAll "books/**")
-              `mappend` listField "papers" postCtx (recentFirst =<< loadAll "papers/**")
+              `mappend` listField "notes" postCtx (recentFirst =<< loadAll "notes/**")
               `mappend` defaultContext
 
       pandocCompilerWithAsciidoctor
@@ -151,7 +151,7 @@ main = hakyllWith config $ do
           >>= loadAndApplyTemplate "templates/default.html" postCtx
           >>= relativizeUrls
 
-    match "papers/**" $ do
+    match "notes/**" $ do
       route appendIndex
       compile $ do
         pandocCompilerWithAsciidoctor
@@ -165,7 +165,7 @@ main = hakyllWith config $ do
       posts <- recentFirst =<< loadAll "posts/**"
       let archiveCtx =
             listField "posts" postCtx (return posts)
-              `mappend` constField "title" "Archives"
+              `mappend` constField "title" "Posts"
               `mappend` mainCtx tags "posts/**"
               `mappend` defaultContext
 

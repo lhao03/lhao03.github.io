@@ -1,0 +1,11 @@
+---
+title: "Notes"
+date: 2023-12-24
+---
+
+Here are all my half-backed and messy notes on things I've found interesting. Nothing here is complete; everything here is a brain dump.
+
+$partial("templates/notes.html")$
+
+---
+

@@ -1,0 +1,254 @@
+---
+title: Grad Schools
+date: 2024-04-25
+tags: grad, school
+---
+
+I'm officially starting to prep for grad schol (for real). These are my notes, and if you're hoping to follow a similar academic journey as me, then here are my goals:
+
+1. Apply for grad school to study physical chemistry or quantum chemistry or computational chemistry (inclusive or)
+2. Select a well-rounded list of grad schools to apply to
+3. Narrow down what I realy want to do research in
+
+This is my 3rd (?) attempt at preparing to apply to grad school. My previous attempts at preparing to apply for grad school were for the areas of computer science (PL) and chemical biology, both areas which I felt were just not what I was looking for. This time I will be looking at school with the intention of studying physics, chemistry and computer science.
+
+=== Canada
+
+[cols="1,1,1"]
+|===
+| School
+|
+|
+
+| UBC
+|Cell in column 2, row 2
+|Cell in column 2, row 2
+
+| U of A
+|Cell in column 2, row 2
+|Cell in column 2, row 2
+
+| U of C
+|Cell in column 2, row 2
+|Cell in column 2, row 2
+
+| U of T
+|Cell in column 2, row 2
+|Cell in column 2, row 2
+|===
+
+=== USA
+
+=== Europe
+[cols="1,1,1"]
+|===
+| School
+|
+|
+
+| Oxford
+|Cell in column 2, row 2
+|Cell in column 2, row 2
+
+| ETH Zurich
+|Cell in column 2, row 2
+|Cell in column 2, row 2
+
+| Max Planck Institute
+|Cell in column 2, row 2
+|Cell in column 2, row 2
+
+| Cambridge
+|Cell in column 2, row 2
+|Cell in column 2, row 2
+|===
+
+* https://ethz.ch/en/doctorate/finding-a-place.html
+** "Unlike at many other universities, the doctorate at ETH Zurich is not organised via an overarching doctoral school. ETH Zurich mainly offers individual doctorates. Each potential doctoral thesis supervisor recruits their doctoral students themselves. In order to be able to complete a doctorate at ETH, a professor at ETH must be willing to supervise your dissertation."
+
+* https://ethz.ch/content/dam/ethz/common/docs/publications/education/doctorate_brochure.pdf
+** "The admission requirements for a doctorate at ETH Zurich
+are a Master’s degree from a recognized university and
+excellent academic performance."
+
+* https://www.ox.ac.uk/admissions/graduate/courses/dphil-chemistry
+* https://learning-systems.org/
+
+== Random Points
+* Canada: a masters is helpful in getting a phd
+* USA: masters is not helpful in getting phd
+* UK: mphil is helpful in getting a phd
+
+== Resources:
+
+* https://koronkevi.ch/posts/applying-to-grad-school.html[Applying to
+Grad School: Programming Languages Edition]
+* https://jxyzabc.blogspot.com/2016/02/my-phd-abridged.html[What My PhD
+Was Like]
+* https://parentheticallyspeaking.org/articles/us-cs-phd-faq/[Getting a
+Computer Science PhD in the USA]
+* https://jeffhuang.com/computer-science-open-data/[Computer Science
+Open Data]
+* https://www.ccs.neu.edu/home/shivers/diss-advice.html[Dissertation
+Advice]
+* https://cs.brown.edu/~sk/Memos/Funding-CS-Grad-School/[CS Master’s
+Funding]
+* https://www.cs.cmu.edu/~harchol/gradschooltalk.pdf[Applying to PhD programs in CS]
+* https://github.com/jeanqasaur/academic-application-materials/blob/master/phd-application-2007/personal_statement.pdf[Jean Yang Personal Statement]
+
+== Topics I’m interested in (not in any order)
+
+* Operating Systems
+* Compilers
+* Programming Languages
+* Computer Science Education
+* Chemical Biology
+* Antiviral strategies & antiviral therapeutics
+
+== Journals/Conferences
+
+* https://dl.acm.org/journal/fac[Formal Aspects of Computing]
+* https://dl.acm.org/journal/tecs[ACM Transactions on Embedded Computing
+Systems]
+* https://dl.acm.org/toc/jetc[ACM Journal on Emerging Technologies in
+Computing Systems]
+* https://dl.acm.org/toc/pacmpl[Proceedings of the ACM on Programming
+Languages]
+* https://dl.acm.org/toc/taco[ACM Transactions on Architecture and Code
+Optimization]
+* https://dl.acm.org/toc/tcbb[IEEE/ACM Transactions on Computational
+Biology and Bioinformatics]
+* https://dl.acm.org/toc/toce[ACM Transactions on Computing Education]
+* https://dl.acm.org/toc/toplas[ACM Transactions on Programming
+Languages and Systems]
+* https://aosabook.org/en/index.html[Architecture of OSS]
+
+== Schools, Advisors, Application Details
+
+=== Chemistry 
+*Dream Schools*
+
+1. Berkeley
+
+*Safe Schools*
+
+1. UBC
+
+=== Computer Science
+*Dream Schools*
+
+1. CMU
+2. MIT
+
+*Pretty Good Schools*
+
+1. UWashington
+3. Northeastern
+4. Brown
+5. ETH Zurich
+
+*Safe Schools*
+
+1. UBC
+
+=== Berkeley
+
+==== Chemistry
+* https://chemistry.berkeley.edu/chem-research[Chemistry]
+** no GRE due to COVID
+* https://chemistry.berkeley.edu/cbe-research[Chemical Engineering]
+** no GRE
+* https://chembio.berkeley.edu/[Chemical Biology]
+** get into Chemistry PhD first
+
+==== Application Details 
+* superior performance and research experience in past two years of undergrad studies 
+
+* statement of purpose 
+
+* personal history statement 
+
+** The personal statement should give concrete evidence of your promise as a member of the academic community, giving the committee an image of you as a person. 
+
+** This is also where you represent your potential to bring to your academic career a critical
+perspective rooted in a non-traditional educational background, or your
+understanding of the experiences of groups historically
+under-represented in higher education and your commitment to increase
+participation by a diverse population in higher education. 
+* 3 letters of recommendation
+
+=== CMU
+* https://www.cs.cmu.edu/academics/masters/programs[Programs]
+* https://csd.cmu.edu/academics/masters/overview#mscsoverview[MSCS]
+*  The M.S. program is distinct from the Ph.D. program in computer science, and master's students will not usually continue into the Ph.D. program and will not receive preferential treatment if they apply.
+** https://csd.cmu.edu/sites/default/files/MSCS-Handbook-2021-2022.pdf[Handbook]
+* https://www.cs.cmu.edu/academics/application_instructions[GRE Requirements]
+* http://www.compbio.cmu.edu/admissions/medical-scientist-training-program/[MD/PhD]
+* https://www.cs.cmu.edu/academics/graduate-admissions[Grad Apps]
+* https://msas.cbd.cmu.edu/careers/early-admissions-phd.html[For early admission into biology or computational biology PhD]
+
+Stuff you need
+* GRE
+* Unofficial Transcripts 
+* Résumé/CV 
+* Statement of Purpose (If uploading multiple SOPs, upload them as one PDF file and include a table of contents page). 
+* Three Letters of Recommendation
+
+=== MIT
+
+=== UBC
+
+==== Chemistry
+* https://chem-reid-2020.sites.olt.ubc.ca/publications/[The Reid Group]
+* https://mehr.chem.ubc.ca/[Mehrkhodavandi Research Group] 
+*  https://withers.chem.ubc.ca/s-withers/[Withers Research Group] 
+** https://withers.chem.ubc.ca/research/[research] 
+*** how enzymes function as such formidable catalysts 
+*** The role of non-covalent interactions between the enzyme and substrate in stabilisation of ground and
+transition states has held a particular fascination for me, as well as
+the development of methodologies to stabilise or trap intermediates in
+catalysis. Increasingly I am becoming interested in applying our
+understanding to the development of new tools and hopefully
+therapeutics. 
+* https://www.chem.ubc.ca/amani-hariri[Amani Hariri] 
+* https://perrin.chem.ubc.ca/?login[David Perrin Research Group] 
+* https://tanner.chem.ubc.ca/[Tanner Research Group] 
+* https://schafer.chem.ubc.ca/home-page/[The Schafer Group] 
+* https://groups.chem.ubc.ca/algar/[Algar Research Group] 
+** interface of analytical, biological, physical, and materials chemistry
+
+==== Virology
+* https://www.microbiology.ubc.ca/research/labs/jean/pi[FRANÇOIS JEAN] 
+** https://www.microbiology.ubc.ca/research/labs/jean[Lab]
+
+==== Computer Science
+* https://spl.cs.ubc.ca/index.html[SPL] 
+** https://www.cs.ubc.ca/~rtholmes/publications.html[Reid Holmes] 
+** https://www.cs.ubc.ca/~rxg/#pubs[Ronald Garcia] 
+** https://www.williamjbowman.com/papers/index.html[William Bowman]
+
+* https://systopia.cs.ubc.ca/[Systopia]
+
+=== UWashington
+
+==== Computer Science 
+* https://faculty.washington.edu/ajko/essays[Amy J. Ko, Ph.D.]
+
+=== Brown
+
+==== Computer Science
+* https://cs.brown.edu/~sk/[Shriram Krishnamurthi]
+
+=== Indiana
+
+* Scheme
+* well no more because of their abortion ban
+
+=== Northeastern
+
+* Scheme
+
+=== ETH Zurich
+
+=== Oxford
+* https://www.ox.ac.uk/admissions/graduate/courses/dphil-biochemistry-outsri[DPhil Biochemistry]
