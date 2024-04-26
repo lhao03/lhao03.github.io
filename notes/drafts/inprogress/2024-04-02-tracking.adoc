@@ -30,30 +30,32 @@ i am tracking my days again. here are the things left to do.
 * set up drylab one on one
 * finish primer library
 
-=== chem 211
-* review unit 2
-* review unit 3
-
 == april 27
 * [ ] https://kardium.com/careers/4360398006/?gh_jid=4360398006
 * [ ] up at 600
 
 == april 26
 * [ ] up at 600
+* [ ] clean aprtment
+* [ ] gym
 * [ ] 211 from 830 to 11
 
 == april 25
 * [*] up at 730
 * [*] 211 from 830 to 11
 * [*] chem 211 practice final
-* [ ] clean aprtment
-* [ ] finish math vectors section
+** review t test
+** review what type of MP and SP for what types of compounds you want to seperate
+*** u want interaction with SP, so keep that in mind (i think)
+** review what data GC and LC give you
+** review GC vs. LC, why GC is better
+** parts of EDTA titration
+* [*] finish math vectors section
 
 == april 24
 * [ ] up at 630
 * [*] 211 from 830 to 11
 * [ ] unit 2/1 practice
-
 
 https://numinous.productions/ttft/
 https://andymatuschak.org/books/

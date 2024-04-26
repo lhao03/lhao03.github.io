@@ -25,7 +25,7 @@ This is my 3rd (?) attempt at preparing to apply to grad school. My previous att
 |Cell in column 2, row 2
 
 | U of A
-|Cell in column 2, row 2
+|https://www.ualberta.ca/graduate-programs/chemistry.html
 |Cell in column 2, row 2
 
 | U of C
@@ -38,6 +38,11 @@ This is my 3rd (?) attempt at preparing to apply to grad school. My previous att
 |===
 
 === USA
+
+* https://grad.ucla.edu/programs/physical-sciences/chemistry-and-biochemistry-department/chemistry/
+* https://www.chemistry.ucla.edu/faculty-and-research/#research-areas
+* https://chemistry.berkeley.edu/grad/chem/apply
+* https://chemistry.stanford.edu/academics/phd-program/admissions/how-apply
 
 === Europe
 [cols="1,1,1"]

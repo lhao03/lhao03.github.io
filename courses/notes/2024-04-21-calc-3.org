@@ -59,7 +59,8 @@ determinant of $$\vec{A}, \vec{B}$$ is +/- area of a parallelogram, $$|\vec{A}| 
 area of triangle: $$\frac{1}{2} det(\vec{A}, \vec{B})$$
 
 **** volumes and determinants in space
-$$det(\vec{A}, \vec{B}, \vec{C})$$
+- $$det(\vec{A}, \vec{B}, \vec{C})$$ = +/- volume of parallelepiped
+- $$A_{ij} = (-1)^{i + j} |A_{ij}|$$
 
 
 *** Part B: Matrices and Systems of Equations

@@ -5,9 +5,9 @@ title: Summer Research Notes
 === read
 - https://link.springer.com/article/10.1007/s10514-023-10136-2[Large language models for chemistry robotics]
 - https://pubs.rsc.org/en/Content/ArticleLanding/2023/RE/D3RE00583F[Applying quantum mechanics to deconvolute benchtop 1H NMR reaction data]
+- https://www.cell.com/trends/chemistry/fulltext/S2589-5974(19)30186-8[Universal Chemical Synthesis and Discovery with ‘The Chemputer’]
 
 === reading
-- https://www.cell.com/trends/chemistry/fulltext/S2589-5974(19)30186-8[Universal Chemical Synthesis and Discovery with ‘The Chemputer’]
 
 === to read
 - https://www.nature.com/articles/s44160-023-00473-6[Universal chemical programming language for robotic synthesis repeatability]
@@ -18,7 +18,6 @@ title: Summer Research Notes
 - https://ac-rad.github.io/clairify/
 - https://www.nature.com/articles/s41467-024-45444-3[An integrated self-optimizing programmable chemical synthesis and reaction engine]
 - https://www.nature.com/articles/s41557-020-00596-9[Convergence of multiple synthetic paradigms in a universally programmable chemical synthesis machine]
-- https://link.springer.com/article/10.1007/s10514-023-10136-2[Large language models for chemistry robotics]
 - https://www.nature.com/articles/s41557-020-00596-9[Convergence of multiple synthetic paradigms in a universally programmable chemical synthesis machine]
 - https://pubs.acs.org/doi/abs/10.1021/c160043a004[Factors Affecting Dissemination of Chemical Information]
 - https://www.nature.com/articles/s41586-020-2442-2[A mobile robotic chemist]

@@ -27,6 +27,7 @@ type: "notes"
   - analytes that are polar will elute faster (spend less time in SP)
 - normal phase: MP is non polar (hexane, diethyl ether, ethyl acetate), SP is polar (silica, amino)
   - analytes that are less polar will elute faster (spend less time in SP)
+    [[../../../../../../images/211/sp.webp]]
 *** LC vs. GC
 - LC:
   - more applicable to any soluble compounds
