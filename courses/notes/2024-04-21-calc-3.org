@@ -62,18 +62,158 @@ area of triangle: $$\frac{1}{2} det(\vec{A}, \vec{B})$$
 - $$det(\vec{A}, \vec{B}, \vec{C})$$ = +/- volume of parallelepiped
 - $$A_{ij} = (-1)^{i + j} |A_{ij}|$$
 
+**** cross products
+- 2 vectors in 3D space => vector
+$$\vec{A} \times \vec{B} =
+\begin{vmatrix}
+\vec{i} & \vec{j} & \vec{k}\\
+a_1 & a_2 & a_3\\
+b_1 & b_2 & b_3\\
+\end{vmatrix}$$
+
+- theorem:
+  - the length of the cross product of $$\vec{A}$$ and $$\vec{B}$$, is the area of the parallelogram
+  - the direction of the cross product of $$\vec{A}$$ and $$\vec{B}$$ is perpendicular to the plane of the parallelogram
+    - direction is based on the right-hand rule
+
+- volume of parallelepiped:
+  - area(base) times height
+  - $$|\vec{B} \times \vec{C}| \times (\vec{A} \cdot \vec{n})$$
+    - where $$\vec{n}$$ is the vector perpendicular to $$\frac{\vec{B} \times \vec{C}}{|\vec{B} \times \vec{C}|}$$
+
+- rules of cross products
+  - $$\vec{B} \times \vec{C} \neq \vec{C} \times \vec{B}$$, $$\vec{B} \times \vec{C} = -\vec{C} \times \vec{B}$$
+  - $$\vec{B} \times \vec{B} = 0$$
+
+**** equations of planes
+- application of cross product: 3 points in space, equation of plane $$P_1, P_2, P_3$$, is point $$P$$ on that plane?
+  - consider vectors $$P_1, P$$, $$P_1, P_2$$, $$P_1, P_3$$: is the parallelogram completely flat?
+    - is $$det(P_1P, P_1P_2,P_1P_3) = 0$$
+  - P is in the plane, only when $$\vec{P_1 P}$$ is perpendicular $$\vec{N}$$, where $$\vec{N}$$ is a cross product
+    - $$\vec{P_1 P} \cdot (\vec{P_1 P_2} \times \vec{P_1 P_3}) = 0$$
 
 *** Part B: Matrices and Systems of Equations
+**** matrix multiplication
+- often have linear relations
+- entries in matrix product $AX$
+  - dot products between rows of $A$ and columns of $X$
+- product $AB$ represents doing transformation $B$ then transformation $A$
+- identity matrix: do nothing
+
+**** matrix inverse
+- if we have function of u in terms of x, can use matrix inverse to express function of x in terms of u
+- if A is the inverse of M: $AM = I$, $MA = I$
+  - $$M = A^{-1}$$
+
+- if $AX = B$
+- $$A^{-1} (AX) = A^{-1} B$$
+- $$X = A^{-1} B$$
+
+- invert matrix by hand:
+  - $$A^{-1} = \frac{1}{det(A) adj(A)} $$
+
+**** equations of planes ii
+$ax + by + cz = d$$
+- find plane perpendicular to a vector
+  - point P is in the plane, whenever $$\vec{OP} \cdot \vec{N} = 0$$
+  - if plane goes through origin
+  - $$<a, b, c>$$, is the normal vector for the plane
+
+- plane in point-normal form:
+  - need point $P_0$ and vector $N$ orthogonal to plane, we can also say $N$ is normal to the plane
+    - since the vector $$\vec{P_0 P}$$ is in the plane, we can say $$N \cdot \vec{P_0 P} = 0$$
+
+**** linear systems and planes
+**** solutions to square systems
+
 *** Part C: Parametric Equations for Curves
+**** Session 15: Equations of Lines
+**** Session 16: Intersection of a Line and a Plane
+**** Session 17: General Parametric Equations; the Cycloid
+**** Session 18: Point (Cusp) on Cycloid
+**** Session 19: Velocity and Acceleration
+**** Session 20: Velocity and Arc Length
+**** Session 21: Kepler’s Second Law
+
 ** Partial Derivatives
 *** Part A: Functions of Two Variables, Tangent Approximation and Optimization
+**** Session 24: Functions of Two Variables: Graphs
+**** Session 25: Level Curves and Contour Plots
+**** Session 26: Partial Derivatives
+**** Session 27: Approximation Formula
+**** Session 28: Optimization Problems
+**** Session 29: Least Squares
+**** Session 30: Second Derivative Test
+**** Session 31: Example
 *** Part B: Chain Rule, Gradient and Directional Derivatives
+**** Session 32: Total Differentials and the Chain Rule
+**** Session 33: Examples
+**** Session 34: The Chain Rule with More Variables
+**** Session 35: Gradient: Definition, Perpendicular to Level Curves
+**** Session 36: Proof
+**** Session 37: Example
+**** Session 38: Directional Derivatives
 *** Part C: Lagrange Multipliers and Constrained Differentials
+**** Session 39: Statement of Lagrange Multipliers and Example
+**** Session 40: Proof of Lagrange Multipliers
+**** Session 41: Advanced Example
+**** Session 42: Constrained Differentials
+**** Session 43: Clearer Notation
+**** Session 44: Example
 ** Double Integrals and Line Integrals in the Plane
 *** Part A: Double Integrals
+**** Session 47: Definition of Double Integration
+**** Session 48: Examples of Double Integration
+**** Session 49: Exchanging the Order of Integration
+**** Session 50: Double Integrals in Polar Coordinates
+**** Session 51: Applications: Mass and Average Value
+**** Session 52: Applications: Moment of Inertia
+**** Session 53: Change of Variables
+**** Session 54: Example: Polar Coordinates
+**** Session 55: Example
 *** Part B: Vector Fields and Line Integrals
+**** Session 56: Vector Fields
+**** Session 57: Work and Line Integrals
+**** Session 58: Geometric Approach
+**** Session 59: Example: Line Integrals for Work
+**** Session 60: Fundamental Theorem for Line Integrals
+**** Session 61: Conservative Fields, Path Independence, Exact Differentials
+**** Session 62: Gradient Fields
+**** Session 63: Potential Functions
+**** Session 64: Curl
 *** Part C: Green’s Theorem
+**** Session 65: Green’s Theorem
+**** Session 66: Curl(F) = 0 Implies Conservative
+**** Session 67: Proof of Green’s Theorem
+**** Session 68: Planimeter: Green’s Theorem and Area
+**** Session 69: Flux in 2D
+**** Session 70: Normal Form of Green’s Theorem
+**** Session 71: Extended Green’s Theorem: Boundaries with Multiple Pieces
+**** Session 72: Simply Connected Regions and Conservative
 ** Triple Integrals and Surface Integrals in 3-Space
 *** Part A: Triple Integrals
+**** Session 74: Triple Integrals: Rectangular and Cylindrical Coordinates
+**** Session 75: Applications and Examples
+**** Session 76: Spherical Coordinates
+**** Session 77: Triple Integrals in Spherical Coordinates
+**** Session 78: Applications: Gravitational Attraction
 *** Part B: Flux and the Divergence Theorem
+**** Session 79: Vector Fields in Space
+**** Session 80: Flux Through a Surface
+**** Session 81: Calculating Flux; Finding ndS
+**** Session 82: ndS for a Surface z = f(x, y)
+**** Session 83: Other Ways to Find ndS
+**** Session 84: Divergence Theorem
+**** Session 85: Physical Meaning of Flux; Del Notation
+**** Session 86: Proof of the Divergence Theorem
+**** Session 87: Diffusion Equation
 *** Part C: Line Integrals and Stokes’ Theorem
+**** Session 88: Line Integrals in Space
+**** Session 89: Gradient Fields and Potential Functions
+**** Session 90: Curl in 3D
+**** Session 91: Stokes’ Theorem
+**** Session 92: Proof of Stokes’ Theorem
+**** Session 93: Example
+**** Session 94: Simply Connected Regions; Topology
+**** Session 95: Stokes’ Theorem and Surface Independence
+**** Session 96: Summary of Multiple Integration

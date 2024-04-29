@@ -161,21 +161,200 @@
 <li><span class="math display"><em>d</em><em>e</em><em>t</em>(<em>A⃗</em>,<em>B⃗</em>,<em>C⃗</em>)</span> = +/- volume of parallelepiped</li>
 <li><span class="math display"><em>A</em><sub><em>i</em><em>j</em></sub> = (−1)<sup><em>i</em> + <em>j</em></sup>|<em>A</em><sub><em>i</em><em>j</em></sub>|</span></li>
 </ul></li>
+<li><p>cross products</p>
+<ul>
+<li>2 vectors in 3D space =&gt; vector</li>
+</ul>
+<p><span class="math display">$$\vec{A} \times \vec{B} =
+\begin{vmatrix}
+\vec{i} &amp; \vec{j} &amp; \vec{k}\\
+a_1 &amp; a_2 &amp; a_3\\
+b_1 &amp; b_2 &amp; b_3\\
+\end{vmatrix}$$</span></p>
+<ul>
+<li>theorem:
+<ul>
+<li>the length of the cross product of <span class="math display"><em>A⃗</em></span> and <span class="math display"><em>B⃗</em></span>, is the area of the parallelogram</li>
+<li>the direction of the cross product of <span class="math display"><em>A⃗</em></span> and <span class="math display"><em>B⃗</em></span> is perpendicular to the plane of the parallelogram
+<ul>
+<li>direction is based on the right-hand rule</li>
+</ul></li>
+</ul></li>
+<li>volume of parallelepiped:
+<ul>
+<li>area(base) times height</li>
+<li><span class="math display">|<em>B⃗</em>×<em>C⃗</em>| × (<em>A⃗</em>⋅<em>n⃗</em>)</span>
+<ul>
+<li>where <span class="math display"><em>n⃗</em></span> is the vector perpendicular to <span class="math display">$$\frac{\vec{B} \times \vec{C}}{|\vec{B} \times \vec{C}|}$$</span></li>
+</ul></li>
+</ul></li>
+<li>rules of cross products
+<ul>
+<li><span class="math display"><em>B⃗</em> × <em>C⃗</em> ≠ <em>C⃗</em> × <em>B⃗</em></span>, <span class="math display"><em>B⃗</em> × <em>C⃗</em> =  − <em>C⃗</em> × <em>B⃗</em></span></li>
+<li><span class="math display"><em>B⃗</em> × <em>B⃗</em> = 0</span></li>
+</ul></li>
+</ul></li>
+<li><p>equations of planes</p>
+<ul>
+<li>application of cross product: 3 points in space, equation of plane <span class="math display"><em>P</em><sub>1</sub>, <em>P</em><sub>2</sub>, <em>P</em><sub>3</sub></span>, is point <span class="math display"><em>P</em></span> on that plane?
+<ul>
+<li>consider vectors <span class="math display"><em>P</em><sub>1</sub>, <em>P</em></span>, <span class="math display"><em>P</em><sub>1</sub>, <em>P</em><sub>2</sub></span>, <span class="math display"><em>P</em><sub>1</sub>, <em>P</em><sub>3</sub></span>: is the parallelogram completely flat?
+<ul>
+<li>is <span class="math display"><em>d</em><em>e</em><em>t</em>(<em>P</em><sub>1</sub><em>P</em>,<em>P</em><sub>1</sub><em>P</em><sub>2</sub>,<em>P</em><sub>1</sub><em>P</em><sub>3</sub>) = 0</span></li>
+</ul></li>
+<li>P is in the plane, only when <span class="math display">$$\vec{P_1 P}$$</span> is perpendicular <span class="math display"><em>N⃗</em></span>, where <span class="math display"><em>N⃗</em></span> is a cross product
+<ul>
+<li><span class="math display">$$\vec{P_1 P} \cdot (\vec{P_1 P_2} \times \vec{P_1 P_3}) = 0$$</span></li>
+</ul></li>
+</ul></li>
+</ul></li>
 </ol>
 <h3 id="part-b-matrices-and-systems-of-equations">Part B: Matrices and Systems of Equations</h3>
+<ol>
+<li><p>matrix multiplication</p>
+<ul>
+<li>often have linear relations</li>
+<li>entries in matrix product <span class="math inline"><em>A</em><em>X</em></span>
+<ul>
+<li>dot products between rows of <span class="math inline"><em>A</em></span> and columns of <span class="math inline"><em>X</em></span></li>
+</ul></li>
+<li>product <span class="math inline"><em>A</em><em>B</em></span> represents doing transformation <span class="math inline"><em>B</em></span> then transformation <span class="math inline"><em>A</em></span></li>
+<li>identity matrix: do nothing</li>
+</ul></li>
+<li><p>matrix inverse</p>
+<ul>
+<li><p>if we have function of u in terms of x, can use matrix inverse to express function of x in terms of u</p></li>
+<li><p>if A is the inverse of M: <span class="math inline"><em>A</em><em>M</em> = <em>I</em></span>, <span class="math inline"><em>M</em><em>A</em> = <em>I</em></span></p>
+<ul>
+<li><span class="math display"><em>M</em> = <em>A</em><sup>−1</sup></span></li>
+</ul></li>
+<li><p>if <span class="math inline"><em>A</em><em>X</em> = <em>B</em></span></p></li>
+<li><p><span class="math display"><em>A</em><sup>−1</sup>(<em>A</em><em>X</em>) = <em>A</em><sup>−1</sup><em>B</em></span></p></li>
+<li><p><span class="math display"><em>X</em> = <em>A</em><sup>−1</sup><em>B</em></span></p></li>
+<li><p>invert matrix by hand:</p>
+<ul>
+<li><span class="math display">$$A^{-1} = \frac{1}{det(A) adj(A)} $$</span></li>
+</ul></li>
+</ul></li>
+<li><p>equations of planes ii</p>
+<p>$ax + by + cz = d<span class="math display"> − <em>f</em><em>i</em><em>n</em><em>d</em><em>p</em><em>l</em><em>a</em><em>n</em><em>e</em><em>p</em><em>e</em><em>r</em><em>p</em><em>e</em><em>n</em><em>d</em><em>i</em><em>c</em><em>u</em><em>l</em><em>a</em><em>r</em><em>t</em><em>o</em><em>a</em><em>v</em><em>e</em><em>c</em><em>t</em><em>o</em><em>r</em> − <em>p</em><em>o</em><em>i</em><em>n</em><em>t</em><em>P</em><em>i</em><em>s</em><em>i</em><em>n</em><em>t</em><em>h</em><em>e</em><em>p</em><em>l</em><em>a</em><em>n</em><em>e</em>, <em>w</em><em>h</em><em>e</em><em>n</em><em>e</em><em>v</em><em>e</em><em>r</em></span> ċ <em>N⃗</em> = 0<span class="math display"> − <em>i</em><em>f</em><em>p</em><em>l</em><em>a</em><em>n</em><em>e</em><em>g</em><em>o</em><em>e</em><em>s</em><em>t</em><em>h</em><em>r</em><em>o</em><em>u</em><em>g</em><em>h</em><em>o</em><em>r</em><em>i</em><em>g</em><em>i</em><em>n</em>−</span>&lt;a, b, c&gt;<span class="math display">$$, is the normal vector for the plane
+
+- plane in point-normal form:
+  - need point $P_0$ and vector $N$ orthogonal to plane, we can also say $N$ is normal to the plane
+    - since the vector $$</span><span class="math display"><em>i</em><em>s</em><em>i</em><em>n</em><em>t</em><em>h</em><em>e</em><em>p</em><em>l</em><em>a</em><em>n</em><em>e</em>, <em>w</em><em>e</em><em>c</em><em>a</em><em>n</em><em>s</em><em>a</em><em>y</em></span>N ċ = 0$$</p></li>
+<li><p>linear systems and planes</p></li>
+<li><p>solutions to square systems</p></li>
+</ol>
 <h3 id="part-c-parametric-equations-for-curves">Part C: Parametric Equations for Curves</h3>
+<ol>
+<li><p>Session 15: Equations of Lines</p></li>
+<li><p>Session 16: Intersection of a Line and a Plane</p></li>
+<li><p>Session 17: General Parametric Equations; the Cycloid</p></li>
+<li><p>Session 18: Point (Cusp) on Cycloid</p></li>
+<li><p>Session 19: Velocity and Acceleration</p></li>
+<li><p>Session 20: Velocity and Arc Length</p></li>
+<li><p>Session 21: Kepler’s Second Law</p></li>
+</ol>
 <h2 id="partial-derivatives">Partial Derivatives</h2>
 <h3 id="part-a-functions-of-two-variables-tangent-approximation-and-optimization">Part A: Functions of Two Variables, Tangent Approximation and Optimization</h3>
+<ol>
+<li><p>Session 24: Functions of Two Variables: Graphs</p></li>
+<li><p>Session 25: Level Curves and Contour Plots</p></li>
+<li><p>Session 26: Partial Derivatives</p></li>
+<li><p>Session 27: Approximation Formula</p></li>
+<li><p>Session 28: Optimization Problems</p></li>
+<li><p>Session 29: Least Squares</p></li>
+<li><p>Session 30: Second Derivative Test</p></li>
+<li><p>Session 31: Example</p></li>
+</ol>
 <h3 id="part-b-chain-rule-gradient-and-directional-derivatives">Part B: Chain Rule, Gradient and Directional Derivatives</h3>
+<ol>
+<li><p>Session 32: Total Differentials and the Chain Rule</p></li>
+<li><p>Session 33: Examples</p></li>
+<li><p>Session 34: The Chain Rule with More Variables</p></li>
+<li><p>Session 35: Gradient: Definition, Perpendicular to Level Curves</p></li>
+<li><p>Session 36: Proof</p></li>
+<li><p>Session 37: Example</p></li>
+<li><p>Session 38: Directional Derivatives</p></li>
+</ol>
 <h3 id="part-c-lagrange-multipliers-and-constrained-differentials">Part C: Lagrange Multipliers and Constrained Differentials</h3>
+<ol>
+<li><p>Session 39: Statement of Lagrange Multipliers and Example</p></li>
+<li><p>Session 40: Proof of Lagrange Multipliers</p></li>
+<li><p>Session 41: Advanced Example</p></li>
+<li><p>Session 42: Constrained Differentials</p></li>
+<li><p>Session 43: Clearer Notation</p></li>
+<li><p>Session 44: Example</p></li>
+</ol>
 <h2 id="double-integrals-and-line-integrals-in-the-plane">Double Integrals and Line Integrals in the Plane</h2>
 <h3 id="part-a-double-integrals">Part A: Double Integrals</h3>
+<ol>
+<li><p>Session 47: Definition of Double Integration</p></li>
+<li><p>Session 48: Examples of Double Integration</p></li>
+<li><p>Session 49: Exchanging the Order of Integration</p></li>
+<li><p>Session 50: Double Integrals in Polar Coordinates</p></li>
+<li><p>Session 51: Applications: Mass and Average Value</p></li>
+<li><p>Session 52: Applications: Moment of Inertia</p></li>
+<li><p>Session 53: Change of Variables</p></li>
+<li><p>Session 54: Example: Polar Coordinates</p></li>
+<li><p>Session 55: Example</p></li>
+</ol>
 <h3 id="part-b-vector-fields-and-line-integrals">Part B: Vector Fields and Line Integrals</h3>
+<ol>
+<li><p>Session 56: Vector Fields</p></li>
+<li><p>Session 57: Work and Line Integrals</p></li>
+<li><p>Session 58: Geometric Approach</p></li>
+<li><p>Session 59: Example: Line Integrals for Work</p></li>
+<li><p>Session 60: Fundamental Theorem for Line Integrals</p></li>
+<li><p>Session 61: Conservative Fields, Path Independence, Exact Differentials</p></li>
+<li><p>Session 62: Gradient Fields</p></li>
+<li><p>Session 63: Potential Functions</p></li>
+<li><p>Session 64: Curl</p></li>
+</ol>
 <h3 id="part-c-greens-theorem">Part C: Green’s Theorem</h3>
+<ol>
+<li><p>Session 65: Green’s Theorem</p></li>
+<li><p>Session 66: Curl(F) = 0 Implies Conservative</p></li>
+<li><p>Session 67: Proof of Green’s Theorem</p></li>
+<li><p>Session 68: Planimeter: Green’s Theorem and Area</p></li>
+<li><p>Session 69: Flux in 2D</p></li>
+<li><p>Session 70: Normal Form of Green’s Theorem</p></li>
+<li><p>Session 71: Extended Green’s Theorem: Boundaries with Multiple Pieces</p></li>
+<li><p>Session 72: Simply Connected Regions and Conservative</p></li>
+</ol>
 <h2 id="triple-integrals-and-surface-integrals-in-3-space">Triple Integrals and Surface Integrals in 3-Space</h2>
 <h3 id="part-a-triple-integrals">Part A: Triple Integrals</h3>
+<ol>
+<li><p>Session 74: Triple Integrals: Rectangular and Cylindrical Coordinates</p></li>
+<li><p>Session 75: Applications and Examples</p></li>
+<li><p>Session 76: Spherical Coordinates</p></li>
+<li><p>Session 77: Triple Integrals in Spherical Coordinates</p></li>
+<li><p>Session 78: Applications: Gravitational Attraction</p></li>
+</ol>
 <h3 id="part-b-flux-and-the-divergence-theorem">Part B: Flux and the Divergence Theorem</h3>
-<h3 id="part-c-line-integrals-and-stokes-theorem">Part C: Line Integrals and Stokes’ Theorem</h3></div>
+<ol>
+<li><p>Session 79: Vector Fields in Space</p></li>
+<li><p>Session 80: Flux Through a Surface</p></li>
+<li><p>Session 81: Calculating Flux; Finding ndS</p></li>
+<li><p>Session 82: ndS for a Surface z = f(x, y)</p></li>
+<li><p>Session 83: Other Ways to Find ndS</p></li>
+<li><p>Session 84: Divergence Theorem</p></li>
+<li><p>Session 85: Physical Meaning of Flux; Del Notation</p></li>
+<li><p>Session 86: Proof of the Divergence Theorem</p></li>
+<li><p>Session 87: Diffusion Equation</p></li>
+</ol>
+<h3 id="part-c-line-integrals-and-stokes-theorem">Part C: Line Integrals and Stokes’ Theorem</h3>
+<ol>
+<li><p>Session 88: Line Integrals in Space</p></li>
+<li><p>Session 89: Gradient Fields and Potential Functions</p></li>
+<li><p>Session 90: Curl in 3D</p></li>
+<li><p>Session 91: Stokes’ Theorem</p></li>
+<li><p>Session 92: Proof of Stokes’ Theorem</p></li>
+<li><p>Session 93: Example</p></li>
+<li><p>Session 94: Simply Connected Regions; Topology</p></li>
+<li><p>Session 95: Stokes’ Theorem and Surface Independence</p></li>
+<li><p>Session 96: Summary of Multiple Integration</p></li>
+</ol></div>
   </div>
   <div class="flex-row link-no-style">
     
