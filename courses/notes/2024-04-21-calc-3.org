@@ -113,7 +113,8 @@ b_1 & b_2 & b_3\\
   - $$A^{-1} = \frac{1}{det(A) adj(A)} $$
 
 **** equations of planes ii
-$ax + by + cz = d$$
+$ax + by + cz = d$
+
 - find plane perpendicular to a vector
   - point P is in the plane, whenever $$\vec{OP} \cdot \vec{N} = 0$$
   - if plane goes through origin
