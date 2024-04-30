@@ -110,7 +110,7 @@ b_1 & b_2 & b_3\\
 - $$X = A^{-1} B$$
 
 - invert matrix by hand:
-  - $$A^{-1} = \frac{1}{det(A) adj(A)} $$
+  - $$A^{-1} = \frac{1}{det(A)}adj(A)$$
 
 **** equations of planes ii
 $ax + by + cz = d$
@@ -124,8 +124,35 @@ $ax + by + cz = d$
   - need point $P_0$ and vector $N$ orthogonal to plane, we can also say $N$ is normal to the plane
     - since the vector $$\vec{P_0 P}$$ is in the plane, we can say $$N \cdot \vec{P_0 P} = 0$$
 
+***** distance to plane/line
+1. point to plane: need a point $P$, plane with normal $$\vec{N}$$ and containing point $Q$
+   $$\text{distance} = |PR| = |\vec{PQ}| \text{cos} \theta = |\vec{PQ} \cdot \frac{N}{|N|}|$$
+2. point to line: point $P$, line with direction vector $v$ and containing point $Q$
+   $$d = |QP| \text{sin} \theta = |\vec{QP} \cdot \frac{v}{|v|}|$$
+3. distance between parallel planes
+   - reduce the problem to distance from point to plane
+4. distance between skew lines
+   - place lines in parallel planes and find distance between planes
+   - find normal $$M = v_1 \times v_2$$
+
 **** linear systems and planes
+- 3 planes intersect => two planes intersect and form a line => find the line that intersects in the third plane
+- if set of solutions to 3by3 linear system is not a single point =>  no solution, line or plane
+  - 3rd plane might be parallel to the line where the first two planes intersect
+    - if line contained in third plane: infinite solution
+    - if line is parallel to third plane and not contained, then there are no solutions
+
 **** solutions to square systems
+- can't always find the inverse of the matrix; when the determinant is 0
+- homogenous system: right hand side is 0
+  - origin is always a solution
+    - if $det(A)$ is not 0: can solve the system using inverse of A
+    - if $det(A) = 0$: $det(vec{N_1}, vec{N_2}, vec{N_3}) = 0$ then $vec{N_1}, vec{N_2}, vec{N_3}$ are coplanar (in the same plane)
+      - infinite many solutions
+- general case:
+  - if det(A) is not zero: $X = A^{-1} B$
+  - if det(A) is zero, either no solution or infinitely many solutions
+
 
 *** Part C: Parametric Equations for Curves
 **** Session 15: Equations of Lines

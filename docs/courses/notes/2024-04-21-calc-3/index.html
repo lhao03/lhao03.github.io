@@ -233,7 +233,7 @@ b_1 &amp; b_2 &amp; b_3\\
 <li><p><span class="math display"><em>X</em> = <em>A</em><sup>−1</sup><em>B</em></span></p></li>
 <li><p>invert matrix by hand:</p>
 <ul>
-<li><span class="math display">$$A^{-1} = \frac{1}{det(A) adj(A)} $$</span></li>
+<li><span class="math display">$$A^{-1} = \frac{1}{det(A)}adj(A)$$</span></li>
 </ul></li>
 </ul></li>
 <li><p>equations of planes ii</p>
@@ -252,9 +252,57 @@ b_1 &amp; b_2 &amp; b_3\\
 <li>since the vector <span class="math display">$$\vec{P_0 P}$$</span> is in the plane, we can say <span class="math display">$$N \cdot \vec{P_0 P} = 0$$</span></li>
 </ul></li>
 </ul></li>
+</ul>
+<ol>
+<li><p>distance to plane/line</p>
+<ol type="1">
+<li>point to plane: need a point <span class="math inline"><em>P</em></span>, plane with normal <span class="math display"><em>N⃗</em></span> and containing point <span class="math inline"><em>Q</em></span>
+<span class="math display">$$\text{distance} = |PR| = |\vec{PQ}| \text{cos} \theta = |\vec{PQ} \cdot \frac{N}{|N|}|$$</span></li>
+<li>point to line: point <span class="math inline"><em>P</em></span>, line with direction vector <span class="math inline"><em>v</em></span> and containing point <span class="math inline"><em>Q</em></span>
+<span class="math display">$$d = |QP| \text{sin} \theta = |\vec{QP} \cdot \frac{v}{|v|}|$$</span></li>
+<li>distance between parallel planes
+<ul>
+<li>reduce the problem to distance from point to plane</li>
 </ul></li>
-<li><p>linear systems and planes</p></li>
-<li><p>solutions to square systems</p></li>
+<li>distance between skew lines
+<ul>
+<li>place lines in parallel planes and find distance between planes</li>
+<li>find normal <span class="math display"><em>M</em> = <em>v</em><sub>1</sub> × <em>v</em><sub>2</sub></span></li>
+</ul></li>
+</ol></li>
+</ol></li>
+<li><p>linear systems and planes</p>
+<ul>
+<li>3 planes intersect =&gt; two planes intersect and form a line =&gt; find the line that intersects in the third plane</li>
+<li>if set of solutions to 3by3 linear system is not a single point =&gt; no solution, line or plane
+<ul>
+<li>3rd plane might be parallel to the line where the first two planes intersect
+<ul>
+<li>if line contained in third plane: infinite solution</li>
+<li>if line is parallel to third plane and not contained, then there are no solutions</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><p>solutions to square systems</p>
+<ul>
+<li>can’t always find the inverse of the matrix; when the determinant is 0</li>
+<li>homogenous system: right hand side is 0
+<ul>
+<li>origin is always a solution
+<ul>
+<li>if <span class="math inline"><em>d</em><em>e</em><em>t</em>(<em>A</em>)</span> is not 0: can solve the system using inverse of A</li>
+<li>if <span class="math inline"><em>d</em><em>e</em><em>t</em>(<em>A</em>) = 0</span>: <span class="math inline"><em>d</em><em>e</em><em>t</em>(<em>v</em><em>e</em><em>c</em><em>N</em><sub>1</sub>,<em>v</em><em>e</em><em>c</em><em>N</em><sub>2</sub>,<em>v</em><em>e</em><em>c</em><em>N</em><sub>3</sub>) = 0</span> then <span class="math inline"><em>v</em><em>e</em><em>c</em><em>N</em><sub>1</sub>, <em>v</em><em>e</em><em>c</em><em>N</em><sub>2</sub>, <em>v</em><em>e</em><em>c</em><em>N</em><sub>3</sub></span> are coplanar (in the same plane)
+<ul>
+<li>infinite many solutions</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li>general case:
+<ul>
+<li>if det(A) is not zero: <span class="math inline"><em>X</em> = <em>A</em><sup>−1</sup><em>B</em></span></li>
+<li>if det(A) is zero, either no solution or infinitely many solutions</li>
+</ul></li>
+</ul></li>
 </ol>
 <h3 id="part-c-parametric-equations-for-curves">Part C: Parametric Equations for Curves</h3>
 <ol>
