@@ -10,31 +10,36 @@ I'm officially starting to prep for grad schol (for real). These are my notes, a
 2. Select a well-rounded list of grad schools to apply to
 3. Narrow down what I realy want to do research in
 
-This is my 3rd (?) attempt at preparing to apply to grad school. My previous attempts at preparing to apply for grad school were for the areas of computer science (PL) and chemical biology, both areas which I felt were just not what I was looking for. This time I will be looking at school with the intention of studying physics, chemistry and computer science.
+This is my 3rd (?) attempt at preparing to apply to grad school. My previous attempts at preparing to apply for grad school were for the areas of computer science (PL) and chemical biology, both areas which I didn't completely align with. This time I will be looking at grad schools with the intention of studying physics, chemistry and computer science.
 
 === Canada
 
-[cols="1,1,1"]
+[cols="1,1,1,1"]
 |===
 | School
-|
-|
+| Masters/PhD?
+| Category
+| Link
 
 | UBC
-|Cell in column 2, row 2
-|Cell in column 2, row 2
+| Both
+| Target
+|
 
 | U of A
+| Both
+| Target
 |https://www.ualberta.ca/graduate-programs/chemistry.html
-|Cell in column 2, row 2
 
 | U of C
-|Cell in column 2, row 2
-|Cell in column 2, row 2
+| Both
+| Safe
+| Cell in column 2, row 2
 
 | U of T
-|Cell in column 2, row 2
-|Cell in column 2, row 2
+| Both
+| Target+
+|
 |===
 
 === USA
@@ -45,27 +50,33 @@ This is my 3rd (?) attempt at preparing to apply to grad school. My previous att
 * https://chemistry.stanford.edu/academics/phd-program/admissions/how-apply
 
 === Europe
-[cols="1,1,1"]
+[cols="1,1,1,1"]
 |===
 | School
-|
-|
+| Masters/PhD?
+| Category
+| Link
 
 | Oxford
 |Cell in column 2, row 2
-|Cell in column 2, row 2
+| Target++
+|
+
 
 | ETH Zurich
 |Cell in column 2, row 2
-|Cell in column 2, row 2
+| Target++
+|
 
 | Max Planck Institute
 |Cell in column 2, row 2
-|Cell in column 2, row 2
+| Target++
+|
 
 | Cambridge
 |Cell in column 2, row 2
-|Cell in column 2, row 2
+| Target++
+|
 |===
 
 * https://ethz.ch/en/doctorate/finding-a-place.html
@@ -103,30 +114,12 @@ Funding]
 
 == Topics I’m interested in (not in any order)
 
-* Operating Systems
-* Compilers
+* Chemical Physics
+* Theoretical Chemistry
+* Computational Chemistry
+* Physical Chemistry
 * Programming Languages
 * Computer Science Education
-* Chemical Biology
-* Antiviral strategies & antiviral therapeutics
-
-== Journals/Conferences
-
-* https://dl.acm.org/journal/fac[Formal Aspects of Computing]
-* https://dl.acm.org/journal/tecs[ACM Transactions on Embedded Computing
-Systems]
-* https://dl.acm.org/toc/jetc[ACM Journal on Emerging Technologies in
-Computing Systems]
-* https://dl.acm.org/toc/pacmpl[Proceedings of the ACM on Programming
-Languages]
-* https://dl.acm.org/toc/taco[ACM Transactions on Architecture and Code
-Optimization]
-* https://dl.acm.org/toc/tcbb[IEEE/ACM Transactions on Computational
-Biology and Bioinformatics]
-* https://dl.acm.org/toc/toce[ACM Transactions on Computing Education]
-* https://dl.acm.org/toc/toplas[ACM Transactions on Programming
-Languages and Systems]
-* https://aosabook.org/en/index.html[Architecture of OSS]
 
 == Schools, Advisors, Application Details
 

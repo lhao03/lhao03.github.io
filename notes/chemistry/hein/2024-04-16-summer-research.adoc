@@ -1,0 +1,62 @@
+---
+title: Summer Research Notes
+---
+
+== project ideas
+- verifier
+- melting (background distinction, different sources of light)
+
+== log
+=== week 1
+==== day 1
+seems like i'm the first undergraduate in the lab.
+
+links:
+* https://github.com/SintefManufacturing/python-urx (api for running the universal robots)
+* https://ollama.com/
+
+
+== papers
+=== read
+- https://link.springer.com/article/10.1007/s10514-023-10136-2[Large language models for chemistry robotics]
+- https://pubs.rsc.org/en/Content/ArticleLanding/2023/RE/D3RE00583F[Applying quantum mechanics to deconvolute benchtop 1H NMR reaction data]
+- https://www.cell.com/trends/chemistry/fulltext/S2589-5974(19)30186-8[Universal Chemical Synthesis and Discovery with ‘The Chemputer’]
+- https://www.science.org/doi/10.1126/science.abc2986[A universal system for digitization and automatic execution of the chemical synthesis literature]
+
+=== reading
+
+=== to read
+- https://link.springer.com/article/10.1007/s10514-018-9792-8?fromPaywallRec=false
+- https://www.nature.com/articles/s44160-023-00473-6[Universal chemical programming language for robotic synthesis repeatability]
+** no access via UBC
+- https://www.sciencedirect.com/science/article/abs/pii/S2667109323002191?dgcid=author[Liquid/liquid heterogeneous reaction monitoring: Insights into biphasic Suzuki-Miyaura cross-coupling]
+- https://croningroup.gitlab.io/chemputer/xdl/
+- https://ac-rad.github.io/clairify/
+- https://www.nature.com/articles/s41467-024-45444-3[An integrated self-optimizing programmable chemical synthesis and reaction engine]
+- https://www.nature.com/articles/s41557-020-00596-9[Convergence of multiple synthetic paradigms in a universally programmable chemical synthesis machine]
+- https://pubs.acs.org/doi/abs/10.1021/c160043a004[Factors Affecting Dissemination of Chemical Information]
+- https://www.nature.com/articles/s41586-020-2442-2[A mobile robotic chemist]
+- https://www.hindawi.com/journals/jamc/1985/513591/[A fully automatic apparatus for chemical reactions on the laboratory scale]
+- https://www.science.org/doi/10.1126/sciadv.aaz8867[Self-driving laboratory for accelerated discovery of thin-film materials]
+- https://www.chem.gla.ac.uk/cronin/
+- https://github.com/SintefManufacturing/python-urx
+- https://www.ijcai.org/Proceedings/07/Papers/292.pdf
+- https://github.com/caelan/pddlstream
+- https://link.springer.com/article/10.1007/s10514-023-10135-3?fromPaywallRec=false
+- https://progprompt.github.io/
+- https://www.cs.cornell.edu/~valts/
+- https://arxiv.org/abs/2204.05186
+- https://link.springer.com/article/10.1007/s10514-018-9792-8?fromPaywallRec=false
+- https://arxiv.org/pdf/2303.14100
+- https://www.ijcai.org/Proceedings/07/Papers/292.pdf
+- https://arxiv.org/abs/1802.08705
+- https://progprompt.github.io/
+- https://arxiv.org/abs/2204.05186
+- https://www.cs.cornell.edu/~valts/
+- https://link.springer.com/chapter/10.1007/978-3-319-67190-1_30?fromPaywallRec=false
+- https://link.springer.com/article/10.1007/s10514-023-10136-2
+- https://github.com/ac-rad/xdl-generation/tree/master
+- https://ac-rad.github.io/clairify/
+- https://www.nature.com/articles/s41586-023-06600-9
+- https://www.nature.com/articles/s41467-020-15190-3?fromPaywallRec=false
+- https://www.nature.com/articles/s41467-024-45896-7

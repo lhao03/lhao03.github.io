@@ -1,0 +1,4 @@
+---
+title: Grounding natural language instructions to semantic goal representations for abstraction and generalization
+date: 2024-05-01
+---

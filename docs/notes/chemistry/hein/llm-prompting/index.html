@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lucy H | PROGPROMPT: program generation for situated robot task planning using large language models</title>
+  <link rel="stylesheet" href="../../../../css/main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
+  <!-- and it's easy to individually load additional languages -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/languages/scheme.min.js"></script>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/base16/onedark.min.css" />
+  <script>
+    hljs.highlightAll();
+  </script>
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+  <link rel="preconnect" href="https://www.googletagmanager.com" />
+  <link rel="preconnect" href="https://www.google-analytics.com" />
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KDGPVMHC9Q"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-KDGPVMHC9Q");
+  </script>
+
+  <!-- basic favicon -->
+  <link rel="icon" href="../../../../images/android-chrome-384x384.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../../../images/android-chrome-384x384.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../../../images/android-chrome-384x384.png" />
+  <link rel="apple-touch-icon-precomposed" href="../../../../images/android-chrome-384x384.png" />
+</head>
+
+  <body>
+    <main role="main">
+      <div class="flex-row-col">
+        <div>
+          <h1>PROGPROMPT: program generation for situated robot task planning using large language models</h1>
+          <div>
+  
+  <div class="header">
+    Posted on May  1, 2024
+    
+  </div>
+  <div class="tags">
+    
+  </div>
+  <div class="content">
+    <div class="ulist">
+<ul>
+<li>
+<p>tasks require commonsense:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>object affordances</p>
+</li>
+<li>
+<p>logical sequence of actions</p>
+</li>
+<li>
+<p>task relevance of objects/actions</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>but this requires: state feedback/knowledge of current environment</p>
+</li>
+<li>
+<p>provide LLM with</p>
+<div class="ulist">
+<ul>
+<li>
+<p>with Pythonic header with import statement for availble actions and their parameters,</p>
+</li>
+<li>
+<p>list of environment objects,</p>
+</li>
+<li>
+<p>function definitions</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>preconditions</p>
+</li>
+<li>
+<p>respond to failed assertions with recovery actions</p>
+</li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="_backgroundrelated_work">background/related work</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>heuristics to guide search</p>
+</li>
+<li>
+<p>task planning as a tuple (O, P, A, T, I, G, t)</p>
+<div class="ulist">
+<ul>
+<li>
+<p>O: objects</p>
+</li>
+<li>
+<p>P: properties ⇒ object affordances</p>
+</li>
+<li>
+<p>A: set of executable actions, changes depending on current state</p>
+<div class="ulist">
+<ul>
+<li>
+<p>state s is specific assignment of all objects</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>prompt for task planning:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>prompting function: transform input state into textual prompt</p>
+</li>
+<li>
+<p>answer search: generation step</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>open-ended task planning: generated plans with non existant objects</p>
+<div class="ulist">
+<ul>
+<li>
+<p>programming language inspired prompt generator → inform LLM of situatated environment state + avalible robot actions</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>" PDDL as the translation language instead of code, and use the LLM to generate either a PDDL plan or the goal. …​ This approach ablated the need to generate preconditions using the LLM, however, needs the domain rules to be specified for the planner."</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_progprompt">progprompt</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>robot plans as pythonic code</p>
+</li>
+<li>
+<p>intermediate summaries, chain of thought</p>
+</li>
+<li>
+<p>assertions</p>
+</li>
+<li>
+<p>provide LLM with examples/samples</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>5/14</p>
+</div>
+</div>
+</div>
+
+  </div>
+  <div class="flex-row link-no-style">
+    
+    
+  </div>
+</div>
+
+
+        </div>
+        <div class="sidebar">
+  <a href="../../../../"><h2>Lucy Hao</h2></a>
+  <a href="../../../../archive"><h3>Thoughts</h3></a>
+  <a href="../../../../notes"><h3>Notes</h3></a>
+  <a href="../../../../books"><h3>Books</h3></a>
+  <a href="../../../../courses"><h3>Courses</h3></a>
+  <a href="../../../../cv/cv.pdf"><h3>CV/Resume</h3></a>
+</div>
+
+      </div>
+    </main>
+
+    <footer>
+      <center>
+        <p>
+          <a href="../../../../archive">archive</a>
+          <a href="https://github.com/lhao03" target="_blank">github</a>
+          <a href="https://www.linkedin.com/in/lucy-hao/" target="_blank">linkedin</a>
+        </p>
+      </center>
+      Site powered by cats, 🍫 and
+      <a href="http://jaspervdj.be/hakyll">Hakyll</a>
+    </footer>
+  </body>
+</html>

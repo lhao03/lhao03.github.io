@@ -5,41 +5,56 @@ tags: life
 ---
 :toc:
 
-i am tracking my days again. here are the things left to do.
+quick daily brain dump. things i wanna write down.
 
-=== research
+=== research/grad school
 * [*] read over papers/u of t implementation
-* read over some hein lab papers
-* review math 200
-* check out cpsc 303/302 online
-* email around 25-29 about start date/tasks
+* [*] read over some hein lab papers
+* [*] email around 25-29 about start date/tasks
+* [ ] start SOP
+* [ ] review math 200
+* [ ] check out cpsc 303/302 online
+* [ ] check out https://edge.edx.org/courses/course-v1:UBC+PHYS117V+2021W1/9f94112aa5f742f9b455b90d50c40611/[phys 131]
+* [ ] check out phys 2xx
+* [ ] check out https://personal.math.ubc.ca/~gustaf/M316/notes.php[math 316]
 
 === iGEM
-* email jordan?
-* email math prof guy
-* email dr. condon
-* prepare figma for wiki
-* pick wiki framework
-* send out drylab feedback form
-* set up drylab one on one
+* [ ] email jordan?
+* [ ] email math prof guy
+* [ ] email dr. condon
+* [ ] prepare figma for wiki
+* [ ] pick wiki framework
+* [ ] send out drylab feedback form
+* [ ] set up drylab one on one
 
-== april 29
-* [ ]
-* [ ]
-* [ ]
-* [ ]
+== life
+* https://kardium.com/careers/4360398006/?gh_jid=4360398006
 
-== april 28
-* [ ] prepare codebase for work
+== May 2
+* [ ] run
+
+== May 1
+* [*] gym
+* [ ] prepare codebase for igem
 ** [ ] add dummyencoder/dummercompression to software
 * [ ] finish primer library
-* [ ] https://kardium.com/careers/4360398006/?gh_jid=4360398006
-* [ ] clean apartment
-* [ ] finish math part A
+* [ ] finish math part C and start next section
+* [ ] read research papers
 * [ ] grad school research
 ** [ ] start SOP
+
+== april 30
+* [*] clean apartment
+* [*] do math questions
+* [*] figure out what to do during 2-4 pm (really sleepy)
+* [*] gym and run
+
+== april 29
+
+== april 28
+* [*] finish math part A
+* [*] grad school research
 * [*] run
-* [ ] figure out what to do during 2-4 pm (really sleepy)
 
 == april 27
 * [*] up at 600

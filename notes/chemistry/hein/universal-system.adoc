@@ -1,0 +1,18 @@
+---
+title: A universal system for digitization and automatic execution of the chemical synthesis literature
+date: 2024-05-01
+---
+
+* current automation shifts labor from manual to programming
+* chemputer requires manual translation
+* need universal chemical language => universal chemistry-orientated DSL => map methodology to hardware-agnostic chemical instruction
+* make chemical literature directly
+* propose XDL (kai DL): processes taking place in abstract vessels with abstract hardware => determines which pieces of hardware are required
+* creation of ChemIDE => way for chemist to put in synthesis without actually seeing the code => import literature using SynthReader
+** tagging text with relavent entities => convert tagged text to list of actions => add implicit process information + concreate reagent locations
+* steps are connected by processes
+* SynthReader => domain specific algorithm with predefined rules
+** "and can be easily augmented withnew rules, as the design is deterministic."
+* expand each XDL into a tree
+* XDL library currently has "low-level" constraints => hope to expand with reaction types
+** chemical code written against a chemical virutal machine
