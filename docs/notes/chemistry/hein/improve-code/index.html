@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Lucy H | PROGPROMPT: program generation for situated robot task planning using large language models</title>
+  <title>Lucy H | PICARD</title>
   <link rel="stylesheet" href="../../../../css/main.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/default.min.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
@@ -43,11 +43,11 @@
     <main role="main">
       <div class="flex-row-col">
         <div>
-          <h1>PROGPROMPT: program generation for situated robot task planning using large language models</h1>
+          <h1>PICARD</h1>
           <div>
   
   <div class="header">
-    Posted on May  1, 2024
+    Posted on May  3, 2024
     
   </div>
   <div class="tags">
@@ -55,151 +55,72 @@
   </div>
   <div class="content">
     <div class="paragraph">
-<p>source: <a href="https://arxiv.org/abs/2209.11302" class="bare">https://arxiv.org/abs/2209.11302</a></p>
+<p>started off with this paper, but doesn’t really apply to our use case.</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>tasks require commonsense:</p>
+<p><a href="https://arxiv.org/html/2403.01632v1" class="bare">https://arxiv.org/html/2403.01632v1</a></p>
+</li>
+<li>
+<p>use of the PLs CFG and the end of LLM code generation → remove presence of incorrect tokens</p>
+</li>
+<li>
+<p>previous versions: PICARD → applied to DSLs → detect syntaz errors after generation: <a href="https://arxiv.org/pdf/2109.05093" class="bare">https://arxiv.org/pdf/2109.05093</a></p>
+</li>
+<li>
+<p>LLMs → operate on vocabulary of tokens → choose the token that is most likely to be correct</p>
 <div class="ulist">
 <ul>
 <li>
-<p>object affordances</p>
-</li>
-<li>
-<p>logical sequence of actions</p>
-</li>
-<li>
-<p>task relevance of objects/actions</p>
+<p>probability distribution generated via softmax</p>
 </li>
 </ul>
 </div>
 </li>
 <li>
-<p>but this requires: state feedback/knowledge of current environment</p>
-</li>
-<li>
-<p>provide LLM with</p>
+<p>syntactical decoding problem:</p>
 <div class="ulist">
 <ul>
 <li>
-<p>with Pythonic header with import statement for availble actions and their parameters,</p>
+<p>synchromesh: iterate over V, and for each token, parses that token plus the partial code, to see if it is in the grammer, and returns possible next tokens → takes a long time, large overhead</p>
 </li>
 <li>
-<p>list of environment objects,</p>
+<p>PICARD: only applicable to DSLs</p>
 </li>
 <li>
-<p>function definitions</p>
+<p>syncode: can combine with any LLM decoding algorithm</p>
+<div class="ulist">
+<ul>
+<li>
+<p>DFA mask store</p>
+</li>
+<li>
+<p>during LLM decoding stage: first → generate accept sequences, second → computes remainder from partial code</p>
 </li>
 </ul>
 </div>
 </li>
-<li>
-<p>preconditions</p>
-</li>
-<li>
-<p>respond to failed assertions with recovery actions</p>
+</ul>
+</div>
 </li>
 </ul>
 </div>
 <div class="sect1">
-<h2 id="_backgroundrelated_work">background/related work</h2>
+<h2 id="_picard">PICARD</h2>
 <div class="sectionbody">
 <div class="ulist">
 <ul>
 <li>
-<p>heuristics to guide search</p>
+<p><a href="https://arxiv.org/pdf/2109.05093" class="bare">https://arxiv.org/pdf/2109.05093</a></p>
 </li>
 <li>
-<p>task planning as a tuple (O, P, A, T, I, G, t)</p>
-<div class="ulist">
-<ul>
-<li>
-<p>O: objects</p>
-</li>
-<li>
-<p>P: properties ⇒ object affordances</p>
-</li>
-<li>
-<p>A: set of executable actions, changes depending on current state</p>
-<div class="ulist">
-<ul>
-<li>
-<p>state s is specific assignment of all objects</p>
-</li>
-</ul>
-</div>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>prompt for task planning:</p>
-<div class="ulist">
-<ul>
-<li>
-<p>prompting function: transform input state into textual prompt</p>
-</li>
-<li>
-<p>answer search: generation step</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>open-ended task planning: generated plans with non existant objects</p>
-<div class="ulist">
-<ul>
-<li>
-<p>programming language inspired prompt generator → inform LLM of situatated environment state + avalible robot actions</p>
-</li>
-</ul>
-</div>
+<p>rejecting inadmissable tokens at each decoding step</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
-<p>" PDDL as the translation language instead of code, and use the LLM to generate either a PDDL plan or the goal. …​ This approach ablated the need to generate preconditions using the LLM, however, needs the domain rules to be specified for the planner."</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_progprompt">progprompt</h2>
-<div class="sectionbody">
-<div class="ulist">
-<ul>
-<li>
-<p>robot plans as pythonic code</p>
-</li>
-<li>
-<p>intermediate summaries, chain of thought</p>
-</li>
-<li>
-<p>assertions for environment feedback + error recovery</p>
-</li>
-<li>
-<p>provide LLM with examples/samples</p>
-</li>
-<li>
-<p>objects with state</p>
-</li>
-<li>
-<p>use program like prompt</p>
-</li>
-<li>
-<p>LLM strengthes: commonsense reasoning and code understanding</p>
-</li>
-</ul>
-</div>
-<div class="sect2">
-<h3 id="_personal_thoughts">personal thoughts</h3>
-<div class="ulist">
-<ul>
-<li>
-<p>verifier needs to be some type of graph</p>
-</li>
-</ul>
-</div>
+<p>all these methods are at the decoding step</p>
 </div>
 </div>
 </div>

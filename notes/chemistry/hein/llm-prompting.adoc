@@ -2,6 +2,7 @@
 title: "PROGPROMPT: program generation for situated robot task planning using large language models"
 date: 2024-05-01
 ---
+source: https://arxiv.org/abs/2209.11302
 
 * tasks require commonsense:
 ** object affordances
@@ -37,7 +38,11 @@ date: 2024-05-01
 == progprompt
 * robot plans as pythonic code
 * intermediate summaries, chain of thought
-* assertions
+* assertions for environment feedback + error recovery
 * provide LLM with examples/samples
+* objects with state
+* use program like prompt
+* LLM strengthes: commonsense reasoning and code understanding
 
-5/14
+=== personal thoughts
+* verifier needs to be some type of graph

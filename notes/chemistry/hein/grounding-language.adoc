@@ -1,0 +1,21 @@
+---
+title: "Do As I Can, Not As I Say: Grounding Language in Robotic Affordances"
+date: 2024-05-02
+---
+
+"With prompt engineering, a LLM may be capable of splitting the high-level instruction into sub-tasks, but it cannot do so without the context of what the robot is capable of given its abilities and the current state of the robot and the environment."
+
+* robot has atomic behaviours
+* system recieves user-provided natural language instruction and set of skills
+* probability given skill makes progress towards completing instruction
+* constraints
+
+"Prompt engineering provides examples in the context text (“prompt”) for the model that specify the task and the response structure which the model will emulate;"
+
+* value function scores => should output this score
+* iteratively append skills that increase value function
+* assume optimal set of skills is currently static
+
+"The key idea of SayCan is to ground large language models through value functions – affordance functions that capture the log likelihood that a particular skill will be able to succeed in the current state."
+
+* language conditioned robotic control policies: instantiate robot with set of skills with policy, value function, short description

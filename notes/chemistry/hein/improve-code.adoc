@@ -1,0 +1,29 @@
+---
+title: PICARD
+date: 2024-05-03
+---
+
+started off with this paper, but doesn't really apply to our use case.
+
+* https://arxiv.org/html/2403.01632v1
+
+* use of the PLs CFG and the end of LLM code generation -> remove presence of incorrect tokens
+* previous versions: PICARD -> applied to DSLs -> detect syntaz errors after generation: https://arxiv.org/pdf/2109.05093
+
+* LLMs -> operate on vocabulary of tokens -> choose the token that is most likely to be correct
+** probability distribution generated via softmax
+
+* syntactical decoding problem:
+**  synchromesh: iterate over V, and for each token, parses that token plus the partial code, to see if it is in the grammer, and returns possible next tokens -> takes a long time, large overhead
+** PICARD: only applicable to DSLs
+** syncode: can combine with any LLM decoding algorithm
+*** DFA mask store
+*** during LLM decoding stage: first -> generate accept sequences, second -> computes remainder from partial code
+
+
+== PICARD
+* https://arxiv.org/pdf/2109.05093
+* rejecting inadmissable tokens at each decoding step
+
+
+all these methods are at the decoding step

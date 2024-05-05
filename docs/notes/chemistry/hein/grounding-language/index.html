@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Lucy H | PROGPROMPT: program generation for situated robot task planning using large language models</title>
+  <title>Lucy H | Do As I Can, Not As I Say: Grounding Language in Robotic Affordances</title>
   <link rel="stylesheet" href="../../../../css/main.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/default.min.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
@@ -43,11 +43,11 @@
     <main role="main">
       <div class="flex-row-col">
         <div>
-          <h1>PROGPROMPT: program generation for situated robot task planning using large language models</h1>
+          <h1>Do As I Can, Not As I Say: Grounding Language in Robotic Affordances</h1>
           <div>
   
   <div class="header">
-    Posted on May  1, 2024
+    Posted on May  2, 2024
     
   </div>
   <div class="tags">
@@ -55,153 +55,49 @@
   </div>
   <div class="content">
     <div class="paragraph">
-<p>source: <a href="https://arxiv.org/abs/2209.11302" class="bare">https://arxiv.org/abs/2209.11302</a></p>
+<p>"With prompt engineering, a LLM may be capable of splitting the high-level instruction into sub-tasks, but it cannot do so without the context of what the robot is capable of given its abilities and the current state of the robot and the environment."</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>tasks require commonsense:</p>
-<div class="ulist">
-<ul>
-<li>
-<p>object affordances</p>
+<p>robot has atomic behaviours</p>
 </li>
 <li>
-<p>logical sequence of actions</p>
+<p>system recieves user-provided natural language instruction and set of skills</p>
 </li>
 <li>
-<p>task relevance of objects/actions</p>
-</li>
-</ul>
-</div>
+<p>probability given skill makes progress towards completing instruction</p>
 </li>
 <li>
-<p>but this requires: state feedback/knowledge of current environment</p>
-</li>
-<li>
-<p>provide LLM with</p>
-<div class="ulist">
-<ul>
-<li>
-<p>with Pythonic header with import statement for availble actions and their parameters,</p>
-</li>
-<li>
-<p>list of environment objects,</p>
-</li>
-<li>
-<p>function definitions</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>preconditions</p>
-</li>
-<li>
-<p>respond to failed assertions with recovery actions</p>
-</li>
-</ul>
-</div>
-<div class="sect1">
-<h2 id="_backgroundrelated_work">background/related work</h2>
-<div class="sectionbody">
-<div class="ulist">
-<ul>
-<li>
-<p>heuristics to guide search</p>
-</li>
-<li>
-<p>task planning as a tuple (O, P, A, T, I, G, t)</p>
-<div class="ulist">
-<ul>
-<li>
-<p>O: objects</p>
-</li>
-<li>
-<p>P: properties ⇒ object affordances</p>
-</li>
-<li>
-<p>A: set of executable actions, changes depending on current state</p>
-<div class="ulist">
-<ul>
-<li>
-<p>state s is specific assignment of all objects</p>
-</li>
-</ul>
-</div>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>prompt for task planning:</p>
-<div class="ulist">
-<ul>
-<li>
-<p>prompting function: transform input state into textual prompt</p>
-</li>
-<li>
-<p>answer search: generation step</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>open-ended task planning: generated plans with non existant objects</p>
-<div class="ulist">
-<ul>
-<li>
-<p>programming language inspired prompt generator → inform LLM of situatated environment state + avalible robot actions</p>
-</li>
-</ul>
-</div>
+<p>constraints</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
-<p>" PDDL as the translation language instead of code, and use the LLM to generate either a PDDL plan or the goal. …​ This approach ablated the need to generate preconditions using the LLM, however, needs the domain rules to be specified for the planner."</p>
+<p>"Prompt engineering provides examples in the context text (“prompt”) for the model that specify the task and the response structure which the model will emulate;"</p>
 </div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_progprompt">progprompt</h2>
-<div class="sectionbody">
 <div class="ulist">
 <ul>
 <li>
-<p>robot plans as pythonic code</p>
+<p>value function scores ⇒ should output this score</p>
 </li>
 <li>
-<p>intermediate summaries, chain of thought</p>
+<p>iteratively append skills that increase value function</p>
 </li>
 <li>
-<p>assertions for environment feedback + error recovery</p>
-</li>
-<li>
-<p>provide LLM with examples/samples</p>
-</li>
-<li>
-<p>objects with state</p>
-</li>
-<li>
-<p>use program like prompt</p>
-</li>
-<li>
-<p>LLM strengthes: commonsense reasoning and code understanding</p>
+<p>assume optimal set of skills is currently static</p>
 </li>
 </ul>
 </div>
-<div class="sect2">
-<h3 id="_personal_thoughts">personal thoughts</h3>
+<div class="paragraph">
+<p>"The key idea of SayCan is to ground large language models through value functions – affordance functions that capture the log likelihood that a particular skill will be able to succeed in the current state."</p>
+</div>
 <div class="ulist">
 <ul>
 <li>
-<p>verifier needs to be some type of graph</p>
+<p>language conditioned robotic control policies: instantiate robot with set of skills with policy, value function, short description</p>
 </li>
 </ul>
-</div>
-</div>
-</div>
 </div>
 
   </div>

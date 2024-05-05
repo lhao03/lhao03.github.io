@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Lucy H | Academic Regrets and Future Plans</title>
+  <title>Lucy H | Grammar Prompting for Domain-Specific Language Generation with Large Language Models</title>
   <link rel="stylesheet" href="../../../../css/main.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/default.min.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
@@ -43,21 +43,67 @@
     <main role="main">
       <div class="flex-row-col">
         <div>
-          <h1>Academic Regrets and Future Plans</h1>
+          <h1>Grammar Prompting for Domain-Specific Language Generation with Large Language Models</h1>
           <div>
   
   <div class="header">
-    Posted on April 16, 2024
+    Posted on May  3, 2024
     
   </div>
   <div class="tags">
     
-    Tags: school
-    
   </div>
   <div class="content">
-    <div class="paragraph">
-<p>I’ve always been able to reap the success of extremes, without the consequences.</p>
+    <div class="ulist">
+<ul>
+<li>
+<p><a href="https://arxiv.org/pdf/2305.19234" class="bare">https://arxiv.org/pdf/2305.19234</a></p>
+</li>
+<li>
+<p><a href="https://github.com/berlino/grammar-prompting" class="bare">https://github.com/berlino/grammar-prompting</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>"This approach is however inadequate for applications where the task specifications cannot be fully delineated through just a handful of exemplars, for example in semantic parsing where an LLM must translate a natural language utterance to an executable program in a domain-specific language (DSL)"</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>many DSLs have not been seen during pretraining, so how to use LLMs to to generate strings → grammer prompting</p>
+<div class="ulist">
+<ul>
+<li>
+<p>given an input LLM tries to predict BNF grammar, then generates answer based on grammar</p>
+</li>
+<li>
+<p>similar to enhancing work by interleaving intermediate "reasoning" steps between each in-context input and output</p>
+</li>
+<li>
+<p>intermediate variable is form of formal grammer</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>design constrained LLM decoding algorithm tailored to grammar prompting
+<span class="image"><img src="../../../images/hein/grammar-prompt.png" alt="grammar prompt"></span></p>
+</li>
+<li>
+<p>constrained decoding:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Earley parser → challenging if only using API based LLM</p>
+</li>
+<li>
+<p>instead, Earley-based parser, steps are:
+<span class="image"><img src="../../../image/hein/earley-based.png" alt="earley based"></span></p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
 </div>
 
   </div>

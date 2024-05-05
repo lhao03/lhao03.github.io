@@ -156,8 +156,23 @@ $ax + by + cz = d$
 
 *** Part C: Parametric Equations for Curves
 **** Session 15: Equations of Lines
+- intersection of 2 planes
+- trajectory of moving point
+- paramatric form: point moving in space traces out path over time => position of point and time
+- parametric form: equation of line that passes through the point P and is parallel to the vector $\vec{v}$
+  $$\vec{r} = \vec{r}_0 + t \vec{v} = <x_0 + t v_1 ,y_0 + t v_2, z_0 + t v_3>$$, where $$\vec{r}_0$$ is the vector using the point P
+  - then you break the vector into equations
+- parametric form: intersection of two planes
+- parametric form: line through two points
+
 **** Session 16: Intersection of a Line and a Plane
+- two points vs. a line
+  - substitute the point, and see if value is larger than the sum of the unknowns => tells you which side the points are on
+- if line is in the plane, than plugging (x(t), y(t), z(t)), we always get the value for the plane
+- if the line is parallel to the plane, then never get that value, get another constant
+
 **** Session 17: General Parametric Equations; the Cycloid
+
 **** Session 18: Point (Cusp) on Cycloid
 **** Session 19: Velocity and Acceleration
 **** Session 20: Velocity and Arc Length
