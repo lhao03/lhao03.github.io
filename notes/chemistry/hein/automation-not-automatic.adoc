@@ -1,0 +1,29 @@
+---
+title: "Automation isn't automatic"
+date: 2024-05-08
+---
+
+== introduction
+* recent shift to flexible, modular systems with autonomous decision making vs. simple automation
+* how can we automate synthethic chemistry in general?
+* three categories to consider
+** equipment considerations
+** experimental considerations
+** data and software
+
+== equipment considerations
+* translocation:
+** cartesian: a needle in the z-axis, moving in the xy plane
+*** researcher must adapt workflow to actions the robot can perform
+** SCARA: a bit better
+** universal robots UR3: widest range of motion (6 DoFs)
+
+=== robustness and maintenance
+* components being unable to perform needed task
+* system failures due to improper coding
+* the more complicated the system gets, the more reliability checks are required to not break the system
+
+=== planning
+* design of experiments (DoE) /principal component analysis (PCA)
+* special chemical requirements
+* feedback control: automated-design making -> define experimental goal with conditional instructions, and system makes decisions autonomously

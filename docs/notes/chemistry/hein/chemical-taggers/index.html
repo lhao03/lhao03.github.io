@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lucy H | Chemistry POS Taggers</title>
+  <link rel="stylesheet" href="../../../../css/main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
+  <!-- and it's easy to individually load additional languages -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/languages/scheme.min.js"></script>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/base16/onedark.min.css" />
+  <script>
+    hljs.highlightAll();
+  </script>
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+  <link rel="preconnect" href="https://www.googletagmanager.com" />
+  <link rel="preconnect" href="https://www.google-analytics.com" />
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KDGPVMHC9Q"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-KDGPVMHC9Q");
+  </script>
+
+  <!-- basic favicon -->
+  <link rel="icon" href="../../../../images/android-chrome-384x384.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../../../images/android-chrome-384x384.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../../../images/android-chrome-384x384.png" />
+  <link rel="apple-touch-icon-precomposed" href="../../../../images/android-chrome-384x384.png" />
+</head>
+
+  <body>
+    <main role="main">
+      <div class="flex-row-col">
+        <div>
+          <h1>Chemistry POS Taggers</h1>
+          <div>
+  
+  <div class="header">
+    Posted on May 10, 2024
+    
+  </div>
+  <div class="tags">
+    
+  </div>
+  <div class="content">
+    <div class="sect2">
+<h3 id="_synthreader">synthreader</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://eprints.gla.ac.uk/221626/1/221626.pdf" class="bare">https://eprints.gla.ac.uk/221626/1/221626.pdf</a></p>
+</li>
+<li>
+<p>tagging text with relevant entities → list of actions → add implicit process information and concrete reagent locations → output procedure in XDL format</p>
+</li>
+<li>
+<p>DSL with predefined rules → good with mechanical/structured language</p>
+</li>
+<li>
+<p>text to XDL:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>tagging: different parts are tagged as reagent, volumes, temperatures</p>
+<div class="ulist">
+<ul>
+<li>
+<p>reagent names: pattern matching with database of common reagent names then naive Bayes classifier to determine whether candidate phrases are reagent names</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>interpretation</p>
+</li>
+<li>
+<p>conversion</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>human/chemist intervention is required to ensure everything is correct</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_chemicaltagger">chemicaltagger</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://jcheminf.biomedcentral.com/articles/10.1186/1758-2946-3-17" class="bare">https://jcheminf.biomedcentral.com/articles/10.1186/1758-2946-3-17</a></p>
+</li>
+<li>
+<p>semantic text-mining in chemistry</p>
+</li>
+<li>
+<p>highly formulaic way of writing</p>
+<div class="ulist">
+<ul>
+<li>
+<p>highly stylized and formulaic language → we have working solutions for text written like this</p>
+</li>
+<li>
+<p>stock phrases</p>
+</li>
+<li>
+<p>data phrases</p>
+</li>
+<li>
+<p>focus on extracting units, mixtures, amounts, roles (solvent, reactant, product), action phrases</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>OSCAR, domain-specific regex and english taggers to identify POS</p>
+</li>
+<li>
+<p>ANTLER grammer: tree-based phrases</p>
+</li>
+<li>
+<p>will show how relationships between entities can be extracted and stored in machine readable format</p>
+</li>
+<li>
+<p>open source, string of text as input → structured XML document</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_how_it_works">how it works</h3>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>text normalization</p>
+</li>
+<li>
+<p>tokenization: adapted white space tokenizer used because chemical names are fragile to common methods</p>
+</li>
+<li>
+<p>tagging: 3 step cascading tagger</p>
+<div class="ulist">
+<ul>
+<li>
+<p>chemical entity recognizer (OSCAR): Open Source Chemistry Analysis Routines → XML output</p>
+</li>
+<li>
+<p>customized regex tagger: mark-up chemistry-related terms like solution, mixture, quench, evaporate</p>
+<div class="ulist">
+<ul>
+<li>
+<p>customized tags</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>English POS tagger for unidentified tokens</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>phrase parsing: ANLTER parsing, LL(*), recursive descent → AST</p>
+<div class="ulist">
+<ul>
+<li>
+<p>action phrase identification</p>
+<div class="ulist">
+<ul>
+<li>
+<p>assign roles</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+</div>
+
+  </div>
+  <div class="flex-row link-no-style">
+    
+    
+  </div>
+</div>
+
+
+        </div>
+        <div class="sidebar">
+  <a href="../../../../"><h2>Lucy Hao</h2></a>
+  <a href="../../../../archive"><h3>Thoughts</h3></a>
+  <a href="../../../../notes"><h3>Notes</h3></a>
+  <a href="../../../../books"><h3>Books</h3></a>
+  <a href="../../../../courses"><h3>Courses</h3></a>
+  <a href="../../../../cv/cv.pdf"><h3>CV/Resume</h3></a>
+</div>
+
+      </div>
+    </main>
+
+    <footer>
+      <center>
+        <p>
+          <a href="../../../../archive">archive</a>
+          <a href="https://github.com/lhao03" target="_blank">github</a>
+          <a href="https://www.linkedin.com/in/lucy-hao/" target="_blank">linkedin</a>
+        </p>
+      </center>
+      Site powered by cats, 🍫 and
+      <a href="http://jaspervdj.be/hakyll">Hakyll</a>
+    </footer>
+  </body>
+</html>

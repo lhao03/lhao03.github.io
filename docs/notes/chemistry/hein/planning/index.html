@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lucy H | some papers on planning</title>
+  <link rel="stylesheet" href="../../../../css/main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
+  <!-- and it's easy to individually load additional languages -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/languages/scheme.min.js"></script>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/base16/onedark.min.css" />
+  <script>
+    hljs.highlightAll();
+  </script>
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+  <link rel="preconnect" href="https://www.googletagmanager.com" />
+  <link rel="preconnect" href="https://www.google-analytics.com" />
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KDGPVMHC9Q"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-KDGPVMHC9Q");
+  </script>
+
+  <!-- basic favicon -->
+  <link rel="icon" href="../../../../images/android-chrome-384x384.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../../../images/android-chrome-384x384.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../../../images/android-chrome-384x384.png" />
+  <link rel="apple-touch-icon-precomposed" href="../../../../images/android-chrome-384x384.png" />
+</head>
+
+  <body>
+    <main role="main">
+      <div class="flex-row-col">
+        <div>
+          <h1>some papers on planning</h1>
+          <div>
+  
+  <div class="header">
+    Posted on May 14, 2024
+    
+  </div>
+  <div class="tags">
+    
+  </div>
+  <div class="content">
+    <div class="sect1">
+<h2 id="_towards_plugn_play_task_level_autonomy_for_robotics_using_pomdps_and_generative_models">Towards Plug’n Play Task-Level Autonomy for Robotics Using POMDPs and Generative Models</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="https://arxiv.org/abs/2207.09713" class="bare">https://arxiv.org/abs/2207.09713</a></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>bridge gap between "understand what a skill does" and "low-level state variabables"</p>
+</li>
+<li>
+<p>what is the impact of the skill on the real world</p>
+</li>
+<li>
+<p>lots of integration to tie this all together</p>
+</li>
+<li>
+<p>this is done by</p>
+<div class="ulist">
+<ul>
+<li>
+<p>generative skill documentation language, bringing ideas from probabilistic programming languages</p>
+</li>
+<li>
+<p>abstraction mapping bridging low level code and AI planning model</p>
+</li>
+<li>
+<p>any properly documented skill can be used, providing plug and play experience</p>
+</li>
+<li>
+<p>POMDP solver schedules skills</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_introduction">introduction</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>challenge to address software engineering and execution logic</p>
+</li>
+<li>
+<p>writing scripts only address a specific task</p>
+</li>
+<li>
+<p>to build autonomous systems that are diverse → need to keep making scripts for each specific senario</p>
+</li>
+<li>
+<p>AI Planners: don’t always address partial observability and noisy sensors and rely on ADL (action description languages)</p>
+</li>
+<li>
+<p>code based generative model:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>describe planning domain via sampling procedure/simulator that can sample next state given current state/action, correctly</p>
+</li>
+<li>
+<p>use code to describe this sampling procedure → probabilistic programming languages</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>robot programmers document their code using more abstract language and use expressive abstraction mapping</p>
+<div class="ulist">
+<ul>
+<li>
+<p>only provide goal specification for each task and system auto genrates needed integration code and controls robot → autonomous robot operating system</p>
+</li>
+<li>
+<p>uses partially observable markov decision processes → capture stochastic nature of robot actions, noisy and partial sensing</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_planning_based_deliberative_architectures">planning-based deliberative architectures</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>ROSPlan: planning/plan execution architecture for robots generating plans based on PDDL</p>
+<div class="ulist">
+<ul>
+<li>
+<p>single world state and deterministic sensing</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_system_overview_and_concept">system overview and concept</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>extension of ROSPlan</p>
+</li>
+<li>
+<p>documentation:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>GDSL: how the code changes the robot’s state and the world’s state</p>
+</li>
+<li>
+<p>AM: connection between abstract POMDP model and the low level code
+<strong>*</strong>: how to activate the code, how to map abtract parameter values to code-level parameters</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_on_the_prospects_of_incorporating_large_language_models_llms_in_automated_planning_and_scheduling_aps">On the Prospects of Incorporating Large Language Models (LLMs) in Automated Planning and Scheduling (APS)</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="https://openreview.net/pdf?id=BLsvMLvuhL" class="bare">https://openreview.net/pdf?id=BLsvMLvuhL</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_large_language_models_as_planning_domain_generators">Large Language Models as Planning Domain Generators</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="https://openreview.net/pdf?id=C88wQIv0aJ" class="bare">https://openreview.net/pdf?id=C88wQIv0aJ</a></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>true potential unfolds when combined with traditional symbolic solvers</p>
+<div class="ulist">
+<ul>
+<li>
+<p>combine generative potential with correctness and precision</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>how can LLMs in APS be integrated?</p>
+<div class="ulist">
+<ul>
+<li>
+<p>language translation into PDDL</p>
+</li>
+<li>
+<p>plan generation directly from LLM</p>
+</li>
+<li>
+<p>model construction: construct or redefine world/domain models</p>
+</li>
+<li>
+<p>multi-agent planning: contribute to coordination + creative strategy development</p>
+</li>
+<li>
+<p>interactive planning: iterative feedback/interactive planning</p>
+</li>
+<li>
+<p>heuristics optimization: optimizing plans through existing plans or heuristic assistance</p>
+</li>
+<li>
+<p>brain-inspired planning: act as the coordinator</p>
+</li>
+<li>
+<p>tool integration: LLM architectures inspired by neurological/cognitive prcoesses</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>APS are highly structured and logical, but lack flexibility and contextual adaptibility, LLMs could fill this gap</p>
+<div class="ulist">
+<ul>
+<li>
+<p>LLMs fail to generate precise, actionable plans</p>
+</li>
+<li>
+<p>should combine to create dynamic and context-aware planning approach</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_llms">LLMs</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>rule based → statistical based → neural network-based models</p>
+</li>
+<li>
+<p>RNN and LSTM → vanishing gradients → loss of very long sequence contexts</p>
+</li>
+<li>
+<p>transformer model: self-attention (SA) mechanisms → focus on different parts of long input in parallel</p>
+<div class="ulist">
+<ul>
+<li>
+<p>positional encodings: maintain awareness of word/token order</p>
+</li>
+<li>
+<p>self-attention: query, key, value system → contextualize dependencies → softmax</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>CLM: gpt-4: text generation is sequential and dependent on preceding context → predict next word based on prev word statistically</p>
+</li>
+<li>
+<p>MLM: BERT understand directional context, learn forward and backward language dependencies</p>
+</li>
+<li>
+<p>Seq2Seq model: transform input into related output → translation or summarization</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_llms_in_aps">LLMs in APS</h3>
+<div class="sect3">
+<h4 id="_language_translation">language translation</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>changing natural language descriptions into PDDL: LLM+P, then translate solution back into natural language</p>
+<div class="ulist">
+<ul>
+<li>
+<p>LLMs can translate PDDL into natural language, but not the other way around because don’t understand real world objects and grounding affordances → neuro-symbolic approach
+==== plan generation</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>chain-of-symbol, tree of thoughts</p>
+</li>
+<li>
+<p>show promise in generating plans within their training set, but show limitations in generalizing out of distribution domains</p>
+<div class="ulist">
+<ul>
+<li>
+<p>casual LLMs: limited due to design, because they generate text based on preciding input</p>
+</li>
+<li>
+<p>seq2seq: good within training set data, but bad at generalizing</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>integrate imperfect LLM with symbolic planners
+==== model construction</p>
+</li>
+<li>
+<p>trouble with processing low-level geometricl/shape features</p>
+</li>
+<li>
+<p>integrate real world models
+==== tool integration</p>
+</li>
+<li>
+<p>hallucinate non-existant tools, overuse single tool, strugle with multiple tools</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_planning_domain_simulation_an_interactive_system_for_plan_visualisation">Planning Domain Simulation: An Interactive System for Plan Visualisation</h2>
+<div class="sectionbody">
+
+</div>
+</div>
+
+  </div>
+  <div class="flex-row link-no-style">
+    
+    
+  </div>
+</div>
+
+
+        </div>
+        <div class="sidebar">
+  <a href="../../../../"><h2>Lucy Hao</h2></a>
+  <a href="../../../../archive"><h3>Thoughts</h3></a>
+  <a href="../../../../notes"><h3>Notes</h3></a>
+  <a href="../../../../books"><h3>Books</h3></a>
+  <a href="../../../../courses"><h3>Courses</h3></a>
+  <a href="../../../../cv/cv.pdf"><h3>CV/Resume</h3></a>
+</div>
+
+      </div>
+    </main>
+
+    <footer>
+      <center>
+        <p>
+          <a href="../../../../archive">archive</a>
+          <a href="https://github.com/lhao03" target="_blank">github</a>
+          <a href="https://www.linkedin.com/in/lucy-hao/" target="_blank">linkedin</a>
+        </p>
+      </center>
+      Site powered by cats, 🍫 and
+      <a href="http://jaspervdj.be/hakyll">Hakyll</a>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+---
+title: "LLMs and Chemical Synthesis"
+date: 2024-05-14
+---
+
+== Accelerated end-to-end chemical synthesis development with large language models
+* GPT-4 to build a multi-agent system
+** 6 specialized LLM agents: literature scouter, experiment designer, hardware executor, spectrum analyzer, separation instructor, result interpreter, preprompted
+** machine-learning-aided synthesis planning, guide automated high-throughput experimental platforms, direct translation of literature procedrues to experimental execution
+** monolithic input-to-output nature
+** agents can use external tools, like Python interpreter, academic database search, self-driven reaction optimization algorithms
+** human chemists are still required the tweak the responses of the LLM agents
+
+=== literature search and information extraction
+* instead of manually reading literature, use prompt to ask LLM to search an academic database
+* asked the LLM to extract the procedure from the literature paper
+
+=== methodology substrate scope and condition screening
+* high throughout screening is not easy to access
+* experiment designer, hardware executer, spectrum analyzter and result interpreter to automote HTS
+* directly generated opentrons code
+
+=== self-driven reaction condition optimization
+* bayesian optimization, nelder-mead simplex, SNOBFIT, MINLP algorithm -> steep learning curve
+** LLM have good performance for optimizing reactions with clear kinetics or prior knowledge, but fall behind statistical optimization algorithms
+** experiment designer -> transform into JSON
+** hardware executor -> JSON into code templates
+
+=== methods
+* hardware executor: code examples were provided
+
+== Chemist-X: Large Language Model-empowered Agent for Reaction Condition Recommendation in Chemical Synthesis
+
+* automates reaction condition recommendation task (RCR) with retrival-augmented generation (RAG)
+* online molecular databases
+* in context learning, few shot learning
+** top match slice: portion of document bearing most semantic similarity
+* interaction with APIs that require coding
+* model's temperature and presence penality: lower the temperature is better -> focused and determinisitc
+
+=== methods
+* ICL: quality of LLM output depends on example given
+** how to select most relevant document example -> cosine similarity, after tokenization into vectors
+* information analysis using online literature
+** construction of web crawlers using ICL prompts, and then analyzing the HTML content using Python
+* final reccomediation with pre-packaged fingerprint tool
+** advanced ML algorithms just "straightforward concatenations of encoded molecules"
+** CL-SCL network

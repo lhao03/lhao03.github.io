@@ -1,0 +1,28 @@
+---
+description: "MATH 215"
+title: "MATH 215: Ordinary Differential Equations"
+type: "notes"
+---
+
+Lecture 1
+Lecture 2
+Lecture 3
+Lecture 4
+
+** Quiz 1
+- integrable and separable equations
+- IVP
+- Slope field
+- PICARD Theorem
+  - internal of existence
+  - unique
+- ODE Classification
+- Integration
+- Autonomous equation
+  - critical points
+  - stable
+- Exact equation
+
+** Questions Done
+- 1.8.101, 1.8.102
+- HW1

@@ -172,7 +172,7 @@ $ax + by + cz = d$
 - if the line is parallel to the plane, then never get that value, get another constant
 
 **** Session 17: General Parametric Equations; the Cycloid
-
+- parametric curves:
 **** Session 18: Point (Cusp) on Cycloid
 **** Session 19: Velocity and Acceleration
 **** Session 20: Velocity and Arc Length

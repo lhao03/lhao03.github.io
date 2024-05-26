@@ -1,0 +1,40 @@
+---
+title: Chemistry POS Taggers
+date: 2024-05-10
+---
+
+=== synthreader
+* https://eprints.gla.ac.uk/221626/1/221626.pdf
+* tagging text with relevant entities -> list of actions -> add implicit process information and concrete reagent locations -> output procedure in XDL format
+* DSL with predefined rules -> good with mechanical/structured language
+* text to XDL:
+** tagging: different parts are tagged as reagent, volumes, temperatures
+*** reagent names: pattern matching with database of common reagent names then naive Bayes classifier to determine whether candidate phrases are reagent names
+** interpretation
+** conversion
+* human/chemist intervention is required to ensure everything is correct
+
+=== chemicaltagger
+* https://jcheminf.biomedcentral.com/articles/10.1186/1758-2946-3-17
+* semantic text-mining in chemistry
+* highly formulaic way of writing
+** highly stylized and formulaic language -> we have working solutions for text written like this
+** stock phrases
+** data phrases
+** focus on extracting units, mixtures, amounts, roles (solvent, reactant, product), action phrases
+* OSCAR, domain-specific regex and english taggers to identify POS
+* ANTLER grammer: tree-based phrases
+* will show how relationships between entities can be extracted and stored in machine readable format
+* open source, string of text as input -> structured XML document
+
+=== how it works
+1. text normalization
+2. tokenization: adapted white space tokenizer used because chemical names are fragile to common methods
+3. tagging: 3 step cascading tagger
+** chemical entity recognizer (OSCAR): Open Source Chemistry Analysis Routines -> XML output
+** customized regex tagger: mark-up chemistry-related terms like solution, mixture, quench, evaporate
+*** customized tags
+** English POS tagger for unidentified tokens
+4. phrase parsing: ANLTER parsing, LL(*), recursive descent -> AST
+** action phrase identification
+*** assign roles

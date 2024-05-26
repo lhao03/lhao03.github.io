@@ -9,7 +9,12 @@ Welcome to my plethora of thoughts. I enjoy learning about how and why things wo
 
 ## My current life...
 
-I'm finishing up my last year of chemistry and computer science at UBC, where I like to model molecules with functions, allowing us to quantitatively characterize and predict their behaviour. As such, I'm a bottom-up thinker that gets lost in the details, which means I also get involved in areas where I have to think about the big picture, such as [iGEM](https://ubcigem.com/) and software; abstraction is a must here.
+I'm finishing up my last year of chemistry and computer science at UBC, where I like dabble in modeling molecules with functions, programming languages and computational optimization. Some questions and I have are: 
+
+- how can we develop to predict and elucidate chemical properties, through first principles or semi-experimentally?
+  - how can quantum mechanical models of chemistry be improved?
+- how can formal methods in computer science be applied to chemistry? 
+- how can we apply computational optimization in chemistry?
 
 For fun, I like buying artisanal coffee, a hobby I started since someone I'm close to was appalled I was drinking instant coffee everyday; I drink at minimum two cups a day! I also read fiction books and enjoy talking about nonsensical scenarios.
 
