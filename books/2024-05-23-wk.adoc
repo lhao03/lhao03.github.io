@@ -1,0 +1,5 @@
+---
+title: "The Wicked King"
+tags: fantasy
+img: "wk.jpg"
+---
