@@ -5,7 +5,7 @@ description: Lucy's thoughts
 
 ## Dear reader,
 
-Welcome to my plethora of thoughts. I enjoy learning about how and why things work, especially through the lens of theoretical chemistry and physical chemistry. I also have opinions about programming language theory and try to do synthetic biology. 
+Welcome to my plethora of thoughts. I enjoy learning about how and why things work, especially through the lens of theoretical chemistry and physical chemistry. I also have opinions about programming language theory and I think Racket is the best programming language.
 
 ## My current life...
 
