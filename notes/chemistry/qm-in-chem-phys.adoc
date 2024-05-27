@@ -1,0 +1,4 @@
+---
+title: "Notes from papers in: Concepts, Methods and Applications of Quantum Systems in Chemistry and Physics"
+date: 2024-05-26
+---

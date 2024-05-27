@@ -1,0 +1,50 @@
+---
+title: Notes on LLMs for Planning
+date: 2024-05-27
+---
+
+== Large Language Models as Planning Domain Generators
+* larger LLMs exhibit some level of proficiency
+* open-ended output vs. highly structured output
+* LLMs bridge the gap between problem + symbolic representation
+* ground truth: vetted domain specification
+* create high quality reconstructions of PDDL domain from natural language -> restricted domain eq. to ground truth
+* reference domain is available -> stronger assumption
+* this paper:
+** PDDL domain reconstruction from natural language, based on ground truth
+** metrics for evaluating domain quality that don't need humans
+** classes of natural language descriptions of PDDL actions to see if including/excluding certain types of informatoin impacts ability to generate domains
+** evaluation of many different models
+
+** in context learning: consists of an instruction, context examples, query
+
+=== approach
+* action-by-action prompting
+* assume predicates and description of these predicates are given to us
+* types of errors encountered: syntax error, semantic error, different domain (no plan found from this domain), heuristically eq
+* results: syntax wise usually correct, heuristically eq (30 ish percent), had semantic issues for predicates, majority of valid generated domains not able to be used for planning (planner couldn
+t find anything)
+* LLM+P: natural language description of problem, context example of natural language problem converted to PDDL problem, PDDL domain, plan then fed into LLM to explain
+* end-to-end LLM-DM: domain construction
+** automated domain construction, human refinement, planning with the domain
+** on an action by action basis, because of context window and potential for corrective feedback -> more powerful
+** instruction containing PDDL creation task, one/two context examples/ natural language description of domain, natural language description of action, dynamically updated list of predicates based on new actions added
+* further work: reprompting, fixing mistakes
+
+== LLM+P: Empowering Large Language Models with Optimal Planning Proficiency
+* cannot solve long-horizon robot planning problems
+* classical planners: can solve a problem if it is in a certain format
+* LLM+P: given natural language description, output problem description suitable as input to a planner, solves problem using planner, converts output back to natural language and/or connect to robot
+* PDDL as a different language, only generates problem, not the domain
+* LLM provided with minimal example
+* assumptions
+** robot knows when to trigger LLM+P (not an issue for us)
+** domain PDDL is provided to define actions (but is task agnostic)
+** simple problem description in natural language + corresponding PDDL problem file
+* context is important, without LLM+P will fail more often
+
+== Learning General Policies for Planning through GPT Models
+* reasoning capabilities -> current transformer based models not adequate for planning
+* planGPT, compute effective general policy for planning domain
+* given initial and goal, generate sequence of steps
+** not what we want

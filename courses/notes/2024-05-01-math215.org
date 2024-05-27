@@ -8,6 +8,11 @@ Lecture 1
 Lecture 2
 Lecture 3
 Lecture 4
+Lecture 4
+Lecture 5
+Lecture 6
+Lecture 7
+Lecture 8
 
 ** Quiz 1
 - integrable and separable equations
@@ -22,7 +27,26 @@ Lecture 4
   - critical points
   - stable
 - Exact equation
+*** Questions Done
+- 1.8, 2.1, 2.2, 2.3
+- HW1, HW2
+- Q 1
+- Math 101 HW2: https://personal.math.ubc.ca/~sjer/math101sec201/H2/h2.pdf
 
-** Questions Done
-- 1.8.101, 1.8.102
-- HW1
+** Quiz 2
+*** Questions done/todo
+- HW 3, 4, 5, Q2
+- Math 101 HW3, 4, 5
+- jupyter notebook
+
+** Quiz 3
+*** Questions done/todo
+- HW 3, 4, 5, Q2
+- Math 101 HW7, 8
+- jupyter notebook
+
+** Quiz 4
+*** Questions done/todo
+- HW 3, 4, 5, Q2
+- Math 101 HW9
+- jupyter notebook
