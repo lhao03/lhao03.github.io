@@ -1,7 +1,21 @@
 ---
 title: Notes on LLMs for Planning
-date: 2024-05-27
+date: 2024-05-29
 ---
+
+== When Prolog meets generative models: a new approach for managing knowledge and planning in robotic applications
+- human knowledge representations are:
+  - understandability and explainability
+  - scalability
+  - usability
+- integrate prolog with deep learning: symbolic/subsymbolic AI
+- can LLM populate a robot-oriented prolog knowledge base?
+- prolog -> behaviour tree -> plansys2
+- order matters
+
+=== knowledge base
+- set temperature to 0
+- llm just makes new knowledge base based on examples???
 
 == Large Language Models as Planning Domain Generators
 * larger LLMs exhibit some level of proficiency

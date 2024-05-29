@@ -1,0 +1,52 @@
+---
+title: "llms in chemistry"
+date: 2024-05-29
+---
+
+== Augmenting large language models with chemistry tools
+- llm + tools, remove learning curve with tools
+- thought, action,  action input, observation format: reason about current state of the task, consider relevance to final goal, plan next steps
+  - action: tool, action input: the input to the tool
+  - result is prepended by observation
+  - chain of thought reasoning
+  - chemcrow can autonomously adapt synthesis procedures based on lab constraints
+- outperforms on tasks where more grounded chemistry knowledge is required
+- chatgpt4 hallucinates, but sounds "more complete"
+- "ChemCrow follows a set of hard-coded guidelines"
+- tackle hallucinations via tools, and tackle lack of reproducibility via tools
+
+== ChemLLM: A Chemical Large Language Model
+- more like q and a bot
+
+== Autonomous chemical research with large language models
+- planner (llm) calls on google, python, documentation, experiment for information it needs
+- opentrons and SLL (symbolic lab language)
+- fix code by running python in docker instance
+- nonbrowsing/old models significantly bad
+- use of opentrons API documentation and SSL (DSL)
+- search for documentation: vector database -> nearest neighbour
+- wrote wrong code, looked up documentation to correct it
+
+== MRKL Systems
+- Modular Reasoning, Knowledge and Language
+- llm limitations
+  - lack of access tso current information
+  - lack of access to proprietary information
+  - lack of reasoning
+  - model explosion
+    - not practical to fine tune and serve multiple LMs
+    - can't fine tune further a multitask LLM due to catatrosphic forgor
+- MRKL: set of modules, experts, router that routes every natural language input to a module that can best respond to the input
+  - modules can be neural (other LMs), or symbolic (calculator)
+  - router is specialized neural net, which is also trained to extract arguments to provide to the more symbolic experts
+
+=== training jurassic-x to extract arguments (for math)
+- just training not enough, but data augmentation methodology (generating examples from structured example space) -> static pretained LM can achieve near performance
+  - what is needed in terms of data augmentation to get near perfect performance (on math)
+  - how well can (jurassic-x) generalize (between math problems)
+- prompt tuning with 10 prompt tokens
+
+== Toolformer: Language Models Can Teach Themselves to Use Tools
+- model that decides what API to call and what arguments to give
+- on context learning
+- ask LLM where it should put API calls

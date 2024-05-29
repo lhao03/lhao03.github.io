@@ -2,3 +2,7 @@
 title: "Notes from papers in: Concepts, Methods and Applications of Quantum Systems in Chemistry and Physics"
 date: 2024-05-26
 ---
+
+== A Portal for Quantum Chemistry Data Based on the Semantic Web
+- semantic web: structuring data in a way computers can understand -> perform intelligent operations
+-
