@@ -16,13 +16,14 @@ Lecture 8
 
 ** Quiz 1
 - integrable and separable equations
+  - separable first order ODEs
 - IVP
 - Slope field
 - PICARD Theorem
   - internal of existence
   - unique
 - ODE Classification
-- Integration
+- Integration Factor
 - Autonomous equation
   - critical points
   - stable
@@ -34,6 +35,36 @@ Lecture 8
 - Math 101 HW2: https://personal.math.ubc.ca/~sjer/math101sec201/H2/h2.pdf
 
 ** Quiz 2
+- 2nd order linear equations
+  - homogeneous
+  - theorem of uniqueness and existence
+  - method of reduction order
+  - 2nd order ODE with constant coefficients
+    - characteristic equation
+      - two real roots form
+      - repeated root form
+      - two complex root form
+  - mechanical vibrations
+    - free: undamped, unforced
+      - change to positive
+      - arctan
+    - damped free vibrations
+      - overdamped, two real
+      - critical damped, repeated
+      - under damp, two complex
+  - nonhomogenous 2nd order ODE with constant coefficients
+    - y = y_c + y_p
+      - y_c
+      - y_p
+    - method of undetermined coefficients
+      - find y_c
+      - guess y_p
+        - form of y_p must not match any term in y_c
+      - determine free coefficients
+      - sum of y_p
+    - general solution = y_c + sum y_p
+    - find C_1 and C_2
+
 *** Questions done/todo
 - HW 3, 4, 5, Q2
 - Math 101 HW3, 4, 5
@@ -41,12 +72,12 @@ Lecture 8
 
 ** Quiz 3
 *** Questions done/todo
-- HW 3, 4, 5, Q2
+- HW 6, 7,
 - Math 101 HW7, 8
 - jupyter notebook
 
 ** Quiz 4
 *** Questions done/todo
-- HW 3, 4, 5, Q2
+- HW 8, 9, 10
 - Math 101 HW9
 - jupyter notebook

@@ -62,3 +62,32 @@ t find anything)
 * planGPT, compute effective general policy for planning domain
 * given initial and goal, generate sequence of steps
 ** not what we want
+
+
+== Integrating action knowledge and LLMs for task planning and situation handling in open worlds
+- dynamically augment robot's action knowledge, grounded to specific domains via action knowledge
+- knowledge from LLMs is domain-independent, robot is domain-dependent
+- LLMs to augment action preconditions/effects
+- LLMs should be able to respond to any situation?
+- COWP vs. ProgPrompt
+- how is "common-sense" extracted?
+  - just asking llm questions with template prompts
+
+== Grounded Decoding: Guiding Text Generation with Grounded Models for Embodied Agents
+- grounding functions
+- high level instruction and history of executed actions -> GD probabilistic filtering by selecting tokens with high probability under language model and grounded model
+- obtaining grounding: action-value function, rules, multimodel foundationa models
+- grounded decoding -> more general/flexible grounding method -> injects continuous probabilities
+
+
+== Tree of Thoughts: Deliberate Problem Solving with Large Language Models
+- similar to classical AI planners/solvers
+- humans search through combinatorial problem-space
+- ToT:
+  - how to decompose intermediate process into thought steps
+  - how to generate potential thoughts from each state
+  - how to heuristically evaluate states
+  - what search algo to use
+- voting, or value functions
+- BFS or DFS
+- heuristic search
