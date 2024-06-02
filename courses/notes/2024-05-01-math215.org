@@ -71,6 +71,7 @@ Lecture 8
 - jupyter notebook
 
 ** Quiz 3
+-
 *** Questions done/todo
 - HW 6, 7,
 - Math 101 HW7, 8
