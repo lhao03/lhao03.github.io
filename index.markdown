@@ -9,9 +9,9 @@ Welcome to my plethora of thoughts. I enjoy learning about how and why things wo
 
 ## My current life...
 
-I'm finishing up my last year of chemistry and computer science at UBC, where I like dabble in modeling molecules with functions, programming languages and computational optimization. Some questions and I have are: 
+I'm finishing up my last year of chemistry and computer science at UBC, where I dabble in modeling molecules with functions, programming languages and computational optimization. Some questions I have are: 
 
-- how can we develop methods to predict and elucidate chemical properties, through first principles or semi-experimentally?
+- how can we develop methods to predict and elucidate chemical properties, using only first principles or semi-experimentally?
   - how can quantum mechanical models of chemistry be improved?
 - how can formal methods in computer science and computational optimization be applied to chemistry? 
 
