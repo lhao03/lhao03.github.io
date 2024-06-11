@@ -1,7 +1,10 @@
 ---
-title: Notes on LLMs for Planning
+title: Notes from papers that discuss LLMs
 date: 2024-05-29
+tags: LLM
 ---
+
+:toc:
 
 == When Prolog meets generative models: a new approach for managing knowledge and planning in robotic applications
 - human knowledge representations are:
@@ -27,7 +30,7 @@ date: 2024-05-29
 * this paper:
 ** PDDL domain reconstruction from natural language, based on ground truth
 ** metrics for evaluating domain quality that don't need humans
-** classes of natural language descriptions of PDDL actions to see if including/excluding certain types of informatoin impacts ability to generate domains
+** classes of natural language descriptions of PDDL actions to see if including/excluding certain types of information impacts ability to generate domains
 ** evaluation of many different models
 
 ** in context learning: consists of an instruction, context examples, query
@@ -91,3 +94,370 @@ t find anything)
 - voting, or value functions
 - BFS or DFS
 - heuristic search
+
+
+== Augmenting large language models with chemistry tools
+- llm + tools, remove learning curve with tools
+- thought, action,  action input, observation format: reason about current state of the task, consider relevance to final goal, plan next steps
+  - action: tool, action input: the input to the tool
+  - result is prepended by observation
+  - chain of thought reasoning
+  - chemcrow can autonomously adapt synthesis procedures based on lab constraints
+- outperforms on tasks where more grounded chemistry knowledge is required
+- chatgpt4 hallucinates, but sounds "more complete"
+- "ChemCrow follows a set of hard-coded guidelines"
+- tackle hallucinations via tools, and tackle lack of reproducibility via tools
+
+== ChemLLM: A Chemical Large Language Model
+- more like q and a bot
+
+== Autonomous chemical research with large language models
+- planner (llm) calls on google, python, documentation, experiment for information it needs
+- opentrons and SLL (symbolic lab language)
+- fix code by running python in docker instance
+- nonbrowsing/old models significantly bad
+- use of opentrons API documentation and SSL (DSL)
+- search for documentation: vector database -> nearest neighbour
+- wrote wrong code, looked up documentation to correct it
+
+== MRKL Systems
+- Modular Reasoning, Knowledge and Language
+- llm limitations
+  - lack of access tso current information
+  - lack of access to proprietary information
+  - lack of reasoning
+  - model explosion
+    - not practical to fine tune and serve multiple LMs
+    - can't fine tune further a multitask LLM due to catatrosphic forgor
+- MRKL: set of modules, experts, router that routes every natural language input to a module that can best respond to the input
+  - modules can be neural (other LMs), or symbolic (calculator)
+  - router is specialized neural net, which is also trained to extract arguments to provide to the more symbolic experts
+
+=== training jurassic-x to extract arguments (for math)
+- just training not enough, but data augmentation methodology (generating examples from structured example space) -> static pretained LM can achieve near performance
+  - what is needed in terms of data augmentation to get near perfect performance (on math)
+  - how well can (jurassic-x) generalize (between math problems)
+- prompt tuning with 10 prompt tokens
+
+== Toolformer: Language Models Can Teach Themselves to Use Tools
+- model that decides what API to call and what arguments to give
+- on context learning
+- ask LLM where it should put API calls
+
+
+
+== Towards Reasoning in Large Language Models: A Survey
+
+== The Neuro-Symbolic Inverse Planning Engine (NIPE): Modeling Probabilistic Social Inferences from Linguistic Inputs
+- what is bayesian inverse planning??
+
+== Tree of Thoughts: Deliberate Problem Solving with Large Language Models
+
+== Pragmatic Instruction Following and Goal Assistance via Cooperative Language-Guided Inverse Planning
+
+== Sequential Monte Carlo Steering of Large Language Models using Probabilistic Programs
+
+== Integrating action knowledge and LLMs for task planning and situation handling in open worlds
+
+== Inferring the Goals of Communicating Agents from Actions and Instructions
+- multi-modal Bayesian inverse planning from actions and instructions
+- model human linguistic/action understanding as processes of bayesian interpretation
+  - BToM: humans understand each other actions by inferring goals/beliefs that explain those actions as rational
+  - RSA: interpret not just on bare semantics, but also pragmatic intentions they imply
+  - achieve joint inference from action + uttered instructions
+- rather than assistant infer principal's goal -> infer team's goal given their actions/communciated instructions
+- model team as group agent -> bypass challenge of recursive mental reasoning
+- probabilistic program: goal prior, joint planner, utterance model
+  - easily integrate LLMs are flexible utterance likelihoods
+  - LLMs used as modular components to larger probabilistic models
+- probabilistic program with deterministic, stochastic and neural components
+
+== Grounding Language about Belief in a Bayesian Theory-of-Mind
+
+== Grounded physical language understanding with probabilistic programs and simulated worlds
+- mental physics engine?
+- physics in a language of thought -> maps language into probabilistic language of thought + physics simulation and inference
+- construct linguistic meaning from cognitive represenation in compositional language of thought
+- probabilistic programs grounded in physics engine
+- PiLoT: probabiltic generative model, language-to-code model, physics simulator
+- LLM struggle with number/spatial relations
+
+
+== Accelerated end-to-end chemical synthesis development with large language models
+* GPT-4 to build a multi-agent system
+** 6 specialized LLM agents: literature scouter, experiment designer, hardware executor, spectrum analyzer, separation instructor, result interpreter, preprompted
+** machine-learning-aided synthesis planning, guide automated high-throughput experimental platforms, direct translation of literature procedrues to experimental execution
+** monolithic input-to-output nature
+** agents can use external tools, like Python interpreter, academic database search, self-driven reaction optimization algorithms
+** human chemists are still required the tweak the responses of the LLM agents
+
+=== literature search and information extraction
+* instead of manually reading literature, use prompt to ask LLM to search an academic database
+* asked the LLM to extract the procedure from the literature paper
+
+=== methodology substrate scope and condition screening
+* high throughout screening is not easy to access
+* experiment designer, hardware executer, spectrum analyzter and result interpreter to automote HTS
+* directly generated opentrons code
+
+=== self-driven reaction condition optimization
+* bayesian optimization, nelder-mead simplex, SNOBFIT, MINLP algorithm -> steep learning curve
+** LLM have good performance for optimizing reactions with clear kinetics or prior knowledge, but fall behind statistical optimization algorithms
+** experiment designer -> transform into JSON
+** hardware executor -> JSON into code templates
+
+=== methods
+* hardware executor: code examples were provided
+
+== Chemist-X: Large Language Model-empowered Agent for Reaction Condition Recommendation in Chemical Synthesis
+
+* automates reaction condition recommendation task (RCR) with retrival-augmented generation (RAG)
+* online molecular databases
+* in context learning, few shot learning
+** top match slice: portion of document bearing most semantic similarity
+* interaction with APIs that require coding
+* model's temperature and presence penality: lower the temperature is better -> focused and determinisitc
+
+=== methods
+* ICL: quality of LLM output depends on example given
+** how to select most relevant document example -> cosine similarity, after tokenization into vectors
+* information analysis using online literature
+** construction of web crawlers using ICL prompts, and then analyzing the HTML content using Python
+* final reccomediation with pre-packaged fingerprint tool
+** advanced ML algorithms just "straightforward concatenations of encoded molecules"
+** CL-SCL network
+
+
+== "PROGPROMPT: program generation for situated robot task planning using large language models"
+source: https://arxiv.org/abs/2209.11302
+
+* tasks require commonsense:
+** object affordances
+** logical sequence of actions
+** task relevance of objects/actions
+
+* but this requires: state feedback/knowledge of current environment
+* provide LLM with
+** with Pythonic header with import statement for availble actions and their parameters,
+** list of environment objects,
+** function definitions
+
+* preconditions
+* respond to failed assertions with recovery actions
+
+== background/related work
+* heuristics to guide search
+* task planning as a tuple (O, P, A, T, I, G, t)
+** O: objects
+** P: properties => object affordances
+** A: set of executable actions, changes depending on current state
+*** state s is specific assignment of all objects
+
+* prompt for task planning:
+** prompting function: transform input state into textual prompt
+** answer search: generation step
+
+* open-ended task planning: generated plans with non existant objects
+** programming language inspired prompt generator -> inform LLM of situatated environment state + avalible robot actions
+
+" PDDL as the translation language instead of code, and use the LLM to generate either a PDDL plan or the goal. ... This approach ablated the need to generate preconditions using the LLM, however, needs the domain rules to be specified for the planner."
+
+== progprompt
+* robot plans as pythonic code
+* intermediate summaries, chain of thought
+* assertions for environment feedback + error recovery
+* provide LLM with examples/samples
+* objects with state
+* use program like prompt
+* LLM strengthes: commonsense reasoning and code understanding
+
+=== personal thoughts
+* verifier needs to be some type of graph
+
+== Grammar Prompting for Domain-Specific Language Generation with Large Language Models
+
+* https://arxiv.org/pdf/2305.19234
+* https://github.com/berlino/grammar-prompting
+
+"This approach is however inadequate for applications where the task specifications cannot be fully delineated through just a handful of exemplars, for example in semantic parsing where an LLM must translate a natural language utterance to an executable program in a domain-specific language (DSL)"
+
+* many DSLs have not been seen during pretraining, so how to use LLMs to to generate strings -> grammer prompting
+** given an input LLM tries to predict BNF grammar, then generates answer based on grammar
+** similar to enhancing work by interleaving intermediate "reasoning" steps between each in-context input and output
+** intermediate variable is form of formal grammer
+
+* design constrained LLM decoding algorithm tailored to grammar prompting
+image:../../../images/hein/grammar-prompt.png[]
+
+* constrained decoding:
+** Earley parser -> challenging if only using API based LLM
+** instead, Earley-based parser, steps are:
+image:../../../image/hein/earley-based.png[]
+
+
+== Do As I Can, Not As I Say: Grounding Language in Robotic Affordances
+"With prompt engineering, a LLM may be capable of splitting the high-level instruction into sub-tasks, but it cannot do so without the context of what the robot is capable of given its abilities and the current state of the robot and the environment."
+
+* robot has atomic behaviours
+* system recieves user-provided natural language instruction and set of skills
+* probability given skill makes progress towards completing instruction
+* constraints
+
+"Prompt engineering provides examples in the context text (“prompt”) for the model that specify the task and the response structure which the model will emulate;"
+
+* value function scores => should output this score
+* iteratively append skills that increase value function
+* assume optimal set of skills is currently static
+
+"The key idea of SayCan is to ground large language models through value functions – affordance functions that capture the log likelihood that a particular skill will be able to succeed in the current state."
+
+* language conditioned robotic control policies: instantiate robot with set of skills with policy, value function, short description
+
+== Learning How to Ground a Plan – Partial Grounding in Classical Planning
+
+== Grounding natural language instructions to semantic goal representations for abstraction and generalization
+* grounding: mapping natural language -> robot behaviour
+* choice of representation used to capture objective specified by input command
+* markov decision processes
+* abstractions in language map to subgoals -> decompose generic, abstract commands into modular subgoals -> robot will be more robsut
+* language grounding model -> identify linguistic abstraction -> hierarchical planning -> efficient robot excecution
+* abstraction -> key to efficiency
+* mapping to fixed sequences of robot actions -> unreliable in changing/stochastic environments
+* decouple problem -> statistical language model to map language and robot goals, reward functions as Markov Decision Process (MDP) -> arbitrary planner solves MDP
+* novel approaches:
+** tackle varying granularity of natural language by mapping to reward functions at different levels of abstraction
+** issue of generalization: multistep inference process
+* decompose representation and infer constiteunt elements
+
+=== related work
+* SHRDLU: handwritten rules, first attempt at agent that can ground language into robot actions
+* language -> intermediate -> agent behaviour
+** lambda calculus, reward functions, constraints for agent to satisfy in the environment
+** learn new grammar rules during course of learning semantic parser, requires a grammar
+* goal reward function as conjunction of propostional logic functions
+* this work: inference over reward function templates, lifted reward functions -> specify task while learning environment-specific variables of task undefined
+** environment binding constraints specify the constraints an object must have to be bound
+** output of grounding model never tired to any particular instantiation of environment
+** given lifted reward function/environment constraint -> subsequent model can infer environment specific variables -> pass to a planner
+* searching an entire search space takes very long -> decompose planning problem into subtasks -> temporal abstraction -> macro actions -> subgoals via fixed sequence of actions or policy with fixed initial/terminal states
+* bottom up planning vs. top down (322)L
+** bottom up: reward for each action taken backed up through hierarchy of options
+** top down (AMDP): determine how good a subgoal is before planning to achieve subgoal
+* natural language as a goal state specifiction + action specifiction
+** humans mix goal-based commands and action-oriented commands
+* deep neural networks (LLM??) -> language grounding
+** word embeddings and state of the art RNN
+
+=== background
+* markoc decision process:
+** five tuple (S, A, T, R, y) set of states, set of actions, transition probability distribution over all possible next states given current state and executed action, R numerical reward earned for particular transition, y is effect time horizon
+* object-oriented markov decision process
+** to model robot's environment and actions
+** builds upon an MDP by adding sets of object classes and propositional functions
+** predicates as reward functions -> sufficent semantic representation for grounding language
+** map from natural language to propositional reward functions -> correctly encapsulate behavoiur indicated by the input command -> fully specified MDP that can be solved with planning algorithm
+** environment specific grounding module -> consumes lifted reward functions and low level binding to specific instances
+
+== semantic goal representation
+** break natural langauge into task inference and task execution
+** given a language command, find the best r to maximize probability, where r is a lifted propositional function
+
+=== abstraction in language
+* high level tasks require long action sequences
+* each level of hierarchy requires own set of reward functions
+* given a natural language command, find corresponding level of abstracttion and lifted reward function that maximizes joint probability
+* language grounding model: infer callable unit, and infer constituent binding arguments -> given natural command, find callable unit u and binding arguments a that maximuze joint probablity
+
+== language grounding models
+* use of DRAGGN?
+
+=== grounding module
+* "For instance, Artzi and Zettle- moyer (2013) present a model for executing lambda-calculus expressions generated by a combinatory categorical grammar (CCG) semantic parser, which grounds ambiguous predicates and nested arguments."
+
+
+== Towards Plug’n Play Task-Level Autonomy for Robotics Using POMDPs and Generative Models
+https://arxiv.org/abs/2207.09713
+
+* bridge gap between "understand what a skill does" and "low-level state variabables"
+* what is the impact of the skill on the real world
+* lots of integration to tie this all together
+* this is done by
+** generative skill documentation language, bringing ideas from probabilistic programming languages
+** abstraction mapping bridging low level code and AI planning model
+** any properly documented skill can be used, providing plug and play experience
+** POMDP solver schedules skills
+
+=== introduction
+* challenge to address software engineering and execution logic
+* writing scripts only address a specific task
+* to build autonomous systems that are diverse -> need to keep making scripts for each specific senario
+* AI Planners: don't always address partial observability and noisy sensors and rely on ADL (action description languages)
+* code based generative model:
+** describe planning domain via sampling procedure/simulator that can sample next state given current state/action, correctly
+** use code to describe this sampling procedure -> probabilistic programming languages
+* robot programmers document their code using more abstract language and use expressive abstraction mapping
+** only provide goal specification for each task and system auto genrates needed integration code and controls robot -> autonomous robot operating system
+** uses partially observable markov decision processes -> capture stochastic nature of robot actions, noisy and partial sensing
+
+=== planning-based deliberative architectures
+* ROSPlan: planning/plan execution architecture for robots generating plans based on PDDL
+** single world state and deterministic sensing
+
+=== system overview and concept
+* extension of ROSPlan
+* documentation:
+** GDSL: how the code changes the robot's state and the world's state
+** AM: connection between abstract POMDP model and the low level code
+***: how to activate the code, how to map abtract parameter values to code-level parameters
+
+== On the Prospects of Incorporating Large Language Models (LLMs) in Automated Planning and Scheduling (APS)
+https://openreview.net/pdf?id=BLsvMLvuhL
+
+== Large Language Models as Planning Domain Generators
+https://openreview.net/pdf?id=C88wQIv0aJ
+
+* true potential unfolds when combined with traditional symbolic solvers
+** combine generative potential with correctness and precision
+
+* how can LLMs in APS be integrated?
+** language translation into PDDL
+** plan generation directly from LLM
+** model construction: construct or redefine world/domain models
+** multi-agent planning: contribute to coordination + creative strategy development
+** interactive planning: iterative feedback/interactive planning
+** heuristics optimization: optimizing plans through existing plans or heuristic assistance
+** brain-inspired planning: act as the coordinator
+** tool integration: LLM architectures inspired by neurological/cognitive prcoesses
+
+* APS are highly structured and logical, but lack flexibility and contextual adaptibility, LLMs could fill this gap
+** LLMs fail to generate precise, actionable plans
+** should combine to create dynamic and context-aware planning approach
+
+
+=== LLMs
+* rule based -> statistical based -> neural network-based models
+* RNN and LSTM -> vanishing gradients -> loss of very long sequence contexts
+* transformer model: self-attention (SA) mechanisms -> focus on different parts of long input in parallel
+** positional encodings: maintain awareness of word/token order
+** self-attention: query, key, value system -> contextualize dependencies -> softmax
+* CLM: gpt-4: text generation is sequential and dependent on preceding context -> predict next word based on prev word statistically
+* MLM: BERT understand directional context, learn forward and backward language dependencies
+* Seq2Seq model: transform input into related output -> translation or summarization
+
+=== LLMs in APS
+==== language translation
+* changing natural language descriptions into PDDL: LLM+P, then translate solution back into natural language
+** LLMs can translate PDDL into natural language, but not the other way around because don't understand real world objects and grounding affordances -> neuro-symbolic approach
+==== plan generation
+* chain-of-symbol, tree of thoughts
+* show promise in generating plans within their training set, but show limitations in generalizing out of distribution domains
+** casual LLMs: limited due to design, because they generate text based on preciding input
+** seq2seq: good within training set data, but bad at generalizing
+* integrate imperfect LLM with symbolic planners
+==== model construction
+* trouble with processing low-level geometricl/shape features
+* integrate real world models
+==== tool integration
+* hallucinate non-existant tools, overuse single tool, strugle with multiple tools
+
+== Planning Domain Simulation: An Interactive System for Plan Visualisation

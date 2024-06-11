@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Lucy H | Notes on LLMs for Planning</title>
+  <title>Lucy H | Notes from papers that discuss LLMs</title>
   <link rel="stylesheet" href="../../../../css/main.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/default.min.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
@@ -43,7 +43,7 @@
     <main role="main">
       <div class="flex-row-col">
         <div>
-          <h1>Notes on LLMs for Planning</h1>
+          <h1>Notes from papers that discuss LLMs</h1>
           <div>
   
   <div class="header">
@@ -52,9 +52,103 @@
   </div>
   <div class="tags">
     
+    Tags: LLM
+    
   </div>
   <div class="content">
-    <div class="sect1">
+    <div id="toc" class="toc">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_when_prolog_meets_generative_models_a_new_approach_for_managing_knowledge_and_planning_in_robotic_applications">When Prolog meets generative models: a new approach for managing knowledge and planning in robotic applications</a>
+<ul class="sectlevel2">
+<li><a href="#_knowledge_base">knowledge base</a></li>
+</ul>
+</li>
+<li><a href="#_large_language_models_as_planning_domain_generators">Large Language Models as Planning Domain Generators</a>
+<ul class="sectlevel2">
+<li><a href="#_approach">approach</a></li>
+</ul>
+</li>
+<li><a href="#_llmp_empowering_large_language_models_with_optimal_planning_proficiency">LLM+P: Empowering Large Language Models with Optimal Planning Proficiency</a></li>
+<li><a href="#_learning_general_policies_for_planning_through_gpt_models">Learning General Policies for Planning through GPT Models</a></li>
+<li><a href="#_integrating_action_knowledge_and_llms_for_task_planning_and_situation_handling_in_open_worlds">Integrating action knowledge and LLMs for task planning and situation handling in open worlds</a></li>
+<li><a href="#_grounded_decoding_guiding_text_generation_with_grounded_models_for_embodied_agents">Grounded Decoding: Guiding Text Generation with Grounded Models for Embodied Agents</a></li>
+<li><a href="#_tree_of_thoughts_deliberate_problem_solving_with_large_language_models">Tree of Thoughts: Deliberate Problem Solving with Large Language Models</a></li>
+<li><a href="#_augmenting_large_language_models_with_chemistry_tools">Augmenting large language models with chemistry tools</a></li>
+<li><a href="#_chemllm_a_chemical_large_language_model">ChemLLM: A Chemical Large Language Model</a></li>
+<li><a href="#_autonomous_chemical_research_with_large_language_models">Autonomous chemical research with large language models</a></li>
+<li><a href="#_mrkl_systems">MRKL Systems</a>
+<ul class="sectlevel2">
+<li><a href="#_training_jurassic_x_to_extract_arguments_for_math">training jurassic-x to extract arguments (for math)</a></li>
+</ul>
+</li>
+<li><a href="#_toolformer_language_models_can_teach_themselves_to_use_tools">Toolformer: Language Models Can Teach Themselves to Use Tools</a></li>
+<li><a href="#_towards_reasoning_in_large_language_models_a_survey">Towards Reasoning in Large Language Models: A Survey</a></li>
+<li><a href="#_the_neuro_symbolic_inverse_planning_engine_nipe_modeling_probabilistic_social_inferences_from_linguistic_inputs">The Neuro-Symbolic Inverse Planning Engine (NIPE): Modeling Probabilistic Social Inferences from Linguistic Inputs</a></li>
+<li><a href="#_tree_of_thoughts_deliberate_problem_solving_with_large_language_models_2">Tree of Thoughts: Deliberate Problem Solving with Large Language Models</a></li>
+<li><a href="#_pragmatic_instruction_following_and_goal_assistance_via_cooperative_language_guided_inverse_planning">Pragmatic Instruction Following and Goal Assistance via Cooperative Language-Guided Inverse Planning</a></li>
+<li><a href="#_sequential_monte_carlo_steering_of_large_language_models_using_probabilistic_programs">Sequential Monte Carlo Steering of Large Language Models using Probabilistic Programs</a></li>
+<li><a href="#_integrating_action_knowledge_and_llms_for_task_planning_and_situation_handling_in_open_worlds_2">Integrating action knowledge and LLMs for task planning and situation handling in open worlds</a></li>
+<li><a href="#_inferring_the_goals_of_communicating_agents_from_actions_and_instructions">Inferring the Goals of Communicating Agents from Actions and Instructions</a></li>
+<li><a href="#_grounding_language_about_belief_in_a_bayesian_theory_of_mind">Grounding Language about Belief in a Bayesian Theory-of-Mind</a></li>
+<li><a href="#_grounded_physical_language_understanding_with_probabilistic_programs_and_simulated_worlds">Grounded physical language understanding with probabilistic programs and simulated worlds</a></li>
+<li><a href="#_accelerated_end_to_end_chemical_synthesis_development_with_large_language_models">Accelerated end-to-end chemical synthesis development with large language models</a>
+<ul class="sectlevel2">
+<li><a href="#_literature_search_and_information_extraction">literature search and information extraction</a></li>
+<li><a href="#_methodology_substrate_scope_and_condition_screening">methodology substrate scope and condition screening</a></li>
+<li><a href="#_self_driven_reaction_condition_optimization">self-driven reaction condition optimization</a></li>
+<li><a href="#_methods">methods</a></li>
+</ul>
+</li>
+<li><a href="#_chemist_x_large_language_model_empowered_agent_for_reaction_condition_recommendation_in_chemical_synthesis">Chemist-X: Large Language Model-empowered Agent for Reaction Condition Recommendation in Chemical Synthesis</a>
+<ul class="sectlevel2">
+<li><a href="#_methods_2">methods</a></li>
+</ul>
+</li>
+<li><a href="#_progprompt_program_generation_for_situated_robot_task_planning_using_large_language_models">"PROGPROMPT: program generation for situated robot task planning using large language models"</a></li>
+<li><a href="#_backgroundrelated_work">background/related work</a></li>
+<li><a href="#_progprompt">progprompt</a>
+<ul class="sectlevel2">
+<li><a href="#_personal_thoughts">personal thoughts</a></li>
+</ul>
+</li>
+<li><a href="#_grammar_prompting_for_domain_specific_language_generation_with_large_language_models">Grammar Prompting for Domain-Specific Language Generation with Large Language Models</a></li>
+<li><a href="#_do_as_i_can_not_as_i_say_grounding_language_in_robotic_affordances">Do As I Can, Not As I Say: Grounding Language in Robotic Affordances</a></li>
+<li><a href="#_learning_how_to_ground_a_plan_partial_grounding_in_classical_planning">Learning How to Ground a Plan – Partial Grounding in Classical Planning</a></li>
+<li><a href="#_grounding_natural_language_instructions_to_semantic_goal_representations_for_abstraction_and_generalization">Grounding natural language instructions to semantic goal representations for abstraction and generalization</a>
+<ul class="sectlevel2">
+<li><a href="#_related_work">related work</a></li>
+<li><a href="#_background">background</a></li>
+</ul>
+</li>
+<li><a href="#_semantic_goal_representation">semantic goal representation</a>
+<ul class="sectlevel2">
+<li><a href="#_abstraction_in_language">abstraction in language</a></li>
+</ul>
+</li>
+<li><a href="#_language_grounding_models">language grounding models</a>
+<ul class="sectlevel2">
+<li><a href="#_grounding_module">grounding module</a></li>
+</ul>
+</li>
+<li><a href="#_towards_plugn_play_task_level_autonomy_for_robotics_using_pomdps_and_generative_models">Towards Plug’n Play Task-Level Autonomy for Robotics Using POMDPs and Generative Models</a>
+<ul class="sectlevel2">
+<li><a href="#_introduction">introduction</a></li>
+<li><a href="#_planning_based_deliberative_architectures">planning-based deliberative architectures</a></li>
+<li><a href="#_system_overview_and_concept">system overview and concept</a></li>
+</ul>
+</li>
+<li><a href="#_on_the_prospects_of_incorporating_large_language_models_llms_in_automated_planning_and_scheduling_aps">On the Prospects of Incorporating Large Language Models (LLMs) in Automated Planning and Scheduling (APS)</a></li>
+<li><a href="#_large_language_models_as_planning_domain_generators_2">Large Language Models as Planning Domain Generators</a>
+<ul class="sectlevel2">
+<li><a href="#_llms">LLMs</a></li>
+<li><a href="#_llms_in_aps">LLMs in APS</a></li>
+</ul>
+</li>
+<li><a href="#_planning_domain_simulation_an_interactive_system_for_plan_visualisation">Planning Domain Simulation: An Interactive System for Plan Visualisation</a></li>
+</ul>
+</div>
+<div class="sect1">
 <h2 id="_when_prolog_meets_generative_models_a_new_approach_for_managing_knowledge_and_planning_in_robotic_applications">When Prolog meets generative models: a new approach for managing knowledge and planning in robotic applications</h2>
 <div class="sectionbody">
 <div class="ulist">
@@ -134,7 +228,7 @@
 <p>metrics for evaluating domain quality that don’t need humans</p>
 </li>
 <li>
-<p>classes of natural language descriptions of PDDL actions to see if including/excluding certain types of informatoin impacts ability to generate domains</p>
+<p>classes of natural language descriptions of PDDL actions to see if including/excluding certain types of information impacts ability to generate domains</p>
 </li>
 <li>
 <p>evaluation of many different models</p>
@@ -347,6 +441,1227 @@ t find anything)</p>
 </li>
 </ul>
 </div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_augmenting_large_language_models_with_chemistry_tools">Augmenting large language models with chemistry tools</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>llm + tools, remove learning curve with tools</p>
+</li>
+<li>
+<p>thought, action,  action input, observation format: reason about current state of the task, consider relevance to final goal, plan next steps</p>
+</li>
+<li>
+<p>action: tool, action input: the input to the tool</p>
+</li>
+<li>
+<p>result is prepended by observation</p>
+</li>
+<li>
+<p>chain of thought reasoning</p>
+</li>
+<li>
+<p>chemcrow can autonomously adapt synthesis procedures based on lab constraints</p>
+</li>
+<li>
+<p>outperforms on tasks where more grounded chemistry knowledge is required</p>
+</li>
+<li>
+<p>chatgpt4 hallucinates, but sounds "more complete"</p>
+</li>
+<li>
+<p>"ChemCrow follows a set of hard-coded guidelines"</p>
+</li>
+<li>
+<p>tackle hallucinations via tools, and tackle lack of reproducibility via tools</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_chemllm_a_chemical_large_language_model">ChemLLM: A Chemical Large Language Model</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>more like q and a bot</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_autonomous_chemical_research_with_large_language_models">Autonomous chemical research with large language models</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>planner (llm) calls on google, python, documentation, experiment for information it needs</p>
+</li>
+<li>
+<p>opentrons and SLL (symbolic lab language)</p>
+</li>
+<li>
+<p>fix code by running python in docker instance</p>
+</li>
+<li>
+<p>nonbrowsing/old models significantly bad</p>
+</li>
+<li>
+<p>use of opentrons API documentation and SSL (DSL)</p>
+</li>
+<li>
+<p>search for documentation: vector database → nearest neighbour</p>
+</li>
+<li>
+<p>wrote wrong code, looked up documentation to correct it</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_mrkl_systems">MRKL Systems</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Modular Reasoning, Knowledge and Language</p>
+</li>
+<li>
+<p>llm limitations</p>
+</li>
+<li>
+<p>lack of access tso current information</p>
+</li>
+<li>
+<p>lack of access to proprietary information</p>
+</li>
+<li>
+<p>lack of reasoning</p>
+</li>
+<li>
+<p>model explosion</p>
+</li>
+<li>
+<p>not practical to fine tune and serve multiple LMs</p>
+</li>
+<li>
+<p>can’t fine tune further a multitask LLM due to catatrosphic forgor</p>
+</li>
+<li>
+<p>MRKL: set of modules, experts, router that routes every natural language input to a module that can best respond to the input</p>
+</li>
+<li>
+<p>modules can be neural (other LMs), or symbolic (calculator)</p>
+</li>
+<li>
+<p>router is specialized neural net, which is also trained to extract arguments to provide to the more symbolic experts</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_training_jurassic_x_to_extract_arguments_for_math">training jurassic-x to extract arguments (for math)</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>just training not enough, but data augmentation methodology (generating examples from structured example space) → static pretained LM can achieve near performance</p>
+</li>
+<li>
+<p>what is needed in terms of data augmentation to get near perfect performance (on math)</p>
+</li>
+<li>
+<p>how well can (jurassic-x) generalize (between math problems)</p>
+</li>
+<li>
+<p>prompt tuning with 10 prompt tokens</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_toolformer_language_models_can_teach_themselves_to_use_tools">Toolformer: Language Models Can Teach Themselves to Use Tools</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>model that decides what API to call and what arguments to give</p>
+</li>
+<li>
+<p>on context learning</p>
+</li>
+<li>
+<p>ask LLM where it should put API calls</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_towards_reasoning_in_large_language_models_a_survey">Towards Reasoning in Large Language Models: A Survey</h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="_the_neuro_symbolic_inverse_planning_engine_nipe_modeling_probabilistic_social_inferences_from_linguistic_inputs">The Neuro-Symbolic Inverse Planning Engine (NIPE): Modeling Probabilistic Social Inferences from Linguistic Inputs</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>what is bayesian inverse planning??</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_tree_of_thoughts_deliberate_problem_solving_with_large_language_models_2">Tree of Thoughts: Deliberate Problem Solving with Large Language Models</h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="_pragmatic_instruction_following_and_goal_assistance_via_cooperative_language_guided_inverse_planning">Pragmatic Instruction Following and Goal Assistance via Cooperative Language-Guided Inverse Planning</h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="_sequential_monte_carlo_steering_of_large_language_models_using_probabilistic_programs">Sequential Monte Carlo Steering of Large Language Models using Probabilistic Programs</h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="_integrating_action_knowledge_and_llms_for_task_planning_and_situation_handling_in_open_worlds_2">Integrating action knowledge and LLMs for task planning and situation handling in open worlds</h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="_inferring_the_goals_of_communicating_agents_from_actions_and_instructions">Inferring the Goals of Communicating Agents from Actions and Instructions</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>multi-modal Bayesian inverse planning from actions and instructions</p>
+</li>
+<li>
+<p>model human linguistic/action understanding as processes of bayesian interpretation</p>
+</li>
+<li>
+<p>BToM: humans understand each other actions by inferring goals/beliefs that explain those actions as rational</p>
+</li>
+<li>
+<p>RSA: interpret not just on bare semantics, but also pragmatic intentions they imply</p>
+</li>
+<li>
+<p>achieve joint inference from action + uttered instructions</p>
+</li>
+<li>
+<p>rather than assistant infer principal’s goal → infer team’s goal given their actions/communciated instructions</p>
+</li>
+<li>
+<p>model team as group agent → bypass challenge of recursive mental reasoning</p>
+</li>
+<li>
+<p>probabilistic program: goal prior, joint planner, utterance model</p>
+</li>
+<li>
+<p>easily integrate LLMs are flexible utterance likelihoods</p>
+</li>
+<li>
+<p>LLMs used as modular components to larger probabilistic models</p>
+</li>
+<li>
+<p>probabilistic program with deterministic, stochastic and neural components</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_grounding_language_about_belief_in_a_bayesian_theory_of_mind">Grounding Language about Belief in a Bayesian Theory-of-Mind</h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="_grounded_physical_language_understanding_with_probabilistic_programs_and_simulated_worlds">Grounded physical language understanding with probabilistic programs and simulated worlds</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>mental physics engine?</p>
+</li>
+<li>
+<p>physics in a language of thought → maps language into probabilistic language of thought + physics simulation and inference</p>
+</li>
+<li>
+<p>construct linguistic meaning from cognitive represenation in compositional language of thought</p>
+</li>
+<li>
+<p>probabilistic programs grounded in physics engine</p>
+</li>
+<li>
+<p>PiLoT: probabiltic generative model, language-to-code model, physics simulator</p>
+</li>
+<li>
+<p>LLM struggle with number/spatial relations</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_accelerated_end_to_end_chemical_synthesis_development_with_large_language_models">Accelerated end-to-end chemical synthesis development with large language models</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>GPT-4 to build a multi-agent system</p>
+<div class="ulist">
+<ul>
+<li>
+<p>6 specialized LLM agents: literature scouter, experiment designer, hardware executor, spectrum analyzer, separation instructor, result interpreter, preprompted</p>
+</li>
+<li>
+<p>machine-learning-aided synthesis planning, guide automated high-throughput experimental platforms, direct translation of literature procedrues to experimental execution</p>
+</li>
+<li>
+<p>monolithic input-to-output nature</p>
+</li>
+<li>
+<p>agents can use external tools, like Python interpreter, academic database search, self-driven reaction optimization algorithms</p>
+</li>
+<li>
+<p>human chemists are still required the tweak the responses of the LLM agents</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_literature_search_and_information_extraction">literature search and information extraction</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>instead of manually reading literature, use prompt to ask LLM to search an academic database</p>
+</li>
+<li>
+<p>asked the LLM to extract the procedure from the literature paper</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_methodology_substrate_scope_and_condition_screening">methodology substrate scope and condition screening</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>high throughout screening is not easy to access</p>
+</li>
+<li>
+<p>experiment designer, hardware executer, spectrum analyzter and result interpreter to automote HTS</p>
+</li>
+<li>
+<p>directly generated opentrons code</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_self_driven_reaction_condition_optimization">self-driven reaction condition optimization</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>bayesian optimization, nelder-mead simplex, SNOBFIT, MINLP algorithm → steep learning curve</p>
+<div class="ulist">
+<ul>
+<li>
+<p>LLM have good performance for optimizing reactions with clear kinetics or prior knowledge, but fall behind statistical optimization algorithms</p>
+</li>
+<li>
+<p>experiment designer → transform into JSON</p>
+</li>
+<li>
+<p>hardware executor → JSON into code templates</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_methods">methods</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>hardware executor: code examples were provided</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_chemist_x_large_language_model_empowered_agent_for_reaction_condition_recommendation_in_chemical_synthesis">Chemist-X: Large Language Model-empowered Agent for Reaction Condition Recommendation in Chemical Synthesis</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>automates reaction condition recommendation task (RCR) with retrival-augmented generation (RAG)</p>
+</li>
+<li>
+<p>online molecular databases</p>
+</li>
+<li>
+<p>in context learning, few shot learning</p>
+<div class="ulist">
+<ul>
+<li>
+<p>top match slice: portion of document bearing most semantic similarity</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>interaction with APIs that require coding</p>
+</li>
+<li>
+<p>model’s temperature and presence penality: lower the temperature is better → focused and determinisitc</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_methods_2">methods</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>ICL: quality of LLM output depends on example given</p>
+<div class="ulist">
+<ul>
+<li>
+<p>how to select most relevant document example → cosine similarity, after tokenization into vectors</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>information analysis using online literature</p>
+<div class="ulist">
+<ul>
+<li>
+<p>construction of web crawlers using ICL prompts, and then analyzing the HTML content using Python</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>final reccomediation with pre-packaged fingerprint tool</p>
+<div class="ulist">
+<ul>
+<li>
+<p>advanced ML algorithms just "straightforward concatenations of encoded molecules"</p>
+</li>
+<li>
+<p>CL-SCL network</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_progprompt_program_generation_for_situated_robot_task_planning_using_large_language_models">"PROGPROMPT: program generation for situated robot task planning using large language models"</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>source: <a href="https://arxiv.org/abs/2209.11302" class="bare">https://arxiv.org/abs/2209.11302</a></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>tasks require commonsense:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>object affordances</p>
+</li>
+<li>
+<p>logical sequence of actions</p>
+</li>
+<li>
+<p>task relevance of objects/actions</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>but this requires: state feedback/knowledge of current environment</p>
+</li>
+<li>
+<p>provide LLM with</p>
+<div class="ulist">
+<ul>
+<li>
+<p>with Pythonic header with import statement for availble actions and their parameters,</p>
+</li>
+<li>
+<p>list of environment objects,</p>
+</li>
+<li>
+<p>function definitions</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>preconditions</p>
+</li>
+<li>
+<p>respond to failed assertions with recovery actions</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_backgroundrelated_work">background/related work</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>heuristics to guide search</p>
+</li>
+<li>
+<p>task planning as a tuple (O, P, A, T, I, G, t)</p>
+<div class="ulist">
+<ul>
+<li>
+<p>O: objects</p>
+</li>
+<li>
+<p>P: properties ⇒ object affordances</p>
+</li>
+<li>
+<p>A: set of executable actions, changes depending on current state</p>
+<div class="ulist">
+<ul>
+<li>
+<p>state s is specific assignment of all objects</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>prompt for task planning:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>prompting function: transform input state into textual prompt</p>
+</li>
+<li>
+<p>answer search: generation step</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>open-ended task planning: generated plans with non existant objects</p>
+<div class="ulist">
+<ul>
+<li>
+<p>programming language inspired prompt generator → inform LLM of situatated environment state + avalible robot actions</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>" PDDL as the translation language instead of code, and use the LLM to generate either a PDDL plan or the goal. …​ This approach ablated the need to generate preconditions using the LLM, however, needs the domain rules to be specified for the planner."</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_progprompt">progprompt</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>robot plans as pythonic code</p>
+</li>
+<li>
+<p>intermediate summaries, chain of thought</p>
+</li>
+<li>
+<p>assertions for environment feedback + error recovery</p>
+</li>
+<li>
+<p>provide LLM with examples/samples</p>
+</li>
+<li>
+<p>objects with state</p>
+</li>
+<li>
+<p>use program like prompt</p>
+</li>
+<li>
+<p>LLM strengthes: commonsense reasoning and code understanding</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_personal_thoughts">personal thoughts</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>verifier needs to be some type of graph</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_grammar_prompting_for_domain_specific_language_generation_with_large_language_models">Grammar Prompting for Domain-Specific Language Generation with Large Language Models</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://arxiv.org/pdf/2305.19234" class="bare">https://arxiv.org/pdf/2305.19234</a></p>
+</li>
+<li>
+<p><a href="https://github.com/berlino/grammar-prompting" class="bare">https://github.com/berlino/grammar-prompting</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>"This approach is however inadequate for applications where the task specifications cannot be fully delineated through just a handful of exemplars, for example in semantic parsing where an LLM must translate a natural language utterance to an executable program in a domain-specific language (DSL)"</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>many DSLs have not been seen during pretraining, so how to use LLMs to to generate strings → grammer prompting</p>
+<div class="ulist">
+<ul>
+<li>
+<p>given an input LLM tries to predict BNF grammar, then generates answer based on grammar</p>
+</li>
+<li>
+<p>similar to enhancing work by interleaving intermediate "reasoning" steps between each in-context input and output</p>
+</li>
+<li>
+<p>intermediate variable is form of formal grammer</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>design constrained LLM decoding algorithm tailored to grammar prompting
+<span class="image"><img src="../../../images/hein/grammar-prompt.png" alt="grammar prompt"></span></p>
+</li>
+<li>
+<p>constrained decoding:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Earley parser → challenging if only using API based LLM</p>
+</li>
+<li>
+<p>instead, Earley-based parser, steps are:
+<span class="image"><img src="../../../image/hein/earley-based.png" alt="earley based"></span></p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_do_as_i_can_not_as_i_say_grounding_language_in_robotic_affordances">Do As I Can, Not As I Say: Grounding Language in Robotic Affordances</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>"With prompt engineering, a LLM may be capable of splitting the high-level instruction into sub-tasks, but it cannot do so without the context of what the robot is capable of given its abilities and the current state of the robot and the environment."</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>robot has atomic behaviours</p>
+</li>
+<li>
+<p>system recieves user-provided natural language instruction and set of skills</p>
+</li>
+<li>
+<p>probability given skill makes progress towards completing instruction</p>
+</li>
+<li>
+<p>constraints</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>"Prompt engineering provides examples in the context text (“prompt”) for the model that specify the task and the response structure which the model will emulate;"</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>value function scores ⇒ should output this score</p>
+</li>
+<li>
+<p>iteratively append skills that increase value function</p>
+</li>
+<li>
+<p>assume optimal set of skills is currently static</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>"The key idea of SayCan is to ground large language models through value functions – affordance functions that capture the log likelihood that a particular skill will be able to succeed in the current state."</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>language conditioned robotic control policies: instantiate robot with set of skills with policy, value function, short description</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_learning_how_to_ground_a_plan_partial_grounding_in_classical_planning">Learning How to Ground a Plan – Partial Grounding in Classical Planning</h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="_grounding_natural_language_instructions_to_semantic_goal_representations_for_abstraction_and_generalization">Grounding natural language instructions to semantic goal representations for abstraction and generalization</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>grounding: mapping natural language → robot behaviour</p>
+</li>
+<li>
+<p>choice of representation used to capture objective specified by input command</p>
+</li>
+<li>
+<p>markov decision processes</p>
+</li>
+<li>
+<p>abstractions in language map to subgoals → decompose generic, abstract commands into modular subgoals → robot will be more robsut</p>
+</li>
+<li>
+<p>language grounding model → identify linguistic abstraction → hierarchical planning → efficient robot excecution</p>
+</li>
+<li>
+<p>abstraction → key to efficiency</p>
+</li>
+<li>
+<p>mapping to fixed sequences of robot actions → unreliable in changing/stochastic environments</p>
+</li>
+<li>
+<p>decouple problem → statistical language model to map language and robot goals, reward functions as Markov Decision Process (MDP) → arbitrary planner solves MDP</p>
+</li>
+<li>
+<p>novel approaches:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>tackle varying granularity of natural language by mapping to reward functions at different levels of abstraction</p>
+</li>
+<li>
+<p>issue of generalization: multistep inference process</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>decompose representation and infer constiteunt elements</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_related_work">related work</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>SHRDLU: handwritten rules, first attempt at agent that can ground language into robot actions</p>
+</li>
+<li>
+<p>language → intermediate → agent behaviour</p>
+<div class="ulist">
+<ul>
+<li>
+<p>lambda calculus, reward functions, constraints for agent to satisfy in the environment</p>
+</li>
+<li>
+<p>learn new grammar rules during course of learning semantic parser, requires a grammar</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>goal reward function as conjunction of propostional logic functions</p>
+</li>
+<li>
+<p>this work: inference over reward function templates, lifted reward functions → specify task while learning environment-specific variables of task undefined</p>
+<div class="ulist">
+<ul>
+<li>
+<p>environment binding constraints specify the constraints an object must have to be bound</p>
+</li>
+<li>
+<p>output of grounding model never tired to any particular instantiation of environment</p>
+</li>
+<li>
+<p>given lifted reward function/environment constraint → subsequent model can infer environment specific variables → pass to a planner</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>searching an entire search space takes very long → decompose planning problem into subtasks → temporal abstraction → macro actions → subgoals via fixed sequence of actions or policy with fixed initial/terminal states</p>
+</li>
+<li>
+<p>bottom up planning vs. top down (322)L</p>
+<div class="ulist">
+<ul>
+<li>
+<p>bottom up: reward for each action taken backed up through hierarchy of options</p>
+</li>
+<li>
+<p>top down (AMDP): determine how good a subgoal is before planning to achieve subgoal</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>natural language as a goal state specifiction + action specifiction</p>
+<div class="ulist">
+<ul>
+<li>
+<p>humans mix goal-based commands and action-oriented commands</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>deep neural networks (LLM??) → language grounding</p>
+<div class="ulist">
+<ul>
+<li>
+<p>word embeddings and state of the art RNN</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_background">background</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>markoc decision process:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>five tuple (S, A, T, R, y) set of states, set of actions, transition probability distribution over all possible next states given current state and executed action, R numerical reward earned for particular transition, y is effect time horizon</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>object-oriented markov decision process</p>
+<div class="ulist">
+<ul>
+<li>
+<p>to model robot’s environment and actions</p>
+</li>
+<li>
+<p>builds upon an MDP by adding sets of object classes and propositional functions</p>
+</li>
+<li>
+<p>predicates as reward functions → sufficent semantic representation for grounding language</p>
+</li>
+<li>
+<p>map from natural language to propositional reward functions → correctly encapsulate behavoiur indicated by the input command → fully specified MDP that can be solved with planning algorithm</p>
+</li>
+<li>
+<p>environment specific grounding module → consumes lifted reward functions and low level binding to specific instances</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_semantic_goal_representation">semantic goal representation</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>break natural langauge into task inference and task execution</p>
+</li>
+<li>
+<p>given a language command, find the best r to maximize probability, where r is a lifted propositional function</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_abstraction_in_language">abstraction in language</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>high level tasks require long action sequences</p>
+</li>
+<li>
+<p>each level of hierarchy requires own set of reward functions</p>
+</li>
+<li>
+<p>given a natural language command, find corresponding level of abstracttion and lifted reward function that maximizes joint probability</p>
+</li>
+<li>
+<p>language grounding model: infer callable unit, and infer constituent binding arguments → given natural command, find callable unit u and binding arguments a that maximuze joint probablity</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_language_grounding_models">language grounding models</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>use of DRAGGN?</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_grounding_module">grounding module</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>"For instance, Artzi and Zettle- moyer (2013) present a model for executing lambda-calculus expressions generated by a combinatory categorical grammar (CCG) semantic parser, which grounds ambiguous predicates and nested arguments."</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_towards_plugn_play_task_level_autonomy_for_robotics_using_pomdps_and_generative_models">Towards Plug’n Play Task-Level Autonomy for Robotics Using POMDPs and Generative Models</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="https://arxiv.org/abs/2207.09713" class="bare">https://arxiv.org/abs/2207.09713</a></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>bridge gap between "understand what a skill does" and "low-level state variabables"</p>
+</li>
+<li>
+<p>what is the impact of the skill on the real world</p>
+</li>
+<li>
+<p>lots of integration to tie this all together</p>
+</li>
+<li>
+<p>this is done by</p>
+<div class="ulist">
+<ul>
+<li>
+<p>generative skill documentation language, bringing ideas from probabilistic programming languages</p>
+</li>
+<li>
+<p>abstraction mapping bridging low level code and AI planning model</p>
+</li>
+<li>
+<p>any properly documented skill can be used, providing plug and play experience</p>
+</li>
+<li>
+<p>POMDP solver schedules skills</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_introduction">introduction</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>challenge to address software engineering and execution logic</p>
+</li>
+<li>
+<p>writing scripts only address a specific task</p>
+</li>
+<li>
+<p>to build autonomous systems that are diverse → need to keep making scripts for each specific senario</p>
+</li>
+<li>
+<p>AI Planners: don’t always address partial observability and noisy sensors and rely on ADL (action description languages)</p>
+</li>
+<li>
+<p>code based generative model:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>describe planning domain via sampling procedure/simulator that can sample next state given current state/action, correctly</p>
+</li>
+<li>
+<p>use code to describe this sampling procedure → probabilistic programming languages</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>robot programmers document their code using more abstract language and use expressive abstraction mapping</p>
+<div class="ulist">
+<ul>
+<li>
+<p>only provide goal specification for each task and system auto genrates needed integration code and controls robot → autonomous robot operating system</p>
+</li>
+<li>
+<p>uses partially observable markov decision processes → capture stochastic nature of robot actions, noisy and partial sensing</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_planning_based_deliberative_architectures">planning-based deliberative architectures</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>ROSPlan: planning/plan execution architecture for robots generating plans based on PDDL</p>
+<div class="ulist">
+<ul>
+<li>
+<p>single world state and deterministic sensing</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_system_overview_and_concept">system overview and concept</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>extension of ROSPlan</p>
+</li>
+<li>
+<p>documentation:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>GDSL: how the code changes the robot’s state and the world’s state</p>
+</li>
+<li>
+<p>AM: connection between abstract POMDP model and the low level code
+<strong>*</strong>: how to activate the code, how to map abtract parameter values to code-level parameters</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_on_the_prospects_of_incorporating_large_language_models_llms_in_automated_planning_and_scheduling_aps">On the Prospects of Incorporating Large Language Models (LLMs) in Automated Planning and Scheduling (APS)</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="https://openreview.net/pdf?id=BLsvMLvuhL" class="bare">https://openreview.net/pdf?id=BLsvMLvuhL</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_large_language_models_as_planning_domain_generators_2">Large Language Models as Planning Domain Generators</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="https://openreview.net/pdf?id=C88wQIv0aJ" class="bare">https://openreview.net/pdf?id=C88wQIv0aJ</a></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>true potential unfolds when combined with traditional symbolic solvers</p>
+<div class="ulist">
+<ul>
+<li>
+<p>combine generative potential with correctness and precision</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>how can LLMs in APS be integrated?</p>
+<div class="ulist">
+<ul>
+<li>
+<p>language translation into PDDL</p>
+</li>
+<li>
+<p>plan generation directly from LLM</p>
+</li>
+<li>
+<p>model construction: construct or redefine world/domain models</p>
+</li>
+<li>
+<p>multi-agent planning: contribute to coordination + creative strategy development</p>
+</li>
+<li>
+<p>interactive planning: iterative feedback/interactive planning</p>
+</li>
+<li>
+<p>heuristics optimization: optimizing plans through existing plans or heuristic assistance</p>
+</li>
+<li>
+<p>brain-inspired planning: act as the coordinator</p>
+</li>
+<li>
+<p>tool integration: LLM architectures inspired by neurological/cognitive prcoesses</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>APS are highly structured and logical, but lack flexibility and contextual adaptibility, LLMs could fill this gap</p>
+<div class="ulist">
+<ul>
+<li>
+<p>LLMs fail to generate precise, actionable plans</p>
+</li>
+<li>
+<p>should combine to create dynamic and context-aware planning approach</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_llms">LLMs</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>rule based → statistical based → neural network-based models</p>
+</li>
+<li>
+<p>RNN and LSTM → vanishing gradients → loss of very long sequence contexts</p>
+</li>
+<li>
+<p>transformer model: self-attention (SA) mechanisms → focus on different parts of long input in parallel</p>
+<div class="ulist">
+<ul>
+<li>
+<p>positional encodings: maintain awareness of word/token order</p>
+</li>
+<li>
+<p>self-attention: query, key, value system → contextualize dependencies → softmax</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>CLM: gpt-4: text generation is sequential and dependent on preceding context → predict next word based on prev word statistically</p>
+</li>
+<li>
+<p>MLM: BERT understand directional context, learn forward and backward language dependencies</p>
+</li>
+<li>
+<p>Seq2Seq model: transform input into related output → translation or summarization</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_llms_in_aps">LLMs in APS</h3>
+<div class="sect3">
+<h4 id="_language_translation">language translation</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>changing natural language descriptions into PDDL: LLM+P, then translate solution back into natural language</p>
+<div class="ulist">
+<ul>
+<li>
+<p>LLMs can translate PDDL into natural language, but not the other way around because don’t understand real world objects and grounding affordances → neuro-symbolic approach
+==== plan generation</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>chain-of-symbol, tree of thoughts</p>
+</li>
+<li>
+<p>show promise in generating plans within their training set, but show limitations in generalizing out of distribution domains</p>
+<div class="ulist">
+<ul>
+<li>
+<p>casual LLMs: limited due to design, because they generate text based on preciding input</p>
+</li>
+<li>
+<p>seq2seq: good within training set data, but bad at generalizing</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>integrate imperfect LLM with symbolic planners
+==== model construction</p>
+</li>
+<li>
+<p>trouble with processing low-level geometricl/shape features</p>
+</li>
+<li>
+<p>integrate real world models
+==== tool integration</p>
+</li>
+<li>
+<p>hallucinate non-existant tools, overuse single tool, strugle with multiple tools</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_planning_domain_simulation_an_interactive_system_for_plan_visualisation">Planning Domain Simulation: An Interactive System for Plan Visualisation</h2>
+<div class="sectionbody">
+
 </div>
 </div>
 
