@@ -4,16 +4,6 @@ title: "MATH 215: Ordinary Differential Equations"
 type: "notes"
 ---
 
-Lecture 1
-Lecture 2
-Lecture 3
-Lecture 4
-Lecture 4
-Lecture 5
-Lecture 6
-Lecture 7
-Lecture 8
-
 ** Quiz 1
 - integrable and separable equations
   - separable first order ODEs
@@ -28,11 +18,6 @@ Lecture 8
   - critical points
   - stable
 - Exact equation
-*** Questions Done
-- 1.8, 2.1, 2.2, 2.3
-- HW1, HW2
-- Q 1
-- Math 101 HW2: https://personal.math.ubc.ca/~sjer/math101sec201/H2/h2.pdf
 
 ** Quiz 2
 - 2nd order linear equations
@@ -49,6 +34,7 @@ Lecture 8
       - change to positive
       - arctan
     - damped free vibrations
+      - practical resonance
       - overdamped, two real
       - critical damped, repeated
       - under damp, two complex
@@ -65,20 +51,34 @@ Lecture 8
     - general solution = y_c + sum y_p
     - find C_1 and C_2
 
-*** Questions done/todo
-- HW 3, 4, 5, Q2
-- Math 101 HW3, 4, 5
-- jupyter notebook
-
 ** Quiz 3
--
-*** Questions done/todo
-- HW 6, 7,
-- Math 101 HW7, 8
-- jupyter notebook
+- laplace transformations
+  - shifting rule 1
+  - shifting rule 2
+  - heaviside function
+  - laplace transformation of integrals
+  - convolution
+  - solving ODEs with laplace transformations
+    - laplace transformation of derivatives
 
 ** Quiz 4
-*** Questions done/todo
-- HW 8, 9, 10
-- Math 101 HW9
-- jupyter notebook
+- systems of linear equations
+  - eigenvalue method: finding eigenvalues of 2by2 and 3by3
+    - real eigenvalues
+    - complex eigenvalues
+    - repeated eigenvalues
+      - multiplicity:
+        - algerbraic
+        - geometric
+          - solve $$(P - \lambda I) v_2 = v_1$$
+          - general solution: $$x(t) = C_1 v_1 e^{\lambda_1 t} + C_2 (t v_1 + v_2) e^{\lambda_1 t}$$
+
+** final
+- 2d systems
+  - features:
+    - critical points
+    - eigenvalue/eigenvector => eigendirection
+    - nullcline
+    - trajection
+- vector fields
+- stability
