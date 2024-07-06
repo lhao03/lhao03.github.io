@@ -1,0 +1,18 @@
+---
+title: "LLMs in Chemistry"
+date: 2024-07-03
+---
+
+== ChatMOF: an artificial intelligence system for predicting and generating metal-organic frameworks using large language models
+
+- three components: agent (create a plan to solve the problem), tooklit, evaluator (provides a response)
+- LLM as central coordinator
+- LLM uses tools, via Thought, Action, Action Input
+- uses LangChain
+
+== Leveraging large language models for predictive chemistry
+- large LLM as bootstrap
+
+== Augmenting large language models with chemistry tools
+
+== Autonomous chemical research with large language models

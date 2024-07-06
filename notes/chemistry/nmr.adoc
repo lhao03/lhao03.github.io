@@ -1,0 +1,42 @@
+---
+title: "Notes on Papers about NMR"
+date: 2024-06-30
+tags: nmr
+---
+
+== Artificial intelligence‑driven shimming for parallel high field nuclear magnetic resonance
+- what is shimming:
+  - https://web.mit.edu/8.13/www/pdf_files/shimming.pdf
+  - https://scs.illinois.edu/system/files/inline-files/ShimmingNMR_Magnet.pdf
+  - https://www.sciencedirect.com/topics/chemistry/shimming
+  - adjust currents in shim lines to optimize homogeneity of magenetic field
+  - adjust homogeneity of an NMR magnet
+  - integration of the NMR signal response
+    - which part of the NMR sample experiencing magnetic inhomogeneity is lost in integration process
+- what the paper did/claims:
+  - "Here we show that, by centering a separate shim system over each detector and employing deep learning to cope with overlapping non-orthogonal shimming fields, parallel detectors can be rapidly calibrated."
+  - DL: map 1D-NMR spectra to shim values, so instead of iterative optimizaiton or predefined shim maps -> predict optimal shim values with a few NMR aquisitions
+- conventional NMR too slow: low throughput due to sample loading, coil tuning, magnetic field shimming -> parallel NMR spectroscopy
+  - paralell also has trouble: "independent unperturbed operation of the parallel detector site"
+- NMR probe: sensitive RF coil to detect NMR signals with high spectral resolution
+  - stripline coils in MF applications -> high throughput screening + continuous flow measurement, but never applied in parallel
+
+=== results
+- homonuclear parallel NMR: directly compare signal from similar samples, but introduces signal coupling between two channels
+  - both coils simul excite and recieve signals
+  - minimize with time-interleaved pulse sequence -> not true synchonization
+
+==== ai-driven shimming for parallel spectroscopy
+- more data, less error
+- ai vs. traditional methods
+  - shimming based on
+    - parabolic interpolation (3 vertices)
+      - m * n * 3 aquisitions
+    - simplex algorithm (n+1 vertices), evolve through shim space until finding minimum
+      - (m * n)
+
+==== AI Concept
+- multiple channels used to aquire signals from different ROI
+  - parallel requires more considerations -> shim interactions / RF couplings between channels
+  - AI can handle high-dimensional and non-linear nature of shimming problem
+  - AI can adapt to non-orthogonal shim fields + find good shim settings for each channel

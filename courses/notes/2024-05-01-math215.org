@@ -82,3 +82,6 @@ type: "notes"
     - trajection
 - vector fields
 - stability
+- different cases for linear systems
+*** non linear systems
+$$\vec{x^{,}} = Px + f$$

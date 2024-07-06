@@ -1,0 +1,25 @@
+---
+title: Papers in Comp Chem
+date: 2024-06-30
+---
+
+== Computational studies in enantioselective liquid chromatography: Forty years of evolution in docking- and molecular dynamics-based simulations
+- enantioselective elution order (EEO) is correlated with absolute configuration (AO) of enantiomers
+- techniques applied off-line/after post-column collection/purification of enantiomeric analyte (xray crystalography, chiroptical methods, optical rotatory dispersion, specific optical rotation and NMR)
+
+=== docking analysis in chiral separation
+- Gil-Av: determined the importance of pi-interactions
+  - nowadays: mapping of binding site of a receptor by grid points describing its electronic and van der Waals features
+  - through heuristic approach: explore ligand conformations
+- necessity to perform semi-empirical or QM step at final stagse ot retrieve acurate energetic information
+- workflow example: minimization and elimination of duplicate conformations -> free energy calculation -> obtained Mm diastereoisomeric global minima -> single point density functional theory (DFT) -> electronic structure at QM level of theory -> obtained QM wavefunctions -> NBO analysis -> electron density
+  - first eluted enantiomer showed different binding modes, and the second eluted one showed only one prevalent binding fashion
+- computational analysis:
+  1. analyte conformational search
+  2. modelilng of chiralcel OD polymer
+  3. docking simulatins and evaluation of delta delta G binding
+- in silico: identified key role of hydrogen bonding and and pi-pi stacking
+
+=== molecular dynamics stuies of chiral separation
+
+pg 6

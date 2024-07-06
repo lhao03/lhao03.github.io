@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Lucy H | Notes from papers in: Concepts, Methods and Applications of Quantum Systems in Chemistry and Physics</title>
+  <title>Lucy H | Computational/Quantum Chemistry Papers</title>
   <link rel="stylesheet" href="../../../css/main.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/default.min.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
@@ -43,11 +43,11 @@
     <main role="main">
       <div class="flex-row-col">
         <div>
-          <h1>Notes from papers in: Concepts, Methods and Applications of Quantum Systems in Chemistry and Physics</h1>
+          <h1>Computational/Quantum Chemistry Papers</h1>
           <div>
   
   <div class="header">
-    Posted on May 26, 2024
+    Posted on July  4, 2024
     
   </div>
   <div class="tags">
@@ -55,15 +55,227 @@
   </div>
   <div class="content">
     <div class="sect1">
-<h2 id="_a_portal_for_quantum_chemistry_data_based_on_the_semantic_web">A Portal for Quantum Chemistry Data Based on the Semantic Web</h2>
+<h2 id="_how_long_can_a_cc_σsingle_bond_be">How Long Can A C−C σ‑Single Bond Be?</h2>
+<div class="sectionbody">
+
+</div>
+</div>
+<div class="sect1">
+<h2 id="_adsorbml_a_leap_in_efficiency_for_adsorption_energy_calculations_using_generalizable_machine_learning_potentials">AdsorbML: a leap in efficiency for adsorption energy calculations using generalizable machine learning potentials</h2>
 <div class="sectionbody">
 <div class="ulist">
 <ul>
 <li>
-<p>semantic web: structuring data in a way computers can understand → perform intelligent operations
--</p>
+<p>importance: adsorption energy of adsorbate and a catalyst surface of interest</p>
+</li>
+<li>
+<p>usually relies on heuristics and researcher intuition</p>
+</li>
+<li>
+<p>this paper: machine learning potentials can be leveraged too</p>
+</li>
+<li>
+<p>adsorption energy: energy associated with molecule interacting with catalyst surface</p>
+</li>
+<li>
+<p>find adsorbate-surface configuration that minimizes structure’s overall energy → starting point of free energy diagrams</p>
+</li>
+<li>
+<p>adsorption energies of intermediates are powerful descriptors → correlate with experimental outcomes</p>
+</li>
+<li>
+<p>many ways for molecules to interact → atom positions need to be relaxed until local energy minimum is reached → most common method is DFT</p>
+</li>
+<li>
+<p>first compute single-point calculation → system’s energy and per-atoms forces</p>
+</li>
+<li>
+<p>relaxation perform local optimization → per-atom forces are iteratively performed with DFT then used to update atom positions</p>
+</li>
+<li>
+<p>goal find global minimum: minima hopping/sampling</p>
+</li>
+<li>
+<p>E_abs = E_sys - E_slab - E_gas</p>
+</li>
+<li>
+<p>constraints: adsorbate don’t float away, adsorbate don’t break, don’t drastically change slab → can lead to invalid or inaccurate adsorption energies</p>
+</li>
+<li>
+<p>heuristic for finding globally optmial minima → surface symmetry</p>
+</li>
+<li>
+<p>descriptor based vs graph based → gets challenging with more degrees of freedom</p>
+</li>
+<li>
+<p>DFT scales N^3 (N is number of electrons)</p>
+</li>
+<li>
+<p>ML and DFT combination?</p>
+</li>
+<li>
+<p>this paper: proposes hybrid approach: sample large number of potential adsorbate configurations (heuristic and random strategies)</p>
+</li>
+<li>
+<p>perform relaxations using ML potentials</p>
+</li>
+<li>
+<p>best k-relaxed energies refined using single-point DFT calculations/full DFT relaxations</p>
+</li>
+<li>
+<p>ML is only around 50% accurate when calculating relaxation energies</p>
 </li>
 </ul>
+</div>
+<div class="sect2">
+<h3 id="_adsorbml_algorithm">AdsorbML algorithm</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>ML finds relaxation energies</p>
+</li>
+<li>
+<p>best k systems with lowest energies are selected</p>
+</li>
+<li>
+<p>DFT single-point dont on corresponding structures (more accurate) OR DFT relaxations performed form ML-relaxed structures (ML is pre-optimizer)</p>
+</li>
+<li>
+<p>ML is just used to rank the energies</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_experiments">Experiments</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>experiments and different strategies → most accurate moecuels do not necessarily find much better minima</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_discussion">Discussion</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>pave the way for reducing computational cost in computational chemistry</p>
+</li>
+<li>
+<p>this AsdorbML allows us to choose compute budget</p>
+</li>
+<li>
+<p>how does noise impact ML models</p>
+</li>
+<li>
+<p>alternative methods of global optmization/initial configuration generation</p>
+</li>
+<li>
+<p>hopping, constrained optimization, BO, directly learned appraoch</p>
+</li>
+<li>
+<p>ML relaxations without DFT are not accurate enough</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_automatic_differentiation_for_the_direct_minimization_approach_to_the_hartreefock_method">Automatic Differentiation for the Direct Minimization Approach to the Hartree−Fock Method</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>automatic differentiation applied to HF method</p>
+</li>
+<li>
+<p>calculate derivatives of function without giving explicit forms of derivatives</p>
+</li>
+<li>
+<p>backward propagation algorithm → special case of reverse-mode AD</p>
+</li>
+<li>
+<p>reverse mode AD: more efficient than forward mode when num input variables &gt; output variables</p>
+</li>
+<li>
+<p>reverse-mode more efficient than forward-mode, eigenvalue calculation in SCF method impedes use of reverse-mode AD (why)</p>
+</li>
+<li>
+<p>directly minimize HF energy under orthogonality constraint of MOs using reverse-mode AD by avoiding eigenvalue calculation</p>
+</li>
+<li>
+<p>HF: eigenvalue equation (Roothaan equation) via MOs as LCAOS, solved through SCF</p>
+</li>
+<li>
+<p>requires calculating eigenvalues, and reverse-mode cannot be applied in degenerated systems</p>
+</li>
+<li>
+<p>reverse mode is preferred because: multiple coefficients → single energy value</p>
+</li>
+<li>
+<p>direct minimication via. variational principle: tricky part is orthonomality → QR decomposition implemented in quantum chemistry library DQC → more robust method, can be applied to large systems</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_methods">methods</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Roothaan equation solved iteratively since Fock matrix is function of C (SCF), computational cost grows in order of n^3 (n depends on C which depends on the number of basis functions) → SCF may also oscillate</p>
+</li>
+<li>
+<p>instead, directly minimize HF energy under orthonomality condition by adjusting coefficents C</p>
+</li>
+<li>
+<p>minimize E© while keeping C^T SC = I true</p>
+</li>
+<li>
+<p>direct minimization curvilinear search using cayley transformation: minimizes objective function along descent path under the constraint</p>
+</li>
+<li>
+<p>augmented langrangian method: solve general constrained optmization problems</p>
+</li>
+<li>
+<p>minimize E© subject to h© = 0
+iteratively solves by reducing to unconstrained optmization problem</p>
+</li>
+<li>
+<p>AD of HF energy:</p>
+</li>
+<li>
+<p>input are LCAO coefficents, output is energy value, no calculation of eigenvalues so reverse-mode can be used</p>
+</li>
+<li>
+<p>AD calculate derivative of a function algorithmically based on chain rule</p>
+</li>
+<li>
+<p>symbolic differentiation which generates explicit form of the derivative of a function</p>
+</li>
+<li>
+<p>numerical differentian:  estimates value of derivative from fxn values in different points</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_discussion_2">discussion</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>good initial guess required to make this approach work (why)</p>
+</li>
+<li>
+<p>conjugate gradient vs. gradient</p>
+</li>
+<li>
+<p>combination of conjugate and AD for the future</p>
+</li>
+</ul>
+</div>
 </div>
 </div>
 </div>
