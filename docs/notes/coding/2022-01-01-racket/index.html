@@ -1,0 +1,516 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lucy H | 2022-01-01-racket</title>
+  <link rel="stylesheet" href="../../../css/main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
+  <!-- and it's easy to individually load additional languages -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/languages/scheme.min.js"></script>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/base16/onedark.min.css" />
+  <script>
+    hljs.highlightAll();
+  </script>
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+  <link rel="preconnect" href="https://www.googletagmanager.com" />
+  <link rel="preconnect" href="https://www.google-analytics.com" />
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KDGPVMHC9Q"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-KDGPVMHC9Q");
+  </script>
+
+  <!-- basic favicon -->
+  <link rel="icon" href="../../../images/android-chrome-384x384.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../../images/android-chrome-384x384.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../../images/android-chrome-384x384.png" />
+  <link rel="apple-touch-icon-precomposed" href="../../../images/android-chrome-384x384.png" />
+</head>
+
+  <body>
+    <main role="main">
+      <div class="flex-row-col">
+        <div>
+          <h1>2022-01-01-racket</h1>
+          <div>
+  
+  <div class="header">
+    Posted on January  1, 2022
+    
+  </div>
+  <div class="tags">
+    
+  </div>
+  <div class="content">
+    
+<div id="toc" class="toc">Contents:
+<ul>
+<li><a href="#making-funstacker-a-functional-version-of-stacker" id="toc-making-funstacker-a-functional-version-of-stacker">making funstacker, a functional version of stacker</a>
+<ul>
+<li><a href="#forfold" id="toc-forfold">for/fold</a></li>
+</ul></li>
+<li><a href="#making-bf-the-next-step" id="toc-making-bf-the-next-step">making bf, the next step!</a>
+<ul>
+<li><a href="#intro" id="toc-intro">intro</a>
+<ul>
+<li><a href="#how-bf-works" id="toc-how-bf-works">how bf works</a></li>
+</ul></li>
+<li><a href="#grammars-and-parsers" id="toc-grammars-and-parsers">grammars and parsers</a>
+<ul>
+<li><a href="#parsing-and-parse-trees" id="toc-parsing-and-parse-trees">parsing and parse trees</a></li>
+<li><a href="#parsing-power-tool-a-grammar" id="toc-parsing-power-tool-a-grammar">parsing power tool: a grammar</a></li>
+</ul></li>
+<li><a href="#grammar-notation" id="toc-grammar-notation">grammar notation</a>
+<ul>
+<li><a href="#applying-a-grammar" id="toc-applying-a-grammar">applying a grammar</a></li>
+<li><a href="#groups-and-multiples-in-patterns" id="toc-groups-and-multiples-in-patterns">groups and multiples in patterns</a></li>
+</ul></li>
+<li><a href="#the-parser" id="toc-the-parser">the parser</a>
+<ul>
+<li><a href="#converting-a-grammar-to-a-parser" id="toc-converting-a-grammar-to-a-parser">converting a grammar to a parser</a></li>
+</ul></li>
+<li><a href="#the-tokenizer" id="toc-the-tokenizer">the tokenizer</a>
+<ul>
+<li><a href="#designing-the-bf-tokenizer" id="toc-designing-the-bf-tokenizer">designing the bf tokenizer</a></li>
+<li><a href="#writing-a-reader-with-a-tokenizer" id="toc-writing-a-reader-with-a-tokenizer">writing a reader with a tokenizer</a></li>
+</ul></li>
+<li><a href="#making-the-expander-an-imperative-expander" id="toc-making-the-expander-an-imperative-expander">making the expander: an imperative expander</a>
+<ul>
+<li><a href="#from-grammar-to-syntax-pattern" id="toc-from-grammar-to-syntax-pattern">from grammar to syntax pattern</a></li>
+</ul></li>
+<li><a href="#a-functional-expander" id="toc-a-functional-expander">a functional expander</a>
+<ul>
+<li><a href="#restarting-the-expander" id="toc-restarting-the-expander">restarting the expander</a></li>
+<li><a href="#making-it-faster" id="toc-making-it-faster">making it faster</a></li>
+</ul></li>
+</ul></li>
+</ul></div>
+<div id="body"><p>— title: λ Racket Shenanigans date: 2022-01-01 tags: learning,
+programming languages —</p>
+<p><a href="https://beautifulracket.com/stacker/recap.html">awesome book on creating languages in
+racket</a></p>
+<p>These are my notes on creating programming languages with Racket.</p>
+<h1 id="making-funstacker-a-functional-version-of-stacker">making funstacker, a functional version of stacker</h1>
+<p>You can find the full tutorial
+<a href="https://beautifulracket.com/funstacker/">here</a>.</p>
+<pre><code>(define (read-syntax path port)
+  (define src-lines (port-&gt;lines port))
+  (define src-datums (format-datums '~a src-lines))
+  (define module-datum `(module funstacker-mod &quot;funstacker.rkt&quot;
+                          (handle-args ,@src-datums)))
+  (datum-&gt;syntax #f module-datum))
+(provide read-syntax)</code></pre>
+<ul>
+<li><p><code>format-datums</code> takes the list of lines and changes it into data.</p></li>
+<li><p>for funstacker, we just want to return the input as <code>1 2 + 3 *</code> and
+change it into <code>(handle 1 2 + 3 *)</code>.</p></li>
+<li><p>that is what <code>(handle-args ,@src-datums)</code> is doing.</p></li>
+<li><p>now we need to make the <code>handle-args</code> function.</p></li>
+</ul>
+<h2 id="forfold">for/fold</h2>
+<pre><code>(for/fold ([sum 0])
+          ([int (list 1 2 3 4 5 6 7 8 9 10)])
+          (+ sum int))</code></pre>
+<p><code>for/fold</code> iterates over a list of values and each pass of the loop also
+returns an accumulator. The value of the accumulator is replaced with a
+new value. The loop ends when the iterator runs out of values. The
+return value is the final value of the accumulator.</p>
+<p>For the example above, the accumulator is <code>sum</code> and iterator is <code>int</code>.</p>
+<p><code>for/fold</code> has two mandatory parts, and two optional parts. 1. at least
+one accumulator needs to be defined and every accumulator needs to have
+an inital value. 2. at least one iterator needs to be defined. 3.
+(optional) guard expression, which limits the iteration with a test
+condition. 4. (optional) sequence constructor <code>in-list</code>. any sequence
+can be used directly as source of iterator values, including any list.</p>
+<h1 id="making-bf-the-next-step">making bf, the next step!</h1>
+<p><a href="https://beautifulracket.com/bf/">tutorial here</a></p>
+<h2 id="intro">intro</h2>
+<p>The essential parts of a language are: - reader - expander</p>
+<p>But now we want to add grammer, basically allow us to specify the
+structure of a language. We need two new pieces: - parser - tokenizer</p>
+<p>To use bf in racket: <code>#lang bf-demo</code></p>
+<h3 id="how-bf-works">how bf works</h3>
+<ul>
+<li><p>when starting up: create array of bytes in memory (each byte
+initialized to 0) and pointer into that array (initialized to the 0
+position).</p></li>
+<li><p>the current byte is the byte in the array at the location indicated
+by the pointer.</p></li>
+<li><p>there are 6 operations:</p>
+<ul>
+<li><p>&gt; increase pointer position by one</p></li>
+<li><p>&lt; decrease pointer position by one</p></li>
+<li><ul>
+<li>increase the value of the current byte by one</li>
+</ul></li>
+<li><ul>
+<li>decrease the value of the current byte by one</li>
+</ul></li>
+<li><p>. write current byte to stdout</p></li>
+<li><p>, read a byte from stdin and store it in the current byte
+(overwriting the existing value)</p></li>
+</ul></li>
+</ul>
+<p>There is also a looping construct <code>[...]</code> that will repeat code within
+the brackets until the current byte is zero.</p>
+<p>Recall the two functions each language needs: - reader: converts source
+file from string of characters into parenthesized S-expressions.
+<code>read-syntax</code> - expander: determines how the S-expressions correspond to
+Racket code. Starts with macro called #%module-begin</p>
+<p>Clean, well-structured S-expressions makes writing an expander much
+easier.</p>
+<p>The way we can convert any well-specified programming language into
+S-expressions is by using a grammar.</p>
+<h2 id="grammars-and-parsers">grammars and parsers</h2>
+<h3 id="parsing-and-parse-trees">parsing and parse trees</h3>
+<p>parsing: converting source code from a format for humans into one
+optimized for a computer. - the data structure that emerges from the
+parser is a parser tree.</p>
+<p>In Racket, a parse tree can be notated as an S-expression. A parse tree
+describes structure of code, but doesn’t tell us how the code will
+actually run.</p>
+<pre><code>if y &gt; 0:
+  x / y
+else:
+  print(&quot;nope&quot;)
+
+'(if (&gt; y 0)
+     :
+     (/ x y)
+     else:
+     (print &quot;nope&quot;))
+
+(if (&gt; y 0)
+  (/ x y)
+  (print &quot;nope&quot;))</code></pre>
+<p>Racket looks similar to the parse tree!</p>
+<h3 id="parsing-power-tool-a-grammar">parsing power tool: a grammar</h3>
+<p>It makes more sense to use a parser generator to make a parser from a
+specification of the structure of the language (a grammar). - a grammar:
+way of notating the structure of every possible program written in that
+language. - grammar based parser is like regular expression, but it
+produces parse trees.</p>
+<p><strong>why we should write a grammar vs. make a parser by hand.</strong> - we can
+use grammars that already exist, like Python’s grammar, to make a
+Python-like language. - a grammar is a reality check; if we can write a
+grammar, chances are good that the language will work out. If we can’t,
+it’s a warning our language will have wrinkles (Markdown) - easier to
+amend a grammar then hand-crafted parser.</p>
+<p><strong>why we can’t parse with regular expressions</strong> - regular expressions
+treat strings as flat, sequential data</p>
+<h2 id="grammar-notation">grammar notation</h2>
+<ul>
+<li><p>consists of production rules, written one per line. On the left of
+each rule is the name of the structural element. A colon goes in the
+middle of the rule. This notation style is known as EBNF. On the
+right of each rule, we have a pattern for that element.</p></li>
+<li><p>the right side can include: literal strings, classes of strings,
+names of other production rules. Multiple possibilities are
+separated by |</p></li>
+</ul>
+<h3 id="applying-a-grammar">applying a grammar</h3>
+<ul>
+<li><p>parser takes string of source code</p></li>
+<li><p>starting with first production rule, parser tries to match source
+code to pattern on the right.</p></li>
+<li><p>if the pattern contains names of other rules of grammar, parser
+recursively tries to match those rules, again using patterns on the
+right.</p></li>
+</ul>
+<p>This process continues until one of two things: - the parser decomposes
+source code into something that can’t be further decomposed → terminals.
+A parse tree is returned (the leaves of a parse tree are always
+terminals) - the parser can’t find any way to decompose source code into
+terminals; parse fails. It’s trial and error (parser could try lots of
+unsuccessful paths)</p>
+<p># ambiguous grammars - you could write a grammar that can produce more
+than one valid parse tree for the same string - but you should avoid
+this</p>
+<h3 id="groups-and-multiples-in-patterns">groups and multiples in patterns</h3>
+<p>a grammar for stacker</p>
+<pre><code>stacker-program : &quot;\n&quot;* instruction (&quot;\n&quot;+ instruction)*
+instruction     : integer | func
+integer         : [&quot;-&quot;] digit+
+digit           : &quot;0&quot; | &quot;1&quot; | &quot;2&quot; | &quot;3&quot; | &quot;4&quot;
+                | &quot;5&quot; | &quot;6&quot; | &quot;7&quot; | &quot;8&quot; | &quot;9&quot;
+func            : &quot;+&quot; | &quot;*&quot;</code></pre>
+<ul>
+<li><p>parenthesizes create subsequences.</p></li>
+<li><p>* means zero or more</p></li>
+<li><p>+ means match one or more of the preceding item</p></li>
+<li><p>[] means zero or 1 of the enclosed item</p></li>
+</ul>
+<!-- -->
+<pre><code>4
+8
++
+3
+*
+
+'(stacker-program
+  (instruction (integer (digit &quot;4&quot;)))
+  &quot;\n&quot;
+  (instruction (integer (digit &quot;8&quot;)))
+  &quot;\n&quot;
+  (instruction (func &quot;+&quot;))
+  &quot;\n&quot;
+  (instruction (integer (digit &quot;3&quot;)))
+  &quot;\n&quot;
+  (instruction (func &quot;*&quot;)))</code></pre>
+<p>notes about how the parse tree lines up with the grammar: - each node in
+parse tree corresponds to production rule, starting with name of rule
+followed by elements that matched the pattern for that rule - rules that
+rely on other rules leads to nesting. - every character that appeared in
+original source string appears in parse tree.</p>
+<h2 id="the-parser">the parser</h2>
+<ul>
+<li><p>bf is just a list of operations and loops</p>
+<ul>
+<li>so the first line means: either <code>bf-op</code> or <code>bf-loop</code> and zero or
+more of</li>
+</ul></li>
+<li><p>now define bf-op and bf-loop</p></li>
+</ul>
+<!-- -->
+<pre><code>bf-program: (bf-op | bf-loop)*
+bf-op: &quot;&gt;&quot; | &quot;&lt;&quot; | &quot;+&quot; | &quot;-&quot; | &quot;.&quot; | &quot;,&quot;
+bf-loop: &quot;[&quot; (bf-op | bf-loop)* &quot;]&quot;</code></pre>
+<p>and that’s the grammar for bf! There are other ways to define the
+grammar but this is the easiest because <code>bf-program</code> only appears ones
+and it is the least number of rules.</p>
+<h3 id="converting-a-grammar-to-a-parser">converting a grammar to a parser</h3>
+<ul>
+<li>we will use a parser-generating language called <code>brag</code> that takes a
+list of production rules and turns those into a working parser.</li>
+</ul>
+<h2 id="the-tokenizer">the tokenizer</h2>
+<ul>
+<li><p>source string is converted to tokens</p></li>
+<li><p>tokenizer sits between source string and parser</p></li>
+<li><p>a tokenizer is optional: if we don’t use a tokenizer, then every
+character that appears in the source code counts as a token.</p></li>
+</ul>
+<p>Some tasks that are easily handled by the tokenizer? - meaningless
+strings in source code can be removed - strings that represent a value
+can be labeled with a generic token type - strings that should be
+handled literally can just pass through</p>
+<p>Downside to a tokenizer - substrings removed (like comments) are
+invisible to the parser. - tokens are indivisible; once we fuse a
+substring into a token, it can’t be decomposed further by the parser.
+big tokens can be convenient because they reduce complexity, but they
+also reduce flexibility.</p>
+<h3 id="designing-the-bf-tokenizer">designing the bf tokenizer</h3>
+<p>The bf grammar omits one detail: that any characters besides the eight
+used should be ignored. - the bf tokenizer is simple: pass through eight
+characters intact and toss out everything else</p>
+<h3 id="writing-a-reader-with-a-tokenizer">writing a reader with a tokenizer</h3>
+<ul>
+<li><p>instead of manually reading in strings of code from port, pass port
+to make tokenizer, which returns function that reads characters from
+port and generates tokens</p>
+<ul>
+<li>make-tokenizer creates and returns a function next-token that
+parser calls repeatedly to retrieve new tokens</li>
+</ul></li>
+<li><p>use those tokens with parse, to make parse-tree</p></li>
+<li><p>create <code>module-datum</code> and put <code>parse-tree</code> inside</p></li>
+<li><p>finally use <code>datum-&gt;syntax</code> to package code as syntax object</p></li>
+</ul>
+<p>tokenizing rules - helper function: lexer - each branch of lexer
+represent a rule: right side of token-creating expression, left side is
+pattern - each time <code>next-token</code> is called, <code>bf-lexer</code> will read as many
+characters from port as possible while still matching a rule pattern
+(greedy matching). - right side of rule with convert matched characters
+into token, which is returned</p>
+<pre><code>(require brag/support) ;; we need to so we can get lexer
+(define (make-tokenizer port)
+  (define (next-token)
+    (define bf-lexer
+      (lexer
+       [(char-set &quot;&gt;&lt;-.,+[]&quot;) lexeme] ; matches to one of our eight characters; we pass to lexeme (that thing we just matched)
+       [any-char (next-token)])) ; think of else as else branch; we call next-token, basically skipping to the next available token
+    (bf-lexer port))
+  next-token)</code></pre>
+<ul>
+<li>at the end, an <code>eof</code> is emitted, the lexer emits an <code>eof</code></li>
+</ul>
+<h2 id="making-the-expander-an-imperative-expander">making the expander: an imperative expander</h2>
+<ul>
+<li><p>grammar tells us how many macros or functions we need</p></li>
+<li><p>we need to handle three types of parse nodes: <code>bf-program</code>, <code>bf-op</code>,
+<code>bf-loop</code></p></li>
+</ul>
+<p>Why grammar is awesome 1. each production rule in the grammar will have
+a corresponding macro/function in the expander. 2. the name of the
+production rule is the name of the macro/function 3. the pattern of the
+production rule describes possible input to its corresponding macro or
+function.</p>
+<p>Choosing function vs macro: use function where we can, a macro where we
+must - simple (return its args in a list or print them) → use function -
+rearrange code in a way that a function can’t → macro</p>
+<p><code>+[&gt;]</code> will be parsed into:</p>
+<pre><code>(bf-program (bf-op &quot;+&quot;) (bf-loop &quot;[&quot; (bf-op &quot;&gt;&quot;) &quot;]&quot;))</code></pre>
+<p>our expander goes as follows: - call <code>bf-program</code> macro with two input
+arguments: - <code>(bf-op "+")</code> - <code>(bf-loop "[" (bf-op "&gt;") "]")</code> - call
+<code>bf-op</code> macro with one input: - “+” - call <code>bf-loop</code> macro with three
+input arguments: - “[” - ”]” - <code>(bf-op "&gt;")</code> - call the <code>bf-op</code> macro
+with one input argument: - “&gt;”</p>
+<h3 id="from-grammar-to-syntax-pattern">from grammar to syntax pattern</h3>
+<ul>
+<li>syntax pattern is like a regular expression</li>
+</ul>
+<p><code>bf-program</code> macro: <code>bf-program: (bf-op | bf-loop)*</code></p>
+<pre><code>(bf-program OP-OR-LOOP-ARG ...)</code></pre>
+<ul>
+<li><p><code>bf-program</code> denotes literal identifier in the code, and is name of
+macro. every element of a <code>define-macro</code> syntax pattern matches
+literally</p></li>
+<li><p>unless it’s in all caps.</p>
+<ul>
+<li>pattern variable: can catch everything</li>
+</ul></li>
+<li><p>the …, similar to * quantifier. used after a pattern variable, the
+… gathers al arguments that follow. can also match 0 arguments.</p></li>
+</ul>
+<p>Return value of a macro is a syntax template. - we return a void, which
+discards the arguments. - <code>define-macro-cases</code> it’s like a cond</p>
+<h2 id="a-functional-expander">a functional expander</h2>
+<p>We have two goals - avoid keeping state - avoid mutation</p>
+<p>Tricky because bf by nature is imperative</p>
+<ul>
+<li><p>in funstacker we learned we can approximate behaviour of state
+variables by turning them into accumulators with <code>for/fold</code></p></li>
+<li><p>with functional programming idiom: model <code>bf</code> operations that take a
+current array and pointer as input and return new array and pointer
+values as output.</p></li>
+<li><p>instead of storing state values outside the function, let the values
+travel through the functions</p></li>
+</ul>
+<h3 id="restarting-the-expander">restarting the expander</h3>
+<ul>
+<li><p>model new <code>bf</code> operations as functions that take two input
+arguments, array and pointer, and return a new array and pointer.</p></li>
+<li><p>we want return value of a <code>bf-func</code> to become input arguments of the
+<code>next-bf-func</code>.</p>
+<ul>
+<li><p>but <code>bf-func</code> only returns one value and <code>next-bf-func</code> needs
+two values.</p></li>
+<li><p>we cure this mismatch by using <code>apply</code></p></li>
+</ul></li>
+</ul>
+<p><code>apply</code> - takes a function and list of values as input, and calls the
+function while using those values as input arguments - these two
+expressions are equivalent - kind of like takes the list apart.</p>
+<pre><code>(apply func (list arg1 arg2 arg3 arg4))
+(func arg1 arg2 arg3 arg4)</code></pre>
+<ul>
+<li>the above example stipulates <code>func</code> is a run time function, not a
+macro; macros cannot be passed as an argument to any higher order
+function.</li>
+</ul>
+<!-- -->
+<pre><code>(define (fold-funcs apl bf-funcs)
+  (for/fold ([current-apl apl])
+            ([bf-func (in-list bf-funcs)])
+    (apply bf-func current-apl)))</code></pre>
+<ul>
+<li><p><code>fold-funcs</code>: takes two input args, <code>apl</code> and a pointer; the return
+value of <code>bf-func</code> and list of <code>bf-funcs</code></p></li>
+<li><p>when <code>for/fold</code> starts, it creates an accumulator called
+<code>current-apl</code> to hold current state of the <code>bf</code> program, and
+initializes it to the <code>apl</code> argument passed as input.</p></li>
+<li><p>then it iterates over the list of <code>bf-funcs</code></p></li>
+<li><p>on each iteration it uses <code>apply</code> to pass <code>current-apl</code> as arguments
+to the next <code>bf-func</code></p></li>
+<li><p>once we run out of <code>bf-funcs</code>, the last value of <code>current-apl</code>
+becomes the return value of the <code>for/fold</code> loop, and therefore the
+<code>fold-funcs</code> function.</p></li>
+</ul>
+<p>now we can write the macro for <code>bf-program</code></p>
+<pre><code>(define-macro (bf-program OP-OR-LOOP-ARG ...)
+  #'(begin
+      (define first-apl (list (make-vector 30000 0) 0))
+      (void (fold-funcs first-apl (list OP-OR-LOOP-ARG ...)))))
+(provide bf-program)</code></pre>
+<ul>
+<li><p>we want to return code for two expressions; syntax object can only
+represent one.</p></li>
+<li><p>any time we want to return multiple expressions: use <code>begin</code></p>
+<ul>
+<li>unlike <code>let</code>, <code>begin</code> does not create a new scope for variables,
+any variables inside a <code>begin</code> are visible outside as well</li>
+</ul></li>
+<li><p>macro should not return a value, so pass result to a void.</p></li>
+</ul>
+<p>now we write the macro for <code>bf-loop</code>; there are two things to observe -
+when <code>bf-loop</code> arrives at <code>fold-funcs</code>, it is expected to behave as
+<code>bf-func</code>. So the return value of <code>bf-loop</code> macro has to be a function
+that has two input args and 1 output arg. - <code>bf-loop</code> is mini <code>bf</code>
+program that runs repeatedly until a certain condition is met.</p>
+<pre><code>(define-macro (bf-loop &quot;[&quot; OP-OR-LOOP-ARG ... &quot;]&quot;)
+  #'(lambda (arr ptr)
+      (for/fold ([current-apl (list arr ptr)])
+                ([i (in-naturals)]
+                 #:break (zero? (apply current-byte
+                                       current-apl)))
+        (fold-funcs current-apl (list OP-OR-LOOP-ARG ...)))))
+(provide bf-loop)</code></pre>
+<p>the last macro is <code>bf-op</code>, but instead of returning a self-contained
+function, just return only the name of corresponding function → so
+<code>fold-funcs</code> can <code>apply</code> a list of arguments to it.</p>
+<h3 id="making-it-faster">making it faster</h3>
+<ul>
+<li><p>this functional version is much slower because of the
+<code>set-current-byte</code> func</p>
+<ul>
+<li><p>we make a new array every time, which is 30k bytes, and the
+garbage collector has to run more often to free up memory.</p></li>
+<li><p>to make it faster we can just use the input array</p></li>
+</ul></li>
+</ul></div>
+  </div>
+  <div class="flex-row link-no-style">
+    
+    
+  </div>
+</div>
+
+
+        </div>
+        <div class="sidebar">
+  <a href="../../../"><h2>Lucy Hao</h2></a>
+  <a href="../../../archive"><h3>Thoughts</h3></a>
+  <a href="../../../notes"><h3>Notes</h3></a>
+  <a href="../../../books"><h3>Books</h3></a>
+  <a href="../../../courses"><h3>Courses</h3></a>
+  <a href="../../../cv/cv.pdf"><h3>CV/Resume</h3></a>
+</div>
+
+      </div>
+    </main>
+
+    <footer>
+      <center>
+        <p>
+          <a href="../../../archive">archive</a>
+          <a href="https://github.com/lhao03" target="_blank">github</a>
+          <a href="https://www.linkedin.com/in/lucy-hao/" target="_blank">linkedin</a>
+        </p>
+      </center>
+      Site powered by cats, 🍫 and
+      <a href="http://jaspervdj.be/hakyll">Hakyll</a>
+    </footer>
+  </body>
+</html>

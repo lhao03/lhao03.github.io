@@ -59,26 +59,26 @@
     
 <div id="toc" class="toc">Contents:
 <ul>
-<li><a href="#global-perspectives">1.1: global perspectives</a>
+<li><a href="#global-perspectives" id="toc-global-perspectives">1.1: global perspectives</a>
 <ul>
-<li><a href="#section-1">1.1.1:</a></li>
-<li><a href="#future">1.1.2: future</a></li>
+<li><a href="#section-1" id="toc-section-1">1.1.1:</a></li>
+<li><a href="#future" id="toc-future">1.1.2: future</a></li>
 </ul></li>
-<li><a href="#quantum-bits">1.2: quantum bits</a>
+<li><a href="#quantum-bits" id="toc-quantum-bits">1.2: quantum bits</a>
 <ul>
-<li><a href="#multiple-qubits">1.2.1: multiple qubits</a></li>
+<li><a href="#multiple-qubits" id="toc-multiple-qubits">1.2.1: multiple qubits</a></li>
 </ul></li>
-<li><a href="#quantum-computation">1.3 quantum computation</a>
+<li><a href="#quantum-computation" id="toc-quantum-computation">1.3 quantum computation</a>
 <ul>
-<li><a href="#single-qubit-gates">single qubit gates</a></li>
-<li><a href="#multiple-qubit-gates">1.3.2 multiple qubit gates</a></li>
-<li><a href="#measurement-in-bases-other-than-computational-basis">1.3.3 measurement in bases other than computational basis</a></li>
-<li><a href="#quantum-circuits">1.3.4 quantum circuits</a></li>
-<li><a href="#qubit-copying-circuit">1.3.5 qubit copying circuit</a></li>
-<li><a href="#example-bell-states">1.3.6 example: bell states</a></li>
-<li><a href="#example-quantum-teleportation">1.3.7 example: quantum teleportation</a></li>
+<li><a href="#single-qubit-gates" id="toc-single-qubit-gates">single qubit gates</a></li>
+<li><a href="#multiple-qubit-gates" id="toc-multiple-qubit-gates">1.3.2 multiple qubit gates</a></li>
+<li><a href="#measurement-in-bases-other-than-computational-basis" id="toc-measurement-in-bases-other-than-computational-basis">1.3.3 measurement in bases other than computational basis</a></li>
+<li><a href="#quantum-circuits" id="toc-quantum-circuits">1.3.4 quantum circuits</a></li>
+<li><a href="#qubit-copying-circuit" id="toc-qubit-copying-circuit">1.3.5 qubit copying circuit</a></li>
+<li><a href="#example-bell-states" id="toc-example-bell-states">1.3.6 example: bell states</a></li>
+<li><a href="#example-quantum-teleportation" id="toc-example-quantum-teleportation">1.3.7 example: quantum teleportation</a></li>
 </ul></li>
-<li><a href="#quantum-algorithms">1.4 quantum algorithms</a></li>
+<li><a href="#quantum-algorithms" id="toc-quantum-algorithms">1.4 quantum algorithms</a></li>
 </ul></div>
 <div id="body"><h2 id="global-perspectives">1.1: global perspectives</h2>
 <ul>
@@ -174,7 +174,7 @@
 <ul>
 <li>mathematical objects with certain specific properties</li>
 <li>abstract entity: construct a general theory of QC/QI that doesn’t depend on specific system</li>
-<li>qubit can be <span class="math inline">|0⟩</span>, <span class="math inline">|1⟩</span> or a linear combination of states <span class="math inline">|<em>ψ</em>⟩=<em>α</em>|0⟩ + <em>β</em>|1⟩</span> (superposition)
+<li>qubit can be <span class="math inline">|0⟩</span>, <span class="math inline">|1⟩</span> or a linear combination of states <span class="math inline">|<em>ψ</em>⟩ = <em>α</em>|0⟩ + <em>β</em>|1⟩</span> (superposition)
 <ul>
 <li>vector in 2D space</li>
 <li>computational basis states: <span class="math inline">|0⟩</span>, <span class="math inline">|1⟩</span> -&gt; form orthoormal basis for this vector space</li>
@@ -183,7 +183,7 @@
 <li>lack of direct correspondence between elements of abstraction and real world with qubits -&gt; there is indirect correspondence for qubit states to be manipulated and transformed to lead to measurement outcomes -&gt; these quantum states have real, experimentally verifiable consequences.</li>
 </ul></li>
 <li>exist in continuum of states until it is observed</li>
-<li>because <span class="math inline">|<em>α</em>|<sup>2</sup> + |<em>β</em>|<sup>2</sup> = 1</span> we can say: <span class="math inline">|<em>ψ</em>⟩ = <em>e</em><sup><em>i</em><em>γ</em></sup>(<em>c</em><em>o</em><em>s</em>(<em>θ</em>/2)+<em>e</em><sup><em>i</em><em>ϕ</em></sup><em>s</em><em>i</em><em>n</em>(<em>θ</em>/2))</span>
+<li>because <span class="math inline">|<em>α</em>|<sup>2</sup> + |<em>β</em>|<sup>2</sup> = 1</span> we can say: <span class="math inline">|<em>ψ</em>⟩ = <em>e</em><sup><em>i</em><em>γ</em></sup>(<em>c</em><em>o</em><em>s</em>(<em>θ</em>/2) + <em>e</em><sup><em>i</em><em>ϕ</em></sup><em>s</em><em>i</em><em>n</em>(<em>θ</em>/2))</span>
 <ul>
 <li><span class="math inline"><em>θ</em></span> and <span class="math inline"><em>ϕ</em></span> define a point on unit three-dimensional sphere (Bloch sphere)</li>
 <li>Bloch sphere can be used to describe single qubits</li>
@@ -206,7 +206,7 @@
 <h3 id="multiple-qubits">1.2.1: multiple qubits</h3>
 <ul>
 <li>two qubits have four computational basis states:
-<span class="math display">|<em>ψ</em>⟩=<em>α</em><sub>00</sub>|00⟩ + <em>α</em><sub>01</sub>|01⟩+<em>α</em><sub>10</sub>|10⟩ + <em>α</em><sub>11</sub>|11⟩</span></li>
+<span class="math display">|<em>ψ</em>⟩ = <em>α</em><sub>00</sub>|00⟩ + <em>α</em><sub>01</sub>|01⟩ + <em>α</em><sub>10</sub>|10⟩ + <em>α</em><sub>11</sub>|11⟩</span></li>
 <li><span class="math inline">{0, 1}<sup>2</sup></span>: set of strings of length 2 with each letter either one or zero</li>
 <li>measuring the first qubit as 0 gives probability <span class="math inline">|<em>α</em><sub>00</sub>|<sup>2</sup> + |<em>α</em><sub>01</sub>|<sup>2</sup></span> and post-measurement state: <span class="math display">$$|\psi ' \rangle = \frac{(\alpha_{00} | 00 \rangle + \alpha_{01} | 01 \rangle)} {\sqrt{|\alpha_{00}|^2 + |\alpha_{01}|^2)}}$$</span></li>
 <li>important two qubit state, Bell state or EPR pair: <span class="math display">$$\frac{|00\rangle + |11 \rangle}{\sqrt{2}}$$</span>
@@ -231,7 +231,7 @@
 </ul>
 <h3 id="single-qubit-gates">single qubit gates</h3>
 <ul>
-<li>quantum NOT gate: <span class="math display"><em>α</em>|0⟩+<em>β</em>|1⟩ → <em>α</em>|1⟩+<em>β</em>|0⟩</span> it acts linearly</li>
+<li>quantum NOT gate: <span class="math display"><em>α</em>|0⟩ + <em>β</em>|1⟩ → <em>α</em>|1⟩ + <em>β</em>|0⟩</span> it acts linearly</li>
 <li>nonlinear behaviour can lead to paradoxes</li>
 <li>NOT gate in matrix form</li>
 </ul>
@@ -240,7 +240,7 @@
 1 &amp; 0
 \end{bmatrix}$$</span></p>
 <ul>
-<li>quantum state <span class="math display"><em>α</em>|0⟩+<em>β</em>|1⟩</span></li>
+<li>quantum state <span class="math display"><em>α</em>|0⟩ + <em>β</em>|1⟩</span></li>
 </ul>
 <p><span class="math display">$$ X \begin{bmatrix}
 \alpha \\
@@ -258,7 +258,7 @@
 <li><span class="math display"><em>U</em><sup>†</sup></span> is obtained by transposing then complex conjugating <span class="math inline"><em>U</em></span></li>
 </ul></li>
 <li><p>any quantum gate must follow this unitarity constraint</p></li>
-<li><p><span class="math inline"><em>Z</em></span> gate: leaves <span class="math display">|0⟩</span> unchanged and flips sign of <span class="math display">|1⟩</span> to <span class="math display"> − |1⟩</span></p>
+<li><p><span class="math inline"><em>Z</em></span> gate: leaves <span class="math display">|0⟩</span> unchanged and flips sign of <span class="math display">|1⟩</span> to <span class="math display">−|1⟩</span></p>
 <p><span class="math display">$$ Z \equiv \begin{bmatrix}
 1 &amp; 0 \\
 0 &amp; -1
@@ -282,7 +282,7 @@
 <li><p>controlled-NOT or CNOT gate</p>
 <ul>
 <li>control qubit and targit qubit: <span class="math display">|00⟩→|00⟩; |01⟩→|01⟩; |10⟩→|11⟩; |11⟩→|10⟩</span></li>
-<li>generalized: <span class="math display">|<em>A</em>,<em>B</em>⟩→|<em>A</em>, <em>B</em>⨁<em>A</em>⟩</span> the control qubit and targit qubit are XORED and stored in target</li>
+<li>generalized: <span class="math display">|<em>A</em>, <em>B</em>⟩→|<em>A</em>, <em>B</em>⨁<em>A</em>⟩</span> the control qubit and targit qubit are XORED and stored in target</li>
 </ul>
 <p><span class="math display">$$ U_{CN} = \begin{bmatrix}
 1 &amp; 0 &amp; 0 &amp; 0 \\
@@ -301,7 +301,7 @@
 </ul>
 <h3 id="measurement-in-bases-other-than-computational-basis">1.3.3 measurement in bases other than computational basis</h3>
 <ul>
-<li>given any basis states <span class="math display">|<em>a</em>⟩</span> and <span class="math display">|<em>b</em>⟩</span> for a qubit, it is possible to express an arbitrary state as linear combination <span class="math display"><em>α</em>|<em>a</em>⟩+<em>β</em>|<em>b</em>⟩</span></li>
+<li>given any basis states <span class="math display">|<em>a</em>⟩</span> and <span class="math display">|<em>b</em>⟩</span> for a qubit, it is possible to express an arbitrary state as linear combination <span class="math display"><em>α</em>|<em>a</em>⟩ + <em>β</em>|<em>b</em>⟩</span></li>
 <li>if given states are orthonormal: possible to perform measurement with respect to <span class="math display">|<em>a</em>⟩</span>,<span class="math display">|<em>b</em>⟩</span> basis with probabilities <span class="math display">|<em>α</em>|<sup>2</sup></span> and <span class="math display">|<em>β</em>|<sup>2</sup></span></li>
 <li>formalism allows us to describe observed experimental results</li>
 </ul>

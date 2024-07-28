@@ -1,10 +1,8 @@
 ---
-title: "Paper: Quantum Gaussian process model of potential energy surface for a polyatomic molecule"
-tags: quantum, chemistry, thermodynamics, paper
+title: "Quantum Concepts"
+tags: quantum, chemistry, thermodynamics
 date: 2023-12-22
 ---
-
-https://pubs.aip.org/aip/jcp/article-abstract/156/18/184802/2841296/Quantum-Gaussian-process-model-of-potential-energy?redirectedFrom=fulltext[Source]
 
 days: dec 22, 24, 25
 

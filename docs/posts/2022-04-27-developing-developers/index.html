@@ -1,0 +1,660 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lucy H | Matthias Felleisen: Developing Developers</title>
+  <link rel="stylesheet" href="../../css/main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
+  <!-- and it's easy to individually load additional languages -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/languages/scheme.min.js"></script>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/base16/onedark.min.css" />
+  <script>
+    hljs.highlightAll();
+  </script>
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+  <link rel="preconnect" href="https://www.googletagmanager.com" />
+  <link rel="preconnect" href="https://www.google-analytics.com" />
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KDGPVMHC9Q"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-KDGPVMHC9Q");
+  </script>
+
+  <!-- basic favicon -->
+  <link rel="icon" href="../../images/android-chrome-384x384.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../images/android-chrome-384x384.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../images/android-chrome-384x384.png" />
+  <link rel="apple-touch-icon-precomposed" href="../../images/android-chrome-384x384.png" />
+</head>
+
+  <body>
+    <main role="main">
+      <div class="flex-row-col">
+        <div>
+          <h1>Matthias Felleisen: Developing Developers</h1>
+          <div>
+  
+  <div class="header">
+    Posted on April 27, 2022
+    
+  </div>
+  <div class="tags">
+    
+    Tags: <a title="All pages tagged 'computer science education'." href="../../tags/computer%20science%20education/index.html" rel="tag">computer science education</a>
+    
+  </div>
+  <div class="content">
+    <div class="paragraph">
+<p>Original Post: <a href="https://felleisen.org/matthias/Thoughts/Developing_Developers.html">Developing
+Developers</a></p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>Instead of the currently fashionable programming
+language, it focuses on explicit and systematic approaches to program
+design. To bring this idea across to the full range of Northeastern
+freshmen, the first course uses a simple teaching language that is
+tailored to our goals. Follow-up courses explain how to apply the design
+principles to industrial programming languages, how they enable logical
+reasoning about code, and why they matter when programmers deal with
+large and complex software.</p>
+</div>
+</blockquote>
+</div>
+<div class="sect1">
+<h2 id="_traditional_programming_courses">traditional programming courses</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>"tinker until it works"</p>
+</li>
+<li>
+<p>use a currently fashionable programming language</p>
+</li>
+<li>
+<p>students learn to "mimic their instructors"</p>
+</li>
+<li>
+<p>students copy code snippets from classes and labs into homework
+assignments and modify the code snippets until the program seems to
+work.</p>
+</li>
+<li>
+<p>distance between code snippets from class and those needed to solve
+the homework grows to "test students’ ability to generalize".</p>
+</li>
+</ul>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>In sum, traditional programming courses teach
+programming implicitly, with students picking it up via mimicking and
+experimenting. This approach may appeal to students who love to tinker
+with gadgets and video games, but it also turns off many others who
+might be equally talented for engineering actual software or benefit to
+the same extent from a properly taught course on programming and problem
+solving.</p>
+</div>
+</blockquote>
+</div>
+<div class="paragraph">
+<p><em>This is what a lot of online code tutorials (freecodecamp) and coding
+bootcamps do. Students don’t really learn generalizable concepts, just
+vocational skills.</em></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_explicit_design_rules">explicit design rules</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>HtDP: structural design, design and use of abstractions, generative
+recursion (divide and conquer), accumulators (loop variables)</p>
+</li>
+<li>
+<p>y-axis: six-step problem-solving process, x-axis: enumerates forms of
+data, increasing in complexity.</p>
+</li>
+<li>
+<p>each step ⇒ well defined outcome</p>
+<div class="ulist">
+<ul>
+<li>
+<p>instructors inspect outcomes to diagnose a students’ problems</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>traditional programming courses focus a lot on atomic data:</p>
+</li>
+</ul>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>they rely on domain knowledge and thus fail to show
+how much computing and programming can contribute to systematic problem
+solving and design.</p>
+</div>
+</blockquote>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_programming_is_a_people_discipline">programming is a people discipline</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>design-oriented approach ⇒ programming is about coping with
+complexity in software</p>
+</li>
+<li>
+<p>compilers, interpreters, IDEs don’t really help with controlling
+complexity, so programmers who need help turn to other programmers</p>
+<div class="ulist">
+<ul>
+<li>
+<p>programmers need to be able to articulate their thoughts; converse
+about program designs</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>The best way to do so, is to present programming as a
+discipline that is not about nerds sitting in a cubicle but people
+helping other people creating beautiful and well-designed artifacts.</p>
+</div>
+</blockquote>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_fundamentals_1_designing_with_teaching_languages">fundamentals 1: designing with teaching languages</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>introduce students to systematic and explicit problem solving/design
+and complexity of creating well-engineered software.</p>
+</li>
+<li>
+<p>choosing a language for the course (two theorems):</p>
+<div class="ulist">
+<ul>
+<li>
+<p>novice programmers make mistakes</p>
+</li>
+<li>
+<p>compiler and run time system error messages ⇒ assume programmer
+knows the entire language</p>
+<div class="ulist">
+<ul>
+<li>
+<p><em>Rust error messages are pretty clear, much more clear than C. Maybe
+more modern PLs have changed, but the majority of PL error messages are
+pretty bad.</em></p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_the_two_theorems_have_three_corollaries">the two theorems have three corollaries:</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>an intro course can’t serve a wide spectrum of novices if it uses an off the self (industrial)
+language</p>
+</li>
+<li>
+<p>reducing the size of the language improves its error messages</p>
+<div class="ulist">
+<ul>
+<li>
+<p><em>also so student’s don’t go ahead, so to speak</em></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>intro course needs <em>series of small languages</em> to suffice to illustrate the design recipes</p>
+<div class="ulist">
+<ul>
+<li>
+<p><em>like how CPSC 110 has BSL, ASL</em></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>pair programming: pilot and co-pilot</p>
+<div class="ulist">
+<ul>
+<li>
+<p>co-pilot checks design against the design recipe via question and answer</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_note_on_the_trinity">note on the trinity</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>design, teaching languages, pedagogic IDE</p>
+</li>
+<li>
+<p>introduction of explicit design calls for careful composition of
+pieces that make a novice-friendly environment:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>accessible error messages and pedagogic IDE</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_fundamentals_2_designing_with_java">fundamentals 2: designing with java</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>show students how to:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>systematically design programs in context of real-world language</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>incorporate existing libraries into design</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>with regard to design, 3 concrete goals: - add type-checking - cover OOP
+- "programming via composition of existing building blocks"</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>fundamentals 1 does not assume type-checking:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>most students will use a dynamically typed language</p>
+</li>
+<li>
+<p>type checking adds another layer to practice of programming ⇒ adding
+error messages</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Gregor Kiczales: fundamentals 1 is the best introduction to proper OOP</p>
+</li>
+<li>
+<p>fundamentals 2 spends 60% of the semester explaining how design
+concepts from fundamentals 1 apply to Java and on adapting design
+concepts for abstractions to an OO context.</p>
+<div class="ulist">
+<ul>
+<li>
+<p><em>I feel like UBC doesn’t really do this in CPSC 210. While TAing,
+lots of students would comment on piazza that CPSC 110 wasn’t that
+helpful in doing well in CPSC 210.</em></p>
+</li>
+<li>
+<p><a href="https://arxiv.org/abs/1306.4713v2">this paper</a> discusses a solution to
+the confusion when transitioning from functional programming to OOP.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>java’s failure to implement al tail calls ⇒ forces programmers to
+reformulate properly designed pieces of code with <code>while</code> and <code>for</code> loop</p>
+</li>
+<li>
+<p>in terms of people skills, CPSC 210 takes the approach of "One
+possibility is to assign a small project toward the end of the course
+and to have students present an overview to the instructor."</p>
+<div class="ulist">
+<ul>
+<li>
+<p>while students do develop skills such as clearly communicating their
+code and user stories, I discuss how
+<a href="how-to-teach-cs-courses">projects can be hard for students</a>.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>If a computer science unit has the luxury to spend an
+additional semester on preparing their students for real-world
+programming, this approach is highly commendable.</p>
+</div>
+</blockquote>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_logic_reasoning_about_well_designed_code">logic: reasoning about well-designed code</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>validation systems can be:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>sound: predictions are always true statements about executions</p>
+</li>
+<li>
+<p>unsound: makes correct and incorrect predictions</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>programmers contiguously make, rely on predictions with making code,
+consciously or subconsciously</p>
+</li>
+<li>
+<p>goals of logic in computer science:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>make reasoning about programs explicit</p>
+<div class="ulist">
+<ul>
+<li>
+<p>introduction of classical logic, heavy emphasis on structural
+induction</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>introduce students to tools that assist programmers with this task</p>
+<div class="ulist">
+<ul>
+<li>
+<p>apply logic to sizable programs; use a proof assistant</p>
+<div class="ulist">
+<ul>
+<li>
+<p>ACL2: if students properly design the desired functions in
+fundamentals 1, ACL2 can prove the desired theorems easily. If students
+tinker their way, ACL2 tends to fail.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_ood_scaling_it_up">OOD: scaling it up</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>stating and exploiting such assertions during informal prediction
+process</p>
+</li>
+<li>
+<p>until formal reasoning is affordable, informal mode of thinking will
+inform the best designers in the field</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_software_development_putting_it_all_together">Software Development: putting it all together</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>students should have taken OOD, completed first co-op and explored
+programming languages</p>
+</li>
+<li>
+<p>students should be allowed to choose their own PL</p>
+</li>
+<li>
+<p>students aren’t expected to be able to manage a large project, so
+instructors ought to introduce students to this aspect of engineering
+software explicitly, not via "mimic and modify"</p>
+</li>
+</ul>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>One way to accomplish this goal is to have students
+design parts of the projects each week, to expose the weaknesses of
+their designs during code review, and to then provide good versions of
+these designs later in the semester.</p>
+</div>
+</blockquote>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>students must revisit code created weeks ago and that the overall
+project is complex and large.</p>
+<div class="ulist">
+<ul>
+<li>
+<p><em>CPSC 310 has no deadlines, so this revisiting of code is hard if
+students just procrastinate their projects</em></p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>This step may take the form of fixing bugs, adding
+features, replacing features, and even subtracting them. To complete
+such tasks, students must reconstruct the thoughts that the creators of
+the code had—and often did not write down as assertions or other
+validated statements. Hence, if code repositories are rotated among the
+students, this task drives home most clearly why (1) such additional
+assertions and comments matter and (2) pair programming leaves behind
+residue of design knowledge.</p>
+</div>
+</blockquote>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>introduction of code reviews</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_whats_missing">what’s missing?</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>independent exploration: students don’t understand that <em>programming
+beyond the classroom</em> is essential to their growth</p>
+<div class="ulist">
+<ul>
+<li>
+<p>why do students lack incentives to explore on their own and how to
+provide incentives to do so.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>performance debugging: difficulty from connecting knowledge from
+algorithms to program design</p>
+<div class="ulist">
+<ul>
+<li>
+<p>performance debugging</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>unsafe programming: learn to write code in world of seg faults, core
+dumps, etc. Use python to access unsafe layer.</p>
+</li>
+<li>
+<p>Further topics in Software engineering</p>
+<div class="ulist">
+<ul>
+<li>
+<p>testing</p>
+</li>
+<li>
+<p>programming in a team</p>
+</li>
+<li>
+<p>software modeling</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Emphasis on explicit ideas over "mimic and learn implicitly"</strong></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_my_thoughts">my thoughts</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>I liked reading the rationale for how UBC’s CS courses are structured.</p>
+</li>
+<li>
+<p>as a first year student, I didn’t really understand why UBC was using
+BSL and had a large focus on functional programming, while UoT and UofC
+used Python. Now I’m really glad I was introduced to the "trinity"</p>
+</li>
+<li>
+<p>I think the connection between CPSC 110 and CPSC 210 isn’t that
+<em>clear</em>? While TAing CPSC 210, many students didn’t really apply the
+knowledge from CPSC 110 (like design recipes). It was more of "mimic
+and learn implicitly".</p>
+</li>
+<li>
+<p>CPSC 310 seems to be the Software Development course. But students are
+restricted to using TS and no hard deadlines, so not much code
+revisiting occurs.</p>
+</li>
+<li>
+<p>I think CPSC 213 (ironically) does a better job of incorporating in
+CPSC 110 content like design recipes</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+  </div>
+  <div class="flex-row link-no-style">
+    
+    <a href="../../posts/2022-04-28-principles-to-practice/index.html">⇐ Newer post</a>
+    
+    
+    <a href="../../posts/2022-04-23-how-to-teach-cs-courses/index.html">Older post ⇒</a>
+    
+  </div>
+</div>
+
+
+        </div>
+        <div class="sidebar">
+  <a href="../../"><h2>Lucy Hao</h2></a>
+  <a href="../../archive"><h3>Thoughts</h3></a>
+  <a href="../../notes"><h3>Notes</h3></a>
+  <a href="../../books"><h3>Books</h3></a>
+  <a href="../../courses"><h3>Courses</h3></a>
+  <a href="../../cv/cv.pdf"><h3>CV/Resume</h3></a>
+</div>
+
+      </div>
+    </main>
+
+    <footer>
+      <center>
+        <p>
+          <a href="../../archive">archive</a>
+          <a href="https://github.com/lhao03" target="_blank">github</a>
+          <a href="https://www.linkedin.com/in/lucy-hao/" target="_blank">linkedin</a>
+        </p>
+      </center>
+      Site powered by cats, 🍫 and
+      <a href="http://jaspervdj.be/hakyll">Hakyll</a>
+    </footer>
+  </body>
+</html>

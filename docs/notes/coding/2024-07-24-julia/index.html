@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lucy H | Learning Julia Diary</title>
+  <link rel="stylesheet" href="../../../css/main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/default.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
+  <!-- and it's easy to individually load additional languages -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/languages/scheme.min.js"></script>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/base16/onedark.min.css" />
+  <script>
+    hljs.highlightAll();
+  </script>
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+  <link rel="preconnect" href="https://www.googletagmanager.com" />
+  <link rel="preconnect" href="https://www.google-analytics.com" />
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KDGPVMHC9Q"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-KDGPVMHC9Q");
+  </script>
+
+  <!-- basic favicon -->
+  <link rel="icon" href="../../../images/android-chrome-384x384.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../../../images/android-chrome-384x384.png" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../../images/android-chrome-384x384.png" />
+  <link rel="apple-touch-icon-precomposed" href="../../../images/android-chrome-384x384.png" />
+</head>
+
+  <body>
+    <main role="main">
+      <div class="flex-row-col">
+        <div>
+          <h1>Learning Julia Diary</h1>
+          <div>
+  
+  <div class="header">
+    Posted on July 24, 2024
+    
+  </div>
+  <div class="tags">
+    
+    Tags: scientific computing
+    
+  </div>
+  <div class="content">
+    
+<div id="toc" class="toc">Contents:
+<ul>
+<li><a href="#limits" id="toc-limits">Limits</a>
+<ul>
+<li><a href="#archimedes" id="toc-archimedes">Archimedes</a></li>
+<li><a href="#fermat" id="toc-fermat">Fermat</a></li>
+<li><a href="#newtonleibniz" id="toc-newtonleibniz">Newton/Leibniz</a></li>
+<li><a href="#bolzano-cauchy-weierstrass" id="toc-bolzano-cauchy-weierstrass">Bolzano, Cauchy, Weierstrass</a></li>
+</ul></li>
+</ul></div>
+<div id="body"><h1 id="limits">Limits</h1>
+<h2 id="archimedes">Archimedes</h2>
+<ul>
+<li>method of exhaustion: problem solved by infinite process
+<ul>
+<li>to make this reasoning rigourous -&gt; need concept of limit</li>
+</ul></li>
+<li>how to find pi:
+<ul>
+<li>used bounds to constrain unknown value</li>
+</ul></li>
+</ul>
+<h2 id="fermat">Fermat</h2>
+<ul>
+<li>limit to find the slope of tangent line</li>
+</ul>
+<h2 id="newtonleibniz">Newton/Leibniz</h2>
+<ul>
+<li>development of calculus</li>
+</ul>
+<h2 id="bolzano-cauchy-weierstrass">Bolzano, Cauchy, Weierstrass</h2>
+<ul>
+<li>made the idea more firm footing</li>
+</ul>
+<p><span class="math display">$$\frac{sin(x)}{sin(x)} &gt; \frac{sin(x)}{x} &gt; \frac{sin(x)}{tan(x)}$$</span></p>
+<ul>
+<li>this lets us bound <span class="math display">/<em>f</em><em>r</em><em>a</em><em>c</em><em>s</em><em>i</em><em>n</em>(<em>x</em>)<em>x</em></span> between 1 and <span class="math display"><em>c</em><em>o</em><em>s</em>(<em>x</em>)</span></li>
+<li>then as <span class="math display"><em>x</em></span> goes to 0, <span class="math display"><em>c</em><em>o</em><em>s</em>(<em>x</em>)</span> goes to 1</li>
+</ul></div>
+  </div>
+  <div class="flex-row link-no-style">
+    
+    
+  </div>
+</div>
+
+
+        </div>
+        <div class="sidebar">
+  <a href="../../../"><h2>Lucy Hao</h2></a>
+  <a href="../../../archive"><h3>Thoughts</h3></a>
+  <a href="../../../notes"><h3>Notes</h3></a>
+  <a href="../../../books"><h3>Books</h3></a>
+  <a href="../../../courses"><h3>Courses</h3></a>
+  <a href="../../../cv/cv.pdf"><h3>CV/Resume</h3></a>
+</div>
+
+      </div>
+    </main>
+
+    <footer>
+      <center>
+        <p>
+          <a href="../../../archive">archive</a>
+          <a href="https://github.com/lhao03" target="_blank">github</a>
+          <a href="https://www.linkedin.com/in/lucy-hao/" target="_blank">linkedin</a>
+        </p>
+      </center>
+      Site powered by cats, 🍫 and
+      <a href="http://jaspervdj.be/hakyll">Hakyll</a>
+    </footer>
+  </body>
+</html>

@@ -1,7 +1,0 @@
----
-title: Notes from papers that discuss LLMs + physics
-date: 2024-06-20
-tags: LLM
----
-
-=== ProtAgents: protein discovery via large language model multi-agent collaborations combining physics and machine learning

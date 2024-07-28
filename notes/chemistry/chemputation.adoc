@@ -1,0 +1,19 @@
+---
+title: Standarization of SDLs/Chemputation
+date: 2024-05-01
+---
+
+* chemical reactions: 2d pictures
+* OFAT: one factor at at time
+* lots of assumed knowledge, so conditions not always outlined
+* actual description recorded in prose
+* reaction => workup => isolation => purification
+* ORD: open-access repository of chemical reactions
+* flow chemistry => key enabling technologies for automation
+* closed-loop reaction optimization: automated processing, analysis of analytical data in real time
+* algorithms for decision making: Nelder−Mead Simple and gradient based => can't tackle noise
+** The SNOBFIT algorithm: first to tackle noise
+** also Bayesian optimization
+** challenge: incorporating chemical knowledge into workflow => treat chemical reaction as black box, ignore physical properties/data from published results/chemical databases
+*** nearest neighbour approach
+*** neural network approach (on large database), bayesian optmization, chemical encoding (using DFT-descriptors)

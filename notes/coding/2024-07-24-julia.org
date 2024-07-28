@@ -1,0 +1,26 @@
+---
+title: Learning Julia Diary
+date: 2024-07-24
+tags: "scientific computing"
+---
+
+* Limits
+** Archimedes
+- method of exhaustion: problem solved by infinite process
+  - to make this reasoning rigourous -> need concept of limit
+- how to find pi:
+  - used bounds to constrain unknown value
+
+** Fermat
+- limit to find the slope of tangent line
+
+** Newton/Leibniz
+- development of calculus
+
+** Bolzano, Cauchy, Weierstrass
+- made the idea more firm footing
+
+$$\frac{sin(x)}{sin(x)} > \frac{sin(x)}{x} > \frac{sin(x)}{tan(x)}$$
+
+- this lets us bound $$/frac{sin(x)}{x}$$ between 1 and $$cos(x)$$
+- then as $$x$$ goes to 0, $$cos(x)$$ goes to 1
