@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Lucy H | Standarization of SDLs/Chemputation</title>
+  <title>Lucy H | Numerical Computation</title>
   <link rel="stylesheet" href="../../../css/main.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/default.min.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
@@ -43,72 +43,60 @@
     <main role="main">
       <div class="flex-row-col">
         <div>
-          <h1>Standarization of SDLs/Chemputation</h1>
+          <h1>Numerical Computation</h1>
           <div>
   
   <div class="header">
-    Posted on May  1, 2024
+    Posted on September  1, 2024
     
   </div>
   <div class="tags">
     
   </div>
   <div class="content">
-    <div class="ulist">
+    
+<div id="toc" class="toc">Contents:
 <ul>
-<li>
-<p>chemical reactions: 2d pictures</p>
-</li>
-<li>
-<p>OFAT: one factor at at time</p>
-</li>
-<li>
-<p>lots of assumed knowledge, so conditions not always outlined</p>
-</li>
-<li>
-<p>actual description recorded in prose</p>
-</li>
-<li>
-<p>reaction ⇒ workup ⇒ isolation ⇒ purification</p>
-</li>
-<li>
-<p>ORD: open-access repository of chemical reactions</p>
-</li>
-<li>
-<p>flow chemistry ⇒ key enabling technologies for automation</p>
-</li>
-<li>
-<p>closed-loop reaction optimization: automated processing, analysis of analytical data in real time</p>
-</li>
-<li>
-<p>algorithms for decision making: Nelder−Mead Simple and gradient based ⇒ can’t tackle noise</p>
-<div class="ulist">
+<li><a href="#ch-1-numerical-algorithms" id="toc-ch-1-numerical-algorithms">ch 1: numerical algorithms</a>
 <ul>
-<li>
-<p>The SNOBFIT algorithm: first to tackle noise</p>
-</li>
-<li>
-<p>also Bayesian optimization</p>
-</li>
-<li>
-<p>challenge: incorporating chemical knowledge into workflow ⇒ treat chemical reaction as black box, ignore physical properties/data from published results/chemical databases</p>
-<div class="ulist">
+<li><a href="#error" id="toc-error">1.2 error</a>
 <ul>
-<li>
-<p>nearest neighbour approach</p>
-</li>
-<li>
-<p>neural network approach (on large database), bayesian optmization, chemical encoding (using DFT-descriptors)</p>
-</li>
+<li><a href="#error-types" id="toc-error-types">error types</a></li>
+<li><a href="#big-o-notation" id="toc-big-o-notation">Big-O Notation</a></li>
+</ul></li>
+</ul></li>
+</ul></div>
+<div id="body"><h1 id="ch-1-numerical-algorithms">ch 1: numerical algorithms</h1>
+<ul>
+<li>mathematical model: formulated as an attempt to explain/understand</li>
+<li>continuous/piecewise problem approximated by discrete one</li>
+<li>functions approximated by finite arrays</li>
+<li>algorithms solve mathematical problems</li>
+<li>numerical analysis is the theory behind such algorithms</li>
 </ul>
-</div>
-</li>
+<h2 id="error">1.2 error</h2>
+<ul>
+<li>absolute error: <span class="math display">|<em>u</em> − <em>v</em>|</span></li>
+<li>relative error: <span class="math display">|<em>u</em> − <em>v</em>|/|<em>u</em>|</span></li>
 </ul>
-</div>
-</li>
-</ul>
-</div>
-
+<h3 id="error-types">error types</h3>
+<ol type="1">
+<li>errors in the problem to be solved:
+<ul>
+<li>approximation errors in the mathematical model</li>
+<li>errors in input data</li>
+</ul></li>
+<li>approximation errors
+<ul>
+<li>discretization errors: diecretization of continuos process</li>
+<li>convergence errors: arise in iterative methods, since nonlinear problems can be solved by infinitely many iterations</li>
+</ul></li>
+<li>roundoff errors
+<ul>
+<li>due to finite precision representation of real numbers on computers</li>
+</ul></li>
+</ol>
+<h3 id="big-o-notation">Big-O Notation</h3></div>
   </div>
   <div class="flex-row link-no-style">
     

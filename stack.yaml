@@ -3,5 +3,3 @@ packages:
   - .
 extra-deps:
   - hakyll-sass-0.2.4
-nix:
-  enable: true  # false by default, except on NixOS
