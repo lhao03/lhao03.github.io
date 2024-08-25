@@ -1,21 +1,21 @@
 ---
 title: ☕
-description: Lucy's thoughts
+description: Lucy's Thoughts
 ---
 
 ## Dear reader,
 
-Welcome to my plethora of thoughts. I enjoy learning about how and why things work, especially through the lens of theoretical and physical chemistry. I also have opinions about programming language theory and I think Racket is the best programming language.
+Welcome to my plethora of thoughts. I enjoy learning about how and why things work, especially through the lens of theoretical and physical chemistry. I also think Racket is the best programming language.
 
 ## My current life...
 
-I'm finishing up my last year of chemistry and computer science at UBC, where I dabble in programming languages, computational optimization and modeling molecules with functions. Some questions I have are: 
+I'm finishing up my last year of chemistry and computer science at UBC, where I dabble in molecules, systems, and algorithms. Some questions I have are: 
 
-- how can we develop methods to predict and elucidate chemical properties, using only first principles or semi-experimentally?
-  - how can quantum mechanical models of chemistry be improved?
-- how can computational optimization and formal methods in computer science be applied to chemistry? 
+- how can we develop methods to predict and elucidate chemical properties from first principles or semi-experimentally?
+  - how can we develop more accessible and reliable methods to find quantum mechanical models of different molecules?
+- how can computational optimization be applied to the chaos found in chemistry? 
 
-For fun, I like buying artisanal coffee, a hobby I started since someone I'm close to was appalled I was drinking instant coffee everyday; I drink at minimum two cups a day! I also read fiction books and enjoy talking about nonsensical scenarios.
+For fun, I like buying artisanal coffee, read fiction, and talk about nonsensical scenarios.
 
 ## My past life...
 

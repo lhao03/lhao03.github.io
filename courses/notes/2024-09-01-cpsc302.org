@@ -1,0 +1,26 @@
+---
+description: "CPSC 302: Numerical Computation"
+title: "Numerical Computation"
+---
+
+* ch 1: numerical algorithms
+- mathematical model: formulated as an attempt to explain/understand
+- continuous/piecewise problem approximated by discrete one
+- functions approximated by finite arrays
+- algorithms solve mathematical problems
+- numerical analysis is the theory behind such algorithms
+
+** 1.2 error
+- absolute error: $$|u - v|$$
+- relative error: $$|u - v|/|u|$$
+
+*** error types
+1. errors in the problem to be solved:
+   - approximation errors in the mathematical model
+   - errors in input data
+2. approximation errors
+   - discretization errors: diecretization of continuos process
+   - convergence errors: arise in iterative methods, since nonlinear problems can be solved by infinitely many iterations
+3. roundoff errors
+   - due to finite precision representation of real numbers on computers
+*** Big-O Notation
