@@ -9,13 +9,11 @@ Welcome to my plethora of thoughts. I enjoy learning about how and why things wo
 
 ## My current life...
 
-I'm finishing up my last year of chemistry and computer science at UBC, where I dabble in molecules, systems, and algorithms. Some questions I have are: 
+I'm finishing up my last year of chemistry and computer science at UBC, where I am in the intersection of molecules, systems and algorithms. Some questions I have are: 
 
 - how can we develop methods to predict and elucidate chemical properties from first principles or semi-experimentally?
-  - how can we develop more accessible and reliable methods to find quantum mechanical models of different molecules?
-- how can computational optimization be applied to the chaos found in chemistry? 
-
-For fun, I like buying artisanal coffee, read fiction, and talk about nonsensical scenarios.
+- how can we develop more accessible and reliable methods to simulate quantum mechanical models of molecules?
+- how can computation be applied to the chaos found in chemistry? 
 
 ## My past life...
 

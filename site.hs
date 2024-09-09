@@ -71,7 +71,7 @@ main = hakyllWith config $ do
         route $ setExtension "css"
         compile (fmap compressCss <$> sassCompiler)
 
-  match (fromList ["log.adoc", "notes.adoc", "books.adoc", "courses.adoc"]) $ do
+  match (fromList ["log.adoc", "books.adoc", "courses.adoc"]) $ do
     route appendIndex
     compile $ do
       let indexCtx =
@@ -82,8 +82,8 @@ main = hakyllWith config $ do
               `mappend` listField "year3" postCtx (recentFirst =<< loadAll "courses/reviews/year3/**")
               `mappend` listField "year4" postCtx (recentFirst =<< loadAll "courses/reviews/year4/**")
               `mappend` listField "year5" postCtx (recentFirst =<< loadAll "courses/reviews/year5/**")
+              `mappend` listField "year6" postCtx (recentFirst =<< loadAll "courses/reviews/year6/**")
               `mappend` listField "books" postCtx (recentFirst =<< loadAll "books/**")
-              `mappend` listField "notes" postCtx (recentFirst =<< loadAll "notes/**")
               `mappend` defaultContext
 
       pandocCompilerWithAsciidoctor
@@ -144,14 +144,6 @@ main = hakyllWith config $ do
         >>= relativizeUrls
   
     match "books/**" $ do
-      route appendIndex
-      compile $ do
-        pandocCompilerWithAsciidoctor
-          >>= loadAndApplyTemplate "templates/post.html" postCtx
-          >>= loadAndApplyTemplate "templates/default.html" postCtx
-          >>= relativizeUrls
-
-    match "notes/**" $ do
       route appendIndex
       compile $ do
         pandocCompilerWithAsciidoctor
