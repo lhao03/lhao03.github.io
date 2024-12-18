@@ -146,5 +146,19 @@ hr:after {
 }
 
 .sidebar {
-  padding-left: 20px;
+  padding-top: 5vh;
+  padding-right: 20px;
+  img {
+    width: 8vw;
+    height: auto;
+  }
+}
+
+.research {
+  word-break: break-word;
+  img {
+    width: 15vw;
+    padding-right: 10px;
+    height: auto;
+  }
 }

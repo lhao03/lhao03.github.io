@@ -1,28 +1,30 @@
 ---
-title: ☕
-description: Lucy's Thoughts
+title: ""
+description: I'm Lucy!
 ---
 
-## Dear reader,
-
-Welcome to my plethora of thoughts. I enjoy learning about how and why things work, especially through the lens of analytical and physical chemistry. I also think ~~Racket~~ Rust is the best programming language.
-
-## My current life...
-
-I'm finishing up my last year of chemistry and computer science at UBC, where I am at the intersection of molecules, systems and algorithms. Some questions I have are: 
+I'm finishing up my last year of chemistry and computer science at UBC, where I dabble at the intersection of molecules, systems and algorithms. I enjoy learning about how and why things work, especially through the lens of analytical and physical chemistry. Some questions I have are: 
 
 - how can computation be applied to chemical chaos?
 - how can we develop more efficient and robust methods to predict and simulate chemical properties from first principles?
 - and in the meantine, how can we develop scienfitically accurate machine learning methods for chemistry?
 
-## My past life...
+## Research
+- 2025: Continuing my time in the [Hein lab](https://groups2.chem.ubc.ca/jheints1/), working on predictive and data-driven HPLC method development.
+- 2024: Joined the [Hein lab](https://groups2.chem.ubc.ca/jheints1/) to explore the use of LLMs for generating code for self-driving labs. Also implemented self-consistent field convergence methods in Psi4 with the [Wang group](https://www.chem.ubc.ca/yan-alexander-wang).
+- 2022 - 2024: Conducted protein solvation simulations for our 2023 project on [cell-free protein synthesis](https://2023.igem.wiki/ubc-vancouver/). Recently wrote a DNA encoding/decoding pipeline and led sustainability efforts for our 2024 project on [DNA storage](https://2024.igem.wiki/ubc-vancouver/).
+- 2021: Implemented a NLP pipeline to extract information from electronic health records part of [PROOF Centre](https://www.proofcentre.ca/).
 
-I was involved in participating and putting together events such as hackathons ([StarHacks](https://starhacks.devpost.com/), [cmd-f 2020](https://devpost.com/software/ecoeats-sgwzhp)) and panels for minority groups in computing. I have also interned at Microsoft and Capital One, forming close friendships with people from all over Canada and the USA! Through these experiences, I've met lots of great people that I'm inspired by everyday. While I don't see myself returning to the software industry (for now), I'm grateful for the people I've met and am excited to see what is next for me.
+## Publications
+1. Zhang, W.; Guy, M. A.; Yang, J.; Hao, L.; Liu, J.; Hawkins, J.; Mustakis, I. G.; Monfette,
+S.; Hein, J. E. Leveraging GPT-4 to Transform Chemistry from Paper to Practice. Digital
+Discovery 2024. [https://doi.org/10.1039/d4dd00248b](https://doi.org/10.1039/d4dd00248b).
 
-<p>
-To get in touch with me, send an email to <code>(string-append "hao" "." "lucyy" "@" "gmail" "." "com")</code>. If you have a cat, please send me a photo of your cat!
-</p>
+2. Chen, Y.; Hao, L.; Zou, V. Z.; Hollander, Z.; Ng, R. T.; Isaac, K. V. Automated
+Medical Chart Review for Breast Cancer Outcomes Research: A Novel Natural Lan-
+guage Processing Extraction System. BMC Medical Research Methodology 2022, 22 (1).
+[https://doi.org/10.1186/s12874-022-01583-z](https://doi.org/10.1186/s12874-022-01583-z).
 
-
-<div style="float: right;"><p style="text-align: right">Sincerely,</p>
-<img style="width: 4vw" src="/images/lucy.png"/></div>
+## Work
+- 2022: Worked on writing automated tests for 2FA at Capital One.
+- 2021: Implemented tools for easier prototyping with Microsoft Graph API.

@@ -4,11 +4,13 @@
   <body>
     <main role="main">
       <div class="flex-row-col">
+        $partial("templates/sidebar.html")$
         <div>
+          $if(title)$
           <h1>$title$</h1>
+          $endif$
           $body$
         </div>
-        $partial("templates/sidebar.html")$
       </div>
     </main>
 
