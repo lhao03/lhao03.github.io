@@ -3,16 +3,16 @@ title: ""
 description: I'm Lucy!
 ---
 
-I'm finishing up my last year of chemistry and computer science at UBC, where I dabble at the intersection of molecules, systems and algorithms. I enjoy learning about how and why things work, especially through the lens of analytical and physical chemistry. Some questions I have are: 
+I'm in my last year of chemistry and computer science at UBC, where I dabble at the intersection of molecules, systems and algorithms. I enjoy learning about how and why things work, especially through the lens of analytical and physical chemistry. Some questions I have are: 
 
 - how can computation be applied to chemical chaos?
 - how can we develop more efficient and robust methods to predict and simulate chemical properties from first principles?
-- and in the meantine, how can we develop scienfitically accurate machine learning methods for chemistry?
+- and in the meantine, how can we develop scienfitically accurate machine learning tools for chemistry?
 
 ## Research
 - 2025: Continuing my time in the [Hein lab](https://groups2.chem.ubc.ca/jheints1/), working on predictive and data-driven HPLC method development.
-- 2024: Joined the [Hein lab](https://groups2.chem.ubc.ca/jheints1/) to explore the use of LLMs for generating code for self-driving labs. Also implemented self-consistent field convergence methods in Psi4 with the [Wang group](https://www.chem.ubc.ca/yan-alexander-wang).
-- 2022 - 2024: Conducted protein solvation simulations for our 2023 project on [cell-free protein synthesis](https://2023.igem.wiki/ubc-vancouver/). Recently wrote a DNA encoding/decoding pipeline and led sustainability efforts for our 2024 project on [DNA storage](https://2024.igem.wiki/ubc-vancouver/).
+- 2024: Joined the [Hein lab](https://groups2.chem.ubc.ca/jheints1/) to explore the use of LLMs for generating code for self-driving labs. Implemented self-consistent field convergence methods in Psi4 with the [Wang group](https://www.chem.ubc.ca/yan-alexander-wang).
+- 2022 - 2024: Conducted protein solvation simulations for our 2023 project on [cell-free protein synthesis](https://2023.igem.wiki/ubc-vancouver/). Wrote a DNA encoding/decoding pipeline, genetic algorithm for primer generation, and led sustainability efforts for our 2024 project on [DNA storage](https://2024.igem.wiki/ubc-vancouver/).
 - 2021: Implemented a NLP pipeline to extract information from electronic health records part of [PROOF Centre](https://www.proofcentre.ca/).
 
 ## Publications
