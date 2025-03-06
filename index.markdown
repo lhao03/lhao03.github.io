@@ -10,8 +10,8 @@ I'm in my last year of chemistry and computer science at UBC, where I dabble at 
 - and in the meantine, how can we develop scienfitically accurate machine learning tools for chemistry?
 
 ## Research
-- 2025: Continuing my time in the [Hein lab](https://groups2.chem.ubc.ca/jheints1/), working on predictive and data-driven HPLC method development.
-- 2024: Joined the [Hein lab](https://groups2.chem.ubc.ca/jheints1/) to explore the use of LLMs for generating code for self-driving labs. Implemented self-consistent field convergence methods in Psi4 with the [Wang group](https://www.chem.ubc.ca/yan-alexander-wang).
+- 2025: Continuing my time in the [Hein group](https://groups2.chem.ubc.ca/jheints1/), working on predictive and data-driven HPLC method development.
+- 2024: Joined the [Hein group](https://groups2.chem.ubc.ca/jheints1/) to explore the use of LLMs for generating code for self-driving labs. Implemented self-consistent field convergence methods in Psi4 with the [Wang group](https://www.chem.ubc.ca/yan-alexander-wang).
 - 2022 - 2024: Conducted protein solvation simulations for our 2023 project on [cell-free protein synthesis](https://2023.igem.wiki/ubc-vancouver/). Wrote a DNA encoding/decoding pipeline, genetic algorithm for primer generation, and led sustainability efforts for our 2024 project on [DNA storage](https://2024.igem.wiki/ubc-vancouver/).
 - 2021: Implemented a NLP pipeline to extract information from electronic health records part of [PROOF Centre](https://www.proofcentre.ca/).
 
