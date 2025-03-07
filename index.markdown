@@ -3,10 +3,10 @@ title: ""
 description: I'm Lucy!
 ---
 
-I'm in my last year of chemistry and computer science at UBC, where I dabble at the intersection of molecules, systems and algorithms. I enjoy learning about how and why things work, especially through the lens of analytical and physical chemistry. Some questions I have are: 
+I'm in my last year of chemistry and computer science at UBC, where I dabble at the intersection of molecules, systems and algorithms. I enjoy learning about how and why things work, especially through the lens of physical chemistry. Some questions I have are: 
 
 - how can computation be applied to chemical chaos?
-- how can we develop more efficient and robust methods to predict and simulate chemical properties from first principles?
+- how can we develop more efficient and accurate methods to predict and simulate chemical properties from first principles?
 - and in the meantine, how can we develop scienfitically accurate machine learning tools for chemistry?
 
 ## Research
