@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0f3b32bf-5d12-4b88-9da8-f81f363e83fa" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/index.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/index.markdown" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes/chemistry/2022-04-25-fabric-coating.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes/chemistry/2022-04-27-organocatalysis.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes/chemistry/2023-12-22-quantum-gaussian-process.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/notes/chemistry/2023-12-22-quantum-gaussian-process.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes/chemistry/2023-12-22-sigma-bond.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/notes/chemistry/2023-12-22-sigma-bond.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes/chemistry/2023-12-22-torsional-potential-energy.adoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes/chemistry/2023-12-29-qmmm.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/notes/chemistry/2023-12-29-qmmm.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes/chemistry/2023-12-29-quantum-mechanics-links.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/notes/chemistry/2023-12-29-quantum-mechanics-links.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes/chemistry/comp-chem.adoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes/chemistry/hein/2024-03-02-kinetics.adoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes/chemistry/hein/2024-04-18-large-language.adoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes/chemistry/hein/2024-04-23-chemputer.adoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes/chemistry/hein/2024-04-23-qm-benchtop.adoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes/chemistry/hein/automation-not-automatic.adoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes/chemistry/hein/chemical-taggers.adoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes/chemistry/hein/chemputation.adoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes/chemistry/hein/improve-code.adoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes/chemistry/hein/llm-chem.adoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes/chemistry/hein/llm-planning.adoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes/chemistry/hein/llms-physics.adoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes/chemistry/hein/optimal-temporal-planning.adoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes/chemistry/hein/robotic-papers.adoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes/chemistry/hein/universal-system.adoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes/chemistry/nmr.adoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes/chemistry/qm-in-chem-phys.adoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes/cs/2022-01-01-racket.adoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes/cs/2022-01-01-rust.adoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes/cs/2022-04-17-end-of-computing-science.adoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes/cs/2022-04-27-cs-unplugged.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes/cs/2022-04-27-developing-developers.adoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes/cs/2022-04-28-nonvolatilememory.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes/cs/2022-04-28-perils-of-javaschool.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes/cs/2022-04-28-principles-to-practice.adoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes/cs/2022-04-30-ProSE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes/cs/2022-05-01-carat-cake.adoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes/cs/2022-05-01-dangers-fixed-mindset.adoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes/cs/2022-05-03-geekiness-quotient.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes/cs/2022-05-03-thehumbleprogrammer.adoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes/cs/2022-05-03-why-cs-doesnt-matter.adoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes/cs/2022-05-04-optimal-function-inlining.adoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes/cs/2022-05-09-fairness-abstraction.adoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes/cs/2022-05-23-capital.adoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes/cs/2022-05-23-os.adoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes/cs/2022-05-27-programmable-pl.adoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes/cs/2022-05-28-forward-build-systems.adoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes/cs/2022-06-11-ab-cs.adoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes/cs/2022-06-11-tech-notes.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/notes/cs/2022-06-11-aws.adoc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes/cs/2023-01-19-cpsc539b-notes.tex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes/cs/2023-01-21-lambda-calculus.org" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes/cs/2023-01-22-cpsc539b-reviews.org" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes/misc/2022-06-10-nyc.adoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes/misc/papers.adoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes/physics/2024-03-26-physics.adoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes/synbio/2023-12-23-synbio.adoc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes/synbio/2024-02-17-dna-storage-papers.adoc" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2jrG9WU5TFyKrCGZU0EQ66HJjac" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "hakyll",
+    "last_opened_file_path": "/Users/lucyhao/codes/lhao03.github.io",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/notes" />
+      <recent name="$PROJECT_DIR$/posts" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-PY-241.18034.82" />
+        <option value="bundled-python-sdk-975db3bf15a3-2767605e8bc2-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-241.18034.82" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0f3b32bf-5d12-4b88-9da8-f81f363e83fa" name="Changes" comment="" />
+      <created>1722137630965</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1722137630965</updated>
+      <workItem from="1722137632850" duration="408000" />
+      <workItem from="1722138115654" duration="4901000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

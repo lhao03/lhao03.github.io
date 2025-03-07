@@ -1,7 +1,7 @@
 +++
 title = "The Computer Science Degree: Theory vs. Application"
 date = 2022-05-11
-update = 2022-5-16
+update = 2022-05-16
 draft = false
 +++
 
