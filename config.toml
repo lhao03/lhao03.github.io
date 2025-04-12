@@ -1,5 +1,5 @@
 theme = "no-style-please"
-base_url = "hhttps://lhao03.github.io/"
+base_url = "https://lhao03.github.io/"
 compile_sass = true
 build_search_index = true
 taxonomies = [
