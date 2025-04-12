@@ -6,7 +6,7 @@ I'm in my last year of chemistry and computer science at UBC, where I dabble at 
 
 - how can computation be applied to chemical chaos?
 - how can we develop more efficient and accurate methods to predict and simulate chemical properties from first principles?
-- and in the meantine, how can we develop scienfitically accurate machine learning tools for chemistry?
+- and in the meantime, how can we develop scienfitically accurate machine learning tools for chemistry?
 
 ## Research
 - 2025: Continuing my time in the [Hein group](https://groups2.chem.ubc.ca/jheints1/), working on predictive and data-driven HPLC method development.
@@ -20,8 +20,7 @@ S.; Hein, J. E. Leveraging GPT-4 to Transform Chemistry from Paper to Practice. 
 Discovery 2024. [https://doi.org/10.1039/d4dd00248b](https://doi.org/10.1039/d4dd00248b).
 
 2. Chen, Y.; Hao, L.; Zou, V. Z.; Hollander, Z.; Ng, R. T.; Isaac, K. V. Automated
-Medical Chart Review for Breast Cancer Outcomes Research: A Novel Natural Lan-
-guage Processing Extraction System. BMC Medical Research Methodology 2022, 22 (1).
+Medical Chart Review for Breast Cancer Outcomes Research: A Novel Natural Language Processing Extraction System. BMC Medical Research Methodology 2022, 22 (1).
 [https://doi.org/10.1186/s12874-022-01583-z](https://doi.org/10.1186/s12874-022-01583-z).
 
 ## Work
