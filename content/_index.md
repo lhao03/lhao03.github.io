@@ -1,5 +1,5 @@
 +++
-title = "Landing Page"
+title = "Lucy Hao"
 +++
 
 I'm in my last year of chemistry and computer science at UBC, where I dabble at the intersection of molecules, systems and algorithms. I enjoy learning about how and why things work, especially through the lens of physical chemistry. Some questions I have are: 
