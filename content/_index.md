@@ -1,14 +1,8 @@
 +++
-title = "Hi, I'm Lucy!"
-sort_by = "date"
-template = "main.html"
-page_template = "post.html"
-paginate_by = 4
-[extra]
-intro = "I'm in my last year of chemistry and computer science at UBC, where I dabble at the intersection of molecules, systems and algorithms. I enjoy learning about how and why things work, especially through the lens of physical chemistry."
+title = "Landing Page"
 +++
 
-Some questions I have are: 
+I'm in my last year of chemistry and computer science at UBC, where I dabble at the intersection of molecules, systems and algorithms. I enjoy learning about how and why things work, especially through the lens of physical chemistry. Some questions I have are: 
 
 - how can computation be applied to chemical chaos?
 - how can we develop more efficient and accurate methods to predict and simulate chemical properties from first principles?
@@ -32,10 +26,4 @@ guage Processing Extraction System. BMC Medical Research Methodology 2022, 22 (1
 
 ## Work
 - 2022: Worked on writing automated tests for 2FA at Capital One.
-- 2021: Implemented tools for easier prototyping with Microsoft Graph API.## Currently I'm...
-
-<p>
-To get in touch with me or see my resume, send an email to <code>
-  (string-append "hao" "." "lucyy" "@" "gmail" "." "com")</code>. I also like cats.
-</p>
-
+- 2021: Implemented tools for easier prototyping with Microsoft Graph API.

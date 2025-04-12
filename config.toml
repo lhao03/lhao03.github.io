@@ -1,24 +1,26 @@
-# The URL the site will be built for
-base_url = "https://lhao03.github.io/"
-
-# Whether to automatically compile all Sass files in the sass directory
+theme = "no-style-please"
+base_url = "hhttps://lhao03.github.io/"
 compile_sass = true
-
-# Whether to build a search index to be used later on by a JavaScript library
 build_search_index = true
-
-
-# taxonomies
 taxonomies = [
-    { name = "tag", feed = true},
+    { name = "tags" },
+    { name = "categories" },
+    { name = "contexts" },
 ]
 
 [markdown]
-# Whether to do syntax highlighting
-# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
 highlight_code = true
-highlight_theme = "nord"
 
 [extra]
-# Put all your custom variables here
-katex_enable = true
+add_toc = true
+header_nav = [
+    { name = "~home", url = "/" },
+    { name = "#tags", url = "/tags" },
+    { name = "+categories", url = "/categories" },
+]
+footer_nav = [
+    { name = "github", url = "https://github.com/lhao03", new_tab=true},
+    { name = "gitlab", url = "https://gitlab.com/lhao03", new_tab=true},
+    { name = "linkedin", url = "https://www.linkedin.com/in/lucy-hao/", new_tab=true },
+]
+
