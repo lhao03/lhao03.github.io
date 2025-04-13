@@ -125,8 +125,8 @@ nav, .taxonomies { text-align: center; }
   width: 1000px;
   height: fit-content;
   @media (max-width: $sm) {
-    width: 70vw;
-    height: fit-content;
+    height: 40vh;
+    width: fit-content;
     }
   }
   @media  (max-width: $sm){
