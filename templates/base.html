@@ -109,6 +109,7 @@
             </header>
             <main class="page-content" aria-label="Content">
                 <div class="row">
+                    {% if page.landing %}
                     <div class="profile">
                         <img src="lucy.jpg"/>
                         <p style="text-align: center;"><b>Lucy Hao</b></p>
@@ -123,6 +124,7 @@
                 {% endif %}
             </footer>
                     </div>
+                    {% endif %}
                     <div>
                         {% block content %}{% endblock content %}
                     </div>
