@@ -109,10 +109,9 @@
             </header>
             <main class="page-content" aria-label="Content">
                 <div class="row">
+                    {% if section.extra.landing %}
                     <div class="profile">
-                        {% if page.extra.landing %}
                         <img src="lucy.jpg"/>
-                         {% endif %}
                         <p style="text-align: center;"><b>Lucy Hao</b></p>
             <footer>
                 {% block footer %}{% endblock footer %}
@@ -122,9 +121,10 @@
                     <a href="{{ nav_item.url | safe }}">{{ nav_item.name }}</a>
                     {% endfor %}
                 </nav>
+                 {% endif %}
             </footer>
                     </div>
-                    {% endif %}
+                     {% endif %}
                     <div>
                         {% block content %}{% endblock content %}
                     </div>
