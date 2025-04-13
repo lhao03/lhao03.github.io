@@ -17,6 +17,7 @@ header_nav = [
     { name = "~home", url = "/" },
     { name = "#tags", url = "/tags" },
     { name = "+categories", url = "/categories" },
+    { name = ">resume", url = "/cv.pdf", new_tab=true},
 ]
 footer_nav = [
     { name = "github", url = "https://github.com/lhao03", new_tab=true},
