@@ -11,20 +11,27 @@ I dabble at the intersection of molecules, systems and algorithms. I enjoy learn
 - and in the meantime, how can we develop scientifically accurate machine-learning tools for chemistry?
 
 ## About
-I'm in my last year of undergrad, working with the highly interdisciplinary [Hein group](https://groups2.chem.ubc.ca/jheints1/). I contribute to multiple projects in developing automated and autonomous platforms for process chemistry. Learning amongst chemists and engineers has made me appreciate the work that goes into building and validating robust systems for automating synthetic chemistry. Some of my projects include using the LLMs for generating code for self-driving labs and Bayesian Optimization for HPLC method development.
+I'm in my last year of undergrad, working with the highly interdisciplinary [Hein group](https://groups2.chem.ubc.ca/jheints1/). I contribute to multiple projects in developing autonomous platforms for process chemistry. Learning amongst chemists and engineers has made me appreciate the work that goes into building and validating robust systems for automating synthetic chemistry. Some of my projects include using the LLMs for generating code for self-driving labs and Bayesian Optimization for HPLC method development.
 
 I've also worked on the implementation of self-consistent field convergence methods in Psi4 with the [Wang group](https://www.chem.ubc.ca/yan-alexander-wang), software and sustainability efforts for [DNA storage](https://2024.igem.wiki/ubc-vancouver/) and computational biology for [cell-free protein synthesis](https://2023.igem.wiki/ubc-vancouver/) at UBC iGEM, and natural language processing for electronic health records at the [PROOF Centre](https://www.proofcentre.ca/).
 
-Previously I interned in the software industry where I built tools for easier prototyping with the Microsoft Graph API in the Microsoft Garage Program and wrote automated tests for 2FA at Capital One.
+Previously, I was a software engineering intern at Microsoft and Capital One.
 
-## Publications and Code
-1. Hao, L.. Hein Group / Hein Device API / pychemstation · GitLab. GitLab. [https://gitlab.com/heingroup/device-api/pychemstation](https://gitlab.com/heingroup/device-api/pychemstation).
+## Publications, Code, Posters
+1. Hao, L. Hein Group / Hein Device API / pychemstation · GitLab. GitLab. [https://gitlab.com/heingroup/device-api/pychemstation](https://gitlab.com/heingroup/device-api/pychemstation).
 
-2. Zhang, W.; Guy, M. A.; Yang, J.; Hao, L.; Liu, J.; Hawkins, J.; Mustakis, I. G.; Monfette,
+2. [Implementation of LIST SCF Convergence Methods and MESA in Psi4](chem445.pdf)
+
+3. Zhang, W.; Guy, M. A.; Yang, J.; Hao, L.; Liu, J.; Hawkins, J.; Mustakis, I. G.; Monfette,
 S.; Hein, J. E. Leveraging GPT-4 to Transform Chemistry from Paper to Practice. Digital
 Discovery 2024. [https://doi.org/10.1039/d4dd00248b](https://doi.org/10.1039/d4dd00248b).
 
-3. Chen, Y.; Hao, L.; Zou, V. Z.; Hollander, Z.; Ng, R. T.; Isaac, K. V. Automated
+4. Pelkie, B.; Baird, S.; Aissi, E.; Aspuru-Takata, K.; Cao, Y.; Chang, J. H.; Gambhir, K.; Hale, W. S.; Hao, L.; Hattrick, C.; Hein, J.; Luo, D.; Melville, O.; Ngan, M.; Nyeland, L. L. B.; Peek, N.; Politi, M.; Rajkumar, E. E.; Siemenn, A.; Subbaraman, B.; Vasquez, S.; Watchorn, J.; Zhang, W.; Ziskason, R.; Pozzo, L.; Buonassisi, T.; Vegge, T. Democratizing Self-Driving Labs through User-Developed Automation Infrastructure. ChemRxiv February 12, 2025. [https://doi.org/10.26434/chemrxiv-2025-zhkrf](https://doi.org/10.26434/chemrxiv-2025-zhkrf).
+
+
+5. [AI-Driven Workflow Planning for Robotic Arms in Self-Driving Labs](llm.pdf)
+
+6. Chen, Y.; Hao, L.; Zou, V. Z.; Hollander, Z.; Ng, R. T.; Isaac, K. V. Automated
 Medical Chart Review for Breast Cancer Outcomes Research: A Novel Natural Language Processing Extraction System. BMC Medical Research Methodology 2022, 22 (1).
 [https://doi.org/10.1186/s12874-022-01583-z](https://doi.org/10.1186/s12874-022-01583-z).
 
