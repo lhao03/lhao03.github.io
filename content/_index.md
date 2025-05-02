@@ -4,7 +4,7 @@ title = "Lucy Hao"
 landing = true
 +++
 
-> I'll be at [CSC 2025](https://www.cheminst.ca/conference/canadian-chemistry-conference-and-exhibition-csc-2025/)!
+> I've moved to Toronto, and I'll be at [CSC 2025](https://www.cheminst.ca/conference/canadian-chemistry-conference-and-exhibition-csc-2025/)!
 
 I dabble at the intersection of molecules, systems and algorithms. I enjoy learning about how and why things work, especially through the lens of physical chemistry. Some questions I have are: 
 
@@ -13,7 +13,9 @@ I dabble at the intersection of molecules, systems and algorithms. I enjoy learn
 - and in the meantime, how can we develop scientifically accurate machine-learning tools for chemistry?
 
 ## About
-I'm in my last year of undergrad, working with the highly interdisciplinary [Hein group](https://groups2.chem.ubc.ca/jheints1/). I contribute to multiple projects in developing autonomous platforms for process chemistry. Learning amongst chemists and engineers has made me appreciate the work that goes into building and validating robust systems for automating synthetic chemistry. Some of my projects include using the LLMs for generating code for self-driving labs and automated HPLC method development.
+This summer, I'll be working with the [Izmaylov group](https://www.utsc.utoronto.ca/~aizmaylov/), learning about quantum computation for quantum chemistry.
+
+During my last year of undergrad, I worked with the highly interdisciplinary [Hein group](https://groups2.chem.ubc.ca/jheints1/). I contribute to multiple projects in developing autonomous platforms for process chemistry. Learning amongst chemists and engineers has made me appreciate the work that goes into building and validating robust systems for automating synthetic chemistry. Some of my projects include using the LLMs for generating code for self-driving labs and automated HPLC method development.
 
 I've also worked on the implementation of self-consistent field convergence methods in Psi4 with the [Wang group](https://www.chem.ubc.ca/yan-alexander-wang), software and sustainability efforts for [DNA storage](https://2024.igem.wiki/ubc-vancouver/) and computational biology for [cell-free protein synthesis](https://2023.igem.wiki/ubc-vancouver/) at UBC iGEM, and natural language processing for electronic health records at the [PROOF Centre](https://www.proofcentre.ca/).
 
@@ -36,6 +38,3 @@ Discovery 2024. [https://doi.org/10.1039/d4dd00248b](https://doi.org/10.1039/d4d
 6. Chen, Y.; Hao, L.; Zou, V. Z.; Hollander, Z.; Ng, R. T.; Isaac, K. V. Automated
 Medical Chart Review for Breast Cancer Outcomes Research: A Novel Natural Language Processing Extraction System. BMC Medical Research Methodology 2022, 22 (1).
 [https://doi.org/10.1186/s12874-022-01583-z](https://doi.org/10.1186/s12874-022-01583-z).
-
-## Posts I read more than once
-- [The Dark Forest and Generative AI](https://maggieappleton.com/ai-dark-forest)

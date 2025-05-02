@@ -1,0 +1,4 @@
+---
+description: "CHEM 330"
+title: "CHEM 330: Advanced Organic Chemistry"
+---

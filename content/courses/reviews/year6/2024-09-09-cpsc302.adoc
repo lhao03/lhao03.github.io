@@ -1,0 +1,5 @@
+---
+description: "CPSC 302"
+title: "CPSC 302"
+type: "notes"
+---

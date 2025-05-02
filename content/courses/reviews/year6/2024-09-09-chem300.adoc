@@ -1,0 +1,5 @@
+---
+description: "CHEM 300"
+title: "CHEM 300"
+type: "notes"
+---

@@ -1,0 +1,7 @@
+---
+description: "CHEM 406"
+title: "CHEM 406: Computational Optimization"
+type: "notes"
+---
+
+* introduction

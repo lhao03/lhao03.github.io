@@ -1,0 +1,4 @@
+---
+description: "CHEM 218"
+title: "CHEM 218: Fundamentals of Reactivity in Inorganic Chemistry"
+---

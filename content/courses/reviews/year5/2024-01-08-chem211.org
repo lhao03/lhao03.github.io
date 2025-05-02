@@ -1,0 +1,4 @@
+---
+description: "CHEM 211"
+title: "CHEM 211: Introduction to Chemical Analysis"
+---

@@ -1,0 +1,5 @@
+---
+description: "CPSC 311"
+title: "CPSC 311; Definition of Programming Languages"
+type: "notes"
+---

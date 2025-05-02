@@ -1,0 +1,401 @@
+---
+description: "CHEM 401"
+title: "CHEM 401: Principles of Spectroscopy"
+type: "notes"
+---
+
+* questions
+- what do the different polarizations mean
+- what do s and p waves represent
+
+* good resources
+- https://socratic.org/questions/what-are-the-differences-between-stretching-vibration-and-bending-vibrations
+
+* lectures
+** 1: introduction
+- basic spectroscopy: light source -> sample -> prism -> detector
+  - act of separating light
+- history of spectroscopy:
+  - 1666 Newton: continuous spectrum of sun
+  - 1814 Fraunhofer: found sharp dark lines in sunlight (discrete -> indicts QM)
+  - 1900: development of QM
+- interstellar molecules (unstable)
+- our universe:
+  - molecular clouds:
+    - very cold: 10 - 100 K
+    - not dense: $$\frac{10^{3}}{cm^3}$$
+      - this means not many collisions happening, so very unstable molecules can exist <- spectroscopic observation plays important role
+  - atmosphere:
+    - hot: 300 K
+    - dense: $$\frac{10^{20}}{cm^3}$$
+- spectroscopy hydrogen atom: chief experimental basis for theories and structure of matter
+  - first spectra before QM: Angstrom and Rydberg
+  - spectra with QM: Bohr
+    - de Broglie: duality of matter
+      $$\lambda = \frac{h}{p}$$
+      $$E = h\nu$$
+    - Schrodinger
+  - relativistic quantum theory:
+    - Dirac: combine Schrodinger and Einstein
+      - $$E = ih \frac{\partial}{\partial \tau}$$
+    - Einstein: relativity (things moving at speed of light)
+- splitting of hydrogen: bohr -> dirac -> qed
+  [[../../../../images/401/spliitng.jpeg]]
+** 2: WebMO practice
+- dihedral angle: rotate relative to a plane
+- linear molecule: 2 rotational constants
+- non-linear molecule: 3 rotational constants
+- first optimize then calculate vibrational frequency
+** 3: intro to QM
+** 4: intro to EMR
+*** electromagnetic radiation
+- electric (\vv{E}) and magentic (\vv{B}) fields pervade all space; they are vectors with three components (x, y, z)
+- in vacuum, speed of light is $$2.998 \times 10^8$$ m/s
+- general form: $$E(r, t) = E_0 cps (wt - k \ dot r)$$
+  - where $E_0$ is the amplitude vector, k is propagation vector, with r being vector containing x, y, z
+- planck relation: $$E = hv = \hbar w = \frac{hc}{\lambda}$$
+- 1 eV $$= 1.602 \times 10^{-19}$$ J $$= 8065.54$$ cm $^{-1}$
+**** fields (EMR fields)
+- 6 fields that are related by these two equations:
+  $$ \vv{D} = \epsilon \vv{E} = \epsilon_0 \vv{E} + \vv{P}$$
+  $$ \vv{B} = \epsilon \vv{E} = \mu_0 \vv{H} + \vv{M}$$
+- $$\vv{E}$$ and $$\vv{H}$$ (electric and magnetic field) are perpendicular to each other and the propagation vector $$\vv{k}$$
+  - $$H_0 = \sqrt{\frac{\epsilon}{\mu}}E_0$$
+**** polarization of light
+- light is transverse wave: osciallations of $$\vv{E}$$ and $$\vv{H}$$ are perpendicular to propagation direction
+  - $$ k = |\vv{k}| = \frac{2 \pi}{\lambda} = \frac{w}{c}$$
+  - still have DOF in plane perpendicular to $$\vv{k}$$, which relates to the polarization of light
+    1. unpolarized light: no perferred direction for $$\vv{E}$$, can be any direction perpendicular, is a statistically mixed state
+    2. polarized light: the polarization of $$\vv{E}$$ can rotate during oscillation, the angle
+       - for light in the z direction: $$(E_{x0} cos(kz -wt), E_{y0}cos(kz-wt+\theta), 0)$$
+         1. plane/linearly polarised: $$\theta = 0$$
+         2. elliptically polarized light: $$\theta = +/- \frac{\pi}{2}$$, and $$E_{x0} \neq E_{y0}$$ left/right hand
+         3. circularly polarized light: $$E_{x0} = E_{y0}$$, L/R
+**** angular momentum and light
+L/R circularly polarized photons have angular momentum $$+/- \hbar$$
+- no $$S_z = 0$$ photons as light must remain transverse (what does this mean)
+  - photon is a massless particle, don't actually haves spin
+    - have helicity: value of projection of spin operator onto the momentum operator
+- unpolarized light: random statistical mixture of L/R
+- polarised light: coherent superposition of L/R circularly polarized light
+**** propagation of light
+- speed of light in vacuo: $$c_0 = \frac{1}{\sqrt{\epsilon_0 \mu_0}}$$
+- speed of light in medium: $$c_0 = \frac{1}{\sqrt{\epsilon \mu}}$$ where $\epsilon$ and $\mu$ are characteristic to the medium
+- refractive index: $$n = \frac{c_0}{v} = \sqrt{\frac{\epsilon \mu}{\epsilon_0 \mu_0}} \geq 1$$, where $\mu$ is magnetic permittivity
+- for nonmagnetic media: $$n = \sqrt{\frac{\epsilon}{\epsilon_0}} = \sqrt{\epsilon_r}$$, where $$\epsilon_r$$ is the relative electric permittivity
+  - dielectric constant: measured by response to static/low frequency electric field
+**** reflection and refraction
+- frequency (energy) is unchanged from vacuum value when passing through a medium, $v = v_0$, so since $c = c_0 / n$: the wavelength is reduced: $$ \lambda = \lambda_0 / n$$
+  - $$E = hv = \frac{c_0 / n}{ \lambda_0 / n}$$
+- reflection (specular, meaning mirror like): $$\theta_{inc} = \theta_{refl}$$
+- refraction (snells law): $$n_1 sin \theta_{inc} = n_2 sin \theta_{refr}$$
+- polarization:
+  - determines the reflectivity
+  - $R$ is reflectance, $T = 1 - R$ is the transmittance
+  - for s and p waves: with $$T = 1 - R$$
+  - Fresnel equation
+    - $$R_s = |\frac{n_1 cos \theta_i - n_2 cos \theta_t}{n_1 cos \theta_i + n_2 cos \theta_t}|^2$$
+    - $$R_p = |\frac{n_1 cos \theta_t - n_2 cos \theta_i}{n_1 cos \theta_t + n_2 cos \theta_i}|^2$$
+    - another form:
+      - $$R_s = |\frac{sin(\theta_2 - \theta_1)}{sin(\theta_2 + \theta_1)}|^2$$
+      - $$R_p = |\frac{tan(\theta_2 - \theta_1)}{tan(\theta_2 + \theta_1)}|^2$$
+    - normal incidence: $$\theta_i = \theta_t = 0$$, then $$R = R_s = R_t = (\frac{n_1 - n_2}{n_1 + n_2})^2$$
+    - total internal reflection: when $n_1 > n_2$, there is a critical angle, which $R_s, R_t = 1$
+      [[../../../../images/401/internalreflect.jpg]]
+- brewster's angle: when $$\theta_t + \theta_i = 90^\deg$$ $$R_p \rightarrow 0$$ and $$T_p \rightarrow 1$$, p polarized light will not be reflected, or if the incident light is unpolarized, only $s$ polarized light will reflect, this is how you can produce polarized light
+  - $$\theta_B = arctan(n_2/n_1)$$
+  - no reflection for p wave
+- dispersion
+  - sellmeier equation (empirical relation between $n$ and $\lambda$)
+    [[../../../../images/401/angles.png]]
+- absoption and refractive index
+  - normal regions of dispersion separated by regions of anomalous dispersion between different regions of NMR spectrum
+  - kramers-kronig index
+- birefringence
+  - refractive index: depends on angle between polariztion of light and crystal axis
+** 5: light-matter interaction
+**** radiation density and intensity of light
+- let $$\rho$$ be volume density of energy in EM radiation J/m$^3$
+- to find contributions at various frequencies $\rho(v)$ is energy density per unit frequency, and $$ \rho = \int_0^\inf p(v) dv$
+- intensity of light: $$I = \int_0^\inf I(v) dv$$
+- photon flux: number of photons flowing through a unit area per unit time $$F = \frac{I}{(hv)}$$
+  - relations: $$I(v) = p(v)c = p(v)(c_0/n)$$
+  - $$I(v) = \frac{1}{2} \epsilon_0 E^2_0 c$$, where $E_0$ is the amplitude for electric field osciallations at frequency $v$
+**** absorption and emission
+- consider a two level system: can have three processes:
+  1. absorption
+  2. spontaneous emission
+  3. stimulated emission
+[[../../../../images/401/qm.png]]
+- A and B are transition probabilities, $N_1$, $N_2$ are populations
+- Einstein's treatment: @ thermal equilibrium, population ratio given by Boltzmann factor, with degeneracies g: $$\frac{N_2}{N_1} = \frac{g_2}{g_1} e^{-hv / kT}$$, where $hv = E_2 - E_1$
+- spontaneous decay (no radiation) kinetic rate law: $$\frac{-d N_{2}}{dt} = A_{21}N_{2}$$, $$N_2 (t) = N_2 (0) e^{-A_{21}t}$$, so radiative lifetime of excited state is $$\frac{1}{A_{21}}$$
+- with radiation:
+  - upward transition: $$W_{12} = N_{1}B_{12} \rho (v)$$
+  - downward transition: $$W_{21} = N_2 B_{21} \rho (v) + N_2 A_{21}$$
+  - at eq: these two rates must be equal, so we can solve for $$\rho (v)$$ and insert the thermal eq Boltzmann factor and equate to thermal blackbody spectrum:
+    - $$\frac{A_{21}}{(g_1/g_2) e^{\frac{hv}{kT}} B_{12} - B_{21}}$$
+    - we get $$g_1 B_{12} = g_2 B_{21}$$: equal probability of 1 to 2 or 2 to 1
+    - and $$\frac{A_{21}}{B_{21}} = \frac{8 \pi h v^3}{c^3} \propto v^3$$
+      - higher frequency: spontaneous emission
+      - lower frequency: stimulated emission
+**** transition dipole momentum
+- transition rate determined by "transition dipole moment"
+- transition dipole moment between two states $n$ and $m$ is a vector: $$\mu_{mn} = \int \psi_m^* \hat{\mu} \psi_n dV = \langle m | \hat{mu} | n \rangle $$
+  - $$\hat{mu}$$ is the electric dipole moment operator: $$\hat{mu} = \sigma_i q_i r_i$$
+- transition rates determined by Einstein coefficients times a lineshape factor resonantly peaked at transition frequency ($$E_2 - E_1$$), enforces energy conservation
+**** beer's law
+- not covered much, study more later
+**** line profiles for spectral lines
+- conservation of energy: $$v = v_{12}$$: $$v_{12}$ splittings between eigenvalues
+  - $$\delta(v - v_{12})$$
+- reality: emission/absoption never perfectly monochromatic (single wavelength/color): each line has characteristic shape/profile, with certain width $\delta v$, quantified as FWHM
+- lines spaced apart less than $\delta v$ cannot be seperated/resolved
+- common line shape:
+  - lorentzian: broadening by the natural lifetime of the excited state
+  - guassian: inhomogeneous broadened lines (Doppler broadening)
+  - voigt: mixes guassian and lorentzian
+    - convolution of two and appropriate when homogeneous and inhomogeneous mechanisms are important
+- natural linewidth
+
+** 6: prep for final presentation
+** 8: molecular symmetry and group theory 1
+- operators:
+  - $$\hat{E}$$ is identity operator
+** 9: molecular symmetry and group theory 2
+- group theory and quantum mechanics
+  - point symmetry operator R
+    - representation of R based on point in 3D space: real orthogonal $$3 \times 3$$ rep M = $$\Gamma(R)$$
+    - symmetry operations as operators on space of wavefunctions
+      - generalization of symmetry on arbitrary point:
+        $$r = M r = \begin{bmatrix}
+           x^, \\
+           y^, \\
+           z^,
+         \end{bmatrix}$$
+      - we can define the operator $$\hat{P}_R$$ by
+        - $$\hat{P}_R|\psi \rangle = \hat{P}_R|\psi(x, y, z) \rangle = |\psi(M^{-1} r) \rangle = |\psi(x^,, y^,, z^,,) \rangle$$
+      - interested in finite dimensional subspace of Hilbert space (5D space spanned by $3d$ orbitals): basis set is set of solutions of Schrodinger equation, eigenfunctions of $$\hat{H}$$
+- symmetrization
+  - projection operator $$\hat{P^{\mu}}$$: annihilates all functions that does not belong to $$\mu$$-th irreducible representation
+** 10: molecular rotation and spin statistics 1
+** 11: molecular rotation and spin statistics 2
+*** born-oppenheimer approximation
+- fixed nucleus
+- total hamiltonian consists of kinetic energy of nucleus, electrons, and coloumb potential energy between nuclei, nuclei-electrons, and electrons
+*** (and BO adiabatic approximation)
+- wavefunction is product of electron and nuclei $$\Psi_{n,i} = \chi^{(n)}_i (R) \psi^{el}_n(r;R)$$
+- for a fixed R  we get the electronic schrodinger equation: $$\hat{H} = \hat{H}_{nuc} + \hat{H}_{elec}$$, where $$\hat{H}_elec = \psi^{el}_n(r;R) = E^{el}_n (R) \psi^{el}_n(r;R)$$
+- nuclear schrodinger equation: $$[\hat{H}_{nuc} + E^{el}_n(R)]\chi^{n}_i (R) = E_{n, i \chi^{(n)}_i}(R)$$
+     - then by changing the value of R, we get the potential energy surface $$E^{el}_n$$
+*** separation of vibration and rotation
+- separation of translational motion
+  - we can seperate translational motion and internal motion (rotation and vibration) by using $$R_{CM}$$, center of mass
+         [[../../../../images/401/rcm.png]]
+- $$\hat{T}_{nuc} = - \frac{\hbar^2}{2M} \nabla^2_{CM} - \frac{\hbar^2}{2 \mu} \nabla^2_{int}$$
+*** can further seperate vibrational and rotational motion
+- using polar coordinates
+  - $$\hat{H}_{nuc} + E^{el}_n (R) = \hat{T}_{vib} + E^{el}_n (R) + \frac{1}{2 \mu R^2} \hat{L}^2 (\theta \psi)$$ (last term is $$\hat{H}_{rot})$$
+- we get vibration-rotation wavefunction: $$\chi_{n, v, J, M} (R) = S_v^(n) (R) Y_{JM} (\theta \psi)$$ where vibration only depends on bond length and rotation depends on two angles
+*** rotation of diatomic molecules
+- rigid rotater: if you set $R = R_e$ where $R_e$ is equilibrium bond length, $$\hat{T}_{vib} = 0$$
+- spherical harmonics (eigensolution)
+- for $$\hat{L}^2 | Y_{Jm}$$, $$\hbar^2 J (J+1)$$ is the eigenvalue
+- for $$\hat{L}_z$$, $$\hbar m$$ is the eigenvalue
+- moment of interia is simple $$I_e = \mu R^2_e$$
+- rotational constant:
+  - $$B_e = \frac{\hbar^2}{2 I_e} \text{ (J)}$$
+  - $$ = \frac{\hbar^2}{8 \pi^2 I_e} \text{ (Hz)}$$
+  - $$ = \frac{\hbar^2}{8 \pi^2 I_e c} \text{ (cm}^{-1})$$
+*** polyatomic molecules: linear
+- start with moment of inertia tensor:
+     $$\begin{bmatrix}
+        I_{xx} & I_{xy} & I_{xz} \\
+        I_{yx} & I_{yy} & I_{yz} \\
+        I_{zx} & I_{zy} & I_{zz} \\
+        \end{bmatrix}$$
+- diagonalize to get moment of intertia:
+     $$\begin{bmatrix}
+        I_{aa} & & \\
+        & I_{bb} & \\
+        & & I_{cc} \\
+        \end{bmatrix}$$
+- x y z axis don't always correspond to a b c axis
+- to calculate:
+  - $$I_{xx} = \Sigma m_\alpha (y^2_\alpha + z^2_\alpha)$$
+  - $$I_{xy} = - \Sigma m_\alpha x_\alpha y_\alpha$$
+- example: [[../../../../images/401/hoh.png]]
+  -
+  - $$I_{xx} = \Sigma m_\alpha (y^2_\alpha + z^2_\alpha) = M_H(f^2 + g^2) + M_H(f^2 + g^2) + M_O h^2$$
+  - $$I_{xy} = - \Sigma m_\alpha x_\alpha y_\alpha = -(M_H fg + M_H f (-g))$$ why no $M_O$
+  - $$\begin{bmatrix}
+        M_H h^2 + 2M_H (f^2 + g^2) & 0 & 0 \\
+        0 & M_O h^2 + 2 M_H g^2 & 0 \\
+        0 & 0 & 2M_H f^2 \\
+        \end{bmatrix}$$
+  - 3 moment of inertia values, 3 rotational constants
+    - units of inertia: $\text{amu} \AA^2$
+      - $$I_A \leq I_B \leq I_C$$, $$A \geq B \geq C$$
+    - rotational constant $=505379.07/I \text{amu} \AA^2$$
+- important quantum notes:
+  - $I_a = 0$, $I_b = I_c$
+  - degeneracies: g = 2J + 1
+  - $E_J = BJ(J+1)$
+*** polyatomic molecules: symmetric top
+- prolate: $I_a < I_b = I_c$, $A > B = C$
+- another quantum number: J = 0, 1 2, and K, M = -J, -J+1, ..., J-1, J
+  - if K = 0: g = 2J+1
+  - if K != 0: g = 2(2J+1)
+- $E_{JK} = BJ(J+1) + (A-B)K^2$
+[[../../../../images/401/prolate.png]]
+- oblate: $I_a = I_b < I_c$, $A = B < C$
+- $E_{JK} = BJ(J+1) + (C-B)K^2$
+[[../../../../images/401/oblate.png]]
+*** polyatomic molecules: spherical top
+- $I_a = I_b = I_c$
+[[../../../../images/401/sphericaltop.png]]
+- $E_J = BJ(J+1)$
+- there is still K, $g = (2J + 1)^2$
+*** polyatomic molecules: asymmetric top
+- $I_a \neq I_b \neq I_c$
+[[../../../../images/401/asym.png]]
+*** optical selection rule: diatomic and linear
+- $\mu_0 \neq 0$ $\Delta J = +/- 1$, $\Delta M = 0, +/-1$
+  - can only transition between J and J+1, separations are 2B.
+  - transition frequency: $2B(J+1)$
+*** symmetric and asymmetric top molecules
+- symmetric top: $\mu_0 \neq 0$ $\Delta J = +/- 1$, $\Delta M = 0, +/-1$, $\Delta K = 0$
+- asymmetric top: $\Delta J = 0, +/- 1$, $\Delta M = 0, +/-1$
+  - then more details based on if it is a-type, b-type, c-type transition
+*** general notes
+- no dipole moment, no transition (mu cant be 0, mu is dipole moment)
+** 12: molecular vibration
+- we can get the vibrational schrodinger equation by representing in polar coordinates: $$[-\frac{\hbar^2}{2 \mu} \frac{\partial^2}{\partial q^2}]\phi_v^{(n)} = E^{(n)}_{vib, v} \phi^{(n)}_v$$
+- $D_e$ is equilibrium dissociation energy (bond dissociation energy)
+  - associated with equilibrium bond distance
+  - $D_e - ZPE = D_0$
+- $D_0$ is dissociation energy (chemical-dissociation energy), true ground state energy
+*** harmonic oscillator model
+- taylor series around $R_e$
+  - 0 potential at $R_e$
+  - first derivative is 0 (this is set, to find eq point)
+  - harmonic potential: $$V(q) = \frac{1}{2} (\frac{d^2 V}{dq^2})_0 q^2 = \frac{1}{2} kq^2$$
+    - classical: $$T + V = E = \frac{1}{2} k x_0^2$$
+    - quantum: $$E_v = (v + \frac{1}{2}) hv_0$$, and the Hamiltonian: $$\hat{H} = \hat{T} + \hat{V}$$
+*** selection rule
+- within the same electronic state (which means? same quantum numbers): $$\Delta v +/- 1$$, and $$\frac{df \mu_0}{dq} \neq 0$$, there must be dipole moment/must be polar
+  - fundamental: $$1 \leftarrow 0$$
+  - hot bands: $$2 \leftarrow 1$$ observed when its really hot
+  - overtone: $$2 \leftarrow 0$$ (2 times the fundamental frequency)
+*** rotation-vibration transition (diatomic molecules)
+- energy: $$E_{vJ} = (v + \frac{1}{2}) h_{v_e} + B_e J (J+1)$$ first term (vibration) + second term (rotation)
+- rotational: $$\Delta J = +/- 1$$ $$\Delta M = 0, +/- 1$$, $$\Delta J = 0, +/- 1$$ if $$L,S \neq 0$$
+- vibrational: $$\delta v = +/- 1$$ and dipole moment cant be 0
+  - types of branches:
+    - P branch: $$v_{J - 1 \leftarrow J}$$,
+    - Q branch: $$v_{J \leftarrow J}$$, $$\Delta J = 0$$
+    - R branch: $$v_{J + 1 \leftarrow J}$$, $$\Delta J = +1$$
+*** vibration of polyatomic molecules
+- for each atom, you get one coordinate, then you get $$\hat{T}_vib = \frac{1}{2} \Sigma q^2_i$$
+  - do taylor expansion, then you get hessian matrix, $$b_{ik}$$
+    - normal modes: coordinate system that make $$b_{ik}$$ diagonal
+*** vibrational levels
+- fundamental: one quanta change
+- overtone: two quanta change
+- combination: different modes all transition
+- energy of all vibrational modes: $$\Sigma_i (n_i + \frac{d_i}{2}) v_i$$
+  - total zero point: $$\frac{1}{2} (v_1 + ... v_n)$$
+*** other info
+- C-H stretch: 2700-3100 1/cm
+- O-H stretch: 3580 - 3650 1/cm
+*** normal modes
+- to determine how many of each normal mode you have
+  - translational: always 3 (x,y,z)
+  - rotational: (R_x, R_y, R_z):
+  - left over is vibrational
+*** symmetry of vibrational wavefunction
+- ground state is always (0,0,0,...)
+- two quanta of B_2 gives A_1
+** 13: vibrational infrared and raman spectroscopy
+*** scattering:
+- incident beam gets scattered by a medium, producing wavelengths of ??? frequency in all directions ??? is the frequency the same or different
+  - stokes: lower frequency
+  - anti-stokes: higher frequency
+[[../../../../images/401/scattering.png]]
+- rayleigh scattering: object much smaller than wavelength
+- mie scattering: object larger than wavelength
+- brillouin scattering: condensed phase, less dense phase is same size as wavelength
+*** raman
+- two photon scattering
+- scattered photon loses energy, and there is intermediate state
+  - final energy is higher than initial: stokes
+  - final energy is lower than initial: anti-stokes
+- $$\frac{\partial \alpha}{\partial R} \neq 0$$, must be nonpolar
+  - $$\langle i | \alpha | f \rangle$$
+- excitation wavelength doesnt matter, always produces same output
+*** resonant raman scattering:
+- wavelength is same as excitation wavelength
+  [[../../../../images/401/two.png]]
+** 14: electronic spectroscopy
+*** atoms
+- sharp spectra
+- with many electron atoms, coupling occurs
+  - J-J coupling: heavy atoms
+  - L-S coupling: light atoms
+- total angular momentum: $\hat{J} = \hat{L} + \hat{S}$
+- why loss of degeneracy caused by coulomb interaction
+- Hund's rule
+  - state with largest S most stable
+  - for same S, state with largest L is most stable
+- $^{2S + 1}L_J$
+  - $\hat{H}_{so} = \zeta \hat{L} \dot \hat{S}$: represented by J
+  - $\hat{H}_0 + \hat{H}_{ee} + \hat{H}_{so}$
+*** SO splittings:
+- energy difference: $E_{J+1} - E_J = \frac{1}{2} \zeta [(J+1)(J+2) - J(J+1)] = \zeta (J+1)$
+*** selection rule
+- dipole transition: $\hat{mu} = - e r$, $\Delta m_s = 0$, $\Delta l = +- 1$ dipole moment, $\Delta m_l = 0, +-1$, $\Delta n$ any positive integer
+** 15: electronic spectroscopy
+** 16: magnetic resonance
+** 17: spectroscopy
+** 18 - 25:
+*** Two-photon doppler free spectroscopy
+*** REMPI (Resonant Enhanced MultiPhoton Ionization)
+- two photons required
+- excite molecules into excited state followed by ionization
+  - stepwise ionization (minimum of 2 photons)
+  - ionization rate higher when photons in resonance with intermediate state
+  - TOF for mass spec
+- need tunable light source (dye laser), ion yield vs. wavelength is plotted
+- shows same feature as absoption spectrum
+  - different set of selection rules -> transitions forbidden with one photon are not forbidden with two photons
+- multiple photons can be absorbed: ionization at less energetic wavelengths
+  - can excite different energy levels with same ionization
+- all photons emitted are same energy: is this always the case?
+  - total energy doesn't need to equal the ionization energy
+*** Saturation absorption spectroscopy
+*** Fluorescence correlation spectroscopy
+*** Cavity ring down spectroscopy
+*** Frequency comb spectroscopy
+*** Coherant Anti-Stokes Raman spectroscopy
+*** Fluorescence resonance energy transfer spectroscopy
+*** Photoelectron velocity map imaging spectroscopy
+*** Two-dimensional infrared spectroscopy
+*** Multi-dimensional NMR spectroscopy
+*** Scanning near field optical spectroscopy
+*** Optical coherence tomography
+- high resolution, non-invasive of biological tissue
+- interferometry:
+  - split beam of light
+- low coherence: control interference
+  - long coherence: lots of interference
+  - short: interference only at specific z
+- image generation: A, B, C scan
+- resolution: axial and transverse (independent)
+- comparison: confocal (limited depth), ultrasound (low resolution/lots of depth), optical coherence (in the middle)
+  - question: combine confocal + ultrasound?
+*** Positron emission tomography
+*** THz spectroscopy and Imaging
+*** Atto-second time resolved spectroscopy
+*** Operando spectroscopy
+*** Circular dichroism spectroscopy, optical rotatory dispersion
+*** Raman optical activity

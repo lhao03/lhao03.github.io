@@ -1,0 +1,46 @@
+---
+description: "CHEM 312"
+title: "CHEM 312: Introduction to Quantum Mechanics and Spectroscopy"
+type: "notes"
+---
+
+* Review
+** particle in a box
+** contributions from famous quantum scientists
+** reduced mass
+** Bohr atom
+** de Broglie matter wave
+** photo-electron effect
+** Hermitian operator
+** commutator
+** hydrogen atom
+** harmonic oscialltor
+** ladder operator
+** angular momentum operator (lecture 18 - onwards)
+*** classical understanding
+- components of angular momentum (3 in cartesian plane) as cross product:
+    $$L = r \times p =  \begin{bmatrix}
+                        x & y & z
+                        \end{bmatrix} \times \begin{bmatrix}
+                        p_x & p_y & p_z
+                        \end{bmatrix}
+                        = \begin{bmatrix}
+                        i & j & k\\
+                        x & y & z\\
+                        p_x & p_y & p_z
+                        \end{bmatrix}$$
+$$L = i(yp_z - p_yz) - j(xp_z - p_xz) + k(xp_y - p_xy) \\
+    = iL_x - jL_y + kL_z$$
+- right handed coordinate system
+- cyclic
+*** commutation relationship
+- coupling of angular momentum vectors in molecules
+  - when axes are mounted on molecule, sign of $i$ flips in commutation
+** term symbols
+** L - S coupling
+** equivalent and non-equivalent electrons
+** Hund's rules
+
+* Questions
+** ch 9
+- 42

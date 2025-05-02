@@ -1,0 +1,4 @@
+---
+description: "CPSC 421"
+title: "CPSC 421: Introduction to Theory of Computing"
+---
