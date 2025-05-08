@@ -13,9 +13,9 @@ I dabble at the intersection of molecules, systems and algorithms. I enjoy learn
 - and in the meantime, how can we develop scientifically accurate machine-learning tools for chemistry?
 
 ## About
-This summer, I'll be working with the [Izmaylov group](https://www.utsc.utoronto.ca/~aizmaylov/), learning about quantum computation for quantum chemistry.
+This summer, I'll be working with the [Izmaylov group](https://www.utsc.utoronto.ca/~aizmaylov/), learning about quantum computing for quantum chemistry.
 
-During my last year of undergrad, I worked with the highly interdisciplinary [Hein group](https://groups2.chem.ubc.ca/jheints1/). I contribute to multiple projects in developing autonomous platforms for process chemistry. Learning amongst chemists and engineers has made me appreciate the work that goes into building and validating robust systems for automating synthetic chemistry. Some of my projects include using the LLMs for generating code for self-driving labs and automated HPLC method development.
+During my last year of undergrad, I worked with the highly interdisciplinary [Hein group](https://groups2.chem.ubc.ca/jheints1/). I contribute to multiple projects in developing autonomous platforms for process chemistry. Learning amongst chemists and engineers has made me appreciate the work that goes into building and validating robust systems for automating synthetic chemistry. Some of my projects include combining [classical AI planning techniques with LLMs for SDL code generation](https://gitlab.com/heingroup/robotactionplanning) and [automated HPLC method development using Bayesian Optimization](https://gitlab.com/heingroup/hplc-method-optimization).
 
 I've also worked on the implementation of self-consistent field convergence methods in Psi4 with the [Wang group](https://www.chem.ubc.ca/yan-alexander-wang), software and sustainability efforts for [DNA storage](https://2024.igem.wiki/ubc-vancouver/) and computational biology for [cell-free protein synthesis](https://2023.igem.wiki/ubc-vancouver/) at UBC iGEM, and natural language processing for electronic health records at the [PROOF Centre](https://www.proofcentre.ca/).
 
