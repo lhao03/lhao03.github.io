@@ -1,0 +1,272 @@
+---
+title: My issues with Learn to Code
+tags: computer science education
+date: 2022-04-01
+description: 'I recently wrote a rant-like post about my thoughts on my path to CS. Since then, I’ve been thinking about how I was first introduced to computer science ...'
+---
+
+:toc:
+
+_Updated: 2022-05-05_
+
+I recently wrote a link:/posts/cs-edu[rant-like post] about
+my thoughts on my path to CS. Since then, I’ve been thinking about how I
+was first introduced to computer science when I heard the phrase
+"Everyone should learn how to code". The more I think about this tech
+marketing mantra that has been screamed at me from every coding boot
+camp, online MOOC, and even President Obama, the more and more I
+disagree with it.
+
+image::/images/learn-to-code/coding.png[]
+
+== Does that mean Lucy doesn’t like coding?
+
+This article isn’t saying that we should not teach coding at all. Coding
+(or programming) is a mechanism to make a concept in computer science
+tangible or realizable. Essentially, it's a skill.
+I’ll use a metaphor using concepts in chemistry.
+In organic chemistry, you study many reaction mechanisms to understand
+why some reactions go forward to produce the desired drug, while other
+reactions are futile. But being able to predict which product a reaction
+mechanism will produce is different from actually extracting the end
+product in a lab. In the lab, you need skills like pipetting, visual
+cues, knowledge of proper reactant ratios, how to extract and preserve
+the end product (you can’t just leave it in the reactant solution!), and
+more. Without these lab skills, it doesn’t matter how good you are at
+organic chemistry, because you can’t even make the damn molecule.
+
+Similarly, in the classroom, you might learn about tree traversal
+algorithms, the concept of allocating and freeing your memory, and how
+to prove your algorithm is correct and will produce the desired output,
+much like coming up with a reaction mechanism that produces the drug you
+want. But coding this algorithm requires you to understand, given
+whatever programming language you use, how to get that programming
+language running in the first place, the syntax rules (semicolons or
+parens?), how to spot and fix memory leaks, how to spot dangling
+pointers and more. Watching a video on pipetting doesn’t make you an
+expert at pipetting, just like how watching someone correctly implement
+an algorithm in C or Python doesn’t make you an expert coder.
+
+But coding and pipetting are simply skills for different jobs. If you
+want to work in a chemistry lab, you will need lab skills. Similarly, if
+you want to become a software engineer, you’ll need to code. This
+doesn’t mean coding is something everyone needs to learn, just like
+everyone doesn’t need to learn how to pipette because not everyone is
+not going to be producing drugs or programming applications.
+
+Maybe you argue that coding will become a part of everyone’s jobs, but I
+don’t think this will happen. More likely to occur is that computers
+will become a part of everyone’s jobs, but people don’t need to know or
+understand C to use a computer. This is because software engineers will
+hide the coding details away into nice and easy-to-use user interfaces.
+When you drag a file into a folder, there is code being executed to
+signal to your computer that this file is in a new folder. But you
+didn’t have to get down and dirty in the code. All you have to do is use
+your mouse to drag the file over.
+
+== How did "Learn to code" come about?
+
+But before I get into why everyone should learn about computers, I
+wanted to explore deeper into this "Learn to Code" movement.
+
+=== How "Learn to code" got me into computer science
+
+I have loved chemistry since I was 13, maybe you could have guessed from
+the chemistry metaphor. I never cared about getting a high-paying job
+until I was applying for universities and realized you couldn’t get paid
+much for having a Bachelor’s degree in chemistry. The "Learn to code"
+movement caught my eye and I started to believe that coding was the
+future.
+
+Phrases like: "Everyone should learn how to code", "Code to become
+the next Bill Gates", gave me the impression that coding was a
+necessary skill everyone needed to know to succeed in the future, or
+else they would fail. I even wrote that "everyone would have to eventually learn how to code to succeed and solve all the problems in the world" in my statement when I applied to UWaterloo (looking back, that was super cringe).
+
+I tossed my dream of pursuing chemistry away and decided to get a degree
+in computer science.
+
+== Why is learning to code such a hot topic?
+
+A lot of young people are learning how to code, and the
+movement is only growing in strength. I wondered why and came up with
+these points:
+
+=== Accessibility
+
+In developed nations, over 80% of householdsfootnote:[https://www.statista.com/statistics/1107826/access-to-computer-in-households-worldwide/[Share of individuals who have access to a computer in their household in 2020, by country]] have a personal computer. This makes coding very accessible, a vast improvement
+from the early ages of computers, where a computer filled a giant room
+and you had to line up and wait in order to run your code. This is
+unlike the other sciences. If you want to try out a chemistry experiment
+you read up on, good luck. Unless your high school or local university
+has a good supply of chemicals and proper equipment and permits you,
+there’s a very slim chance of trying out that chemical experiment. There
+are also more consequences if you screw up a chemical reaction, much
+less so if you forget a semicolon. Additionally, the learning curve for
+HTML is much lower than say physics or chemistry, which requires a good
+amount of study before you can run your own experiments.
+
+=== Instant gratification and Tech solutionism
+
+Coding delivers instant gratification, due to its accessibility and a
+concept called tech solutionism. It takes seconds to pull up an online
+REPL and execute code right in your browser. You don’t even need to
+understand the code to have something show up. This makes it seem like
+coding is easy, which it really isn’t.
+
+Coding can also feel like a shortcut to solving many problems since
+there’s a growing "belief that every problem has a solution based on
+technology". Hackathons are such events that encourage this type of
+thinking, using challenge prompts like "Best hack that solves a climate
+problem", leading hackers to feel lots of instant gratification in
+designing an application that they think is helpful, when it’s actually
+downright useless or even harmful. There is also an over-emphasis on the
+technology being used, with all the time and energy being poured into
+choosing which AI model to use or whether to use the blockchain or a
+regular database and shifting focus away from the actual problem. Tech
+takes many human problems, turning them into tech problems
+insteadfootnote:[Race + Data Science Lecture Series: Ali Alkhatib
+https://t.co/RM2hBKW4tw[(36:21)]].
+
+Many human problems are complex problems with a deep history. Turning a
+human problem into a technical problem may seem like you’re solving the
+human problem, but you may end up "misunderstanding a human problem,
+introducing a new problem, which shifts the focus and
+gatekeeps"footnote:[Race + Data Science Lecture Series: Ali Alkhatib
+https://youtu.be/B1v2KIdL5Rs?t=2220[(37:00)]] and causes harm. An
+example is a website built by two Harvard students that tried to house
+refugees from Ukrainefootnote:[https://gizmodo.com/harvard-students-refugee-housing-website-ukraine-take-s-1848708164[A Website Resettling Ukrainian Refugees Got Adoring Headlines. Experts Say It Was Too Good to Be True.]]. 
+What seemed
+like a good product was full of security holes and bugs ready for
+exploitation. For instance,
+
+____
+lax security measures have also exposed the private data of the hosts
+opening their homes to refugees, allowing anyone to see information
+including hosts’ phone numbers and email addresses with a few clicks.
+____
+
+Media also worsened the situation by praising this hacked together
+website, shifting focus away from those doing the ground work. Not only
+was the product a privacy and security nightmare, but it showed how
+clueless it’s creators were about relocating refugees.
+
+____
+In an interview with Gizmodo, Chojecka also said she had a problem with
+the site’s lack of education about the refugee experience for hosts, the
+fact that it did not translate listings into multiple languages, and
+that it had listings from places as far away as the U.S.
+____
+
+++++
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Thank you for your unexpected attention to my latest post about <a href="https://twitter.com/AviSchiffmann?ref_src=twsrc%5Etfw">@AviSchiffmann</a> and his (in our opinion) website UkraineTakeShelter which we consider unethical and harmful to refugees that we are currently dealing with (over 1 mn traumatized people entering the country).</p>&mdash; Kasia Chojecka (@chojecka_kasia) <a href="https://twitter.com/chojecka_kasia/status/1501475743687233536?ref_src=twsrc%5Etfw">March 9, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+++++
+
+You would never say other skills like wielding, cooking, or pipetting
+could solve all the world’s problems. Why is coding any different from
+other skills?
+
+Coding (and technology) has limitations, and many times coding can
+introduce problems you would never have with traditional or alternative
+methods. You can read about my thoughts on tech solutionism in
+hackathons link:/posts/hackathons/#_what_are_we_trying_to_solve_here[here].
+
+=== Marketing
+
+There’s no marketing initiative as strong as "Learn to Code". No one
+is marketing "Learn History" or "Learn Chemistry" because a bunch of
+people who know history or chemistry don’t serve giant companies well.
+By giant companies, I mean tech companies. It’s cheap for a tech company
+to produce a MOOC and sell it to people desperate for a better-paying
+job. These people with only coding skills are then at the will of large
+companies to pick and choose who they want. And with only more and more
+people wanting a job in tech, companies can be less competitive with
+salaries.
+
+While "Learn to Code" isn’t as common now, there are other marketing
+campaigns and initiatives telling us to quickly learn about AI to get a
+job in AI or quickly learn about Web3 and get a job in Web3 because iTs
+tHe fuTUrE. You rarely ever see this in other areas such as chemistry,
+with organic chemistry being cool one year, and materials chemistry
+being hot another year. Fast Food
+Educationfootnote:[https://www.kernelmag.io/pieces/fast-food-education[Fast
+Food Education]] discusses the rise of coding/design boot camps and
+their shallow and lacking curriculums, which flood the market with a
+bunch of people with the same skills.
+
+== Is teaching everyone to code the right thing to do?
+
+I honestly don't think so. Why are we teaching everyone to code in the first
+place? Is it get more minorities into the tech industry? Is it to prepare
+people for a digitized future? Is it so that someone can create a coding
+bootcamp to earn a few extra bucks? Is it to preapre people for most jobs to
+involve a computing component?  Is it so that people can better understand how
+technology impacts their lives? Is it so that people learn engage in
+computational thinking?
+
+Many organizations and people have different reasons for why everyone must
+learn to code or learn about technology. I'll list my two reasons: People
+should understand how technology is impacting their lives, and also understand
+that _some_ jobs will involve a computing component, with the former being more
+important in my opinion.
+
+How can we enable everyone to understand how technology impacts their lives? I
+believe we can start with all learning about how computers were first invented
+and how a modern computer works. Computers are impacting every single part of
+our lives, and many people do not understand how a
+link:/posts/computers/#_a_misunderstandinglack_of_understanding_of_a_file_system[file
+system] works or how a
+link:/posts/computers/#_how_memory_works_in_progress[computers reads and writes
+from memory]. To many computers are "magical intelligent pieces of metal". 
+
+Before you learned about physics, chemistry, math, and biology you might
+have thought other events were magical, like how baking powder works,
+how that weird Möbius paper is a single-sided strip with one edge, and
+how sound travels. But through our education, we have all gained some
+understanding of how these magical events work; baking powder mixed with
+water produces carbon dioxide bubbles (making your muffins fluffy), the
+math behind the one-sided paper, and that sound travels in waves. Does
+learning to code accomplish one’s desire to understand how a computer
+works?
+
+image::/images/learn-to-code/Mobius.jpg[]
+
+No, not always. Coding in high-level languages like Python, JavaScript, or
+scripting languages like HTML or CSS does not. This high-level coding is what
+is mostly taught by boot camps and current elementary and secondary computer
+science curriculums. In fact, another avenue of teaching computer science is to
+teach about computatinal thinking. Programs that teach web development seldom
+touch on this idea of computational thinking.
+
+Teaching computational thinking can enable people to apply this type of
+thinking into other activities, like their jobs. While this sounds great,
+transfer learning is actually more difficult to achieve than you think. Another
+path is to teach link:/posts/notes/2022-05-05-sicp-vs-htdp[HTDP], which teaches
+students to design programs using explicit design rules. Many other areas of
+science include these "explict" rules, such
+as balancing chemistry equations.
+
+While teaching web development is a way to express creativity through online
+formats, too often web development is conflated with computer science. This
+creates a wrong impression of what computer science is! Programming is also
+conflated with computer science, which claos creates the flawed idea that
+computer science is only about programming, when it's closer to math.
+
+== End
+
+Teaching only code is like only teaching someone lab skills. Of course,
+someone will eventually discover which two reactants will produce the
+desired product by trial and error, but they will have a lacking
+understanding of why a chemical reaction works. As the saying goes;
+"Give a Man a Fish, and You Feed Him for a Day. Teach a Man To Fish,
+and You Feed Him for a Lifetime".
+
+Because let’s face it; what goes up must always come down. Teaching
+skills today does not always mean these skills will be useful in the
+future. Tech has gone through many big booms; first C, Java, JavaScript,
+AI, and now Web3. Who knows what is next? But something that will stick
+with us for a long time is the
+link:/posts/computers[computer].
+
+_Updates: typos and making metaphors with chemistry less confusing and
+fixing weird grammars._
